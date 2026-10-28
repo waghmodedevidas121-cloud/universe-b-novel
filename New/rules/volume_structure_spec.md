@@ -26,6 +26,18 @@ A true novel volume is never merely a flat list of chapter numbers. Every volume
 
 ---
 
+## 1.5. DUAL-LANGUAGE PRIMARY CANON (ENGLISH & HINDI DUB)
+
+Universe B is natively authored as a **Bilingual Twin-Track Web Novel**:
+- **Track 1: Canonical English Novel Prose** (`<num>_Season_1_Chapter_<num>.md`)  
+  *Grounded, visceral 5-sense sensory narrative focusing on Neel's 19-year-old Mumbai survival mindset.*
+- **Track 2: Official Crunchyroll / Muse-Style Hindi Dub Novel Prose** (`<num>_Season_1_Chapter_<num>_Hindi.md`)  
+  *Authentic, fast-paced dub register. All names, titles, ranks, skills, and places remain in Roman-script English. Natural conversational Hindi narration ending with `।`. Inner monologues marked with `· मनात`. Zero archaic Sanskrit words.*
+- **Track 3: Interactive Dual-Script Reader UI** (`chapter_<num>_reader.html`)  
+  *Instant toggle between English Novel and Hindi Dub with ambient soundscapes and reader-customized typography.*
+
+---
+
 ## 2. SEASON 1 (3-VOLUME) MASTER BREAKDOWN
 
 ### 📘 VOLUME 1: *The Mud, the Beast & the D-Tier Blood-Pit*

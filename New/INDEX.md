@@ -302,6 +302,27 @@ Universe B हे एका कागदावर आखलेले निर�
 • 1 Aether-Rupee (AR)        = 100 Silver Panas (SP) = 1,600 Copper Mashas (CM).
 • Foundry Iron Bar (FIB)     = 25 Silver Panas (Asura heavy trade unit).
 • Solar Gold Sovereign (SGS) = 10 Aether-Rupees (Deva luxury trade unit).
+
+---
+
+## 9. Dual-Language Primary Canon & Chapter Inventory (English & Hindi)
+
+Universe B's web novel is officially authored and maintained in **Bilingual Twin Canonical Editions**:
+1. **Canonical English Web Novel Prose:** Grounded high-fantasy narrative (Neel POV, 5-sense sensory anchoring).
+2. **Official Hindi Dub Novel Prose:** Authentic Crunchyroll / Muse style dub prose (All names/skills/places in English Roman script; casual conversational Hindi narration ending with `।`; inner monologues tagged with `· मनात`).
+
+### Chapter Master Track:
+- **Chapter 1:**
+  - English: `19_Season_1_Chapter_1.md`
+  - Hindi: `19_Season_1_Chapter_1_Hindi.md`
+  - Reader UI: `chapter_1_reader.html`
+- **Chapter 2:**
+  - English: `20_Season_1_Chapter_2.md`
+  - Hindi: `20_Season_1_Chapter_2_Hindi.md`
+- **Chapter 3:**
+  - English: `21_Season_1_Chapter_3.md`
+  - Hindi: `21_Season_1_Chapter_3_Hindi.md`
+- **Chapter 4:** *(In Planning & Staging)*
 • Daily Wages & Costs        : Miner shift = 3–4 CM | Dal-Bhakri meal = 2 CM | Ginger tea = 1 CM |
                                Chawl room rent = 6 SP/month | Runic Prāṇa-Bolts (20 rds) = 3 SP.
 ═════════════════════════════════════════════════════════════════════════════════════════════

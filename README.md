@@ -19,12 +19,14 @@ UNIVERSE B/
 │   ├── INDEX.md                            # Complete System Master Index & Canonical Invariants
 │   ├── CHANGES_MASTER_RECORD.md            # Comprehensive audit of discussions, fixes & evolution
 │   │
-│   ├── [THE WEB NOVEL CHAPTERS & READERS]
+│   ├── [THE WEB NOVEL CHAPTERS & READERS (DUAL-LANGUAGE PRIMARY CANON)]
 │   │   ├── chapter_1_reader.html           # Dedicated Dual-Toggle Web Novel Reader UI (Dark Mode)
-│   │   ├── 19_Season_1_Chapter_1_Hindi.md  # Official Crunchyroll/Muse Style Hindi Dub Script
-│   │   ├── 19_Season_1_Chapter_1.md        # Chapter 1 Canonical Narrative Draft (Neel POV)
-│   │   ├── 20_Season_1_Chapter_2.md        # Chapter 2 Narrative Draft (Sheru Bond & Sand-Pit Entry)
-│   │   ├── 21_Season_1_Chapter_3.md        # Chapter 3 Narrative Draft (D-Tier Bout & First Spark)
+│   │   ├── 19_Season_1_Chapter_1.md        # Chapter 1 Canonical English Novel Prose
+│   │   ├── 19_Season_1_Chapter_1_Hindi.md  # Chapter 1 Official Crunchyroll/Muse Style Hindi Dub Novel
+│   │   ├── 20_Season_1_Chapter_2.md        # Chapter 2 Canonical English Novel Prose
+│   │   ├── 20_Season_1_Chapter_2_Hindi.md  # Chapter 2 Official Crunchyroll/Muse Style Hindi Dub Novel
+│   │   ├── 21_Season_1_Chapter_3.md        # Chapter 3 Canonical English Novel Prose
+│   │   ├── 21_Season_1_Chapter_3_Hindi.md  # Chapter 3 Official Crunchyroll/Muse Style Hindi Dub Novel
 │   │   └── rules/                          # Canonical scene staging, craft rules & draft mirrors
 │   │       ├── volume_structure_spec.md    # Master Light Novel / Web Novel 7-Part Volume Architecture Spec
 │   │       ├── season_1_chapter_1.md
@@ -142,6 +144,7 @@ UNIVERSE B/
 8. **Divine Boon Requirement (*Varadan*):** True *Divyastras* cannot be learned via training; they require intense *Tapasya* and a Direct Divine Boon conferring sacred invocation mantras.
 9. **Ascending Linguistic Gradient:** Rough street slang in Tier 4 → Vedic-Anime Hinglish in Tier 3 → Classical Sanskrit jurisprudence in Tier 2 → Pure Vedic Chants in Tier 1.
 10. **The 3-Volume Narrative Veil:** Volumes 1–3 present as a gritty Central City tournament adventure with zero explicit Hindu mythology names, setting up the massive cosmic twist at the end of Volume 3.
+11. **Dual-Language Primary Authoring Mandate:** Every chapter, prologue, interlude, and epilogue is authored natively in **both Canonical English Novel Prose and Official Muse/Crunchyroll-Style Hindi Dub Novel Prose**. Both editions are primary canon; proper nouns and skills stay Roman-script English, with casual Hindi prose ending with `।`.
 
 ---
 
