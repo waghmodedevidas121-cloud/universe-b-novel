@@ -183,7 +183,7 @@ $block = "// --- Universe B Canonical Project Data ---`r`n        const DEFAULT_
 $html = $html.Substring(0, $s) + $block + $html.Substring($e)
 
 # unique storage key so the demo project does not collide
-$html = $html.Replace("novelcraft_studio_v1", "universe_b_studio_v1")
+$html = $html.Replace("novelcraft_studio_v1", "universe_b_studio_v2")
 
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 [System.IO.File]::WriteAllText($outHtml, $html, $utf8)

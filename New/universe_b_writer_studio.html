@@ -733,7 +733,7 @@
         // --- LocalStorage Management ---
         function loadFromStorage() {
             try {
-                const saved = localStorage.getItem('universe_b_studio_v1');
+                const saved = localStorage.getItem('universe_b_studio_v2');
                 if (saved) {
                     novelData = JSON.parse(saved);
                 } else {
@@ -746,7 +746,7 @@
 
         function saveToStorage() {
             try {
-                localStorage.setItem('universe_b_studio_v1', JSON.stringify(novelData));
+                localStorage.setItem('universe_b_studio_v2', JSON.stringify(novelData));
                 const statusEl = document.getElementById('save-status');
                 statusEl.innerHTML = `<i data-lucide="check-circle-2" class="w-3 h-3"></i> Saved`;
                 statusEl.className = "flex items-center gap-1 text-[11px] text-emerald-400";
