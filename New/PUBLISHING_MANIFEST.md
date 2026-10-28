@@ -30,8 +30,8 @@ Upload **only these 6 narrative files**. Nothing else.
 
 | # | Upload Order | File | Language | Words |
 | :-- | :--- | :--- | :--- | :--- |
-| 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 1,418 |
-| 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 1,583 |
+| 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 1,546 |
+| 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 1,695 |
 | 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 3,129 |
 | 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,325 |
 | 4 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2.md` | English | 2,561 |
@@ -39,7 +39,7 @@ Upload **only these 6 narrative files**. Nothing else.
 | 6 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3.md` | English | 2,597 |
 | 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,108 |
 
-**Total launch content:** 9,705 English words + 11,151 Hindi words (8 files).
+**Total launch content:** 9,833 English words + 11,263 Hindi words (8 files).
 
 ### Do NOT upload in Phase 1
 | File / Folder | Reason |
@@ -100,9 +100,9 @@ That single paragraph is what is currently missing, not the story.
 
 ## 5. RECOMMENDED NEXT ACTIONS (PRIORITY ORDER)
 
-1. ~~**Write the real Prologue**~~ — **DONE.** `18A_Season_1_Volume_1_Prologue.md` + `_Hindi.md`, 1,292 words, cold-open in Bombay monsoon.
+1. ~~**Write the real Prologue**~~ — **DONE.** `18A_Season_1_Volume_1_Prologue.md` (1,546) + `_Hindi.md` (1,695, master track). Cold-open in Bombay monsoon.
 2. ~~**Build the writing studio**~~ — **DONE.** `New/universe_b_writer_studio.html` — 8 chapters (4 English + 4 Hindi), 7 codex entries, write/read toggle, localStorage autosave.
-3. ~~**Expand Chapter 1**~~ — **DONE.** Expanded 1,743 → 3,095 words (Hindi 3,693). Added the wagon master's toll briefing, the staging-ground crowd, the sky reveal, and the three-bell gate opening.
+3. ~~**Expand Chapter 1**~~ — **DONE.** English 3,129 / Hindi 3,325, Hindi rewritten natively against `rules/hindi_dub_lexicon.md`. Wagon-master toll briefing, staging-ground crowd, sky reveal, three-bell gate opening.
 4. **Build a public reader page** (separate from the studio) with a real English/Hindi toggle for website visitors.
 5. **Then** start Chapter 4 (Outer Bazaar, pawnshop, Reva & Kira).
 

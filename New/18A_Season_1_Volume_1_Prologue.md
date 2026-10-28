@@ -9,7 +9,9 @@
 ### [VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT]
 #### PROLOGUE: THE GLITCH IN THE RAIN
 
-The rain had been falling for six hours, and Bombay had quietly given up pretending to drain it.
+Rain that falls outside Dadar Station doesn't smell. It rots.
+
+It had been coming down for six hours, and Bombay had quietly given up pretending it could drain any of it.
 
 Neel stood at the broken edge of the footpath on Dadar bridge, one hand holding his college bag above the waterline, the other raised against the spray thrown up by a bus that had no intention of slowing down. The bus hit a pothole, threw a grey sheet of gutter water across the railing, and roared on toward Sion.
 
@@ -18,6 +20,8 @@ Neel stood at the broken edge of the footpath on Dadar bridge, one hand holding 
 His umbrella had died somewhere around Parel. One rib had snapped and now hung like a broken wing, so he had folded the whole thing and jammed it under his arm like a sword he had no intention of drawing. His sneakers were finished. His jeans were soaked to the knee. And his right sock had been making a wet squelching noise against his heel for the last forty minutes, which was somehow the part bothering him the most.
 
 Seven fifteen. The streetlights had come on and were doing nothing except turning the rain into falling orange static.
+
+Below, the whole road was red brake lights, crawling like a long, tired python.
 
 He shifted his bag to the other shoulder and looked down.
 
@@ -50,6 +54,14 @@ Neel froze with one leg still in the air.
 "What—"
 
 The sound came first. A long, hideous tearing, like a canvas sheet being ripped apart by two hands that were in no hurry. It came from everywhere and nowhere, and it was *loud*—loud enough that his teeth rang.
+
+Neel looked down.
+
+Not one ripple moved in that pothole. The whole street was being hammered with rain, and not a single drop was landing on this water. It wasn't a mirror anymore. It was a black glass plate with no scratch on it.
+
+And the streetlight's reflection was gone.
+
+There was no sky inside that pothole. Only black—so black that his eyes kept reaching for a bottom and kept sliding off it. And somewhere inside that black, something enormous hung with nothing holding it up.
 
 Then the light.
 
@@ -95,6 +107,8 @@ He lunged for it. His fingers closed around the top edge of it just as it sank u
 
 The water pulled back.
 
+Like an invisible hand, far too large, closing around his collar.
+
 ---
 
 Neel's first thought was that a truck had hit him.
@@ -109,7 +123,7 @@ The water had gone. Where the road should have been, there was an opening. And t
 
 And he was on the wrong side of the crease.
 
-He heard his own voice say "No—" and then the sound stopped arriving at his ears. The traffic died. The rain died. The woman shouting at the taxi driver died. All of it cut off at once, like a room full of people had been told to stop talking.
+He heard his own voice say "No—" and then the sound stopped arriving at his ears. The traffic died. The rain died. The brake lights died. The woman shouting at the taxi driver died. All of it cut off at once, like a room full of people had been told to stop talking.
 
 Then something pulled.
 
