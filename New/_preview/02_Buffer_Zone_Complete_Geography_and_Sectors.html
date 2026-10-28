@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24. Buffer Zone — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">04_Buffer_Zone_The_Setu\02_Buffer_Zone_Complete_Geography_and_Sectors.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/04_Buffer_Zone_The_Setu/02_Buffer_Zone_Complete_Geography_and_Sectors.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__macro-geography___cosmic_physics_of_antariksha__canon_lock">1. Macro-Geography & Cosmic Physics of Antariksha [CANON LOCK]</a><a class="h2" href="#2__sector_1__the_central_hub______-_______the_administrative_ring">2. Sector 1: The Central Hub (मध्य-सेतू / The Administrative Ring)</a><a class="h3" href="#a__setu_vidya-peeth">A. Setu Vidya-Peeth (मध्यवर्ती प्रशासकीय व लष्करी विद्यापीठ)</a><a class="h3" href="#b__nyaya-pitha___evidence_vaults__the_assembly_of_sages">B. Nyaya-Pitha & Evidence Vaults (The Assembly of Sages / ऋषी मंडळाचे मुख्य संकुल)</a><a class="h3" href="#c__yantra-kendra___grand_foundries">C. Yantra-Kendra & Grand Foundries (संशोधक संघाचे प्रयोगशाळा संकुल)</a><a class="h3" href="#d__grand_central_setu_terminus_____-">D. Grand Central Setu Terminus (महा-सेतू मध्यवर्ती रेल्वे जंक्शन)</a><a class="h2" href="#3__sector_2__the_western_iron_frontier____________-___________-">3. Sector 2: The Western Iron Frontier (पश्चिम लौह-सीमा व वज्र-दुर्ग)</a><a class="h3" href="#a__vajra-durga______-________the_iron_citadel">A. Vajra-Durga (वज्र-दुर्ग / The Iron Citadel)</a><a class="h3" href="#b__lauha-prakara___trench_network_____-">B. Lauha-Prakara & Trench Network (लौह-प्राकार व खंदक जाळे)</a><a class="h3" href="#c__barrier_outposts______-">C. Barrier Outposts (सीमा-चौक्यांचे जाळे)</a><a class="h3" href="#d__khanda-droni__the_fractured_chasm">D. Khanda-Droni (The Fractured Chasm / रिफ्ट व्हॅली)</a><a class="h2" href="#4__sector_3__pratigraha_ground_________________________-">4. Sector 3: Pratigraha Ground (प्रतिग्रह मैदान व आत्मा-प्रवेश)</a><a class="h3" href="#a__pratigraha_godown___floor_d_________________________d">A. Pratigraha Godown & Floor D (प्रतिग्रह गोदाम व मजला D)</a><a class="h3" href="#b__conduit_dock__vahana-tala">B. Conduit Dock (Vahana-Tala)</a><a class="h3" href="#c__pratigraha_surface_rail_gate">C. Pratigraha Surface Rail Gate (प्रतिग्रह पृष्ठभाग रेल्वे द्वार)</a><a class="h3" href="#d__lekhya_s_karmic_verification_bureau">D. Lekhya’s Karmic Verification Bureau (कर्मबंध पडताळणी दफ्तर)</a><a class="h2" href="#5__sector_4__the_northern_high_ascent___________-__________-">5. Sector 4: The Northern High Ascent (उत्तर देव-सेतू व सभा-लोक प्रवेशद्वार)</a><a class="h3" href="#a__deva-setu_gatehouse_____-________-">A. Deva-Setu Gatehouse (देव-सेतू महा-द्वार)</a><a class="h3" href="#b__the_celestial_ascender________________________heavy_lift_engine">B. The Celestial Ascender (आकाशीय उद्वहन यंत्र / Heavy Lift Engine)</a><a class="h2" href="#6__logistics__communications___transport_grid__canon_lock">6. Logistics, Communications & Transport Grid [CANON LOCK]</a><a class="h2" href="#7__natural_anomalies___unstable_zones">7. Natural Anomalies & Unstable Zones (नैसर्गिक विसंगती क्षेत्रे)</a></nav>
+  <div>
+    <article><h1 id="24__buffer_zone__the_great_setu____complete_geography___sector_guide">24. Buffer Zone (The Great Setu) — Complete Geography & Sector Guide</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\World\24_BUFFER_ZONE_COMPLETE_GEOGRAPHY_AND_SECTORS.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#buffer-zone</span> <span class="badge">#geography</span> <span class="badge">#sectors</span> <span class="badge">#vajra-durga</span> <span class="badge">#pratigraha</span> <span class="badge">#railways</span> <span class="badge">#telegraph</span> <span class="badge">#setu-vidyapeeth</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official World Geography Specification (18 October 2026)</p>
+<hr>
+<h2 id="1__macro-geography___cosmic_physics_of_antariksha__canon_lock">1. Macro-Geography & Cosmic Physics of Antariksha [CANON LOCK]</h2>
+<p>मध्यम-लोक (The Buffer Zone / The Great Setu) हे Astral Realm (Tier 3) आणि Divine High Council Realm (Tier 1) यांच्या दरम्यान तरंगणारे, प्रचंड आकाराचे मध्यवर्ती प्रशासकीय व लष्करी क्षेत्र आहे:</p>
+<pre><code class="language-">                  [ TIER 1: DIVINE HIGH COUNCIL &amp; DIVINE REALM ]
+                                        ▲
+                                        │ (Deva-Setu / High Ascent)
+════════════════════════════════════════╪════════════════════════════════════════
+                  [ TIER 2: THE BUFFER ZONE / THE GREAT SETU ]
+  ┌───────────────────────┬──────────────────────────┬────────────────────────┐
+  │  WEST: IRON FRONTIER  │    CENTRAL: GRAND HUB    │ EAST: PRATIGRAHA GROUND │
+  │  - Lauha-Prakara      │    - Madhya-Setu Ring    │   - Pratigraha Godown   │
+  │  - Vajra-Durga (HQ)   │    - Setu Vidya-Peeth    │   - Conduit Dock        │
+  │  - Frontier Outposts  │    - Yantra-Kendra Labs  │   - Lekhya Bureau       │
+  │  - Border Trenches    │    - Nyaya-Pitha Audit   │   - Surface Rail Gate   │
+  └───────────┬───────────┴─────────────┬────────────┴───────────┬────────────┘
+              │                         │                        │
+  (Facing Corrupted Realm)      (Main Rail Terminal)     (Route A/B Arrival)
+════════════════════════════════════════╪════════════════════════════════════════
+                                        ▼
+                        [ TIER 3: THE ASTRAL REALM ]</code></pre>
+<ol>
+<li><strong>Topography (भूरचना):</strong></li>
+<ul>
+<li>हे एक अखंड सपाट मैदान नसून, अंतराळात तरंगणाऱ्या प्रचंड <strong>स्थिर खंड-शिळांचे (Floating Continental Plates)</strong> जाळे आहे, जे <strong>'महा-सेतू' (The Great Viaducts)</strong> नावाच्या अजस्र पोलादी व पाषाणी पुलांनी जोडलेले आहे.</li>
+<li>या खंड-शिळांना ब्रह्मांडाच्या मूळ <strong>गुरुत्व-कीलक (Guru-Keela / Gravitational Anchors)</strong> द्वारे स्थिर ठेवण्यात आले आहे.</li>
+</ul>
+<li><strong>Atmosphere & Sky (आकाश व हवामान):</strong></li>
+<ul>
+<li>येथे पृथ्वीसारखा सूर्योदय-सूर्यास्त नसतो. आकाशात कायम <strong>'सावित्र-प्रभा' (Golden-Bronze Twilight)</strong> पसरलेली असते.</li>
+<li>हवेत वाफेचे ढग, कोळशाचा धूर आणि आयनीकृत प्राण-ऊर्जेचे (Ionized Prana) हलके निळे थर तरंगतात.</li>
+<li>वातावरणाचा दाब १९व्या शतकातील युरोपीय पठारासारखा आल्हाददायक व थंड असतो.</li>
+</ul>
+<li><strong>Technological Infrastructure Flavor:</strong></li>
+<ul>
+<li><strong>रेल्वे रूळ (Heavy Double-Gauge Steel Tracks):</strong> हजारो मैलांवर पसरलेले लोखंडी रूळ, ज्यांवरून वाफेवर व प्राण-बॅटरीवर चालणाऱ्या महाकाय आर्मर्ड ट्रेन्स धावतात.</li>
+<li><strong>टेलिग्राफ ग्रिड (Aetheric Telegraph Lines):</strong> उंच लाकडी व पितळी खांबांवरून हजारो मैल ओढलेल्या तांब्याच्या तारा, ज्यांद्वारे मोर्स-कोड व रनिक सिफर संदेश पाठवले जातात.</li>
+</ul>
+</ol>
+<hr>
+<h2 id="2__sector_1__the_central_hub______-_______the_administrative_ring">2. Sector 1: The Central Hub (मध्य-सेतू / The Administrative Ring)</h2>
+<p>बफर झोनचे प्रशासकीय, तांत्रिक व न्यायालयीन हृदय. येथे सर्व चारही विभागांची मुख्य कार्यालये आणि मध्यवर्ती नागरी वस्ती आहे:</p>
+<h3 id="a__setu_vidya-peeth">A. Setu Vidya-Peeth (मध्यवर्ती प्रशासकीय व लष्करी विद्यापीठ)</h3>
+<ul>
+<li><strong>स्थान:</strong> मध्य-सेतूच्या सर्वोच्च पठारावर.</li>
+<li><strong>स्वरूप:</strong> भव्य ग्रॅनाइट व ब्रास-डोम असलेली १९व्या शतकातील भव्य अकादमी.</li>
+<li><strong>कार्य:</strong> Astral Realm मधून पदोन्नती मिळालेल्या सर्व नवीन अधिकाऱ्यांचे, न्यायनिरीक्षकांचे आणि सेतू-सैनिकांचे ३ वर्षांचे अनिवार्य प्रशिक्षण.</li>
+<li><strong>तीन मुख्य विंग्ज:</strong></li>
+</ul>
+<ol>
+<li><em>न्याय-शाखा (Audit Wing):</em> सत्यकेतूंच्या मार्गदर्शनाखाली पुराव्यांची तपासणी व फॉरेन्सिक लेजर ऑडिट.</li>
+<li><em>व्यूह-शाखा (Tactics Wing):</em> वज्रकेतूंच्या नेतृत्वाखाली ट्रेंच वॉरफेअर, रायफल शूटिंग आणि बीस्ट-हँडलिंग.</li>
+<li><em>यंत्र-शाखा (Mechanics Wing):</em> युक्तिनाथ व यांत्रिकांच्या हाताखाली प्राण-स्टीम मेकॅनिक्स व डिफेन्स यंत्रे.</li>
+</ol>
+<h3 id="b__nyaya-pitha___evidence_vaults__the_assembly_of_sages">B. Nyaya-Pitha & Evidence Vaults (The Assembly of Sages / ऋषी मंडळाचे मुख्य संकुल)</h3>
+<ul>
+<li><strong>स्थान:</strong> मध्य-सेतूचा शांत उत्तर कोपरा.</li>
+<li><strong>प्रमुख:</strong> <strong>Satyaketu (Chief Field Auditor)</strong> आणि <strong>Medhavi (Senior Ledger Examiner)</strong>.</li>
+<li><strong>वैशिष्ट्ये:</strong></li>
+<li><em>The Vault of Sealed Ledgers:</em> हजारो वर्षांचे ऑडिट रेकॉर्ड्स आणि <strong>Red-Ink Seal</strong> ठोकून गोठवलेली वादग्रस्त दफ्तरे.</li>
+<li><em>Acoustic Hearing Chamber:</em> जेथे साक्षीदारांचे जबाब ध्वनी-रेकॉर्डिंग उपकरणांवर पितळी रोलर्सवर कोरले जातात.</li>
+</ul>
+<h3 id="c__yantra-kendra___grand_foundries">C. Yantra-Kendra & Grand Foundries (संशोधक संघाचे प्रयोगशाळा संकुल)</h3>
+<ul>
+<li><strong>स्थान:</strong> मध्य-सेतूचा दक्षिण औद्योगिक पट्टा (The Smelting Belt).</li>
+<li><strong>प्रमुख:</strong> <strong>Yuktinath (Grand Master)</strong> आणि <strong>Yantrika (Chief Engineer)</strong>.</li>
+<li><strong>वैशिष्ट्ये:</strong></li>
+<li><em>The Grand Smelting Works:</em> प्राण-क्रिस्टल बॅटऱ्या, आर्मर्ड प्लेट्स आणि बोल्ट-ॲक्शन रायफल्स बनवणारे अजस्र वाफेचे कारखाने.</li>
+<li><em>Rift-Simulation Dome:</em> अवकाश-काळातील भेगांचे कृत्रिम मॉडेल बनवून ताण तपासणारी प्रचंड पितळी प्रयोगशाळा.</li>
+<li><em>The High Pressure Boiler House:</em> हजारो अश्वशक्तीचे वाफेचे बॉयलर, जे संपूर्ण मध्य-सेतूला वीज व ऊर्जा पुरवतात.</li>
+</ul>
+<h3 id="d__grand_central_setu_terminus_____-">D. Grand Central Setu Terminus (महा-सेतू मध्यवर्ती रेल्वे जंक्शन)</h3>
+<ul>
+<li><strong>स्वरूप:</strong> काच, ओक लाकूड आणि काळे पोलाद यांनी बांधलेले प्रचंड व्हिक्टोरियन-स्टाईल रेल्वे स्टेशन.</li>
+<li><strong>महत्त्व:</strong> येथून एकाच वेळी चारही दिशांना आर्मर्ड पॅसेंजर, सैन्य-वाहू ट्रेन्स आणि कुरिअर वाष्प-रथांची वाहतूक चालते.</li>
+</ul>
+<hr>
+<h2 id="3__sector_2__the_western_iron_frontier____________-___________-">3. Sector 2: The Western Iron Frontier (पश्चिम लौह-सीमा व वज्र-दुर्ग)</h2>
+<p>Corrupted Realm कडून येणाऱ्या संभाव्य धोक्यांना व विषारी आक्रमणांना रोखणारी संपूर्ण लष्करी आघाडी:</p>
+<h3 id="a__vajra-durga______-________the_iron_citadel">A. Vajra-Durga (वज्र-दुर्ग / The Iron Citadel)</h3>
+<ul>
+<li><strong>स्थान:</strong> पश्चिम टोकावरील सर्वांत उंच काळ्या बॅसाल्ट खडकावर.</li>
+<li><strong>कमांड:</strong> <strong>Marshal-General Vajraketu</strong> चे मुख्य लष्करी मुख्यालय (Supreme War HQ).</li>
+<li><strong>वैशिष्ट्ये:</strong></li>
+<li><em>The Fortress Walls:</em> ३०० फूट उंच, तिहेरी काळ्या पोलादी तटबंदी, ज्यावर धावणारे हेवी रेल-प्लॅटफॉर्म्स आहेत.</li>
+<li><em>The War-Room:</em> अजस्र ब्रास-मॅप टेबल, जेथे टेलिग्राफने सर्व सीमा-चौक्यांचे थेट अपडेट्स पिन केले जातात.</li>
+<li><em>Elite Barracks:</em> Ranvay च्या नेतृत्वाखालील <em>Vajra-Dal</em> कमांडोजचे आणि शंभर प्रशिक्षित बॉन्डेड वॉर-हाउंड्सचे तळ.</li>
+</ul>
+<h3 id="b__lauha-prakara___trench_network_____-">B. Lauha-Prakara & Trench Network (लौह-प्राकार व खंदक जाळे)</h3>
+<ul>
+<li><strong>स्वरूप:</strong> ५,००० मैल लांबीची अभेद्य सीमा भिंत, ज्याच्या पुढे खोल रनिक खंदक (Defensive Trenches) खोदलेले आहेत.</li>
+<li><strong>तटरक्षण यंत्रणा:</strong></li>
+<li>तटबंदीवर दर दोन मैलांवर हेवी प्राण-तोफा (Prana Artillery Batteries) आणि स्टीम-चालित सर्चलाईट्स बसवलेले आहेत.</li>
+<li>तटबंदीच्या पायथ्याशी रनिक काटेरी तारा (Barbed Runic Wire) आणि प्राण-माईन्स (Prana Mines) पेरलेले आहेत.</li>
+</ul>
+<h3 id="c__barrier_outposts______-">C. Barrier Outposts (सीमा-चौक्यांचे जाळे)</h3>
+<ul>
+<li><strong>प्रमुख अधिकारी:</strong> <strong>Dhritika (Barrier Outpost Commander)</strong>.</li>
+<li><strong>स्वरूप:</strong> दर ५० मैलांवर स्वयंपूर्ण अष्टकोनी बंकर्स, जेथे १०० सैनिकांची तुकडी, एक टेलिग्राफ स्टेशन आणि दोन लाइट आर्मर्ड स्टीम ड्रेझिन गाड्या कायम तैनात असतात.</li>
+<li><strong>कार्य:</strong> Corrupted Realm मधील पळून येणाऱ्या गुन्हेगारांना रोखणे आणि घुसखोरी झाल्यास तात्काळ अलार्म वाजवणे.</li>
+</ul>
+<h3 id="d__khanda-droni__the_fractured_chasm">D. Khanda-Droni (The Fractured Chasm / रिफ्ट व्हॅली)</h3>
+<ul>
+<li>तटबंदीच्या पलीकडे असलेला धोकादायक 'नो मॅन्स लँड'. येथे अंतराळ-काळातील भेगा वारंवार पडतात. Kshitij च्या नेतृत्वाखालील शोध पथके केवळ आर्मर्ड ट्रेन्सने येथे डेटा गोळा करायला जातात.</li>
+</ul>
+<hr>
+<h2 id="4__sector_3__pratigraha_ground_________________________-">4. Sector 3: Pratigraha Ground (प्रतिग्रह मैदान व आत्मा-प्रवेश)</h2>
+<p>Universe A मधून Route A किंवा Route B द्वारे Universe B मध्ये प्रवेश करणाऱ्या आत्म्यांचे <strong>एकमेव अधिकृत आगमन क्षेत्र</strong>. हे बंदर नाही, किनारा नाही, तुरुंग नाही; Yama कार्यालयाच्या मैदानावर उभारलेले <strong>आगमन व quarantine godown</strong> आहे. Kshira Sagara इथे नाही.</p>
+<h3 id="a__pratigraha_godown___floor_d_________________________d">A. Pratigraha Godown & Floor D (प्रतिग्रह गोदाम व मजला D)</h3>
+<ul>
+<li><strong>स्थान:</strong> पूर्वेकडील प्रतिबंधित प्रशासकीय भूभाग, Yama (B) च्या entry court परिसरात.</li>
+<li><strong>प्रमुख अधिकारी:</strong> <strong>Warden Setuvrata — Pratigraha Warden</strong>.</li>
+<li><strong>स्वरूप:</strong> सीलबंद Ātma-Patra रॅक, पितळी intake काउंटर, audit desks आणि <strong>Floor D</strong> — Red-Ink/unindexed प्रकरणांसाठी स्वतंत्र सीलबंद मजला.</li>
+<li><strong>कार्य:</strong></li>
+<li><strong>दोन intake lanes:</strong> <strong>Route A — scheduled official dock</strong> (Release Seal सह सीलबंद Ātma-Patra; RIKTA marker नाही) आणि <strong>Route B — quarantine dock</strong> (RIKTA marker, Floor D).</li>
+<li>Dvāra Gate वरून direct teleport झालेले सीलबंद cylinders प्राप्त करणे.</li>
+<li>Route B intake नोंद करणे आणि <strong><code>[STATUS: RIKTA / UNINDEXED]</code></strong> हा intake marker मारणे — नशीबाचा निर्णय नाही, Soul ID नाही, release seal नाही.</li>
+<li>ताब्यातील आत्म्यांना containment grade नुसार ठेवणे; power = containment grade, सुविधा नाही.</li>
+</ul>
+<h3 id="b__conduit_dock__vahana-tala">B. Conduit Dock (Vahana-Tala)</h3>
+<ul>
+<li><strong>कमांड:</strong> <strong>Dootan (Senior Ledger Courier)</strong>.</li>
+<li><strong>स्वरूप:</strong> वार्ड-सीलबंद divine conduit bay; Dvāra Gate → Pratigraha → Setu junction → Sabha-Loka.</li>
+<li><strong>वाहने:</strong> <em>The White Couriers</em> — पांढऱ्या aether-glow चे <strong>Doot-Yānas</strong>; रूळ, वाफ, कोळसा नाही. केवळ सीलबंद कागदपत्रे आणि ताब्यातील अति-संवेदनशील आत्मे नेले जातात.</li>
+</ul>
+<h3 id="c__pratigraha_surface_rail_gate">C. Pratigraha Surface Rail Gate (प्रतिग्रह पृष्ठभाग रेल्वे द्वार)</h3>
+<ul>
+<li><strong>स्वरूप:</strong> Buffer Zone चा prana-steam rail spur <strong>फक्त परिमंडळापर्यंत</strong> येतो; तिथून personnel/cargo escorted walkway किंवा divine conduit ने आत जाते.</li>
+<li><strong>नियम:</strong> <strong>Rail गोदामात प्रवेश करत नाही</strong> आणि High Council पर्यंत जात नाही. Buffer Zone rail हा प्रशासकीय/लष्करी logistics साठी आहे; आत्म्यांची वाहतूक divine conduit नेच होते.</li>
+</ul>
+<h3 id="d__lekhya_s_karmic_verification_bureau">D. Lekhya’s Karmic Verification Bureau (कर्मबंध पडताळणी दफ्तर)</h3>
+<ul>
+<li><strong>स्थान:</strong> Pratigraha Ground च्या प्रशासकीय क्षेत्रातील लाल विटांचे भव्य संकुल.</li>
+<li><strong>प्रमुख:</strong> <strong>Lekhya (Karmic Bond Inspector)</strong>.</li>
+<li><strong>स्वरूप:</strong> हजारो ड्रॉवर्स आणि ब्रास कॅटलॉग्सने भरलेले ग्रंथालय.</li>
+<li><strong>कार्य:</strong> आत्म्याची ऊर्जा तपासून चित्रगुप्तांच्या अधिकृत डेटाबेसशी जुळवून पाहणे. जुळल्यास पुढील प्रक्रिया; विसंगती आढळल्यास Red-Ink आणि Satyaketu च्या audit विभागाकडे वर्ग करणे. हा न्याय किंवा नशीब-निर्णय नाही.</li>
+</ul>
+<hr>
+<h2 id="5__sector_4__the_northern_high_ascent___________-__________-">5. Sector 4: The Northern High Ascent (उत्तर देव-सेतू व सभा-लोक प्रवेशद्वार)</h2>
+<p>Buffer Zone च्या उत्तरेकडील सर्वात उंच आणि पवित्र शिखर, जे Tier 1 Divine High Council Realm कडे जाते:</p>
+<h3 id="a__deva-setu_gatehouse_____-________-">A. Deva-Setu Gatehouse (देव-सेतू महा-द्वार)</h3>
+<ul>
+<li><strong>संरक्षण:</strong> अत्यंत कडक नाकाबंदी. येथे केवळ <strong>Tier 1 Clearance</strong> (सत्यकेतु, वज्रकेतु, युक्तिनाथ, नियम) किंवा सुप्रीम कौन्सिलचे विशेष समन्स असलेल्यांनाच प्रवेश मिळतो.</li>
+<li><strong>स्वरूप:</strong> १०० फूट उंच पांढऱ्या पितळेचे महाकाय स्वयंचलित दरवाजे, ज्यांवर रनिक लॉक आणि अनादी सील कोरलेले आहेत.</li>
+</ul>
+<h3 id="b__the_celestial_ascender________________________heavy_lift_engine">B. The Celestial Ascender (आकाशीय उद्वहन यंत्र / Heavy Lift Engine)</h3>
+<ul>
+<li>पर्वताच्या आत बांधलेली अजस्र हायड्रॉलिक-प्राण लिफ्ट आणि <strong>aetheric conduit</strong>, जो ढगांच्या पलीकडे थेट High Council Realm मध्ये उघडतो. उभे रूळ किंवा cog-rail नाही; हा Divine Realm प्रवेशमार्ग आहे, Buffer Zone rail नाही.</li>
+<li>Delegates (Prajapati, Narada, Rudra) गुप्तपणे याच मार्गाने बफर झोनमध्ये उतरतात आणि चढतात.</li>
+</ul>
+<hr>
+<h2 id="6__logistics__communications___transport_grid__canon_lock">6. Logistics, Communications & Transport Grid [CANON LOCK]</h2>
+<div class="table-container"><table><thead><tr>
+<th>दळणवळण माध्यम</th>
+<th>तांत्रिक स्वरूप</th>
+<th>कव्हरेज / विस्तार</th>
+<th>जबाबदार विभाग / प्रमुख</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Maha-Setu Heavy Rail</strong></td>
+<td>Double-gauge steel tracks; Prana-steam engines</td>
+<td>संपूर्ण बफर झोनमध्ये ५०,००० मैल</td>
+<td>Guild of Seekers (Engineers) / Palaks (Guards)</td>
+</tr>
+<tr>
+<td><strong>Aetheric Telegraph</strong></td>
+<td>Copper-brass wires on insulators; Morse-code</td>
+<td>सर्व चौक्या, कार्यालये व किल्ले</td>
+<td>Central Telegraph Exchange / Dootan</td>
+</tr>
+<tr>
+<td><strong>Armored War-Trains</strong></td>
+<td>६-इंच पोलादी आर्मर, प्राण-तोफा, स्नायपर बोगी</td>
+<td>पश्चिम फ्रंटियर (Corrupted Realm सीमा)</td>
+<td>Order of Palaks (Vajraketu / Ranvay)</td>
+</tr>
+<tr>
+<td><strong>Pratigraha Perimeter Skiffs</strong></td>
+<td>हलकी प्राण-वाफेची गस्त नौका; Buffer Zone चे नद्या व पूर्वेचे marsh channels. <strong>Kshira Sagara किंवा कोणत्याही महासागरात प्रवेश निषिद्ध.</strong></td>
+<td>पूर्वेकडील Pratigraha Ground परिमंडळ</td>
+<td>Buffer Zone Palaks / Niyam liaison</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="7__natural_anomalies___unstable_zones">7. Natural Anomalies & Unstable Zones (नैसर्गिक विसंगती क्षेत्रे)</h2>
+<ol>
+<li><strong>Shunyakasha (शून्याकाश / The Void Chasm):</strong></li>
+<ul>
+<li>मध्य-सेतू आणि पश्चिम फ्रंटियरमधील एक अजस्र पोकळी, जेथे कोणत्याही प्रकारचा प्राण (Prana) वाहत नाही. येथे वाफेची इंजिने बंद पडतात; केवळ हाताने ओढल्या जाणाऱ्या ट्रॉली आणि यांत्रिक केबल-कार्स चालतात.</li>
+</ul>
+<li><strong>The Whispering Mists (स्मृती-धुके):</strong></li>
+<ul>
+<li>Pratigraha Ground च्या पूर्वेकडील marsh channels वर जमा होणारे पांढरे दाट धुके — सीलबंद आत्म-वाहतुकीचा उरलेला memory-residue, Kshira Sagara नाही. या धुक्यातून प्रवास करताना आत्म्यांना त्यांच्या पूर्वजन्माचे अस्पष्ट आवाज ऐकू येतात. येथे काम करणाऱ्या वॉर्डन्सना कानात पितळी संरक्षक कवच (Brass Ear-Plugs) घालावे लागतात.</li>
+</ul>
+<li><strong>The Steam Geysers of Agni-Kunda:</strong></li>
+<ul>
+<li>दक्षिण औद्योगिक पट्ट्यातील नैसर्गिक उष्ण पाण्याचे व वाफेचे स्रोत, ज्यांचा वापर करून यांत्रिका संपूर्ण कारखान्यांना मोफत स्टीम प्रेशर पुरवते.</li>
+</ul>
+</ol></article>
+    <footer>04_Buffer_Zone_The_Setu\02_Buffer_Zone_Complete_Geography_and_Sectors.md · 170 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

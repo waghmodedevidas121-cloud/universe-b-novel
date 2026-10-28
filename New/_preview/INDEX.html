@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASTER INDEX: UNIVERSE B CANON BIBLE — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">INDEX.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/INDEX.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__executive_canonical_architecture___________________-">1. Executive Canonical Architecture (संपूर्ण अधिकृत १०-मॉड्यूल रचना)</a><a class="h3" href="#1_1________-">1.1 मॉड्यूल-नकाशा: प्रत्येक फाईल काय देते (झटपट संदर्भ)</a><a class="h2" href="#2__master_verification___word-to-word_quality_checklist">2. Master Verification & Word-to-Word Quality Checklist (कथा लेखनापूर्वी तपासावयाचे १० सुवर्ण नियम)</a><a class="h2" href="#3__how_to_use_this_bible">3. How To Use This Bible (ही बायबल कशी वापरायची)</a></nav>
+  <div>
+    <article><h1 id="master_index__universe_b_canon_bible__new">MASTER INDEX: UNIVERSE B CANON BIBLE (NEW) — मुख्य अनुक्रमणिका</h1>
+<p><strong>Directory:</strong> <code>D:\Web Novel\New\</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#master-index</span> <span class="badge">#canon-bible</span> <span class="badge">#universe-b</span> <span class="badge">#complete-transfer</span> <span class="badge">#canon-lock</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] लेखनासाठी संपूर्ण, सर्वसमावेशक केनन प्रणाली (ऑक्टोबर २०२६)</p>
+<p><strong>Authority:</strong> वेब-नोव्हेलच्या सर्व worldbuilding, तत्त्वज्ञान, इतिहास, आत्मा-प्रशासन, भू-राजकारण, भूगोल, गट व पात्रांसाठी सर्वोच्च एकमेव सत्य-स्रोत. सर्व जुन्या मसुदा फाईल्सना supersede करते.</p>
+<hr>
+<h2 id="1__executive_canonical_architecture___________________-">1. Executive Canonical Architecture (संपूर्ण अधिकृत १०-मॉड्यूल रचना)</h2>
+<p>Universe B हे सतत विकसित होणारे, जिवंत <strong>Child Cosmos (विश्वाची बाल्य अवस्था)</strong> आहे — ज्याचा उगम <strong>Cosmic Singularity (Hiranyagarbha Starting Point)</strong> येथे होतो, जिथे <strong>Ananta-Shesha</strong> वर <strong>Garbhodakashayi Vishnu</strong> च्या सार्वभौम उपस्थितीखाली <strong>Kshira Sagara</strong> विसावले आहे. हे <strong>Pure Spiritual Energy</strong> चे आदिम उगमस्थान आहे, जे सर्व वैश्विक आत्म्यांना पोषते; <strong>Supreme Trinity (Brahma, Vishnu, Shiva)</strong> ने रचलेले आणि Cosmic Funnel भूमितीत <strong>Four Distinct Operational Tiers</strong> मध्ये चालवले जाते.</p>
+<p>या डिरेक्टरीतील प्रत्येक फाईलमध्ये <strong>शब्दशः सर्वसमावेशक तपशील</strong>, संपूर्ण कार्यप्रवाह, तक्ते, पात्र-पत्रके व शास्त्रीय संदर्भ आहेत.</p>
+<pre><code class="language-">═════════════════════════════════════════════════════════════════════════════════════
+                         MASTER MODULE DIRECTORY (01 - 10)
+═════════════════════════════════════════════════════════════════════════════════════
+
+[ TIER 1: DIVINE REALM &amp; THE METAPHYSICAL FOUNDATION ]
+├── 01_COSMIC_FOUNDATION_METAPHYSICS_AND_THE_FOUR_TIERS.md
+│   Supreme Trinity · Ananta Core · Four Tiers · Six Constitutional Upadhis ·
+│   Three Divine Delegates · Two-Layer Intervention · 24-Hr Red Seal · Linguistic Pyramid.
+│
+├── 02_COSMIC_HISTORY_THE_FOUR_ERAS_AND_VOID_SEALS.md
+│   Four Eras (Genesis → Cataclysm → Great Sundering → Steam-Aether Age) ·
+│   Seven Void Seals &amp; Shrutayudha · Grand Aegis Construction · Ashen Eclipse Taboo.
+│
+├── 03_UNIVERSAL_GROWTH_SYSTEM_POWER_TAXONOMY_AND_ATMA_TATTVA.md
+│   No-Menu Philosophy · Five Pillars · Secret 6th Pillar (Atma-Tattva) ·
+│   Species Growth Engines (Nadi-Shuddhi, Dhatu-Dharana, Rta-Samyama, Kaya-Kosa) ·
+│   Kruti Crisis Law · Ananta Chime · 12 Power Classes · Dhanurveda Astras Hierarchy.
+
+[ COSMIC LIFE-CYCLE &amp; GOVERNANCE MECHANICS ]
+├── 04_SOUL_ADMINISTRATION_MECHANICS_AND_WORKFLOW.md
+│   Triad Offices (Yama, Vidhata, Chitragupta) · Separation of Powers · Route A Pipeline ·
+│   Route B (Summoning / Rare Drift) &amp; Pratigraha Intake [STATUS: RIKTA] · Blank Destiny (Zero Cheats) ·
+│   Prana-Sutra 3-Layer Chain · Vessel Mismatches · Dootan&#x27;s White Doot-Yānas.
+
+[ TIER 2: THE BUFFER ZONE / THE GREAT SETU ]
+├── 05_TIER_2_BUFFER_ZONE_GEOGRAPHY_SECTORS_AND_OPERATIONS.md
+│   Antariksha Physics · Four Sectors · Setu Vidya-Peeth · Vajra-Durga · Pratigraha Ground ·
+│   5-Tier Civil/Martial Ranks · 13 Named Officers &amp; Clearances · Setu Maha-Sena 7 Arms ·
+│   24-Hour Red-Ink Protocol · Tri-Departmental Tribunal · Bureaucratic Friction.
+
+[ TIER 3: THE LIVING REALMS &amp; GEOPOLITICS ]
+├── 06_TIER_3_ASTRAL_REALM_GEOGRAPHY_FIVE_SUB_REALMS_AND_THE_CENTRAL.md
+│   Five Isolated Sub-Realms (Human, Asura, Deva, Beast, Central) · Insuperable Void ·
+│   Human Sub-realm: 93–95% powerless, 5–7% Awoken · Central Hub (Madhya-Nagara) ·
+│   Indirect Hegemony Levers (Currency, Cartels, Telegraph) · Pressurized Bubble Cars.
+│
+├── 08_MASTER_CHARACTER_DOSSIER_COMPLETE_ROSTER_AND_SHEETS.md
+│   94 Verified Canonical Characters across All Tiers with Unique Alphanumeric IDs ·
+│   Multi-Cultural Naming (Germanic/Nordic Asuras, Greco-Roman Devas, Anglo-Dutch Mariners,
+│   Gaelic Beasts, Cosmopolitan Central, Setu &amp; Field Officers, Primordial Bedrock) ·
+│   Physical Scars, Trauma, Grey Morality, Weaponry, Psychology, and Relationships.
+│
+├── 09_INTERLOCKING_FACTION_RELATIONS_GRUDGES_AND_COLD_WAR.md
+│   Twin-Function Doctrine · Vedic Kul/Vamsha Sociology · Semi-Divine Guilds ·
+│   Prana-Bandhana Beast Accord · Traditionalists vs Modernizers · Setu vs Autonomists ·
+│   Inter-Species Grudge Matrix · Central Bank Currency Squeeze · Sapta-Rishi Council.
+
+[ TIER 4: THE CORRUPTED REALM ]
+├── 07_TIER_4_CORRUPTED_REALM_DEVILS_AND_GRAND_AEGIS.md
+│   Devil Ecology (Corrupted Soul-Lifeforms) · Soul Sorting Failure · Netherholme &amp; Dread-Hold ·
+│   Rust Haven Scrap-Crawlers (Zero civil trains) · The Grand Aegis 5,000-Mile Shield ·
+│   Kay-Tyag (Soul-Only) Filter · The Four Summoning Restrictions · Class-Omega Taboo.
+
+[ ROUTE B SYSTEM REFERENCE — NO PROTAGONIST ]
+└── 10_PROTAGONIST_PROFILE_AND_ROUTE_B_ORIGIN.md
+    System-only Route B Protocol · Protagonist Slot Unassigned · Story Not Started ·
+    No Named MC · No Cheat Skills · [STATUS: RIKTA] Intake Marker · No Chapter Prose.
+═════════════════════════════════════════════════════════════════════════════════════</code></pre>
+<h3 id="1_1________-">1.1 मॉड्यूल-नकाशा: प्रत्येक फाईल काय देते (झटपट संदर्भ)</h3>
+<ol>
+<li><strong>01 — पायाभूत तत्त्वज्ञान:</strong> त्रिमूर्ती, अनंत कोर, चार टियर, सहा घटनात्मक पदे, तीन दैवी प्रतिनिधी, २४-तासांची लाल-शाई सील व भाषिक उतरंड. पहिली फाईल हीच पहा.</li>
+<li><strong>02 — वैश्विक इतिहास:</strong> चार युगे (उगम → महाप्रलय → महाविभाजन → वाफ-aether युग), सात शून्य-सील व श्रुतायुध, महा-अजगर (Grand Aegis) बांधणी, राख-ग्रहण टॅबू.</li>
+<li><strong>03 — वाढ-प्रणाली व शक्ती-वर्गीकरण:</strong> मेनू-विरह तत्त्वज्ञान, पाच स्तंभ, गुप्त सहावा स्तंभ (Atma-Tattva), प्रजातीनिहाय वाढ-इंजिन, कृति संकट-कायदा, अनंत-ध्वनि, १२ शक्ती-वर्ग, धनुर्वेद अस्त्र-उतरंड.</li>
+<li><strong>04 — आत्मा-प्रशासन:</strong> यम, विधाता व चित्रगुप्त यांची त्रयी, अधिकार-विभाजन, Route A प्रवाह, Route B (summoning / rare drift) व <strong>Pratigraha intake</strong>, रिक्त नियती, प्राण-सूत्र त्रिस्तरीय साखळी, पात्र-विसंगती, दूतांचे <strong>White Doot-Yānas</strong>.</li>
+<li><strong>05 — Buffer Zone / महा-सेतु:</strong> अंतरिक्ष-भौतिकी, चार क्षेत्रे, सेतु विद्या-पीठ, वज्र-दुर्ग, <strong>Pratigraha Ground</strong>, नागरी/लष्करी पाच-स्तरीय दर्जे, १३ नामनिर्देशित अधिकारी, सेतु महा-सेना, लाल-शाई प्रोटोकॉल, त्रि-विभागीय न्यायाधिकरण.</li>
+<li><strong>06 — Astral क्षेत्र:</strong> पाच विलग उप-क्षेत्रे (मानव, असुर, देव, श्वापद, मध्य), अभेद्य Aetheric Void, Human Sub-realm ९३–९५% powerless + ५–७% Awoken, मध्य-नगर केंद्र, अप्रत्यक्ष वर्चस्वाची साधने (चलन, कार्टेल, तार), दाबयुक्त Aether Bubble-Cars.</li>
+<li><strong>07 — Corrupted क्षेत्र:</strong> Devil परिसंस्था, आत्म-वर्गीकरण अपयश, नेदरहोम व Dread-Hold, Rust Haven भंगार-क्रॉलर (नागरी रेल्वे शून्य), ५,००० मैलांचे महा-अजगर, Kay-Tyag (फक्त-आत्मा) गाळणी, चार बोलावणी-निर्बंध, Class-Omega टॅबू.</li>
+<li><strong>08 — पात्र-संग्रह:</strong> सर्व टियरांतील <strong>९४</strong> प्रमाणित व्यक्ती, प्रत्येकीचा अद्वितीय अक्षर-अंकीय ID, बहु-सांस्कृतिक नावे, वण, आघात, करड नैतिकता, शस्त्रे, मानसशास्त्र व नाती. Protagonist slot unassigned.</li>
+<li><strong>09 — गट-संबंध:</strong> दुहेरी-कार्य सिद्धांत, कुळ/वंश समाजशास्त्र, अर्ध-दैवी गिल्ड, प्राण-बंधन श्वापद करार, पारंपरिक vs आधुनिकतावादी, सेतू vs स्वायत्ततावादी, अंतर-प्रजातीय वैरे-मॅट्रिक्स, मध्य बँकेचा चलन-दाब, सप्त-ऋषी परिषद.</li>
+<li><strong>10 — Route B System Reference:</strong> system-only आगमन-प्रोटोकॉल; <strong>protagonist slot unassigned</strong>, कथा सुरू नाही, शून्य चीट, <code>[STATUS: RIKTA]</code> intake marker, प्रकरण-मसुदा नाही.</li>
+</ol>
+<hr>
+<h2 id="2__master_verification___word-to-word_quality_checklist">2. Master Verification & Word-to-Word Quality Checklist (कथा लेखनापूर्वी तपासावयाचे १० सुवर्ण नियम)</h2>
+<p>Universe B मध्ये लिहिलेल्या प्रत्येक प्रकरणाने खालील invariance पाळल्या पाहिजेत:</p>
+<ol>
+<li><strong>Zero Gamer Menus / Zero Video Game Tropes:</strong> कोणतेही तरंगते होलोग्राफिक बॉक्स नाहीत, कृत्रिम अंकीय स्टॅट-स्तर नाहीत, आणि विनासायास मिळणाऱ्या "cheats" नाहीत. शक्ती म्हणजे शारीरिक तयारी, अभ्यास आणि संकट-कृती (<em>Kruti</em>).</li>
+<li><strong>The Ananta Chime (<em>Ananta-Dhvani</em>):</strong> केवळ आत्म्याच्या <em>Ajna Chakra</em> मध्ये, यशाच्या क्षणी ऐकू येतो; बाहेरच्यांना काहीच ऐकू येत नाही. शून्य मोफत वस्तू किंवा स्तर-वाढ देत नाही.</li>
+<li><strong>The Kay-Tyag Rule in Tier 4:</strong> Tier 3 मध्ये बोलावलेले Devils <strong>कठोरपणे अशरीरी आत्मे</strong> म्हणून येतात. त्यांचे भौतिक महाकाय शरीर व विषारी उत्परिवर्तन Abyss मध्येच राहतात.</li>
+<li><strong>The 93–95% Human Commoner Reality:</strong> Human Sub-realm मधील बहुतांश लोक शक्ती नसलेले कामकरी नागरिक आहेत; फक्त <strong>५–७% Awoken</strong>. इतर प्रजातींमध्येही बहुसंख्य सामान्य कामगार, पण त्यांचे प्रमाण वेगळे. जादू दुर्मिळ आणि महाग आहे.</li>
+<li><strong>No Open Walking Borders in Tier 3:</strong> पाच उप-क्षेत्रे <strong>Aetheric Spatial Void</strong> ने वेगळी आहेत. हालचालीसाठी Interdimensional Magic किंवा मध्य-चार्टर <em>Pressurized Aether Bubble-Cars</em> लागतात.</li>
+<li><strong>Multi-Cultural Naming & Organic Agency:</strong> असुर नावांना जर्मनिक/नॉर्डिक/स्लाव्हिक मुळे; देव नावांना ग्रीको-रोमन मुळे; मानवी सागरी नावांना अँग्लो-डच मुळे; मध्यवर्ती नावे वैश्विक. स्त्रिया कुळ-परंपरा व संस्थात्मक उत्कृष्टतेने अधिकार धारण करतात.</li>
+<li><strong>Ascending Linguistic Gradient:</strong> Tier 4 मध्ये भंगार-क्रॉलरची स्लॅंग → Tier 3 मध्ये बहु-सांस्कृतिक १९व्या शतकातील बोली व Hinglish खडबडीतपणा → Tier 2 मध्ये शास्त्रीय संस्कृत न्यायशास्त्र → Tier 1 मध्ये शुद्ध आदिम वैदिक संस्कृतचा अनुनाद.</li>
+<li><strong>The Red-Ink Seal (24-Hour Rule):</strong> ऋषी किंवा audit अधिकाऱ्यांनी लादलेला कोणताही प्रशासकीय गोठवण आदेश २४ वैश्विक तासांत प्रमुख ऋषींकडून औपचारिक Audit Warrant मिळवला नाही तर स्वतःच रद्द होतो.</li>
+<li><strong>Deva/Asura Twin-Function:</strong> देव = व्यवस्था-रक्षक (<em>Sthiti</em>); असुर = उत्क्रांती-उत्प्रेरक (<em>Vikāsa</em>). दोन्हीही जन्मजात वाईट किंवा पवित्र नाहीत.</li>
+<li><strong>No Protagonist / No Plot Armor:</strong> सध्या कोणताही नामनिर्देशित protagonist नाही; कोणतेही पात्र कृत्रिम कथानक-कवच, instant cheat किंवा "नियती-संरक्षक" वर जगत नाही. कथा सुरू झाल्यावरही शक्ती केवळ कृती, कर्म, प्रशिक्षण आणि धोक्यांतून.</li>
+</ol>
+<hr>
+<h2 id="3__how_to_use_this_bible">3. How To Use This Bible (ही बायबल कशी वापरायची)</h2>
+<ul>
+<li><strong>लेखनापूर्वी:</strong> या पानातील १० सुवर्ण नियम वाचा; ते प्रत्येक प्रकरणात तपासा.</li>
+<li><strong>पात्र लिहिताना:</strong> <code>08_Character_Dossiers_and_Psychology\</code> मधील Canonical ID वापरा; नवीन नावे स्वतःच घालू नका.</li>
+<li><strong>शक्ती-दृश्य लिहिताना:</strong> <code>02_Metaphysics_and_Power_Systems\08_Power_System_Consistency_Audit.md</code> हा अंतिम अधिकार आहे; तेथील <code>[CANON]</code> ओळी बदलू नका. फक्त F-13 (राम-नाम भक्ती / चिरंजीवी) व F-14 (नश्वरांकडून Tier 0 अस्त्र) <code>[OPEN AUTHOR CHOICE]</code> आहेत — त्या स्वतः ठरवू नका.</li>
+<li><strong>भाषा:</strong> कथेतील साधे संवाद खडबडीत, जमिनीवरच्या Hinglish मध्ये; तांत्रिक संज्ञा इंग्रजीत; शास्त्रीय थर शुद्ध वैदिक संस्कृतचा अनुनाद देणारा.</li>
+</ul></article>
+    <footer>INDEX.md · 113 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

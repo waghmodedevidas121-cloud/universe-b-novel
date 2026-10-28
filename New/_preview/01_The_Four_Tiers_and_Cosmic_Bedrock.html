@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01. Cosmic Foundation, Metaphysics &amp; The Four Tiers — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">01_Cosmology_and_Realms\01_The_Four_Tiers_and_Cosmic_Bedrock.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/01_Cosmology_and_Realms/01_The_Four_Tiers_and_Cosmic_Bedrock.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__the_child_cosmos__________________________canon_lock">1. The Child Cosmos (विश्वाची बाल्य अवस्था) [CANON LOCK]</a><a class="h2" href="#2__the_supreme_trinity___ananta_____-">2. The Supreme Trinity & Ananta (परम-सत्य, त्रिदेव व अनंत)</a><a class="h3" href="#2_1_the_supreme_trinity____________transcendent___almighty">2.1 The Supreme Trinity (त्रिदेव — Transcendent & Almighty)</a><a class="h3" href="#2_2_ananta_________the_system_core___cosmic_watcher">2.2 Ananta (अनंत — The System Core & Cosmic Watcher)</a><a class="h2" href="#3__the_four-tiered_cosmic_architecture___the_funnel_geometry">3. The Four-Tiered Cosmic Architecture & The Funnel Geometry</a><a class="h3" href="#3_1_the_dimensional_phase-shift_law__________________________canon_lock">3.1 The Dimensional Phase-Shift Law (आयामी स्तर व अदृश्यता) [CANON LOCK]</a><a class="h3" href="#3_2_corrupted_realm__the_severed_30__astral_slice__canon_lock">3.2 Corrupted Realm: The Severed 30% Astral Slice [CANON LOCK]</a><a class="h3" href="#3_3_kshira_sagara__the_singularity_starting_point__garbhodakashayi_vishnu___soul_energy__canon_lock">3.3 Kshira Sagara: The Singularity Starting Point, Garbhodakashayi Vishnu & Soul Energy [CANON LOCK]</a><a class="h2" href="#4__tier_1__divine_high_council___the_six_constitutional_upadhis">4. Tier 1: Divine High Council & The Six Constitutional Upadhis</a><a class="h3" href="#4_1_divine_realm_____-_____vs__high_council_realm_____-______canon_lock">4.1 Divine Realm (परम-धाम) vs. High Council Realm (सभा-लोक) [CANON LOCK]</a><a class="h3" href="#4_2_the_six_voting_constitutional_offices">4.2 The Six Voting Constitutional Offices (सहा घटनात्मक पदे)</a><a class="h3" href="#4_3_voting__policy_politics___unshakable_loyalty">4.3 Voting, Policy Politics & Unshakable Loyalty</a><a class="h2" href="#5__the_three_divine_delegates___departmental_retinues">5. The Three Divine Delegates & Departmental Retinues</a><a class="h3" href="#5_1_prajapati_s_department___cosmic_structure___creation_integrity">5.1 Prajapati's Department — Cosmic Structure & Creation Integrity</a><a class="h3" href="#5_2_narada_s_department___intelligence__communication___equilibrium">5.2 Narada's Department — Intelligence, Communication & Equilibrium</a><a class="h3" href="#5_3_rudra_s_department___containment___dissolution">5.3 Rudra's Department — Containment & Dissolution</a><a class="h2" href="#6__two-layer_intervention_model___constitutional_deadlines">6. Two-Layer Intervention Model & Constitutional Deadlines</a><a class="h3" href="#6_1_the_two-layer_intervention_system">6.1 The Two-Layer Intervention System</a><a class="h3" href="#6_2_strict_constitutional_deadlines">6.2 Strict Constitutional Deadlines</a><a class="h2" href="#7__the_linguistic___cultural_elevation_pyramid">7. The Linguistic & Cultural Elevation Pyramid</a></nav>
+  <div>
+    <article><h1 id="01__cosmic_foundation__metaphysics___the_four_tiers">01. Cosmic Foundation, Metaphysics & The Four Tiers</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\01_COSMIC_FOUNDATION_METAPHYSICS_AND_THE_FOUR_TIERS.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#cosmic-foundation</span> <span class="badge">#metaphysics</span> <span class="badge">#supreme-trinity</span> <span class="badge">#ananta-core</span> <span class="badge">#four-tiers</span> <span class="badge">#high-council</span> <span class="badge">#six-offices</span> <span class="badge">#divine-delegates</span> <span class="badge">#linguistic-elevation</span> <span class="badge">#canon-lock</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official Master Theological, Metaphysical & Administrative Foundation (October 2026)</p>
+<p><strong>Authority:</strong> Universe B च्या cosmic architecture साठी हा मुख्य single-source-of-truth आहे. Merges and refines <code>World/01</code>, <code>World/02</code>, <code>World/10</code>, <code>World/14</code>, <code>World/20</code>, <code>World/21</code>, and <code>World/22</code>.</p>
+<hr>
+<h2 id="1__the_child_cosmos__________________________canon_lock">1. The Child Cosmos (विश्वाची बाल्य अवस्था) [CANON LOCK]</h2>
+<p>Universe B ची निर्मिती Supreme Trinity ने केली आहे आणि हे एक Child Cosmos आहे. विश्वात चार मुख्य Tiers आहेत: Tier 1 Divine, Tier 2 Setu Buffer, Tier 3 Astral Living Realms, आणि Tier 4 Corrupted Realm. इतिहास चार मुख्य Eras मध्ये विभागला आहे आणि संपूर्ण विश्वाचे रक्षण 7 Cosmic Seals करतात:</p>
+<ul>
+<li><strong>Child Cosmos:</strong> नियम अजून स्थिर होत आहेत आणि संपूर्ण सिस्टमचा विकास चालू आहे. ब्रह्माच्या एका कल्प किंवा वैश्विक कालगणनेच्या तुलनेत हा विश्वाचा <strong>Childhood Stage</strong> आहे.</li>
+<li><strong>Supreme Trinity:</strong> Brahma, Vishnu, Shiva हे सिस्टमच्या पलीकडे आहेत, 0-Avatar Mandate लागू आहे.</li>
+<li><strong>Natural Systemic Evolution:</strong> Cosmic operating system, metaphysical laws, soul migration routes आणि ॲडमिनिस्ट्रेटिव्ह मर्यादा अजूनही आकार घेत आहेत. त्यामुळे System मध्ये anomalies आढळणे किंवा system updates होणे ही विश्वाची त्रुटी नसून त्याच्या <strong>Natural Growth चा एक भाग</strong> आहे.</li>
+<li><strong>Linguistic Pyramid:</strong> Tier 4 च्या Slang पासून Tier 1 च्या Vedic Sanskrit पर्यंत भाषेचे स्तर बदलतात. सामान्य संभाषणासाठी नैसर्गिक <strong>Hinglish / Roman-script vernacular blend</strong> वापरले जाते, तर आध्यात्मिक संकल्पना (<em>Karma, Tapasya, Ātma-tattva, Astras, Tri-Guna, Sanātana-Rta</em>) त्यांच्या मूळ शास्त्रीय वजनासह सुरक्षित आहेत.</li>
+</ul>
+<hr>
+<h2 id="2__the_supreme_trinity___ananta_____-">2. The Supreme Trinity & Ananta (परम-सत्य, त्रिदेव व अनंत)</h2>
+<h3 id="2_1_the_supreme_trinity____________transcendent___almighty">2.1 The Supreme Trinity (त्रिदेव — Transcendent & Almighty)</h3>
+<p>Supreme Trinity हे युनिव्हर्सल पॉवर सिस्टीम, लेव्हल्स, स्टॅट्स किंवा एनर्जीच्या पूर्णपणे पलीकडे आहेत:</p>
+<ol>
+<li><strong>Brahma (परम-ब्रह्म / विधाता-मूळ):</strong> The Primordial Creator. विश्वाची मूळ रचना, स्पेस-टाइम फॅब्रिक आणि वैश्विक मॅट्रिक्सचे Source Code Architect.</li>
+<li><strong>Maha-Vishnu (महा-विष्णु / पालक-मूळ):</strong> The Supreme Sustainer. <em>Ananta-Shesha</em> च्या वैश्विक पायावर विश्राम करतात. विश्वाचे संतुलन (<em>Sanātana-Rta</em>), जीवन-सातत्य आणि कर्माचे रक्षण सांभाळतात.</li>
+<li><strong>Rudra / Shiva (सदा-शिव / महेश):</strong> The Supreme Dissolver. अंतिम प्रलय (<em>Maha-Samhāra</em>), एन्ट्रॉपी आणि जुन्या संरचनांच्या विसर्जनाचे अधिपती. हे आदि आणि अंताच्या पलीकडे (<em>Anādi-Ananta</em>) आहेत.</li>
+</ol>
+<h4 id="the_zero-avatar_mandate__canon_lock">The Zero-Avatar Mandate [CANON LOCK]</h4>
+<p>Universe B मध्ये कोणतेही थेट दैवी अवतार (जसे Rama, Krishna किंवा Kalki) प्रत्यक्ष चालत नाहीत. हे विश्व जाणीवपूर्वक एक Autonomous Crucible म्हणून डिझाइन केले आहे, जिथे सर्व नश्वर आणि दैवी आत्म्यांना त्यांच्या स्वतःच्या Free Will, कर्म आणि संकटातील धाडसी कृतीतून (<em>Kruti</em>) विकसित व्हावे लागते. Trinity फक्त अधिकृत Cosmic Mandates, नेमलेले Delegates किंवा सिस्टीम सेफगार्ड्सद्वारेच हस्तक्षेप करते.</p>
+<h3 id="2_2_ananta_________the_system_core___cosmic_watcher">2.2 Ananta (अनंत — The System Core & Cosmic Watcher)</h3>
+<ul>
+<li><strong>Nature:</strong> Ananta हा तो जाणीव असलेला, पण निर्जीव पाया आहे ज्यावर Universe B स्थित आहे. हे <strong>Nirjīva (soulless), emotionless आणि incorruptible</strong> आहे. याला कोणतीही मुदत नाही, स्वतःचा कोणताही अहंकार नाही, आणि कोणताही Deva, Asura, Sage किंवा Abyssal Lord याला लाच देऊ शकत नाही, हॅक करू शकत नाही किंवा फसवू शकत नाही.</li>
+<li><strong>Two-Layer Permission Architecture [CANON LOCK]:</strong></li>
+</ul>
+<ol>
+<li><em>The Master Archive Layer (Root Ledger):</em> 100% Immutable आणि <strong>strictly append-only</strong>. आधीच्या नोंदी कधीही कोणत्याही अधिकाऱ्याकडून किंवा स्वतः Ananta कडूनही बदलल्या, बॅक-डेट किंवा डिलीट केल्या जाऊ शकत नाहीत. सिस्टीम दुरुस्त्या फक्त नवीन नोंदी म्हणून केल्या जातात.</li>
+<li><em>The Verification Engine Layer (Rule Engine):</em> हा एक ऑटोमेटेड, Read-Only लॉजिक इंजिन म्हणून काम करतो. Soul workflows किंवा breakthrough दरम्यान, Ananta स्थापित नियमांनुसार पडताळणी करतो, व्हॅलिडेशन पास देतो किंवा घंटा वाजवतो. <strong>Ananta कोणताही स्वतःचा स्वतंत्र निर्णय घेत नाही, कायदे बनवत नाही आणि कोणाचीही बाजू घेत नाही.</strong></li>
+<ul>
+<li><strong>The Two Acoustic Layers of the World (Ananta-Dhvani - अनंत-ध्वनि):</strong></li>
+</ul>
+<li><strong>Personal Audio (अंतर्नाद / Personal Chime):</strong> जेव्हा एखादा फायटर संकटात जीव धोक्यात घालून लढतो (<em>Kruti</em>), तेव्हा Ananta कडून वाजणारा पितळी घंटेचा नाद (<em>Ghantā-Nāda</em>) <strong>फक्त त्या व्यक्तीच्या अंतर्मनात (Ajna Chakra)</strong> ऐकू येतो. आजूबाजूच्या कोणालाही किंवा शत्रूला तो ऐकू येत नाही.</li>
+<li><strong>Cosmic Audio (वैश्विक घोषणा / Cosmic Mandate):</strong> जेव्हा High Council कडून Trinity च्या मंजुरीने वैश्विक कायदेशीर बदल जाहीर होतो, तेव्हा हा नाद <strong>केवळ अधिकृत Divine Office Holders आणि Council Members</strong> यांनाच ऐकू येतो, सामान्य लोकांना नाही.</li>
+<ul>
+<li><strong>Absolute Security:</strong> Ananta चे मूळ रूट कोड बदलण्याचे ऑथोरायझेशन कोड्स फक्त Supreme Trinity कडे आहेत.</li>
+</ul>
+</ol>
+<hr>
+<h2 id="3__the_four-tiered_cosmic_architecture___the_funnel_geometry">3. The Four-Tiered Cosmic Architecture & The Funnel Geometry</h2>
+<p><em>(विश्वाची चतुर्स्तरीय रचना, कॉस्मिक फनेल व आयामी स्तर) [CANON LOCK]</em></p>
+<p>संपूर्ण विश्वाची रचना एका महाकाय कॉस्मिक फनेल (Cosmic Funnel / Singularity Horn) सारखी आहे. विश्वाचा सुमारे ३०-४०% भाग या चार प्रमुख Tiers ने व्यापलेला आहे, तर उर्वरित ६०-७०% भाग हा आकाशगंगा, सौरमाला आणि पसरत जाणाऱ्या <strong>Growing Cosmic Edge</strong> ने व्यापलेला आहे:</p>
+<pre><code class="language-">[ SINGULARITY APEX (Origin / Hiranyagarbha) ] ── (Apex 3-4% Starting Point)
+  │  ╔══════════════════════════════════════════════════════════════════╗
+  │  ║ KSHIRA SAGARA (The Primordial Singularity Apex)                 ║
+  │  ║ Abode of GARBHODAKASHAYI VISHNU resting upon Ananta-Shesha       ║
+  │  ║ The Absolute Genesis Point where Universe B was created!         ║
+  │  ║ Source of all Pure Spiritual Energy &amp; Soul Life-Force!           ║
+  │  ╚══════════════════════════════════════════════════════════════════╝
+  │
+  ├─► [ TIER 1: DIVINE REALM &amp; HIGH COUNCIL ] ── (Highest Dimensional Frequency • 100% Combat Ban)
+  │
+  ├─► [ SPACE WITH GALAXIES &amp; STARS ] ── (Unclaimed Cosmic Expanse • Galaxies &amp; Solar Systems)
+  │
+  ├─► [ TIER 2: BUFFER ZONE (THE GREAT SETU) ] ── (Mid-High Military &amp; Transit Dimension)
+  │
+  ├─► ╔════════════════════════════════════════════════════════════╗
+  │   ║ 360° SPIRITUAL BARRIER (THE GRAND AEGIS)                   ║
+  │   ║  ┌──────────────────────────────────────────────────────┐  ║
+  │   ║  │ TIER 4: CORRUPTED REALM (Original 30% of Astral)     │  ║
+  │   ║  │ Devils • Toxic Wasteland • Sealed by 7 Cosmic Seals  │  ║
+  │   ║  └──────────────────────────────────────────────────────┘  ║
+  │   ╚════════════════════════════════════════════════════════════╝
+  │         ▲
+  │         │ (Adjacent dimensional frequency enables forbidden Soul Summoning!)
+  │         ▼
+  ├─► [ TIER 3: ASTRAL LIVING REALM (70% Remaining Living Wheel) ]
+  │         Five Isolated Dimensional Pocket-Realms (Human, Asura, Deva, Beast, Central)
+  │
+  └─► [ EXPANDING COSMIC FRONTIER (&quot;Growing Edge&quot; 60-70% Open Space) ]</code></pre>
+<h3 id="3_1_the_dimensional_phase-shift_law__________________________canon_lock">3.1 The Dimensional Phase-Shift Law (आयामी स्तर व अदृश्यता) [CANON LOCK]</h3>
+<ol>
+<li><strong>Same Cosmic Funnel, Different Dimensions:</strong> हे सर्व लोक्स एकाच वैश्विक जागेत आहेत, पण <strong>वेगवेगळ्या Dimensional Frequencies (Phase-Shifted Planes)</strong> वर वसलेले आहेत.</li>
+<li><strong>Absolute Invisibility:</strong> साध्या डोळ्यांनी किंवा ऑप्टिकल दुर्बिणीने पाहिल्यास दुसरा लोक <strong>0% दिसतो</strong>. सामान्य माणसाला आकाशात केवळ सामान्य तारे, आकाशगंगा आणि कृष्णविवरे दिसतात. </li>
+<li><strong>Astral Realm चे पाच उप-लोक एकाच ग्रहावर नाहीत:</strong> Deva, Asura, Human, Beast आणि Central हे पाचही उप-लोक एकाच जमिनीवर नसून <strong>पाच वेगवेगळ्या समांतर Pocket-Dimensions</strong> मध्ये आहेत.</li>
+<li><strong>Interdimensional Magic vs Commoner Tech:</strong></li>
+<ul>
+<li><em>Apex / Powerful Practitioners:</em> उच्च साधना आणि Interdimensional Magic ने स्वतःची फ्रिक्वेन्सी बदलून थेट एका लोकातून दुसऱ्या लोकात टेलिपोर्ट / फेज-शिफ्ट होतात.</li>
+<li><em>Commoners & Heavy Cargo:</em> Human Sub-realm मधील ९३–९५% सामान्य नश्वर आणि इतर उप-लोकांतील बहुसंख्य कामकरी; मालाच्या वाहतुकीसाठी <strong>Dimensional Aether Gates</strong> आणि <strong>Pressurized Aether Bubble Cars</strong> लागतात, जे Aether Bubble-Car ला दुसऱ्या डायमेंशनमध्ये फेज-शिफ्ट करतात.</li>
+</ul>
+</ol>
+<h3 id="3_2_corrupted_realm__the_severed_30__astral_slice__canon_lock">3.2 Corrupted Realm: The Severed 30% Astral Slice [CANON LOCK]</h3>
+<ul>
+<li><strong>Origin:</strong> Corrupted Realm हा पूर्वी <strong>Astral Realm चाच ३०% भाग होता</strong>, जो Era 2 मधील Void Cataclysm मुळे भ्रष्ट होऊन वेगळा झाला.</li>
+<li><strong>Position & Barrier:</strong> हा Astral Realm च्या डायमेंशनल फ्रिक्वेन्सीच्या अगदी लगत (Adjacent Dimensional Sub-Layer) आहे, पण त्याच्याभोवती <strong>३६०° Spiritual Barrier (The Grand Aegis)</strong> चे ५,००० मैलांचे कवच आहे.</li>
+<li><strong>Summoning Logic:</strong> जवळची डायमेंशन असल्यामुळेच Astral मधील दुष्ट साधक सीमेपलीकडे सूक्ष्म धागा टाकून <strong>Devils चा आत्मा summon करू शकतात</strong>; पण ग्रँड एजिसचे कवच डेव्हिल्सच्या १० टनी विषारी शरीराला नश्वर जगात प्रवेश करू देत नाही (Kay-Tyag Law).</li>
+</ul>
+<h3 id="3_3_kshira_sagara__the_singularity_starting_point__garbhodakashayi_vishnu___soul_energy__canon_lock">3.3 Kshira Sagara: The Singularity Starting Point, Garbhodakashayi Vishnu & Soul Energy [CANON LOCK]</h3>
+<ul>
+<li><strong>The Absolute Genesis Starting Point (विश्वाचा मूळ उगम):</strong> क्षीर सागर (Kshira Sagara) हा कोणताही साधा पाण्याचा समुद्र किंवा केवळ काठावरचा प्रवाह नाही. हा संपूर्ण विश्वाचा <strong>एकदम Starting Point — म्हणजेच Cosmic Singularity (हिरण्यगर्भ / Apex)</strong> आहे, जिथून हे संपूर्ण Universe B जन्माला आले आणि विस्तारले आहे.</li>
+<li><strong>Abode of Garbhodakashayi Vishnu (गर्भोदकशायी विष्णूंचे निवासस्थान):</strong> या मूळ सिंग्युलॅरिटीच्या क्षीर सागरावर <strong>Garbhodakashayi Vishnu</strong> अनंत-शेषावर (Ananta-Shesha) योगनिद्रेत विश्राम करतात. त्यांच्या नाभी-कमलातून चतुर्मुख ब्रह्मदेव प्रकट झाले आणि सृष्टीचा विस्तार सुरू झाला.</li>
+<li><strong>Fountainhead of Pure Spiritual Energy (शुद्ध चैतन्य व आत्मिक ऊर्जेचा महा-स्त्रोत):</strong> क्षीर सागर हे <strong>Pure Spiritual Energy चे मूळ स्त्रोत</strong> आहे. विश्वातील प्रत्येक आत्म्याला (Souls / Jiva) त्याचे मूळ चैतन्य, प्राण-शक्ती आणि आध्यात्मिक प्रकाश <strong>इथूनच प्राप्त होतो</strong>.</li>
+<li><strong>No Shore, No Life, No Guards (किनारा नाही, जीवन नाही, रक्षक नाही):</strong> क्षीर सागराला किनारा, लाटा, जलचर, बंदर, पायऱ्या, मंदिर, wards किंवा गस्त नाही. त्यात प्रवेश करणारे कोणतेही जिवंत शरीर, नश्वर वस्तू किंवा जहाज <strong>विलीन</strong> होते. उच्च-दर्जाचे Buffer Zone योद्धेही त्याच्या जवळ जाण्यास घाबरतात.</li>
+<li><strong>Soul Corridor & Multiverse Soul Nexus (आत्म-कॉरिडॉर):</strong> सिंग्युलॅरिटीच्या परिघातून नियुक्त <strong>Soul Corridor</strong> खाली पाझरतो. हा Birth Side आणि Death Side ला जोडणारा मल्टिव्हर्सचा (अनेकोटी ब्रह्मांड) आत्मिक मार्ग आहे; त्यातून <strong>कायदेशीर आत्मे</strong> Dvāra Gate कडे जातात. Corridor मध्ये अपवादात्मक भेग पडल्यास अनधिकृत आत्मा Route B drift म्हणून Dvāra Gate जवळ पोहोचतो. क्षीराच्या core मध्ये कोणी प्रवेश करत नाही; स्थूल भौतिक शरीर, साधे जहाज किंवा जिवंत प्राणी क्षीरात प्रवास करू शकत नाही.</li>
+</ul>
+<hr>
+<h2 id="4__tier_1__divine_high_council___the_six_constitutional_upadhis">4. Tier 1: Divine High Council & The Six Constitutional Upadhis</h2>
+<p><em>(सभा-लोक व षड्-दैवी संविधानात्मक पदे)</em></p>
+<h3 id="4_1_divine_realm_____-_____vs__high_council_realm_____-______canon_lock">4.1 Divine Realm (परम-धाम) vs. High Council Realm (सभा-लोक) [CANON LOCK]</h3>
+<ul>
+<li><strong>Divine Realm (परम-धाम):</strong> High Council च्या पलीकडचे ते अलौकिक धाम जिथे Supreme Trinity आणि त्यांचे व्यक्तिगत प्रतिनिधी राहतात. सामान्य आत्मे किंवा कनिष्ठ देवदूतांना इथे प्रवेश नसतो.</li>
+<li><strong>High Council Realm (सभा-लोक):</strong> ही ती मध्यवर्ती संसद आहे जिथे वैश्विक कायदे, कर्माच्या नोंदी आणि सिस्टीमचे संतुलन सांभाळण्यासाठी <strong>Six Divine Constitutional Offices</strong> एकत्र येतात.</li>
+<li><strong>Relationship:</strong> हे दोन <strong>Independent Linked Realms</strong> आहेत. यामुळे Trinity चे पावित्र्य आणि High Council ची प्रशासकीय स्वायत्तता दोन्ही सुरक्षित राहतात.</li>
+<li><strong>Absolute Combat Ban (Inviolable Invariant):</strong> High Council Realm मध्ये कोणत्याही प्रकारची शारीरिक हिंसा, शस्त्रे काढणे किंवा लढाई करणे <strong>100% निषिद्ध</strong> आहे. हा नियम कोणत्याही अपवादाशिवाय सर्वांना लागू होतो—Devas, Asuras, Sages, Palaks, अगदी Divine Delegates ना सुद्धा. तीव्र वाद झाला तरी कौन्सिल चेंबरमध्ये शस्त्र बाहेर काढण्याची कोणालाही परवानगी नाही.</li>
+</ul>
+<h3 id="4_2_the_six_voting_constitutional_offices">4.2 The Six Voting Constitutional Offices (सहा घटनात्मक पदे)</h3>
+<p>ही पदे लाखो वर्षांच्या निष्काम तपस्येने (<em>Nishkāma Tapasyā</em>) आणि Trinity च्या मंजुरीने उच्च पदावर पोहोचलेल्या निष्पक्ष आत्म्यांकडे आहेत. त्यांच्यात <strong>कोणताही भ्रष्टाचार किंवा स्वार्थ नसतो</strong>:</p>
+<div class="table-container"><table><thead><tr>
+<th>Constitutional Office</th>
+<th>Divine Title</th>
+<th>Primary Cosmic Jurisdiction & Portfolio</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>1. Office of Yama (यम-पद)</strong></td>
+<td><em>Chief Soul Administrator</em></td>
+<td>मृत्यूचे अंतिम न्यायाधीश, कर्माचे ऑडिट, ट्रान्झिट मंजुरी आणि आत्म्यांचे पुनर्चक्रण.</td>
+</tr>
+<tr>
+<td><strong>2. Office of Vidhata (विधाता-पद)</strong></td>
+<td><em>Master of Karmic Bonds</em></td>
+<td>पुनर्जन्म घेणाऱ्या आत्म्यांना <em>Prana-Sutra</em> द्वारे ठरवून दिलेल्या शरीराशी जोडणे.</td>
+</tr>
+<tr>
+<td><strong>3. Office of Citragupta (चित्रगुप्त-पद)</strong></td>
+<td><em>Cosmic Scribe & Ledger Keeper</em></td>
+<td>वैश्विक कर्म खातेवही (<em>Maha-Lekha</em>) सांभाळणे, Soul IDs देणे, कर्माच्या नोंदी ठेवणे.</td>
+</tr>
+<tr>
+<td><strong>4. Mahā-Pālaka (महा-पालक-पद)</strong></td>
+<td><em>Supreme Guardian of the Setu</em></td>
+<td>वैश्विक कायदा अंमलबजावणीचे प्रमुख, The Grand Setu चे रक्षक आणि सीमांचे संरक्षण.</td>
+</tr>
+<tr>
+<td><strong>5. Chief Sage (महर्षि-पद)</strong></td>
+<td><em>Supreme Inquisitor of Truth</em></td>
+<td>सिस्टीम मधील त्रुटींचे ऑडिट, तत्त्वज्ञान संशोधन आणि कौन्सिलसमोर निष्पक्ष तपास अहवाल देणे.</td>
+</tr>
+<tr>
+<td><strong>6. Prime Seeker (जिज्ञासु-पति-पद)</strong></td>
+<td><em>Pioneer of Evolutionary Expansion</em></td>
+<td>सिस्टीमची स्ट्रेस-टेस्टिंग, उत्क्रांतीच्या नव्या सीमांचा शोध आणि नियमांची चाचणी घेणे.</td>
+</tr>
+</tbody></table></div>
+<h3 id="4_3_voting__policy_politics___unshakable_loyalty">4.3 Voting, Policy Politics & Unshakable Loyalty</h3>
+<ul>
+<li><strong>Voting Franchise:</strong> वैश्विक कायदे, बजेट आणि आंतर-Tier नियमांवर मतदान करण्याचा अधिकार फक्त या सहा घटनात्मक पदांकडेच असतो.</li>
+<li><strong>Policy Friction:</strong> संरक्षणवादी <em>Palaks</em> (Security-first), प्रयोगशील <em>Seekers</em> (Experiment-first), आणि तपासनीस <em>Sages</em> (Audit-first) यांच्यात वैचारिक वाद होतात.</li>
+<li><strong>Absolute Dharmic Loyalty:</strong> वाद झाले तरी सर्व सहा पदांची Supreme Trinity आणि विश्वाच्या संरक्षणाप्रती <strong>100% अतूट निष्ठा</strong> असते. Tier 1 मध्ये लाचखोरी, वैयक्तिक लोभ किंवा देशद्रोह अस्तित्वात नाही.</li>
+</ul>
+<hr>
+<h2 id="5__the_three_divine_delegates___departmental_retinues">5. The Three Divine Delegates & Departmental Retinues</h2>
+<p><em>(दैवी प्रतिनिधी व त्यांचे मंडळ) [CANON LOCK]</em></p>
+<p>Divine Delegates हे विशिष्ट जबाबदाऱ्या पार पाडण्यासाठी Supreme Trinity चे थेट दूत म्हणून काम करतात.</p>
+<h4 id="constitutional_ansha_distinction__canon_lock___resolved">Constitutional Ansha Distinction [CANON LOCK / RESOLVED]:</h4>
+<ul>
+<li><strong>Prajapati & Narada (Envoys, Non-Ansha):</strong> Prajapati (Brahma चे दूत) आणि Deva-Rishi Narada (Vishnu चे दूत) हे स्वायत्त वैश्विक दूत आहेत. ते Supreme Trinity चे थेट अंश (<strong>NOT</strong> divine fractions) नसून सर्वोच्च अधिकाराखाली काम करणारे उच्च अधिकारी आहेत.</li>
+<li><strong>Rudra (The Explicit Constitutional Exception):</strong> Rudra हा Universe B मध्ये प्रकट झालेला Shiva चा एकमेव <strong>operational Ansha of Shiva</strong> आहे, ज्याच्यावर विसर्जन, नियंत्रण आणि एन्ट्रॉपी व्यवस्थापनाची जबाबदारी आहे. तो operational Ansha असल्यामुळे त्याचा घटनात्मक दर्जा इतरांपेक्षा वेगळा आहे.</li>
+<li><strong>Inviolable Invariant:</strong> Rudra कडे स्वतंत्रपणे वरदान देण्याचा किंवा वैश्विक कायदे बदलण्याचा अधिकार <strong>नाही</strong>; तो केवळ विसर्जन आणि नियंत्रणाची अंमलबजावणी करणारा अधिकारी आहे. तो कौन्सिलची मतदान प्रक्रिया डावलू शकत नाही.</li>
+</ul>
+<pre><code class="language-">                    [ SUPREME TRINITY (Brahma, Vishnu, Shiva) ]
+                                         │
+         ┌───────────────────────────────┼───────────────────────────────┐
+         ▼                               ▼                               ▼
+  [ PRAJAPATI ]                   [ NARADA ]                      [ RUDRA ]
+  (Brahma Mandate)                (Vishnu Mandate)                (Shiva Mandate)
+  Structural Integrity            Equilibrium &amp; Intel             Dissolution &amp; Quarantine
+  Cover: Chief Inspector          Cover: High Commissioner        Cover: Chief Adjudicator
+         │                               │                               │
+  ┌──────┴────────────────┐       ┌──────┴────────────────┐       ┌──────┴────────────────┐
+  │ Marichi (Lineages)    │       │ Sanatkumara (Ethics)  │       │ Nandi (Gatekeeper)    │
+  │ Atri (Anomalies)      │       │ Vashistha (Governance)│       │ Bhringi (Field Scout) │
+  │ Angiras (Vedic Tech)  │       │ Shuka (Witness)       │       │ (Mobilizes Palak      │
+  │ Bhrigu (Examiner)     │       │ (Mobilizes Sage/      │       │  Shock Garrisons)     │
+  │ Daksha (Institutions) │       │  Seeker Networks)     │       │                       │
+  └───────────────────────┘       └───────────────────────┘       └───────────────────────┘</code></pre>
+<h3 id="5_1_prajapati_s_department___cosmic_structure___creation_integrity">5.1 Prajapati's Department — Cosmic Structure & Creation Integrity</h3>
+<ul>
+<li><strong>Chief Envoy:</strong> <strong>Prajapati (प्रजापती)</strong></li>
+<li><strong>Public Cover Title:</strong> <em>Chief Inspector of Cosmic Structural Integrity</em>.</li>
+<li><strong>Mandate:</strong> स्पेस-टाइम फॅब्रिकचे स्ट्रक्चरल ऑडिट, उत्क्रांती मॉडेलची तपासणी आणि Seekers च्या प्रयोगांची सुरक्षा पडताळणी.</li>
+<li><strong>Advisory Retinue:</strong></li>
+</ul>
+<ol>
+<li><em>Marichi (मरीचि):</em> Senior Creation Researcher — प्रजातींची वंशरचना आणि जेनेटिक मॅट्रिक्सचे नकाशे तयार करतो.</li>
+<li><em>Atri (अत्रि):</em> Cosmic Anomaly Analyst — स्पेस-टाइममधील भेगा आणि आयामी दोषांचे विश्लेषण करतो.</li>
+<li><em>Angiras (अंगिरस):</em> Vedic Systems Specialist — मूळ मंत्र आणि ऊर्जा रूपांतरण प्रमाणांचे डिकोडिंग करतो.</li>
+<li><em>Bhrigu (भृगु):</em> Independent Technical Examiner — गृहीतकांना आव्हान देतो आणि वैज्ञानिक दाव्यांचे ऑडिट करतो.</li>
+<li><em>Daksha (दक्ष):</em> Institutional Administrator — संस्थात्मक रचना आणि प्रशासकीय शिस्त निश्चित करतो.</li>
+</ol>
+<h3 id="5_2_narada_s_department___intelligence__communication___equilibrium">5.2 Narada's Department — Intelligence, Communication & Equilibrium</h3>
+<ul>
+<li><strong>Chief Envoy:</strong> <strong>Deva-Rishi Narada (देवर्षी नारद)</strong></li>
+<li><strong>Public Cover Title:</strong> <em>High Commissioner of Cosmic Equilibrium</em>.</li>
+<li><strong>Mandate:</strong> सर्व Realms मधील राजनैतिक माहिती, मोठ्या संकटांमध्ये मध्यस्थी आणि <strong>Emergency Hold</strong> जारी करणे.</li>
+<li><strong>Advisory Retinue:</strong></li>
+</ul>
+<ol>
+<li><em>Sanatkumara (सनत्कुमार):</em> Philosophical Counsel — आंतर-विश्व वादांमागील नैतिक कारणांचे मूल्यांकन करतो.</li>
+<li><em>Vashistha (वसिष्ठ):</em> Counsel on Governance — राज्यकर्ते आणि जनरल्सना शांतता राखण्याचा सल्ला देतो.</li>
+<li><em>Shuka (शुकदेव):</em> Incorruptible Witness — जमिनीवरील वास्तवाविषयी निष्पक्ष आणि तटस्थ साक्ष देतो.</li>
+<ul>
+<li><em>Information Gathering:</em> खाजगी हेरांपेक्षा Sages, Palaks आणि Seekers च्या अधिकृत नेटवर्कचा वापर करतो.</li>
+</ul>
+</ol>
+<h3 id="5_3_rudra_s_department___containment___dissolution">5.3 Rudra's Department — Containment & Dissolution</h3>
+<ul>
+<li><strong>Chief Envoy:</strong> <strong>Rudra (रूद्र)</strong></li>
+<li><strong>Public Cover Title:</strong> <em>Chief Adjudicator of Inevitable Dissolution</em>.</li>
+<li><strong>Mandate:</strong> Corrupted Realm च्या सीमेवर कडक बंदोबस्त ठेवणे, 7 Dark Entity सीलची तपासणी करणे आणि क्वारंटाईन ऑपरेशन्स राबवणे.</li>
+<li><strong>Territorial Operational Boundary [CANON LOCK / RESOLVED]:</strong> Rudra चे लष्करी बळ आणि क्वारंटाईन ऑपरेशन्स <strong>केवळ जमिनीवरील प्रत्यक्ष सीमेवर</strong>—Tier 4 ची बॉर्डर, डीप व्हॉइड भेगा आणि Grand Aegis च्या निर्जन पट्ट्यातच मर्यादित असतात. High Council Realm मध्ये त्याला कोणतेही लष्करी बळ वापरण्याचा <strong>शून्य अधिकार</strong> आहे, कारण तिथे Absolute Combat Ban लागू आहे.</li>
+<li><strong>Field Retinue:</strong></li>
+</ul>
+<ol>
+<li><em>Nandi (नंदी):</em> Senior Gatekeeper — महत्त्वाच्या आयामी खिंडींवर चेकपॉईंट्सचे नेतृत्व करतो.</li>
+<li><em>Bhringi (भृंगी):</em> Dedicated Field Attendant — दूषित खोल भागात जाऊन प्रत्यक्ष माहिती गोळा करतो.</li>
+</ol>
+<hr>
+<h2 id="6__two-layer_intervention_model___constitutional_deadlines">6. Two-Layer Intervention Model & Constitutional Deadlines</h2>
+<p><em>(हस्तक्षेप प्रणाली व वैधानिक कालमर्यादा) [CANON LOCK]</em></p>
+<p>कोणत्याही प्रतिनिधी किंवा अधिकाऱ्याची एकाधिकारशाही रोखण्यासाठी कडक घटनात्मक मर्यादा लागू आहेत:</p>
+<h3 id="6_1_the_two-layer_intervention_system">6.1 The Two-Layer Intervention System</h3>
+<ul>
+<li><strong>Layer 1: Discretionary Investigation & Coordination:</strong> कोणताही Divine Delegate पूर्वपरवानगीशिवाय कोणत्याही Realm मध्ये (Astral, Buffer Zone, Corrupted Realm) जाऊन गुप्त तपास करू शकतो, फॅसिलिटीची पाहणी करू शकतो आणि अधिकाऱ्यांशी समन्वय साधू शकतो.</li>
+<li><strong>Layer 2: Executive Override & Structural Amendments:</strong> High Council चा कायदा निलंबित करण्यासाठी, आयामी सील तोडण्यासाठी किंवा वैश्विक सीमा बदलण्यासाठी Delegates कडे Supreme Trinity ने दिलेला <strong>Explicit Supreme Mandate</strong> असणे आवश्यक आहे.</li>
+</ul>
+<h3 id="6_2_strict_constitutional_deadlines">6.2 Strict Constitutional Deadlines</h3>
+<ol>
+<li><strong>The Sages' Red-Ink Seal (Rakta-Mudra — 24-Hour Rule):</strong> फील्ड ऑडिटर्स बेकायदेशीर माल ताबडतोब जप्त करू शकतात, संशयास्पद आर्काइव्ह सील करू शकतात किंवा ट्रेन्स अडवू शकतात; मात्र Chief Sage ची सही असलेला <strong>Audit Warrant 24 तासांच्या आत</strong> दाखल करावा लागतो. मंजुरी न मिळाल्यास सील आपोआप रद्द होतो आणि ऑडिटरवर कारवाई होते.</li>
+<li><strong>Vishnu Delegate's Emergency Hold (30-Day Rule):</strong> Narada विनाशकारी ठरावावर आपत्कालीन स्थगिती आणू शकतो; मात्र ही स्थगिती <strong>30 दिवसांनंतर</strong> आपोआप संपते. Trinity ने हस्तक्षेप न केल्यास किंवा तडजोड न झाल्यास तो प्रस्ताव बाद होतो आणि पूर्वीची स्थिती पूर्ववत होते.</li>
+<li><strong>Ananta Ledger Audit Limit:</strong> Delegates ना Ananta मधील नोंदी फक्त पाहण्याचा (Read-Only) अधिकार आहे. थेट बदल करण्यासाठी Trinity चे ऑथोरायझेशन कोड्स लागतात.</li>
+</ol>
+<hr>
+<h2 id="7__the_linguistic___cultural_elevation_pyramid">7. The Linguistic & Cultural Elevation Pyramid</h2>
+<p><em>(संस्कृत-वैदिक भाषा व सांस्कृतिक स्तर-उन्नती तत्त्व)</em></p>
+<p>Universe B मधील वैश्विक वास्तव भाषेच्या आणि संस्कृतीच्या चढत्या फ्रिक्वेन्सीद्वारे स्पष्ट दिसते:</p>
+<pre><code class="language-">┌─────────────────────────────────────────────────────────────────────────────┐
+│                 LINGUISTIC &amp; CULTURAL ELEVATION PYRAMID                     │
+├─────────┬──────────────────────────┬────────────────────────────────────────┤
+│ TIER 1  │ Pure Primordial Sanskrit │ Nāda-Brahma (Vibrational sound-truth).  │
+│ DIVINE  │ (देव-भाषा / वैदिक संस्कृत)│ थेट आत्म्याशी होणारा संवाद.             │
+├─────────┼──────────────────────────┼────────────────────────────────────────┤
+│ TIER 2  │ Classical Sanskrit       │ Vidhana-Patra (Administrative law).    │
+│ SETU    │ Jurisprudence (विधी-भाषा) │ कायदेशीर आदेश, सील, अकॅडमिक रिपोर्ट.    │
+├─────────┼──────────────────────────┼────────────────────────────────────────┤
+│ TIER 3  │ Mortal Multi-Cultural    │ फॅक्टरी बोलीभाषा, Greco-Roman कोर्ट्स, │
+│ ASTRAL  │ Mortal Tech &amp; Vernaculars  │ सागरी भाषा, आणि Prakrit/Hinglish संवाद.│
+├─────────┼──────────────────────────┼────────────────────────────────────────┤
+│ TIER 4  │ Corrupted Wastes Slang   │ भंगार गोळा करणाऱ्यांची भाषा, मेकॅनिक   │
+│ UNDER   │ &amp; Abyssal Cant           │ स्लँग, तुटलेले रुन्स आणि गुन्हेगारी भाषा.│
+└─────────┴──────────────────────────┴────────────────────────────────────────┘</code></pre>
+<ul>
+<li>Tier 3 आणि Tier 4 मधील दैनंदिन जीवन ग्रीस, बंदुकीची दारू, कोळशाचा धूर आणि खलाशांच्या संभाषणाने भरलेले वास्तववादी वाटते.</li>
+<li>जसजसा आत्मा Tier 2 आणि Tier 1 कडे वर चढतो, तसतशी भाषा शुद्ध कायदेशीर संस्कृत आणि मूळ वैदिक कंपनांमध्ये बदलत जाते.</li>
+</ul></article>
+    <footer>01_Cosmology_and_Realms\01_The_Four_Tiers_and_Cosmic_Bedrock.md · 230 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

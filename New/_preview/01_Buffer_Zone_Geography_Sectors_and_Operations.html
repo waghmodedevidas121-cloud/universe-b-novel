@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05. Tier 2: The Buffer Zone, Geography, Sectors &amp; Operations — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">04_Buffer_Zone_The_Setu\01_Buffer_Zone_Geography_Sectors_and_Operations.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/04_Buffer_Zone_The_Setu/01_Buffer_Zone_Geography_Sectors_and_Operations.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__macro-geography___cosmic_physics_of_antariksha">1. Macro-Geography & Cosmic Physics of Antariksha</a><a class="h3" href="#1_1_topography___gravitational_anchors">1.1 Topography & Gravitational Anchors</a><a class="h3" href="#1_2_technological___transportation_flavor">1.2 Technological & Transportation Flavor</a><a class="h3" href="#1_3_technology_matrix___realm_by_realm__canon_lock">1.3 Technology Matrix — Realm by Realm [CANON LOCK]</a><a class="h2" href="#2__the_four_sectors_of_the_great_setu">2. The Four Sectors of the Great Setu</a><a class="h3" href="#2_1_sector_1__the_central_administrative_hub______-">2.1 Sector 1: The Central Administrative Hub (मध्य-सेतू)</a><a class="h3" href="#2_2_sector_2__the_western_iron_frontier____________-">2.2 Sector 2: The Western Iron Frontier (पश्चिम लौह-सीमा)</a><a class="h3" href="#2_3_sector_3__pratigraha_ground____________________yama_s_reception_enclave">2.3 Sector 3: Pratigraha Ground (प्रतिग्रह मैदान — Yama's Reception Enclave)</a><a class="h3" href="#2_4_sector_4__the_northern_high_ascent___________-">2.4 Sector 4: The Northern High Ascent (उत्तर देव-सेतू)</a><a class="h2" href="#3__unified_5-tier_civil___martial_rank_hierarchy">3. Unified 5-Tier Civil & Martial Rank Hierarchy</a><a class="h2" href="#4__the_13_named_officers___lineages">4. The 13 Named Officers & Lineages</a><a class="h3" href="#department_a__the_assembly_of_sages_____________audit___investigation">Department A: The Assembly of Sages (ऋषी मंडळ — Audit & Investigation)</a><a class="h3" href="#department_b__order_of_palaks_______________security___defense">Department B: Order of Palaks (पालक परिषद — Security & Defense)</a><a class="h3" href="#department_c__guild_of_seekers_______________research___engineering">Department C: Guild of Seekers (संशोधक संघ — Research & Engineering)</a><a class="h3" href="#department_d__soul_administration_field_department">Department D: Soul Administration Field Department</a><a class="h2" href="#5__setu_mah_-sen___the_seven_combat_arms">5. Setu Mahā-Senā: The Seven Combat Arms</a><a class="h2" href="#6__investigation_pipeline___the_red-ink_protocol">6. Investigation Pipeline & The Red-Ink Protocol</a><a class="h2" href="#7__operational_regulations___bureaucratic_balance">7. Operational Regulations & Bureaucratic Balance</a><a class="h3" href="#7_1_the_tri-departmental_tribunal">7.1 The Tri-Departmental Tribunal</a><a class="h3" href="#7_2_the_five_bureaucratic_conflicts_of_tier_2">7.2 The Five Bureaucratic Conflicts of Tier 2</a><a class="h3" href="#7_3_disciplinary_penalties_matrix">7.3 Disciplinary Penalties Matrix</a></nav>
+  <div>
+    <article><h1 id="05__tier_2__the_buffer_zone__geography__sectors___operations">05. Tier 2: The Buffer Zone, Geography, Sectors & Operations</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\05_TIER_2_BUFFER_ZONE_GEOGRAPHY_SECTORS_AND_OPERATIONS.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#buffer-zone</span> <span class="badge">#tier-2</span> <span class="badge">#the-great-setu</span> <span class="badge">#antariksha</span> <span class="badge">#four-sectors</span> <span class="badge">#setu-vidyapeeth</span> <span class="badge">#setu-maha-sena</span> <span class="badge">#13-officers</span> <span class="badge">#operational-regulations</span> <span class="badge">#canon-lock</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official Administrative, Geographic & Military Specification (October 2026)</p>
+<p><strong>Authority:</strong> Tier 2 (The Buffer Zone / The Great Setu) ची अधिकृत भौगोलिक, प्रशासकीय आणि लष्करी कार्यप्रणाली. Merges, unifies, and expands <code>World/22</code>, <code>World/23</code>, <code>World/24</code>, and <code>World/25</code>.</p>
+<hr>
+<h2 id="1__macro-geography___cosmic_physics_of_antariksha">1. Macro-Geography & Cosmic Physics of Antariksha</h2>
+<p><em>(मध्यम-लोक / महा-सेतूची भूरचना व वैश्विक भौतिकशास्त्र) [CANON LOCK]</em></p>
+<p>Tier 2 (The Buffer Zone / शास्त्रीय <em>Antariksha</em>) हा Tier 3 (नश्वर Astral Realm) आणि 100% अहिंसक Tier 1 (Divine High Council Realm) यांच्यामध्ये अधांतरी बांधलेला <strong>एक अजस्त्र, इंजिनिअर्ड सेतू आणि अवकाशीय महामार्ग</strong> आहे:</p>
+<pre><code class="language-">                  [ TIER 1: DIVINE HIGH COUNCIL &amp; DIVINE REALM ]
+                                        ▲
+                                        │ (Deva-Setu / High Ascent)
+════════════════════════════════════════╪════════════════════════════════════════
+                  [ TIER 2: THE BUFFER ZONE / THE GREAT SETU ]
+  ┌───────────────────────┬──────────────────────────┬────────────────────────┐
+  │  WEST: IRON FRONTIER  │    CENTRAL: GRAND HUB    │ EAST: PRATIGRAHA GROUND │
+  │  - Lauha-Prakara      │    - Madhya-Setu Ring    │   - Pratigraha Godown   │
+  │  - Vajra-Durga (HQ)   │    - Setu Vidya-Peeth    │   - Conduit Dock        │
+  │  - Barrier Outposts   │    - Yantra-Kendra Labs  │   - Lekhya Bureau       │
+  │  - 5,000-Mile Trenches│    - Nyaya-Pitha Vaults  │   - Surface Rail Gate   │
+  └───────────┬───────────┴─────────────┬────────────┴───────────┬────────────┘
+              │                         │                        │
+  (Facing Corrupted Realm)      (Main Rail Terminal)     (Route A/B Arrival)
+════════════════════════════════════════╪════════════════════════════════════════
+                                        ▼
+                        [ TIER 3: THE ASTRAL REALM ]</code></pre>
+<h3 id="1_1_topography___gravitational_anchors">1.1 Topography & Gravitational Anchors</h3>
+<ul>
+<li><strong>Floating Continental Slabs (स्थिर खंड-शिळा):</strong> Tier 2 हा सपाट ग्रह नाही; अवकाशीय पोकळीत तरंगणाऱ्या लाखो मैल लांब ग्रॅनाइट आणि बेसॉल्ट खडकांची ही एक शृंखला आहे, जी <strong>Gravitational Anchors (<em>Guru-Keela</em>)</strong> द्वारे अंतराळात स्थिर केलेली आहे.</li>
+<li><strong>The Great Viaducts (महा-सेतू):</strong> अनेक मैल रुंद पोलादी पूल, दगडी कमानी आणि हायड्रॉलिक जॅक्स या तरंगणाऱ्या बेटांना एकमेकांशी जोडतात.</li>
+<li><strong>Atmosphere & Sky:</strong> आकाशात कायम सोनेरी-तांबूस संधिप्रकाश असतो (<em>Sāvitra-Prabhā</em>). हवेत ओझोन, आयनीकृत प्राण, बॉयलरची वाफ आणि जुन्या कागदांचा सुवास दरवळतो.</li>
+</ul>
+<h3 id="1_2_technological___transportation_flavor">1.2 Technological & Transportation Flavor</h3>
+<ul>
+<li><strong>Heavy Double-Gauge Steel Rail Networks:</strong> 50,000 मैलांचे अवजड रेल्वे जाळे, ज्यावर कॉम्प्रेस्ड स्टीम आणि प्राण-बॅटरीवर चालणाऱ्या आर्मर्ड ट्रेन्स धावतात.</li>
+<li><strong>Aetheric Telegraph Grid:</strong> हजारो मैल लांब तांब्याच्या तारा, ज्यावरून राजनैतिक संदेश आणि लष्करी सांकेतिक भाषा ट्रान्समिट केली जाते.</li>
+</ul>
+<h3 id="1_3_technology_matrix___realm_by_realm__canon_lock">1.3 Technology Matrix — Realm by Realm [CANON LOCK]</h3>
+<div class="table-container"><table><thead><tr>
+<th>Realm</th>
+<th>Base technology</th>
+<th>Rail?</th>
+<th>Magic density</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Divine Realm / Soul Administration</strong></td>
+<td>Divine authority, warded conduits, aether lifts, controlled teleport. No steam, no coal, no conventional engine.</td>
+<td><strong>No</strong></td>
+<td>100% divine / spiritual</td>
+</tr>
+<tr>
+<td><strong>Buffer Zone (Tier 2)</strong></td>
+<td>Prana-steam industrial base + divine conduit interface. The Setu is the only realm with an official heavy rail grid.</td>
+<td><strong>Yes — official Setu grid</strong></td>
+<td>Hybrid; magic common among officers, not mass-produced</td>
+</tr>
+<tr>
+<td><strong>Astral Central Sub-realm</strong></td>
+<td>Magitech core: inner quarters fully magical (spell-engines, aether architecture), plus administrative telegraphy and trade offices. No coal-steam industrial base.</td>
+<td><strong>No conventional rail</strong></td>
+<td>Very high (inner quarters)</td>
+</tr>
+<tr>
+<td><strong>Human Sub-realm</strong></td>
+<td>18th–19th century mortal technology: steam rail, telegraph, steel ships, early industry.</td>
+<td><strong>Local mortal rail only</strong> (not part of the Setu grid)</td>
+<td><strong>5–7%</strong>; remaining population powerless</td>
+</tr>
+<tr>
+<td><strong>Other Astral sub-realms</strong></td>
+<td>Magic-dominant local systems; technology varies by culture.</td>
+<td>No conventional rail</td>
+<td>High</td>
+</tr>
+</tbody></table></div>
+<blockquote><strong>Boundary rule:</strong> rail is a Buffer Zone signature. The Human Sub-realm's local steam rail is mortal infrastructure, not an extension of the Setu grid. No rail, steam engine, or coal line enters Soul Administration, the Divine Realm, or the Astral Central Sub-realm.</blockquote>
+<hr>
+<h2 id="2__the_four_sectors_of_the_great_setu">2. The Four Sectors of the Great Setu</h2>
+<p><em>(महा-सेतूचे चार प्रमुख विभाग)</em></p>
+<h3 id="2_1_sector_1__the_central_administrative_hub______-">2.1 Sector 1: The Central Administrative Hub (मध्य-सेतू)</h3>
+<p>हा Tier 2 चा प्रशासकीय, न्यायालयीन आणि तांत्रिक गाभा आहे:</p>
+<ol>
+<li><strong>Setu Vidya-Peeth (सेतू विद्यापीठ):</strong></li>
+<ul>
+<li>लोकप्रशासन, फॉरेन्सिक ऑडिट आणि युद्धनीती शिकवणारी सर्वोच्च अकॅडमी.</li>
+<li>सेतूवरील प्रत्येक अधिकाऱ्याला आणि सैनिकाला इथे <strong>3 वर्षांचे सक्तीचे निवासी प्रशिक्षण</strong> पूर्ण करावे लागते.</li>
+</ul>
+<li><strong>Nyaya-Pitha & Evidence Vaults (The Assembly of Sages):</strong></li>
+<ul>
+<li><strong>Chief Auditor Satyaketu</strong> आणि <strong>Medhavi</strong> यांच्या नेतृत्वाखाली चालणारे न्यायालय.</li>
+<li><em>Vault of Sealed Ledgers</em> — शतकानुशतके जमा केलेले भ्रष्टाचाराचे पुरावे आणि <strong>Red-Ink Seal</strong> लावलेल्या गोपनीय फाइल्स इथे कडक सुरक्षेत असतात.</li>
+<li><em>Acoustic Hearing Chamber</em> — साक्षीदारांचे जबाब थेट फिरणाऱ्या पितळी रेकॉर्डिंग सिलिंडर्सवर मेकॅनिकल पद्धतीने कोरले जातात.</li>
+</ul>
+<li><strong>Yantra-Kendra & Grand Foundries (Guild of Seekers):</strong></li>
+<ul>
+<li><strong>Grand Master Yuktinath</strong> आणि <strong>Chief Engineer Yantrika</strong> यांच्या नियंत्रणाखाली.</li>
+<li><em>Rift-Simulation Dome</em> (अवकाशीय भेगांची चाचणी घेणारा डोम) आणि मध्यवर्ती भागाला ऊर्जा पुरवणारे प्रचंड हाय-प्रेशर बॉयलर्स.</li>
+</ul>
+<li><strong>Grand Central Setu Terminus:</strong></li>
+<ul>
+<li>काळे पोलाद, काच आणि सागवानी लाकडाने बांधलेले व्हिक्टोरियन पद्धतीचे भव्य रेल्वे स्टेशन, जिथून प्रवासी आणि लष्करी गाड्या सुटतात.</li>
+</ul>
+</ol>
+<h3 id="2_2_sector_2__the_western_iron_frontier____________-">2.2 Sector 2: The Western Iron Frontier (पश्चिम लौह-सीमा)</h3>
+<p>Corrupted Realm च्या विषारी उत्तरेकडील सीमेवर उभारलेला लष्करी पट्टा:</p>
+<ol>
+<li><strong>Vajra-Durga (वज्र-दुर्ग — The Iron Citadel):</strong></li>
+<ul>
+<li><strong>Setu Mahā-Senā</strong> चे मुख्य लष्करी मुख्यालय, ज्याचे नेतृत्व <strong>Marshal-General Vajraketu</strong> करतो.</li>
+<li>300 फूट उंच तिहेरी बेसॉल्ट तटबंदी, स्वयंचलित टेलिग्राफ वॉर-रूम, आणि <em>Vajra-Dal</em> कमांडोच्या बॅरक्स.</li>
+</ul>
+<li><strong>Lauha-Prakara & The Trench Network:</strong></li>
+<ul>
+<li>5,000 मैल लांब खंदकांचे जाळे, ज्यावर रुनिक काटेरी तारा, प्राण-माइन्स, सर्चलाइट्स आणि मोठ्या स्फटिक तोफा तैनात आहेत.</li>
+</ul>
+<li><strong>Barrier Outposts (सीमा-चौक्या):</strong></li>
+<ul>
+<li><strong>Dhritika</strong> च्या अखत्यारीत. दर 50 मैलांवर अष्टकोनी बंकर्स, प्रत्येकात 100 सैनिक, टेलिग्राफ आणि स्टीम ट्रॅक-कार्स असतात.</li>
+</ul>
+<li><strong>Khanda-Droni (The Fractured Chasm):</strong></li>
+<ul>
+<li>तटबंदीपलीकडचा धोकादायक "No-Man's Land", जिथे कधीही अवकाशीय भेगा पडू शकतात.</li>
+</ul>
+</ol>
+<h3 id="2_3_sector_3__pratigraha_ground____________________yama_s_reception_enclave">2.3 Sector 3: Pratigraha Ground (प्रतिग्रह मैदान — Yama's Reception Enclave)</h3>
+<p>पूर्वेकडील सीमेवरील प्रतिबंधित प्रशासकीय भूभाग. हे बंदर नाही, किनारा नाही, तुरुंग नाही. Yama कार्यालयाच्या मैदानावर उभारलेले <strong>आगमन व quarantine godown</strong> आहे. <strong>Kshira Sagara इथे नाही</strong> — तो Divine Realm मधील Singularity Apex आहे; त्याचा किनारा, बोट, धक्का किंवा गस्त अस्तित्वात नाही.</p>
+<ol>
+<li><strong>Pratigraha Godown & Floor D:</strong></li>
+<ul>
+<li><strong>Warden Setuvrata</strong> च्या देखरेखीखालील सीलबंद आगमन-गोदाम; Dvāra Gate वरून direct teleport झालेले <strong>Ātma-Patra</strong> प्राप्त होतात.</li>
+<li><strong>दोन intake lanes:</strong> <strong>Route A — scheduled official dock</strong> (Release Seal सह सीलबंद Ātma-Patra; RIKTA marker नाही) आणि <strong>Route B — quarantine dock</strong> (RIKTA marker, Floor D).</li>
+<li>Route B मध्ये सेतुव्रत intake नोंद करतो आणि <strong><code>[STATUS: RIKTA / UNINDEXED]</code></strong> हा <strong>intake marker</strong> मारतो — हा नशीबाचा निर्णय नाही, Soul ID नाही, release seal नाही.</li>
+<li><strong>Floor D (Ledger Floor):</strong> Red-Ink / unindexed प्रकरणांसाठी स्वतंत्र सीलबंद मजला; audit प्रलंबित धरून ठेवले जाते.</li>
+</ul>
+<li><strong>Conduit Dock (Vahana-Tala):</strong></li>
+<ul>
+<li>Dootan च्या <em>White Doot-Yānas</em> साठी वार्ड-सीलबंद divine conduit bay; रूळ, वाफ, कोळसा — काहीही नाही. Dvāra Gate ते Pratigraha हा थेट divine teleport मार्ग आहे.</li>
+</ul>
+<li><strong>Pratigraha Surface Rail Gate:</strong></li>
+<ul>
+<li>Buffer Zone चा prana-steam rail spur <strong>फक्त परिमंडळापर्यंत</strong> येतो; तिथून personnel/cargo escorted walkway किंवा divine conduit ने आत जाते. <strong>Rail गोदामात प्रवेश करत नाही</strong> आणि High Council पर्यंत जात नाही.</li>
+</ul>
+<li><strong>Lekhya’s Karmic Verification Bureau:</strong></li>
+<ul>
+<li>लाल विटांची मोठी प्रशासकीय लायब्ररी, जिथे <strong>Lekhya</strong> आत्म्यांची ऊर्जा चित्रगुप्ताच्या मूळ डेटाबेसशी जुळवून पाहतो; जुळले तर पुढील प्रक्रिया, विसंगती असल्यास Red-Ink.</li>
+</ul>
+<li><strong>Yama (B) Entry Court:</strong></li>
+<ul>
+<li>Universe B च्या यमाचा <strong>entry jurisdiction</strong> desk; विधात्याकडून Release Seal सह आलेला handover स्वीकारतो. Source Yama चा exit jurisdiction आणि Yama (B) चा entry jurisdiction — दोन्ही समांतर, एकमेकांवर श्रेष्ठ नाही.</li>
+</ul>
+</ol>
+<h3 id="2_4_sector_4__the_northern_high_ascent___________-">2.4 Sector 4: The Northern High Ascent (उत्तर देव-सेतू)</h3>
+<p>Tier 1 कडे जाण्याचा पवित्र मार्ग:</p>
+<ol>
+<li><strong>Deva-Setu Gatehouse:</strong></li>
+<ul>
+<li>100 फूट उंच पांढऱ्या पितळी महाद्वार, जे रुनिक लॉक्सनी बंद असते; इथे फक्त <strong>Tier 1 Clearance</strong> असलेल्या चौघांनाच (Satyaketu, Vajraketu, Yuktinath, Niyam) किंवा Trinity च्या अधिकृत बोलावण्यावरच प्रवेश मिळतो.</li>
+</ul>
+<li><strong>The Celestial Ascender:</strong></li>
+<ul>
+<li>ढगांमधून थेट वर High Council कडे चढणारी महाकाय हायड्रॉलिक-प्राण लिफ्ट आणि <strong>aetheric conduit</strong>; उभे रूळ किंवा cog-rail नाही. हा Divine Realm चा प्रवेशमार्ग आहे, Buffer Zone rail नाही.</li>
+</ul>
+</ol>
+<hr>
+<h2 id="3__unified_5-tier_civil___martial_rank_hierarchy">3. Unified 5-Tier Civil & Martial Rank Hierarchy</h2>
+<p><em>(प्रमाणित ५-स्तरीय श्रेणी रचना) [CANON LOCK]</em></p>
+<p>चारही विभागांमधील सर्व अधिकारी, क्लार्क, सैनिक आणि शास्त्रज्ञ एका प्रमाणित ५-स्तरीय रचनेखाली काम करतात:</p>
+<div class="table-container"><table><thead><tr>
+<th>Grade</th>
+<th>Civil / Administrative Title</th>
+<th>Martial / Security Title</th>
+<th>Canonical Representative</th>
+<th>Security Clearance</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Grade 1</strong></td>
+<td><strong>Chief Field Auditor / Grand Master / Transit Overseer</strong></td>
+<td><strong>Marshal-General of the Great Setu</strong></td>
+<td><strong>Satyaketu, Yuktinath, Niyam, Vajraketu</strong></td>
+<td><strong>Tier 1 Clearance</strong> (दैवी प्रतिनिधींची खरी ओळख माहिती आहे)</td>
+</tr>
+<tr>
+<td><strong>Grade 2</strong></td>
+<td><strong>Senior Ledger Examiner / Chief Yantra Engineer</strong></td>
+<td><strong>Barrier Outpost Commander / Sector Chief</strong></td>
+<td><strong>Medhavi, Yantrika, Setuvrata, Dhritika</strong></td>
+<td><strong>Tier 2 Clearance</strong> (केवळ प्रशासकीय पदवी माहिती आहे)</td>
+</tr>
+<tr>
+<td><strong>Grade 3</strong></td>
+<td><strong>Anomaly Tracking Officer / Karmic Inspector / Ledger Courier</strong></td>
+<td><strong>Field Operations Captain / Strike Leader</strong></td>
+<td><strong>Anvesh, Lekhya, Dootan, Ranvay</strong></td>
+<td><strong>Tier 2 Clearance</strong></td>
+</tr>
+<tr>
+<td><strong>Grade 4</strong></td>
+<td><strong>Junior Auditor / Lab Fellow / Transit Scribe</strong></td>
+<td><strong>Platoon Commander / Fortress Sentinel / Rifleman</strong></td>
+<td>स्टेशन गार्ड्स, लॅब असिस्टंट्स, कंडक्टर</td>
+<td><strong>Tier 2 Clearance</strong></td>
+</tr>
+<tr>
+<td><strong>Grade 5</strong></td>
+<td><strong>Apprentice Clerk / Research Assistant</strong></td>
+<td><strong>Cadet / Recruit (प्रशिक्षार्थी)</strong></td>
+<td>विद्यापीठातील शिकाऊ विद्यार्थी</td>
+<td><strong>Tier 2 Clearance</strong></td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="4__the_13_named_officers___lineages">4. The 13 Named Officers & Lineages</h2>
+<p><em>(१३ अधिकृत अधिकारी, कुळ व जबाबदाऱ्या) [CANON LOCK]</em></p>
+<pre><code class="language-">[ THE HIGH COUNCIL / DIVINE OFFICES ]
+        │                       │                       │                       │
+ [ Chief Sage ]           [ Mahā-Pālaka ]        [ Prime Seeker ]         [ Yama / Vidhata / Chitragupta ]
+        │                       │                       │                       │
+(Chief Auditor)         (Marshal-General)        (Grand Master)             (Transit Overseer)
+   Satyaketu                Vajraketu               Yuktinath                     Niyam
+   [Tier 1]                 [Tier 1]                [Tier 1]                    [Tier 1]
+        │                       │                       │                       │
+   ┌────┴────┐             ┌────┴────┐             ┌────┴────┐             ┌────┼────┐
+   ▼         ▼             ▼         ▼             ▼         ▼             ▼    ▼    ▼
+Medhavi   Anvesh       Dhritika   Ranvay       Yantrika   Kshitij        Setu Lekhya Dootan
+[Tier 2]  [Tier 2]     [Tier 2]   [Tier 2]     [Tier 2]   [Tier 2]       [Tier 2] [Tier 2] [Tier 2]</code></pre>
+<h3 id="department_a__the_assembly_of_sages_____________audit___investigation">Department A: The Assembly of Sages (ऋषी मंडळ — Audit & Investigation)</h3>
+<ol>
+<li><strong>Satyaketu (सत्यकेतु) — Chief Field Auditor [Grade 1, Tier 1 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> सामान्य मानवी वंशातील; न्यायशास्त्राचा कडक अभ्यासक; अत्यंत निष्पक्ष.</li>
+<li><em>Tools:</em> <strong>24-Hour Red-Ink Seal (Rakta-Mudra)</strong>, चामड्याची बॅग, पितळी दिशादर्शक कंपास.</li>
+</ul>
+<li><strong>Medhavi (मेधावी) — Senior Ledger Examiner [Grade 2, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> देव वंशातील गणिततज्ज्ञ; आकड्यांची आणि वेळेची (Timestamp) काटेकोर तपासणी करणारा.</li>
+</ul>
+<li><strong>Anvesh (अन्वेष) — Anomaly Tracking Officer [Grade 3, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> डोंगराळ भागातील मानवी ट्रेकर; अवकाशीय भेगा आणि विसंगतींचा प्रत्यक्ष माग काढणारा.</li>
+</ul>
+</ol>
+<h3 id="department_b__order_of_palaks_______________security___defense">Department B: Order of Palaks (पालक परिषद — Security & Defense)</h3>
+<ol>
+<li><strong>Vajraketu (वज्रकेतु) — Marshal-General of the Great Setu [Grade 1, Tier 1 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> असुर वंशातील निष्कलंक सेनापती; 100,000 सैन्याचे नेतृत्व करतो.</li>
+<li><em>Equipment:</em> पोलादी चिलखत, टेलिग्राफ कोड चाव्या, आणि <em>Vajra-Mudra</em> कोरलेली मोठी गदा.</li>
+</ul>
+<li><strong>Dhritika (धृतिका) — Barrier Outpost Commander [Grade 2, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> सीमेवरील मानवी वंशातील; 50 मैलांच्या चौक्यांचे नेतृत्व करणारी खंबीर कमांडर.</li>
+</ul>
+<li><strong>Ranvay (रणवय) — Field Operations Captain [Grade 3, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> आघाडीवर लढणारा देव योद्धा; <em>Vajra-Dal</em> कमांडोचे नेतृत्व आणि दोन शिकारी कुत्रे सोबत असतात.</li>
+</ul>
+</ol>
+<h3 id="department_c__guild_of_seekers_______________research___engineering">Department C: Guild of Seekers (संशोधक संघ — Research & Engineering)</h3>
+<ol>
+<li><strong>Yuktinath (युक्तिनाथ) — Grand Master of System Research [Grade 1, Tier 1 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> असुर धातूशास्त्रज्ञ आणि ऊर्जा शास्त्रज्ञ; आधुनिक बॉयलर्स आणि अवकाशीय भौतिकशास्त्राचे प्रमुख.</li>
+</ul>
+<li><strong>Yantrika (यांत्रिका) — Chief Yantra Engineer [Grade 2, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> मानवी मेकॅनिकल इंजिनिअर; हाय-प्रेशर बॉयलर्स आणि स्फटिक बॅटऱ्यांची निगा राखणारी तज्ज्ञ.</li>
+</ul>
+<li><strong>Kshitij (क्षितिज) — Rift Expedition Commander [Grade 3, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> मानवी खगोलशास्त्रज्ञ आणि धाडसी संशोधक; अवकाशीय भेगांमध्ये आर्मर्ड ट्रेन नेणारा कॅप्टन.</li>
+</ul>
+</ol>
+<h3 id="department_d__soul_administration_field_department">Department D: Soul Administration Field Department</h3>
+<ol>
+<li><strong>Niyam (नियम) — High Transit Overseer [Grade 1, Tier 1 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> यमलोकातील प्राचीन निष्पक्ष आत्मा; आत्म्यांच्या वाहतूक कॉरिडॉरचा मुख्य समन्वयक.</li>
+</ul>
+<li><strong>Setuvrata / Warden Setu (सेतुव्रता) — Pratigraha Warden [Grade 2, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> Yama च्या quarantine व containment सेवेतील कुळ; सीलबंद पात्र-हाताळणी आणि containment wards मध्ये प्रशिक्षित. जल-साधक नाही, सागर-सीमा रक्षक नाही.</li>
+<li><em>Duties:</em> सीलबंद Ātma-Patra ग्रहण करणे, intake नोंद करणे, <code>[STATUS: RIKTA / UNINDEXED]</code> intake marker मारणे आणि Floor D सांभाळणे. नशीब, न्याय किंवा Soul ID — यात त्याचा अधिकार नाही.</li>
+</ul>
+<li><strong>Lekhya (लेख्या) — Karmic Bond Inspector [Grade 3, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> जुन्या लेखकांचे घराणे; आत्म्यांची ऊर्जा चित्रगुप्ताच्या आर्काइव्हशी ताडून पाहणारा.</li>
+</ul>
+<li><strong>Dootan (दूतान) — Senior Ledger Courier [Grade 3, Tier 2 Clearance]:</strong></li>
+<ul>
+<li><em>Lineage:</em> वेगवान संदेशवाहक; <em>The White Couriers</em> <strong>Doot-Yāna convoy</strong> चा प्रमुख आणि सीलबंद पितळी सिलिंडर्सचा रक्षक. तो Buffer Zone rail चालवत नाही — divine conduit वरून उडतो.</li>
+</ul>
+</ol>
+<hr>
+<h2 id="5__setu_mah_-sen___the_seven_combat_arms">5. Setu Mahā-Senā: The Seven Combat Arms</h2>
+<p><em>(सेतू महा-सेना व सात लढाऊ विभाग) [CANON LOCK]</em></p>
+<p>पाताळातील आक्रमणे आणि अवकाशीय भेगा रोखण्यासाठी सेतूवर 100,000 सैन्याची कायमस्वरूपी तैनाती असते:</p>
+<pre><code class="language-">┌─────────────────────────────────────────────────────────────────────────────┐
+│                       THE SEVEN COMBAT ARMS                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 1. FRONTIER LINE INFANTRY — बोल्ट-ॲक्शन रायफल्स, संगिनी, खंदकातील आघाडी.     │
+│ 2. ARMORED WAR-TRAIN CORPS — ६ इंची पोलादी चिलखताच्या तोफगाड्या.             │
+│ 3. HEAVY ARTILLERY &amp; SIEGE BATTERIES — तटबंदीवरील प्राण स्फटिक तोफा.        │
+│ 4. AERIAL RECON BLIMP WINGS — हवेत तरंगणाऱ्या वाफेच्या टेहळणी नौका.         │
+│ 5. BEAST SHOCK CAVALRY — चिलखती लढाऊ घोडे आणि दोन तोंडांचे शिकारी कुत्रे.    │
+│ 6. COMBAT SAPPERS &amp; ENGINEERS — जलद रेल्वे दुरुस्ती आणि काटेरी तारांचे जाळे.  │
+│ 7. ELITE STRIKE COMMANDOS (VAJRA-DAL) — खोल भेगांमध्ये जाऊन लढणारे कमांडो. │
+└─────────────────────────────────────────────────────────────────────────────┘</code></pre>
+<hr>
+<h2 id="6__investigation_pipeline___the_red-ink_protocol">6. Investigation Pipeline & The Red-Ink Protocol</h2>
+<p><em>(तपास कार्यप्रणाली व रक्त-मुद्रा नियम)</em></p>
+<pre><code class="language-">[ ANOMALY DETECTED ] ──► न्याय-पीठाला टेलिग्राफ संदेश
+        │
+        ▼
+[ STAGE 1: FIELD RECONNAISSANCE ]
+Anvesh प्रत्यक्ष नमुने, किरणोत्सर्ग मोजणी आणि प्रत्यक्षदर्शींचे जबाब गोळा करतो.
+        │
+        ▼
+[ STAGE 2: PREVENTIVE RED-INK INTERVENTION ]
+Satyaketu रेड-इंक सील लावून सर्व खाती आणि गोदामे ताबडतोब गोठवतो (फ्रीझ).
+कडक मुदत: २४ तासांच्या आत Chief Sage कडून अधिकृत Audit Warrant मिळवणे बंधनकारक!
+        │
+        ▼
+[ STAGE 3: LEDGER CROSS-EXAMINATION ]
+Medhavi चित्रगुप्ताच्या नोंदी, वेळेचे शिक्के आणि रेल्वेचे बिल तपासून पाहतो.
+        │
+        ▼
+[ STAGE 4: FORMAL VERDICT &amp; SANCTION ]
+Satyaketu त्रि-विभागीय लवाद किंवा High Council समोर अंतिम अहवाल सादर करतो.</code></pre>
+<hr>
+<h2 id="7__operational_regulations___bureaucratic_balance">7. Operational Regulations & Bureaucratic Balance</h2>
+<h3 id="7_1_the_tri-departmental_tribunal">7.1 The Tri-Departmental Tribunal</h3>
+<p>विभागांमधील वाद सोडवणारे निष्पक्ष न्यायालय (उदा. संशोधकांच्या प्रयोगामुळे लष्कराची तटबंदी फुटल्यास):</p>
+<ul>
+<li><em>न्यायाधीश:</em> <strong>Satyaketu</strong> (Assembly of Sages) — याच्याकडे <strong>निर्णायक मत (Casting Vote)</strong> असते.</li>
+<li><em>सुरक्षा अधिकारी:</em> <strong>Vajraketu</strong> (Order of Palaks) — सीमा सुरक्षेची बाजू मांडतो.</li>
+<li><em>तांत्रिक तज्ज्ञ:</em> <strong>Yuktinath</strong> (Guild of Seekers) — तांत्रिक स्पष्टीकरण देतो.</li>
+<li>निर्णय केवळ पुराव्यांवर होतात; कोणताही एक विभाग दुसऱ्यावर मनमानी कारवाई करू शकत नाही.</li>
+</ul>
+<h3 id="7_2_the_five_bureaucratic_conflicts_of_tier_2">7.2 The Five Bureaucratic Conflicts of Tier 2</h3>
+<ol>
+<li><strong>Jurisdiction Clashes:</strong> संशोधकांची नवी यंत्रे विरूद्ध लष्कराचे सुरक्षेचे नियम विरूद्ध ऋषींचे कायदेशीर ऑडिट.</li>
+<li><strong>The Blame Game:</strong> अवकाशीय गळती झाल्यावर गार्ड्स, इंजिनिअर्स आणि क्लार्क्स एकमेकांवर ढकलणारे आरोप.</li>
+<li><strong>Resource & Prana Budgeting:</strong> High Council च्या ऊर्जा अनुदानावरून होणारी चढाओढ (तटबंदीचे पोलाद विरूद्ध प्रयोगशाळेची यंत्रे).</li>
+<li><strong>Lineage Pride:</strong> असुर, देव आणि मानवी अधिकाऱ्यांमध्ये स्वतःच्या वंशाची श्रेष्ठता सिद्ध करण्याची चुरस.</li>
+<li><strong>Motherland Sympathy:</strong> व्यापारी शीतयुद्धाच्या वेळी स्वतःच्या मूळ उप-लोकाविषयी वाटणारी सुप्त सहानुभूती.</li>
+</ol>
+<h3 id="7_3_disciplinary_penalties_matrix">7.3 Disciplinary Penalties Matrix</h3>
+<div class="table-container"><table><thead><tr>
+<th>Offense Tier</th>
+<th>Violation Type</th>
+<th>Penalty Imposed</th>
+<th>Adjudicating Authority</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Minor</strong></td>
+<td>कर्तव्यात निष्काळजीपणा, ट्रेनला उशीर.</td>
+<td>प्राण-भत्त्यात कपात; १ महिना जादा सीमा गस्त.</td>
+<td>Department Head</td>
+</tr>
+<tr>
+<td><strong>Moderate</strong></td>
+<td>दप्तरात खोटी नोंद करणे, आज्ञा न पाळणे.</td>
+<td>एका श्रेणीने डिमोशन; ६ महिने निलंबन.</td>
+<td>Tri-Departmental Tribunal</td>
+</tr>
+<tr>
+<td><strong>Severe</strong></td>
+<td>भ्रष्टाचार, अवकाशीय भेगांशी बेकायदेशीर छेडछाड.</td>
+<td>नोकरीतून हकालपट्टी; सामान्य नागरिक म्हणून डिमोशन.</td>
+<td>Chief Sage / High Council</td>
+</tr>
+<tr>
+<td><strong>Treason</strong></td>
+<td>Tier 4 शी काळाबाजार; सात महा-बंधांशी छेडछाड.</td>
+<td><strong>Corrupted Realm मध्ये कायमची हद्दपारी</strong> किंवा आत्मा विसर्जन.</td>
+<td>Supreme High Council Bench</td>
+</tr>
+</tbody></table></div></article>
+    <footer>04_Buffer_Zone_The_Setu\01_Buffer_Zone_Geography_Sectors_and_Operations.md · 254 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

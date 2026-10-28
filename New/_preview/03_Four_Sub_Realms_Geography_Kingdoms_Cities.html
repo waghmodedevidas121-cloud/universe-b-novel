@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>36. Four Sub-Realms: Detailed Geography, Kingdoms, Cities &amp; Dynasties — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">05_Astral_Realm_Five_Sub_Realms\03_Four_Sub_Realms_Geography_Kingdoms_Cities.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/05_Astral_Realm_Five_Sub_Realms/03_Four_Sub_Realms_Geography_Kingdoms_Cities.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__overview__the_spatial_quadrants_of_the_astral_void">0. Overview: The Spatial Quadrants of the Astral Void</a><a class="h2" href="#1__the_human_sub-realm_________-______the_mortal_cradle">1. The Human Sub-Realm (मानव उप-लोक — The Mortal Cradle)</a><a class="h3" href="#1_1_the_kuru-panchala_confederation______-__________-">1.1 The Kuru-Panchala Confederation (कुरु-पांचाल महा-राज्य)</a><a class="h3" href="#1_2_the_coastal_merchant_league________-">1.2 The Coastal Merchant League (समुद्र-वाणिज्य संघ)</a><a class="h3" href="#1_3_the_northern_hermitage_valleys___________________tapovana">1.3 The Northern Hermitage Valleys (उत्तर ऋषी खोरे — Tapovana)</a><a class="h2" href="#2__the_asura_sub-realm_________-______the_chthonic_foundries">2. The Asura Sub-Realm (असुर उप-लोक — The Chthonic Foundries)</a><a class="h3" href="#2_1_the_vajra_kingdom___________________heavy_industry___armaments">2.1 The Vajra Kingdom (वज्र साम्राज्य — Heavy Industry & Armaments)</a><a class="h3" href="#2_2_the_deep_basin_clans_______-__________shaila-gadha">2.2 The Deep Basin Clans (पाताळ-खाण संघ — Shaila-Gadha)</a><a class="h2" href="#3__the_deva_sub-realm________-______the_celestial_heights">3. The Deva Sub-Realm (देव उप-लोक — The Celestial Heights)</a><a class="h3" href="#3_1_amaravati_dominion">3.1 Amaravati Dominion (अमरावती अधिराज्य)</a><a class="h3" href="#3_2_the_silver_cloud_sanctuaries_______-______________gandharva-puri">3.2 The Silver Cloud Sanctuaries (श्वेत-मेघ क्षेत्र — Gandharva-Puri)</a><a class="h2" href="#4__the_beast_sub-realm___________-______the_primeval_expanse">4. The Beast Sub-Realm (श्वापद उप-लोक — The Primeval Expanse)</a><a class="h3" href="#4_1_the_great_canopy_dominion___________-_____mah_-k_nt_ra">4.1 The Great Canopy Dominion (महान छत्र-वन — Mahā-Kāntāra)</a><a class="h3" href="#4_2_the_sky-cleaving_roost_____-______pakshi-shaila">4.2 The Sky-Cleaving Roost (गगन-कडा — Pakshi-Shaila)</a><a class="h3" href="#4_3_the_shadow_marsh______________gupt-kandara">4.3 The Shadow Marsh (छाया दलदल — Gupt-Kandara)</a></nav>
+  <div>
+    <article><h1 id="36__four_sub-realms__detailed_geography__kingdoms__cities___dynasties">36. Four Sub-Realms: Detailed Geography, Kingdoms, Cities & Dynasties</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\World\36_FOUR_SUB_REALMS_GEOGRAPHY_KINGDOMS_AND_CITIES.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#sub-realms</span> <span class="badge">#geography</span> <span class="badge">#kingdoms</span> <span class="badge">#cities</span> <span class="badge">#dynasties</span> <span class="badge">#human-realm</span> <span class="badge">#asura-realm</span> <span class="badge">#deva-realm</span> <span class="badge">#beast-realm</span> <span class="badge">#canon</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official Sub-Realm Topographical & Dynastic Gazetteer (19 October 2026)</p>
+<p><strong>Authority:</strong> Astral Realm मधील चार बाह्य उप-लोकांची सविस्तर भौगोलिक व राजकीय माहिती. Expands <code>32_ASTRAL_REALM_GEOGRAPHY_CLANS_AND_TIMELINE_OFFICERS.md</code> and <code>33_COSMIC_HISTORY_AND_THE_FOUR_ERAS.md</code>.</p>
+<hr>
+<h2 id="0__overview__the_spatial_quadrants_of_the_astral_void">0. Overview: The Spatial Quadrants of the Astral Void</h2>
+<p><em>(चार बाह्य उप-लोकांची रचना)</em></p>
+<p>महा-विभाजनानंतर (The Great Sundering), जिवंत विश्व मध्यवर्ती अक्षाभोवती चार स्वतंत्र आयामी भूखंडांमध्ये विभागले गेले:</p>
+<pre><code class="language-">                  [ 1. DEVA SUB-REALM (NORTH) ]
+            Celestial Cloud-Plateaus • Zero-Machinery
+                                │
+[ 2. ASURA SUB-REALM (WEST) ] ──┼── [ 4. HUMAN SUB-REALM (EAST) ]
+Basalt Forges • Heavy Industry  │   Mortal Cradle • 19th-C. Rail
+                                │
+                 [ 3. BEAST SUB-REALM (SOUTH) ]
+            100,000-Mile Wilderness • Primal Food Chain</code></pre>
+<hr>
+<h2 id="1__the_human_sub-realm_________-______the_mortal_cradle">1. The Human Sub-Realm (मानव उप-लोक — The Mortal Cradle)</h2>
+<ul>
+<li><strong>एकूण क्षेत्रफळ:</strong> २५ लाख चौरस मैल सुपीक नद्यांची खोरी, पानझडी जंगले, किनारी बेटे आणि समशीतोष्ण मैदाने.</li>
+<li><strong>वातावरण:</strong> श्वास घेण्याजोगे सामान्य वातावरण; नैसर्गिक ऋतूनुसार वाहणारा प्राण; १९व्या शतकातील औद्योगिक स्टीम तंत्रज्ञान.</li>
+<li><strong>लोकसंख्या:</strong> ~१२ कोटी (९३–९५% सामान्य नश्वर नागरिक — पूर्णपणे powerless; <strong>५–७%</strong> जागृत साधक, मंत्र-विद्या, औषधी ऋषी आणि दुर्मिळ रक्त-वारसा).</li>
+</ul>
+<h3 id="1_1_the_kuru-panchala_confederation______-__________-">1.1 The Kuru-Panchala Confederation (कुरु-पांचाल महा-राज्य)</h3>
+<ul>
+<li><strong>भूगोल:</strong> गंगा-यमुनेचे विस्तीर्ण खोरे; शेतीची मैदाने, कोळशाचे डेपो आणि दुहेरी रुळांचे रेल्वे ट्रॅक.</li>
+<li><strong>राजधानी:</strong> <strong>हस्तिनापूर (Hastinapura - The Steam Citadel)</strong> — विटा आणि ग्रॅनाइटने बांधलेले औद्योगिक शहर; अजस्त्र पितळी घड्याळांचे टॉवर, टेलिग्राफ हेडक्वार्टर आणि ग्रँड युनियन रेल्वे स्टेशन.</li>
+<li><strong>महत्त्वाची शहरे:</strong></li>
+<li><strong>Kampilya (धान्याचे कोठार):</strong> कृषी व्यापाराचे मुख्य केंद्र; धान्य साठवण्याचे अजस्त्र सायलो.</li>
+<li><strong>Indra-Prastha (दक्षिण प्रवेशद्वार):</strong> शेतीची उत्पादने समुद्राच्या बंदरांकडे नेणारे मोठे रेल्वे जंक्शन.</li>
+<li><strong>राज्यकर्ते:</strong> <strong>The Bharata Dynasty (भारत घराणे)</strong> — निवडून आलेली संसद आणि व्यापारी गिल्डमास्टर्स यांच्यासोबत चालणारी घटनात्मक राजेशाही.</li>
+<li><strong>पायाभूत सुविधा:</strong> <strong>Eastern Iron Line</strong> (हस्तिनापूरला थेट समुद्राच्या धक्क्यांशी जोडणारी रेल्वे); ४,००० मैलांचे टेलिग्राफ जाळे.</li>
+</ul>
+<h3 id="1_2_the_coastal_merchant_league________-">1.2 The Coastal Merchant League (समुद्र-वाणिज्य संघ)</h3>
+<ul>
+<li><strong>भूगोल:</strong> खडकाळ समुद्रकिनारे, खोल पाण्याची बंदरे, मिठागरे आणि <strong>नश्वर समुद्र (Nashvar Samudra — Mortal Sea)</strong> च्या खाड्या. हा Human Sub-realm चा सामान्य भौतिक महासागर आहे; <strong>Kshira Sagara नाही</strong>.</li>
+<li><strong>राजधानी:</strong> <strong>समुद्र-पट्टणम (Samudra-Pattanam - The Sea-City)</strong> — पांढऱ्या चुनखडीचे व्यापारी महाल, जहाजे बांधण्याच्या गोदी आणि ४०० फूट उंच दीपगृह.</li>
+<li><strong>महत्त्वाची शहरे:</strong></li>
+<li><strong>Moti-Bunder:</strong> मोती आणि समुद्रातील रेशीम विणण्याचे केंद्र.</li>
+<li><strong>Samudra-Spur (सीमा चौकी):</strong> पूर्वेकडील शेवटचे रेल्वे स्टेशन, customs आणि naval patrol station. <strong>Route B आत्मे इथे येत नाहीत</strong>; ते फक्त Pratigraha येथे Dvāra Gate वरून येतात.</li>
+<li><strong>शासन:</strong> <strong>Admiralty Council (Vanijya-Parishad)</strong> — व्यापारी ॲडमिरल आणि १२ व्यापारी घराण्यांचे प्रमुख.</li>
+</ul>
+<h3 id="1_3_the_northern_hermitage_valleys___________________tapovana">1.3 The Northern Hermitage Valleys (उत्तर ऋषी खोरे — Tapovana)</h3>
+<ul>
+<li><strong>भूगोल:</strong> देवदार वृक्षांची पवित्र जंगले, बर्फाळ नद्या आणि हिमालयासारख्या पर्वतश्रेण्या.</li>
+<li><strong>मुख्य तळ:</strong> <strong>Tapovana (ऋषींचे वन)</strong> — लाकडी कुटी, वनौषधी वाळवण्याचे अंगण आणि ध्यानाचे दगडी ओटे. इथे मशिन्सच्या आवाजावर कायद्याने बंदी आहे.</li>
+<li><strong>शासन:</strong> <strong>Rishi-Sabha</strong> — <em>Maharishi Dhaumya</em> यांच्या नेतृत्वाखालील ज्येष्ठ ऋषींचे मंडळ.</li>
+</ul>
+<hr>
+<h2 id="2__the_asura_sub-realm_________-______the_chthonic_foundries">2. The Asura Sub-Realm (असुर उप-लोक — The Chthonic Foundries)</h2>
+<ul>
+<li><strong>एकूण क्षेत्रफळ:</strong> ३० लाख चौरस मैल लाव्हाचे डोंगर, भूमिगत गुहा आणि पोलादाच्या खाणी.</li>
+<li><strong>वातावरण:</strong> गंधकाचा वास, खनिजयुक्त वाफ, भट्टीचा धूर; १५% जास्त गुरुत्वाकर्षण; अग्नि-स्फटिकांचा साठा.</li>
+<li><strong>लोकसंख्या:</strong> ~८ कोटी (९०% खाण कामगार, लोहार आणि दगड फोडणारे; १०% फोरमॅन व इंजिनिअर्स).</li>
+</ul>
+<h3 id="2_1_the_vajra_kingdom___________________heavy_industry___armaments">2.1 The Vajra Kingdom (वज्र साम्राज्य — Heavy Industry & Armaments)</h3>
+<ul>
+<li><strong>भूगोल:</strong> ब्लॅक काल्डेरा खोरे — जिवंत ज्वालामुखींच्या मधोमध वसलेली अजस्त्र औद्योगिक दरी.</li>
+<li><strong>राजधानी:</strong> <strong>वज्र-नगर (Vajra-Nagara - The Iron Spire)</strong> — थेट मॅग्माच्या मुखावर उभारलेले लोखंडी शहर; <strong>मॅग्मा-हॅमर्स</strong> आणि बहुस्तरीय <strong>aether lift platforms</strong>. पारंपरिक रेल्वे नाही.</li>
+<li><strong>महत्त्वाची शहरे:</strong></li>
+<li><strong>Loha-Giri:</strong> तोफांची चाचणी घेणारे आणि रायफल्स बनवणारे शस्त्र-शहर.</li>
+<li><strong>Vashpa-Pattanam:</strong> आजूबाजूच्या दऱ्यांना वाफेचा पुरवठा करणारे जिओथर्मल हायड्रॉलिक स्टेशन.</li>
+<li><strong>शासन:</strong> <strong>The Maya Dynasty (मय घराणे)</strong> — पदवी मिळवण्यासाठी <em>Yantra-Pariksha</em> (भट्टीची परीक्षा) पास करावी लागते.</li>
+</ul>
+<h3 id="2_2_the_deep_basin_clans_______-__________shaila-gadha">2.2 The Deep Basin Clans (पाताळ-खाण संघ — Shaila-Gadha)</h3>
+<ul>
+<li><strong>भूगोल:</strong> जमिनीखाली अनेक मैल खोल पसरलेल्या गुहांचे जाळे; कार्बाइड दिवे आणि चमकणाऱ्या खनिजांचा प्रकाश.</li>
+<li><strong>राजधानी:</strong> <strong>शैल-गढ (Shaila-Gadha - The Mountain Fortress)</strong> — काळ्या ऑब्सिडियन खडकात कोरलेले किल्ले, लोखंडी दोरांचे पूल आणि न्यूमॅटिक लिफ्ट्स.</li>
+<li><strong>शासन:</strong> <strong>The Seven Mining Clans</strong> — ज्यांचे नियंत्रण <em>Ilvala & Vatapi</em> बंधूंकडे आहे.</li>
+</ul>
+<hr>
+<h2 id="3__the_deva_sub-realm________-______the_celestial_heights">3. The Deva Sub-Realm (देव उप-लोक — The Celestial Heights)</h2>
+<ul>
+<li><strong>एकूण क्षेत्रफळ:</strong> २० लाख चौरस मैल अवकाशात तरंगणारे पांढरे ढगांचे पठार आणि सोनेरी संधिप्रकाश.</li>
+<li><strong>वातावरण:</strong> अतिशय शुद्ध, पातळ प्राण-वायू; बारमाही वसंत ऋतू; <strong>औद्योगिक मशिन्सचा वापर १००% निषिद्ध</strong>.</li>
+<li><strong>लोकसंख्या:</strong> ~४ कोटी (९०% रेशीम विणणारे, मंदिरातील सेवेकरी आणि बागायतदार; १०% सौर योद्धे).</li>
+</ul>
+<h3 id="3_1_amaravati_dominion">3.1 Amaravati Dominion (अमरावती अधिराज्य)</h3>
+<ul>
+<li><strong>भूगोल:</strong> मध्यवर्ती ढगांचे पठार — स्फटिकांचे डोंगर, पांढऱ्या संगमरवरी महालांच्या रांगा आणि धुके बनून कोसळणारे पवित्र धबधबे.</li>
+<li><strong>राजधानी:</strong> <strong>अमरावती (Amaravati - The Sun-Glade City)</strong> — सूर्याची किरणे गोळा करणारे काचेचे घुमट आणि वैश्विक स्वरांमध्ये वाजणारे घंटेचे टॉवर्स.</li>
+<li><strong>शासन:</strong> <strong>Aditya-Vansh (आदित्य वंश)</strong> — सौर सम्राटांचे शासन.</li>
+</ul>
+<h3 id="3_2_the_silver_cloud_sanctuaries_______-______________gandharva-puri">3.2 The Silver Cloud Sanctuaries (श्वेत-मेघ क्षेत्र — Gandharva-Puri)</h3>
+<ul>
+<li><strong>भूगोल:</strong> चांदीसारख्या पांढऱ्या झाडांचे मळे, शांत सरोवरांचे द्वीप आणि खुल्या नाट्यशाळा.</li>
+<li><strong>राजधानी:</strong> <strong>गंधर्व-पुरी (Gandharva-Puri)</strong> — कला आणि संगीताचे शहर; इथे बनणारे <em>Aether-Silk</em> कापड बंदुकीच्या गोळ्या आणि आगीचा प्रतिकार करू शकते.</li>
+<li><strong>शासन:</strong> <strong>Soma-Vansh & The Guild of Harmonic Artists</strong>.</li>
+</ul>
+<hr>
+<h2 id="4__the_beast_sub-realm___________-______the_primeval_expanse">4. The Beast Sub-Realm (श्वापद उप-लोक — The Primeval Expanse)</h2>
+<ul>
+<li><strong>एकूण क्षेत्रफळ:</strong> ५० लाख चौरस मैल आदिम, अथांग जंगल — लाखो वर्षे जुनी अजस्त्र झाडे, दलदल आणि हाडांच्या दऱ्या.</li>
+<li><strong>वातावरण:</strong> जड, जंगली प्राण-ऊर्जा; अति-उष्ण दमट हवामान; अमृतमय पावसाचे महापूर.</li>
+<li><strong>लोकसंख्या:</strong> कोट्यवधी नैसर्गिक वन्यजीव; हजारो जागृत पशू; डझनभर महाकाय Apex Titans.</li>
+</ul>
+<h3 id="4_1_the_great_canopy_dominion___________-_____mah_-k_nt_ra">4.1 The Great Canopy Dominion (महान छत्र-वन — Mahā-Kāntāra)</h3>
+<ul>
+<li><strong>भूगोल:</strong> १,५०० फूट उंच लोखंडी लाकडाच्या झाडांचे अखंड जंगल. अनेक वन्य प्रजाती जमिनीला पाय न लावता जन्मभर फांद्यांवरच राहतात.</li>
+<li><strong>Alpha Bastion:</strong> <strong>The Heartwood Sanctum (Vajra-Vana)</strong> — कल्पवृक्षांच्या महाकाय मुळांमधील नैसर्गिक गुहा.</li>
+<li><strong>Dominant Clan:</strong> <strong>The Vajra-Bhalluka (Four-Horned Armored Bears)</strong> — दगड चुरा करणारे चार शिंगांचे चिलखती अस्वल.</li>
+</ul>
+<h3 id="4_2_the_sky-cleaving_roost_____-______pakshi-shaila">4.2 The Sky-Cleaving Roost (गगन-कडा — Pakshi-Shaila)</h3>
+<ul>
+<li><strong>भूगोल:</strong> २०,००० फूट उंच ग्रॅनाइट खडकांचे सुळके; हवेतील तीव्र चक्रव्यूह.</li>
+<li><strong>Alpha Roost:</strong> <strong>Suparna-Giri</strong> — गरुड सम्राटांचे दगडी घरटे.</li>
+<li><strong>Dominant Lineage:</strong> <strong>The Suparna / Garuda Lineage</strong> — तलवारीसारख्या धारदार सोनेरी पंखांचे गरुड.</li>
+</ul>
+<h3 id="4_3_the_shadow_marsh______________gupt-kandara">4.3 The Shadow Marsh (छाया दलदल — Gupt-Kandara)</h3>
+<ul>
+<li><strong>भूगोल:</strong> शांत खारफुटीची दलदल, दलदल आणि अवकाशीय भेगांच्या कडा.</li>
+<li><strong>Dominant Lineage:</strong> <strong>The Shunya-Vyaghra (Void-Panthers)</strong> — अवकाश वाकवून सावलीतून हल्ला करणारे क्रूर शिकारी.</li>
+</ul></article>
+    <footer>05_Astral_Realm_Five_Sub_Realms\03_Four_Sub_Realms_Geography_Kingdoms_Cities.md · 114 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

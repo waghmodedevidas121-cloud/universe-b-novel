@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>32. Astral Realm: The Five Sub-Realms, Interdimensional Magic &amp; The Apex Core — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">05_Astral_Realm_Five_Sub_Realms\02_Astral_Realm_Geography_Clans_Timeline_Officers.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/05_Astral_Realm_Five_Sub_Realms/02_Astral_Realm_Geography_Clans_Timeline_Officers.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__executive_canon_redesign__the_5_sub-realms">0. Executive Canon Redesign: The 5 Sub-Realms</a><a class="h2" href="#1__the_two_universal_iron_laws">1. The Two Universal Iron Laws</a><a class="h3" href="#law_1__the_commoner_vs__apex_rule">Law 1: The Commoner vs. Apex Rule (सामान्य विरुद्ध शिखर नियम)</a><a class="h3" href="#law_2__known_dimensional_spheres__insuperable_void">Law 2: Known Dimensional Spheres, Insuperable Void (ज्ञात विश्व, अभेद्य पोकळी)</a><a class="h3" href="#law_3__the_historical_genesis___the_great_sundering_____-">Law 3: The Historical Genesis — The Great Sundering (महा-विभाजन)</a><a class="h2" href="#2__the_five_sub-realms_in_detail">2. The Five Sub-Realms in Detail</a><a class="h3" href="#sub-realm_1__the_deva_sub-realm____________celestial_order">Sub-Realm 1: The Deva Sub-Realm (देव लोक — Celestial Order)</a><a class="h3" href="#sub-realm_2__the_asura_sub-realm_____________chthonic_ambition">Sub-Realm 2: The Asura Sub-Realm (असुर लोक — Chthonic Ambition)</a><a class="h3" href="#sub-realm_3__the_beast_sub-realm_______________primeval_wilderness">Sub-Realm 3: The Beast Sub-Realm (श्वापद लोक — Primeval Wilderness)</a><a class="h3" href="#sub-realm_4__the_human_sub-realm_____________the_mortal_cradle">Sub-Realm 4: The Human Sub-Realm (मानव लोक — The Mortal Cradle)</a><a class="h3" href="#sub-realm_5__the_central_sub-realm_______________-______the_apex_political_core">Sub-Realm 5: The Central Sub-Realm (मध्यवर्ती महा-लोक — The Apex Political Core)</a><a class="h2" href="#3__the_interdimensional_magic_system">3. The Interdimensional Magic System (आयामी जादू)</a><a class="h3" href="#1__requirements_for_self-transit">1. Requirements for Self-Transit</a><a class="h3" href="#2__transporting_commoners__the_bubble_car">2. Transporting Commoners (The Bubble Car)</a></nav>
+  <div>
+    <article><h1 id="32__astral_realm__the_five_sub-realms__interdimensional_magic___the_apex_core">32. Astral Realm: The Five Sub-Realms, Interdimensional Magic & The Apex Core</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\World\32_ASTRAL_REALM_GEOGRAPHY_CLANS_AND_TIMELINE_OFFICERS.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#astral-realm</span> <span class="badge">#sub-realms</span> <span class="badge">#interdimensional-magic</span> <span class="badge">#apex-vs-common</span> <span class="badge">#fragmented-knowledge</span> <span class="badge">#devas</span> <span class="badge">#asuras</span> <span class="badge">#beasts</span> <span class="badge">#humans</span> <span class="badge">#the-central</span> <span class="badge">#canon</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Redesigned Sub-Realm & Spatial Metaphysics Specification (18 October 2026)</p>
+<p><strong>Authority:</strong> Astral Realm ची अधिकृत आयामी व भौगोलिक रचना. Merges and updates <code>World/29</code>, <code>World/32</code>, and <code>World/36</code>.</p>
+<hr>
+<h2 id="0__executive_canon_redesign__the_5_sub-realms">0. Executive Canon Redesign: The 5 Sub-Realms</h2>
+<p><em>(पाच स्वतंत्र उप-लोक, आयामी पॉकेट-डायमेंशन्स व अदृश्यता) [CANON LOCK]</em></p>
+<p>Astral Realm (Tier 3) हा <strong>कोणताही सलग सपाट भूभाग किंवा एकाच ग्रहावर पायी चालता येण्याजोग्या सीमा असलेला प्रदेश नाही</strong>.</p>
+<p>हा संपूर्ण भाग <strong>पाच स्वतंत्र Pocket-Dimensions मध्ये (Five Spatially Isolated Sub-Realms)</strong> विभागलेला आहे. हे पाचही उप-लोक एकाच जमिनीवर नसून वेगवेगळ्या आयामी फ्रिक्वेन्सीवर (Phase-Shifted Planes) स्थित आहेत, ज्यामुळे ते एकमेकांना साध्या डोळ्यांनी किंवा दुर्बिणीने <strong>100% अदृश्य</strong> आहेत. त्यांच्या दरम्यान एक प्राणघातक, अभेद्य <strong>Aetheric Spatial Void (आयामी पोकळी)</strong> आहे:</p>
+<pre><code class="language-">       [ 1. DEVA SUB-REALM ]                 [ 2. ASURA SUB-REALM ]
+   (Celestial Heights / Sacred Order)    (Chthonic Forges / Runic Void)
+                │                                      │
+                └───► [ Interdimensional Magic ] ◄────┘
+                               │
+                [ 5. THE CENTRAL SUB-REALM ]  ← (The Apex Core)
+                (Beyond Mortal Reach / Big Ones Only / Non-Violence Pact)
+                               │
+                ┌───► [ Interdimensional Magic ] ◄────┐
+                │                                      │
+       [ 4. HUMAN SUB-REALM ]                [ 3. BEAST SUB-REALM ]
+   (93–95% Non-Powered Mortal World)     (Primeval Wilderness / Wild Kings)
+
+    ═══════════════════════════════════════════════════════════════════════════
+    [ ADJACENT SUB-LAYER: TIER 4 CORRUPTED REALM (Severed 30% Astral Slice) ]
+    Era 2 मधील प्रलयात तुटलेला Astral चा 30% भाग लगतच्या डायमेंशनमध्ये 
+    360° Spiritual Barrier (The Grand Aegis) च्या आत कैद आहे. लगतच्या सीमेमुळेच 
+    Astral मधील दुष्ट साधक सीमेपलीकडे धागा टाकून Devils चा आत्मा summon करू शकतात.
+    ═══════════════════════════════════════════════════════════════════════════</code></pre>
+<hr>
+<h2 id="1__the_two_universal_iron_laws">1. The Two Universal Iron Laws</h2>
+<p><em>(तिहेरी वैश्विक लोह-नियम) [CANON LOCK]</em></p>
+<h3 id="law_1__the_commoner_vs__apex_rule">Law 1: The Commoner vs. Apex Rule (सामान्य विरुद्ध शिखर नियम)</h3>
+<p>कुळामुळे कोणतीही मोफत ताकद मिळत नाही. चारही प्रजातींमध्ये <strong>बहुसंख्य जनता (Human ९३–९५%; इतर प्रजाती ९०–९५%) ही सामान्य नागरिकांची आहे ज्यांच्याकडे कोणतीही जादुई शक्ती नाही</strong>:</p>
+<div class="table-container"><table><thead><tr>
+<th>Species</th>
+<th>The Commoners (The Vast Majority)</th>
+<th>The Apex Elites (Few % Awoken)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Humans</strong></td>
+<td><strong>93–95% लोकसंख्या:</strong> शेतकरी, दुकानदार, विणकर, खाण कामगार. पूर्णपणे powerless, सामान्य नश्वर जीवन.</td>
+<td><strong>5–7% Awoken:</strong> विद्वान, मार्शल प्रॅक्टिशनर्स, मंत्र-विद्या, औषधी ऋषी व यंत्रांवर प्रभुत्व मिळवणारे साधक.</td>
+</tr>
+<tr>
+<td><strong>Devas</strong></td>
+<td>साधे कारागीर, लेखक, मंदिरातील सेवेकरी, माळी. हवेत उडणे किंवा लढाई करण्याची शून्य क्षमता.</td>
+<td><strong>Deva Lords:</strong> सौर सुसंवाद, प्लाझ्मा भाले आणि प्रकाशाची अस्त्रे चालवणारे दिग्गज.</td>
+</tr>
+<tr>
+<td><strong>Asuras</strong></td>
+<td>लोहार, दगड फोडणारे, भंगार वेचणारे, शेतमजूर. कोणतीही काळी जादू किंवा विध्वंसक शक्ती नाही.</td>
+<td><strong>Asura Warlords & Masters:</strong> प्रचंड जैविक ताकद, व्हॉइड-टिअरिंग आणि अवजड <strong>मॅग्मा-स्मिथिंग</strong>चे उस्ताद.</td>
+</tr>
+<tr>
+<td><strong>Beasts</strong></td>
+<td>जंगलातील सामान्य वन्यजीव, हरणे, घोडे, बैल, पाळीव प्राणी.</td>
+<td><strong>Apex Beasts:</strong> हजारो वर्षे जगलेले महाकाय प्राणी, गरुड सम्राट आणि अवकाश वाकवणारे सावली चित्ते.</td>
+</tr>
+</tbody></table></div>
+<h3 id="law_2__known_dimensional_spheres__insuperable_void">Law 2: Known Dimensional Spheres, Insuperable Void (ज्ञात विश्व, अभेद्य पोकळी)</h3>
+<ul>
+<li><strong>Universal Knowledge:</strong> पाचही उप-लोकांचे अस्तित्व हे सर्वमान्य खगोलशास्त्रीय व भौगोलिक सत्य आहे. वर्तमानपत्रे (<em>Astral Samachar</em>) आणि शाळांची पुस्तके पाचही उप-लोकांचे नकाशे छापतात.</li>
+<li><strong>The Physical Void Barrier:</strong> १९व्या शतकातील लोकांना दुर्बिणीतून चंद्र आणि मंगळ दिसत होते पण तिथे चालत जाता येत नव्हते, तसेच या उप-लोकांमधील अवकाश ही <strong>Aetheric Spatial Void</strong> आहे. </li>
+<li><strong>The Transit Monopoly:</strong> ही पोकळी पार करण्यासाठी <strong>Interdimensional Magic</strong> किंवा मध्यवर्ती बँकेने परवाना दिलेली <strong>Pressurized Aether Bubble-Car</strong> लागते. सामान्य माणसाचे संपूर्ण जीवन स्वतःच्याच उप-लोकात जाते.</li>
+</ul>
+<h3 id="law_3__the_historical_genesis___the_great_sundering_____-">Law 3: The Historical Genesis — The Great Sundering (महा-विभाजन)</h3>
+<p>Era 1 आणि 2 मधील अखंड महाद्वीप दोन कारणांमुळे तोडला गेला:</p>
+<ol>
+<li><strong>Biological Scale Mismatch:</strong> ४० टनी पशू आणि लाव्हा ओकणाऱ्या असुरांच्या फॅक्टऱ्या यांच्या शेजारी सामान्य माणसांची वस्ती एकत्र राहू शकत नव्हती.</li>
+<li><strong>The Kin Wars:</strong> शुद्ध स्फटिकांच्या खाणींवरून झालेल्या प्रलयंकारी युद्धांमुळे टेक्टॉनिक प्लेट्स फुटू नयेत म्हणून महर्षींनी हे विभाजन घडवून आणले.</li>
+</ol>
+<hr>
+<h2 id="2__the_five_sub-realms_in_detail">2. The Five Sub-Realms in Detail</h2>
+<h3 id="sub-realm_1__the_deva_sub-realm____________celestial_order">Sub-Realm 1: The Deva Sub-Realm (देव लोक — Celestial Order)</h3>
+<ul>
+<li><strong>भूगोल:</strong> अवकाशात तरंगणारे पांढरे ढगांचे पठार, स्फटिकांचे संगमरवरी मिनार आणि पवित्र पाण्याच्या विहिरी.</li>
+<li><strong>समाज:</strong> सर्व देव योद्धे नसतात; सामान्य देव रेशीम विणणारे, ग्रंथ लिहिणारे आणि धूप गोळा करणारे असतात.</li>
+<li><strong>Apex Devas:</strong> सौर कंपने आणि प्रकाशाची ऊर्जा चालवणारे संरक्षक.</li>
+<li><strong>तंत्रज्ञान:</strong> दैवी कला, सुसंवादी घंटेचे नाद; <strong>औद्योगिक मशिन्सचा वापर १००% निषिद्ध</strong>.</li>
+</ul>
+<h3 id="sub-realm_2__the_asura_sub-realm_____________chthonic_ambition">Sub-Realm 2: The Asura Sub-Realm (असुर लोक — Chthonic Ambition)</h3>
+<ul>
+<li><strong>भूगोल:</strong> ज्वालामुखींचे डोंगर, भूमिगत मॅग्माच्या गुहा, बेसॉल्टचे टॉवर्स आणि फॅक्टऱ्यांची दरी.</li>
+<li><strong>समाज:</strong> असुर हे राक्षस नसून कष्टाळू कारागीर, लोहार आणि खंदक खोदणारे कामगार आहेत.</li>
+<li><strong>Apex Asuras:</strong> व्हॉइड-टिअरिंग आणि भूमिगत धातूशास्त्राचे उस्ताद; त्यांनी <em>Vajra-Nagara</em> सारखी लोखंडी शहरे उभी केली आहेत.</li>
+<li><strong>तंत्रज्ञान:</strong> अवजड रुनिक लोखंड, <strong>मॅग्मा-टर्बाइन्स</strong>, आणि तोफगोळे. पारंपरिक रेल्वे नाही; उर्जा मॅग्मा व aether-crystals मधून.</li>
+</ul>
+<h3 id="sub-realm_3__the_beast_sub-realm_______________primeval_wilderness">Sub-Realm 3: The Beast Sub-Realm (श्वापद लोक — Primeval Wilderness)</h3>
+<ul>
+<li><strong>भूगोल:</strong> १,००,००० मैल लांब अथांग प्राचीन जंगले, दलदल आणि हाडांच्या दऱ्या.</li>
+<li><strong>समाज:</strong> नैसर्गिक अन्नसाखळीचे कडक नियम; बहुसंख्य सामान्य वन्यजीव आहेत.</li>
+<li><strong>Apex Beasts:</strong> चार शिंगांचे महाकाय चिलखती अस्वल (<em>Vajra-Bhalluka</em>) आणि अवकाश वाकवणारे सावली चित्ते.</li>
+<li><strong>Aether-Bonds:</strong> ५-१०% पशू मानवांसोबत स्वेच्छेने <em>Prāṇa-Bandhana</em> कराराने मित्र बनून राहतात.</li>
+</ul>
+<h3 id="sub-realm_4__the_human_sub-realm_____________the_mortal_cradle">Sub-Realm 4: The Human Sub-Realm (मानव लोक — The Mortal Cradle)</h3>
+<ul>
+<li><strong>भूगोल:</strong> सुपीक नद्यांची खोरी, १९व्या शतकातील विटांची शहरे, रेल्वे जंक्शन्स आणि शेतीची मैदाने.</li>
+<li><strong>समाज:</strong> ९३–९५% लोक जादू नसलेले, पूर्णपणे powerless सामान्य नागरिक आहेत; राजे आणि गिल्डमास्टर्सच्या कायद्यांखाली राहतात.</li>
+<li><strong>Awoken (५–७%):</strong> तपोवनातील ऋषी, मंत्र-विद्या, औषधी वारसा आणि नाडी-शुद्धीचा सराव करणारे मार्शल योद्धे. Magic rare आहे, mass-produced नाही.</li>
+<li><strong>तंत्रज्ञान:</strong> १९व्या शतकातील मेकॅनिकल जग — पाणचक्क्या, वाफेची इंजिने, डबल-गेज रेल्वे, आणि हात-फिरवण्याचे टेलिग्राफ.</li>
+</ul>
+<h3 id="sub-realm_5__the_central_sub-realm_______________-______the_apex_political_core">Sub-Realm 5: The Central Sub-Realm (मध्यवर्ती महा-लोक — The Apex Political Core)</h3>
+<ul>
+<li><strong>स्थान:</strong> नश्वर जगापासून पूर्णपणे अलिप्त; पायी, जहाजाने किंवा साध्या वाहनाने इथे पोहोचता येत नाही. फक्त <strong>Dimensional Aether Gates</strong> किंवा उच्च Interdimensional Magic.</li>
+<li><strong>लोकसंख्या (५ ते ८ लाख):</strong></li>
+<li><strong>Apex Elites (~१०%):</strong> उच्च देव, असुर कुलप्रमुख, मानवी मुत्सद्दी ऋषी, पशूंचे सम्राट आणि व्यापारी.</li>
+<li><strong>Hereditary Service Clans (~९०%):</strong> पिढ्यानपिढ्या प्लंबिंग, <strong>aether conduits</strong>, स्वयंपाकघरे आणि बागा सांभाळणारे तटस्थ नागरिक.</li>
+<li><strong>Grand Concord Dome:</strong> निःशस्त्रीकरण शांतता करार असणारे संसद सभागृह.</li>
+<li><strong>चार अप्रत्यक्ष नियंत्रणे:</strong></li>
+</ul>
+<ol>
+<li><em>Monetary Monopoly:</em> Aether-Kosha Central Bank चे चलन <em>Aether-Rupee</em>.</li>
+<li><em>Resource Embargoes:</em> The Grand Exchange मार्फत पोलाद, धान्य आणि औषधांचे नियंत्रण.</li>
+<li><em>Spatial Transit Licensing:</em> प्रेशराइज्ड बबल-कार्सचे परवाने फक्त मध्यवर्ती सरकारच्या गिल्ड्सकडे असणे.</li>
+<li><em>Information Monopoly:</em> सर्व आंतर-लोकीय टेलिग्राफचे संदेश मध्यवर्ती स्विचिंग रूममधून जाणे.</li>
+</ol>
+<hr>
+<h2 id="3__the_interdimensional_magic_system">3. The Interdimensional Magic System (आयामी जादू)</h2>
+<p><em>(आयामी संक्रमण व प्रवासाचे नियम) [CANON LOCK]</em></p>
+<p>भौतिक चकचकीत साय-फाय पोर्टल्स नसल्याने उप-लोकांमधील प्रवास केवळ या चार आध्यात्मिक पद्धतींनी होतो:</p>
+<pre><code class="language-">[ CASTER&#x27;S SPECIES ] ────────► [ SPATIAL MECHANISM ] ────────► [ MANIFESTATION ]
+Deva Apex              Celestial Resonance             Harmonic Dissolution &amp; Golden Reform
+Asura Apex             Dimensional Tearing             Violent Void-Tear / Runic Breach
+Apex Beast             Innate Spatial Slip             Subconscious Slip through Space-Grain
+Awoken Human           Artifact Array / Circles        Aether-Crystal Matrices &amp; Talisman Anchors</code></pre>
+<h3 id="1__requirements_for_self-transit">1. Requirements for Self-Transit</h3>
+<ol>
+<li><strong>High Aether Reserves:</strong> अवकाशीय दाब सहन करण्यासाठी उच्च दर्जाचा प्राण-साठा लागतो.</li>
+<li><strong>Spatial Coordinate Anchor (दिक्-अंक):</strong> दुसऱ्या उप-लोकाचा अचूक गणिती कोऑर्डिनेट असल्याशिवाय अवकाश वाकवल्यास माणूस कायमचा व्हॉइडमध्ये गहाळ होतो.</li>
+<li><strong>Physical Resistance:</strong> गुरुत्वाकर्षणाचा फरक सहन करण्यासाठी वैयक्तिक शील्ड लागते.</li>
+</ol>
+<h3 id="2__transporting_commoners__the_bubble_car">2. Transporting Commoners (The Bubble Car)</h3>
+<p>सामान्य नागरिकांच्या प्रवासासाठी शिशाचे अस्तर आणि रबराचे गॅस्केट्स असलेल्या <strong>Enchanted Pressurized Passenger Cars (The Bubble Car)</strong> वापरल्या जातात. ट्रेन मध्य-नगरच्या रुनिक गेट्समधून जाताना प्रवाशांच्या फुफ्फुसांवर व्हॅक्यूमचा ताण येत नाही.</p></article>
+    <footer>05_Astral_Realm_Five_Sub_Realms\02_Astral_Realm_Geography_Clans_Timeline_Officers.md · 124 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

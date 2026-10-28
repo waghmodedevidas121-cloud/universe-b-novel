@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>26. Devas, Asuras, Rishis &amp; Non-Human Entities — Hierarchy &amp; Factions — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">07_Factions_Sociology_and_Cold_War\01_Devas_Asuras_Rishis_and_Factions.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/07_Factions_Sociology_and_Cold_War/01_Devas_Asuras_Rishis_and_Factions.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__scope__dependencies___reading_order">0. Scope, Dependencies & Reading Order (व्याप्ती, अवलंबित्व व वाचनक्रम)</a><a class="h2" href="#1__foundational_doctrine___beyond_good_vs_evil___________________________vs_______________________canon_lock">1. Foundational Doctrine — Beyond Good vs Evil (मूलभूत सिद्धांत — चांगले vs वाईट यांच्या पलीकडे) [CANON LOCK]</a><a class="h3" href="#1_1_the_rejected_model">1.1 The Rejected Model (नाकारलेला नमुना)</a><a class="h3" href="#1_2_the_twin-function_doctrine___yugala-dharma________-">1.2 The Twin-Function Doctrine (Yugala-Dharma — द्वि-कार्य सिद्धांत)</a><a class="h3" href="#1_3_the_two_cosmic_pathologies">1.3 The Two Cosmic Pathologies (दोन वैश्विक विकृती)</a><a class="h3" href="#1_4_the_balance_mandate">1.4 The Balance Mandate (संतुलनाचा आदेश)</a><a class="h2" href="#2__coexistence__residency___the_birth_equality_rule__________________________-____________canon_lock">2. Coexistence, Residency & the Birth Equality Rule (सहअस्तित्व, निवास व जन्म-समता नियम) [CANON LOCK]</a><a class="h3" href="#2_1_where_each_lineage_lives">2.1 Where Each Lineage Lives (प्रत्येक वंश कुठे राहतो)</a><a class="h3" href="#2_2_the_birth_equality_rule__janma-samat__niyam_______-">2.2 The Birth Equality Rule (Janma-Samatā Niyam — जन्म-समता नियम)</a><a class="h3" href="#2_3_what_can_never_be_inherited__locked_list">2.3 What Can Never Be Inherited (Locked List — कधीही वारसा मिळू न शकणाऱ्या गोष्टी)</a><a class="h2" href="#3__lineages___social_structure___vedic__kul___vamsha__in_an_industrial-mythic_society_______________________________-_______________________canon_lock">3. Lineages & Social Structure — Vedic Kul / Vamsha in an Industrial-Mythic Society (वंश व सामाजिक रचना — औद्योगिक-पौराणिक समाजातील कुल) [CANON LOCK]</a><a class="h3" href="#3_1_two-terminology_discipline_____-">3.1 Two-Terminology Discipline (दोन-संज्ञा शिस्त)</a><a class="h3" href="#3_2_the_vamsha_registry__recorded_bloodlines">3.2 The Vamsha Registry (Recorded Bloodlines — नोंदणीकृत रक्तरेषा)</a><a class="h3" href="#3_3_from_vedic__kul__to_industrial_guild-kul________________________________-">3.3 From Vedic Kul to Industrial Guild-Kul (वैदिक कुलापासून औद्योगिक गिल्ड-कुलापर्यंत)</a><a class="h3" href="#3_4_the_code_of_the_great_setu___equal_legal_rights_____-___________________________________canon_lock">3.4 The Code of the Great Setu — Equal Legal Rights (महा-सेतु संहिता — समान कायदेशीर हक्क) [CANON LOCK]</a><a class="h2" href="#4__rishis___sages___independent_philosophical_authority________________________________________canon_lock">4. Rishis & Sages — Independent Philosophical Authority (ऋषी व संत — स्वतंत्र तात्विक अधिकार) [CANON LOCK]</a><a class="h3" href="#4_1_the_non-subordination_rule__asambandha_niyam____-">4.1 The Non-Subordination Rule (Asambandha Niyam — अ-अधीनता नियम)</a><a class="h3" href="#4_2_rishi_ranks________________06_____06_entities_and_races_md___2_7">4.2 Rishi Ranks (ऋषी दर्जे — [06](./06_ENTITIES_AND_RACES.md) §2.7 मधून)</a><a class="h3" href="#4_3_the_sapta-rishi_council___saptarshi_sabha_____________________canon_lock">4.3 The Sapta-Rishi Council (Saptarshi Sabha — सप्तर्षी परिषद) [CANON LOCK]</a><a class="h3" href="#4_4_sages__special_instruments">4.4 Sages' Special Instruments (ऋषींची विशेष साधने)</a><a class="h2" href="#5__non-human___semi-divine_entities___roles__guilds___contributions_______________-____________________________________canon_lock">5. Non-Human & Semi-Divine Entities — Roles, Guilds & Contributions (अमानवी व अर्ध-दैवी जीव — भूमिका, गिल्ड व योगदान) [CANON LOCK]</a><a class="h3" href="#5_1_master_table">5.1 Master Table (मुख्य तक्ता)</a><a class="h3" href="#5_2__pr__a-bandhana____the_beast_partnership_accord______________________canon_lock">5.2 Prāṇa-Bandhana — the Beast Partnership Accord (पशू भागीदारी करार) [CANON LOCK]</a><a class="h3" href="#5_3_semi-divine_guild_summary______-">5.3 Semi-Divine Guild Summary (अर्ध-दैवी गिल्ड सारांश)</a><a class="h2" href="#6__factional_dynamics___ideological_clashes____-___________________________canon_lock">6. Factional Dynamics & Ideological Clashes (गट-गतिशीलता व वैचारिक टकराव) [CANON LOCK]</a><a class="h3" href="#6_1_faction_map__two_axes_____-">6.1 Faction Map (Two Axes — गट-नकाशा, दोन अक्ष)</a><a class="h3" href="#6_2_traditionalist_orders_vs_industrial_modernizers_______________vs">6.2 Traditionalist Orders vs Industrial Modernizers (पारंपरिक संघ vs औद्योगिक आधुनिकीकरणकर्ते)</a><a class="h3" href="#6_3_setu_loyalists_vs_astral_regional_autonomists_________________vs_astral">6.3 Setu Loyalists vs Astral Regional Autonomists (सेतु निष्ठावान vs Astral प्रादेशिक स्वायत्ततावादी)</a><a class="h3" href="#6_4_cross-cutting_realities__anti-simplification_rules__________-">6.4 Cross-Cutting Realities (Anti-Simplification Rules — सरलीकरण-विरोधी नियम)</a><a class="h2" href="#7__institutional_relationships_____________________canon_lock">7. Institutional Relationships (संस्थात्मक संबंध) [CANON LOCK]</a><a class="h3" href="#7_1_the_four_buffer_zone_departments___who_each_faction_courts______buffer_zone">7.1 The Four Buffer Zone Departments — Who Each Faction Courts (चार Buffer Zone विभाग — कोणता गट कोणाला जवळ करतो)</a><a class="h3" href="#7_2_the_six_divine_offices___standing_position_on_each_lineage_bloc_____________________________-">7.2 The Six Divine Offices — Standing Position on Each Lineage Bloc (सहा दैवी पदे — प्रत्येक वंश-गटावर स्थिती)</a><a class="h3" href="#7_3_delegates__standing_rule">7.3 Delegates' Standing Rule (प्रतिनिधींचा स्थायी नियम — वारशाने, बदल नाही)</a><a class="h3" href="#7_4_the_doctrinal_boundary_table">7.4 The Doctrinal Boundary Table (सैद्धांतिक सीमा तक्ता — कोण काय करू शकत नाही)</a><a class="h2" href="#8__canon_lock_rules___the_ten_invariants_of_module_26______-___________________________________________canon_lock">8. Canon Lock Rules — The Ten Invariants of Module 26 (केनन-लॉक नियम — मॉड्यूल २६ चे दहा अपरिवर्तनीय) [CANON LOCK]</a><a class="h3" href="#8_1_prohibited_story_errors_______________________qa">8.1 Prohibited Story Errors (निषिद्ध कथानक चुका — QA यादी)</a><a class="h2" href="#9__cross-reference_index________-">9. Cross-Reference Index (संदर्भ-सूची)</a><a class="h2" href="#10__canon_lock_status______-">10. Canon Lock Status (केनन-लॉक स्थिती)</a></nav>
+  <div>
+    <article><h1 id="26__devas__asuras__rishis___non-human_entities___hierarchy___factions">26. Devas, Asuras, Rishis & Non-Human Entities — Hierarchy & Factions (देव, असुर, ऋषी व अमानवी जीव — उतरंड व गट)</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\World\26_DEVAS_ASURAS_RISHIS_AND_FACTIONS.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#devas</span> <span class="badge">#asuras</span> <span class="badge">#rishis</span> <span class="badge">#saptarishi</span> <span class="badge">#vanaras</span> <span class="badge">#gandharvas</span> <span class="badge">#kinnaras</span> <span class="badge">#yakshas</span> <span class="badge">#nagas</span> <span class="badge">#divine-beasts</span> <span class="badge">#vamsha</span> <span class="badge">#kul</span> <span class="badge">#factions</span> <span class="badge">#setu-loyalists</span> <span class="badge">#autonomists</span> <span class="badge">#industrial-modernizers</span> <span class="badge">#traditionalists</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] अधिकृत केनन तपशील (१८ ऑक्टोबर २०२६)</p>
+<p><strong>Authority Chain:</strong> [<code>UNIVERSE_FOUNDATION_BIBLE_V1.md</code>](../UNIVERSE_FOUNDATION_BIBLE_V1.md) → [<code>26</code>](./26_DEVAS_ASURAS_RISHIS_AND_FACTIONS.md)</p>
+<p><strong>भाषा नियम:</strong> मजकूर आधुनिक बोलीभाषेतील मराठी (देवनागरी) मध्ये; तांत्रिक व संस्थात्मक संज्ञा इंग्रजीत. संस्कृत संकल्पना रोमन लिपीत, पहिल्या वापरात तिरक्या अक्षरांत.</p>
+<hr>
+<h2 id="0__scope__dependencies___reading_order">0. Scope, Dependencies & Reading Order (व्याप्ती, अवलंबित्व व वाचनक्रम)</h2>
+<p>हे मॉड्यूल Universe B चा <strong>सामाजिक, कायदेशीर, वैचारिक आणि संस्थात्मक थर</strong> सोडवते. ते cosmology किंवा power mechanics पुन्हा परिभाषित करत नाही; ते त्यांचा वापर करते.</p>
+<div class="table-container"><table><thead><tr>
+<th>अवलंबित्व</th>
+<th>हे मॉड्यूल काय घेते</th>
+<th>कुठून</th>
+</tr></thead><tbody>
+<tr>
+<td>चार-स्तरीय विश्व, जन्म-समता</td>
+<td>Astral Realm निवास, Tier 2 Buffer Zone, Tier 4 Corrupted Realm</td>
+<td>[<code>20</code>](./20_EVOLVING_COSMOS_REALMS_AND_COUNCIL_SYSTEM.md)</td>
+</tr>
+<tr>
+<td>कश्यप-नेक्सस पूर्वज-तक्ता</td>
+<td>देव / असुर / नाग / गरुड / यक्ष चुलतभाऊ नाते</td>
+<td>[<code>06</code>](./06_ENTITIES_AND_RACES.md)</td>
+</tr>
+<tr>
+<td>कश्यप-वंशीय प्रजाती-लक्षणे</td>
+<td>शारीरिक गुणधर्म, कमकुवतपणा, उप-कुळे</td>
+<td>[<code>06</code>](./06_ENTITIES_AND_RACES.md)</td>
+</tr>
+<tr>
+<td>सहा दैवी पदे व तीन महासभा</td>
+<td>मतदान अधिकार, audit / संरक्षण / संशोधन कार्यभार</td>
+<td>[<code>20</code>](./20_EVOLVING_COSMOS_REALMS_AND_COUNCIL_SYSTEM.md)</td>
+</tr>
+<tr>
+<td>घटना-दुरुस्त्या व केनन-लॉक</td>
+<td>प्रतिनिधी गोपनीयता, Emergency Hold, द्वि-स्तरीय हस्तक्षेप</td>
+<td>[<code>21</code>](./21_COSMIC_CONSTITUTION_CORRECTIONS_AND_CANON_LOCK.md)</td>
+</tr>
+<tr>
+<td>दैवी प्रतिनिधी (प्रजापती / नारद / रुद्र)</td>
+<td>ऋषींची अ-अधीनता, अधिकारक्षेत्र विभाजन</td>
+<td>[<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md)</td>
+</tr>
+<tr>
+<td>नामनिर्देशित अधिकारी व वंश-उगम</td>
+<td>देव / असुर / मानव उगमाचे अधिकारी (Tier 1 / Tier 2)</td>
+<td>[<code>23</code>](./23_BUFFER_ZONE_NAMED_OFFICERS_AND_ORIGINS.md)</td>
+</tr>
+<tr>
+<td>Buffer Zone क्षेत्रे</td>
+<td>Central Hub, Vajra-Durga, Pratigraha Ground, Deva-Setu</td>
+<td>[<code>24</code>](./24_BUFFER_ZONE_COMPLETE_GEOGRAPHY_AND_SECTORS.md)</td>
+</tr>
+<tr>
+<td>दर्जा-मापन, भरती, न्यायाधिकरण</td>
+<td>दर्जा १–५, merit-pool, त्रि-विभागीय न्यायाधिकरण</td>
+<td>[<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md)</td>
+</tr>
+</tbody></table></div>
+<p><em>वाचन नियम:</em> जिथे हे मॉड्यूल नवीन नाव देते, ते नाव एकतर (अ) <strong>शास्त्रीय व्यक्ती</strong> कार्य-पदासह वापरलेले, किंवा (ब) <strong>संस्थात्मक गट-नाव</strong> (कोणतेही कल्पित देव नाही). [<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) च्या सहा गैर-गोंधळ नियमांशी सुसंगत.</p>
+<hr>
+<h2 id="1__foundational_doctrine___beyond_good_vs_evil___________________________vs_______________________canon_lock">1. Foundational Doctrine — Beyond Good vs Evil (मूलभूत सिद्धांत — चांगले vs वाईट यांच्या पलीकडे) [CANON LOCK]</h2>
+<h3 id="1_1_the_rejected_model">1.1 The Rejected Model (नाकारलेला नमुना)</h3>
+<p>Universe B <strong>स्पष्टपणे "देव = चांगले, असुर = वाईट" या नियमावर चालत नाही.</strong> Universe A च्या शास्त्र-पोषित cosmology मध्ये ते वाचन शक्य राहते; Universe B च्या बाल-विश्व घटनेत ते शक्य नाही.</p>
+<ul>
+<li>दोन्ही <strong>कश्यप-वंशीय चुलतभाऊ</strong> आहेत, एकाच प्रजापती मुळापासून (अदिति → देव; दिति → दैत्य; दनु → दानव). पहा [<code>06</code>](./06_ENTITIES_AND_RACES.md).</li>
+<li>दोन्ही Astral Realm मध्ये <strong>एकत्र राहतात</strong> आणि Buffer Zone मध्ये संयुक्तपणे भरती होतात.</li>
+<li>देव लाचखोर, भयग्रस्त नोकरशहा किंवा उचलबांगडी करणारा असू शकतो. असुर संत-पंडित, निष्ठावान सेनापती किंवा भिक्षु असू शकतो. वंश <strong>प्रवृत्ती</strong> सांगतो, <strong>नैतिकता</strong> कधीही नाही.</li>
+</ul>
+<h3 id="1_2_the_twin-function_doctrine___yugala-dharma________-">1.2 The Twin-Function Doctrine (<em>Yugala-Dharma</em> — द्वि-कार्य सिद्धांत)</h3>
+<p>वैश्विक स्थैर्याला <strong>दोन पूरक कार्ये</strong> लागतात, एक विजेता नाही:</p>
+<div class="table-container"><table><thead><tr>
+<th>अक्ष</th>
+<th>पालक (देव-कार्य)</th>
+<th>उत्प्रेरक (असुर-कार्य)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>सैद्धांतिक नाव</strong></td>
+<td><em>Sthiti-Pāla</em> — व्यवस्थेचा पालक</td>
+<td><em>Vikāsa-Preraka</em> — उत्क्रांतीचा उत्प्रेरक</td>
+</tr>
+<tr>
+<td><strong>मुख्य कार्यभार</strong></td>
+<td>जतन, विधी-नियमितता, सीमा-अखंडता, कायदेशीर सातत्य</td>
+<td>भौतिक नवोन्मेष, अभियांत्रिकी महत्त्वाकांक्षा, सीमांत विस्तार, परिवर्तनकारी बदल</td>
+</tr>
+<tr>
+<td><strong>कालविषयक स्थिती</strong></td>
+<td>दीर्घ-दृष्टी, पूर्वनिर्णय-बद्ध, विधी-वैधता</td>
+<td>वेगाने पुनरावृत्ती, प्रोटोटाइप-प्रथम, कामगिरी-वैधता</td>
+</tr>
+<tr>
+<td><strong>संस्थात्मक घर</strong></td>
+<td>पालक संघ, विधी-अकादम्या, देवांचा विधी-निधी आधार</td>
+<td>शोधक संघ, फाउंड्री सदने, शोधक वसाहती</td>
+</tr>
+<tr>
+<td><strong>वैशिष्ट्यपूर्ण सद्गुण</strong></td>
+<td>विश्वासार्हता (<em>Sthairya</em>)</td>
+<td>कल्पकता (<em>Pravartanatā</em>)</td>
+</tr>
+<tr>
+<td><strong>वैशिष्ट्यपूर्ण दुर्गुण</strong></td>
+<td>वाढ गुदमरवणारी कडकपणा (<em>Sthiti-Glaciation</em>)</td>
+<td>रचना तोडणारा वेग (<em>Vikāsa-Chaos</em>)</td>
+</tr>
+<tr>
+<td><strong>अपयशाचा परिणाम</strong></td>
+<td>विश्व योग्य स्वरूपांच्या संग्रहालयात गोठते</td>
+<td>विश्व अनियंत्रित प्रयोगांत स्वतःला फाडून टाकते</td>
+</tr>
+<tr>
+<td><strong>नियंत्रक तपासणी</strong></td>
+<td>ऋषी सभेचा audit</td>
+<td>ऋषी सभेचा audit</td>
+</tr>
+</tbody></table></div>
+<h3 id="1_3_the_two_cosmic_pathologies">1.3 The Two Cosmic Pathologies (दोन वैश्विक विकृती)</h3>
+<ol>
+<li><strong>Sthiti-Glaciation (स्थैर्य-जडत्व):</strong> व्यवस्था आपल्या हेतूपेक्षा जास्त जगते. विधी पोकळ यंत्रणा बनते, कायदे जिवंत गरजांपेक्षा जास्त होतात, नवोन्मेष गुदमरतो. दिसणारे लक्षण: साचलेला प्राण, कुजणारी रेल्वे, निधी देण्यासाठी जगच नसलेला देव-निधीचा शिल्लक.</li>
+<li><strong>Vikāsa-Chaos (विकास-अराजक):</strong> बदल सुसंघटनेपेक्षा पुढे धावतो. परवानगीशिवाय यंत्र, सील न केलेल्या भेगा, बेजबाबदार क्षेत्र-ताण चाचण्या. दिसणारे लक्षण: भेगांची वारंवारता वाढणे, सीमा-गळती, Corrupted Realm च्या घुसखोरी.</li>
+</ol>
+<p><strong>केनन परिणाम:</strong> कोणतेही कार्य रद्द करता येत नाही. असुर-विरोधी शुद्धीकरण <strong>आणि</strong> देव-विरोधी शुद्धीकरण — दोन्ही घटनात्मक महाआपत्ती आहेत.</p>
+<h3 id="1_4_the_balance_mandate">1.4 The Balance Mandate (संतुलनाचा आदेश)</h3>
+<blockquote><em>"वाढीशिवाय व्यवस्था म्हणजे मिठात ठेवलेला मृतदेह. व्यवस्थेशिवाय वाढ म्हणजे चुलीशिवाय अग्नी. विश्व मीठ नाही किंवा अग्नी नाही; ते दोन्ही टिकवणारे घर आहे."</em> — संतकुमारांना दिलेले श्रेय, <em>Philosophical Counsel</em> ([<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) §3.1)</blockquote>
+<p>संतुलनाचा आदेश भावनेने नाही तर <strong>रचनेने</strong> लागू होतो: व्यवस्थेचे रक्षण करणाऱ्या प्रत्येक संस्थेचा ऋषी audit करतात, आणि नवोन्मेष करणाऱ्या प्रत्येक संस्थेचाही ऋषी audit करतात. Audit करणारा कोणत्याही गटाचा नाही.</p>
+<hr>
+<h2 id="2__coexistence__residency___the_birth_equality_rule__________________________-____________canon_lock">2. Coexistence, Residency & the Birth Equality Rule (सहअस्तित्व, निवास व जन्म-समता नियम) [CANON LOCK]</h2>
+<h3 id="2_1_where_each_lineage_lives">2.1 Where Each Lineage Lives (प्रत्येक वंश कुठे राहतो)</h3>
+<div class="table-container"><table><thead><tr>
+<th>क्षेत्र</th>
+<th>देव उपस्थिती</th>
+<th>असुर उपस्थिती</th>
+<th>संयुक्त संस्था</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Astral Realm (Tier 3)</strong></td>
+<td>विधी-कँटन, देवांचे आकाश-दर्शनी, मंदिर-दुर्ग, जुनी आदित्य इस्टेट</td>
+<td>फाउंड्री-दुर्ग, अभियांत्रिकी वसाहती, व्यापारी-राजकुमार मालमत्ता, पंडित-श्रेणी परिसर</td>
+<td>मिश्र नगरे, मिश्र कुल-सभा, संयुक्त रेल्वे कंपन्या, संयुक्त विद्यापीठे</td>
+</tr>
+<tr>
+<td><strong>Buffer Zone / The Setu (Tier 2)</strong></td>
+<td>पालक, audit, आत्मा-प्रशासन, विधी-निधी संपर्कात भरती</td>
+<td>शोधक, पालक, यंत्र-शाखा, धातुविज्ञान खुर्च्यांमध्ये भरती</td>
+<td>Setu Vidya-Peeth, Nyaya-Pitha, Yantra-Kendra, चतुर-मंडळ साप्ताहिक बैठक</td>
+</tr>
+<tr>
+<td><strong>Corrupted Realm (Tier 4)</strong></td>
+<td>कायद्याने वर्ज्य; हद्दपार व्यक्ती गुन्हेगार, प्रतिनिधी नाहीत</td>
+<td>कायद्याने वर्ज्य; हद्दपार व्यक्ती गुन्हेगार (<em>Penitent Outlaws</em>)</td>
+<td>काहीही नाही — हद्दपारी वंश-विशेषाधिकार पूर्णपणे रद्द करते</td>
+</tr>
+<tr>
+<td><strong>Divine High Council (Tier 1)</strong></td>
+<td>सहा दैवी पदे <strong>पदे आहेत, वांशिक जागा नाहीत</strong></td>
+<td>तसेच</td>
+<td>गुणवत्तेवर सर्व वंशांचे पदाधिकारी</td>
+</tr>
+</tbody></table></div>
+<h3 id="2_2_the_birth_equality_rule__janma-samat__niyam_______-">2.2 The Birth Equality Rule (Janma-Samatā Niyam — जन्म-समता नियम)</h3>
+<p><strong>लॉक केलेला मजकूर:</strong> कोणताही जीव अधिकार घेऊन जन्मत नाही. प्रतिष्ठा नेमक्या तीन चलनांतून कमावली जाते:</p>
+<ol>
+<li><strong>कृति — कृत्ये / कामगिरी:</strong> पडताळणीयोग्य कृती, सेवा, बांधणी, शोध, संरक्षण.</li>
+<li><strong>तपस्या — तपश्चर्या:</strong> साठवलेली तपस्वी शिस्त; ६ स्तंभांच्या तपस्या-मार्गात मोजता येणारी.</li>
+<li><strong>कर्म — कारण-अभिलेख:</strong> चित्रगुप्ताच्या कार्यालयाने ठेवलेले तीन-खतावणी खाते.</li>
+</ol>
+<p><strong>परिणाम:</strong></p>
+<ul>
+<li>देव जन्मामुळे <strong>कोणतेही</strong> Buffer Zone स्थान, <strong>मत नाही</strong>, <strong>कायदेशीर श्रेष्ठता नाही</strong>.</li>
+<li>असुर जन्मामुळे <strong>कोणताही</strong> श्रेणी-दर्जा, <strong>संशोधन-परवाना नाही</strong>, <strong>audit मधून सूट नाही</strong>.</li>
+<li>राजकीय किंवा ऋषी कुटुंब <strong>मुलाला भरतीत वेगाने घुसवू शकत नाही</strong> ([<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md) §4.1 — <em>No Dynastic Privilege</em>).</li>
+<li>कर्म-खतावणी <strong>वंश-अंध</strong> आहे: आत्मा आदित्य, दैत्य, दानव, नाग, यक्ष, वानर, किन्नर, गंधर्व की मानव म्हणून जन्मला हे नोंद विचारत नाही.</li>
+</ul>
+<h3 id="2_3_what_can_never_be_inherited__locked_list">2.3 What Can Never Be Inherited (Locked List — कधीही वारसा मिळू न शकणाऱ्या गोष्टी)</h3>
+<div class="table-container"><table><thead><tr>
+<th>अमूर्त गोष्ट</th>
+<th>वारसा मिळतो का?</th>
+<th>नोंद</th>
+</tr></thead><tbody>
+<tr>
+<td>कायदेशीर हक्क</td>
+<td>❌ कधीही नाही</td>
+<td>प्रत्येक वंशासाठी समान</td>
+</tr>
+<tr>
+<td>Buffer Zone दर्जा / clearance</td>
+<td>❌ कधीही नाही</td>
+<td>केवळ merit-pool; Tier 1 vs Tier 2 नियुक्तीने</td>
+</tr>
+<tr>
+<td>कर्म-शिल्लक</td>
+<td>❌ कधीही नाही</td>
+<td>वैयक्तिक खतावणी</td>
+</tr>
+<tr>
+<td>तपस्या</td>
+<td>❌ कधीही नाही</td>
+<td>वैयक्तिक मार्ग</td>
+</tr>
+<tr>
+<td>अस्त्र-प्रभुत्व</td>
+<td>❌ कधीही नाही</td>
+<td>केवळ वैयक्तिक अधिग्रहण</td>
+</tr>
+<tr>
+<td>श्रेणी सदस्यत्व</td>
+<td>⚠️ परीक्षेने</td>
+<td>शिफारस असते, केवळ जन्म पुरेसा नाही</td>
+</tr>
+<tr>
+<td>कौटुंबिक कला-परंपरा</td>
+<td>✅ हो</td>
+<td>सांस्कृतिक, कायदेशीर नाही — <em>सुरुवातीची आघाडी</em>, कधीही <em>हमी</em> नाही</td>
+</tr>
+<tr>
+<td>कुळ-ज्ञान / संग्रहालय</td>
+<td>✅ हो</td>
+<td>संस्कृती व स्मृती हा वंशाचा कायदेशीर वारसा</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="3__lineages___social_structure___vedic__kul___vamsha__in_an_industrial-mythic_society_______________________________-_______________________canon_lock">3. Lineages & Social Structure — Vedic <em>Kul / Vamsha</em> in an Industrial-Mythic Society (वंश व सामाजिक रचना — औद्योगिक-पौराणिक समाजातील कुल) [CANON LOCK]</h2>
+<h3 id="3_1_two-terminology_discipline_____-">3.1 Two-Terminology Discipline (दोन-संज्ञा शिस्त)</h3>
+<div class="table-container"><table><thead><tr>
+<th>संस्कृत संज्ञा</th>
+<th>तांत्रिक अर्थ</th>
+<th>इंग्रजी प्रतिशब्द</th>
+</tr></thead><tbody>
+<tr>
+<td><em>वंश</em></td>
+<td>उत्पत्ती-अभिलेख — जैविक / वारसा-रेषा</td>
+<td><strong>Lineage</strong></td>
+</tr>
+<tr>
+<td><em>कुल</em></td>
+<td>सामायिक कला, प्रदेश व विधीभोवती उभी सामाजिक-औद्योगिक एकक</td>
+<td><strong>Clan-House / Guild-Kul</strong></td>
+</tr>
+<tr>
+<td><em>कुल-सभा</em></td>
+<td>कुल-घराची विचारविमर्श सभा</td>
+<td><strong>Clan Assembly</strong></td>
+</tr>
+<tr>
+<td><em>क्षेत्र-सभा</em></td>
+<td>एका खंडातील / राज्यातील अनेक कुळांची प्रादेशिक सभा</td>
+<td><strong>Regional Assembly</strong></td>
+</tr>
+<tr>
+<td><em>राज्य</em></td>
+<td>सार्वभौम प्रादेशिक राज्यव्यवस्था (पौराणिक राज्य किंवा औद्योगिक कँटन)</td>
+<td><strong>Realm-State</strong></td>
+</tr>
+<tr>
+<td><em>गुरु-कुल</em></td>
+<td>निवासी शिक्षण-घर</td>
+<td><strong>Academy / Ashram</strong></td>
+</tr>
+<tr>
+<td><em>यंत्र-संघ</em></td>
+<td>यंत्र-व्यापारांची चार्टरबद्ध संस्था</td>
+<td><strong>Guild</strong></td>
+</tr>
+</tbody></table></div>
+<h3 id="3_2_the_vamsha_registry__recorded_bloodlines">3.2 The Vamsha Registry (Recorded Bloodlines — नोंदणीकृत रक्तरेषा)</h3>
+<p>नोंदणी <strong>चित्रगुप्ताचे कार्यालय</strong> (ओळख व कर्म-ओळख) आणि <strong>ऋषी सभा</strong> (रचनात्मक / वंश-स्थापत्य, मरीचींच्या अधिकारानुसार [<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) §2.1) यांच्याकडून संयुक्तपणे ठेवली जाते.</p>
+<div class="table-container"><table><thead><tr>
+<th>वंश</th>
+<th>पूर्वज-मूळ</th>
+<th>पालक-स्रोत</th>
+<th>जिवंत केंद्र</th>
+<th>कायदेशीर स्थिती</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>आदित्य वंश</strong></td>
+<td>कश्यप × अदिति</td>
+<td>देव</td>
+<td>विधी-कँटन, आकाश-दर्शनी, मंदिर-दुर्ग</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>दैत्य वंश</strong></td>
+<td>कश्यप × दिति</td>
+<td>असुर (साम्राज्य-घन)</td>
+<td>फाउंड्री-दुर्ग, व्यापारी-राज्ये</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>दानव वंश</strong></td>
+<td>कश्यप × दनु</td>
+<td>असुर (माया-विद्या / स्थापत्य)</td>
+<td>चक्रव्यूह कार्यशाळा, रेल्वे-वायाडक्ट अभियांत्रिकी</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>नाग वंश</strong></td>
+<td>कश्यप × कद्रू</td>
+<td>नाग</td>
+<td>भूमिगत जलमार्ग, बोगदा-रेल्वे, औषधसंहिता</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>गरुड वंश</strong></td>
+<td>कश्यप × विनता</td>
+<td>दैवी शिकारी पक्षी</td>
+<td>हवाई शोध-पंख, भेग-सर्वेक्षण, दूतवाहक</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>यक्ष वंश</strong></td>
+<td>कश्यप × खसा</td>
+<td>यक्ष व गुह्यक</td>
+<td>धातु-प्रदेश, टाकसाळी, रत्न-तिजोऱ्या, रक्षक-वने</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>गंधर्व वंश</strong></td>
+<td>कश्यप × अरिष्टा</td>
+<td>गंधर्व</td>
+<td>ध्वनिक अभियांत्रिकी, संकेत-दल, कूटनीती</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>अप्सरा वंश</strong></td>
+<td>कश्यप × मुनि</td>
+<td>अप्सरा</td>
+<td>कला-अकादम्या, दूत-सेवा, सौंदर्यशास्त्र</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>किन्नर वंश</strong></td>
+<td>कश्यप-मूळ, स्वतंत्र नोंदणी (Registry 2)</td>
+<td>किन्नर</td>
+<td>पर्वतीय दूतमार्ग, संगीत, द्वि-रूप दूत</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>वानर वंश</strong></td>
+<td>कश्यप-मूळ, स्वतंत्र नोंदणी (Registry 2)</td>
+<td>वानर</td>
+<td>वन-अभियांत्रिकी, पूल व सॅपर दल, शोधक</td>
+<td>समान</td>
+</tr>
+<tr>
+<td><strong>मानुष्य वंश</strong></td>
+<td>मिश्र कश्यप + नश्वर मूळ</td>
+<td>मानव</td>
+<td>नगरे, शेती, रेल्वे-नगरे, पांडित्य</td>
+<td>समान</td>
+</tr>
+</tbody></table></div>
+<p><em>Registry 2 नोंद:</em> किन्नर व वानर रेषा <strong>स्वतंत्र अर्ध-दैवी नोंदणीत</strong> आहेत, [<code>06</code>](./06_ENTITIES_AND_RACES.md) च्या मूळ पाच-पत्नी कश्यप तक्त्यात नाहीत. हा <strong>केवळ नोंदणी-थरातील फरक</strong> आहे — त्यामुळे कोणताही दर्जा-फरक मिळत नाही. <em>(नोंदणी-स्थानाची स्थिती: [OPEN-EXTENSION] — शास्त्रीय स्रोत-फेरीच्या प्रतीक्षेत; समान-दर्जा नियम [CANON LOCK].)</em></p>
+<h3 id="3_3_from_vedic__kul__to_industrial_guild-kul________________________________-">3.3 From Vedic <em>Kul</em> to Industrial Guild-Kul (वैदिक कुलापासून औद्योगिक गिल्ड-कुलापर्यंत)</h3>
+<p>एकोणिसाव्या शतकातील औद्योगिक-पौराणिक समाजाने <em>कुल</em> रद्द केले नाही; त्याला <strong>नवीन साधनांनी सज्ज केले</strong>. कुल आता एकाच वेळी तीन गोष्टींनी परिभाषित होते:</p>
+<pre><code class="language-">        वंश (रक्तरेषेची स्मृती)
+                 │
+      ┌──────────┼──────────┐
+      ▼          ▼          ▼
+   [ कला ]   [ प्रदेश ]  [ विधी ]
+      │          │          │
+      └──────────┴──────────┘
+                 ▼
+         कुल (Guild-Kul)  ──►  कुल-सभेत स्थान  ──►  क्षेत्र-सभेत स्थान
+                 │
+                 ▼
+         भरती-पात्रता (केवळ merit-pool)</code></pre>
+<div class="table-container"><table><thead><tr>
+<th>गिल्ड-कुल</th>
+<th>कला-केंद्र</th>
+<th>प्रमुख गिल्ड संबंध</th>
+<th>जगाला योगदान</th>
+<th>ठराविक वंश-मिश्रण</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Vaidika-Yajna Kul</strong> (विधी-घर)</td>
+<td>यज्ञ, विधी-नियमितता, पूजाविधी</td>
+<td>ऋषी सभा (केवळ संपर्क)</td>
+<td>देव लोकसंख्या टिकवणारा <em>आहुती</em> प्रवाह सांभाळते</td>
+<td>आदित्य, मानुष्य</td>
+</tr>
+<tr>
+<td><strong>Steam-Foundry Kul</strong> (प्राण-आग्नेय कुल)</td>
+<td>बॉयलर, प्राण-वाफ इंजिने, चिलखत पट्टे</td>
+<td>शोधक संघ / यंत्र-शाखा</td>
+<td>रेल्वे इंजिने, युद्ध-रेल्वे, कारखाना उर्जा</td>
+<td>दैत्य, मानुष्य</td>
+</tr>
+<tr>
+<td><strong>Viaduct & Rail Kul</strong> (सेतु-यंत्र कुल)</td>
+<td>पोलादी पूल, वायाडक्ट, बोगदे</td>
+<td>शोधक संघ + पालक संघ (लॉजिस्टिक्स)</td>
+<td>महा-सेतु रेल्वे जाळी</td>
+<td>दानव, वानर, मानुष्य</td>
+</tr>
+<tr>
+<td><strong>Aetheric Signal Kul</strong> (आकाश-संकेत कुल)</td>
+<td>तार, सांकेतिक कोड, ध्वनिक अभियांत्रिकी</td>
+<td>पालक संघ (संकेत)</td>
+<td>आंतर-नगर आदेश जाळी, संकट-प्रसार</td>
+<td>गंधर्व, मानुष्य</td>
+</tr>
+<tr>
+<td><strong>Ore & Vault Kul</strong> (खनि-कोश कुल)</td>
+<td>खाणकाम, नाणेबंदी, रत्न-बँकिंग, प्राण-क्रिस्टल उत्खनन</td>
+<td>शोधक संघ खरेदी</td>
+<td>कच्चा माल, चलन-अखंडता</td>
+<td>यक्ष, नाग</td>
+</tr>
+<tr>
+<td><strong>Venom-Pharmacopoeia Kul</strong> (औषध-विष कुल)</td>
+<td>प्रतिविष, नागमणी-संलग्न औषधे, संसर्ग-नियम</td>
+<td>पालक संघ (वैद्यकीय) + आत्मा-प्रशासन</td>
+<td>महामारी प्रतिसाद, भेग-विषारी उपचार</td>
+<td>नाग, मानुष्य</td>
+</tr>
+<tr>
+<td><strong>Gurukul-Acharya Kul</strong> (शिक्षण कुल)</td>
+<td>विधी, भाषाशास्त्र, गणित, अभियांत्रिकी सिद्धांत</td>
+<td>ऋषी सभा (सहकर्मी पुनर्विलोकन)</td>
+<td>पांडित्य, भरती-तयारी, संग्रहालय-नक्कल</td>
+<td>कोणतेही</td>
+</tr>
+<tr>
+<td><strong>Sky-Courier Kul</strong> (विहाय-दूत कुल)</td>
+<td>ब्लिंप व दूत-बाज लॉजिस्टिक्स</td>
+<td>आत्मा-प्रशासन (दूतानची साखळी)</td>
+<td>सीलबंद प्रेषण, पर्वतीय दूतमार्ग</td>
+<td>किन्नर, गरुड, मानुष्य</td>
+</tr>
+<tr>
+<td><strong>Ashram-Tapovana Kul</strong> (तपस्वी कुल)</td>
+<td>दीर्घ-दृष्टी तपस्या, वन-संशोधन</td>
+<td>ऋषी सभा (स्वतंत्र सहकर्मी)</td>
+<td>भेग-संशोधन, शाप-निराकरण, शुद्ध सिद्धांत</td>
+<td>कोणतेही (स्वेच्छा त्याग)</td>
+</tr>
+</tbody></table></div>
+<h3 id="3_4_the_code_of_the_great_setu___equal_legal_rights_____-___________________________________canon_lock">3.4 The Code of the Great Setu — Equal Legal Rights (महा-सेतु संहिता — समान कायदेशीर हक्क) [CANON LOCK]</h3>
+<p>वंशाला कायदेशीरदृष्ट्या निष्क्रिय करणाऱ्या पाच लॉक केलेल्या कलमा:</p>
+<ol>
+<li><strong>कुल-समता अधिकार (Equal Clause):</strong> कोणत्याही वंशाला किंवा कुलाला कायदेशीर विशेषाधिकार, कर-सूट किंवा audit मधून सूट नाही. असमान-वंश पक्षांमधील प्रत्येक वाद <strong>तटस्थ</strong> न्यायपीठासमोर ऐकला जातो.</li>
+<li><strong>कर्म-उद्घाटन अधिकार (Karma-Opacity Clause):</strong> कोणताही पक्ष आरोपीच्या वंशानुसार निकाल बदलण्याची मागणी करू शकत नाही. खतावणी ठरवते, वंशावळ नाही.</li>
+<li><strong>समान-भार अधिकार (Equal-Burden Clause):</strong> संरक्षण-कर, रेल्वे-कामगार, संसर्ग-सेवा आणि सीमांत-फेरी सर्व वंशांवर नोंदणीकृत लोकसंख्येच्या प्रमाणात येते, विधी-दर्जाच्या प्रमाणात नाही.</li>
+<li><strong>चिकित्सा-समता अधिकार (Equal-Care Clause):</strong> वैद्यकीय सेवा, नाग औषधसंहिता व भेग-विषारी प्रतिविषांसह, वंशभेदाशिवाय दिली जाते.</li>
+<li><strong>वाक्-समता अधिकार (Equal-Voice Clause):</strong> प्रत्येक कुलाला आपल्या क्षेत्र-सभेत एक स्थान, विधी-प्रतिष्ठा कितीही असो; गिल्ड चार्टर वंशाच्या कारणाने दिले किंवा रद्द केले जाऊ शकत नाहीत.</li>
+</ol>
+<p><strong>अंमलबजावणी:</strong> <strong>त्रि-विभागीय न्यायाधिकरण</strong> ([<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md) §6) जाणीवपूर्वक मिश्र-नियुक्त आहे — सत्यकेतू (मानव-उगमाचा audit अधिकारी) न्यायिक प्रमुख म्हणून, वज्रकेतू (असुर-उगमाचा सेनापती) सुरक्षेसाठी, युक्तिनाथ (असुर-उगमाचा संशोधक) तांत्रिक तज्ज्ञ म्हणून. कोणतेही एक-वंश न्यायपीठ आंतर-वंशीय वाद ठरवू शकत नाही.</p>
+<hr>
+<h2 id="4__rishis___sages___independent_philosophical_authority________________________________________canon_lock">4. Rishis & Sages — Independent Philosophical Authority (ऋषी व संत — स्वतंत्र तात्विक अधिकार) [CANON LOCK]</h2>
+<h3 id="4_1_the_non-subordination_rule__asambandha_niyam____-">4.1 The Non-Subordination Rule (Asambandha Niyam — अ-अधीनता नियम)</h3>
+<p><strong>लॉक केलेला मजकूर:</strong> <em>ऋषी सल्लागार, निरीक्षक आणि रचनात्मक विश्लेषक आहेत. ते कधीही अधीन चाकर नाहीत.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>हमी</th>
+<th>अर्थ</th>
+<th>व्यावहारिक चाचणी</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>केवळ-सल्ला कलम</strong></td>
+<td>ज्या संस्थेला सल्ला दिला ती संस्था तो नाकारू शकते</td>
+<td>नकारांची नोंदवही क्षेत्र-सभेत सार्वजनिक</td>
+</tr>
+<tr>
+<td><strong>राजीनामा हक्क</strong></td>
+<td>कोणताही ऋषी कोणतेही सल्लागार स्थान दंडाशिवाय सोडू शकतो, पूर्ण ऋषी-दर्जा टिकवून</td>
+<td>कोणताही "पलायन" आरोप दाखल होऊ शकत नाही</td>
+</tr>
+<tr>
+<td><strong>सद्सद्विवेक नकार</strong></td>
+<td>ऋषी एखादे काम <em>अधर्मी</em> किंवा <em>रचनात्मकदृष्ट्या दोषपूर्ण</em> म्हणून लेखी नाकारू शकतो</td>
+<td>नकार नोंदवला जातो, शिक्षा नाही</td>
+</tr>
+<tr>
+<td><strong>अस्त्र-भरती नाही</strong></td>
+<td>शुद्ध ऋषींना अस्त्रे, शाप किंवा वरदान सोडण्याचा आदेश देता येत नाही</td>
+<td>आदेशाचे प्रयत्न कायद्याने रद्द</td>
+</tr>
+<tr>
+<td><strong>वेतन-संबंध नाही</strong></td>
+<td>ऋषी Buffer Zone पगार घेत नाहीत; ते <em>पदाचे सन्मानधन</em> धारण करतात, अपमानाशिवाय रद्द करण्यायोग्य</td>
+<td>"कर्मचारी" स्थिती नोंदवता येत नाही</td>
+</tr>
+<tr>
+<td><strong>स्वतंत्र प्रतिष्ठा</strong></td>
+<td>सेवेमुळे ऋषींचा वंश, आश्रम व प्रतिष्ठा अलिप्त राहते</td>
+<td>सहा गैर-गोंधळ नियमांत पुष्टी, [<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) §6.2</td>
+</tr>
+</tbody></table></div>
+<p><em>अर्थ:</em> म्हणूनच एक ऋषी एकाच हंगामात <strong>यमाला सल्ला</strong> आणि <strong>यमाच्या राजकीय विरोधकाला सल्ला</strong> देऊ शकतो, खोटी साक्ष न देता. ऋषी-वर्ग ही व्यवस्थेची स्थायी अंतरात्मा आहे, तिचा कर्मचारी नाही.</p>
+<h3 id="4_2_rishi_ranks________________06_____06_entities_and_races_md___2_7">4.2 Rishi Ranks (ऋषी दर्जे — [<code>06</code>](./06_ENTITIES_AND_RACES.md) §2.7 मधून)</h3>
+<div class="table-container"><table><thead><tr>
+<th>दर्जा</th>
+<th>संस्कृत</th>
+<th>स्थान</th>
+<th>ठराविक संस्थात्मक संपर्क</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>ब्रह्मर्षी</strong></td>
+<td><em>Brahmarshi</em></td>
+<td>सर्वोच्च; <em>ब्रह्मदंड</em> चालवतात; स्वतंत्र वैश्विक रचना निर्माण करू शकतात</td>
+<td>उच्च परिषद क्षेत्रात प्रासंगिक थेट सल्ला</td>
+</tr>
+<tr>
+<td><strong>महर्षी</strong></td>
+<td><em>Maharshi</em></td>
+<td>महा-ऋषी; प्रादेशिक-प्रमाणातील तात्विक अधिकार</td>
+<td>क्षेत्र-सभा व राज्य न्यायालयांना सल्ला</td>
+</tr>
+<tr>
+<td><strong>देवर्षी</strong></td>
+<td><em>Devarshi</em></td>
+<td>देवांमधील ऋषी; क्षेत्रांत मुक्त संचार (उदा. नारद परंपरा)</td>
+<td>आंतर-क्षेत्रीय दूत व संतुलन कार्य</td>
+</tr>
+<tr>
+<td><strong>राजर्षी</strong></td>
+<td><em>Rajarshi</em></td>
+<td>राजे-तपस्वी; सार्वभौम सत्तेचे आध्यात्मिक अग्नीत शुद्धीकरण</td>
+<td>राज्य-व्यवस्थेला वैधता देणारा सल्ला</td>
+</tr>
+<tr>
+<td><strong>मुनि</strong></td>
+<td><em>Muni</em></td>
+<td>व्रत-बद्ध तपस्वी; मौन, उपवास, वन-शिस्त</td>
+<td>स्वतंत्र; अनेकदा एखाद्या अभ्यास-शाखेची संपत्ती</td>
+</tr>
+<tr>
+<td><strong>सिद्ध</strong></td>
+<td><em>Siddha</em></td>
+<td>प्राप्त-जीव; शक्ती-परिणाम म्हणून, शक्ती-पद म्हणून नाही</td>
+<td>मुक्त प्रतिनिधी; कधीकधी शोधक सहकारी</td>
+</tr>
+</tbody></table></div>
+<h3 id="4_3_the_sapta-rishi_council___saptarshi_sabha_____________________canon_lock">4.3 The Sapta-Rishi Council (<em>Saptarshi Sabha</em> — सप्तर्षी परिषद) [CANON LOCK]</h3>
+<ul>
+<li><strong>रचना:</strong> सात स्थाने, महर्षी-दर्जा व त्यावरील सदस्यांमधील सहकर्मी निवडणुकीने भरली जातात. <strong>स्थाने फिरतात</strong> मन्वंतर-प्रमाणातील घड्याळानुसार; कोणताही कायमस्वरूपी राजवंश स्थान धारण करत नाही.</li>
+<li><strong>अध्यक्ष:</strong> फिरता, एक-कार्यकाळ. अध्यक्ष परिषदेचे प्रतिनिधित्व करतो पण कोणतीही जबरदस्तीची शक्ती धारण करत नाही.</li>
+<li><strong>अधिकारक्षेत्र:</strong></li>
+</ul>
+<ol>
+<li><strong>रचनात्मक विश्लेषण</strong> — एखादा कायदा, यंत्र किंवा संस्था Sthiti-Glaciation किंवा Vikāsa-Chaos घडवेल का याचे मूल्यांकन.</li>
+<li><strong>अ-बंधनकारक <em>निर्णय</em> (सल्लागार निष्कर्ष)</strong> — सहा दैवी पदे, चार Buffer Zone विभाग किंवा क्षेत्र-सभेला दिलेला लेखी निष्कर्ष.</li>
+<li><strong>राजांना बंधनकारक <em>उपदेश</strong></em> — एकच बंधनकारक स्वरूप: <strong>राज्य-सिंहासनाला</strong> शासन / आचरणाबाबत दिलेला सल्ला. ऋषींचा <em>उपदेश</em> नाकारणे कायदेशीर आहे पण सामाजिक व कार्मिक भार वाहते, कधीही शारीरिक जबरदस्ती नाही.</li>
+<li><strong>उच्च परिषदेवर अ-बंधनकारक</strong> — परिषद सहा पदांना ओव्हररूल करू शकत नाही. ती निरीक्षण, विश्लेषण, अहवाल करते. <em>(हे [<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) §6.5 जपते: घटनाबाह्य शक्ती नाही.)</em></li>
+<li><strong>संकट-साक्षी</strong> — त्रि-विभागीय न्यायाधिकरणात आणि विवादित कायद्याच्या उच्च परिषद पुनर्विलोकनात औपचारिक साक्षीदार म्हणून बसू शकते.</li>
+<ul>
+<li><strong>ऋषी सभेशी नाते:</strong> सभा ही <strong>क्षेत्र-कार्यरत हात</strong> (audit अधिकारी, इतिहासकार, एकांतवासी संशोधक) <strong>मुख्य ऋषी</strong> पदाखाली. सप्तर्षी परिषद ही <strong>स्वतंत्र सहकर्मी संस्था</strong> आहे जिला सभा <em>सल्ला विचारू शकते</em> पण कधीही आदेश देऊ शकत नाही, आणि सभेलाही परिषदेवर आदेश देण्याचा अधिकार नाही.</li>
+</ul>
+</ol>
+<pre><code class="language-">              [ मुख्य ऋषी  (दैवी पद) ]
+                            │
+                            ▼
+         [ ऋषी सभा ]  ← क्षेत्र-हात (audit, पुरावा)
+                 │                    ▲
+                 │ सल्ला विचारते       │ सहकर्मी निष्कर्ष
+                 ▼                    │
+         [ सप्तर्षी परिषद — Saptarshi Sabha ] ← स्वतंत्र सहकर्मी
+                 │
+                 └──► अ-बंधनकारक निर्णय  → पदे · विभाग · क्षेत्र-सभा
+                 └──► राजांना बंधनकारक उपदेश → राज्य-सिंहासने</code></pre>
+<h3 id="4_4_sages__special_instruments">4.4 Sages' Special Instruments (ऋषींची विशेष साधने)</h3>
+<div class="table-container"><table><thead><tr>
+<th>साधन</th>
+<th>धारक</th>
+<th>परिणाम</th>
+<th>मर्यादा</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>वाक्-सिद्धी</strong> (उच्चारित आज्ञा)</td>
+<td>कोणताही प्राप्त ऋषी</td>
+<td>शब्द स्वतःच कार्य करतो</td>
+<td>मुक्त आत्मा, त्रिदेव किंवा अनंताला बळजबरी करू शकत नाही</td>
+</tr>
+<tr>
+<td><strong>ब्रह्मदंड</strong> (तपस्वी दंड)</td>
+<td>ब्रह्मर्षी / महर्षी</td>
+<td>रचनात्मक-दर्जाची शिक्षा</td>
+<td>रणांगणाचे शस्त्र नाही; रूढी म्हणते तो एकदाच, जाणीवपूर्वक वापरला जातो</td>
+</tr>
+<tr>
+<td><strong>जल-बिंदू शाप</strong></td>
+<td>कोणताही ऋषी</td>
+<td>कर्म-कायद्याच्या आत नियती बदलतो</td>
+<td>शाप देणाऱ्याची उर्जा खर्च होते; शब्दातील पळवाटा खऱ्या ([<code>05</code>](./05_BOONS_CURSES_AND_VOWS.md))</td>
+</tr>
+<tr>
+<td><strong>Red-Ink Seal</strong></td>
+<td>क्षेत्रीय चौकशी अधिकारी (सभा)</td>
+<td>पुरावा नष्ट होण्याच्या संशयावर जागेवरच <em>दफ्तर</em> गोठवते</td>
+<td>औपचारिक Audit Warrant मिळवण्यासाठी कठोर <strong>२४ वैश्विक तास</strong> → नाहीतर स्वतःहून विरघळते ([<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) §8.1)</td>
+</tr>
+<tr>
+<td><strong>Independent Witness Seal</strong></td>
+<td>शुक-परंपरेचा साक्षीदार</td>
+<td>न्यायाधिकरणात साक्ष औपचारिकपणे अखंडनीय बनवते</td>
+<td>पुरावा निर्माण करू शकत नाही</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="5__non-human___semi-divine_entities___roles__guilds___contributions_______________-____________________________________canon_lock">5. Non-Human & Semi-Divine Entities — Roles, Guilds & Contributions (अमानवी व अर्ध-दैवी जीव — भूमिका, गिल्ड व योगदान) [CANON LOCK]</h2>
+<h3 id="5_1_master_table">5.1 Master Table (मुख्य तक्ता)</h3>
+<div class="table-container"><table><thead><tr>
+<th>जीव</th>
+<th>वंश</th>
+<th>निवास</th>
+<th>मुख्य क्षमता</th>
+<th>प्रमुख गिल्ड / सामाजिक भूमिका</th>
+<th>रचनात्मक योगदान</th>
+<th>संस्थात्मक संबंध</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>वानर</strong></td>
+<td>वानर</td>
+<td>वन-खंड, कडा-नगरे, वायाडक्ट छावण्या</td>
+<td>वानर-चपळता, दोरी-पूल अभियांत्रिकी, किल्ले चढणे</td>
+<td>वायाडक्ट व रेल्वे कुल; सॅपर दल; पर्वतीय शोधक</td>
+<td>महा-सेतु वायाडक्ट जाळीचा मोठा भाग बांधतात व सांभाळतात; दऱ्या व भेग-कडा कामात अजोड</td>
+<td>शोधक संघ (अभियांत्रिकी), पालक संघ (क्षेत्र लॉजिस्टिक्स)</td>
+</tr>
+<tr>
+<td><strong>गंधर्व</strong></td>
+<td>गंधर्व</td>
+<td>आकाश-दर्शनी, भुवर्लोक-संलग्न उच्चभूमी</td>
+<td>वैश्विक ध्वनिशास्त्र, ध्वनिक अडथळे, आकाश-माया, दैवी धनुर्विद्या</td>
+<td>Aetheric Signal कुल; सांकेतिक दल; कूटनीतिक दूत</td>
+<td>तार-कोड रचना, अनुनाद-दोष शोध, औपचारिक राज्यकारभार</td>
+<td>पालक संघ (संकेत), नारदांचे विभागीय फेरे</td>
+</tr>
+<tr>
+<td><strong>किन्नर</strong></td>
+<td>किन्नर</td>
+<td>उच्च घाट, पर्वतीय दूतमार्ग</td>
+<td>द्वि-रूप (अश्व-पक्षी) गती, उल्लेखनीय स्वर, सहनशक्ती</td>
+<td>Sky-Courier कुल; पर्वतीय संदेशवाहक मार्ग; संगीत अकादम्या</td>
+<td>रेल्वेसाठी खूप खडतर भूभागात प्रेषण हमी; सीलबंद खतावण्या वाहतात</td>
+<td>आत्मा-प्रशासन (दूतानची दूतवाहक साखळी)</td>
+</tr>
+<tr>
+<td><strong>यक्ष</strong></td>
+<td>यक्ष</td>
+<td>धातु-पर्वत, वने, अलकापुरी-संलग्न उच्चभूमी</td>
+<td>खनिज-संवेदना, पुरलेल्या संपत्तीचा कारभार, रक्षक-शिस्त</td>
+<td>खनि-कोश कुल; रक्षक-वने; टाकसाळ व रत्न-तिजोरी सेवा</td>
+<td>नाणे-अखंडता, प्राण-क्रिस्टल पुरवठा, खजिना-तटस्थता</td>
+<td>शोधक संघ (खरेदी), चित्रगुप्त (मूल्य-खतावणी)</td>
+</tr>
+<tr>
+<td><strong>नाग</strong></td>
+<td>नाग</td>
+<td>भूमिगत नद्या, पाताळ-संलग्न जलमार्ग, बोगदा-नगरे</td>
+<td>विष-प्रभुत्व, नागमणी प्रतिविष, जल-अभियांत्रिकी, खोल-भूमिगत नेव्हिगेशन</td>
+<td>औषध-विष कुल; बोगदा-रेल्वे अभियंते; वैद्य</td>
+<td>भेग-विषारी प्रतिविष, भूमिगत रेल्वे, महामारी नियंत्रण</td>
+<td>पालक संघ (वैद्यकीय), आत्मा-प्रशासन (सीमा-जल)</td>
+</tr>
+<tr>
+<td><strong>बंध श्वान (<em>प्राण-श्वान</em>)</strong></td>
+<td>पशू (प्राण-बंधन)</td>
+<td>किल्ले-कुत्र्यांची कोठडी, खंदक-रेषा, सीमांत चौक्या</td>
+<td>द्वि-शिरी, आत्म-बद्ध, प्राण-मागोवा, धक्का-आरोप</td>
+<td>पशू-धक्का अश्वदल; चौकी व पाठलाग कार्य</td>
+<td>सीमांत अडवणूक, फरारांचा मागोवा, बंध शक्तीहीन नागरिक संरक्षण</td>
+<td>पालक संघ (वज्रकेतू / रणवय / धृतिका)</td>
+</tr>
+<tr>
+<td><strong>प्राण-अश्व (<em>Prāṇa-Ashva</em>)</strong></td>
+<td>पशू (प्राण-बंधन)</td>
+<td>चिलखती तबेले, अश्वदल तळ, रेल्वे-पार्श्व क्षेत्रे</td>
+<td>चिलखती सहनशक्ती, प्राण-चाल, भार-वाहतूक</td>
+<td>पशू-धक्का अश्वदल; दीर्घ-वाहतूक व आरोप तुकड्या</td>
+<td>लौह-प्राकारावर जलद मदत; तुटलेल्या रेल्वेमार्गावर पुरवठा</td>
+<td>पालक संघ (लॉजिस्टिक्स)</td>
+</tr>
+<tr>
+<td><strong>गरुड-वंशीय शोधक</strong></td>
+<td>गरुड</td>
+<td>कडा-घरटी, ब्लिंप गोदी, उच्च आरोहण तापमान-प्रवाह</td>
+<td>उड्डाण, हवाई शोध, भक्षक-प्रवृत्ती</td>
+<td>हवाई शोध पंख; ब्लिंप सोबत; भेग सर्वेक्षण</td>
+<td>Corrupted-दिशेच्या सीमेचे हवाई सर्वेक्षण; दूतानच्या साखळीसाठी दूत-बाज वंश</td>
+<td>पालक संघ (हवाई शोध), शोधक संघ (भेग सर्वेक्षण)</td>
+</tr>
+</tbody></table></div>
+<h3 id="5_2__pr__a-bandhana____the_beast_partnership_accord______________________canon_lock">5.2 <em>Prāṇa-Bandhana</em> — the Beast Partnership Accord (पशू भागीदारी करार) [CANON LOCK]</h3>
+<p><strong>लॉक केलेला नियम:</strong> बंध पशू <strong>भागीदार आहेत, मालमत्ता नाही, गुलाम नाही.</strong></p>
+<div class="table-container"><table><thead><tr>
+<th>कलम</th>
+<th>मजकूर</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>परस्पर बंध</strong></td>
+<td>बंधाला <em>दोन्ही</em> पक्षांची संमती लागते; तो स्थानिक कर्म-संलग्न खतावणीत संयुक्त उपक्रम म्हणून नोंदवला जातो</td>
+</tr>
+<tr>
+<td><strong>प्रतिष्ठा</strong></td>
+<td>पशू विकले जाऊ शकत नाहीत, जनावर म्हणून वारसा मिळू शकत नाहीत किंवा मरणापर्यंत काम करवून घेता येत नाही; पशूने नकार दिल्यावर बंध सेवा संपते</td>
+</tr>
+<tr>
+<td><strong>परस्पर कर्तव्य</strong></td>
+<td>नागरिक पशूला अन्न, निवारा, विश्रांती व वैद्यकीय सेवा देतो; पशू सहवास व सेवा देतो</td>
+</tr>
+<tr>
+<td><strong>कायदेशीर व्यक्तित्व (अंशतः)</strong></td>
+<td>बंध पशू प्राणी-संबंधित न्यायाधिकरणात <strong>साक्षीदार</strong> असू शकतो; बंध पशूला इजा करणे हे जीवाविरुद्ध गुन्हा म्हणून न्याययोग्य</td>
+</tr>
+<tr>
+<td><strong>शक्तीहीन नागरिक</strong></td>
+<td>हा करार वैयक्तिक शक्ती नसलेल्या नागरिकांसाठी घटनात्मक उत्तर आहे — भागीदारी शक्तीची जागा घेते, हीनतेची नाही</td>
+</tr>
+<tr>
+<td><strong>रणांगण-भरती नाही</strong></td>
+<td>घोषित <em>आपत्-धर्म</em> शिवाय बंध पशू घरांपासून मोठ्या प्रमाणात ओढून नेता येत नाहीत</td>
+</tr>
+</tbody></table></div>
+<p><em>स्रोत:</em> [<code>20</code>](./20_EVOLVING_COSMOS_REALMS_AND_COUNCIL_SYSTEM.md) §3.1 (पशू भागीदारी), [<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md) §2.5 (पशू-धक्का अश्वदल), [<code>23</code>](./23_BUFFER_ZONE_NAMED_OFFICERS_AND_ORIGINS.md) §3.3 (रणवयचे दोन श्वान).</p>
+<h3 id="5_3_semi-divine_guild_summary______-">5.3 Semi-Divine Guild Summary (अर्ध-दैवी गिल्ड सारांश)</h3>
+<div class="table-container"><table><thead><tr>
+<th>गिल्ड</th>
+<th>एक टोक</th>
+<th>दुसरे टोक</th>
+<th>कथेत का महत्त्वाचे</th>
+</tr></thead><tbody>
+<tr>
+<td>वायाडक्ट व रेल्वे कुल</td>
+<td>वानर सॅपर, दानव स्थापत्यकार</td>
+<td>मानुष्य रूळ-तुकड्या</td>
+<td>सेतु ही <em>बहु-वंशीय</em> बांधलेली कलाकृती — तोडफोड ही आंतर-कुळीय तक्रार</td>
+</tr>
+<tr>
+<td>खनि-कोश कुल</td>
+<td>यक्ष कारभार</td>
+<td>नाग खोल-बोगदा तुकड्या</td>
+<td>चलन-स्थैर्य व प्राण-क्रिस्टल अडथळा समजावते</td>
+</tr>
+<tr>
+<td>औषध-विष कुल</td>
+<td>नाग वैद्य</td>
+<td>मानुष्य औषधविक्रेते</td>
+<td>प्रत्येक भेग-घटनेत समान-चिकित्सा कलमाची कसोटी येथे लागते</td>
+</tr>
+<tr>
+<td>Aetheric Signal कुल</td>
+<td>गंधर्व सांकेतिक-गुरू</td>
+<td>किन्नर पारंपरिक दूत-माळा</td>
+<td>५०,००० मैल रेल्वेवर जलद कथानक-समन्वय योग्य ठरवते</td>
+</tr>
+<tr>
+<td>Sky-Courier कुल</td>
+<td>गरुड व किन्नर उडणारे</td>
+<td>बाज-माळा</td>
+<td>"तातडीचा सीलबंद संदेश आला" हे प्रत्येक दृश्य इथून येते</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="6__factional_dynamics___ideological_clashes____-___________________________canon_lock">6. Factional Dynamics & Ideological Clashes (गट-गतिशीलता व वैचारिक टकराव) [CANON LOCK]</h2>
+<h3 id="6_1_faction_map__two_axes_____-">6.1 Faction Map (Two Axes — गट-नकाशा, दोन अक्ष)</h3>
+<pre><code class="language-">                    जपणे ←──────────────────→ वेगवान करणे
+                         │                          │
+   केंद्रीकरण ┌──────────┼──────────┐               │
+              │  पारंपरिक        │  औद्योगिक         │
+              │  सेतु निष्ठावान   │  आधुनिकीकरणकर्ते    │
+   (सेतु)     │  (व्यवस्था+audit)│  (शोधक+फाउंड्री)   │
+              ├───────────────────┼───────────────────┤
+   विकेंद्रीकरण│  Astral प्रादेशिक │  मुक्त नवोन्मेष   │
+              │  स्वायत्ततावादी    │  वसाहती           │
+              │  (क्षेत्र-सभा)    │  (स्वतंत्र गट)     │
+              └──────────────────┴───────────────────┘</code></pre>
+<h3 id="6_2_traditionalist_orders_vs_industrial_modernizers_______________vs">6.2 Traditionalist Orders vs Industrial Modernizers (पारंपरिक संघ vs औद्योगिक आधुनिकीकरणकर्ते)</h3>
+<div class="table-container"><table><thead><tr>
+<th>पैलू</th>
+<th>पारंपरिक संघ</th>
+<th>औद्योगिक आधुनिकीकरणकर्ते</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>रचना</strong></td>
+<td>वैदिक शुद्धतावादी पुरोहित-घरे, यज्ञ-नियमितता लीग, ध्यान-तपस्वी संघ, वन-आश्रम करार, काही यक्ष वन-रक्षक</td>
+<td>Steam-Foundry कुल अभियंते, शोधक वसाहतींचे यंत्र-संशोधक, दानव स्थापत्य-घरे, प्राण-धातुविज्ञान खुर्च्या, बहुतेक वानर सॅपर</td>
+</tr>
+<tr>
+<td><strong>संस्थात्मक घर</strong></td>
+<td>क्षेत्र-सभेतील विधी-बाकडी, आश्रम परिषदा, ऋषी सभेची सहकर्मी मंडळे</td>
+<td>शोधक संघ, यंत्र-केंद्र, महा-फाउंड्री, यंत्र-शाखा पदवीधर</td>
+</tr>
+<tr>
+<td><strong>विधीबाबत भूमिका</strong></td>
+<td>आहुती-नियमितता ही दैवी अर्थव्यवस्थेची <strong>भार-वाहक भिंत</strong> — देव <em>यज्ञ-अवलंबित</em></td>
+<td>विधी टिकवायची, पण प्रमाण हे व्यवस्थापित चल आहे, पवित्र स्थिरांक नाही</td>
+</tr>
+<tr>
+<td><strong>यंत्रांबाबत भूमिका</strong></td>
+<td>प्राण-वाफ श्रमाचे पवित्रत्व हिरावून घेते व आहुती-प्रवाह उपाशी करते</td>
+<td>प्राण-वाफ ही प्रामाणिक भौतिक उत्क्रांती; देवांचे अवलंबित्व <em>अधिक चांगल्या</em> विधीसाठी युक्तिवाद आहे, कमी इंजिनांसाठी नाही</td>
+</tr>
+<tr>
+<td><strong>सर्वात तीव्र घर्षण</strong></td>
+<td>यांत्रिक शेती व शहरी स्थलांतरामुळे घरगुती विधी कमी होतात → देव-ऊर्जा मोजण्याइतकी कमकुवत होते</td>
+<td>रेल्वे व तार यांनी आधीच तीन सीमांत कोसळ्या रोखल्या — इंजिनाने ज्या विधी-व्यवस्थेला ते उपाशी करते असे म्हणतात तीच <em>वाचवली</em></td>
+</tr>
+<tr>
+<td><strong>शोधकांबाबत स्थिती</strong></td>
+<td>संशय; आगाऊ audit व "रचनात्मक सुदृढता" प्रमाणपत्राची मागणी</td>
+<td>युती; निधी-समानता व जलद प्रयोग-परवाना</td>
+</tr>
+<tr>
+<td><strong>ठराविक नायक</strong></td>
+<td>परवानगीशिवाय भेग-चाचणी रोखणारा तपस्वी, जो नंतर बरोबर ठरतो</td>
+<td>वायाडक्टचा मार्ग बदलून ४० दिवसांत शहर वाचवणारा अभियंता</td>
+</tr>
+<tr>
+<td><strong>अपयशाचा प्रकार</strong></td>
+<td>Sthiti-Glaciation होते: विधी विश्वासणाऱ्यापेक्षा जास्त जगते</td>
+<td>Vikāsa-Chaos होते: एक प्रोटोटाइप खंदक कायमची भेग उघडते</td>
+</tr>
+<tr>
+<td><strong>कायदेशीर सामाईक भूमी</strong></td>
+<td>दोघांना Corrupted Realm ची भीती; दोघे ऋषी-audit तत्त्व स्वीकारतात</td>
+<td>दोघे ऋषी-audit तत्त्व स्वीकारतात; दोघे सीमांताला निधी देतात</td>
+</tr>
+</tbody></table></div>
+<h3 id="6_3_setu_loyalists_vs_astral_regional_autonomists_________________vs_astral">6.3 Setu Loyalists vs Astral Regional Autonomists (सेतु निष्ठावान vs Astral प्रादेशिक स्वायत्ततावादी)</h3>
+<div class="table-container"><table><thead><tr>
+<th>पैलू</th>
+<th>सेतु निष्ठावान</th>
+<th>Astral प्रादेशिक स्वायत्ततावादी</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>रचना</strong></td>
+<td>Central Hub प्रशासक, Vajra-Durga अधिकारी दल, अनेक पालक, करिअर audit अधिकारी, सेतुची मिश्र-वंश भरती कुटुंबे</td>
+<td>खंडीय राजे, राज्य न्यायालये, कुल-सभा गट, प्रांतीय गिल्ड महासंघ, "Astral-प्रथम" विधी-घरे</td>
+</tr>
+<tr>
+<td><strong>संस्थात्मक घर</strong></td>
+<td>Buffer Zone Central Hub, Deva-Setu उत्तर, महा-पालक व मुख्य ऋषी मतदारसंघ</td>
+<td>Astral खंडांतील क्षेत्र-सभा</td>
+</tr>
+<tr>
+<td><strong>मुख्य दावा</strong></td>
+<td>सीमांत सुरक्षा अविभाज्य: एक संहिता, एक सैन्य, एक audit मानक</td>
+<td>स्थानिक रीत, स्थानिक कर, स्थानिक ज्ञान — सेतु सीमा चालवते, घर नाही</td>
+</tr>
+<tr>
+<td><strong>भरती</strong></td>
+<td>सर्व वंशांतून merit-pool; महा-सेतुची शपथ वंश-निष्ठेपेक्षा वरचढ ([<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md) §4.4)</td>
+<td>कुळातील तरुणांच्या सामूहिक भरतीला विरोध; प्रादेशिक कोटा व सेवा-परतावा मागणी</td>
+</tr>
+<tr>
+<td><strong>संसाधने</strong></td>
+<td>सीमा-ढाल व भेगांसाठी केंद्रीकृत प्राण-वाटप</td>
+<td>स्थानिक उद्योग, रस्ते, मंदिरे, सिंचनासाठी प्राण-वाटा मागणी</td>
+</tr>
+<tr>
+<td><strong>कर व कायदा</strong></td>
+<td>सर्व क्षेत्रांत महा-सेतुची एकसमान संहिता</td>
+<td>द्वि-संहिता प्रस्ताव: सीमेवर वैश्विक कायदा, आत राज्य-कायदा</td>
+</tr>
+<tr>
+<td><strong>दिसणारे लक्षण</strong></td>
+<td>अति-केंद्रीकरण → Motherland Bias उलटून "सेतु-प्रथम" जमातीवाद</td>
+<td>अति-विकेंद्रीकरण → तीन सीमा-चौक्यांवर सत्याच्या तीन आवृत्त्या</td>
+</tr>
+<tr>
+<td><strong>ठराविक भडका</strong></td>
+<td>भेग-भेदाने सिद्ध होते की स्थानिक राज्याने तयारीबाबत खोटे सांगितले</td>
+<td>सेतु वॉरंट राज्य न्यायालयावर वरचढ ठरतो आणि स्थानिक जनता दंगल करते</td>
+</tr>
+<tr>
+<td><strong>संघर्षाचे स्वरूप</strong></td>
+<td><strong>प्रशासकीय व घटनात्मक</strong>, वाईट नाही — दोन्ही बाजू कायदेशीर</td>
+<td>प्रशासकीय; स्वायत्ततावादी डीफॉल्टने <strong>गद्दार नाहीत</strong></td>
+</tr>
+</tbody></table></div>
+<h3 id="6_4_cross-cutting_realities__anti-simplification_rules__________-">6.4 Cross-Cutting Realities (Anti-Simplification Rules — सरलीकरण-विरोधी नियम)</h3>
+<ol>
+<li><strong>कोणताही एकसंध गट नाही.</strong> दानव स्थापत्यकार विधीबाबत पारंपरिक आणि वायाडक्टबाबत आधुनिकीकरणकर्ता असू शकतो. मानव audit अधिकारी सेतु निष्ठावान व आधुनिकीकरणकर्ता दोन्ही असू शकतो.</li>
+<li><strong>शुद्धता-चाचणी नाही.</strong> वंश गट ठरवत नाही. देव/असुर अधिकारी नोंदवही ([<code>23</code>](./23_BUFFER_ZONE_NAMED_OFFICERS_AND_ORIGINS.md)) जाणीवपूर्वक मिश्र आहे: सत्यकेतू (मानव), वज्रकेतू (असुर), युक्तिनाथ (असुर), मेधावी (देव), रणवय (देव), यंत्रिका (मानव).</li>
+<li><strong>Buffer Zone चे पाच घर्षणे</strong> ([<code>20</code>](./20_EVOLVING_COSMOS_REALMS_AND_COUNCIL_SYSTEM.md) §3.2) ही या संघर्षांची <em>दैनंदिन</em> इंजिन आहेत: अधिकारक्षेत्र टकराव, दोषारोपणाचा खेळ, प्राण-वाटप, बढती/वंश स्पर्धा, मातृभूमी-पूर्वग्रह.</li>
+<li><strong>दोन्ही निष्ठावान आहेत.</strong> वैचारिक घर्षण रचनात्मक आहे — Red-Ink Seal, Emergency Hold व त्रि-विभागीय न्यायाधिकरण ते <em>वाहून नेण्यासाठी</em> आहेत, रद्द करण्यासाठी नाही.</li>
+<li><strong>Corrupted Realm हा सामाईक बाह्य शत्रू आहे.</strong> कोणताही गट Abyss सोबत हद्दपारी-व्यापाराचे समर्थन करत नाही. असा प्रयत्न करणाऱ्या गटाला दंड-मांडणीतील Treason ओळीला तोंड द्यावे लागते ([<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md) §8).</li>
+</ol>
+<hr>
+<h2 id="7__institutional_relationships_____________________canon_lock">7. Institutional Relationships (संस्थात्मक संबंध) [CANON LOCK]</h2>
+<h3 id="7_1_the_four_buffer_zone_departments___who_each_faction_courts______buffer_zone">7.1 The Four Buffer Zone Departments — Who Each Faction Courts (चार Buffer Zone विभाग — कोणता गट कोणाला जवळ करतो)</h3>
+<div class="table-container"><table><thead><tr>
+<th>विभाग</th>
+<th>प्रमुख कार्यालय</th>
+<th>क्षेत्र-प्रमुख</th>
+<th>वंशांकडून काय हवे</th>
+<th>देव/निष्ठावान वाचन</th>
+<th>असुर/आधुनिकीकरणकर्ता वाचन</th>
+<th>स्वायत्ततावादी वाचन</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>ऋषी सभा</strong> — Audit व तपास</td>
+<td>मुख्य ऋषी</td>
+<td>सत्यकेतू</td>
+<td>स्वच्छ खतावण्या, सक्ती न केलेला पुरावा, प्रामाणिक वंश-नोंदी</td>
+<td>नैसर्गिक भागीदार; विधी-घरे audit तत्त्व स्वीकारतात</td>
+<td>सह्य पंच; शोधकांना जलद वॉरंट हवे</td>
+<td>राज्य न्यायालयावर वरचढ ठरल्यास राग</td>
+</tr>
+<tr>
+<td><strong>पालक संघ</strong> — सुरक्षा व सीमा</td>
+<td>महा-पालक</td>
+<td>वज्रकेतू</td>
+<td>भरती, पशू, सीमांत-फेरी, रेल्वे सुरक्षा</td>
+<td>सेतु निष्ठावानांचा कणा; विधी-घरे शिस्त मान्य करतात</td>
+<td>आधुनिकीकरणकर्ते इंजिने पुरवतात पण हालचाली-निर्बंधांवर कुरकुर</td>
+<td>स्थानिक कमांड हवी, केंद्रीय नाही</td>
+</tr>
+<tr>
+<td><strong>शोधक संघ</strong> — संशोधन व तंत्रज्ञान</td>
+<td>प्रमुख शोधक</td>
+<td>युक्तिनाथ</td>
+<td>परवाने, धातुविज्ञान प्रतिभा, भेग-माहिती, निधी-समानता</td>
+<td>नजरेखाली; विधी-शुद्धतावादी रचनात्मक प्रमाणपत्र मागतात</td>
+<td>मूळ घर; Vikāsa अजेंडा चालवते</td>
+<td>स्थानिक प्रयोगशाळा महत्त्वाच्या पण सेतुची तंत्र-मक्तेदारी भीती</td>
+</tr>
+<tr>
+<td><strong>आत्मा-प्रशासन क्षेत्र विभाग</strong> — संक्रमण व ओळख</td>
+<td>यम · विधाता · चित्रगुप्त</td>
+<td>नियम</td>
+<td>वंश-नोंदी, कर्म-ओळख, दूतमार्ग</td>
+<td>तटस्थ; विचारसरणीच्या वर</td>
+<td>तटस्थ; सर्वांना Soul ID पुरवते</td>
+<td>तटस्थ; कोणताही गट हल्ला न करणारा एकमेव विभाग</td>
+</tr>
+</tbody></table></div>
+<pre><code class="language-">        [ ६ दैवी पदे  —  मतदान व दैनंदिन शासन ]
+        यम · विधाता · चित्रगुप्त · मुख्य ऋषी · महा-पालक · प्रमुख शोधक
+                                  │
+        ┌─────────────┬───────────┼────────────┬──────────────┐
+        ▼             ▼           ▼            ▼              ▼
+ [ऋषी/audit]    [पालक]     [शोधक]    [आत्मा-प्रशासन]  [सप्तर्षी परिषद]
+  सत्यकेतू      वज्रकेतू    युक्तिनाथ      नियम        (स्वतंत्र सहकर्मी;
+   मेधावी       धृतिका      यंत्रिका     सेतुव्रता      अ-बंधनकारक निर्णय,
+   अन्वेष        रणवय       क्षितिज       लेख्या        राजांना बंधनकारक उपदेश)
+                                           दूतान
+                                  │
+                                  ▼
+                    [ Astral Realm — क्षेत्र-सभा, राज्ये, कुल-सभा ]
+                                  │
+                     ┌────────────┴────────────┐
+                     ▼                         ▼
+        [ पारंपरिक ]                    [ आधुनिकीकरणकर्ते ]
+        [ सेतु निष्ठावान ]              [ स्वायत्ततावादी ]  ← समान लोकसंख्या, वेगळा अक्ष</code></pre>
+<h3 id="7_2_the_six_divine_offices___standing_position_on_each_lineage_bloc_____________________________-">7.2 The Six Divine Offices — Standing Position on Each Lineage Bloc (सहा दैवी पदे — प्रत्येक वंश-गटावर स्थिती)</h3>
+<div class="table-container"><table><thead><tr>
+<th>दैवी पद</th>
+<th>मुख्य चिंता</th>
+<th>देवांबाबत</th>
+<th>असुरांबाबत</th>
+<th>ऋषींबाबत</th>
+<th>अमानवी जीवांबाबत</th>
+<th>दोन गट-अक्षांबाबत</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>यम</strong> (आत्मा-प्रशासन, अंतिम न्याय)</td>
+<td>कर्म-अचूकता</td>
+<td>अंध</td>
+<td>अंध</td>
+<td>आदरपूर्वक, अ-अधीन करणारा नाही</td>
+<td>पूर्ण कायदेशीर व्यक्तित्व (खतावणी-बद्ध)</td>
+<td>दोन्ही अक्षांच्या वर; केवळ आचरणाचा न्याय</td>
+</tr>
+<tr>
+<td><strong>विधाता</strong> (स्थलांतर व कर्मबंध)</td>
+<td>आत्मा ↔ शरीर ↔ वंश यांची योग्य जोडणी</td>
+<td>आदित्य नोंदींचा सल्ला</td>
+<td>दैत्य/दानव नोंदींचा सल्ला</td>
+<td>ऋषी वंश-स्थापत्याचा सल्ला</td>
+<td>वानर/नाग इत्यादी ओळख नोंदवतो</td>
+<td>तटस्थ</td>
+</tr>
+<tr>
+<td><strong>चित्रगुप्त</strong> (Soul ID व खतावण्या)</td>
+<td>नोंद-अखंडता</td>
+<td>समान</td>
+<td>समान</td>
+<td>सहकर्मी संग्रहालय सहकार्य</td>
+<td>समान — वंश नोंदणीचा सह-संचालक</td>
+<td>तटस्थ; सर्वजण ज्यावर वाद घालतात ती खतावणी पुरवतो</td>
+</tr>
+<tr>
+<td><strong>मुख्य ऋषी</strong> (audit, विसंगती अभ्यास)</td>
+<td>सत्य, विसंगती अभ्यास</td>
+<td>देव विधी-निधीचा audit</td>
+<td>असुर प्रयोगांचा audit</td>
+<td><em>स्वतःच</em> ऋषींचा घटनात्मक शिखर</td>
+<td>सर्व गिल्डांचा समान audit</td>
+<td>पारंपरिक <strong>आणि</strong> आधुनिकीकरणकर्त्यांचा नैसर्गिक मित्र — दोघांचाही audit</td>
+</tr>
+<tr>
+<td><strong>महा-पालक</strong> (उच्च रक्षक)</td>
+<td>सीमा व सील अखंडता</td>
+<td>विधी-सीमांत स्थैर्यावर अवलंबून</td>
+<td>अडथळ्यांसाठी शोधावर अवलंबून</td>
+<td>ऋषी-सल्ला स्वीकारतो</td>
+<td>पशू + हवाई/वायाडक्ट दले एकत्र करतो</td>
+<td>सेतु निष्ठावानांचा रचनात्मक मित्र</td>
+</tr>
+<tr>
+<td><strong>प्रमुख शोधक</strong> (उत्क्रांती व क्षमता)</td>
+<td>उत्क्रांती व क्षमता विस्तार</td>
+<td>देव पायाभूत सुविधा सुधारायच्या</td>
+<td>असुर नवोन्मेष सुरक्षितपणे मोठा करायचा</td>
+<td>ऋषी-ताण चाचणी स्वीकारतो</td>
+<td>अर्ध-दैवी अभियंत्यांना गिल्ड-समानता हवी</td>
+<td>आधुनिकीकरणकर्त्यांचा रचनात्मक मित्र</td>
+</tr>
+</tbody></table></div>
+<h3 id="7_3_delegates__standing_rule">7.3 Delegates' Standing Rule (प्रतिनिधींचा स्थायी नियम — वारशाने, बदल नाही)</h3>
+<ul>
+<li>प्रजापती, नारद व रुद्र हे <strong>दैवी प्रतिनिधी</strong> आहेत, वंश-प्रतिनिधी नाहीत, आणि त्यांना ऋषी किंवा अधिकाऱ्यांवर <strong>स्वयंचलित अधीनता नाही</strong> ([<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md) §6.2, §6.5).</li>
+<li>प्रतिनिधी <strong>मतदान करत नाहीत</strong>; ते मूलभूत तत्त्वांना धोका देणाऱ्या कायद्यावर <strong>Emergency Hold</strong> (कमाल ३० युग-दिवस → नंतर Status Quo Ante) ठेवू शकतात ([<code>21</code>](./21_COSMIC_CONSTITUTION_CORRECTIONS_AND_CANON_LOCK.md) Decision 5).</li>
+<li>प्रतिनिधींचे खरे स्वरूप केवळ <strong>Tier 1 अधिकारी</strong> (सत्यकेतू, वज्रकेतू, युक्तिनाथ, नियम) जाणतात; बाकी सर्वांना "Central Inspector / High Commissioner / Adjudicator" दिसतात ([<code>23</code>](./23_BUFFER_ZONE_NAMED_OFFICERS_AND_ORIGINS.md) §1).</li>
+<li><strong>म्हणून:</strong> कोणताही गट प्रतिनिधीला "आपला" म्हणून दावा करू शकत नाही. जो गट दैवी पुष्टीचा दावा करतो तो सैद्धांतिक चूक करतो, आणि ऋषी ते सार्वजनिकपणे सांगतील.</li>
+</ul>
+<h3 id="7_4_the_doctrinal_boundary_table">7.4 The Doctrinal Boundary Table (सैद्धांतिक सीमा तक्ता — कोण काय करू शकत नाही)</h3>
+<div class="table-container"><table><thead><tr>
+<th>घटक</th>
+<th>करू शकतो</th>
+<th>करू शकत नाही</th>
+</tr></thead><tbody>
+<tr>
+<td>पारंपरिक संघ</td>
+<td>क्षेत्र-सभांमध्ये पाठपुरावा, audit मागणी, परवानगीशिवाय चाचण्या नाकारणे, शिकवणे</td>
+<td>कर आकारणे, भरती करणे, गिल्ड रद्द करणे, न्यायाधिकरण निकालावर वरचढ ठरणे</td>
+</tr>
+<tr>
+<td>औद्योगिक आधुनिकीकरणकर्ते</td>
+<td>बांधणे, गिल्डमार्फत पेटंट, परवान्यांसाठी अर्ज, सीमांताला निधी</td>
+<td>परवानगीशिवाय क्षेत्र-ताण चाचण्या, शोधकांचे प्रमाणपत्र बायपास</td>
+</tr>
+<tr>
+<td>सेतु निष्ठावान</td>
+<td>सर्व क्षेत्रांत महा-सेतु संहिता लागू, आपत्-धर्माखाली तैनाती</td>
+<td>घटना दुरुस्त करणे, त्रिदेवांची संमती ओलांडणे, Emergency Hold ३० दिवसांपुढे वाढवणे</td>
+</tr>
+<tr>
+<td>Astral प्रादेशिक स्वायत्ततावादी</td>
+<td>आंतर-प्रदेशात राज्य-कायद्याखाली स्व-शासन, कुल-सभा स्थाने, उच्च परिषदेकडे अर्ज</td>
+<td>कायदेशीर सेतु वॉरंट अडवणे, हद्दपार व्यक्तीला आश्रय, सीमा-कर नाकारणे</td>
+</tr>
+<tr>
+<td>ऋषी (कोणताही दर्जा)</td>
+<td>सल्ला, निरीक्षण, audit, नकार, राजीनामा, निर्णय / उपदेश जारी</td>
+<td>उच्च परिषदेत मतदान, सैन्याचे नेतृत्व, अनंताची खतावणी बदलणे</td>
+</tr>
+<tr>
+<td>अर्ध-दैवी गिल्ड</td>
+<td>स्वतःचे चार्टर, प्रशिक्षण, व्यापार, प्रांतीय स्थाने</td>
+<td>कायदेशीर विशेषाधिकाराचे द्वार म्हणून विधी-प्राधान्याचा दावा</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="8__canon_lock_rules___the_ten_invariants_of_module_26______-___________________________________________canon_lock">8. Canon Lock Rules — The Ten Invariants of Module 26 (केनन-लॉक नियम — मॉड्यूल २६ चे दहा अपरिवर्तनीय) [CANON LOCK]</h2>
+<ol>
+<li><strong>नैतिक काळे-पांढरे नाही.</strong> देव ≠ चांगले; असुर ≠ वाईट. कार्ये वेगळी; मूल्य वैयक्तिक.</li>
+<li><strong>द्वि-कार्य सिद्धांत टिकतो.</strong> व्यवस्था-पालक आणि उत्क्रांती-उत्प्रेरक दोन्ही घटनात्मकदृष्ट्या अनिवार्य.</li>
+<li><strong>चुकीचा निवास अस्तित्वात नाही.</strong> देव व असुर दोन्ही Astral Realm मध्ये राहतात आणि Buffer Zone मध्ये सेवा देतात.</li>
+<li><strong>जन्म-समता निरपेक्ष आहे.</strong> केवळ कृति, तपस्या व कर्म प्रतिष्ठा देतात. वंश-विशेषाधिकार कधीही नाही.</li>
+<li><strong>वंश संस्कृती आहे, दर्जा नाही.</strong> परंपरा व ज्ञानात सुरुवातीची आघाडी देते; कायदेशीर फायदा शून्य.</li>
+<li><strong>समान हक्क संहिताबद्ध आहेत.</strong> महा-सेतु संहितेची पाच कलमे कोणताही गट, सेतु निष्ठावानांसह, स्थगित करू शकत नाही.</li>
+<li><strong>अ-अधीनता नियम अभेद्य आहे.</strong> ऋषी सल्ला देतात, निरीक्षण करतात, विश्लेषण करतात आणि राजीनामा देऊ शकतात; ते कधीही पगारी चाकर किंवा आदेश-पालन कर्मचारी नाहीत.</li>
+<li><strong>सप्तर्षी परिषद ऋषी सभेपासून स्वतंत्र आहे.</strong> एक दुसऱ्याला आदेश देत नाही; दोन्ही audit तत्त्वाला जबाबदार, एकमेकांना नाही.</li>
+<li><strong>बंध पशू भागीदार आहेत.</strong> प्राण-बंधन मालकी, जनावर म्हणून वारसा आणि आपत्-धर्माबाहेर सामूहिक भरती प्रतिबंधित करते.</li>
+<li><strong>कोणताही गट दैवी पुष्टीचा दावा करू शकत नाही.</strong> प्रतिनिधी पक्षपातरहित आहेत; अन्यथा दावा करणाऱ्या गटावर सैद्धांतिक निंदा.</li>
+</ol>
+<h3 id="8_1_prohibited_story_errors_______________________qa">8.1 Prohibited Story Errors (निषिद्ध कथानक चुका — QA यादी)</h3>
+<ul>
+<li>[ ] ❌ देव पात्राला स्वयंचलितपणे नैतिक किंवा उच्च-कायदेशीर मानणे.</li>
+<li>[ ] ❌ असुर पात्राला राक्षसी खलनायकाच्या साच्यात बसवणे.</li>
+<li>[ ] ❌ वंश/जन्म अधिकार, स्थान किंवा कायदेशीर विशेषाधिकार देते असे कोणतेही वाक्य.</li>
+<li>[ ] ❌ ऋषीला कार्यालयाचा अधीन कर्मचारी म्हणून आदेश घेताना दाखवणे.</li>
+<li>[ ] ❌ बंध श्वान किंवा प्राण-अश्व मालमत्ता म्हणून चित्रित, विकले किंवा वारसा दिलेले.</li>
+<li>[ ] ❌ दैवी पद किंवा प्रतिनिधी देव/असुर गटाचा असल्याचे दाखवणे.</li>
+<li>[ ] ❌ गट-संघर्ष कायदेशीर-प्रशासकीय सूक्ष्मतेशिवाय "चांगले vs गद्दार" असे मांडणे.</li>
+<li>[ ] ❌ Corrupted Realm सोबत व्यापार करणारा कोणताही गट, Treason दंड-ओळीशिवाय.</li>
+<li>[ ] ❌ किन्नर/वानर नोंदणी-स्थान वापरून हीन दर्जा सुचवणे.</li>
+<li>[ ] ❌ या मॉड्यूलमध्ये किंवा त्याच्या कथा-आउटपुटमध्ये इंग्रजी नावे देवनागरीत लिहिणे (तांत्रिक संज्ञा इंग्रजीतच).</li>
+</ul>
+<hr>
+<h2 id="9__cross-reference_index________-">9. Cross-Reference Index (संदर्भ-सूची)</h2>
+<div class="table-container"><table><thead><tr>
+<th>विषय</th>
+<th>प्राथमिक फाईल</th>
+</tr></thead><tbody>
+<tr>
+<td>चार-स्तरीय विश्व, जन्म-समता, Buffer Zone घर्षणे</td>
+<td>[<code>20</code>](./20_EVOLVING_COSMOS_REALMS_AND_COUNCIL_SYSTEM.md)</td>
+</tr>
+<tr>
+<td>कश्यप नेक्सस वंशावळ, प्रजाती-लक्षणे व कमकुवतपणा, ऋषी दर्जे</td>
+<td>[<code>06</code>](./06_ENTITIES_AND_RACES.md)</td>
+</tr>
+<tr>
+<td>असुर गट (सार्वभौम / पंडित / योद्धा / स्वतंत्र)</td>
+<td>[<code>14</code>](./14_DIVINE_UNIVERSE_FRAMEWORK_V1.md)</td>
+</tr>
+<tr>
+<td>घटना-दुरुस्त्या, मतदान, Emergency Hold, द्वि-स्तरीय हस्तक्षेप</td>
+<td>[<code>21</code>](./21_COSMIC_CONSTITUTION_CORRECTIONS_AND_CANON_LOCK.md)</td>
+</tr>
+<tr>
+<td>दैवी प्रतिनिधी, गैर-गोंधळ नियम, Red-Ink सील मुदत</td>
+<td>[<code>22</code>](./22_DIVINE_DELEGATES_AND_BUFFER_ZONE_HIERARCHY.md)</td>
+</tr>
+<tr>
+<td>नामनिर्देशित अधिकारी, वंश-उगम, Tier 1 / Tier 2 clearance</td>
+<td>[<code>23</code>](./23_BUFFER_ZONE_NAMED_OFFICERS_AND_ORIGINS.md)</td>
+</tr>
+<tr>
+<td>Buffer Zone क्षेत्रे, Vajra-Durga, Pratigraha Ground, Deva-Setu</td>
+<td>[<code>24</code>](./24_BUFFER_ZONE_COMPLETE_GEOGRAPHY_AND_SECTORS.md)</td>
+</tr>
+<tr>
+<td>दर्जा-मापन, भरती merit-pool, त्रि-विभागीय न्यायाधिकरण, दंड</td>
+<td>[<code>25</code>](./25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md)</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="10__canon_lock_status______-">10. Canon Lock Status (केनन-लॉक स्थिती)</h2>
+<div class="table-container"><table><thead><tr>
+<th>बाब</th>
+<th>स्थिती</th>
+</tr></thead><tbody>
+<tr>
+<td>देव / असुर अ-द्वि-आधारित नैतिक चौकट (द्वि-कार्य सिद्धांत)</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>देव पालक-अक्ष व असुर उत्प्रेरक-अक्ष व्याख्या</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>संयुक्त Astral Realm + Buffer Zone निवास</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>जन्म-समता नियम (कृति / तपस्या / कर्म)</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>वंश नोंदणी व वैदिक कुल → गिल्ड-कुल रूपांतर</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>महा-सेतु संहिता — पाच समान-हक्क कलमे</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>ऋषी दर्जे व अ-अधीनता नियम</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>सप्तर्षी परिषद व्याप्ती (निर्णय, उपदेश, साक्ष)</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>अमानवी व अर्ध-दैवी जीव भूमिका, गिल्ड, योगदान</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>प्राण-बंधन पशू भागीदारी करार</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>गट-अक्ष A: पारंपरिक vs औद्योगिक आधुनिकीकरणकर्ते</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>गट-अक्ष B: सेतु निष्ठावान vs Astral प्रादेशिक स्वायत्ततावादी</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>संस्थात्मक संबंध — ४ Buffer Zone विभाग</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>संस्थात्मक संबंध — ६ दैवी पदे</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>दहा अपरिवर्तनीय + QA निषिद्ध-चूक यादी</td>
+<td>[LOCKED]</td>
+</tr>
+<tr>
+<td>कश्यप तक्त्यात किन्नर / वानर नोंदणी-स्थान</td>
+<td>[OPEN-EXTENSION] — समान दर्जा स्वतः [LOCKED]</td>
+</tr>
+</tbody></table></div>
+<p><strong>लॉक घोषणा:</strong> [LOCKED] चिन्हांकित बाबी सर्व पुढील पात्र-पत्रके, गट-माहितीपत्रके व कथा-मसुद्यांसाठी अपरिवर्तनीय आहेत. कोणताही बदल करायचा असल्यास स्पष्ट तारखेसह नवीन केनन-लॉक पुनरावृत्ती आणि या फाईलमध्ये व [<code>INDEX.md</code>](./INDEX.md) मध्ये संदर्भ-अद्ययावत करणे आवश्यक.</p></article>
+    <footer>07_Factions_Sociology_and_Cold_War\01_Devas_Asuras_Rishis_and_Factions.md · 481 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

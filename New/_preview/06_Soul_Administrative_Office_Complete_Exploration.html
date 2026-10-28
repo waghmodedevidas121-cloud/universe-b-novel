@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06. Soul Administrative Office — Complete Exploration — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">03_Soul_Administration\06_Soul_Administrative_Office_Complete_Exploration.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/03_Soul_Administration/06_Soul_Administrative_Office_Complete_Exploration.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__correction_log">0. Correction Log</a><a class="h2" href="#1_______________singularity_physics">1. क्षीर सागर — Singularity Physics</a><a class="h2" href="#2__collection_protocol______-yama_handover">2. Collection Protocol — दोन-Yama Handover (नवीन)</a><a class="h3" href="#2_1">2.1 मूलभूत रचना</a><a class="h3" href="#2_2">2.2 टप्प्यांचे तपशील</a><a class="h3" href="#2_3_jurisdiction">2.3 Jurisdiction — दोन यम, दोन हद्दी</a><a class="h2" href="#3__collection_standard__cs">3. Collection Standard (CS) — विधाता कोणाला निवडतो?</a><a class="h2" href="#4">4. दुरुस्त केलेला मुख्य प्रवाह</a><a class="h2" href="#5__pratigraha_______-________proposal___name">5. Pratigraha — आगमन-गोदाम [PROPOSAL — NAME]</a><a class="h2" href="#6__dv_ra___gate___power_bands">6. Dvāra — Gate & Power Bands</a><a class="h3" href="#6_1">6.1 तीन इनपुट</a><a class="h3" href="#6_2_power_bands___proposal">6.2 Power Bands [PROPOSAL]</a><a class="h3" href="#6_3_gate">6.3 Gate नियम</a><a class="h3" href="#6_4_summoning">6.4 Summoning — अपवाद जो नियम मोडतो</a><a class="h2" href="#7____-">7. पद-यादी</a><a class="h2" href="#8__conduit_transit">8. Conduit Transit — शक्तिशाली माणसे वापरतात का?</a><a class="h2" href="#9__standards_register">9. Standards Register</a><a class="h2" href="#10__forms___registers">10. Forms & Registers</a><a class="h2" href="#11__gaps">11. Gaps — उरलेले प्रश्न</a><a class="h2" href="#12______-_____________applied">12. केनन-पॅच यादी — ✅ APPLIED (२० ऑक्टोबर २०२६)</a><a class="h2" href="#13________conflicts___________x1_x8_applied">13. बाह्य conflicts — स्थिती (X1–X8 APPLIED, २० ऑक्टोबर २०२६)</a><a class="h2" href="#14">14. उरलेले खुले मुद्दे</a></nav>
+  <div>
+    <article><h1 id="06__soul_administrative_office___complete_exploration__v5___synced">06. Soul Administrative Office — Complete Exploration (v5 · SYNCED)</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\03_Soul_Administration\06_Soul_Administrative_Office_Complete_Exploration.md</code></p>
+<p><strong>Status:</strong> <code>[EXPLORATION — NOT CANON]</code> · <strong>canon docs 01–05 synced on 20 Oct 2026</strong></p>
+<p><strong>Version:</strong> v5 · २० ऑक्टोबर २०२६ · <strong>Collection Standard + दोन-Yama handover + Gate; canon patch APPLIED.</strong></p>
+<p><strong>Purpose:</strong> केनन नकाशा + collection protocol + gate bands + उरलेले बाह्य conflicts.</p>
+<hr>
+<h2 id="0__correction_log">0. Correction Log</h2>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>जुने (चूक)</th>
+<th>आता अधिकृत</th>
+</tr></thead><tbody>
+<tr>
+<td>C-1</td>
+<td>क्षीर सागर = सीमेवरचा समुद्र</td>
+<td><strong>Singularity Apex</strong>, Divine Realm; Garbhodakashayi Vishnu यांचे वासस्थान</td>
+</tr>
+<tr>
+<td>C-2</td>
+<td>क्षीर सागराला संरक्षण लागतो</td>
+<td><strong>संरक्षण नाही, पहारा नाही</strong> — पोहोचणेच अशक्य</td>
+</tr>
+<tr>
+<td>C-3</td>
+<td>सेतुव्रता सागर-किनारी अडवतो</td>
+<td>सेतुव्रता = <strong>Pratigraha गोदामाचा वॉर्डन</strong></td>
+</tr>
+<tr>
+<td>C-4</td>
+<td>आत्मे किनाऱ्याला वाहून येतात</td>
+<td><strong>direct teleport</strong> → Buffer Zone, Yama office ground</td>
+</tr>
+<tr>
+<td>C-5</td>
+<td>आत्मे singularity मधून जातात</td>
+<td><strong>कधीच नाही</strong> — Core = पूर्ण विलय; फक्त <strong>Soul Corridor</strong></td>
+</tr>
+<tr>
+<td>C-6</td>
+<td>पॉवर label नुसार</td>
+<td><strong>label रद्द</strong>; पॉवर = <strong>karma + purity + gating standard</strong></td>
+</tr>
+<tr>
+<td>C-7</td>
+<td>अनपेक्षित आत्मे = drift</td>
+<td><strong>मुख्य कारण summoning magic</strong>; दुर्मिळ अपवाद म्हणून void drift टिकवला (कोणतेही नामनिर्देशित पात्र नाही)</td>
+</tr>
+<tr>
+<td>C-8</td>
+<td>विधाता collect करत नाही</td>
+<td><strong>चूक</strong> — विधाता स्वतः collect करतो</td>
+</tr>
+<tr>
+<td>C-9</td>
+<td>तीन-मार्ग A/S/B</td>
+<td><strong>गरज नाही</strong> — एकच नियम: gate सर्वांना band देते</td>
+</tr>
+<tr>
+<td><strong>C-10</strong></td>
+<td>विधाता कोणत्याही क्षणी आत्मा घेऊ शकतो</td>
+<td><strong>नाही.</strong> आधी <strong>source universe च्या यमाची परवानगी</strong> + <strong>नियती पूर्ण</strong> असणे बंधनकारक</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="1_______________singularity_physics">1. क्षीर सागर — Singularity Physics</h2>
+<pre><code class="language-">        [ DIVINE REALM · SINGULARITY APEX ]
+        ┌──────────────────────────────────────────────┐
+        │   CORE ZONE — Garbhodakashayi Vishnu          │
+        │   अनंत-शेषावर शयन · सर्व ऊर्जेचा उगम           │
+        │   प्रवेश = पूर्ण विलय · ✗ guards ✗ wards       │
+        ├──────────────────────────────────────────────┤
+        │   SOUL CORRIDOR — aetheric descent            │
+        │   ✦ DVĀRA GATE — karma · purity · standard    │
+        └──────────────────────────────────────────────┘
+                              │ direct teleport
+                              ▼
+        [ BUFFER ZONE · YAMA OFFICE GROUND ]
+        [ PRATIGRAHA — आगमन-गोदाम · high security ]</code></pre>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>कायदा</th>
+<th>अर्थ</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>K1</strong></td>
+<td>Singularity Apex</td>
+<td>विश्वाचा उगम-बिंदू; Garbhodakashayi Vishnu अनंत-शेषावर.</td>
+</tr>
+<tr>
+<td><strong>K2</strong></td>
+<td>Absolute Dissolution</td>
+<td>Core मध्ये गेलेला आत्मा परत येत नाही — म्हणून आत्मे core मधून जात नाहीत.</td>
+</tr>
+<tr>
+<td><strong>K3</strong></td>
+<td>No Security Needed</td>
+<td>पोहोचणेच अशक्य; पहारा/वॉर्ड/सेनापती काहीच नाही.</td>
+</tr>
+<tr>
+<td><strong>K4</strong></td>
+<td>Two-Zone Structure</td>
+<td>Core (अगम्य) + Soul Corridor (आत्म-प्रवाह).</td>
+</tr>
+<tr>
+<td><strong>K5</strong></td>
+<td>Gate Allocation</td>
+<td>Corridor मध्ये <strong>Dvāra</strong> — karma + purity + gating standard वाचून band ठरवते.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="2__collection_protocol______-yama_handover">2. Collection Protocol — दोन-Yama Handover (नवीन)</h2>
+<h3 id="2_1">2.1 मूलभूत रचना</h3>
+<p>प्रत्येक विश्वाचा <strong>स्वतःचा यम</strong> असतो. Universe B चा विधाता दुसऱ्या विश्वातून आत्मा <strong>चोरत नाही</strong> — तो त्या विश्वाच्या यमाकडे <strong>अधिकृत विनंती</strong> करतो.</p>
+<pre><code class="language-">[ UNIVERSE B · VIDHATA ]
+   target profile तयार करतो
+            │
+            ▼  (1) आत्म-निर्गम विनंती (Ātma-Nirgama Patra)
+[ SOURCE UNIVERSE · YAMA (मूळ यम) ]
+   (2) नियती-पूर्णता तपासणी → (3) Release Seal + खातेवही उतारा
+            │
+            ▼  (4) custody transfer — विधाता ताब्यात घेतो
+[ KSHIRA CORRIDOR · DVĀRA ]
+   (5) gate वाचन → band
+            │
+            ▼ direct teleport
+[ PRATIGRAHA · BUFFER ZONE · YAMA (B) ]
+   (6) intake → पडताळणी → परवानगी → बंधन</code></pre>
+<h3 id="2_2">2.2 टप्प्यांचे तपशील</h3>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>टप्पा</th>
+<th>कोण</th>
+<th>काय होते</th>
+<th>पुरावा</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Target Selection</strong></td>
+<td>विधाता (B)</td>
+<td>गरज (band/category) व योग्यता नुसार आत्मा निवड</td>
+<td>selection note</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Requisition</strong></td>
+<td>विधाता (B) → मूळ यम</td>
+<td><code>Ātma-Nirgama Patra</code> — कोणता आत्मा, का</td>
+<td>विनंती क्रमांक</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Fate-Completion Audit</strong></td>
+<td><strong>मूळ यम</strong></td>
+<td>नियतीचे सर्व Key Turns पूर्ण? कर्म शिल्लक? प्रतिज्ञा प्रलंबित?</td>
+<td><strong>Purṇa-Karma certificate</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Release</strong></td>
+<td><strong>मूळ यम</strong></td>
+<td><strong>Release Seal</strong> + खातेवही उतारा</td>
+<td>exit seal</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Custody Transfer</strong></td>
+<td>विधाता</td>
+<td>आत्मा ताब्यात; मूळ विश्वाचे अधिकार संपले</td>
+<td>handover receipt</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Corridor + Gate</strong></td>
+<td>Dvāra</td>
+<td>band वाचन</td>
+<td>band certificate</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Intake</strong></td>
+<td>सेतुव्रता / लेख्या</td>
+<td>शिक्का, जुळवणी</td>
+<td>Pratigraha receipt</td>
+</tr>
+</tbody></table></div>
+<h3 id="2_3_jurisdiction">2.3 Jurisdiction — दोन यम, दोन हद्दी</h3>
+<div class="table-container"><table><thead><tr>
+<th>टप्पा</th>
+<th>कोणाचे अधिकार</th>
+<th>कुठे संपते</th>
+</tr></thead><tbody>
+<tr>
+<td>नियती-पूर्णता, release</td>
+<td><strong>मूळ यम</strong></td>
+<td>Release Seal नंतर संपते</td>
+</tr>
+<tr>
+<td>Custody during transit</td>
+<td><strong>विधाता (B)</strong></td>
+<td>Pratigraha dock पर्यंत</td>
+</tr>
+<tr>
+<td>Intake, entry clearance</td>
+<td><strong>यम (B)</strong></td>
+<td>कायम</td>
+</tr>
+</tbody></table></div>
+<blockquote><strong>महत्त्वाचे:</strong> मूळ यमाशिवाय release अशक्य. दोन यमांमध्ये <strong>क्रमवारी नाही</strong> — दोन्ही स्वतःच्या विश्वात सार्वभौम.</blockquote>
+<hr>
+<h2 id="3__collection_standard__cs">3. Collection Standard (CS) — विधाता कोणाला निवडतो?</h2>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>निकष</th>
+<th>तपशील</th>
+<th>अपयशास काय होते</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>CS-1</strong></td>
+<td><strong>Purṇa-Karma</strong></td>
+<td>नियतीचे सर्व Key Turns जगले; कोणतेही अनभोगलेले प्रारब्ध शिल्लक नाही</td>
+<td>आत्मा <strong>परत</strong> — त्या विश्वात पुढील जन्म</td>
+</tr>
+<tr>
+<td><strong>CS-2</strong></td>
+<td><strong>No Pending Vow</strong></td>
+<td>प्रतिज्ञा, ऋण, शाप-मुक्तीची अट पूर्ण</td>
+<td>तोच विश्वात थांबतो</td>
+</tr>
+<tr>
+<td><strong>CS-3</strong></td>
+<td><strong>Grade Fit</strong></td>
+<td>आत्म्याचा band व गरज यांची जुळणी (कोणत्याही आत्म्याला जबरदस्तीने उच्च band नाही)</td>
+<td>निवड रद्द</td>
+</tr>
+<tr>
+<td><strong>CS-4</strong></td>
+<td><strong>No Active Seal</strong></td>
+<td>सात वैश्विक सील / काळा संसर्ग / दैवी बंधन नाही</td>
+<td>quarantine</td>
+</tr>
+<tr>
+<td><strong>CS-5</strong></td>
+<td><strong>Source Consent</strong></td>
+<td>मूळ यमाचा Release Seal अनिवार्य</td>
+<td>आत्मा हलत नाही</td>
+</tr>
+<tr>
+<td><strong>CS-6</strong></td>
+<td><strong>Ledger Extract</strong></td>
+<td>चित्रगुप्ताला मूळ खातेवहीचा उतारा</td>
+<td>अपूर्ण फाईल = Red-Ink</td>
+</tr>
+</tbody></table></div>
+<p><strong>सुवर्ण नियम:</strong> <em>"नियती पूर्ण झाली नाही तर आत्मा मुक्त होत नाही."</em> — हे अपहरण आणि योग्य स्थलांतर यातील फरक आहे.</p>
+<hr>
+<h2 id="4">4. दुरुस्त केलेला मुख्य प्रवाह</h2>
+<pre><code class="language-">[ मृत्यू / नियती-पूर्णता ]
+              │
+              ▼
+[ मूळ विश्वाचा यम ] ── Purṇa-Karma तपासणी ── Release Seal
+              │
+              ▼
+[ विधाता — collection + custody ]
+              │
+              ▼
+[ KSHIRA SOUL CORRIDOR · DVĀRA ]
+   karma + purity + gating standard → POWER BAND
+              │  (Core मध्ये प्रवेश नाही)
+              ▼ direct teleport
+[ PRATIGRAHA — Yama office ground ]
+   Setuvrata stamp → Lekhya verify → Yama clearance
+              │
+              ▼
+[ विधाता प्राण-सूत्र ] → [ अनंत append-only ]</code></pre>
+<hr>
+<h2 id="5__pratigraha_______-________proposal___name">5. Pratigraha — आगमन-गोदाम <code>[PROPOSAL — NAME]</code></h2>
+<p><strong>स्वरूप:</strong> Yama कार्यालयाच्या मैदानातील प्रचंड, कमी-प्रकाशाचा हँगर. कमानींच्या रांगा; प्रत्येक कमानीत <strong>Ātma-Patra</strong> — जाड पितळी कडा, समोर काच, आत निळसर-हिरवा प्रकाश. काही पात्रांवर रुनिक लॉक व शिशाचे पट्टे.</p>
+<div class="table-container"><table><thead><tr>
+<th>क्षेत्र</th>
+<th>कार्य</th>
+<th>अधिकारी</th>
+</tr></thead><tbody>
+<tr>
+<td>Dock 1 — Receiving</td>
+<td>teleport आगमन, प्रथम शिक्का</td>
+<td>सेतुव्रता</td>
+</tr>
+<tr>
+<td>Dock 2 — Intake</td>
+<td>band वाचन, cylinder assignment</td>
+<td>Grade 3</td>
+</tr>
+<tr>
+<td>Bay A — Standard</td>
+<td>सामान्य band</td>
+<td>लेख्या</td>
+</tr>
+<tr>
+<td>Bay B — Anomaly</td>
+<td>विसंगती / अपूर्ण फाईल</td>
+<td>लेख्या → सत्यकेतू</td>
+</tr>
+<tr>
+<td>Vault C — Sealed</td>
+<td>उच्च-धोका / Band III+</td>
+<td>सत्यकेतू</td>
+</tr>
+<tr>
+<td>Floor D — Ledger</td>
+<td>नोंद, समयमुद्रा</td>
+<td>चित्रगुप्त</td>
+</tr>
+<tr>
+<td>Conduit Dock</td>
+<td>पांढरी दूतवाहक</td>
+<td>दूतान</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="6__dv_ra___gate___power_bands">6. Dvāra — Gate & Power Bands</h2>
+<h3 id="6_1">6.1 तीन इनपुट</h3>
+<div class="table-container"><table><thead><tr>
+<th>इनपुट</th>
+<th>काय मोजले जाते</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Karma</strong></td>
+<td>संचित/प्रारब्ध/क्रियमाण यांची दिशा — देणे की जमा</td>
+</tr>
+<tr>
+<td><strong>Soul Purity</strong></td>
+<td><strong>मलिन · शुद्ध · निर्मल · विमल</strong> (४ श्रेणी, आकडे नाहीत)</td>
+</tr>
+<tr>
+<td><strong>Gating Standard</strong></td>
+<td>world-tagged ladder + ५ pillars (Trinity root code)</td>
+</tr>
+</tbody></table></div>
+<h3 id="6_2_power_bands___proposal">6.2 Power Bands <code>[PROPOSAL]</code></h3>
+<div class="table-container"><table><thead><tr>
+<th>Band</th>
+<th>नाव</th>
+<th>अर्थ</th>
+<th>कोण</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>Baddha (बद्ध)</td>
+<td>अलौकिक access नाही</td>
+<td>बहुसंख्य</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>Jāgṛta (जागृत)</td>
+<td>प्राण + तपस्या basics</td>
+<td>शिस्तबद्ध सामान्य</td>
+</tr>
+<tr>
+<td><strong>II</strong></td>
+<td>Siddha (सिद्ध)</td>
+<td>प्रगत access; T5 छत</td>
+<td>उच्च पुण्य, शुद्ध</td>
+</tr>
+<tr>
+<td><strong>III</strong></td>
+<td>Ūrdhva (ऊर्ध्व)</td>
+<td>दुर्मिळ; T6–T7 छत</td>
+<td>निर्मल/विमल + कर्म-जमा</td>
+</tr>
+<tr>
+<td><strong>IV</strong></td>
+<td>Vimal (विमल)</td>
+<td>अत्यंत दुर्मिळ; पूर्ण छत, शरीर-मर्यादेत</td>
+<td>विमल आत्मे</td>
+</tr>
+</tbody></table></div>
+<h3 id="6_3_gate">6.3 Gate नियम</h3>
+<ol>
+<li><strong>Band = छत, भेट नाही.</strong> Gate capacity + affinity देते; तंत्र/अस्त्र/अधिकार प्रशिक्षणानेच.</li>
+<li><strong>Route B cha no-cheat केनन वाचते</strong> — जे आधीच कमावले नाही ते gate देत नाही.</li>
+<li><strong>Yama वरचा नाही</strong> — विलयन हुकूम झाला तर gate चालत नाही.</li>
+<li><strong>Immutable</strong> — बदल फक्त Corrective Entry (विधाता अर्ज + यम मंजुरी).</li>
+<li><strong>Re-reading</strong> फक्त: प्राण-सूत्र तुटणे · प्रचंड कर्म-बदल · Trinity हस्तक्षेप.</li>
+</ol>
+<h3 id="6_4_summoning">6.4 Summoning — अपवाद जो नियम मोडतो</h3>
+<ul>
+<li>Summoning magic <strong>मूळ यमाला विचारत नाही</strong> — आत्मा नियती पूर्ण होण्याआधीच ओढला जातो.</li>
+<li>म्हणून: <strong>Release Seal नाही → फाईल unindexed → Pratigraha मध्ये Red-Ink.</strong></li>
+<li>Gate band <strong>अस्थिर</strong> असतो (अपूर्ण कर्म + जबरदस्तीचे ओढणे) — शक्ती चढ-उतार होते, हेच summoned नायकांचे खरे शाप/बल.</li>
+<li><strong>कायदेशीर प्रश्न:</strong> summoning बेकायदेशीर आहे (मूळ विश्वाच्या यमाच्या अधिकाराचे उल्लंघन) → Gap G8.</li>
+</ul>
+<hr>
+<h2 id="7____-">7. पद-यादी</h2>
+<div class="table-container"><table><thead><tr>
+<th>पद</th>
+<th>खरे काम</th>
+<th>collect/vahaat?</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>मूळ विश्वाचा यम</strong></td>
+<td>नियती-पूर्णता तपासणी, Release Seal</td>
+<td>हो — <strong>सोडणारा</strong></td>
+</tr>
+<tr>
+<td><strong>विधाता (B)</strong></td>
+<td>निवड, collection, नियती, प्राण-सूत्र, बंधन</td>
+<td>हो — <strong>मुख्य संकलक</strong></td>
+</tr>
+<tr>
+<td><strong>यम (B)</strong></td>
+<td>द्वार, न्याय, परवानगी, विलयन</td>
+<td>दरवाजा</td>
+</tr>
+<tr>
+<td><strong>चित्रगुप्त</strong></td>
+<td>Soul ID, अभिलेख, समयमुद्रा</td>
+<td>नोंदवतो</td>
+</tr>
+<tr>
+<td><strong>अनंत</strong></td>
+<td>नियम-अंमलबजावणी, आवाज, संग्रहालय</td>
+<td>साक्षी</td>
+</tr>
+<tr>
+<td><strong>Dvāra</strong></td>
+<td>karma + purity + standard वाचन</td>
+<td>स्वयंचलित</td>
+</tr>
+<tr>
+<td><strong>सेतुव्रता</strong></td>
+<td>Pratigraha वॉर्डन</td>
+<td>ग्रहण</td>
+</tr>
+<tr>
+<td><strong>लेख्या</strong></td>
+<td>band vs Soul ID जुळवणी</td>
+<td>तपासणी</td>
+</tr>
+<tr>
+<td><strong>सत्यकेतू</strong></td>
+<td>Red-Ink, Vault C</td>
+<td>उच्च-धोका</td>
+</tr>
+<tr>
+<td><strong>नियम</strong></td>
+<td>प्रेषण परवानगी</td>
+<td>नियोजन</td>
+</tr>
+<tr>
+<td><strong>दूतान</strong></td>
+<td>सीलबंद conduit वाहतूक</td>
+<td>वाहन</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="8__conduit_transit">8. Conduit Transit — शक्तिशाली माणसे वापरतात का?</h2>
+<p><strong>नाही.</strong> पांढरी दूतवाहक = <strong>custody line</strong>, प्रवासी सेवा नाही.</p>
+<div class="table-container"><table><thead><tr>
+<th>प्रवासी</th>
+<th>Conduit?</th>
+<th>अट</th>
+</tr></thead><tbody>
+<tr>
+<td>सीलबंद अभिलेख</td>
+<td>हो</td>
+<td>पितळी सिलिंडर</td>
+</tr>
+<tr>
+<td>ताब्यातील आत्मे</td>
+<td>हो</td>
+<td>Ātma-Patra सीलबंद</td>
+</tr>
+<tr>
+<td>ड्युटी अधिकारी (Grade 2+)</td>
+<td>हो</td>
+<td>प्रेषण परवानगी</td>
+</tr>
+<tr>
+<td>सामान्य नागरिक</td>
+<td><strong>नाही</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>शक्तिशाली जिवंत व्यक्ती</td>
+<td><strong>नाही</strong></td>
+<td>स्वतःच्या साधनांनी; अटक असेल तर सीलबंद capsule</td>
+</tr>
+<tr>
+<td>शक्तिशाली आत्मा (Band III+)</td>
+<td><strong>फक्त ताब्यात</strong></td>
+<td>प्रक्रियेनंतर स्वतः पुढे</td>
+</tr>
+</tbody></table></div>
+<ol>
+<li><strong>Power = containment grade</strong>, सुविधा नाही.</li>
+<li><strong>पांढरा aether-glow = immunity</strong>; हल्ला = Tribunal.</li>
+<li>Teleport का नाही? सीलबंद custody ला भौतिक, शोधता येणारी साखळी लागते; rifts teleport अडवतात, warded conduit त्यांना प्रतिबंधक.</li>
+</ol>
+<hr>
+<h2 id="9__standards_register">9. Standards Register</h2>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>मानक</th>
+<th>मूल्य</th>
+</tr></thead><tbody>
+<tr>
+<td>S1–S17</td>
+<td>जुने लॉक</td>
+<td>५ निकष · ६ टप्पे A · ५ टप्पे B · Soul ID · २४-तास warrant · ४८-तास अहवाल · append-only · कार्य-विभाजन · शाई · नकार-स्तर · clearance · grades · शिक्षा · सभा · no-cheat · <code>RIKTA/UNINDEXED</code></td>
+</tr>
+<tr>
+<td>S18</td>
+<td>No-Entry Law</td>
+<td>Core प्रवेश = विलय</td>
+</tr>
+<tr>
+<td>S19</td>
+<td>Gate Allocation</td>
+<td>band = karma + purity + standard</td>
+</tr>
+<tr>
+<td>S20</td>
+<td>Ceiling Rule</td>
+<td>gate छत देते, तंत्र नाही</td>
+</tr>
+<tr>
+<td>S21</td>
+<td>Containment Grade</td>
+<td>A/B/C by power</td>
+</tr>
+<tr>
+<td>S22</td>
+<td>Conduit Immunity</td>
+<td>पांढरा aether-glow = custody</td>
+</tr>
+<tr>
+<td>S23</td>
+<td>Gate Immutability</td>
+<td>फक्त Corrective Entry</td>
+</tr>
+<tr>
+<td><strong>S24</strong></td>
+<td><strong>Purṇa-Karma Rule</strong></td>
+<td>नियती पूर्ण + कर्म शिल्लक नाही → तरच collection</td>
+</tr>
+<tr>
+<td><strong>S25</strong></td>
+<td><strong>Two-Yama Rule</strong></td>
+<td>मूळ यमाचा Release Seal अनिवार्य; दोन्ही सार्वभौम</td>
+</tr>
+<tr>
+<td><strong>S26</strong></td>
+<td><strong>Selection Standard</strong></td>
+<td>CS-1…CS-6 (विधाता निवड)</td>
+</tr>
+<tr>
+<td><strong>S27</strong></td>
+<td><strong>Summoning Illegality</strong></td>
+<td>release seal नाही = अनधिकृत extraction → Red-Ink</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="10__forms___registers">10. Forms & Registers</h2>
+<div class="table-container"><table><thead><tr>
+<th>कागद/नोंद</th>
+<th>कोण काढते</th>
+<th>कोण तपासते</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Ātma-Nirgama Patra</strong> (विनंती)</td>
+<td>विधाता (B)</td>
+<td>मूळ यम</td>
+</tr>
+<tr>
+<td><strong>Purṇa-Karma certificate</strong></td>
+<td>मूळ यम</td>
+<td>विधाता</td>
+</tr>
+<tr>
+<td><strong>Release Seal</strong></td>
+<td>मूळ यम</td>
+<td>चित्रगुप्त</td>
+</tr>
+<tr>
+<td><strong>Source ledger extract</strong></td>
+<td>मूळ यम / चित्रगुप्त</td>
+<td>लेख्या</td>
+</tr>
+<tr>
+<td><strong>Dvāra band certificate</strong></td>
+<td>gate</td>
+<td>लेख्या</td>
+</tr>
+<tr>
+<td><strong>Pratigraha intake receipt</strong></td>
+<td>सेतुव्रता</td>
+<td>नियम</td>
+</tr>
+<tr>
+<td><strong>Ātma-Patra seal log</strong></td>
+<td>Grade 3</td>
+<td>सत्यकेतू</td>
+</tr>
+<tr>
+<td><strong>Containment Grade certificate</strong></td>
+<td>सत्यकेतू</td>
+<td>यम</td>
+</tr>
+<tr>
+<td>Soul ID</td>
+<td>चित्रगुप्त</td>
+<td>अनंत</td>
+</tr>
+<tr>
+<td>प्राण-सूत्र V1/V2</td>
+<td>विधाता</td>
+<td>लेख्या</td>
+</tr>
+<tr>
+<td>Red-Ink + Audit Warrant</td>
+<td>सत्यकेतू</td>
+<td>मुख्य ऋषी (२४ तास)</td>
+</tr>
+<tr>
+<td>Dispatch cylinder register</td>
+<td>दूतान</td>
+<td>नियम</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="11__gaps">11. Gaps — उरलेले प्रश्न</h2>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>Gap</th>
+<th>प्रश्न</th>
+</tr></thead><tbody>
+<tr>
+<td>G1</td>
+<td>Collection load</td>
+<td>विधाता <strong>प्रत्येक</strong> आत्मा स्वतः नेतो, की पथक?</td>
+</tr>
+<tr>
+<td>G2</td>
+<td>प्रक्रिया-मुदत</td>
+<td>requisition → release → gate → band → बंधन — किती वेळ?</td>
+</tr>
+<tr>
+<td>G3</td>
+<td>अपील</td>
+<td>यमाच्या निकालाविरुद्ध आत्मा कुठे दाद मागतो?</td>
+</tr>
+<tr>
+<td>G4</td>
+<td>क्षमता</td>
+<td>Pratigraha मध्ये किती पात्र? रोज किती आत्मे?</td>
+</tr>
+<tr>
+<td>G5</td>
+<td>पशू/वनस्पती</td>
+<td>KUL-CODE फक्त HUM/DEV/ASU/UNREG — PAS/VRI/JAL/PAK नाही</td>
+</tr>
+<tr>
+<td>G6</td>
+<td>Era 2 backlog</td>
+<td><code>Anirdeshit</code> आत्म्यांचे आज काय?</td>
+</tr>
+<tr>
+<td>G7</td>
+<td>Purity मोजमाप</td>
+<td>"शुद्ध/निर्मल" कसे ठरते?</td>
+</tr>
+<tr>
+<td>G8</td>
+<td>Summoning legality</td>
+<td>कायदेशीर? आवाहकाला काय मिळते? शिक्षा?</td>
+</tr>
+<tr>
+<td>G9</td>
+<td>Band distortion</td>
+<td>विकृत वाचनावर प्रक्रिया काय?</td>
+</tr>
+<tr>
+<td>G10</td>
+<td>Band vs पुनर्जन्म</td>
+<td>कर्म बदलले तर band बदलते का?</td>
+</tr>
+<tr>
+<td><strong>G11</strong></td>
+<td><strong>मूळ यमाचा नकार</strong></td>
+<td>Release Seal नाकारल्यास विधाता काय करतो? वाद कोण सोडवतो?</td>
+</tr>
+<tr>
+<td><strong>G12</strong></td>
+<td><strong>नियती कधीच पूर्ण न होणारे</strong></td>
+<td>चक्रीय/अपूर्ण आत्म्यांचे काय?</td>
+</tr>
+<tr>
+<td><strong>G13</strong></td>
+<td><strong>आत्म्याची संमती</strong></td>
+<td>आत्म्याला नकाराचा हक्क आहे का?</td>
+</tr>
+<tr>
+<td><strong>G14</strong></td>
+<td><strong>Yama-रहित विश्व</strong></td>
+<td>जिथे यमच नाही तिथून collection कसे?</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="12______-_____________applied">12. केनन-पॅच यादी — ✅ APPLIED (२० ऑक्टोबर २०२६)</h2>
+<div class="table-container"><table><thead><tr>
+<th>फाईल</th>
+<th>जागा</th>
+<th>जुने</th>
+<th>नवीन</th>
+<th>स्थिती</th>
+</tr></thead><tbody>
+<tr>
+<td><code>01_...Refined_Canon.md</code></td>
+<td>Route B §4</td>
+<td>"वाहून क्षीर सागराच्या किनाऱ्याला लागलेले"</td>
+<td>"Pratigraha मध्ये direct teleport झालेले"</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>01_...</code></td>
+<td>Stage 2</td>
+<td>"KSHIRA INTERCEPT — Setuvrata कडून सुटका"</td>
+<td>"PRATIGRAHA INTAKE — dock शिक्का"</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>02_...Workflow.md</code></td>
+<td>§4.1</td>
+<td><code>[ जुने बंदर-आगमन केंद्र ]</code></td>
+<td><code>[ PRATIGRAHA — Yama office ground ]</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>02_...</code></td>
+<td>§6.1</td>
+<td>"क्षीर-तीर देखरेख"</td>
+<td>"Pratigraha dock देखरेख"</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>01_/02_</code></td>
+<td>Route B §1</td>
+<td>"वाहून आलेले"</td>
+<td>"विधाताने collect केलेले"</td>
+<td>✅</td>
+</tr>
+</tbody></table></div>
+<p><strong>या सिंक मध्ये 01/02/03/04/05 अपडेट झाले:</strong> collection pre-stage, two-Yama handover, Dvāra Gate + bands, Pratigraha intake, conduit custody rules. 06 स्वतः exploration आहे — canon नाही.</p>
+<hr>
+<h2 id="13________conflicts___________x1_x8_applied">13. बाह्य conflicts — स्थिती (X1–X8 APPLIED, २० ऑक्टोबर २०२६)</h2>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>फाईल</th>
+<th>जुने</th>
+<th>केलेला बदल</th>
+<th>स्थिती</th>
+</tr></thead><tbody>
+<tr>
+<td>X1</td>
+<td><code>04_Buffer_Zone_The_Setu\01_...Geography...</code> + <code>02_...Complete_Geography...</code> + root <code>05_TIER_2...</code></td>
+<td>जुने बंदर व docks, "Warden Setuvrata — Border Warden", "समुद्रातून वाहत आलेले Route B आत्मे"; Lekhya Bureau + Ghost Rail Terminus</td>
+<td><strong>Pratigraha Ground</strong>; बंदर/पायऱ्या/किनारा काढले; Floor D + Conduit Dock + Surface Rail Gate; rail फक्त परिमंडळापर्यंत</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X2</td>
+<td><code>08_...\01_Master_Character_Dossier...</code> + <code>08_...\03_Named_Officers...</code></td>
+<td><code>Warden Setuvrata — क्षीर सागर सीमा रक्षक</code></td>
+<td><code>Pratigraha Warden — आगमन-गोदाम</code>; intake marker, no destiny/Soul ID authority</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X3</td>
+<td><code>01_Cosmology...\05_Divine_Delegates...</code></td>
+<td>"जुना सागर-सीमा Warden — Setu / Setuvrata"</td>
+<td>"Pratigraha Warden"; White Doot-Yānas, no steam locomotive</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X4</td>
+<td><code>09_/10_</code> protagonist origin</td>
+<td>जुने आगमन-कक्ष व पूर्व किनारा</td>
+<td>Protagonist docs <strong>system-only Route B reference</strong>; no named MC, no chapter prose</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X5</td>
+<td><code>INDEX.md</code></td>
+<td>"जुने बंदर-क्षेत्र" क्षेत्र-यादीत</td>
+<td>Pratigraha / Yama ground; 94 characters, protagonist unassigned</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X6</td>
+<td><code>08_...\01</code>, <code>02</code>, <code>03</code>, <code>04</code>, <code>05</code>, <code>06</code> + root <code>08_MASTER...</code></td>
+<td>"Kshira-Coastal Merchant League", Suhotra/Romasha, ghost-sea navigator, "Kshira Sagara threshold rocks"</td>
+<td><strong>Nashvar Samudra (Mortal Sea)</strong>; Mortal-Coastal Merchant League; Samudra-Spur; Kshira adjacency removed</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X7</td>
+<td><code>01_/02_</code> Route A flow vs <code>03_</code> §1</td>
+<td><code>03_</code> म्हणते दोन्ही मार्ग Pratigraha; पण <code>01_/02_</code> Route A flow मध्ये Pratigraha/dock नाही</td>
+<td><strong>Stage 5B — Pratigraha Official Dock</strong>; Route A scheduled lane, RIKTA marker नाही</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X8</td>
+<td><code>01_</code> §4.4 / <code>02_</code> §4.4 / <code>06_</code> §6.2</td>
+<td>Band III "निर्मल/विमल", Band IV पुन्हा "विमल"; Band IV "पूर्ण छत" vs T7</td>
+<td><strong>Band IV = T7 hard cap + widest affinity within T7</strong>; T8–T10 नाही</td>
+<td>✅</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="14">14. उरलेले खुले मुद्दे</h2>
+<p>X1–X8 सर्व applied. आता फक्त खालील gaps बाकी:</p>
+<ol>
+<li><strong>G7</strong> — Purity मोजमाप: "शुद्ध/निर्मल" कसे ठरते?</li>
+<li><strong>G8</strong> — Summoning legality: कायदेशीर? आवाहकाला काय मिळते? शिक्षा?</li>
+<li><strong>G11</strong> — मूळ यमाने Release Seal नाकारल्यास विधाता काय करतो? वाद कोण सोडवतो?</li>
+<li><strong>G12</strong> — नियती कधीच पूर्ण न होणारे चक्रीय/अपूर्ण आत्मे — त्यांचे काय?</li>
+<li><strong>G13</strong> — आत्म्याची संमती: आत्म्याला नकाराचा हक्क आहे का?</li>
+<li><strong>G14</strong> — Yama-रहित विश्वातून collection कसे?</li>
+</ol>
+<p><strong>CS-1…CS-6</strong> आणि <strong>two-Yama Release Seal</strong> यांना <code>[CANON]</code> मुद्रा मिळाली आहे; ते पुन्हा open नाहीत.</p>
+<hr>
+<p><em>[EXPLORATION v5.1 — NOT CANON · २० ऑक्टोबर २०२६ · canon docs 01–05 synced · X1–X8 applied]</em></p></article>
+    <footer>03_Soul_Administration\06_Soul_Administrative_Office_Complete_Exploration.md · 334 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

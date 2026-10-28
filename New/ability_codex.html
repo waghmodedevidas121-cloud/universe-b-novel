@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universe B — Ability Codex & Power Profile UI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void: #050811;
+  --bg-primary: #090d1a;
+  --bg-card: rgba(22, 32, 58, 0.65);
+  --bg-card-solid: #131c31;
+  --bg-card-hover: rgba(30, 45, 78, 0.85);
+  --border-color: rgba(148, 163, 184, 0.16);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent-gold: #f59e0b;
+  --accent-gold-light: #fbbf24;
+  --accent-cyan: #06b6d4;
+  --accent-cyan-light: #38bdf8;
+  --accent-emerald: #10b981;
+  --accent-rose: #f43f5e;
+  --accent-purple: #a855f7;
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg-void);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+header {
+  max-width: 1400px;
+  margin: 0 auto 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo-area h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #fff 30%, var(--accent-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-area p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-nav {
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--accent-cyan-light);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-nav:hover {
+  background: rgba(6, 182, 212, 0.25);
+  border-color: var(--accent-cyan);
+  transform: translateY(-2px);
+}
+
+/* Filter Controls */
+.controls-panel {
+  max-width: 1400px;
+  margin: 0 auto 24px;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.search-input-box {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+
+.search-input-box input {
+  width: 100%;
+  background: rgba(9, 13, 26, 0.9);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px 12px 42px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input-box input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dim);
+  font-size: 1.1rem;
+}
+
+.select-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+select {
+  background: rgba(9, 13, 26, 0.9);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  outline: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: var(--accent-cyan);
+}
+
+/* Category Pills */
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.pill:hover {
+  background: rgba(148, 163, 184, 0.18);
+  color: #fff;
+}
+
+.pill.active {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan-light);
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.25);
+}
+
+.stats-bar {
+  max-width: 1400px;
+  margin: 0 auto 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
+/* Ability Cards Grid */
+.cards-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  gap: 20px;
+}
+
+.ability-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.ability-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--card-accent, var(--accent-cyan));
+}
+
+.ability-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.ability-id {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--card-accent, var(--accent-cyan-light));
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.badges-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.badge-canon { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+.badge-tier { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.badge-evo { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+.badge-mastery { background: rgba(6, 182, 212, 0.15); color: #38bdf8; border: 1px solid rgba(6, 182, 212, 0.3); }
+.badge-static { background: rgba(148, 163, 184, 0.12); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.2); }
+
+.card-title h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.card-title .vernacular {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 400;
+  font-family: var(--font-body);
+  margin-top: 2px;
+}
+
+.category-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--card-accent, var(--accent-cyan));
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Specification Grid inside Card */
+.spec-box {
+  background: rgba(9, 13, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.spec-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.spec-val {
+  font-size: 0.86rem;
+  color: #cbd5e1;
+}
+
+.spec-val.pillars {
+  color: var(--accent-gold-light);
+  font-weight: 600;
+}
+
+.spec-val.vehicle {
+  color: var(--accent-cyan-light);
+}
+
+/* Limits & Evolution Callouts */
+.section-callout {
+  border-left: 2px solid;
+  padding-left: 10px;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.callout-limits {
+  border-color: var(--accent-rose);
+  background: rgba(244, 63, 94, 0.06);
+  padding: 8px 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.callout-limits .lbl {
+  color: var(--accent-rose);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.callout-evo {
+  border-color: var(--accent-purple);
+  background: rgba(168, 85, 247, 0.06);
+  padding: 8px 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.callout-evo .lbl {
+  color: #c084fc;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.callout-evo .evo-target {
+  color: #fff;
+  font-weight: 600;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <h1>UNIVERSE B • ABILITY CODEX</h1>
+    <p>Individual Power System Profiles, Granthi Evolution Tracks &amp; Tactical Counterplay</p>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="btn-nav">← Back to Master Portal</a>
+  </div>
+</header>
+
+<div class="controls-panel">
+  <div class="search-row">
+    <div class="search-input-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search by ability name, Sanskrit title, ID, counterplay, or mechanics..." oninput="filterAbilities()">
+    </div>
+    <div class="select-filters">
+      <select id="tierFilter" onchange="filterAbilities()">
+        <option value="ALL">All Scale Bands (T1–T7)</option>
+        <option value="T3">T3–T4 Mortal to Trained</option>
+        <option value="T4">T4 Trained Baseline</option>
+        <option value="T5">T4–T5 Awakened</option>
+        <option value="T6">T5–T6 Ascendent</option>
+        <option value="T7">T7+ Transcendent / Inviolable</option>
+      </select>
+      <select id="evoFilter" onchange="filterAbilities()">
+        <option value="ALL">All Evolution Types</option>
+        <option value="Evolvable">Evolvable (Qualitative Shift)</option>
+        <option value="Branch-Evolvable">Branch-Evolvable (Specialization)</option>
+        <option value="Mastery-Only">Mastery-Only (Refinement)</option>
+        <option value="Non-Evolving">Non-Evolving (Immutable)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="category-pills" id="categoryPills">
+    <div class="pill active" onclick="setCategory(0, this)">All Categories (54)</div>
+    <div class="pill" onclick="setCategory(1, this)">1. Elemental (8)</div>
+    <div class="pill" onclick="setCategory(2, this)">2. Spatial (5)</div>
+    <div class="pill" onclick="setCategory(3, this)">3. Time [Locked] (4)</div>
+    <div class="pill" onclick="setCategory(4, this)">4. Mental / Maya (4)</div>
+    <div class="pill" onclick="setCategory(5, this)">5. Soul / Astral (4)</div>
+    <div class="pill" onclick="setCategory(6, this)">6. Life / Death (4)</div>
+    <div class="pill" onclick="setCategory(7, this)">7. Body Overdrive (4)</div>
+    <div class="pill" onclick="setCategory(8, this)">8. Weapons Art (4)</div>
+    <div class="pill" onclick="setCategory(9, this)">9. Astras &amp; Relics (4)</div>
+    <div class="pill" onclick="setCategory(10, this)">10. Sealing &amp; Wards (4)</div>
+    <div class="pill" onclick="setCategory(11, this)">11. Morph &amp; Beast (3)</div>
+    <div class="pill" onclick="setCategory(12, this)">12. Sensory &amp; Eyes (4)</div>
+    <div class="pill" onclick="setCategory(13, this)">13. Domain (1)</div>
+    <div class="pill" onclick="setCategory(14, this)">14. Ātma-Tattva (1)</div>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <span id="resultsCount">Showing 54 of 54 Abilities</span>
+  <span>Universe B Canon Matrix • Two-Axis Architecture</span>
+</div>
+
+<div class="cards-grid" id="cardsGrid">
+  <!-- Populated by JS -->
+</div>
+
+<script>
+const ABILITIES = [{"id": "ABL-ELE-01", "name": "Elemental Spark: Flame", "vernacular": "अग्नि ठिणगी / Peak: आग्नेयास्त्र", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "आगीचे गोळे, ज्वाला-तलवारी, नरकाग्नी, निळा सौर अग्नी, उष्णतेचे झोत. उच्च पातळीवर अग्नि देवाचे आग्नेयास्त्र (Āgneyāstra) बनते.", "limits": "शुद्ध प्राण नसल्यास ऑक्सिजन/इंधन लागते; उच्च जलशक्ती किंवा व्हॅक्यूममध्ये विझते.", "pillars": "Energy + Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Elemental Spark: Flame Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-02", "name": "Elemental Torrent: Water", "vernacular": "जल प्रवाह / Peak: वारुणास्त्र", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "पाण्याचे चाबूक, महापूर, अतिदाबाचे कापणारे पाण्याचे जेट्स, रक्तातील द्रव गोठवणे. उच्च पातळीवर वरुण देवाचे वारुणास्त्र (Vāruṇāstra) बनते.", "limits": "समुद्रात सहज उपलब्ध; कोरड्या भागात शरीरातील आर्द्रता खेचावी लागते.", "pillars": "Energy", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Elemental Torrent: Water Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-03", "name": "Elemental Gale: Wind", "vernacular": "वायू आवर्त / Peak: वायव्यास्त्र", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "व्हॅक्यूम ब्लेड्स, सुपरसॉनिक उड्डाण, चक्रीवादळे, हवेच्या दाबाची ढाल. उच्च पातळीवर वायू देवाचे वायव्यास्त्र (Vāyavyāstra) बनते.", "limits": "अदृश्य वार; मजबूत मातीच्या भिंतींनी किंवा उष्णतेच्या प्रवाहाने विखुरले जाते.", "pillars": "Energy", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Elemental Gale: Wind Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-04", "name": "Earth Shaping: Stone & Earth", "vernacular": "पृथ्वी व पाषाण / Peak: पर्वतास्त्र", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "दगडांचे भाले, भूकंपाचे धक्के, पाषाण चिलखत, वाळू व धातू वाकवणे. उच्च पातळीवर पर्वतास्त्र (Parvatāstra) बनते.", "limits": "प्रचंड टिकाऊपणा; खोल अवकाशीय कातर किंवा भूकंपाच्या प्रतिध्वनीने फुटते.", "pillars": "Energy + Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Earth Shaping: Stone & Earth Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-05", "name": "Lightning Strike: Thunder", "vernacular": "विद्युत व तडित् / Peak: वज्र", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "विजेचे झटके, रेलगन डिस्चार्ज, मज्जासंस्थेचा ओव्हरड्राइव्ह, EMP पल्स. उच्च पातळीवर इंद्रदेवाचे वज्र (Vajra) व इंद्रास्त्र बनते.", "limits": "अतिवेगवान आणि भेदक; लांब पल्ल्यावर दिशा नियंत्रित करणे अत्यंत कठीण.", "pillars": "Energy", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Lightning Strike: Thunder Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-06", "name": "Frost Stasis: Ice", "vernacular": "हिम व बर्फ", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "परम शून्य थंडी (Absolute Zero), बर्फाचे टोकदार सुळे, काइनेटिक हल्ले गोठवणे.", "limits": "गती थांबवते; पवित्र सौर अग्नीने वितळते किंवा जड प्रहाराने चुराडा होतो.", "pillars": "Energy + Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Frost Stasis: Ice Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-07", "name": "Solar Radiance: Light", "vernacular": "सौर तेज / Peak: सूर्यास्त्र", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "लेझर किरण, अंधळे करणारा प्रकाश, दूषित ऊर्जा जाळणे, सोलर फ्लेअर्स. उच्च पातळीवर सूर्यदेवाचे सूर्यास्त्र (Sūryāstra) बनते.", "limits": "अंधाऱ्या भ्रमांचा नाश करते; १००% परावर्तक पृष्ठभागाने किंवा शून्याने अडवले जाते.", "pillars": "Energy + Boons", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Solar Radiance: Light Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-ELE-08", "name": "Shadow Weaving: Darkness", "vernacular": "छाया व अंधार", "category_num": 1, "category_name": "Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)", "category_short": "Elemental & Primordial", "prefix": "ELE", "color": "cyan", "vehicle": "Prāṇa / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "सावलीतून प्रवास, सावलीचे भाले, अदृश्य होणे, प्रकाश गिळंकृत करणारे धुके.", "limits": "रात्री व अंधाऱ्या गुहांमध्ये घातक; दुपारच्या प्रखर सूर्यप्रकाशात शक्ती क्षीण होते.", "pillars": "Energy + Karma", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Shadow Weaving: Darkness Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-SPA-01", "name": "Blink / Short Teleport", "vernacular": "क्षणात स्थानांतर", "category_num": 2, "category_name": "Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)", "category_short": "Spatial & Dimensional", "prefix": "SPA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "नजरेच्या टप्प्यात (१० ते १०० मीटर) तात्काळ जागेवर बदल करणे.", "limits": "आसपासच्या अवकाशात कंपने किंवा अस्थिरता असल्यास फसते.", "pillars": "Energy", "evolution_type": "Mastery-Only", "evolution_trigger": "Spatial coordinate tuning", "evolution_form": "Continuous Flash Step (5x chained)", "evolution_effects": "Chains 5 short teleports with zero momentum loss"}, {"id": "ABL-SPA-02", "name": "Spatial Severance", "vernacular": "अवकाश कातरणे", "category_num": 2, "category_name": "Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)", "category_short": "Spatial & Dimensional", "prefix": "SPA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "शत्रूच्या चिलखताला स्पर्श न करता त्याने व्यापलेली अवकाशाची जागाच कापणे.", "limits": "अफाट एकाग्रता लागते; अवकाशीय वॉर्ड्सद्वारे (Spatial Wards) अडवता येते.", "pillars": "Authority / Tapasya", "evolution_type": "Evolvable", "evolution_trigger": "Rudra-Granthi resonance", "evolution_form": "Akasha-Khanda (Horizon Shear)", "evolution_effects": "Cleaves 50 meters of spatial fabric directly"}, {"id": "ABL-SPA-03", "name": "Pocket Dimension Vault", "vernacular": "गुप्त अवकाश दालन", "category_num": 2, "category_name": "Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)", "category_short": "Spatial & Dimensional", "prefix": "SPA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "शस्त्रे, अलौकिक वस्तू व रसद साठवण्यासाठी स्वतःचे वैयक्तिक सब-स्पेस.", "limits": "केवळ निर्जीव वस्तूंसाठी; सजीव ठेवण्यासाठी उच्च दर्जाची श्वसन चक्रे लागतात.", "pillars": "Authority / Boons", "evolution_type": "Mastery-Only", "evolution_trigger": "Aether fold expansion", "evolution_form": "Expanded Sub-Space Armory", "evolution_effects": "Triple storage capacity with instantaneous weapon retrieval"}, {"id": "ABL-SPA-04", "name": "Dimensional Lock", "vernacular": "अवकाश टाळेबंदी", "category_num": 2, "category_name": "Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)", "category_short": "Spatial & Dimensional", "prefix": "SPA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "शत्रू पळून जाऊ नये म्हणून स्थानिक अवकाशाला गोठवून टाकणे.", "limits": "क्षेत्रफळ वाढेल तसा ऊर्जेचा वापर प्रचंड वेगाने वाढतो.", "pillars": "Authority", "evolution_type": "Evolvable", "evolution_trigger": "Spatial anchor refinement", "evolution_form": "Absolute Dimensional Stasis Field", "evolution_effects": "Prevents all teleportation and spatial phase-shifts within 200m"}, {"id": "ABL-SPA-05", "name": "Gravitational Control", "vernacular": "गुरुत्वाकर्षण नियंत्रण", "category_num": 2, "category_name": "Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)", "category_short": "Spatial & Dimensional", "prefix": "SPA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "दाबून ठेवणारे गुरुत्वाकर्षण क्षेत्र, सूक्ष्म कृष्णविवर, हवेत तरंगणे (अँटी-ग्रॅव्हिटी).", "limits": "प्रचंड प्राण-साठा लागतो; लघिमा सिद्धी असलेल्या योद्ध्यांवर कमी परिणाम.", "pillars": "Energy + Authority", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Core mass calibration", "evolution_form": "Branch A: Micro-Singularity Pull / Branch B: Absolute Repulsion Dome", "evolution_effects": "A: Crushing localized gravity; B: Kinetic projectile deflection"}, {"id": "ABL-TEM-01", "name": "Tactical Foresight", "vernacular": "लढाऊ भविष्यवेध", "category_num": 3, "category_name": "Time & Chrono-Kinetic Forces (काल व गती प्रवाह)", "category_short": "Time & Chrono-Kinetic", "prefix": "TEM", "color": "rose", "vehicle": "LOCKED / Axis A", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "पुढील २ ते १० सेकंदांमधील घडामोडी आधीच पाहणे (Precognition).", "limits": "शत्रूच्या हेतूवर कार्य करते; अविवेकी, अनपेक्षित किंवा अती-वेगवान हल्ल्यांवर अयशस्वी.", "pillars": "Tapasya (Ajna Eye)", "evolution_type": "Mastery-Only", "evolution_trigger": "Ajna chakra focus", "evolution_form": "Precognition 10-Second Horizon", "evolution_effects": "Expands precognitive window from 2s to 10s"}, {"id": "ABL-TEM-02", "name": "Time Dilation / Acceleration", "vernacular": "वेळेचे प्रसरण", "category_num": 3, "category_name": "Time & Chrono-Kinetic Forces (काल व गती प्रवाह)", "category_short": "Time & Chrono-Kinetic", "prefix": "TEM", "color": "rose", "vehicle": "LOCKED / Axis A", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "स्वतःसाठी वेळ संथ करणे (जग थांबलेले वाटते आणि मेंदू मायक्रोसेकंद वेगाने विचार करतो).", "limits": "मज्जासंस्थेवर प्रचंड ताण येतो; शारीरिक स्नायूंना तात्काळ अमर्याद वेग मिळत नाही.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Neural clock acceleration", "evolution_form": "Micro-Second Hyper-Perception", "evolution_effects": "Allows 10x faster tactical thought without bodily thermal burn"}, {"id": "ABL-TEM-03", "name": "Localized Temporal Stasis", "vernacular": "स्थानिक वेळ गोठवणे", "category_num": 3, "category_name": "Time & Chrono-Kinetic Forces (काल व गती प्रवाह)", "category_short": "Time & Chrono-Kinetic", "prefix": "TEM", "color": "rose", "vehicle": "LOCKED / Axis A", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "समोरून येणारे अस्त्र, वस्तू किंवा शत्रूचा अवयव काही सेकंदांसाठी वेळेत गोठवणे.", "limits": "प्रचंड कार्मिक घर्षण; शत्रूची ऊर्जा खूप जास्त असल्यास तात्काळ तुटते.", "pillars": "Authority / Sixth", "evolution_type": "Non-Evolving", "evolution_trigger": "Axis A Permission boundary", "evolution_form": "Static Temporal Anchor", "evolution_effects": "Fixed duration barrier; inaccessible through Axis B training"}, {"id": "ABL-TEM-04", "name": "Chrono-Rewind", "vernacular": "काल-प्रत्यावर्तन - निषिद्ध", "category_num": 3, "category_name": "Time & Chrono-Kinetic Forces (काल व गती प्रवाह)", "category_short": "Time & Chrono-Kinetic", "prefix": "TEM", "color": "rose", "vehicle": "LOCKED / Axis A", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "विनाश किंवा प्राणघातक जखम भरून काढण्यासाठी स्थानिक काही सेकंद मागे नेणे.", "limits": "अफाट कार्मिक उलट फटका (पाप/ऋण संचय); Ananta सिस्टीमद्वारे त्वरित पकडले जाते.", "pillars": "Sixth Principle / Karma", "evolution_type": "Non-Evolving", "evolution_trigger": "Class-Omega Cosmic Law", "evolution_form": "Forbidden Causality Snap", "evolution_effects": "Permanent karmic debt; strictly non-improvable"}, {"id": "ABL-PSI-01", "name": "Telepathy & Mind-Link", "vernacular": "मानसिक संवाद", "category_num": 4, "category_name": "Mental, Psychic & Illusion Arts (चित्त, मन व माया)", "category_short": "Mental, Psychic & Illusion", "prefix": "PSI", "color": "emerald", "vehicle": "Tapasya / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "न बोलता क्षणात रणनीतिक संपर्क, विचार वाचणे, संवेदनेचे वहन करणे.", "limits": "प्राथमिक मानसिक संरक्षण भिंतींनी (*मानसिक कवच*) अडवले जाते.", "pillars": "Energy + Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Manomaya-Kosha tuning", "evolution_form": "Encrypted Tactical Hive-Link", "evolution_effects": "Multi-target mental bridge impenetrable by amateur psychics"}, {"id": "ABL-PSI-02", "name": "Sensory Hijacking", "vernacular": "इंद्रिय भ्रम / माया", "category_num": 4, "category_name": "Mental, Psychic & Illusion Arts (चित्त, मन व माया)", "category_short": "Mental, Psychic & Illusion", "prefix": "PSI", "color": "emerald", "vehicle": "Tapasya / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "शत्रूच्या सैन्याला खोटे दृश्य, आवाज, वास आणि वेदना जाणवून दिशाभूल करणे.", "limits": "स्वतःच्या प्राणाचा स्फोट करणे, स्वतःला वेदना देणे किंवा आज्ञा चक्राने नष्ट होते.", "pillars": "Tapasya", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Mayic resonance training", "evolution_form": "Branch A: Full Sensory Deprivation / Branch B: Phantom Pain Synesthesia", "evolution_effects": "A: Total blindness/deafness; B: Induced physical shock"}, {"id": "ABL-PSI-03", "name": "Fear Induction & Despair", "vernacular": "भय-तरंग", "category_num": 4, "category_name": "Mental, Psychic & Illusion Arts (चित्त, मन व माया)", "category_short": "Mental, Psychic & Illusion", "prefix": "PSI", "color": "emerald", "vehicle": "Tapasya / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "शत्रूचे स्नायू अर्धांगवायू झाल्यासारखे गोठवून टाकणारे भय पसरवणे.", "limits": "अढळ इच्छाशक्ती (*संकल्प*) असलेल्या शूर योद्ध्यांवर निष्प्रभ ठरते.", "pillars": "Energy + Karma", "evolution_type": "Evolvable", "evolution_trigger": "Asura blood-resonance", "evolution_form": "Aura of Visceral Paralysis", "evolution_effects": "Forces autonomic nervous system lockup on targets below T4"}, {"id": "ABL-PSI-04", "name": "Will-Binding", "vernacular": "वशित्व / अंतिम हुकूम", "category_num": 4, "category_name": "Mental, Psychic & Illusion Arts (चित्त, मन व माया)", "category_short": "Mental, Psychic & Illusion", "prefix": "PSI", "color": "emerald", "vehicle": "Tapasya / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "शत्रूच्या मेंदूवर ताबा मिळवून थेट आज्ञा पाळण्यास भाग पाडणे.", "limits": "अखंड एकाग्रता हवी; आज्ञा थेट आत्महत्येची असल्यास मूळ जगण्याची प्रवृत्ती बंध तोडते.", "pillars": "Authority / Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Will-Binding Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-SOL-01", "name": "Soul Perception", "vernacular": "आत्म-दर्शन", "category_num": 5, "category_name": "Soul, Spirit & Astral Arts (आत्मा व सूक्ष्म शरीर)", "category_short": "Soul, Spirit & Astral", "prefix": "SOL", "color": "gold", "vehicle": "Tapasya / Astra", "tier_band": "T4 (Trained)", "manifestation": "चांदीचा प्राण-धागा (Silver Cord), कार्मिक ऑरा, आंतरिक जखमा आणि खरे रूप पाहणे.", "limits": "तिसरा डोळा उघडलेल्या साधकांचे हे मूलभूत कौशल्य आहे.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Silver Cord observation", "evolution_form": "Full Karmic Signature Spectrum", "evolution_effects": "Detects hidden identities, vessel damage, and foreign possession"}, {"id": "ABL-SOL-02", "name": "Soul-Piercing Strike", "vernacular": "आत्म-वेधक प्रहार", "category_num": 5, "category_name": "Soul, Spirit & Astral Arts (आत्मा व सूक्ष्म शरीर)", "category_short": "Soul, Spirit & Astral", "prefix": "SOL", "color": "gold", "vehicle": "Tapasya / Astra", "tier_band": "T4 (Trained)", "manifestation": "टायटॅनियम किंवा ऊर्जा ढालीला बायपास करून थेट सूक्ष्म शरीराला कापून काढणे.", "limits": "केवळ शुद्ध ओजस, आत्मिक चिलखत किंवा निष्कलंक **Soul Clarity (Atma-Shuddhi)** द्वारेच बचाव शक्य.", "pillars": "Tapasya / Sixth", "evolution_type": "Evolvable", "evolution_trigger": "Ojas sharpening discipline", "evolution_form": "Sukshma-Bheda (Astral Piercer)", "evolution_effects": "Directly cuts astral cord while leaving physical armor untouched"}, {"id": "ABL-SOL-03", "name": "Spirit Ejection / Possession", "vernacular": "परकाया-प्रवेश", "category_num": 5, "category_name": "Soul, Spirit & Astral Arts (आत्मा व सूक्ष्म शरीर)", "category_short": "Soul, Spirit & Astral", "prefix": "SOL", "color": "gold", "vehicle": "Tapasya / Astra", "tier_band": "T4 (Trained)", "manifestation": "स्वतःचे सूक्ष्म शरीर बाहेर काढून दुसऱ्या रिकाम्या शरीरात किंवा पात्रात प्रवेश करणे.", "limits": "मूळ भौतिक शरीर अचेतन आणि पूर्णपणे असुरक्षित अवस्थेत राहते.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Astral body stabilization", "evolution_form": "Seamless Parakaya-Pravesha", "evolution_effects": "Smooth vessel transition with 50% reduced recoil shock"}, {"id": "ABL-SOL-04", "name": "Soul Binding / Anchoring", "vernacular": "आत्मा-बंधन", "category_num": 5, "category_name": "Soul, Spirit & Astral Arts (आत्मा व सूक्ष्म शरीर)", "category_short": "Soul, Spirit & Astral", "prefix": "SOL", "color": "gold", "vehicle": "Tapasya / Astra", "tier_band": "T4 (Trained)", "manifestation": "भटकणाऱ्या आत्म्याला ताईत किंवा सीमा रचनेत कायमचे बंदिस्त करणे.", "limits": "उच्च आध्यात्मिक प्रतिकार; प्रचंड पुण्य असलेले आत्मे हे बंधन नैसर्गिकरित्या तोडतात.", "pillars": "Authority / Sealing", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Runic seal weaving", "evolution_form": "Branch A: Relic Binding / Branch B: Boundary Soul Ward", "evolution_effects": "A: Seals spirits into weapons; B: Erects spirit-denial barrier"}, {"id": "ABL-LIF-01", "name": "Cellular Regeneration", "vernacular": "पेशी पुनरुत्थान", "category_num": 6, "category_name": "Life, Death, Healing & Necromancy (प्राण, औषधी व संहार)", "category_short": "Life, Death & Healing", "prefix": "LIF", "color": "emerald", "vehicle": "Prāṇa / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "रक्त तात्काळ गोठवणे, हाडे जोडणे आणि स्नायू पुन्हा वेगाने शिवले जाणे.", "limits": "दैवी प्राण नसल्यास शरीराच्या मूळ कॅलरीज आणि पेशींचे आयुष्य खर्च होते.", "pillars": "Energy + Tapasya", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Prana-metabolic alignment", "evolution_form": "Branch A: Accelerated Flesh-Weave / Branch B: Cellular Detoxification", "evolution_effects": "A: Instant closing of arterial wounds; B: Automatic poison purging"}, {"id": "ABL-LIF-02", "name": "Toxin Synthesis & Neutralization", "vernacular": "विष व अमृत", "category_num": 6, "category_name": "Life, Death, Healing & Necromancy (प्राण, औषधी व संहार)", "category_short": "Life, Death & Healing", "prefix": "LIF", "color": "emerald", "vehicle": "Prāṇa / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "न सापडणारे प्राणघातक विष तयार करणे किंवा जैविक विषाचे त्वरित शुद्धीकरण करणे.", "limits": "नागमणी, विशेष अमृतरस किंवा रक्तातील विष जाळणारा अग्नि हे यावर तोड आहेत.", "pillars": "Tapasya / Boons", "evolution_type": "Mastery-Only", "evolution_trigger": "Naga venom guild alchemy", "evolution_form": "Universal Antidote Formulation", "evolution_effects": "Neutralizes synthetic and organic toxins in seconds"}, {"id": "ABL-LIF-03", "name": "Necrotic Rot & Decay", "vernacular": "नेक्रोटिक क्षय", "category_num": 6, "category_name": "Life, Death, Healing & Necromancy (प्राण, औषधी व संहार)", "category_short": "Life, Death & Healing", "prefix": "LIF", "color": "emerald", "vehicle": "Prāṇa / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "सेंद्रिय घटकांचे तात्काळ विघटन करणे, स्पर्शाने मांस सडवणे.", "limits": "पवित्र ऑरा, शुद्ध सुवर्ण आणि पावन जल यांच्या संपर्काने रोखले जाते.", "pillars": "Karma + Energy", "evolution_type": "Evolvable", "evolution_trigger": "Karmic dissolution focus", "evolution_form": "Apocalyptic Ash Decomposition", "evolution_effects": "Dissolves non-magical solid matter into organic slag"}, {"id": "ABL-LIF-04", "name": "Resuscitation Arts", "vernacular": "मृत-संजीवनी", "category_num": 6, "category_name": "Life, Death, Healing & Necromancy (प्राण, औषधी व संहार)", "category_short": "Life, Death & Healing", "prefix": "LIF", "color": "emerald", "vehicle": "Prāṇa / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "आत्मा यमाचा निर्गमन शिक्का बसण्यापूर्वी मृतदेहाला पुन्हा जिवंत करणे.", "limits": "यमाच्या खात्यावर निर्गमन शिक्का बसण्यापूर्वीच्या गोल्डन विंडोमध्येच शक्य.", "pillars": "Boons / Authority", "evolution_type": "Non-Evolving", "evolution_trigger": "Yama Exit Window Rule", "evolution_form": "Golden Window Mṛta-Sanjīvanī", "evolution_effects": "Strictly bound to Yama's pre-release clearance time limit"}, {"id": "ABL-BOD-01", "name": "Vajra Deha", "vernacular": "वज्र-देह / हिऱ्यासारखे शरीर", "category_num": 7, "category_name": "Physical Overdrive & Body Cultivation (वज्र देह व बाहुबल)", "category_short": "Physical Overdrive & Body", "prefix": "BOD", "color": "gold", "vehicle": "Tapasya / Prāṇa", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "पोलादी तलवारी ज्या शरीरावर आदळून तुकडे होतात असे अभेद्य मांस.", "limits": "अंतर्गत ध्वनिक धक्के (Acoustic Shockwaves) किंवा आत्मिक प्रहारांपुढे कमजोर.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Vajra Deha Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-BOD-02", "name": "Superhuman Velocity", "vernacular": "लघिमा / अतिवेग", "category_num": 7, "category_name": "Physical Overdrive & Body Cultivation (वज्र देह व बाहुबल)", "category_short": "Physical Overdrive & Body", "prefix": "BOD", "color": "gold", "vehicle": "Tapasya / Prāṇa", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "ध्वनीचा पडदा तोडणारा वेग; पाण्यावर धावणे, हवेच्या प्रवाहावर स्वार होणे.", "limits": "घर्षणाची प्रचंड उष्णता; डोळे व फुप्फुसांच्या संरक्षणासाठी काइनेटिक ढाल लागते.", "pillars": "Energy + Tapasya", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Laghima siddhi cultivation", "evolution_form": "Branch A: Sonic Flash Dash / Branch B: Aether Gliding", "evolution_effects": "A: Ground speed Mach 1.5; B: Zero-friction aether surfing"}, {"id": "ABL-BOD-03", "name": "Colossal Expansion", "vernacular": "महिमा / विराट रूप", "category_num": 7, "category_name": "Physical Overdrive & Body Cultivation (वज्र देह व बाहुबल)", "category_short": "Physical Overdrive & Body", "prefix": "BOD", "color": "gold", "vehicle": "Tapasya / Prāṇa", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "स्नायूंची घनता आणि शरीराचा आकार पर्वतासारखा प्रचंड मोठा करणे.", "limits": "शरीराचा टार्गेट आकार वाढतो; प्रचंड वस्तुमानामुळे चपळता थोडी कमी होते.", "pillars": "Energy + Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Mahima mass density control", "evolution_form": "Mountain-Breaker Titan Stance", "evolution_effects": "Doubles weight and kinetic mass without sacrificing mobility"}, {"id": "ABL-BOD-04", "name": "Kinetic Impact Amplification", "vernacular": "आघात वर्धन", "category_num": 7, "category_name": "Physical Overdrive & Body Cultivation (वज्र देह व बाहुबल)", "category_short": "Physical Overdrive & Body", "prefix": "BOD", "color": "gold", "vehicle": "Tapasya / Prāṇa", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "मुठीत किंवा लाथेत प्राण दाबून हवेत प्रचंड शॉकवेव्ह निर्माण करणे.", "limits": "मध्यम ते उच्च दर्जाच्या योद्ध्यांचे हे मूळ युद्धकौशल्य आहे.", "pillars": "Energy + Tapasya", "evolution_type": "Evolvable", "evolution_trigger": "Vyana vayu compression", "evolution_form": "Thunderclap Shockwave Strike", "evolution_effects": "Acoustic concussion that shatters internal organs through armor"}, {"id": "ABL-WEA-01", "name": "Blade Aura", "vernacular": "असि-धारा / तलवार तेज", "category_num": 8, "category_name": "Weapons Mastery & Combat Arts (धनुर्वेद व अस्त्रकला)", "category_short": "Weapons Mastery & Dhanurveda", "prefix": "WEA", "color": "cyan", "vehicle": "Yantra / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "तलवारीच्या पात्यावरून लोखंड कापणारी धगधगती ऊर्जा प्रक्षेपित करणे.", "limits": "शस्त्राची क्षमता संपवते; एकाग्रता ढळल्यास धार बोथट होते.", "pillars": "Tapasya", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Weapon soul resonance", "evolution_form": "Branch A: Asi-Dhara Shockwave / Branch B: Micro-Molecular Edge", "evolution_effects": "A: 100m flying slash; B: Diamond-cutting edge"}, {"id": "ABL-WEA-02", "name": "Infallible Archery", "vernacular": "अचूक धनुर्वेद", "category_num": 8, "category_name": "Weapons Mastery & Combat Arts (धनुर्वेद व अस्त्रकला)", "category_short": "Weapons Mastery & Dhanurveda", "prefix": "WEA", "color": "cyan", "vehicle": "Yantra / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "एकाच वेळी अनेक बाण सुटणे, उष्णता व प्राण शोधणारे बाण, वळण घेणारे बाण.", "limits": "सर्वदिशा संरक्षण घुमट किंवा प्रचंड हवेच्या आवर्ताने मार्ग बदलतो.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Dhanurveda line-of-sight sight", "evolution_form": "Seeking Wind Arrow Mastery", "evolution_effects": "Curves trajectory around physical fortifications"}, {"id": "ABL-WEA-03", "name": "Weapon Imbuement", "vernacular": "शस्त्र भारणे", "category_num": 8, "category_name": "Weapons Mastery & Combat Arts (धनुर्वेद व अस्त्रकला)", "category_short": "Weapons Mastery & Dhanurveda", "prefix": "WEA", "color": "cyan", "vehicle": "Yantra / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "साध्या आधुनिक शस्त्रांना (चाकू, स्नायपरच्या गोळ्या) प्राणाने भारून जादुई बनवणे.", "limits": "अतिउच्च फ्रिक्वेन्सीची ऊर्जा जास्त वेळ दिल्यास सामान्य धातू वितळतो.", "pillars": "Energy + Tapasya", "evolution_type": "Branch-Evolvable", "evolution_trigger": "Pranic conduit etching", "evolution_form": "Branch A: High-Frequency Resonance / Branch B: Thermal Imbuement", "evolution_effects": "A: Armor-piercing vibration; B: Molten impact payload"}, {"id": "ABL-WEA-04", "name": "Living Weapon Bond", "vernacular": "जिवंत शस्त्र संवाद", "category_num": 8, "category_name": "Weapons Mastery & Combat Arts (धनुर्वेद व अस्त्रकला)", "category_short": "Weapons Mastery & Dhanurveda", "prefix": "WEA", "color": "cyan", "vehicle": "Yantra / Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "शस्त्राच्या सुप्त आत्म्याला जागे करणे, ज्यामुळे ते हाकेसरशी हातात परत येते.", "limits": "शस्त्र तुटल्यास वापरकर्त्याच्या सूक्ष्म शरीराला तीव्र मानसिक हादरा बसतो.", "pillars": "Boons / Tapasya", "evolution_type": "Evolvable", "evolution_trigger": "Soul-sync pact with weapon", "evolution_form": "Awakened Relic Symbiosis", "evolution_effects": "Weapon acts autonomously as an external combat limb"}, {"id": "ABL-AST-01", "name": "Cataclysmic Piercing Arrows", "vernacular": "ब्रह्मास्त्र वर्ग", "category_num": 9, "category_name": "Divine Astras & Relic Armaments (दिव्यास्त्र व महाशस्त्र)", "category_short": "Divine Astras & Relics", "prefix": "AST", "color": "rose", "vehicle": "Astra / Boons", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "एका बिंदूवर संपूर्ण शहराचा नायनाट करणारे ऊर्जा किरण.", "limits": "पर्यावरणाचा प्रचंड नाश होतो; मागे घेण्यासाठी उपसंहार मंत्र अनिवार्य.", "pillars": "Boons + Authority", "evolution_type": "Mastery-Only", "evolution_trigger": "Dhanurveda Visarjana mastery", "evolution_form": "Brahmāstra Upasamhāra Precision", "evolution_effects": "Flawless retraction with zero environmental curse"}, {"id": "ABL-AST-02", "name": "Homing Absolute Annihilation", "vernacular": "सुदर्शन वर्ग", "category_num": 9, "category_name": "Divine Astras & Relic Armaments (दिव्यास्त्र व महाशस्त्र)", "category_short": "Divine Astras & Relics", "prefix": "AST", "color": "rose", "vehicle": "Astra / Boons", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "अवकाश व काळाचा भेद करून जीवन-तंतू कापणारे स्वयंचलित चक्र.", "limits": "चिलखताने रोखणे अशक्य; मूळ दैवताला पूर्ण नैतिक आत्मसमर्पण करणे हीच एकमेव तोड.", "pillars": "Authority + Boons", "evolution_type": "Non-Evolving", "evolution_trigger": "Supreme Trinity Arsenal", "evolution_form": "Sudarshana Inevitable severing", "evolution_effects": "Absolute tracking, unaffected by mortal training"}, {"id": "ABL-AST-03", "name": "Absolute Inviolable Armor", "vernacular": "कवच-कुंडल वर्ग", "category_num": 9, "category_name": "Divine Astras & Relic Armaments (दिव्यास्त्र व महाशस्त्र)", "category_short": "Divine Astras & Relics", "prefix": "AST", "color": "rose", "vehicle": "Astra / Boons", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "सर्व प्रकारच्या शस्त्रांपासून १००% संपूर्ण संरक्षण देणारे नैसर्गिक चिलखत.", "limits": "आंतरिक अस्तित्वाच्या शापांवर चालत नाही; स्वतःहून काढून दिल्यास संरक्षण संपते.", "pillars": "Boons", "evolution_type": "Non-Evolving", "evolution_trigger": "Divine Boon Contract", "evolution_form": "Kavacha-Kundala Invariance", "evolution_effects": "100% baseline damage immunity; cannot be evolved or upgraded"}, {"id": "ABL-AST-04", "name": "Swarm Ordinance Weapons", "vernacular": "नारायणास्त्र वर्ग", "category_num": 9, "category_name": "Divine Astras & Relic Armaments (दिव्यास्त्र व महाशस्त्र)", "category_short": "Divine Astras & Relics", "prefix": "AST", "color": "rose", "vehicle": "Astra / Boons", "tier_band": "T5–T6 (Awakened to Ascendent)", "manifestation": "एकाच वेळी लाखो ऊर्जा क्षेपणास्त्रांचा पाऊस पाडणे.", "limits": "विचित्र तोड: विरोध केल्यास अस्त्राचा मारा वाढतो; पूर्ण शस्त्रत्याग केल्यास शांत होते.", "pillars": "Boons + Authority", "evolution_type": "Mastery-Only", "evolution_trigger": "Mass invocation discipline", "evolution_form": "Nārāyaṇāstra Million-Spear Rain", "evolution_effects": "Widens salvo density across battlefield"}, {"id": "ABL-SEA-01", "name": "Absolute Isolation Ward", "vernacular": "एकांत वलय", "category_num": 10, "category_name": "Sealing, Barriers & Formations (चक्रव्यूह, बंधन व वलय)", "category_short": "Sealing, Barriers & Wards", "prefix": "SEA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "रणांगणाला ध्वनी, सिग्नल आणि ऊर्जेपासून पूर्णपणे तोडणाऱ्या गोलाकार घुमटात बंद करणे.", "limits": "परिमितीवर अँकर किंवा अखंड ऊर्जेचा पुरवठा लागतो.", "pillars": "Energy + Authority", "evolution_type": "Mastery-Only", "evolution_trigger": "Geometric ward anchoring", "evolution_form": "Aether-Barred Sanctuary Dome", "evolution_effects": "Zero audio, signal, or spiritual energy leakage across perimeter"}, {"id": "ABL-SEA-02", "name": "Labyrinth Formation", "vernacular": "Spiral Siege Array", "category_num": 10, "category_name": "Sealing, Barriers & Formations (चक्रव्यूह, बंधन व वलय)", "category_short": "Sealing, Barriers & Wards", "prefix": "SEA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "फिरणारी एकाकेंद्रित सैन्यरचना, जी शत्रूला थकवून आत खेचून घेते.", "limits": "प्रवेश, फिरण्याचा वेग आणि बाहेर पडण्याचा ताल ठाऊक असल्यासच भेदता येते.", "pillars": "Tapasya (Tactics)", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Labyrinth Formation Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-SEA-03", "name": "Energy Drain Seals", "vernacular": "ऊर्जा शोषक मुद्रा", "category_num": 10, "category_name": "Sealing, Barriers & Formations (चक्रव्यूह, बंधन व वलय)", "category_short": "Sealing, Barriers & Wards", "prefix": "SEA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "येणाऱ्या मंत्रांना किंवा हल्ल्यांना शोषून स्वतःची ढाल मजबूत करणे.", "limits": "कमाल क्षमतेपेक्षा जास्त भार आल्यास मुद्रा गरम होऊन फुटते.", "pillars": "Energy + Boons", "evolution_type": "Evolvable", "evolution_trigger": "Reverse pranic siphon runes", "evolution_form": "Vampiric Aether Siphon", "evolution_effects": "Converts absorbed enemy mantras directly into user's shield"}, {"id": "ABL-SEA-04", "name": "Exorcism & Curse Cleansing", "vernacular": "शाप-मुक्ती", "category_num": 10, "category_name": "Sealing, Barriers & Formations (चक्रव्यूह, बंधन व वलय)", "category_short": "Sealing, Barriers & Wards", "prefix": "SEA", "color": "purple", "vehicle": "Yantra / Mantra", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "पवित्र मंत्र आणि पावन जलाद्वारे दुष्ट आत्मिक परोपजीवी घटकांना हाकलून लावणे.", "limits": "Ananta द्वारे अधिकृतरीत्या नोंदवलेल्या कार्मिक न्यायाविरुद्ध चालत नाही.", "pillars": "Tapasya + Karma", "evolution_type": "Mastery-Only", "evolution_trigger": "Shastra liturgy mastery", "evolution_form": "Karmic Cleansing Litany", "evolution_effects": "Purges malignant astral parasites without biological harm"}, {"id": "ABL-TRN-01", "name": "Flesh-Shifting", "vernacular": "कामरूप / स्वैर रूपबदल", "category_num": 11, "category_name": "Transformation & Morphology (कामरूप व रूपान्तरण)", "category_short": "Transformation & Morphology", "prefix": "TRN", "color": "gold", "vehicle": "Mantra / Prāṇa", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "इतर व्यक्ती, प्राणी किंवा निर्जीव वस्तूचे अचूक हुबेहूब रूप घेणे.", "limits": "वास, आवाज आणि वजन बदलले तरी दिव्य-दृष्टीने मूळ प्राण ओळखला जातो.", "pillars": "Energy + Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Sustained Tapasya & Granthi tuning", "evolution_form": "Flesh-Shifting Mastery Grade", "evolution_effects": "30% reduction in Prāṇa throughput cost and 2x precision"}, {"id": "ABL-TRN-02", "name": "Beast-Spirit Manifestation", "vernacular": "पशू-आत्मा संयोग", "category_num": 11, "category_name": "Transformation & Morphology (कामरूप व रूपान्तरण)", "category_short": "Transformation & Morphology", "prefix": "TRN", "color": "gold", "vehicle": "Mantra / Prāṇa", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "स्वतःच्या अंतरातील पशू चिन्हाशी (नाग, वानर, वराह, व्याघ्र) एकरूप होणे.", "limits": "पाशवी सहजप्रवृत्ती व वेग वाढतो; अतिवापराने विवेकावर रानटीपणा ताबा मिळवतो.", "pillars": "Tapasya", "evolution_type": "Evolvable", "evolution_trigger": "Prāṇa-Bandhan resonance", "evolution_form": "Apex Titan Avatāra", "evolution_effects": "Manifests spectral 10-meter beast construct around body"}, {"id": "ABL-TRN-03", "name": "Titan / Battle Form Release", "vernacular": "विराट असुर रूप", "category_num": 11, "category_name": "Transformation & Morphology (कामरूप व रूपान्तरण)", "category_short": "Transformation & Morphology", "prefix": "TRN", "color": "gold", "vehicle": "Mantra / Prāṇa", "tier_band": "T4–T5 (Crossover to Awakened)", "manifestation": "नश्वर मर्यादा झुगारून अनेक हात असलेले महाकाय दैवी किंवा असुरी युद्धरूप प्रगट करणे.", "limits": "प्रचंड चयापचय ऊर्जा खर्च होते; दैवी पुरवठ्याशिवाय जास्त काळ टिकवता येत नाही.", "pillars": "Energy + Boons", "evolution_type": "Mastery-Only", "evolution_trigger": "Asuric biological overcharge", "evolution_form": "Four-Armed Asura War-Stance", "evolution_effects": "Multi-weapon wielding with fourfold striking frequency"}, {"id": "ABL-SEN-01", "name": "Energy-Pathway Sight", "vernacular": "नाडी-दर्शन", "category_num": 12, "category_name": "Sensory, Extrasensory & Eye Powers (नेत्र विद्या व दिव्य दृष्टी)", "category_short": "Sensory, Eyes & Detection", "prefix": "SEN", "color": "cyan", "vehicle": "Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "७२,००० नाड्या, ऊर्जेचा प्रवाह, गाठी आणि शत्रूच्या हल्ल्याची तयारी आधीच पाहणे.", "limits": "हल्ल्याचे कोन उघड करते; अचानक झालेल्या प्रखर प्रकाशाने डोळे दिपू शकतात.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Nādī perception clarity", "evolution_form": "Acupoint Weakness Mapping", "evolution_effects": "Pinpoints exact blockage and vulnerability in enemy armor"}, {"id": "ABL-SEN-02", "name": "Omnidirectional Danger Sense", "vernacular": "सर्वदिशा धोक्याची जाणीव", "category_num": 12, "category_name": "Sensory, Extrasensory & Eye Powers (नेत्र विद्या व दिव्य दृष्टी)", "category_short": "Sensory, Eyes & Detection", "prefix": "SEN", "color": "cyan", "vehicle": "Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "स्नायू आकुंचन पावण्याआधीच शत्रूचा घातक हेतू ओळखणारी ३६० अंश जाणीव.", "limits": "हेतूवर आधारित असल्याने पूर्णपणे स्वयंचलित, निर्जीव यांत्रिक सापळ्यांना पकडत नाही.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Ajna antenna awakening", "evolution_form": "Zero-Blindspot Reflex Arc", "evolution_effects": "Instinctive dodge triggers prior to conscious awareness"}, {"id": "ABL-SEN-03", "name": "Truth Perception", "vernacular": "सत्य-नेत्र", "category_num": 12, "category_name": "Sensory, Extrasensory & Eye Powers (नेत्र विद्या व दिव्य दृष्टी)", "category_short": "Sensory, Eyes & Detection", "prefix": "SEN", "color": "cyan", "vehicle": "Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "सर्व प्रकारचे दृश्य, श्राव्य आणि अवकाशीय भ्रम क्षणात फाडून टाकणे.", "limits": "अति-एकाग्रता लागते; जास्त वेळ ताणल्यास डोळ्यांच्या रक्तवाहिन्या फुटतात.", "pillars": "Tapasya + Karma", "evolution_type": "Evolvable", "evolution_trigger": "Satya-Drishti breakthrough", "evolution_form": "Veil-Piercing Eye of Truth", "evolution_effects": "Shatters high-level illusions and spatial folding barriers"}, {"id": "ABL-SEN-04", "name": "Cosmic Clairaudience", "vernacular": "दिव्य-श्रोत्र", "category_num": 12, "category_name": "Sensory, Extrasensory & Eye Powers (नेत्र विद्या व दिव्य दृष्टी)", "category_short": "Sensory, Eyes & Detection", "prefix": "SEN", "color": "cyan", "vehicle": "Tapasya", "tier_band": "T3–T4 (Mortal to Trained)", "manifestation": "दूरच्या खंडातील किंवा इतर लोकांमधील सूक्ष्म कुजबुज आणि घोषणा ऐकणे.", "limits": "विश्वाच्या प्रचंड आवाजातून योग्य वारंवारता निवडण्यासाठी अचूक ट्युनिंग लागते.", "pillars": "Tapasya", "evolution_type": "Mastery-Only", "evolution_trigger": "Aetheric frequency receiver", "evolution_form": "Planetary Signal Intercept", "evolution_effects": "Monitors telegraph wires and distant vocal declarations"}, {"id": "ABL-DOM-01", "name": "Domain Expansion", "vernacular": "क्षेत्र-बंधन / वास्तव-अधिलिखन", "category_num": 13, "category_name": "Domain, Territory & Boundary Expansion", "category_short": "Domain Expansion", "prefix": "DOM", "color": "rose", "vehicle": "All 5 Unified", "tier_band": "T6 (Ascendent)", "manifestation": "Internal mental landscape overwriting outer physical space; imparts 100% statutory Sure-Hit attribute to user's attacks.", "limits": "Massive Prāṇa exhaustion; counterable by superior Domain density, outside geometric barrier strikes, or destroying core anchor.", "pillars": "Authority + Energy + Tapasya", "evolution_type": "Evolvable", "evolution_trigger": "Rudra-Granthi unsealed + Anchor refinement", "evolution_form": "Inviolable Conceptual Domain", "evolution_effects": "Expands radius to 500m with zero external barrier seam"}, {"id": "ABL-ATM-01", "name": "Ātma-Tattva Manifestation", "vernacular": "गुप्त आत्मतत्त्व विसंगती", "category_num": 14, "category_name": "Ātma-Tattva Manifestations (Secret Sixth Principle)", "category_short": "Ātma-Tattva", "prefix": "ATM", "color": "gold", "vehicle": "Secret Sixth Principle", "tier_band": "T7+ (Cosmic Transcendent / Inviolable)", "manifestation": "Complete ontological resistance to soul-erasure, destiny rewrites, and Ananta ledger tampering. Anomaly armor.", "limits": "Non-quantifiable, cannot be invoked as an active combat spell, immutable by any cosmic weapon.", "pillars": "Secret Sixth Principle", "evolution_type": "Non-Evolving", "evolution_trigger": "None (Eternal & Immutable)", "evolution_form": "Eternal Core", "evolution_effects": "Absolute immunity to erasure"}];
+
+let currentCategory = 0;
+
+function getEvoBadgeClass(type) {
+  if (type === "Evolvable") return "badge-evo";
+  if (type === "Branch-Evolvable") return "badge-evo";
+  if (type === "Mastery-Only") return "badge-mastery";
+  return "badge-static";
+}
+
+function renderCards(list) {
+  const grid = document.getElementById("cardsGrid");
+  document.getElementById("resultsCount").innerText = `Showing ${list.length} of ${ABILITIES.length} Abilities`;
+  
+  if (list.length === 0) {
+    grid.innerHTML = `<div class="no-results">No abilities match the selected filters.</div>`;
+    return;
+  }
+  
+  let html = "";
+  for (const a of list) {
+    const evoClass = getEvoBadgeClass(a.evolution_type);
+    const accentVar = a.color === "cyan" ? "var(--accent-cyan)" : 
+                     a.color === "purple" ? "var(--accent-purple)" : 
+                     a.color === "rose" ? "var(--accent-rose)" : 
+                     a.color === "emerald" ? "var(--accent-emerald)" : "var(--accent-gold)";
+                     
+    html += `
+    <div class="ability-card" style="--card-accent: ${accentVar}">
+      <div class="card-top">
+        <span class="ability-id">${a.id}</span>
+        <div class="badges-row">
+          <span class="badge badge-canon">[CANON]</span>
+          <span class="badge badge-tier">${a.tier_band.split(' ')[0]}</span>
+          <span class="badge ${evoClass}">${a.evolution_type}</span>
+        </div>
+      </div>
+      
+      <div class="card-title">
+        <h3>${a.name}</h3>
+        <div class="vernacular">${a.vernacular ? a.vernacular : ''}</div>
+        <span class="category-tag">Cat ${a.category_num}: ${a.category_short}</span>
+      </div>
+      
+      <div class="spec-box">
+        <div class="spec-item">
+          <span class="spec-label">Axis A Pillars (Cosmic Governance)</span>
+          <span class="spec-val pillars">${a.pillars}</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Axis B Vehicle (Practitioner Craft)</span>
+          <span class="spec-val vehicle">${a.vehicle} • Scale: ${a.tier_band}</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Manifestation &amp; Mechanics</span>
+          <span class="spec-val">${a.manifestation}</span>
+        </div>
+      </div>
+      
+      <div class="section-callout callout-limits">
+        <div class="lbl">⚠️ Tactical Limits &amp; Hard Counters</div>
+        <div>${a.limits}</div>
+      </div>
+      
+      <div class="section-callout callout-evo">
+        <div class="lbl">⚡ Evolution Track (${a.evolution_type})</div>
+        <div><span class="evo-target">Trigger:</span> ${a.evolution_trigger}</div>
+        <div><span class="evo-target">Evolved Form:</span> ${a.evolution_form}</div>
+        <div style="color: var(--text-muted); font-size: 0.78rem; margin-top: 2px;">${a.evolution_effects}</div>
+      </div>
+    </div>`;
+  }
+  grid.innerHTML = html;
+}
+
+function setCategory(catNum, elem) {
+  currentCategory = catNum;
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  elem.classList.add('active');
+  filterAbilities();
+}
+
+function filterAbilities() {
+  const query = document.getElementById("searchInput").value.toLowerCase().trim();
+  const tier = document.getElementById("tierFilter").value;
+  const evo = document.getElementById("evoFilter").value;
+  
+  const filtered = ABILITIES.filter(a => {
+    if (currentCategory !== 0 && a.category_num !== currentCategory) return false;
+    if (tier !== "ALL" && !a.tier_band.includes(tier)) return false;
+    if (evo !== "ALL" && a.evolution_type !== evo) return false;
+    
+    if (query) {
+      const matchText = (a.id + " " + a.name + " " + a.vernacular + " " + a.manifestation + " " + a.limits + " " + a.pillars + " " + a.evolution_form).toLowerCase();
+      if (!matchText.includes(query)) return false;
+    }
+    return true;
+  });
+  
+  renderCards(filtered);
+}
+
+// Initial Render
+renderCards(ABILITIES);
+</script>
+
+</body>
+</html>

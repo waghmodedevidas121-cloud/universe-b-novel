@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universe B — 3D Astral Realm Interactive Map (The 5-Shard Wheel)</title>
+  <style>
+    :root {
+      --bg-void: #04060b;
+      --panel-bg: rgba(12, 17, 29, 0.88);
+      --gold: #f4c430;
+      --gold-border: rgba(244, 196, 48, 0.45);
+      --cyan: #00e5ff;
+      --crimson: #ff3366;
+      --emerald: #00e676;
+      --purple: #b388ff;
+      --text-light: #eef2f9;
+      --text-dim: #9aa6bc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--bg-void);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text-light);
+    }
+    #canvas-container {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    #labels-container {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    /* Top HUD Header */
+    .top-hud {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      right: 16px;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 12px 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+    }
+    .brand-title h1 {
+      font-size: 1.25rem;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .brand-title p {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+    .camera-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .cam-btn {
+      background: rgba(25, 34, 56, 0.9);
+      color: var(--text-light);
+      border: 1px solid var(--gold-border);
+      padding: 7px 13px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cam-btn:hover, .cam-btn.active {
+      background: var(--gold);
+      color: #000;
+      box-shadow: 0 0 12px rgba(244, 196, 48, 0.6);
+    }
+
+    /* Left Layer Filter Panel */
+    .left-filters {
+      position: absolute;
+      top: 92px;
+      left: 16px;
+      z-index: 10;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 14px 16px;
+      width: 245px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    }
+    .left-filters h4 {
+      color: var(--gold);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 5px;
+    }
+    .filter-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .filter-item input { cursor: pointer; }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* Right Lore Inspector Panel */
+    .right-inspector {
+      position: absolute;
+      top: 92px;
+      right: 16px;
+      z-index: 10;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 18px;
+      width: 340px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.85);
+    }
+    .right-inspector h3 {
+      color: var(--gold);
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+    .tag-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .t-badge {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .b-cat { background: #1e293b; color: #38bdf8; border: 1px solid #0284c7; }
+    .b-shard { background: rgba(244, 196, 48, 0.15); color: var(--gold); border: 1px solid var(--gold-border); }
+    .lore-block {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .lore-block strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    /* Bottom Controls Hint */
+    .bottom-hint {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      background: rgba(10, 14, 23, 0.85);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+
+    /* 3D Floating Name Tags */
+    .map-tag {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      pointer-events: auto;
+      cursor: pointer;
+      white-space: nowrap;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      background: rgba(8, 12, 22, 0.88);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.8);
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .map-tag:hover {
+      transform: translate(-50%, -110%) scale(1.15);
+      z-index: 999 !important;
+      background: #1e293b;
+    }
+    .map-tag::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px 4px 0;
+      border-style: solid;
+      border-color: rgba(255,255,255,0.4) transparent;
+    }
+    .tag-capital {
+      border-color: #f4c430;
+      color: #ffe066;
+      font-size: 12.5px;
+      background: rgba(25, 20, 5, 0.92);
+      box-shadow: 0 0 12px rgba(244, 196, 48, 0.45);
+    }
+    .tag-town { border-color: #00e676; color: #69f0ae; }
+    .tag-village { border-color: #81c784; color: #c8e6c9; font-size: 10px; opacity: 0.9; }
+    .tag-structure { border-color: #00e5ff; color: #84ffff; }
+    .tag-gateway {
+      border: 1.5px solid #ffffff;
+      background: rgba(0, 110, 150, 0.92);
+      color: #ffffff;
+      box-shadow: 0 0 12px #00e5ff;
+    }
+    .tag-anchor {
+      border-color: #ff3366;
+      color: #ff80ab;
+      background: rgba(45, 5, 20, 0.92);
+      box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+    }
+    .tag-danger { border-color: #b388ff; color: #ea80fc; background: rgba(30, 10, 45, 0.9); }
+  </style>
+</head>
+<body>
+
+  <div id="canvas-container"></div>
+  <div id="labels-container"></div>
+
+  <!-- Top Navigation HUD -->
+  <div class="top-hud">
+    <div class="brand-title">
+      <div style="margin-bottom: 5px; display: flex; gap: 8px;">
+        <a href="index.html" style="color: var(--gold); text-decoration: none; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border: 1px solid var(--gold-border); border-radius: 4px; background: rgba(0,0,0,0.5);">← Master Codex</a>
+        <a href="world_atlas.html" style="color: var(--emerald); text-decoration: none; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border: 1px solid rgba(0, 230, 118, 0.4); border-radius: 4px; background: rgba(0,0,0,0.5);">🗺️ 2D Geometric Atlas</a>
+      </div>
+      <h1>TIER 3: THE ASTRAL REALM (3D WHEEL ATLAS)</h1>
+      <p>5 Floating Planetary Shards Suspended in the Infinite Void | Textured 3D Topography &amp; Live Location Tags</p>
+    </div>
+    <div class="camera-btns">
+      <button class="cam-btn active" onclick="flyToShard('overview', this)">Full 5-Shard Wheel</button>
+      <button class="cam-btn" onclick="flyToShard('central', this)">Central City (Hub)</button>
+      <button class="cam-btn" onclick="flyToShard('human', this)">Human Shard (East)</button>
+      <button class="cam-btn" onclick="flyToShard('asura', this)">Asura Shard (West)</button>
+      <button class="cam-btn" onclick="flyToShard('deva', this)">Deva Shard (North)</button>
+      <button class="cam-btn" onclick="flyToShard('beast', this)">Beast Shard (South)</button>
+      <button class="cam-btn" onclick="flyToShard('underworld', this)">Veiled Shadow Grid</button>
+    </div>
+  </div>
+
+  <!-- Left Filter Checkboxes -->
+  <div class="left-filters">
+    <h4>Map Tag Layers</h4>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('capital', this.checked)"><span class="legend-dot" style="background:#f4c430;box-shadow:0 0 6px #f4c430"></span> Capital Cities (8)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('gateway', this.checked)"><span class="legend-dot" style="background:#fff;border:2px solid #00e5ff"></span> Stone Gateways (5)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('structure', this.checked)"><span class="legend-dot" style="background:#00e5ff"></span> Guilds, Gurukuls &amp; Arenas (9)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('town', this.checked)"><span class="legend-dot" style="background:#00e676"></span> Major Towns (8)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('village', this.checked)"><span class="legend-dot" style="background:#81c784"></span> Frontier Villages (7)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('anchor', this.checked)"><span class="legend-dot" style="background:#ff3366;box-shadow:0 0 6px #ff3366"></span> Shadow Anchors (6)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('danger', this.checked)"><span class="legend-dot" style="background:#b388ff"></span> Cursed Forests &amp; Ruins (5)</label>
+  </div>
+
+  <!-- Right Lore Inspector -->
+  <div class="right-inspector">
+    <h3 id="ins-title">The 5-Shard Astral Wheel</h3>
+    <div class="tag-badges">
+      <span class="t-badge b-cat" id="ins-cat">Tier 3 Macro-Wheel</span>
+      <span class="t-badge b-shard" id="ins-shard">All 5 Planetary Shards</span>
+    </div>
+    <div class="lore-block">
+      <strong>3D Coordinates &amp; Geometry</strong>
+      <p id="ins-geo">Central Hub Island surrounded by 4 Outer Wedge-Continents across the Infinite Void.</p>
+    </div>
+    <div class="lore-block">
+      <strong>Topography &amp; Key Structures</strong>
+      <p id="ins-desc">Click any 3D Floating Name Tag or glowing beacon on the map to zoom in and inspect its terrain, rulers, Adventurer Guild branch, or hidden Shadow Anchor.</p>
+    </div>
+    <div class="lore-block">
+      <strong>Narrative &amp; World Impact</strong>
+      <p id="ins-impact">All 4 Outer Shards connect ONLY to Central City's Five-Arch Rotunda via cyan Stone Gateway corridors during the 4 daily Muhurtas, while red Shadow Anchor tunnels run illegally beneath the Void.</p>
+    </div>
+  </div>
+
+  <div class="bottom-hint">
+    Left-Click + Drag: Rotate 3D Camera | Right-Click + Drag: Pan | Scroll Wheel: Zoom In/Out | Click Any Name Tag: Focus &amp; Inspect
+  </div>
+
+  <!-- Three.js & OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <script>
+    // =========================================================================
+    // 1. SCENE, CAMERA & RENDERER SETUP
+    // =========================================================================
+    const container = document.getElementById('canvas-container');
+    const labelsContainer = document.getElementById('labels-container');
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x04060b);
+    scene.fog = new THREE.FogExp2(0x04060b, 0.0011);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 3000);
+    camera.position.set(0, 310, 420);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    container.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.06;
+    controls.maxDistance = 900;
+    controls.minDistance = 35;
+
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0x88a2c8, 0.75);
+    scene.add(ambientLight);
+
+    const sunLight = new THREE.DirectionalLight(0xfff4d6, 1.25);
+    sunLight.position.set(180, 350, 140);
+    sunLight.castShadow = true;
+    scene.add(sunLight);
+
+    const voidRimLight = new THREE.PointLight(0x00e5ff, 1.1, 600);
+    voidRimLight.position.set(0, 45, 0);
+    scene.add(voidRimLight);
+
+    // =========================================================================
+    // 2. PROCEDURAL HIGH-RES TEXTURE GENERATOR (100% SELF-CONTAINED)
+    // =========================================================================
+    function createBiomeTexture(type) {
+      const canvas = document.createElement('canvas');
+      canvas.width = 512;
+      canvas.height = 512;
+      const ctx = canvas.getContext('2d');
+
+      if (type === 'central') {
+        // White Marble, Gold Veins & Rotunda Plaza
+        const grad = ctx.createRadialGradient(256, 256, 10, 256, 256, 256);
+        grad.addColorStop(0, '#fff9e6');
+        grad.addColorStop(0.5, '#d8e0ec');
+        grad.addColorStop(1, '#7a8a9e');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        ctx.strokeStyle = 'rgba(244, 196, 48, 0.65)';
+        ctx.lineWidth = 4;
+        for (let r = 45; r <= 230; r += 45) {
+          ctx.beginPath(); ctx.arc(256, 256, r, 0, Math.PI * 2); ctx.stroke();
+        }
+      } else if (type === 'human') {
+        // Fertile Green Plains, Golden Wheat Fields, Northern Snow & Eastern Sea Coast
+        const grad = ctx.createLinearGradient(0, 0, 512, 512);
+        grad.addColorStop(0, '#dcedc8'); // North Tapovana snow-forest
+        grad.addColorStop(0.35, '#2e5c23'); // Fertile Gangetic plains
+        grad.addColorStop(0.72, '#6d5c28'); // Farmlands & badlands
+        grad.addColorStop(0.88, '#103b66'); // The Mortal Sea coast
+        grad.addColorStop(1, '#07223d');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        // Add organic terrain grain
+        for (let i = 0; i < 4000; i++) {
+          ctx.fillStyle = i % 2 === 0 ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)';
+          ctx.fillRect(Math.random() * 512, Math.random() * 512, 4, 4);
+        }
+        // Sacred Ganges-Yamuna Rivers
+        ctx.strokeStyle = '#00d8ff';
+        ctx.lineWidth = 9;
+        ctx.beginPath();
+        ctx.moveTo(80, 60);
+        ctx.quadraticCurveTo(250, 230, 470, 390);
+        ctx.stroke();
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(40, 170);
+        ctx.quadraticCurveTo(210, 260, 310, 285);
+        ctx.stroke();
+      } else if (type === 'asura') {
+        // Dark Obsidian Basalt & Glowing Magma Rivers
+        ctx.fillStyle = '#1c1215';
+        ctx.fillRect(0, 0, 512, 512);
+        for (let i = 0; i < 5000; i++) {
+          ctx.fillStyle = i % 3 === 0 ? '#2e1c21' : '#110a0c';
+          ctx.fillRect(Math.random() * 512, Math.random() * 512, 6, 6);
+        }
+        // Glowing Lava Veins
+        ctx.strokeStyle = '#ff5500';
+        ctx.shadowColor = '#ff2200';
+        ctx.shadowBlur = 12;
+        ctx.lineWidth = 6;
+        for (let j = 0; j < 7; j++) {
+          ctx.beginPath();
+          ctx.moveTo(Math.random() * 100, Math.random() * 512);
+          ctx.bezierCurveTo(200, Math.random() * 512, 320, Math.random() * 512, 490, Math.random() * 512);
+          ctx.stroke();
+        }
+      } else if (type === 'deva') {
+        // Celestial White-Azure Marble & Golden Sun-Rays
+        const grad = ctx.createRadialGradient(256, 256, 20, 256, 256, 260);
+        grad.addColorStop(0, '#fffdf2');
+        grad.addColorStop(0.55, '#a7d8ff');
+        grad.addColorStop(1, '#3b6998');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        ctx.strokeStyle = 'rgba(255, 215, 0, 0.5)';
+        ctx.lineWidth = 3;
+        for (let a = 0; a < Math.PI * 2; a += Math.PI / 8) {
+          ctx.beginPath();
+          ctx.moveTo(256, 256);
+          ctx.lineTo(256 + Math.cos(a) * 250, 256 + Math.sin(a) * 250);
+          ctx.stroke();
+        }
+      } else if (type === 'beast') {
+        // Deep Primeval Emerald Canopy, Bioluminescent Swamp & Blood-Ridge
+        const grad = ctx.createLinearGradient(0, 0, 512, 512);
+        grad.addColorStop(0, '#5a1919'); // West Blood-Ridge border
+        grad.addColorStop(0.25, '#0c3b20'); // Deep Canopy
+        grad.addColorStop(0.7, '#194d29');
+        grad.addColorStop(1, '#1c1836'); // Twilight Marsh
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        for (let i = 0; i < 6000; i++) {
+          ctx.fillStyle = i % 5 === 0 ? 'rgba(0, 230, 118, 0.14)' : 'rgba(5, 25, 12, 0.25)';
+          ctx.beginPath();
+          ctx.arc(Math.random() * 512, Math.random() * 512, Math.random() * 6 + 1, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      const tex = new THREE.CanvasTexture(canvas);
+      tex.wrapS = THREE.ClampToEdgeWrapping;
+      tex.wrapT = THREE.ClampToEdgeWrapping;
+      return tex;
+    }
+
+    // =========================================================================
+    // 3. INFINITE VOID STARFIELD & WHEEL RING BOUNDARY
+    // =========================================================================
+    const starGeo = new THREE.BufferGeometry();
+    const starCount = 3500;
+    const starPos = new Float32Array(starCount * 3);
+    for (let i = 0; i < starCount * 3; i += 3) {
+      starPos[i] = (Math.random() - 0.5) * 1800;
+      starPos[i + 1] = (Math.random() - 0.5) * 900;
+      starPos[i + 2] = (Math.random() - 0.5) * 1800;
+    }
+    starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+    const starMat = new THREE.PointsMaterial({ color: 0xaaccff, size: 1.8, transparent: true, opacity: 0.75 });
+    scene.add(new THREE.Points(starGeo, starMat));
+
+    // Outer Astral Wheel Rim (Matches Author's Circular Wheel Sketch)
+    const wheelRingGeo = new THREE.RingGeometry(248, 252, 128);
+    wheelRingGeo.rotateX(-Math.PI / 2);
+    const wheelRingMat = new THREE.MeshBasicMaterial({ color: 0x00e5ff, side: THREE.DoubleSide, transparent: true, opacity: 0.35 });
+    scene.add(new THREE.Mesh(wheelRingGeo, wheelRingMat));
+
+    // 4 Radial Sector Divider Lines in the Void (Matching Author's Sketch)
+    for (let angle of [Math.PI / 4, (3 * Math.PI) / 4, (5 * Math.PI) / 4, (7 * Math.PI) / 4]) {
+      const pts = [
+        new THREE.Vector3(Math.cos(angle) * 52, 0, Math.sin(angle) * 52),
+        new THREE.Vector3(Math.cos(angle) * 250, 0, Math.sin(angle) * 250)
+      ];
+      const lineGeo = new THREE.BufferGeometry().setFromPoints(pts);
+      const lineMat = new THREE.LineBasicMaterial({ color: 0xff3355, transparent: true, opacity: 0.45 });
+      scene.add(new THREE.Line(lineGeo, lineMat));
+    }
+
+    // =========================================================================
+    // 4. BUILD THE 5 3D PLANETARY SHARDS WITH TOPOGRAPHY & STRUCTURES
+    // =========================================================================
+    function createShardIsland(cx, cy, cz, radiusX, radiusZ, biome, heightFn) {
+      const group = new THREE.Group();
+      group.position.set(cx, cy, cz);
+
+      // Top Terrain Surface with 3D Elevation
+      const topGeo = new THREE.CylinderGeometry(radiusX, radiusX * 0.92, 6, 64, 24);
+      const pos = topGeo.attributes.position;
+      for (let i = 0; i < pos.count; i++) {
+        const vx = pos.getX(i);
+        const vy = pos.getY(i);
+        const vz = pos.getZ(i);
+        // Scale Z for elliptical shape
+        const scaledZ = vz * (radiusZ / radiusX);
+        pos.setZ(i, scaledZ);
+        if (vy > 0) {
+          const elev = heightFn(vx, scaledZ);
+          pos.setY(i, vy + elev);
+        } else {
+          // Under-crust rocky taper
+          const dist = Math.sqrt(vx * vx + scaledZ * scaledZ) / radiusX;
+          pos.setY(i, -18 * (1 - dist * 0.65) - Math.abs(Math.sin(vx * 0.2) * 4));
+        }
+      }
+      topGeo.computeVertexNormals();
+
+      const topMat = new THREE.MeshStandardMaterial({
+        map: createBiomeTexture(biome),
+        roughness: biome === 'deva' ? 0.3 : 0.78,
+        metalness: biome === 'asura' ? 0.35 : 0.1
+      });
+      const mesh = new THREE.Mesh(topGeo, topMat);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      group.add(mesh);
+
+      // Glowing Gravitational Anchor Crystal underneath the shard
+      const keelGeo = new THREE.ConeGeometry(radiusX * 0.28, 26, 8);
+      keelGeo.rotateX(Math.PI);
+      const keelMat = new THREE.MeshStandardMaterial({
+        color: 0x1a2436,
+        emissive: biome === 'asura' ? 0xff3300 : 0x0088aa,
+        emissiveIntensity: 0.35,
+        roughness: 0.4
+      });
+      const keel = new THREE.Mesh(keelGeo, keelMat);
+      keel.position.y = -24;
+      group.add(keel);
+
+      scene.add(group);
+      return group;
+    }
+
+    // 1. CENTRAL SHARD (Hub at 0, 0, 0)
+    const centralGroup = createShardIsland(0, 0, 0, 44, 44, 'central', (x, z) => {
+      const r = Math.sqrt(x * x + z * z);
+      return r < 14 ? 4 : 1.5;
+    });
+    // Grand Concord Golden Dome & Coliseum 3D Models
+    const domeMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(7, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2),
+      new THREE.MeshStandardMaterial({ color: 0xf4c430, metalness: 0.7, roughness: 0.2 })
+    );
+    domeMesh.position.set(0, 6.5, 0);
+    centralGroup.add(domeMesh);
+
+    const coliseumMesh = new THREE.Mesh(
+      new THREE.TorusGeometry(6.5, 2.2, 12, 32),
+      new THREE.MeshStandardMaterial({ color: 0xd8dee9, roughness: 0.5 })
+    );
+    coliseumMesh.rotation.x = Math.PI / 2;
+    coliseumMesh.position.set(-14, 5.5, 14);
+    centralGroup.add(coliseumMesh);
+
+    // 2. HUMAN SHARD (East at +155, 0, 0)
+    const humanGroup = createShardIsland(155, 0, 0, 68, 56, 'human', (x, z) => {
+      // High Northern Tapovana Mountains (z < -18)
+      if (z < -18) return Math.abs(Math.sin(x * 0.15) * Math.cos(z * 0.15)) * 18 + 6;
+      // Eastern Mortal Sea depression (x > 25)
+      if (x > 25) return -1.5;
+      // Central Fertile Gangetic Plains
+      return Math.sin(x * 0.08) * 2 + 1.5;
+    });
+
+    // 3. ASURA SHARD (West at -155, 0, 0)
+    const asuraGroup = createShardIsland(-155, 0, 0, 66, 54, 'asura', (x, z) => {
+      // Volcanic Caldera & Jagged Peaks
+      const d = Math.sqrt((x + 10) * (x + 10) + (z + 5) * (z + 5));
+      if (d < 16) return d < 7 ? -2 : 15; // Volcanic crater rim
+      // Deep Obsidian Chasm Trench (x > 8, z > 5)
+      if (x > 8 && z > 5) return -6;
+      return Math.abs(Math.cos(x * 0.14) * 9) + 2;
+    });
+
+    // 4. DEVA SHARD (North at 0, +18, -155 — Elevated Floating Plateau!)
+    const devaGroup = createShardIsland(0, 18, -155, 62, 48, 'deva', (x, z) => {
+      const r = Math.sqrt(x * x + z * z);
+      return r < 20 ? 8 : 3;
+    });
+    // Crystal Solar Spire on Amaravati
+    const spireMesh = new THREE.Mesh(
+      new THREE.ConeGeometry(5, 22, 8),
+      new THREE.MeshStandardMaterial({ color: 0x80d8ff, emissive: 0x0088ff, emissiveIntensity: 0.4, transparent: true, opacity: 0.9 })
+    );
+    spireMesh.position.set(-8, 19, 0);
+    devaGroup.add(spireMesh);
+
+    // 5. BEAST SHARD (South at 0, 0, +155)
+    const beastGroup = createShardIsland(0, 0, 155, 68, 54, 'beast', (x, z) => {
+      // Sky Spires in the Northeast (x > 18, z < -10)
+      if (x > 18 && z < -10) return 26 * Math.abs(Math.sin(x * 0.3));
+      return Math.sin(x * 0.12) * Math.cos(z * 0.12) * 6 + 3;
+    });
+    // Giant 1,500-ft World-Tree Branch in Heartwood Sanctum
+    const trunkMesh = new THREE.Mesh(
+      new THREE.CylinderGeometry(3, 5.5, 22, 12),
+      new THREE.MeshStandardMaterial({ color: 0x4e342e })
+    );
+    trunkMesh.position.set(0, 14, 0);
+    const canopyMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(14, 16, 12),
+      new THREE.MeshStandardMaterial({ color: 0x00c853, roughness: 0.8 })
+    );
+    canopyMesh.scale.set(1.2, 0.55, 1.2);
+    canopyMesh.position.set(0, 25, 0);
+    beastGroup.add(trunkMesh, canopyMesh);
+
+    // =========================================================================
+    // 5. 3D STONE GATEWAY ARCHES, AETHER CORRIDORS & SHADOW ANCHOR TUNNELS
+    // =========================================================================
+    function createGatewayArch(x, y, z, rotY) {
+      const arch = new THREE.Mesh(
+        new THREE.TorusGeometry(5.5, 1.1, 8, 24, Math.PI),
+        new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0x00e5ff, emissiveIntensity: 0.8 })
+      );
+      arch.position.set(x, y, z);
+      arch.rotation.y = rotY;
+      scene.add(arch);
+    }
+    // 4 Outer Gateways + Central Rotunda Gate
+    createGatewayArch(0, 7, 0, 0);              // Five-Arch Rotunda
+    createGatewayArch(115, 11, -24, Math.PI/2); // Hastinapur High Arch (Human)
+    createGatewayArch(-112, 9, -15, Math.PI/2); // Caldera Basalt Arch (Asura)
+    createGatewayArch(0, 24, -112, 0);          // Sun-Cliff Arch (Deva)
+    createGatewayArch(0, 7, 112, 0);            // Root-Carved Arch (Beast)
+
+    // Official Hub-and-Spoke Cyan Aether-Mist Corridors (Connecting ONLY to Central City!)
+    function createCorridorCurve(p1, p2, color, isDashed, arcHeight) {
+      const mid = new THREE.Vector3().addVectors(p1, p2).multiplyScalar(0.5);
+      mid.y += arcHeight;
+      const curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
+      const pts = curve.getPoints(50);
+      const geo = new THREE.BufferGeometry().setFromPoints(pts);
+      const mat = isDashed
+        ? new THREE.LineDashedMaterial({ color: color, dashSize: 4, gapSize: 3, linewidth: 2 })
+        : new THREE.LineBasicMaterial({ color: color, linewidth: 3 });
+      const line = new THREE.Line(geo, mat);
+      if (isDashed) line.computeLineDistances();
+      scene.add(line);
+      return line;
+    }
+
+    // 4 Official Cyan Gateway Bridges
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(115, 11, -24), 0x00e5ff, false, 18);
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(-112, 9, -15), 0x00e5ff, false, 18);
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(0, 24, -112), 0x00e5ff, false, 22);
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(0, 7, 112), 0x00e5ff, false, 18);
+
+    // 3 Illegal Subterranean Red Shadow Anchor Tunnels (Under the Void!)
+    createCorridorCurve(new THREE.Vector3(148, -6, 6), new THREE.Vector3(-140, -8, 18), 0xff3366, true, -48);  // Pit #13 <-> Shaft #47
+    createCorridorCurve(new THREE.Vector3(148, -6, 6), new THREE.Vector3(35, 12, -145), 0xff3366, true, -32);  // Human <-> Whispering Grotto
+    createCorridorCurve(new THREE.Vector3(198, -4, 18), new THREE.Vector3(18, -5, 165), 0xff3366, true, -35);  // Sea Citadel <-> Hollow Ironwood
+
+    // =========================================================================
+    // 6. COMPLETE ASTRAL REALM LOCATION PINS & FLOATING 3D NAME TAGS (38 NODES)
+    // =========================================================================
+    const ASTRAL_LOCATIONS = [
+      // --- CENTRAL SHARD (HUB) ---
+      { id: 'c1', name: 'Central City (Grand Concord)', cat: 'capital', shard: 'Central Shard', pos: [0, 14, 0],
+        geo: 'Center of the Astral Wheel (0, 0, 0) | 50,000 Sq. Miles',
+        desc: 'Neutral demilitarized white-marble metropolis governed by High Chancellor Sulabha and Grand Marshal Satyabhama.',
+        impact: 'Zero-violence diplomatic sanctuary; controls the Aether-Rupee and all legal inter-shard transit.' },
+      { id: 'c2', name: 'Five-Arch Rotunda (Hub Gate)', cat: 'gateway', shard: 'Central Shard', pos: [0, 9, -12],
+        geo: 'Northern Plaza of Central City',
+        desc: 'The central hub where all 4 outer Monolithic Stone Gateways open during the 4 daily temple-bell Muhurtas.',
+        impact: 'Collects the 17% customs tariff on all Beast-Cart caravans.' },
+      { id: 'c3', name: 'Central Coliseum (Proving Games)', cat: 'structure', shard: 'Central Shard', pos: [-14, 9, 14],
+        geo: 'Southern Arena District, Central City',
+        desc: '100,000-seat stadium with 5 shifting elemental battlegrounds. Devas watch from high marble balconies.',
+        impact: 'Hosts the 5-Tier Proving Games (D to S-Rank) and scouts champions for the Great Setu.' },
+      { id: 'c4', name: 'Pan-Astral Adventurer Guild HQ', cat: 'structure', shard: 'Central Shard', pos: [16, 9, 12],
+        geo: 'Eastern Quarter, Central City',
+        desc: 'Commanded by Guildmaster Uttanka and Clairvoyant Chandra-Lekha (Astral Mirror Hall).',
+        impact: 'Issues high-rank quests against rampaging forest beasts, cursed ruins, and rogue summoned Devils.' },
+      { id: 'c5', name: 'Sunken Aqueduct Anchor (Grade 1)', cat: 'anchor', shard: 'Central Shard', pos: [4, -10, 8],
+        geo: '200 ft beneath the Central Reserve Bank Vaults',
+        desc: 'The sole surviving Grade-1 Omnidial Shadow Anchor, secretly tapped by the Gray Pigeons syndicate.',
+        impact: 'Can dial any shard in the wheel, but triggers 5-mile tremors if overdriven.' },
+
+      // --- HUMAN SHARD (EAST) ---
+      { id: 'h1', name: 'Hastinapur (Royal Capital)', cat: 'capital', shard: 'Human Shard (East)', pos: [152, 9, 2],
+        geo: 'Central Ganges-Yamuna Plains (+152, 0, +2)',
+        desc: 'Seat of King Parikshit, Queen Madravati, General Ugrasena, and Master Artificer Rohini. Lit by Ember-quirks and bustling with Beast-Carts.',
+        impact: 'Main agricultural & political heart of humanity; hosts the annual Gudhi Padwa Awakening Ceremony.' },
+      { id: 'h2', name: 'The Sea Citadel (Port Metropolis)', cat: 'capital', shard: 'Human Shard (East Coast)', pos: [204, 6, 18],
+        geo: 'Eastern Delta on the Mortal Sea',
+        desc: 'Ruled by Lord Admiral Suhotra ("The Silver Shark") and Commodore Lavanya. Sailing fleets pulled by harnessed River-Drakes (Makaras).',
+        impact: 'Controls maritime trade and the vital sea-salt exports to the Beast Shard.' },
+      { id: 'h3', name: 'Hastinapur High Arch (Human Gate)', cat: 'gateway', shard: 'Human Shard', pos: [115, 15, -24],
+        geo: 'High Himalayan Ridge at the Ganges Source',
+        desc: '100-foot black basalt stone arch guarded by Royal Beast-Cavalry and Caravan-Master Alistair Vance.',
+        impact: 'Only legal land gateway connecting the Human Shard to Central City.' },
+      { id: 'h4', name: 'Tapovana Gurukul (Sage Shamika)', cat: 'structure', shard: 'Human Shard (North)', pos: [158, 19, -34],
+        geo: 'Northern Snow-Cedar Mountains',
+        desc: 'Sacred ashram of 310-year-old S-Rank Sage Shamika and Herbalist Ila. Protected by an unbreakable Peace-Ward.',
+        impact: 'Trains disciples in 72,000-meridian breath mastery and grows life-saving Sanjeevani herbs.' },
+      { id: 'h5', name: 'Drona-Vana Royal War Academy', cat: 'structure', shard: 'Human Shard', pos: [138, 8, -5],
+        geo: 'Western Outskirts of Hastinapur',
+        desc: 'Elite martial gurukul where royal scions, D-Ranks, and C-Rank Reincarnates train in Dhanurveda bows and Bija-Mantras.',
+        impact: 'Crucible of rivalry between native noble bloodlines and Reincarnated prodigies.' },
+      { id: 'h6', name: 'Hastinapur Adventurer Guild & Akhara', cat: 'structure', shard: 'Human Shard', pos: [164, 8, 9],
+        geo: 'Outer Ring Market of Hastinapur',
+        desc: 'Main bounty hall and sister-tournament arena where fighters earn their 1,000 points for Central City.',
+        impact: 'Home base of Chronicler Marcus Ward and rookie adventurer parties.' },
+      { id: 'h7', name: 'Indraprastha Crossroads (Town)', cat: 'town', shard: 'Human Shard', pos: [135, 7, 16],
+        geo: 'Southern Royal Highway',
+        desc: 'Major caravan staging town where hundreds of Horse- and Bull-Carts rest and swap draft-beasts.',
+        impact: 'Hub for merchant quests and escort missions.' },
+      { id: 'h8', name: 'Yamuna-Ghat Caravan Town', cat: 'town', shard: 'Human Shard', pos: [175, 7, 15],
+        geo: 'River Confluence East of Hastinapur',
+        desc: 'Lively river-port town where Captain Romesh’s Makara-barges load grain and festival lamps.',
+        impact: 'Famous for its 7-Day Grand Diwali river-light celebrations.' },
+      { id: 'h9', name: 'Khandava Watch-Town', cat: 'town', shard: 'Human Shard', pos: [122, 7, 28],
+        geo: 'Northern Perimeter of the Khandava Cursed Forest',
+        desc: 'Fortified adventurer town commanded by Captain Bhima ("The Trench Bull") and her Ironclad Boar cavalry.',
+        impact: 'Frontline launchpad for parties hunting uncontrolled beasts and rogue Devils.' },
+      { id: 'h10', name: 'Ekachakra Border Village', cat: 'village', shard: 'Human Shard', pos: [105, 6, 12],
+        geo: 'Western Badlands Border',
+        desc: 'Rustic farming village surrounded by ancient Era-2 stone pillars; frequently menaced by feral beasts.',
+        impact: 'Starting D-Rank Adventurer quest village hiding an ancient underground shrine.' },
+      { id: 'h11', name: 'Varanavata Foothill Village', cat: 'village', shard: 'Human Shard', pos: [142, 12, -22],
+        geo: 'Pine Foothills below Tapovana',
+        desc: 'Produces pine-resin, wax, and alchemical fire-oil used by adventurers.',
+        impact: 'Key supply stop on the mountain road to the High Arch Gateway.' },
+      { id: 'h12', name: 'Lavan-Pura Salt Village', cat: 'village', shard: 'Human Shard', pos: [192, 5, 36],
+        geo: 'Southern Mangrove Coast on the Mortal Sea',
+        desc: 'Coastal village where workers evaporate sea-water into giant rock-salt blocks using Ember quirks.',
+        impact: 'Supplies the salt blocks traded at Shabari’s post in the Beast Shard.' },
+      { id: 'h13', name: 'Khandava Cursed Forest', cat: 'danger', shard: 'Human Shard', pos: [118, 7, 40],
+        geo: 'Southwestern Wilderness of the Human Shard',
+        desc: 'Dense, mist-choked forest where rogue cultists perform illegal Type-2 Devil Summonings.',
+        impact: 'High-mortality B-Rank and A-Rank Adventurer quest zone.' },
+      { id: 'h14', name: 'Panchala White-Ash Ruins', cat: 'danger', shard: 'Human Shard', pos: [182, 8, -14],
+        geo: 'Northeastern Crater-Basin',
+        desc: 'The glassed white-ash ruins of Panchala, purged in Era 3 during the Ashen Eclipse Devil outbreak.',
+        impact: 'Haunted by cursed remnants; strictly quarantined by Concord Inquisitors.' },
+      { id: 'h15', name: 'Pit #13 Shadow Anchor (Grade 2)', cat: 'anchor', shard: 'Human Shard', pos: [148, -5, 6],
+        geo: 'Subterranean Cavern beneath Hastinapur Forge Quarter',
+        desc: '20-foot basalt rotary anchor run by "Kite" Renzo Vance. Masked by the thud of giant forge-hammers.',
+        impact: 'Smuggles Hastinapur wheat directly to Ulka’s Shaft #47 in the Asura Shard.' },
+      { id: 'h16', name: 'Sunken Temple Anchor (Grade 3)', cat: 'anchor', shard: 'Human Shard', pos: [215, -6, 28],
+        geo: 'Blind Trench on the Mortal Sea Floor',
+        desc: 'Submerged Era-2 temple anchor salvaged by Diver Malhar under Admiral Suhotra’s protection.',
+        impact: 'Receives contraband Abyssal ores and relics from Maricha.' },
+
+      // --- ASURA SHARD (WEST) ---
+      { id: 'a1', name: 'The Iron Citadel (Vajra-Nagara)', cat: 'capital', shard: 'Asura Shard (West)', pos: [-165, 16, -6],
+        geo: 'Black Caldera Volcanic Rim (-165, +16, -6)',
+        desc: 'Ruled by 410-year-old Grand Architect Maya and Queen Mandor. Built over a living magma lake where Stage-2/3 Runic Weapons are forged.',
+        impact: 'Supreme weapon-smithing capital of the cosmos.' },
+      { id: 'a2', name: 'The Obsidian Chasm (Shaila-Gadha)', cat: 'capital', shard: 'Asura Shard', pos: [-138, 4, 22],
+        geo: '2-Mile-Deep Southeastern Rift Valley',
+        desc: 'Controlled by ruthless Baroness Simhika and Baron Ilvala. Yields 70% of all Prana-Crystals and meteoric iron.',
+        impact: 'Epicenter of the underground rebellion led by A-Rank warlord Ulka ("The Red Hammer").' },
+      { id: 'a3', name: 'Caldera Basalt Arch (Asura Gate)', cat: 'gateway', shard: 'Asura Shard', pos: [-112, 12, -15],
+        geo: 'Eastern Basalt Cliff-Edge',
+        desc: '100-foot volcanic stone arch guarded by General Prahasa’s Armored Rhino/Bull War-Wagons.',
+        impact: 'Connects the Asura Shard to Central City’s Five-Arch Rotunda.' },
+      { id: 'a4', name: 'Obsidian Crucible Dojo & Arena', cat: 'structure', shard: 'Asura Shard', pos: [-182, 12, 5],
+        geo: 'Western Rim of the Iron Citadel',
+        desc: 'Commanded by S-Rank Marshal Lauhini ("The Siege-Breaker") and her Stage-3 Magma Tiger.',
+        impact: 'Hosts the Caldera Foundry Brawls (Sister-Tournament) and trains warriors in Marrow Smelting.' },
+      { id: 'a5', name: 'Agni-Kunda Smelting Town', cat: 'town', shard: 'Asura Shard', pos: [-152, 8, 8],
+        geo: 'Midway Lava-River Crossing',
+        desc: 'Home to Alchemist Ira’s volcanic potion sanctum and Wolfgang Adler’s Runic Ballista workshop.',
+        impact: 'Main trading town for fire-elixirs and siege crossbows.' },
+      { id: 'a6', name: 'Nikumbha Border Bastion (Town)', cat: 'town', shard: 'Asura Shard', pos: [-125, 8, 38],
+        geo: 'Southern Cliff facing the Beast Shard',
+        desc: 'Fortified town commanded by honorable reformist Commander Nikumbha and his Iron Bison cavalry.',
+        impact: 'Maintains peace with the Beast Shard and shelters runaway miners.' },
+      { id: 'a7', name: 'Bhasma-Grama Miner Village', cat: 'village', shard: 'Asura Shard', pos: [-148, 6, 32],
+        geo: 'Upper Rim of the Obsidian Chasm',
+        desc: 'Working-class village where Matron Amba ("Mother of the Pits") runs her orphanage and healer clinic.',
+        impact: 'Protected in secret by Ulka’s Red Crucible brotherhood.' },
+      { id: 'a8', name: 'Seal 1 Mantle Vault (Muchukunda)', cat: 'danger', shard: 'Asura Shard', pos: [-195, -4, 28],
+        geo: 'Deepest Subterranean Magma Chamber',
+        desc: 'Holds the First Cosmic Seal (The Thermal Venom), guarded by the sleeping Era-2 immortal Muchukunda and golem Kinkara.',
+        impact: 'Temporary cosmic lock beginning to show dangerous thermal thinning.' },
+      { id: 'a9', name: 'Shaft #47 Rebel Anchor (Grade 2)', cat: 'anchor', shard: 'Asura Shard', pos: [-140, -7, 18],
+        geo: '2 Miles Underground behind a Lava Waterfall',
+        desc: 'Tuned by prosthetic-master Kshema and guarded by Ulka.',
+        impact: 'Receives smuggled Hastinapur grain from Pit #13 to save starving miner families.' },
+
+      // --- DEVA SHARD (NORTH) ---
+      { id: 'd1', name: 'Amaravati (The Solar Throne)', cat: 'capital', shard: 'Deva Shard (North)', pos: [-8, 30, -155],
+        geo: 'Central Floating Marble Plateau (0, +30, -155)',
+        desc: 'Ruled by Sovereign Bhanu, Queen Savitri, and Sky-Marshal Vaijayanti. Gleaming crystal spires and the Celestial High Court.',
+        impact: 'Monopoly source of Awakening Stones and high-purity Solar-Quartz lenses.' },
+      { id: 'd2', name: 'Gandharva-Puri (Silk Sanctuary)', cat: 'capital', shard: 'Deva Shard', pos: [38, 26, -148],
+        geo: 'Eastern Floating Cloud-Island',
+        desc: 'Ruled by Lady Chitralekha and Master Weaver Kavi. Home of the harmonic looms that spin blade-proof Aether-Silk.',
+        impact: 'Supplies defensive silk tunics to royal courts and top adventurers.' },
+      { id: 'd3', name: 'Sun-Cliff Arch (Deva Gateway)', cat: 'gateway', shard: 'Deva Shard', pos: [0, 26, -112],
+        geo: 'Southern Marble Promontory of Amaravati',
+        desc: '100-foot white-gold arch guarded by Captain Anshuman’s Sun-Lances.',
+        impact: 'Connects Amaravati to Central City.' },
+      { id: 'd4', name: 'Astral Observatory (Seer Revati)', cat: 'structure', shard: 'Deva Shard', pos: [-32, 28, -168],
+        geo: 'Highest Northern Peak of Amaravati',
+        desc: 'Sanctum of blind Seer Revati and Ward-Scholar Lucian Valois.',
+        impact: 'Tracks the movement of constellations, temporary seals, and incoming Reincarnated Souls.' },
+      { id: 'd5', name: 'Soma-Vana Crystal Town', cat: 'town', shard: 'Deva Shard', pos: [16, 25, -165],
+        geo: 'Central Garden Valley of the Deva Shard',
+        desc: 'Serene town where Deva artisans cultivate cooling Soma-lotuses to stave off Solar Fever.',
+        impact: 'Depends heavily on Frost-herbs imported from the Beast Shard.' },
+      { id: 'd6', name: 'Marut-Terrace Cloud Village', cat: 'village', shard: 'Deva Shard', pos: [-28, 24, -135],
+        geo: 'Western Wind-Swept Cliff Edge',
+        desc: 'Home of Courier Marut and the Wind-Runner clans who glide on high-altitude jetstreams.',
+        impact: 'Training ground for Laghima (Weightlessness) speed arts.' },
+      { id: 'd7', name: 'Whispering Grotto Anchor (Grade 2)', cat: 'anchor', shard: 'Deva Shard', pos: [45, 14, -142],
+        geo: 'Hidden Cavern under Gandharva-Puri’s Cloud Waterfall',
+        desc: 'Operated with acoustic wind-flutes by corrupt Deva patricians.',
+        impact: 'Smuggles mortal elixirs and dyes in exchange for untaxed Aether-Silk and Solar-Quartz.' },
+
+      // --- BEAST SHARD (SOUTH) ---
+      { id: 'b1', name: 'Heartwood Sanctum (World-Tree)', cat: 'capital', shard: 'Beast Shard (South)', pos: [0, 18, 155],
+        geo: 'Exact Center of the 1,500-ft Primeval Canopy',
+        desc: 'Guarded by 40-ton S-Rank+ Titan Ursus ("Old Four-Horns"). Grows around a living branch of the Ashvattha World-Tree.',
+        impact: 'Sacred heart of the Beast Shard; hosts the Canopy Spirit-Sanctum where warriors earn Soul-Bonds.' },
+      { id: 'b2', name: 'The Sky Spires (20,000-ft Roost)', cat: 'capital', shard: 'Beast Shard (Northeast)', pos: [36, 30, 138],
+        geo: 'Northeastern Granite Needles piercing the Clouds',
+        desc: 'Ruled by Garuda Empress Vinata ("The Golden Maw") and Prince Sampati ("Iron-Talon").',
+        impact: 'Where worthy warriors climb to form Soul-Bonds with Flying Beasts (Garudas & Firehawks).' },
+      { id: 'b3', name: 'Root-Carved Arch (Beast Gateway)', cat: 'gateway', shard: 'Beast Shard', pos: [0, 10, 112],
+        geo: 'Northern Edge of the Primeval Canopy',
+        desc: '100-foot living stone-and-root arch connecting the Beast Shard to Central City.',
+        impact: 'Guarded by conscious Vanara and Garuda sentinels.' },
+      { id: 'b4', name: 'Hollow Ironwood Trading Post & Anchor', cat: 'anchor', shard: 'Beast Shard', pos: [18, 6, 165],
+        geo: 'Inside a 300-ft Hollow Ironwood Tree & Titan Bone Glade',
+        desc: 'Run by Shaman Shabari ("The Bone-Speaker"). Houses both the legal barter post and a hidden Grade-3 Shadow Anchor.',
+        impact: 'Where Adventurers trade human sea-salt for Beast-Cores, Titan-Amber, and Sanjeevani dew.' },
+      { id: 'b5', name: 'Silent Glade Sanctuary (Town)', cat: 'town', shard: 'Beast Shard', pos: [32, 8, 175],
+        geo: 'Southeastern Valley',
+        desc: 'Maintained by 112-year-old Sage Matanga and his White Forest-Elephant.',
+        impact: 'Absolute no-violence refuge where wounded beasts and adventurers heal together.' },
+      { id: 'b6', name: 'Twilight Marsh & Naga Waterway', cat: 'danger', shard: 'Beast Shard (Southwest)', pos: [-32, 5, 172],
+        geo: 'Sunless Bioluminescent Swamp under World-Tree Taproots',
+        desc: 'Ruled by 180-foot Naga Empress Kadru ("The Jade Coil") and stealth matriarch Shyama ("The Shadow-Cat").',
+        impact: 'Source of both deadly Kalakuta venom and miracle Sanjeevani nectar; infested with cursed spores.' },
+      { id: 'b7', name: 'The Blood-Ridge (Salt-Cliffs)', cat: 'danger', shard: 'Beast Shard (Northwest)', pos: [-38, 11, 138],
+        geo: 'Mineral Salt-Cliffs bordering the Asura Shard',
+        desc: 'Patrolled by Sabertooth Queen Sarama and her obsidian-fanged packs.',
+        impact: 'Flashpoint of constant skirmishes against Baroness Simhika’s illegal crystal poachers.' }
+    ];
+
+    const markerMeshes = [];
+    const labelElements = [];
+    const categoryState = {
+      capital: true, gateway: true, structure: true, town: true, village: true, anchor: true, danger: true
+    };
+
+    const CAT_COLORS = {
+      capital: 0xf4c430,
+      gateway: 0xffffff,
+      structure: 0x00e5ff,
+      town: 0x00e676,
+      village: 0x81c784,
+      anchor: 0xff3366,
+      danger: 0xb388ff
+    };
+
+    ASTRAL_LOCATIONS.forEach(loc => {
+      // 3D Glowing Pin Beacon
+      const pinGeo = new THREE.SphereGeometry(loc.cat === 'capital' ? 2.6 : 1.8, 16, 16);
+      const pinMat = new THREE.MeshBasicMaterial({ color: CAT_COLORS[loc.cat] });
+      const pinMesh = new THREE.Mesh(pinGeo, pinMat);
+      pinMesh.position.set(loc.pos[0], loc.pos[1], loc.pos[2]);
+      pinMesh.userData = loc;
+      scene.add(pinMesh);
+      markerMeshes.push(pinMesh);
+
+      // Vertical Stem Line to Terrain
+      const stemPts = [
+        new THREE.Vector3(loc.pos[0], loc.pos[1], loc.pos[2]),
+        new THREE.Vector3(loc.pos[0], loc.pos[1] - 6, loc.pos[2])
+      ];
+      const stemGeo = new THREE.BufferGeometry().setFromPoints(stemPts);
+      const stemMat = new THREE.LineBasicMaterial({ color: CAT_COLORS[loc.cat], transparent: true, opacity: 0.6 });
+      const stemLine = new THREE.Line(stemGeo, stemMat);
+      scene.add(stemLine);
+      pinMesh.userData.stem = stemLine;
+
+      // Floating HTML Name Tag
+      const tag = document.createElement('div');
+      tag.className = `map-tag tag-${loc.cat}`;
+      tag.textContent = loc.name;
+      tag.onclick = () => selectLocation(loc);
+      labelsContainer.appendChild(tag);
+
+      labelElements.push({ loc, pinMesh, stemLine, tag });
+    });
+
+    // =========================================================================
+    // 7. CAMERA FLY-TO ANIMATION & INTERACTION
+    // =========================================================================
+    let camAnim = null;
+
+    function animateCameraTo(targetPos, targetLookAt) {
+      camAnim = {
+        startPos: camera.position.clone(),
+        endPos: new THREE.Vector3(...targetPos),
+        startLook: controls.target.clone(),
+        endLook: new THREE.Vector3(...targetLookAt),
+        progress: 0
+      };
+    }
+
+    function selectLocation(loc) {
+      document.getElementById('ins-title').textContent = loc.name;
+      document.getElementById('ins-cat').textContent = loc.cat.toUpperCase();
+      document.getElementById('ins-shard').textContent = loc.shard;
+      document.getElementById('ins-geo').textContent = loc.geo;
+      document.getElementById('ins-desc').textContent = loc.desc;
+      document.getElementById('ins-impact').textContent = loc.impact;
+
+      const [x, y, z] = loc.pos;
+      animateCameraTo([x + 25, y + 42, z + 65], [x, y, z]);
+    }
+
+    function flyToShard(preset, btn) {
+      document.querySelectorAll('.cam-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const views = {
+        overview:   { pos: [0, 310, 420], look: [0, 0, 0] },
+        central:    { pos: [0, 68, 105],  look: [0, 5, 0] },
+        human:      { pos: [155, 85, 125], look: [155, 5, 5] },
+        asura:      { pos: [-155, 85, 125], look: [-155, 5, 5] },
+        deva:       { pos: [0, 105, -45], look: [0, 22, -155] },
+        beast:      { pos: [0, 90, 275],  look: [0, 10, 155] },
+        underworld: { pos: [0, -110, 260], look: [0, -15, 0] }
+      };
+      const v = views[preset] || views.overview;
+      animateCameraTo(v.pos, v.look);
+    }
+
+    function toggleTagCategory(cat, visible) {
+      categoryState[cat] = visible;
+      labelElements.forEach(item => {
+        if (item.loc.cat === cat) {
+          item.pinMesh.visible = visible;
+          item.stemLine.visible = visible;
+          item.tag.style.display = visible ? 'block' : 'none';
+        }
+      });
+    }
+
+    // =========================================================================
+    // 8. RENDER LOOP & 3D-TO-2D TAG PROJECTION
+    // =========================================================================
+    const tempV = new THREE.Vector3();
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      if (camAnim) {
+        camAnim.progress += 0.04;
+        if (camAnim.progress >= 1) {
+          camera.position.copy(camAnim.endPos);
+          controls.target.copy(camAnim.endLook);
+          camAnim = null;
+        } else {
+          const t = 1 - Math.pow(1 - camAnim.progress, 3);
+          camera.position.lerpVectors(camAnim.startPos, camAnim.endPos, t);
+          controls.target.lerpVectors(camAnim.startLook, camAnim.endLook, t);
+        }
+      }
+
+      controls.update();
+      renderer.render(scene, camera);
+
+      // Update Floating 3D Name Tags
+      const halfW = window.innerWidth / 2;
+      const halfH = window.innerHeight / 2;
+
+      labelElements.forEach(item => {
+        if (!categoryState[item.loc.cat]) return;
+        tempV.copy(item.pinMesh.position);
+        tempV.y += 3.2;
+        tempV.project(camera);
+
+        // Hide if behind camera
+        if (tempV.z > 1) {
+          item.tag.style.display = 'none';
+          return;
+        }
+        const x = (tempV.x * halfW) + halfW;
+        const y = -(tempV.y * halfH) + halfH;
+        item.tag.style.display = 'block';
+        item.tag.style.left = `${x}px`;
+        item.tag.style.top = `${y}px`;
+        item.tag.style.zIndex = Math.floor((1 - tempV.z) * 500);
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    animate();
+  </script>
+</body>
+</html>
+```!]

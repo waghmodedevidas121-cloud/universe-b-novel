@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11. Soul Arrival &amp; Migration Rules in Universe B — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">03_Soul_Administration\03_Isekai_and_Soul_Migration_Rules.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/03_Soul_Administration/03_Isekai_and_Soul_Migration_Rules.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__the_two_distinct_arrival_routes_________________________canon">1. The Two Distinct Arrival Routes (दोन वेगळे आगमन मार्ग) [CANON]</a><a class="h2" href="#2__route_a__official_soul_migration_workflow______________-">2. Route A: Official Soul Migration Workflow (अधिकृत आत्मा-स्थलांतर कार्यप्रवाह)</a><a class="h2" href="#3__route_b__unauthorized___unexpected_arrival">3. Route B: Unauthorized / Unexpected Arrival (अनधिकृत आगमन)</a><a class="h2" href="#4__distinctions_to_preserve_____________________canon">4. Distinctions to Preserve (जपून ठेवायचे फरक) [CANON]</a></nav>
+  <div>
+    <article><h1 id="11__soul_arrival___migration_rules_in_universe_b">11. Soul Arrival & Migration Rules in Universe B (आत्मा आगमन व स्थलांतर नियम)</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\03_Soul_Administration\03_Isekai_and_Soul_Migration_Rules.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#soul-arrival</span> <span class="badge">#official-migration</span> <span class="badge">#summoning</span> <span class="badge">#event-triggered</span> <span class="badge">#vidhata</span> <span class="badge">#chitragupta</span> <span class="badge">#ananta</span> <span class="badge">#dvara-gate</span> <span class="badge">#pratigraha</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] अधिकृत आगमन नियमावली · <strong>Revision 2.0 (२० ऑक्टोबर २०२६)</strong></p>
+<hr>
+<h2 id="1__the_two_distinct_arrival_routes_________________________canon">1. The Two Distinct Arrival Routes (दोन वेगळे आगमन मार्ग) [CANON]</h2>
+<p>Universe B मध्ये आत्म्याचे आगमन दोन काटेकोरपणे वेगळ्या यंत्रणांमधून होते:</p>
+<pre><code class="language-">                       [ SOUL ARRIVAL PIPELINES ]
+                              │
+   ┌──────────────────────────┴──────────────────────────┐
+   ▼                                                     ▼
+[ मार्ग A: अधिकृत आत्मा-स्थलांतर ]        [ मार्ग B: अनधिकृत आगमन ]
+- विधाता मूळ यमाकडून Release Seal घेतो.    - Release Seal नाही.
+- पात्रता व सुसंगतीने मूल्यांकन.            - मुख्य कारण: summoning magic.
+- चित्रगुप्त Soul ID तयार करतो.             - दुर्मिळ अपवाद: void drift.
+- अनंत अभिलेखाचे पुनर्विलोकन व मंजुरी.      - अनंत फक्त घडलेल्या बदलांची नोंद करतो.
+- विधाता नव्या जन्माशी कर्मबंध सील करतो.    - नियती खुली राहते (रिक्त / Rikta).</code></pre>
+<p><strong>दोन्ही मार्गांना लागू:</strong> आत्मा क्षीर सागराच्या <strong>Core</strong> मध्ये प्रवेश करत नाही (प्रवेश = विलय). तो फक्त <strong>Soul Corridor</strong> मधून जातो, <strong>Dvāra Gate</strong> वर वाचला जातो आणि <strong>Pratigraha</strong> गोदामात direct teleport होतो.</p>
+<hr>
+<h2 id="2__route_a__official_soul_migration_workflow______________-">2. Route A: Official Soul Migration Workflow (अधिकृत आत्मा-स्थलांतर कार्यप्रवाह)</h2>
+<ol>
+<li><strong>मूळ यमाकडे विनंती:</strong> Universe B चा विधाता <code>Ātma-Nirgama Patra</code> ने विशिष्ट आत्मा मागतो.</li>
+<li><strong>Purṇa-Karma तपासणी:</strong> मूळ यम तपासतो — नियतीचे सर्व Key Turns पूर्ण? कर्म शिल्लक? प्रतिज्ञा प्रलंबित? (CS-1…CS-6)</li>
+<li><strong>Release Seal:</strong> तपासणी पास झाल्यावरच मूळ यम आत्मा सोडतो; विधाता custody घेतो.</li>
+<li><strong>मूल्यांकन निकष (हे कधीही एकत्र करू नयेत):</strong></li>
+<ul>
+<li><strong>स्थलांतर पात्रता:</strong> आत्मा Universe B मध्ये प्रवेश करण्यास पात्र आहे का.</li>
+<li><strong>वैश्विक सुसंगती (५ घटक):</strong></li>
+</ul>
+<li><em>आचरण:</em> भूतकाळातील कृत्ये आणि परिणाम.</li>
+<li><em>इच्छा व आसक्ती:</em> हेतू आणि मानसिक दिशा.</li>
+<li><em>त्रिगुण स्थिती:</em> सत्त्व, रज आणि तम यांचे प्रमाणबद्ध संतुलन.</li>
+<li><em>कर्म-फल:</em> कोणती कर्मबीजे अजून सक्रिय आहेत vs भोगली गेली.</li>
+<li><em>मुक्ति-प्रश्न:</em> पुनर्जन्मासाठी बांधलेला आहे का किंवा मुक्तीच्या मार्गाशी संरेखित.</li>
+<li><strong>Soul ID तयारी:</strong> चित्रगुप्त स्वतः प्रशासकीय अभिलेख तयार करतो (कुळ, जन्मजात गुण, अभिरुची).</li>
+<li><strong>सिस्टीम पुनर्विलोकन:</strong> अनंत अभिलेखाचे पुनर्विलोकन करतो, मंजुरी देतो किंवा सुधारणा सुचवतो.</li>
+<li><strong>Pratigraha official dock:</strong> मंजूर आत्मा Release Seal सह सीलबंद Ātma-Patra मध्ये <strong>Pratigraha</strong> च्या scheduled official lane मध्ये येतो; सेतुव्रत फक्त receipt नोंद करतो (RIKTA marker नाही), लेख्या पडताळणी करते.</li>
+<li><strong>कर्मबंध अवतरण:</strong> मंजुरीनंतर विधाता त्या आत्म्याला कर्मबंधाद्वारे नेमून दिलेल्या नश्वर शरीराशी जोडतो.</li>
+</ol>
+<hr>
+<h2 id="3__route_b__unauthorized___unexpected_arrival">3. Route B: Unauthorized / Unexpected Arrival (अनधिकृत आगमन)</h2>
+<ul>
+<li><strong>मुख्य कारण — summoning magic:</strong> आवाहकाचे circle आत्म्याला नियती पूर्ण होण्याआधीच ओढते. मूळ यमाला विचारले जात नाही → <strong>Release Seal नाही</strong> → फाईल अनधिकृत.</li>
+<li><strong>दुर्मिळ अपवाद — void drift:</strong> भेग, आपत्ती किंवा प्रवाह-प्रतिध्वनीने आत्मा corridor मध्ये येतो; हाही release-seal-विरहितच.</li>
+<li><strong>प्रवास:</strong> आत्मा <strong>Soul Corridor</strong> मधून जातो; <strong>Core मध्ये प्रवेश निषिद्ध</strong> (K2 — पूर्ण विलय).</li>
+<li><strong>Power Band:</strong> <strong>Dvāra Gate</strong> karma + soul purity + gating standard वाचते आणि <strong>तात्पुरता band</strong> देते. Summoning मुळे band <strong>अस्थिर</strong> असतो — शक्ती चढ-उतार होते.</li>
+<li><strong>आगमन:</strong> direct teleport → <strong>Pratigraha</strong> (Yama कार्यालयाचे मैदान, Buffer Zone). सेतुव्रता <code>[STATUS: RIKTA / UNINDEXED]</code> शिक्का मारतो; लेख्या पडताळणी करते; release seal नसल्याने <strong>Red-Ink</strong> उघडते.</li>
+<li><strong>तात्काळ शक्ती नाही:</strong> band हा <strong>छत</strong> आहे, भेट नाही. तंत्र, अस्त्र आणि अधिकार प्रशिक्षण/दीक्षेशिवाय मिळत नाहीत. Route B चे "zero cheat" केनन अभंग.</li>
+<li><strong>सिस्टीमची भूमिका:</strong> अनंत आगमन घडवत नाही, आत्मे निवडत नाही किंवा शक्ती देत नाही. जे बदल प्रत्यक्ष घडतात त्याची अनंत <strong>स्वयंचलित नोंद</strong> करतो.</li>
+</ul>
+<hr>
+<h2 id="4__distinctions_to_preserve_____________________canon">4. Distinctions to Preserve (जपून ठेवायचे फरक) [CANON]</h2>
+<div class="table-container"><table><thead><tr>
+<th>संकल्पना</th>
+<th>नेमकी केनन व्याख्या</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Ātma-Śuddhi (आत्म-शुद्धी)</strong></td>
+<td>आत्म्याची स्वतःची अंतर्निहित आध्यात्मिक शुद्धता — <strong>मलिन · शुद्ध · निर्मल · विमल</strong>.</td>
+</tr>
+<tr>
+<td><strong>सूक्ष्म कर्म</strong></td>
+<td>अस्तित्वभर वाहून नेलेला सूक्ष्म कार्मिक संवेग.</td>
+</tr>
+<tr>
+<td><strong>आत्म-भाग्य</strong></td>
+<td>कर्म-प्रभावित नशीब, विशेषतः जन्माचे कुटुंब/कुळ याबाबत.</td>
+</tr>
+<tr>
+<td><strong>Soul ID</strong></td>
+<td>चित्रगुप्ताने तयार केलेला अधिकृत प्रशासकीय अभिलेख.</td>
+</tr>
+<tr>
+<td><strong>नियती-अभिलेख</strong></td>
+<td>अनंताची उपलब्ध सिस्टीम-कोरीव (लिखित vs रिक्त).</td>
+</tr>
+<tr>
+<td><strong>खुली नियती</strong></td>
+<td>निवडींमधून गतिमानपणे विकसित होणारे भविष्य; कर्म किंवा परिणाम काढून टाकत <strong>नाही</strong>.</td>
+</tr>
+<tr>
+<td><strong>Dvāra Gate</strong></td>
+<td>Soul Corridor मधील स्वयंचलित वाचन-द्वार; band ठरवते, न्याय करत नाही.</td>
+</tr>
+<tr>
+<td><strong>Pratigraha</strong></td>
+<td>Yama कार्यालयाच्या मैदानातील आगमन-गोदाम; सेतुव्रता वॉर्डन (प्रस्तावित नाव).</td>
+</tr>
+<tr>
+<td><strong>Release Seal</strong></td>
+<td>मूळ विश्वाच्या यमाची परवानगी; त्याशिवाय आत्मा हलत नाही.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<p><em>[END OF MODULE 11 — Soul Arrival & Migration Rules · CANON LOCK · Revision 2.0 · २० ऑक्टोबर २०२६]</em></p></article>
+    <footer>03_Soul_Administration\03_Isekai_and_Soul_Migration_Rules.md · 77 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

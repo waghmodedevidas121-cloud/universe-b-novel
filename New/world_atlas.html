@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universe B — Master Interactive World Atlas & Geometric Cartography</title>
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --bg-panel: #10141f;
+      --bg-card: #161c2c;
+      --border-gold: #c9a227;
+      --accent-gold: #f4c430;
+      --accent-cyan: #00e5ff;
+      --accent-crimson: #ff3366;
+      --accent-emerald: #00e676;
+      --accent-purple: #b388ff;
+      --text-main: #e8ecf2;
+      --text-muted: #9aa5b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top, #121829 0%, var(--bg-dark) 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #0b0f19 0%, #1a2138 50%, #0b0f19 100%);
+      border-bottom: 2px solid var(--border-gold);
+      padding: 20px 30px;
+      text-align: center;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 1.9rem;
+      letter-spacing: 2px;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+    }
+    header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 20px;
+      background: rgba(16, 20, 31, 0.95);
+      border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .tab-btn {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid rgba(201, 162, 39, 0.4);
+      padding: 9px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: all 0.2s ease;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--border-gold);
+      color: #000;
+      box-shadow: 0 0 12px rgba(244, 196, 48, 0.5);
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 20px;
+      background: #0c1018;
+      border-bottom: 1px solid #222a3a;
+      font-size: 0.85rem;
+    }
+    .filter-bar label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot-capital { background: #f4c430; box-shadow: 0 0 6px #f4c430; }
+    .dot-town { background: #00e676; }
+    .dot-village { background: #81c784; }
+    .dot-structure { background: #00e5ff; }
+    .dot-gateway { background: #ffffff; border: 2px solid #00e5ff; }
+    .dot-anchor { background: #ff3366; box-shadow: 0 0 8px #ff3366; }
+    .dot-danger { background: #b388ff; }
+
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 20px;
+      max-width: 1650px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    @media (max-width: 1150px) {
+      .main-layout { grid-template-columns: 1fr; }
+    }
+    .map-stage {
+      background: var(--bg-panel);
+      border: 1px solid rgba(201, 162, 39, 0.35);
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: inset 0 0 40px rgba(0,0,0,0.8);
+    }
+    .map-view { display: none; }
+    .map-view.active { display: block; }
+    .map-title-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .map-title-banner h2 {
+      color: var(--accent-gold);
+      font-size: 1.35rem;
+    }
+    .map-title-banner span {
+      font-size: 0.82rem;
+      background: rgba(0, 229, 255, 0.12);
+      color: var(--accent-cyan);
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 229, 255, 0.3);
+    }
+    svg.atlas-svg {
+      width: 100%;
+      height: auto;
+      max-height: 680px;
+      background: #080b12;
+      border-radius: 8px;
+      border: 1px solid #1e2638;
+    }
+    .map-pin {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .map-pin:hover {
+      transform: scale(1.25);
+    }
+    .pin-label {
+      font-size: 11px;
+      fill: #ffffff;
+      font-weight: 600;
+      paint-order: stroke;
+      stroke: #05070b;
+      stroke-width: 3px;
+      pointer-events: none;
+    }
+    .info-sidebar {
+      background: var(--bg-panel);
+      border: 1px solid rgba(201, 162, 39, 0.4);
+      border-radius: 12px;
+      padding: 22px;
+      height: fit-content;
+      position: sticky;
+      top: 75px;
+    }
+    .info-sidebar h3 {
+      color: var(--accent-gold);
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+      border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+      padding-bottom: 8px;
+    }
+    .badge-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 10px 0 14px 0;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 3px 9px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-type { background: #26324d; color: #8ab4f8; }
+    .badge-realm { background: rgba(244, 196, 48, 0.18); color: var(--accent-gold); border: 1px solid rgba(244,196,48,0.4); }
+    .info-section {
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+    .info-section strong {
+      color: var(--accent-cyan);
+      display: block;
+      margin-bottom: 2px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+    }
+    .directory-grid {
+      max-width: 1650px;
+      margin: 25px auto 50px auto;
+      padding: 0 20px;
+    }
+    .directory-grid h2 {
+      color: var(--accent-gold);
+      margin-bottom: 15px;
+      border-left: 4px solid var(--accent-gold);
+      padding-left: 12px;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--bg-panel);
+      border-radius: 10px;
+      border: 1px solid #222b3d;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    th, td {
+      padding: 11px 14px;
+      text-align: left;
+      border-bottom: 1px solid #1c2333;
+    }
+    th {
+      background: #151b29;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.5px;
+    }
+    tr:hover { background: rgba(255,255,255,0.03); }
+  </style>
+</head>
+<body>
+
+<header style="position: relative;">
+  <div style="margin-bottom: 10px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+    <a href="index.html" style="color: var(--accent-gold); text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid rgba(201, 162, 39, 0.4); border-radius: 4px; background: rgba(0,0,0,0.45); transition: all 0.2s;">← Back to Master Codex</a>
+    <a href="astral_map_3d.html" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid rgba(0, 229, 255, 0.4); border-radius: 4px; background: rgba(0,0,0,0.45); transition: all 0.2s;">🌐 Open 3D Astral Wheel Map</a>
+    <a href="ability_codex.html" style="color: var(--accent-purple); text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid rgba(179, 136, 255, 0.4); border-radius: 4px; background: rgba(0,0,0,0.45); transition: all 0.2s;">⚡ Ability Codex UI</a>
+    <a href="character_codex.html" style="color: var(--accent-emerald); text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid rgba(0, 230, 118, 0.4); border-radius: 4px; background: rgba(0,0,0,0.45); transition: all 0.2s;">👥 Character Dossier UI</a>
+  </div>
+  <h1>UNIVERSE B : MASTER COSMIC & GEOGRAPHICAL ATLAS</h1>
+  <p>Complete Geometric Cartography of the Expanding Cosmic Horn, All 4 Tiers, 5 Astral Shards, Cities, Towns, Villages, Structures & Shadow Anchors</p>
+</header>
+
+<div class="nav-tabs">
+  <button class="tab-btn active" onclick="switchMap('map-cosmic', this)">1. Cosmic Horn Geometry (Master Sketch)</button>
+  <button class="tab-btn" onclick="switchMap('map-wheel', this)">2. Astral 5-Shard Wheel</button>
+  <button class="tab-btn" onclick="switchMap('map-human', this)">3. Human Shard (East)</button>
+  <button class="tab-btn" onclick="switchMap('map-asura', this)">4. Asura Shard (West)</button>
+  <button class="tab-btn" onclick="switchMap('map-deva', this)">5. Deva Shard (North)</button>
+  <button class="tab-btn" onclick="switchMap('map-beast', this)">6. Beast Shard (South)</button>
+  <button class="tab-btn" onclick="switchMap('map-setu-abyss', this)">7. Buffer Zone (Setu) & Corrupted Realm</button>
+</div>
+
+<div class="filter-bar">
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-capital', this.checked)"><span class="dot dot-capital"></span> Capital Cities</label>
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-town', this.checked)"><span class="dot dot-town"></span> Major Towns</label>
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-village', this.checked)"><span class="dot dot-village"></span> Frontier Villages</label>
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-structure', this.checked)"><span class="dot dot-structure"></span> Key Story Structures (Guilds/Gurukuls)</label>
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-gateway', this.checked)"><span class="dot dot-gateway"></span> Monolithic Stone Gateways</label>
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-anchor', this.checked)"><span class="dot dot-anchor"></span> Hidden Rotary Shadow Anchors</label>
+  <label><input type="checkbox" checked onchange="toggleLayer('pin-danger', this.checked)"><span class="dot dot-danger"></span> Cursed Zones & Cosmic Seals</label>
+</div>
+
+<div class="main-layout">
+  <div class="map-stage">
+
+    <!-- ==================== MAP 1: COSMIC HORN MASTER GEOMETRY ==================== -->
+    <div id="map-cosmic" class="map-view active">
+      <div class="map-title-banner">
+        <h2>Macro-Geometry: The Expanding Cosmic Horn (Child Cosmos)</h2>
+        <span>Enhanced from Author's Master Sketch | Left Apex to Right Growing Frontier</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <defs>
+          <linearGradient id="hornGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="0%" stop-color="#fff8d6" stop-opacity="0.35"/>
+            <stop offset="18%" stop-color="#1a2342" stop-opacity="0.5"/>
+            <stop offset="35%" stop-color="#2c384e" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#3a0d1e" stop-opacity="0.7"/>
+            <stop offset="75%" stop-color="#0d2b3a" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#05070b" stop-opacity="0.9"/>
+          </linearGradient>
+          <radialGradient id="kshiraGlow">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="50%" stop-color="#ffd700"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Outer Horn Body (Exact Match to Sketch) -->
+        <path d="M 75,270
+                 C 75,210 130,175 210,165
+                 L 940,120
+                 C 980,115 1015,90 1035,75
+                 M 75,270
+                 C 75,330 130,365 210,375
+                 L 940,420
+                 C 980,425 1015,450 1035,465"
+              fill="url(#hornGrad)" stroke="#ff2a2a" stroke-width="6" stroke-linecap="round"/>
+
+        <!-- Internal Curved Band Divisions (From Left to Right) -->
+        <!-- Band 1: Divine Realm & High Council -->
+        <path d="M 145,180 Q 175,270 145,360" fill="none" stroke="#ff2a2a" stroke-width="5"/>
+        <!-- Band 2: Space with Galaxies -->
+        <path d="M 275,162 Q 305,270 275,378" fill="none" stroke="#ff2a2a" stroke-width="5"/>
+        <!-- Band 3: Buffer Zone (The Great Setu) -->
+        <path d="M 390,154 Q 425,270 390,386" fill="none" stroke="#ff2a2a" stroke-width="5"/>
+        <!-- Band 4A: Spiritual Barrier (Left Wall of Grand Aegis) -->
+        <path d="M 425,151 Q 460,270 425,389" fill="none" stroke="#ffd700" stroke-width="4" stroke-dasharray="6,3"/>
+        <!-- Band 5: Corrupted Realm (Sandwiched in Between!) -->
+        <!-- Band 4B: Spiritual Barrier (Right Wall of Grand Aegis) -->
+        <path d="M 575,142 Q 610,270 575,398" fill="none" stroke="#ffd700" stroke-width="4" stroke-dasharray="6,3"/>
+        <path d="M 605,140 Q 640,270 605,400" fill="none" stroke="#ff2a2a" stroke-width="5"/>
+
+        <!-- Singularity Apex Tip (Left) -->
+        <ellipse cx="90" cy="270" rx="22" ry="38" fill="url(#kshiraGlow)" stroke="#ffd700" stroke-width="3"/>
+
+        <!-- Astral Realm 5-Part Wheel (Inside Right Section of Horn) -->
+        <g transform="translate(775, 270)">
+          <circle cx="0" cy="0" r="122" fill="rgba(0, 229, 255, 0.06)" stroke="#00e5ff" stroke-width="3"/>
+          <!-- 4 Radial Spokes dividing Outer Ring into 4 Shards -->
+          <line x1="-29" y1="-29" x2="-86" y2="-86" stroke="#ff2a2a" stroke-width="2.5"/>
+          <line x1="29" y1="-29" x2="86" y2="-86" stroke="#ff2a2a" stroke-width="2.5"/>
+          <line x1="-29" y1="29" x2="-86" y2="86" stroke="#ff2a2a" stroke-width="2.5"/>
+          <line x1="29" y1="29" x2="86" y2="86" stroke="#ff2a2a" stroke-width="2.5"/>
+          <!-- Central Circle (Central Shard) -->
+          <circle cx="0" cy="0" r="41" fill="#1b2838" stroke="#f4c430" stroke-width="3"/>
+          <text x="0" y="4" text-anchor="middle" fill="#f4c430" font-size="10" font-weight="bold">CENTRAL</text>
+          <text x="0" y="-72" text-anchor="middle" fill="#80d8ff" font-size="11" font-weight="bold">DEVA (N)</text>
+          <text x="0" y="82" text-anchor="middle" fill="#69f0ae" font-size="11" font-weight="bold">BEAST (S)</text>
+          <text x="-78" y="4" text-anchor="middle" fill="#ff8a80" font-size="11" font-weight="bold">ASURA (W)</text>
+          <text x="78" y="4" text-anchor="middle" fill="#ffd54f" font-size="11" font-weight="bold">HUMAN (E)</text>
+        </g>
+
+        <!-- Growing Edge Arrows (Right Tip) -->
+        <path d="M 960,270 L 1055,270 M 1035,250 L 1060,270 L 1035,290" fill="none" stroke="#00e676" stroke-width="3" stroke-dasharray="5,5"/>
+        <text x="1015" y="105" fill="#ff5252" font-size="15" font-weight="bold">GROWING EDGE</text>
+        <text x="1015" y="123" fill="#9aa5b8" font-size="11">(Expanding Child Cosmos)</text>
+
+        <!-- Labels & Interactive Pins -->
+        <g class="map-pin pin-capital" onclick="showInfo('kshira')">
+          <circle cx="90" cy="270" r="9" fill="#ffffff" stroke="#f4c430" stroke-width="3"/>
+          <text x="85" y="135" class="pin-label">1. Divine Realm &amp; High Council</text>
+          <line x1="95" y1="142" x2="110" y2="245" stroke="#ff5252" stroke-width="1.5"/>
+        </g>
+
+        <g class="map-pin pin-structure" onclick="showInfo('galaxies')">
+          <circle cx="215" cy="255" r="7" fill="#00e5ff"/>
+          <text x="175" y="105" class="pin-label">2. Space with Galaxies</text>
+          <line x1="215" y1="112" x2="215" y2="248" stroke="#ff5252" stroke-width="1.5"/>
+        </g>
+
+        <g class="map-pin pin-structure" onclick="showInfo('buffer')">
+          <circle cx="340" cy="270" r="8" fill="#f4c430"/>
+          <text x="300" y="75" class="pin-label">3. Buffer Zone (The Great Setu)</text>
+          <line x1="340" y1="82" x2="340" y2="260" stroke="#ff5252" stroke-width="1.5"/>
+        </g>
+
+        <g class="map-pin pin-gateway" onclick="showInfo('aegis')">
+          <circle cx="425" cy="220" r="7" fill="#ffd700" stroke="#fff" stroke-width="2"/>
+          <circle cx="585" cy="220" r="7" fill="#ffd700" stroke="#fff" stroke-width="2"/>
+          <text x="395" y="45" class="pin-label" fill="#ffd700">4. Dual Spiritual Barrier (Grand Aegis)</text>
+          <line x1="460" y1="52" x2="425" y2="210" stroke="#ffd700" stroke-width="1.5"/>
+          <line x1="490" y1="52" x2="585" y2="210" stroke="#ffd700" stroke-width="1.5"/>
+        </g>
+
+        <g class="map-pin pin-danger" onclick="showInfo('corrupted')">
+          <circle cx="505" cy="270" r="10" fill="#ff3366" stroke="#fff" stroke-width="2"/>
+          <text x="505" y="25" text-anchor="middle" class="pin-label" fill="#ff3366" font-size="14">5. CORRUPTED REALM (TIER 4)</text>
+          <line x1="505" y1="32" x2="505" y2="258" stroke="#ff3366" stroke-width="2"/>
+        </g>
+
+        <g class="map-pin pin-capital" onclick="showInfo('astral')">
+          <circle cx="775" cy="270" r="8" fill="#f4c430"/>
+          <text x="775" y="445" text-anchor="middle" class="pin-label" font-size="15">6. ASTRAL REALM (5-SHARD WHEEL)</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ==================== MAP 2: ASTRAL 5-SHARD WHEEL & TRANSIT ==================== -->
+    <div id="map-wheel" class="map-view">
+      <div class="map-title-banner">
+        <h2>Tier 3: The 5-Shard Astral Wheel, Stone Gateways &amp; Veiled Shadow Grid</h2>
+        <span>White Lines = Official Hub-and-Spoke Stone Gateways | Red Dashed = Illegal Shadow Anchors</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <!-- Infinite Void Background -->
+        <rect width="1100" height="540" fill="#060810"/>
+        <circle cx="550" cy="270" r="245" fill="rgba(18, 28, 48, 0.4)" stroke="#2e3d5c" stroke-width="2" stroke-dasharray="8,4"/>
+
+        <!-- 4 Outer Shards + 1 Central Shard -->
+        <!-- Deva Shard (North) -->
+        <ellipse cx="550" cy="85" rx="135" ry="52" fill="#172a45" stroke="#80d8ff" stroke-width="3"/>
+        <text x="550" y="65" text-anchor="middle" fill="#80d8ff" font-weight="bold" font-size="13">DEVA SHARD (NORTH)</text>
+
+        <!-- Beast Shard (South) -->
+        <ellipse cx="550" cy="455" rx="135" ry="52" fill="#0f291e" stroke="#00e676" stroke-width="3"/>
+        <text x="550" y="485" text-anchor="middle" fill="#00e676" font-weight="bold" font-size="13">BEAST SHARD (SOUTH)</text>
+
+        <!-- Asura Shard (West) -->
+        <ellipse cx="220" cy="270" rx="130" ry="75" fill="#2d1216" stroke="#ff5252" stroke-width="3"/>
+        <text x="220" y="245" text-anchor="middle" fill="#ff8a80" font-weight="bold" font-size="13">ASURA SHARD (WEST)</text>
+
+        <!-- Human Shard (East) -->
+        <ellipse cx="880" cy="270" rx="130" ry="75" fill="#2b2312" stroke="#f4c430" stroke-width="3"/>
+        <text x="880" y="245" text-anchor="middle" fill="#ffd54f" font-weight="bold" font-size="13">HUMAN SHARD (EAST)</text>
+
+        <!-- Central Shard (Center Hub) -->
+        <circle cx="550" cy="270" r="72" fill="#1f2436" stroke="#f4c430" stroke-width="4"/>
+        <text x="550" y="262" text-anchor="middle" fill="#f4c430" font-weight="bold" font-size="13">CENTRAL CITY</text>
+        <text x="550" y="278" text-anchor="middle" fill="#cbd5e1" font-size="10">(Five-Arch Rotunda)</text>
+
+        <!-- Official Hub-and-Spoke Stone Gateway Corridors (Open 4 Muhurtas Daily) -->
+        <line x1="550" y1="137" x2="550" y2="198" stroke="#00e5ff" stroke-width="4"/>
+        <line x1="550" y1="342" x2="550" y2="403" stroke="#00e5ff" stroke-width="4"/>
+        <line x1="350" y1="270" x2="478" y2="270" stroke="#00e5ff" stroke-width="4"/>
+        <line x1="622" y1="270" x2="750" y2="270" stroke="#00e5ff" stroke-width="4"/>
+
+        <!-- Illegal Direct Shard-to-Shard Shadow Anchor Tunnels (Red Dashed) -->
+        <path d="M 260,330 Q 550,390 840,330" fill="none" stroke="#ff3366" stroke-width="2.5" stroke-dasharray="6,6"/>
+        <text x="550" y="372" text-anchor="middle" fill="#ff3366" font-size="11" font-weight="bold">Veiled Grid: Grain-for-Iron Shadow Tunnel (Pit #13 &lt;-&gt; Shaft #47)</text>
+
+        <path d="M 660,95 Q 820,130 870,195" fill="none" stroke="#ff3366" stroke-width="2.5" stroke-dasharray="6,6"/>
+        <text x="820" y="130" text-anchor="middle" fill="#ff3366" font-size="11">Whispering Grotto Silk/Elixir Route</text>
+
+        <path d="M 660,445 Q 820,410 870,345" fill="none" stroke="#ff3366" stroke-width="2.5" stroke-dasharray="6,6"/>
+        <text x="825" y="415" text-anchor="middle" fill="#ff3366" font-size="11">Salt-for-Beast-Core Route</text>
+
+        <!-- Interactive Pins on the Wheel -->
+        <g class="map-pin pin-gateway" onclick="showInfo('rotunda')">
+          <circle cx="550" cy="235" r="8" fill="#fff" stroke="#00e5ff" stroke-width="3"/>
+        </g>
+        <g class="map-pin pin-structure" onclick="showInfo('coliseum')">
+          <circle cx="520" cy="298" r="7" fill="#00e5ff"/>
+          <text x="515" y="315" class="pin-label">Coliseum</text>
+        </g>
+        <g class="map-pin pin-structure" onclick="showInfo('central-guild')">
+          <circle cx="582" cy="298" r="7" fill="#00e5ff"/>
+          <text x="585" y="315" class="pin-label">Guild HQ</text>
+        </g>
+        <g class="map-pin pin-anchor" onclick="showInfo('central-anchor')">
+          <circle cx="550" cy="308" r="6" fill="#ff3366"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ==================== MAP 3: HUMAN SHARD DETAILED MAP ==================== -->
+    <div id="map-human" class="map-view">
+      <div class="map-title-banner">
+        <h2>The Human Planetary Shard (Eastern Cradle — 2.5M Sq. Miles)</h2>
+        <span>Capitals, Towns, Villages, Gurukuls, Cursed Forests &amp; Shadow Anchors</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <!-- Landmass & Mortal Sea -->
+        <rect width="1100" height="540" fill="#071526"/>
+        <text x="970" y="480" fill="#1e4e79" font-size="22" font-weight="bold">THE MORTAL SEA</text>
+        <path d="M 60,40 L 780,40 L 840,180 L 920,310 L 820,490 L 100,490 L 40,260 Z"
+              fill="#1b2618" stroke="#c9a227" stroke-width="3"/>
+        <!-- Northern Himalaya-like Mountains (Tapovana) -->
+        <path d="M 80,60 L 740,60 L 700,140 L 120,140 Z" fill="#26332e" stroke="#4db6ac" stroke-width="1.5"/>
+        <text x="410" y="90" text-anchor="middle" fill="#80cbc4" font-size="13" font-weight="bold">NORTHERN TAPOVANA MOUNTAINS (SACRED SANCTUARY)</text>
+
+        <!-- Sacred Ganges-Yamuna River System -->
+        <path d="M 320,100 Q 430,240 520,260 T 870,320" fill="none" stroke="#00b0ff" stroke-width="5"/>
+        <path d="M 220,120 Q 360,260 520,260" fill="none" stroke="#00b0ff" stroke-width="3.5"/>
+
+        <!-- Cursed Forest & Era-2 Ruin Zones -->
+        <ellipse cx="230" cy="370" rx="110" ry="60" fill="rgba(179,136,255,0.12)" stroke="#b388ff" stroke-width="2" stroke-dasharray="5,5"/>
+        <text x="230" y="365" text-anchor="middle" fill="#b388ff" font-size="12" font-weight="bold">Khandava Cursed Forest</text>
+
+        <ellipse cx="640" cy="185" rx="85" ry="42" fill="rgba(255,51,102,0.12)" stroke="#ff3366" stroke-width="2" stroke-dasharray="4,4"/>
+        <text x="640" y="185" text-anchor="middle" fill="#ff8a80" font-size="11" font-weight="bold">Panchala White-Ash Ruins</text>
+
+        <!-- PINS: GATEWAY -->
+        <g class="map-pin pin-gateway" onclick="showInfo('hum-gate')">
+          <circle cx="290" cy="85" r="9" fill="#ffffff" stroke="#00e5ff" stroke-width="3"/>
+          <text x="290" y="70" text-anchor="middle" class="pin-label">Hastinapur High Arch (Gateway)</text>
+        </g>
+
+        <!-- PINS: CAPITALS -->
+        <g class="map-pin pin-capital" onclick="showInfo('hastinapur')">
+          <circle cx="480" cy="255" r="11" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="480" y="238" text-anchor="middle" class="pin-label" font-size="13">HASTINAPUR (Capital)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('sea-citadel')">
+          <circle cx="875" cy="320" r="10" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="875" y="302" text-anchor="middle" class="pin-label" font-size="13">THE SEA CITADEL (Port)</text>
+        </g>
+
+        <!-- PINS: IMPORTANT STRUCTURES -->
+        <g class="map-pin pin-structure" onclick="showInfo('tapovana-gurukul')">
+          <circle cx="520" cy="105" r="8" fill="#00e5ff"/>
+          <text x="520" y="125" text-anchor="middle" class="pin-label">Tapovana Gurukul (Shamika)</text>
+        </g>
+        <g class="map-pin pin-structure" onclick="showInfo('drona-academy')">
+          <circle cx="430" cy="235" r="7" fill="#00e5ff"/>
+          <text x="365" y="235" class="pin-label">Drona-Vana War Academy</text>
+        </g>
+        <g class="map-pin pin-structure" onclick="showInfo('hastina-guild')">
+          <circle cx="515" cy="275" r="7" fill="#00e5ff"/>
+          <text x="585" y="280" class="pin-label">Vanguard Adventurer Guild &amp; Arena</text>
+        </g>
+
+        <!-- PINS: TOWNS -->
+        <g class="map-pin pin-town" onclick="showInfo('indraprastha-town')">
+          <circle cx="360" cy="295" r="7" fill="#00e676"/>
+          <text x="360" y="315" text-anchor="middle" class="pin-label">Indraprastha Crossroads (Town)</text>
+        </g>
+        <g class="map-pin pin-town" onclick="showInfo('mathura-town')">
+          <circle cx="590" cy="345" r="7" fill="#00e676"/>
+          <text x="590" y="365" text-anchor="middle" class="pin-label">Yamuna-Ghat Caravan Town</text>
+        </g>
+        <g class="map-pin pin-town" onclick="showInfo('khandava-outpost')">
+          <circle cx="295" cy="340" r="7" fill="#00e676"/>
+          <text x="295" y="328" text-anchor="middle" class="pin-label">Khandava Watch-Town</text>
+        </g>
+
+        <!-- PINS: VILLAGES -->
+        <g class="map-pin pin-village" onclick="showInfo('ekachakra-village')">
+          <circle cx="170" cy="250" r="5.5" fill="#81c784"/>
+          <text x="170" y="268" text-anchor="middle" class="pin-label">Ekachakra Village (Cursed Border)</text>
+        </g>
+        <g class="map-pin pin-village" onclick="showInfo('varanavata-village')">
+          <circle cx="440" cy="165" r="5.5" fill="#81c784"/>
+          <text x="440" y="182" text-anchor="middle" class="pin-label">Varanavata Foothill Village</text>
+        </g>
+        <g class="map-pin pin-village" onclick="showInfo('salt-pan-village')">
+          <circle cx="805" cy="435" r="5.5" fill="#81c784"/>
+          <text x="805" y="452" text-anchor="middle" class="pin-label">Lavan-Pura Salt Village</text>
+        </g>
+
+        <!-- PINS: SHADOW ANCHORS -->
+        <g class="map-pin pin-anchor" onclick="showInfo('pit13-anchor')">
+          <circle cx="465" cy="275" r="7" fill="#ff3366" stroke="#fff" stroke-width="1.5"/>
+          <text x="415" y="293" class="pin-label" fill="#ff3366">Pit #13 Shadow Anchor (Grade 2)</text>
+        </g>
+        <g class="map-pin pin-anchor" onclick="showInfo('sea-anchor')">
+          <circle cx="945" cy="365" r="7" fill="#ff3366" stroke="#fff" stroke-width="1.5"/>
+          <text x="945" y="385" text-anchor="middle" class="pin-label" fill="#ff3366">Sunken Temple Anchor (Grade 3)</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ==================== MAP 4: ASURA SHARD DETAILED MAP ==================== -->
+    <div id="map-asura" class="map-view">
+      <div class="map-title-banner">
+        <h2>The Asura Planetary Shard (Western Volcanic Crucible — 1.15x Gravity)</h2>
+        <span>The Iron Citadel, Obsidian Chasm, Forge Towns, Villages &amp; Seal 1 Vault</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <rect width="1100" height="540" fill="#12080a"/>
+        <path d="M 90,60 L 980,60 L 1030,280 L 910,480 L 130,480 L 60,270 Z"
+              fill="#241114" stroke="#ff5252" stroke-width="3"/>
+        <!-- Lava Rivers -->
+        <path d="M 350,150 Q 520,240 720,310" fill="none" stroke="#ff6d00" stroke-width="6"/>
+
+        <!-- Gateway -->
+        <g class="map-pin pin-gateway" onclick="showInfo('asu-gate')">
+          <circle cx="530" cy="95" r="9" fill="#fff" stroke="#00e5ff" stroke-width="3"/>
+          <text x="530" y="78" text-anchor="middle" class="pin-label">Caldera Basalt Arch (Gateway)</text>
+        </g>
+
+        <!-- Capitals -->
+        <g class="map-pin pin-capital" onclick="showInfo('iron-citadel')">
+          <circle cx="360" cy="210" r="11" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="360" y="192" text-anchor="middle" class="pin-label">THE IRON CITADEL (Vajra-Nagara)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('obsidian-chasm')">
+          <circle cx="710" cy="315" r="11" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="710" y="297" text-anchor="middle" class="pin-label">THE OBSIDIAN CHASM (Shaila-Gadha)</text>
+        </g>
+
+        <!-- Important Structures -->
+        <g class="map-pin pin-structure" onclick="showInfo('crucible-dojo')">
+          <circle cx="310" cy="240" r="7" fill="#00e5ff"/>
+          <text x="240" y="255" class="pin-label">Obsidian Crucible Dojo &amp; Arena</text>
+        </g>
+        <g class="map-pin pin-danger" onclick="showInfo('seal1-vault')">
+          <circle cx="220" cy="410" r="9" fill="#b388ff" stroke="#fff" stroke-width="2"/>
+          <text x="220" y="432" text-anchor="middle" class="pin-label">Seal 1 Deep Mantle Vault (Muchukunda)</text>
+        </g>
+
+        <!-- Towns & Villages -->
+        <g class="map-pin pin-town" onclick="showInfo('agni-kunda-town')">
+          <circle cx="520" cy="255" r="7" fill="#00e676"/>
+          <text x="520" y="240" text-anchor="middle" class="pin-label">Agni-Kunda Smelting Town</text>
+        </g>
+        <g class="map-pin pin-village" onclick="showInfo('ash-ridge-village')">
+          <circle cx="840" cy="210" r="5.5" fill="#81c784"/>
+          <text x="840" y="228" text-anchor="middle" class="pin-label">Bhasma-Grama Miner Village</text>
+        </g>
+        <g class="map-pin pin-village" onclick="showInfo('border-fort-nikumbha')">
+          <circle cx="860" cy="410" r="6.5" fill="#00e676"/>
+          <text x="860" y="430" text-anchor="middle" class="pin-label">Nikumbha Border Bastion (Town)</text>
+        </g>
+
+        <!-- Shadow Anchors -->
+        <g class="map-pin pin-anchor" onclick="showInfo('shaft47-anchor')">
+          <circle cx="735" cy="345" r="7" fill="#ff3366" stroke="#fff" stroke-width="1.5"/>
+          <text x="735" y="366" text-anchor="middle" class="pin-label" fill="#ff3366">Shaft #47 Rebel Anchor (Ulka)</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ==================== MAP 5: DEVA SHARD DETAILED MAP ==================== -->
+    <div id="map-deva" class="map-view">
+      <div class="map-title-banner">
+        <h2>The Deva Planetary Shard (Northern Floating Solar Plateaus)</h2>
+        <span>Amaravati, Gandharva-Puri, Star Sanctums, Villages &amp; Whispering Grotto</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <rect width="1100" height="540" fill="#081226"/>
+        <!-- Floating Marble Islands -->
+        <ellipse cx="450" cy="250" rx="280" ry="150" fill="#172a4a" stroke="#80d8ff" stroke-width="3"/>
+        <ellipse cx="860" cy="310" rx="160" ry="105" fill="#1c3156" stroke="#ffd700" stroke-width="2.5"/>
+
+        <g class="map-pin pin-gateway" onclick="showInfo('dev-gate')">
+          <circle cx="250" cy="190" r="9" fill="#fff" stroke="#00e5ff" stroke-width="3"/>
+          <text x="250" y="172" text-anchor="middle" class="pin-label">Sun-Cliff Arch (Gateway)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('amaravati')">
+          <circle cx="460" cy="240" r="11" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="460" y="220" text-anchor="middle" class="pin-label">AMARAVATI (Solar Throne)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('gandharva-puri')">
+          <circle cx="850" cy="290" r="10" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="850" y="272" text-anchor="middle" class="pin-label">GANDHARVA-PURI (Silk Sanctuary)</text>
+        </g>
+        <g class="map-pin pin-town" onclick="showInfo('soma-vana')">
+          <circle cx="580" cy="310" r="7" fill="#00e676"/>
+          <text x="580" y="330" text-anchor="middle" class="pin-label">Soma-Vana Crystal Town</text>
+        </g>
+        <g class="map-pin pin-village" onclick="showInfo('marut-village')">
+          <circle cx="350" cy="330" r="5.5" fill="#81c784"/>
+          <text x="350" y="348" text-anchor="middle" class="pin-label">Marut-Terrace Cloud Village</text>
+        </g>
+        <g class="map-pin pin-anchor" onclick="showInfo('grotto-anchor')">
+          <circle cx="940" cy="365" r="7" fill="#ff3366" stroke="#fff" stroke-width="1.5"/>
+          <text x="910" y="388" text-anchor="middle" class="pin-label" fill="#ff3366">Whispering Grotto Anchor (Grade 2)</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ==================== MAP 6: BEAST SHARD DETAILED MAP ==================== -->
+    <div id="map-beast" class="map-view">
+      <div class="map-title-banner">
+        <h2>The Beast Planetary Shard (Southern Primeval Wilderness)</h2>
+        <span>Primeval Canopy, Sky Spires, Twilight Marsh, Blood-Ridge &amp; Trading Groves</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <rect width="1100" height="540" fill="#07140d"/>
+        <path d="M 70,50 L 1010,50 L 1040,470 L 80,480 Z" fill="#0f2619" stroke="#00e676" stroke-width="3"/>
+
+        <g class="map-pin pin-gateway" onclick="showInfo('bst-gate')">
+          <circle cx="540" cy="95" r="9" fill="#fff" stroke="#00e5ff" stroke-width="3"/>
+          <text x="540" y="75" text-anchor="middle" class="pin-label">Root-Carved Arch (Gateway)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('heartwood')">
+          <circle cx="540" cy="270" r="11" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="540" y="250" text-anchor="middle" class="pin-label">HEARTWOOD SANCTUM (Ursus &amp; World-Tree)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('sky-spires')">
+          <circle cx="860" cy="140" r="10" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="860" y="122" text-anchor="middle" class="pin-label">THE SKY SPIRES (20,000-ft Garuda Roost)</text>
+        </g>
+        <g class="map-pin pin-danger" onclick="showInfo('twilight-marsh')">
+          <circle cx="280" cy="390" r="9" fill="#b388ff"/>
+          <text x="280" y="412" text-anchor="middle" class="pin-label">Twilight Marsh &amp; Sunken Naga Waterway</text>
+        </g>
+        <g class="map-pin pin-danger" onclick="showInfo('blood-ridge')">
+          <circle cx="210" cy="180" r="8" fill="#ff5252"/>
+          <text x="210" y="162" text-anchor="middle" class="pin-label">The Blood-Ridge (Salt-Cliffs)</text>
+        </g>
+        <g class="map-pin pin-town" onclick="showInfo('silent-glade')">
+          <circle cx="780" cy="380" r="7" fill="#00e676"/>
+          <text x="780" y="400" text-anchor="middle" class="pin-label">Silent Glade Sanctuary (Sage Matanga)</text>
+        </g>
+        <g class="map-pin pin-anchor" onclick="showInfo('ironwood-anchor')">
+          <circle cx="620" cy="330" r="7" fill="#ff3366" stroke="#fff" stroke-width="1.5"/>
+          <text x="620" y="350" text-anchor="middle" class="pin-label" fill="#ff3366">Hollow Ironwood Trading Post &amp; Anchor</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ==================== MAP 7: BUFFER ZONE (SETU) & CORRUPTED REALM ==================== -->
+    <div id="map-setu-abyss" class="map-view">
+      <div class="map-title-banner">
+        <h2>Tier 2 (The Great Setu) &amp; Tier 4 (The Corrupted Realm &amp; 7 Cosmic Seals)</h2>
+        <span>Separated by the Unbreakable Grand Aegis (Reverse-Engineered Miniature Kshira-Sagara)</span>
+      </div>
+      <svg class="atlas-svg" viewBox="0 0 1100 540">
+        <!-- Left Half: Buffer Zone (Setu) | Center Wall: Grand Aegis | Right Half: Corrupted Realm -->
+        <rect x="0" y="0" width="460" height="540" fill="#141c2b"/>
+        <rect x="490" y="0" width="610" height="540" fill="#1f0910"/>
+
+        <!-- The Grand Aegis (Miniature Kshira-Sagara Golden Wall) -->
+        <rect x="460" y="0" width="30" height="540" fill="url(#kshiraGlow)" stroke="#ffd700" stroke-width="3"/>
+        <text x="475" y="270" text-anchor="middle" fill="#000" font-weight="bold" font-size="13" transform="rotate(-90 475,270)">
+          THE GRAND AEGIS (MINIATURE KSHIRA-SAGARA BARRIER — 5,000 MILES)
+        </text>
+
+        <!-- Tier 2 Setu Locations -->
+        <text x="230" y="35" text-anchor="middle" fill="#80d8ff" font-weight="bold" font-size="15">TIER 2: THE GREAT SETU (50,000 MILES)</text>
+        <g class="map-pin pin-capital" onclick="showInfo('bastion-fortress')">
+          <circle cx="380" cy="260" r="10" fill="#f4c430" stroke="#fff" stroke-width="2"/>
+          <text x="350" y="242" text-anchor="middle" class="pin-label">Vajra Bastion HQ (Vajraketu)</text>
+        </g>
+        <g class="map-pin pin-structure" onclick="showInfo('setu-academy')">
+          <circle cx="210" cy="180" r="8" fill="#00e5ff"/>
+          <text x="210" y="162" text-anchor="middle" class="pin-label">The Setu Academy &amp; Sage Court</text>
+        </g>
+        <g class="map-pin pin-structure" onclick="showInfo('pratigraha')">
+          <circle cx="190" cy="390" r="8" fill="#00e5ff"/>
+          <text x="190" y="412" text-anchor="middle" class="pin-label">Pratigraha Soul Depository</text>
+        </g>
+
+        <!-- Tier 4 Corrupted Realm Locations -->
+        <text x="790" y="35" text-anchor="middle" fill="#ff5252" font-weight="bold" font-size="15">TIER 4: THE CORRUPTED REALM (DEVILS &amp; EXILES)</text>
+
+        <!-- Noble Devil Zone & Ash Fortress (Near the warm Aegis light!) -->
+        <g class="map-pin pin-town" onclick="showInfo('ash-fortress')">
+          <circle cx="545" cy="160" r="8" fill="#00e676"/>
+          <text x="615" y="165" class="pin-label">The Ash Fortress (Multi-Racial Exiles)</text>
+        </g>
+        <g class="map-pin pin-town" onclick="showInfo('noble-devils')">
+          <circle cx="545" cy="360" r="8" fill="#00e676"/>
+          <text x="625" y="365" class="pin-label">Aegis-Light Enclaves (Noble Devils)</text>
+        </g>
+
+        <!-- Hunger Devil Fortresses -->
+        <g class="map-pin pin-capital" onclick="showInfo('netherholme')">
+          <circle cx="780" cy="210" r="10" fill="#ff3366" stroke="#fff" stroke-width="2"/>
+          <text x="780" y="192" text-anchor="middle" class="pin-label">NETHERHOLME (Paundraka's Seat)</text>
+        </g>
+        <g class="map-pin pin-capital" onclick="showInfo('dread-hold')">
+          <circle cx="810" cy="330" r="9" fill="#ff3366"/>
+          <text x="810" y="350" text-anchor="middle" class="pin-label">Dread-Hold (Shataghati) &amp; Shadow-Hollow</text>
+        </g>
+
+        <!-- Seal 7: The Dead Chasm (Shrutayudha) -->
+        <g class="map-pin pin-danger" onclick="showInfo('seal7-chasm')">
+          <circle cx="980" cy="450" r="12" fill="#b388ff" stroke="#ff3366" stroke-width="3"/>
+          <text x="935" y="425" text-anchor="middle" class="pin-label" fill="#b388ff">SEAL 7: THE DEAD CHASM (Shrutayudha)</text>
+        </g>
+      </svg>
+    </div>
+
+  </div>
+
+  <!-- ==================== SIDEBAR: DYNAMIC LOCATION DETAILS ==================== -->
+  <div class="info-sidebar" id="info-panel">
+    <h3 id="loc-title">1. The Cosmic Horn &amp; Kshira Sagara</h3>
+    <div class="badge-row">
+      <span class="badge badge-type" id="loc-type">Macro-Cosmology</span>
+      <span class="badge badge-realm" id="loc-realm">All 4 Tiers</span>
+    </div>
+    <div class="info-section">
+      <strong>Geometric Position</strong>
+      <p id="loc-geo">Left Singularity Apex (0% Point) expanding rightward into the Growing Cosmic Edge.</p>
+    </div>
+    <div class="info-section">
+      <strong>Architectural &amp; Lore Significance</strong>
+      <p id="loc-desc">Click on any glowing pin across the 7 Map Tabs to inspect its exact geometry, population bracket, rulers, Adventurer Guild presence, or hidden Rotary Shadow Anchor coordinates.</p>
+    </div>
+    <div class="info-section">
+      <strong>Story &amp; Plot Impact</strong>
+      <p id="loc-impact">Universe B is a Young Child Cosmos. All locks and barriers are temporary stabilizing measures while mortals learn to stand on their own feet without direct Trinity intervention.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== COMPLETE MASTER GAZETTEER TABLE ==================== -->
+<div class="directory-grid">
+  <h2>Complete Master Gazetteer: Every City, Town, Village, Structure &amp; Shadow Anchor</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Realm / Shard</th>
+          <th>Location Name</th>
+          <th>Category</th>
+          <th>Key Structures &amp; Rulers</th>
+          <th>Story &amp; World Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Tier 1 (Apex)</strong></td>
+          <td><strong>Kshira Sagara &amp; High Council Rotunda</strong></td>
+          <td>Cosmic Origin &amp; Parliament</td>
+          <td>Lord Vishnu on Ananta-Shesha; The Eternal Four (Ananta, Yama, Vidhata, Chitragupta)</td>
+          <td>100% inviolable source of pure Prana; 100% Combat Ban inside the Rotunda.</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 2 (Buffer)</strong></td>
+          <td><strong>The Great Setu &amp; Vajra Bastion</strong></td>
+          <td>50,000-Mile Military Redoubt</td>
+          <td>Setu Academy, Pratigraha Depository, Outpost 9 (Marshal-General Vajraketu &amp; Satyaketu)</td>
+          <td>Where Astral S-Ranks arrive as humble Newbies (Ardha-Rathis) and train toward Maharathi Divyastra mastery.</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 2 / 4 Border</strong></td>
+          <td><strong>The Grand Aegis Barrier</strong></td>
+          <td>Dual Spiritual Wall (5,000 Miles)</td>
+          <td>Reverse-engineered Miniature Kshira-Sagara Core</td>
+          <td>Unbreakable barrier that feeds/sustains Tier-4 Devils so no injustice occurs, while blocking physical crossing.</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 4 (Abyss)</strong></td>
+          <td><strong>The Ash Fortress &amp; Aegis Enclaves</strong></td>
+          <td>Exile Citadel &amp; Noble Devil Towns</td>
+          <td>Wardens Hamsa &amp; Dimbaka; Sanity-preserving Noble Devil Lords</td>
+          <td>Multi-racial exiles (Humans, Asuras, Devas, Beasts) and Noble Devils living near the warm glow of the Grand Aegis.</td>
+        </tr>
+        <tr>
+          <td><strong>Tier 4 (Abyss)</strong></td>
+          <td><strong>Netherholme, Dread-Hold &amp; Seal 7</strong></td>
+          <td>Hunger Devil Capitals &amp; Dead Chasm</td>
+          <td>Paundraka, Shataghati, Trishira; Emperor Shrutayudha chained at Seal 7</td>
+          <td>Source of illegal Type-2 Devil Summonings; Seal 7 holds Shrutayudha, the hero who merged into the 7th Horror.</td>
+        </tr>
+        <tr>
+          <td><strong>Central Shard</strong></td>
+          <td><strong>Central City &amp; Five-Arch Rotunda</strong></td>
+          <td>Neutral Global Metropolis</td>
+          <td>Grand Concord Dome, Central Reserve Bank, 100,000-Seat Coliseum, Pan-Astral Guild HQ</td>
+          <td>Only legal hub connecting all 4 Stone Gateways; hosts the Proving Games; hides the Sunken Aqueduct Grade-1 Anchor.</td>
+        </tr>
+        <tr>
+          <td><strong>Human Shard</strong></td>
+          <td><strong>Hastinapur &amp; The Sea Citadel</strong></td>
+          <td>Royal Capital &amp; Maritime Port</td>
+          <td>Royal Palace, Drona-Vana Academy, Rohini's Forge, Pit #13 (Grade-2 Anchor), Sunken Temple Anchor</td>
+          <td>Heart of human Beast-Cart caravans, Water-Drake ships, and C-Rank Reincarnated Adventurers.</td>
+        </tr>
+        <tr>
+          <td><strong>Human Shard</strong></td>
+          <td><strong>Tapovana, Indraprastha, Khandava &amp; Ekachakra</strong></td>
+          <td>Gurukul, Towns &amp; Border Villages</td>
+          <td>Sage Shamika's Herb Sanctuary, Khandava Watch-Town, Ekachakra Village, Panchala Ash-Ruins</td>
+          <td>Primary quest zones for Adventurer Guilds hunting rampaging forest beasts and rogue summoned Devils.</td>
+        </tr>
+        <tr>
+          <td><strong>Asura Shard</strong></td>
+          <td><strong>The Iron Citadel &amp; Obsidian Chasm</strong></td>
+          <td>Volcanic Capitals &amp; Deep Mines</td>
+          <td>Maya's Great Forge, Crucible Dojo, Shaft #47 Rebel Anchor (Ulka), Seal 1 Mantle Vault</td>
+          <td>1.15x gravity realm forging Stage-2/3 Runic Weapons; torn between Baroness Simhika and Ulka's Red Crucible.</td>
+        </tr>
+        <tr>
+          <td><strong>Deva Shard</strong></td>
+          <td><strong>Amaravati &amp; Gandharva-Puri</strong></td>
+          <td>Floating Solar Spires &amp; Silk Towns</td>
+          <td>Solar Throne (Bhanu), Hall of Mirrors, Aether-Silk Looms, Whispering Grotto Anchor</td>
+          <td>Exports Awakening Stones and Aether-Silk; strictly bans Devas from fighting in mortal arenas.</td>
+        </tr>
+        <tr>
+          <td><strong>Beast Shard</strong></td>
+          <td><strong>Heartwood Sanctum, Sky Spires &amp; Hollow Grove</strong></td>
+          <td>Primeval Forest &amp; 20,000-ft Peaks</td>
+          <td>World-Tree Branch (Ursus), Garuda Roost (Vinata), Naga Waterway (Kadru), Shabari's Trading Post</td>
+          <td>Where warriors travel to earn voluntary Soul-Bonds with Flying and Land Beasts; trades Beast-Cores for salt.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  const LOC_DATA = {
+    'kshira': {
+      title: '1. Divine Realm, Kshira Sagara & High Council',
+      type: 'Tier 1 Singularity Apex',
+      realm: 'Left Tip of Cosmic Horn',
+      geo: 'Absolute Genesis Point (0% Apex) of the Cosmic Horn.',
+      desc: 'Home to Lord Vishnu reclining upon Ananta-Shesha in the unbreakable Kshira Sagara, and the High Council Rotunda where the Eternal Four (Ananta, Yama, Vidhata, Chitragupta) govern soul circulation.',
+      impact: '100% Non-Combat Sanctuary. The Supreme Trinity refrains from direct descent so the young Child Cosmos stays stable and mortals grow on their own feet.'
+    },
+    'galaxies': {
+      title: '2. Unclaimed Space with Galaxies & Stars',
+      type: 'Cosmic Expanse',
+      realm: 'Between Tier 1 & Tier 2',
+      geo: 'Second band of the Cosmic Horn.',
+      desc: 'Vast celestial space filled with galaxies, star-streams, and the warded Soul Corridor through which Vidhata brings reincarnating souls from adjacent Hindu-bound universes.',
+      impact: 'Separates the transcendent Divine Apex from the military Buffer Zone.'
+    },
+    'buffer': {
+      title: '3. The Buffer Zone (The Great Setu)',
+      type: 'Tier 2 Military Dimension',
+      realm: 'Third Band of Cosmic Horn',
+      geo: '50,000-mile chain of floating granite viaducts above the Grand Aegis.',
+      desc: 'Governed by Classical Sanskrit law. Houses the Setu Academy, Pratigraha Soul Depository, and 100,000 Pan-Astral troops under Marshal-General Vajraketu.',
+      impact: 'Here, an Astral S-Rank champion is merely a rookie initiate (Ardha-Rathi). Only Buffer-Zone Maharathis with Divine Varadans can invoke true Divyastras.'
+    },
+    'aegis': {
+      title: '4. The Dual Spiritual Barrier (The Grand Aegis)',
+      type: 'Reverse-Engineered Kshira-Sagara',
+      realm: 'Enclosing Tier 4',
+      geo: 'Two 360-degree golden spiritual walls sandwiching the Corrupted Realm.',
+      desc: 'Constructed by ancient sages as a miniature version of the Kshira Sagara. Its golden radiance feeds and sustains the Devils inside so no injustice is done to them, while making physical crossing 100% impossible.',
+      impact: 'Because the wall is unbreakable, Devils can ONLY enter the Astral Realm if illegally summoned by upper-world cultists or nobles!'
+    },
+    'corrupted': {
+      title: '5. The Corrupted Realm (Tier 4 Abyss)',
+      type: 'Quarantined 30% Slice',
+      realm: 'Sandwiched Between Setu & Astral',
+      geo: 'Located directly between the Buffer Zone and the 5-Shard Astral Wheel.',
+      desc: 'Divided into three zones: (1) Noble Devil Enclaves near the warm Aegis light, (2) The Ash Fortress housing multi-racial exiles, and (3) Netherholme & Dread-Hold ruled by Paundraka’s Hunger Faction.',
+      impact: 'Adjacent frequency to the Astral Wheel allows forbidden Type-2 Soul-Only Devil Summoning.'
+    },
+    'astral': {
+      title: '6. The Astral Living Realm (5-Shard Wheel)',
+      type: 'Tier 3 Mortal & Magical Wheel',
+      realm: 'Five Planetary Shards',
+      geo: 'A massive circular wheel with Central City at the hub and 4 outer shards (Human, Asura, Deva, Beast) suspended in the Infinite Void.',
+      desc: 'Populated by the 4 Power Brackets: 0-60% Ember quirks, 60-80% D-Rank, 80-90% C-Rank Reincarnated Souls, and 90-100% High-Rank Elites.',
+      impact: 'Primary stage of the Adventurer Guilds, Beast-Cart caravans, and the Proving Games.'
+    },
+    'rotunda': {
+      title: 'The Five-Arch Rotunda (Central Gateway Plaza)',
+      type: 'Hub-and-Spoke Stone Gateway',
+      realm: 'Central City',
+      geo: 'Exact center of Central City.',
+      desc: 'Where all four 100-foot Monolithic Stone Gateways connect. Opens 4 times daily on the temple bell Muhurta for 2 hours, allowing Beast-Cart caravans and travelers to walk across.',
+      impact: 'Gives Central City its 17% tariff monopoly—driving smugglers to use underground Shadow Anchors.'
+    },
+    'coliseum': {
+      title: 'The Central Coliseum (Proving Games Arena)',
+      type: '100,000-Seat Shifting Arena',
+      realm: 'Central City',
+      geo: 'Southern district of Central City.',
+      desc: 'Features 5 shifting elemental battlegrounds. Devas sit only in marble balconies above, banned from fighting on the sand by caste pride.',
+      impact: 'Where D, C, B, A, and S-Rank warriors clash for glory and Setu scouting.'
+    },
+    'central-guild': {
+      title: 'Pan-Astral Adventurer Guild HQ & Mirror Hall',
+      type: 'Guild Headquarters',
+      realm: 'Central City',
+      geo: 'Eastern quarter of Central City.',
+      desc: 'Directed by Guildmaster Uttanka and Seer Chandra-Lekha. Broadcasts live battles via giant Water-Crystal Mirrors and issues high-rank quests against cursed forests and rogue Devils.',
+      impact: 'Central nervous system of all Adventurer Parties.'
+    },
+    'central-anchor': {
+      title: 'Sunken Aqueduct Omnidial (Grade-1 Shadow Anchor)',
+      type: 'Hidden Rotary Anchor',
+      realm: 'Under Central City',
+      geo: '200 feet beneath the Vaults of Truth.',
+      desc: 'The only surviving Grade-1 Omnidial Prime anchor capable of dialing all shards. Used by the Gray Pigeons syndicate for high-level espionage.',
+      impact: 'Activating it causes tremors across a 5-mile radius.'
+    },
+    'hastinapur': {
+      title: 'Hastinapur (Capital of Kuru-Panchala)',
+      type: 'Royal Capital City',
+      realm: 'Human Shard (East)',
+      geo: 'Central Ganges-Yamuna plains.',
+      desc: 'Ruled by King Parikshit and Queen Madravati. Streets lit by Ember-quirks; bustling with Beast-Carts, Rohini’s Relic Workshops, the Reincarnate Quarter, and Adventurer Guild halls.',
+      impact: 'Breadbasket of the cosmos; main starting hub for human and reincarnated adventurers.'
+    },
+    'sea-citadel': {
+      title: 'The Sea Citadel (Samudra-Pattanam)',
+      type: 'Coastal Port Metropolis',
+      realm: 'Human Shard (East Coast)',
+      geo: 'Mouth of the Ganges on the Mortal Sea.',
+      desc: 'Controlled by Lord Admiral Suhotra and Commodore Lavanya. Sailing ships pulled by harnessed River-Drakes (Makaras) dock here.',
+      impact: 'Hub of the sea-salt trade (essential for Beast Shard titans) and maritime smuggling.'
+    },
+    'tapovana-gurukul': {
+      title: 'Northern Tapovana Gurukul & Herb Sanctuary',
+      type: 'Sacred Martial & Medical Ashram',
+      realm: 'Human Shard (North Peaks)',
+      geo: 'High Himalayan cedar forests.',
+      desc: 'Led by 310-year-old Sage Shamika. Protected by a Peace-Ward; trains disciples in 72,000 Meridian breath-control and grows Sanjeevani herbs.',
+      impact: 'Heals adventurers suffering from meridian Blowouts or Devil curses.'
+    },
+    'drona-academy': {
+      title: 'Drona-Vana Royal War Academy',
+      type: 'Combat Gurukul',
+      realm: 'Hastinapur Outskirts',
+      geo: 'West of Hastinapur Citadel.',
+      desc: 'Premier martial academy where royal scions, D-Ranks, and C-Rank Reincarnates train in Dhanurveda archery, Bija-Mantras, and weapon stages.',
+      impact: 'Rivalry ground between native noble heirs and talented Reincarnated youths.'
+    },
+    'hastina-guild': {
+      title: 'Hastinapur Vanguard Guild & Iron-Akhara',
+      type: 'Adventurer Guild & Sister-Arena',
+      realm: 'Hastinapur',
+      geo: 'Outer Ring Market District.',
+      desc: 'Where rookie parties take quests to clear uncontrolled forest beasts and where fighters earn their 1,000 points for the Proving Games.',
+      impact: 'Main gathering spot for mercenaries, beast-tamers, and chronicler Marcus Ward.'
+    },
+    'indraprastha-town': {
+      title: 'Indraprastha Crossroads Town',
+      type: 'Major Trade Town',
+      realm: 'Human Shard',
+      geo: 'Southern highway toward the Khandava forest.',
+      desc: 'Massive Beast-Cart staging town managed by Caravan-Master Alistair Vance’s wardens.',
+      impact: 'Last safe town before entering the cursed southern woods.'
+    },
+    'mathura-town': {
+      title: 'Yamuna-Ghat River Town',
+      type: 'River Port Town',
+      realm: 'Human Shard',
+      geo: 'Central river confluence.',
+      desc: 'Bustling river-barge town where Captain Romesh’s Makara-boats load grain and spices.',
+      impact: 'Key node for river commerce and festival boat-races during 7-Day Diwali.'
+    },
+    'khandava-outpost': {
+      title: 'Khandava Watch-Town',
+      type: 'Fortified Adventurer Town',
+      realm: 'Human Shard',
+      geo: 'Northern edge of the Khandava Cursed Forest.',
+      desc: 'Walled timber-and-stone town packed with C-Rank and B-Rank adventurer parties, apothecaries, and beast-healers.',
+      impact: 'Frontline launchpad for dungeon dives and rogue Devil hunts.'
+    },
+    'ekachakra-village': {
+      title: 'Ekachakra Border Village',
+      type: 'Frontier Village',
+      realm: 'Human Shard',
+      geo: 'Western badlands border.',
+      desc: 'Farming village surrounded by ancient megaliths; frequently threatened by rampaging feral boars and shadow-wolves.',
+      impact: 'Classic starting D-Rank quest location with hidden Era-2 underground shrines.'
+    },
+    'varanavata-village': {
+      title: 'Varanavata Foothill Village',
+      type: 'Resin & Timber Village',
+      realm: 'Human Shard',
+      geo: 'Foothills below Tapovana.',
+      desc: 'Harvests flammable pine-resin and lacquer used in alchemical fire-pots.',
+      impact: 'Historical site of ancient royal conspiracies.'
+    },
+    'salt-pan-village': {
+      title: 'Lavan-Pura Coastal Salt Village',
+      type: 'Salt-Harvesting Village',
+      realm: 'Human Shard (South Coast)',
+      geo: 'Mangrove flats south of the Sea Citadel.',
+      desc: 'Produces thousands of tons of rock-salt blocks traded to the Beast Shard.',
+      impact: 'Often raided by sea-monsters and smugglers.'
+    },
+    'pit13-anchor': {
+      title: 'Abandoned Pit #13 Shadow Anchor (Grade 2)',
+      type: 'Clandestine Rotary Anchor',
+      realm: 'Under Hastinapur Forge District',
+      geo: 'Subterranean cavern beneath the Great Anvils.',
+      desc: '20-foot basalt rotary dial operated by Renzo Vance’s syndicate. Masked by the rhythmic crash of giant forge-hammers above.',
+      impact: 'Directly links Hastinapur to Ulka’s Shaft #47 in the Asura Shard.'
+    },
+    'sea-anchor': {
+      title: 'Sunken Era-2 Temple Anchor (Grade 3)',
+      type: 'Underwater Shadow Anchor',
+      realm: 'The Mortal Sea',
+      geo: '10 miles off the Sea Citadel coast in the Blind Trench.',
+      desc: 'Guarded by Lord Admiral Suhotra’s Obsidian Ring and salvaged by diver Malhar.',
+      impact: 'Smuggles cursed relics from Maricha’s Abyss Shufflers.'
+    },
+    'iron-citadel': {
+      title: 'The Iron Citadel (Vajra-Nagara)',
+      type: 'Asura Capital Fortress',
+      realm: 'Asura Shard (West)',
+      geo: 'Built directly over the Black Caldera magma lake.',
+      desc: 'Ruled by Grand Architect Maya and Queen Mandor. Houses the Great Volcanic Forges where Stage-2 and Stage-3 Runic Weapons are crafted.',
+      impact: 'Industrial & martial heart of the Asura race.'
+    },
+    'obsidian-chasm': {
+      title: 'The Obsidian Chasm (Shaila-Gadha)',
+      type: '2-Mile-Deep Mining City',
+      realm: 'Asura Shard',
+      geo: 'Southeastern rift valley.',
+      desc: 'Controlled by ruthless Baroness Simhika. Produces 70% of the world’s Prana-Crystals and meteoric iron.',
+      impact: 'Battleground between Simhika’s mercenaries and Ulka’s Red Crucible rebels.'
+    },
+    'seal1-vault': {
+      title: 'Seal 1 Deep Mantle Vault (The Thermal Venom)',
+      type: 'Cosmic Seal #1',
+      realm: 'Beneath Asura Shard',
+      geo: 'Lowest tectonic magma floor.',
+      desc: 'Guarded by the sleeping Era-2 immortal Muchukunda and the basalt golem Kinkara.',
+      impact: 'Temporary lock showing early signs of thermal thinning.'
+    },
+    'shaft47-anchor': {
+      title: 'Shaft #47 Basalt Crypt Anchor (Grade 2)',
+      type: 'Rebel Shadow Anchor',
+      realm: 'Obsidian Chasm',
+      geo: '2 miles underground behind a lava waterfall.',
+      desc: 'Tuned by Kshema and guarded by Ulka ("The Red Hammer").',
+      impact: 'Receives smuggled Hastinapur wheat to keep starving miner families alive.'
+    },
+    'amaravati': {
+      title: 'Amaravati (The Solar Throne)',
+      type: 'Deva Capital Spire',
+      realm: 'Deva Shard (North)',
+      geo: 'Highest floating marble plateau.',
+      desc: 'Ruled by Sovereign Bhanu and Queen Savitri. Gleaming crystal towers, solar observatories, and the Celestial High Court.',
+      impact: 'Center of Solar-Quartz and Awakening Stone exports.'
+    },
+    'gandharva-puri': {
+      title: 'Gandharva-Puri (The Silver Cloud Sanctuary)',
+      type: 'Artisan & Silk City',
+      realm: 'Deva Shard',
+      geo: 'Eastern floating cloud-island.',
+      desc: 'Ruled by Lady Chitralekha and Master Weaver Kavi. Home of the harmonic looms that weave blade-proof Aether-Silk.',
+      impact: 'Connected to the Whispering Grotto smuggling anchor.'
+    },
+    'heartwood': {
+      title: 'Heartwood Sanctum & Canopy Spirit-Sanctum',
+      type: 'Beast Capital Grove',
+      realm: 'Beast Shard (South)',
+      geo: 'Center of the 1,500-ft Ironwood Canopy.',
+      desc: 'Guarded by 40-ton Titan Ursus ("Old Four-Horns"). Grows around a living branch of the primordial Ashvattha World-Tree.',
+      impact: 'Sacred site where warriors come to earn voluntary Soul-Bonds with wild beasts.'
+    },
+    'sky-spires': {
+      title: 'The Sky Spires (Eagle’s Roost)',
+      type: '20,000-ft Granite Needles',
+      realm: 'Beast Shard (North Rim)',
+      geo: 'Piercing the upper jetstream clouds.',
+      desc: 'Ruled by Garuda Empress Vinata and Prince Sampati ("Iron-Talon").',
+      impact: 'Only place where an adventurer can bond with a Flying Raptor/Garuda mount.'
+    },
+    'ironwood-anchor': {
+      title: 'Hollow Ironwood Grove & Trading Post (Grade 3)',
+      type: 'Barter Node & Shadow Anchor',
+      realm: 'Beast Shard',
+      geo: 'Inside a 300-foot hollow ironwood trunk.',
+      desc: 'Managed by Shaman Shabari ("The Bone-Speaker"). Trades Beast-Cores and Sanjeevani herbs for human sea-salt.',
+      impact: 'Neutral meeting ground for Beast-Tamers and Adventurers.'
+    },
+    'ash-fortress': {
+      title: 'The Ash Fortress (Multi-Racial Exile Citadel)',
+      type: 'Border Fortress in Tier 4',
+      realm: 'Corrupted Realm (Near Grand Aegis)',
+      geo: 'Built 3 miles outside the golden glow of the Grand Aegis.',
+      desc: 'Commanded by twin Wardens Hamsa and Dimbaka. Home to 200,000 exiled Humans, Asuras, Devas, and Beasts.',
+      impact: 'Survives on the radiant warmth of the Miniature Kshira-Sagara barrier while fighting off Paundraka’s Hunger Devils.'
+    },
+    'noble-devils': {
+      title: 'The Aegis-Light Enclaves (Noble Devil Cities)',
+      type: 'Sanity-Preserving Devil Civilization',
+      realm: 'Corrupted Realm (Aegis Rim)',
+      geo: 'Along the inner golden wall of the Grand Aegis.',
+      desc: 'Populated by Noble Devils who nourish themselves peacefully on the Miniature Kshira-Sagara energy provided by the barrier.',
+      impact: 'Proves not all Devils are evil monsters; some form honorable Mode-A contracts with upper-world warriors.'
+    },
+    'netherholme': {
+      title: 'Netherholme & Dread-Hold (Hunger Devil Capitals)',
+      type: 'Warlord Fortresses',
+      realm: 'Deep Corrupted Realm',
+      geo: 'Obsidian trenches far from the Aegis light.',
+      desc: 'Ruled by Paundraka ("The Counterfeit Sovereign"), General Shataghati, and Alchemist Trishira.',
+      impact: 'Main antagonists behind illegal Type-2 Devil Summonings and vessel hijackings.'
+    },
+    'seal7-chasm': {
+      title: 'Seal 7: The Dead Chasm (Emperor Shrutayudha)',
+      type: 'The Seventh Cosmic Seal',
+      realm: 'Deepest Pit of Tier 4',
+      geo: 'Southernmost lightless abyss.',
+      desc: 'Where the legendary hero Emperor Shrutayudha has been chained for 3,000 years—having tragically merged with the 7th Primordial Horror itself!',
+      impact: 'Known to mortals only as a myth (Dantakatha), while the High Council must quarantined him out of tragic necessity.'
+    }
+  };
+
+  function switchMap(mapId, btn) {
+    document.querySelectorAll('.map-view').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(mapId).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  function showInfo(key) {
+    const d = LOC_DATA[key];
+    if (!d) return;
+    document.getElementById('loc-title').textContent = d.title;
+    document.getElementById('loc-type').textContent = d.type;
+    document.getElementById('loc-realm').textContent = d.realm;
+    document.getElementById('loc-geo').textContent = d.geo;
+    document.getElementById('loc-desc').textContent = d.desc;
+    document.getElementById('loc-impact').textContent = d.impact;
+  }
+
+  function toggleLayer(className, visible) {
+    document.querySelectorAll('.' + className).forEach(el => {
+      el.style.display = visible ? 'block' : 'none';
+    });
+  }
+</script>
+
+</body>
+</html>

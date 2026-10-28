@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>29. Astral Realm &amp; Corrupted Realm Worldbuilding — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">05_Astral_Realm_Five_Sub_Realms\04_Astral_and_Corrupted_Realms_Worldbuilding.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/05_Astral_Realm_Five_Sub_Realms/04_Astral_and_Corrupted_Realms_Worldbuilding.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__module_scope___canon_lock_status">0. Module Scope & Canon Lock Status</a><a class="h2" href="#1__tier_3___the_astral_realm">1. Tier 3 — The Astral Realm (पाच महासत्ता व व्यवस्था)</a><a class="h3" href="#1_1_macro-geography___continental_layout">1.1 Macro-Geography & Continental Layout</a><a class="h3" href="#1_2_major_geopolitical_powers">1.2 Major Geopolitical Powers (पाच महासत्ता)</a></nav>
+  <div>
+    <article><h1 id="29__astral_realm___corrupted_realm_worldbuilding__module_8">29. Astral Realm & Corrupted Realm Worldbuilding (Module 8)</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\World\29_ASTRAL_AND_CORRUPTED_REALMS_WORLDBUILDING.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#astral-realm</span> <span class="badge">#corrupted-realm</span> <span class="badge">#tamo-loka</span> <span class="badge">#tier-3</span> <span class="badge">#tier-4</span> <span class="badge">#geopolitics</span> <span class="badge">#currency</span> <span class="badge">#gurukul</span> <span class="badge">#cosmic-seals</span> <span class="badge">#border-friction</span> <span class="badge">#canon</span></code></p>
+<p><strong>Status:</strong> [CANON] Official Worldbuilding Specification (Module 8)</p>
+<p><strong>Authority:</strong> Builds on <code>01_COSMOLOGY_AND_REALMS.md</code>, <code>20_EVOLVING_COSMOS_REALMS_AND_COUNCIL_SYSTEM.md</code>, <code>24_BUFFER_ZONE_COMPLETE_GEOGRAPHY_AND_SECTORS.md</code>, <code>25_BUFFER_ZONE_OPERATIONAL_SYSTEM_AND_REGULATIONS.md</code>.</p>
+<hr>
+<h2 id="0__module_scope___canon_lock_status">0. Module Scope & Canon Lock Status</h2>
+<p><em>(मॉड्यूल व्याप्ती व अधिकृत चौकट)</em></p>
+<p>Universe B मधील दोन मुख्य नश्वर आणि अधो-लोकांची ही अधिकृत नियमावली आहे:</p>
+<ul>
+<li><strong>Tier 3 — Astral Realm (जिवंत नश्वर विश्व):</strong> विश्वाच्या ६०-७०% लोकसंख्येचे घर (Devas, Asuras, Humans, Animals/Beasts). जन्मजात समानतेचे तत्त्व; <strong>Human Sub-realm</strong> मध्ये १९व्या शतकातील स्टीम शहरे व स्थानिक रेल्वे, तर उर्वरित उप-लोकांमध्ये magma-forges, aether-craft आणि प्राचीन राज्ये. <strong>Central Sub-realm मध्ये मुख्यतः magic व aether-tech.</strong></li>
+<li><strong>Tier 4 — Corrupted Realm (अधो-लोक):</strong> Era 2 मध्ये Astral Realm मधून तुटलेला ३०% भाग; विषारी ऊर्जा, Devils, चिलखती स्क्रॅप-क्रॉलर्स आणि सात महा-बंधांखाली बंद असलेले अंधार-अस्तित्व.</li>
+</ul>
+<hr>
+<h2 id="1__tier_3___the_astral_realm">1. Tier 3 — The Astral Realm (पाच महासत्ता व व्यवस्था)</h2>
+<h3 id="1_1_macro-geography___continental_layout">1.1 Macro-Geography & Continental Layout</h3>
+<p>Astral Realm हा एक सपाट खंड नसून तरंगत्या बेटांचे जाळे आहे, जे <strong>Grand Astral Aether-Way Network</strong> ने जोडलेले आहे. जमिनीखाली <strong>Gravitational Anchors (<em>Guru-Keela</em>)</strong> बसवलेले आहेत.</p>
+<pre><code class="language-">                        [ NORTH: PARVATA-KHANI RANGE ]
+                        (Mountain Mining Clans / Shaila-Gadha)
+                                    │
+   [ WEST: VAJRA-FOUNDRY BELT ] ───┼─── [ EAST: ARANYA-ASHRAM FORESTS ]
+   (Magma-Foundry Kingdom)           │     (Forest-Ashram Republic)
+   Vajra-Nagara                    │     Tapovana / Vanarajya
+                                    │
+                        [ CENTER: MADHYA-NAGARA ]
+                        (Neutral Free City / Grand Crossroads)
+                                    │
+   [ SOUTH-WEST: MORTAL COAST ] ───┼─── [ SOUTH-EAST: SURYA-KSHETRA ]
+   (Coastal Merchant League)       │     (Sun-Cult Free Port)
+   Samudra-Pattanam               │     Surya-Dwipa
+                                    │
+                        [ FAR EAST: NASHVAR SEA (MORTAL SEA) ]
+                        (Ordinary mortal ocean — no Kshira access)</code></pre>
+<hr>
+<h3 id="1_2_major_geopolitical_powers">1.2 Major Geopolitical Powers (पाच महासत्ता)</h3>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>Power</th>
+<th>Capital</th>
+<th>Government</th>
+<th>Economic Base</th>
+<th>Military Flavor</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Vajra-Foundry Kingdom (Vajra-Rajya)</strong></td>
+<td>Vajra-Nagara</td>
+<td>Forge-Monarchy (Raja-Yantra)</td>
+<td>मॅग्मा-फोर्ज, शस्त्रे, aether-craft</td>
+<td>बोल्ट-ॲक्शन रायफल्स, आर्मर्ड मॅग्मा-वाहने, तोफखाना</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Aranya-Ashram Republic (Aranya-Gana-Rajya)</strong></td>
+<td>Tapovana</td>
+<td>Rishi-Sabha (ऋषी परिषद)</td>
+<td>औषधी वनस्पती, Aether-Crystals</td>
+<td>चिलखती पशू सेना, धनुर्धारी, जंगल रक्षक</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Parvata-Khani Mining Clans (Shaila-Kula-Sangha)</strong></td>
+<td>Shaila-Gadha</td>
+<td>Clan Oligarchy (खाण प्रमुख)</td>
+<td>पोलाद, कोळसा, सोने, हिरे</td>
+<td>खाण कामगार मिलिशिया, बोगद्यातील लढाऊ</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Mortal-Coastal Merchant League (Samudra-Vanijya-Sangha)</strong></td>
+<td>Samudra-Pattanam</td>
+<td>Merchant Council (व्यापारी परिषद)</td>
+<td>सागरी व्यापार, मोती, बंदरे</td>
+<td>खाजगी जहाजे, बंदर तोफा, पशू दूत</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Madhya-Nagara Free City (Madhya-Nagara)</strong></td>
+<td>Madhya-Nagara</td>
+<td>Neutral Free Council (तटस्थ परिषद)</td>
+<td>बँकिंग, व्यापार, वृत्तपत्रे</td>
+<td>शहर संरक्षक (Nagar-Rakshak), भाडोत्री सैन्य</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h4 id="1__vajra-foundry_kingdom">1. Vajra-Foundry Kingdom (वज्र साम्राज्य)</h4>
+<ul>
+<li><strong>राजधानी:</strong> Vajra-Nagara — पितळी घुमट, घड्याळांचे टॉवर्स, फोर्जचे धुराडे आणि <strong>aether-craft yards</strong>चे औद्योगिक शहर.</li>
+<li><strong>प्रशासन:</strong> <strong>Forge-Monarchy (Raja-Yantra)</strong>. राजाला सल्ला देण्यासाठी <em>Yantra-Parishad</em> असते. गादीवर बसण्यापूर्वी वारसाला <em>Yantra-Pariksha</em> पास करावी लागते.</li>
+<li><strong>अर्थव्यवस्था:</strong> मॅग्मा-फोर्ज इंजिने, बोल्ट-ॲक्शन रायफल्स, तोफा आणि टेलिग्राफचे साहित्य बनवणारा मुख्य पुरवठादार.</li>
+<li><strong>लष्कर:</strong> खंदक युद्धात निष्णात बोल्ट-ॲक्शन रायफल दल; <strong>आर्मर्ड मॅग्मा-वाहने</strong> आणि स्फटिक तोफखाना.</li>
+</ul>
+<h4 id="2__aranya-ashram_republic_______-">2. Aranya-Ashram Republic (अरण्य-आश्रम प्रजासत्ताक)</h4>
+<ul>
+<li><strong>राजधानी:</strong> Tapovana — जंगलात वसलेले आश्रम, मंदिरे आणि वनौषधींचे बगीचे.</li>
+<li><strong>प्रशासन:</strong> <strong>Rishi-Sabha</strong> — १२ ऋषींचे निष्पक्ष मंडळ. एकमत (<em>Sammati</em>) झाल्याशिवाय कोणताही कायदा होत नाही.</li>
+<li><strong>अर्थव्यवस्था:</strong> औषधी वनस्पती, जंगलातील Aether-Crystals, आणि पशूंची लोकर/कापड.</li>
+<li><strong>लष्कर:</strong> बॉन्डेड पशू सेना (लांडगे, चिलखती हत्ती), मंत्र-धनुर्धारी आणि जंगल रक्षक.</li>
+</ul>
+<h4 id="3__parvata-khani_mining_clans_______-">3. Parvata-Khani Mining Clans (पर्वत-खाण संघ)</h4>
+<ul>
+<li><strong>राजधानी:</strong> Shaila-Gadha — डोंगराच्या कपारीत कोरलेले बोगदे, खाणी आणि रत्न-भांडारे.</li>
+<li><strong>प्रशासन:</strong> <strong>Clan Oligarchy</strong> — सात खाण कुळांचे (Shaila, Loha, Ratna, Khaani, Dhatu, Shila, Giri) प्रमुख.</li>
+<li><strong>अर्थव्यवस्था:</strong> लोखंड, कोळसा, तांबे, सोने आणि मौल्यवान खनिजांचा जगातील सर्वात मोठा साठा.</li>
+</ul>
+<h4 id="4__mortal-coastal_merchant_league________-">4. Mortal-Coastal Merchant League (समुद्र-वाणिज्य संघ)</h4>
+<ul>
+<li><strong>राजधानी:</strong> Samudra-Pattanam — गोदी, गोदामे, मसाल्यांचे बाजार आणि दीपगृहांचे सुंदर बंदर.</li>
+<li><strong>प्रशासन:</strong> <strong>Merchant Council</strong> — १२ व्यापारी घराण्यांचे प्रमुख.</li>
+<li><strong>अर्थव्यवस्था:</strong> सागरी व्यापार, मोती, मीठ, मासे आणि आयात-निर्यात.</li>
+</ul>
+<h4 id="5__madhya-nagara_free_city______-">5. Madhya-Nagara Free City (मध्य-नगर मुक्त शहर)</h4>
+<ul>
+<li><strong>स्थान:</strong> मध्यवर्ती अक्ष — जिथे सर्व व्यापारी मार्ग आणि <strong>aether-ways</strong> एकत्र येतात.</li>
+<li><strong>प्रशासन:</strong> <strong>Neutral Free Council</strong> — १०००% तटस्थता; कोणत्याही देशाला इथे सैन्य आणण्याची परवानगी नाही.</li>
+<li><strong>अर्थव्यवस्था:</strong> <strong>Grand Astral Exchange</strong> (महा-व्यापार केंद्र) आणि <strong>Prana-Kosha Central Bank</strong> चे मुख्यालय; <em>Astral Samachar</em> वृत्तपत्राचे छापखाने.</li>
+</ul></article>
+    <footer>05_Astral_Realm_Five_Sub_Realms\04_Astral_and_Corrupted_Realms_Worldbuilding.md · 82 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

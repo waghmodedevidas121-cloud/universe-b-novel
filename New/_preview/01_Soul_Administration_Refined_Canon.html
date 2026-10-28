@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04. Soul Administration — Refined Canon — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">03_Soul_Administration\01_Soul_Administration_Refined_Canon.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/03_Soul_Administration/01_Soul_Administration_Refined_Canon.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h3" href="#0_1_revision_log___v2_0______-">0.1 Revision Log — v2.0 (लेखक-मंजूर सुधारणा)</a><a class="h2" href="#0__document_mandate___jurisdictional_scope">0. Document Mandate & Jurisdictional Scope</a><a class="h3" href="#scope_outline">Scope Outline:</a><a class="h2" href="#1__the_triad_of_soul_administration_______-">1. The Triad of Soul Administration (आत्मा-प्रशासन त्रिमूर्ती)</a><a class="h3" href="#1_1_office_of_yama____-______chief_soul_administrator">1.1 Office of Yama (यम-पद) — Chief Soul Administrator</a><a class="h3" href="#1_2_office_of_vidhata________-______destiny_architect___soul_collector">1.2 Office of Vidhata (विधाता-पद) — Destiny Architect & Soul Collector</a><a class="h3" href="#1_3_office_of_chitragupta____________-______universal_ledger_keeper">1.3 Office of Chitragupta (चित्रगुप्त-पद) — Universal Ledger Keeper</a><a class="h3" href="#1_4_strict_separation_of_duties_______-___________________canon_lock">1.4 Strict Separation of Duties (कार्य-विभाजन निषिद्धता) [CANON LOCK]</a><a class="h2" href="#2__ananta__________the_system_core__canon_lock">2. Ananta (अनंत) — The System Core [CANON LOCK]</a><a class="h3" href="#2_1_metaphysical_identity___operational_traits">2.1 Metaphysical Identity & Operational Traits</a><a class="h3" href="#2_2_sound_of_the_world__ananta-dhvani_-______________canon_lock">2.2 Sound of the World (Ananta-Dhvani - जगाचा आवाज) [CANON LOCK]</a><a class="h3" href="#2_3_read-only___append-only_master_archive">2.3 Read-Only / Append-Only Master Archive</a><a class="h2" href="#3__route_a__official_soul_migration______________-">3. Route A: Official Soul Migration (अधिकृत आत्मा-स्थलांतर)</a><a class="h3" href="#3_0_pre-stage___collection___two-yama_handover__canon_lock">3.0 Pre-Stage — Collection & Two-Yama Handover [CANON LOCK]</a><a class="h3" href="#3_1_the_compatibility_audit__five_inviolable_components">3.1 The Compatibility Audit: Five Inviolable Components</a><a class="h2" href="#4__route_b__unauthorized___unexpected_arrival">4. Route B: Unauthorized / Unexpected Arrival (अनधिकृत आगमन)</a><a class="h3" href="#4_0_the_lawful_entry_distinction__f-02_resolved">4.0 The Lawful Entry Distinction [F-02 Resolved]</a><a class="h3" href="#4_1_the_5-stage_route_b_state_transition_machine__f-07_resolved">4.1 The 5-Stage Route B State Transition Machine [F-07 Resolved]</a><a class="h3" href="#4_2_pratigraha_intake___setuvrata_s_stamp___status__rikta___unindexed____canon_lock">4.2 Pratigraha Intake — Setuvrata's Stamp [STATUS: RIKTA / UNINDEXED] [CANON LOCK]</a><a class="h3" href="#4_3_lekhya_s_karmic_verification_bureau">4.3 Lekhya's Karmic Verification Bureau</a><a class="h3" href="#4_4_dv_ra_gate___power_bands__canon_lock">4.4 Dvāra Gate & Power Bands [CANON LOCK — यंत्रणा]</a><a class="h3" href="#4_5_blank_destiny_mechanics________________________canon_lock___critical">4.5 Blank Destiny Mechanics (रिक्त नियती यंत्रणा) [CANON LOCK / CRITICAL]</a><a class="h3" href="#4_6_official_soul_id_string_format">4.6 Official Soul ID String Format</a><a class="h2" href="#5__karmic_bond_mechanics___pr__a-s_tra_______-">5. Karmic Bond Mechanics — Prāṇa-Sūtra (प्राण-सूत्र)</a><a class="h3" href="#5_1_vessel_mismatch___rejection_tiers">5.1 Vessel Mismatch & Rejection Tiers</a><a class="h2" href="#6__field_logistics___armored_custody">6. Field Logistics & Armored Custody</a><a class="h3" href="#6_1_high_transit_overseer_niyam">6.1 High Transit Overseer Niyam (नियम)</a><a class="h3" href="#6_2_dootan_s_white_doot-y_nas____the_white_couriers">6.2 Dootan’s White Doot-Yānas — The White Couriers (पांढरी दूतवाहक)</a><a class="h2" href="#7__master_integration_flow__complete_soul_lifecycle">7. Master Integration Flow: Complete Soul Lifecycle</a></nav>
+  <div>
+    <article><h1 id="04__soul_administration___refined_canon__v2_0">04. Soul Administration — Refined Canon (v2.0)</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\03_Soul_Administration\01_Soul_Administration_Refined_Canon.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#soul-administration</span> <span class="badge">#triad-offices</span> <span class="badge">#yama</span> <span class="badge">#vidhata</span> <span class="badge">#chitragupta</span> <span class="badge">#ananta-core</span> <span class="badge">#prana-sutra</span> <span class="badge">#route-a</span> <span class="badge">#route-b</span> <span class="badge">#status-rikta</span> <span class="badge">#white-couriers</span> <span class="badge">#dvara-gate</span> <span class="badge">#power-band</span> <span class="badge">#pratigraha</span> <span class="badge">#two-yama-handover</span> <span class="badge">#canon-lock</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official Canonical Soul Lifecycle & Administrative Specification · <strong>Revision 2.0 (२० ऑक्टोबर २०२६)</strong></p>
+<p><strong>Authority:</strong> Universe B मधील आत्म्यांच्या संपूर्ण जीवनचक्र आणि प्रशासकीय कार्यप्रणालीचा हा अधिकृत single-source-of-truth आहे. Merges, unifies, and expands <code>World/27</code>, <code>World/11</code>, <code>World/12</code>, <code>World/16</code>, <code>World/22</code>, and <code>World/23</code>.</p>
+<h3 id="0_1_revision_log___v2_0______-">0.1 Revision Log — v2.0 (लेखक-मंजूर सुधारणा)</h3>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>बदल</th>
+<th>प्रभाव</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>R1</strong></td>
+<td><strong>क्षीर सागर = Singularity Apex</strong> (Divine Realm); बंदर/किनारा/गस्त रद्द. Core मध्ये प्रवेश = विलय; फक्त <strong>Soul Corridor</strong>.</td>
+<td>जुना बंदर-मॉडेल काढला</td>
+</tr>
+<tr>
+<td><strong>R2</strong></td>
+<td><strong>विधाता स्वतः आत्म-संकलन करतो</strong>; मूळ विश्वाच्या यमाकडून <strong>Release Seal</strong> घेतल्यावरच custody.</td>
+<td>नवीन §3.0 + CS-1…CS-6</td>
+</tr>
+<tr>
+<td><strong>R3</strong></td>
+<td><strong>Dvāra Gate</strong> — karma + soul purity + gating standard वाचून <strong>Power Band</strong>; band = छत + affinity, तंत्र नाही.</td>
+<td>नवीन §4.4</td>
+</tr>
+<tr>
+<td><strong>R4</strong></td>
+<td><strong>सेतुव्रता = Pratigraha गोदामाचा वॉर्डन</strong> (सागर-सीमा रक्षक नाही).</td>
+<td>§4.2, §6.1 बदलले</td>
+</tr>
+<tr>
+<td><strong>R5</strong></td>
+<td><strong>Route B = अनधिकृत आगमन</strong> — मुख्य कारण <strong>summoning magic</strong>; दुर्मिळ अपवाद म्हणून void drift टिकवला (कोणतेही नामनिर्देशित पात्र नाही).</td>
+<td>§4.0–§4.1 बदलले</td>
+</tr>
+<tr>
+<td><strong>R6</strong></td>
+<td><strong>Conduit = custody line</strong>; शक्तिशाली जिवंत व्यक्ती प्रवासी नाही; power = containment grade, सुविधा नाही.</td>
+<td>§6.2 विस्तारित</td>
+</tr>
+</tbody></table></div>
+<blockquote><strong>टीप:</strong> <code>Pratigraha</code>, <code>Ātma-Patra</code>, <code>Band 0–IV</code> ही नावे <strong>प्रस्तावित परिभाषा</strong> आहेत; त्यांची यंत्रणा केनन आहे, नावांची अंतिम मंजुरी बाकी. <code>[STATUS: RIKTA / UNINDEXED]</code> हा स्थिर शब्दसमूह कायम आहे.</blockquote>
+<hr>
+<h2 id="0__document_mandate___jurisdictional_scope">0. Document Mandate & Jurisdictional Scope</h2>
+<p><em>(दस्तऐवज हेतू व कार्यकक्षा) [CANON LOCK]</em></p>
+<p>हा दस्तऐवज Universe B च्या <strong>Soul Administration ची सुरुवातीपासून शेवटपर्यंतची संपूर्ण कार्यप्रणाली</strong> स्पष्ट करतो—एका विलग झालेल्या आत्म्याच्या आगमनापासून ते भौतिक शरीरात (<em>Sthūla-Śarīra</em>) कायदेशीररित्या बांधले जाण्यापर्यंत.</p>
+<h3 id="scope_outline">Scope Outline:</h3>
+<ol>
+<li><strong>The Triad of Soul Administration:</strong> <strong>Yama</strong>, <strong>Vidhata</strong>, आणि <strong>Chitragupta</strong> यांची स्वतंत्र घटनात्मक पदे.</li>
+<li><strong>Ananta (The System Core):</strong> तात्विक स्वरूप, ध्वनी लहरी (<em>Sound of the World</em>), आणि बदल न करता येणारे Audit Logs.</li>
+<li><strong>Route A (Official Soul Migration):</strong> अधिकृत ६-स्तरीय पुनर्जन्म कार्यप्रणाली + <strong>Pratigraha Official Dock (Stage 5B)</strong>.</li>
+<li><strong>Route B (Unauthorized / Unexpected Arrival):</strong> <strong>summoning magic</strong> (मुख्य कारण) किंवा दुर्मिळ void drift मुळे आगमन; Soul Corridor → <strong>Dvāra Gate</strong> → <strong>Pratigraha</strong> गोदाम, Warden Setuvrata चा <code>[STATUS: RIKTA / UNINDEXED]</code> शिक्का, Lekhya ची पडताळणी, आणि Blank Destiny चे नियम.</li>
+<li><strong>Karmic Bond (<em>Prāṇa-Sūtra</em>) Mechanics:</strong> त्रिस्तरीय साखळी (<em>Ātman → Sūkṣma-Śarīra → Sthūla-Śarīra</em>), शरीराने आत्मा नाकारल्याची लक्षणे आणि उपाय.</li>
+<li><strong>Field Logistics & Custody:</strong> High Transit Overseer Niyam, Dootan चे <strong>White Doot-Yānas</strong> (<em>The White Couriers</em>), आणि सीलबंद पितळी सिलिंडर्सचा प्रोटोकॉल — सर्व divine conduit वर, rail/steam वर नाही.</li>
+</ol>
+<hr>
+<h2 id="1__the_triad_of_soul_administration_______-">1. The Triad of Soul Administration (आत्मा-प्रशासन त्रिमूर्ती)</h2>
+<p><em>(यम, विधाता व चित्रगुप्त — घटनात्मक अधिकार) [CANON LOCK]</em></p>
+<pre><code class="language-">                    [ SUPREME TRINITY · ROOT CODE ]
+                    (Brahma · Vishnu · Shiva — Supreme Source)
+                                   │
+                    [ ANANTA · THE SYSTEM CORE ]
+                    (Rule Executor · Sound of the World · Append-Only Archive)
+                                   │
+           ┌───────────────────────┼───────────────────────┐
+           ▼                       ▼                       ▼
+     [ YAMA ]                [ VIDHATA ]             [ CHITRAGUPTA ]
+     Chief Administrator     Destiny Architect       Universal Ledger Keeper
+     Justice &amp; Karmic Audit  Destiny Architecture    Soul ID Generation
+     Transit Clearance       Prana-Sutra Allocation  Past-Life Indexation
+     Dissolution Order       Physical Vessel Binding Timestamp Authority</code></pre>
+<p>ही तीन पदे Divine High Council Realm (सभा-लोक) मध्ये स्वायत्त घटनात्मक <strong>Upadhis</strong> म्हणून बसतात. त्यांच्यात <strong>कोणताही स्वार्थ किंवा भ्रष्टाचार नसतो</strong> आणि ती Divine Delegates (Prajapati, Narada, Rudra) पासून पूर्णपणे स्वतंत्र आहेत.</p>
+<h3 id="1_1_office_of_yama____-______chief_soul_administrator">1.1 Office of Yama (यम-पद) — Chief Soul Administrator</h3>
+<ul>
+<li><strong>मुख्य घटनात्मक अधिकार:</strong> अंतिम न्याय, मृत्यू, कर्माचे ऑडिट आणि संक्रमण मंजुरी (Transit Clearance).</li>
+<li><strong>प्रमुख कार्ये:</strong></li>
+</ul>
+<ol>
+<li><em>Justice (न्याय):</em> जीवाच्या आयुष्यभराच्या कर्माचे निष्पक्ष मूल्यमापन; पुण्य (<em>Puṇya</em>) आणि पापाचे (<em>Pāpa</em>) वर्गीकरण.</li>
+<li><em>Transit Clearance (संक्रमण परवानगी):</em> Universe B मध्ये येणाऱ्या प्रत्येक अधिकृत आत्म्यावर <strong>Yama चे Clearance Seal</strong> असणे बंधनकारक आहे. Route B मधील अनपेक्षित आत्म्यांना आधी <em>Detected Unindexed Arrival</em> मानले जाते — कारण त्यांच्याकडे <strong>मूळ विश्वाच्या यमाचा Release Seal नसतो</strong>.</li>
+<li><em>Karmic Audit (कर्म-ऑडिट):</em> Chitragupta च्या नोंदींवरून कर्माचे अंतिम ताळेबंद काढणे; यावरूनच Vidhata नशीब लिहितो.</li>
+<li><em>Dissolution Order (अंतिम विलयन हुकूम):</em> पूर्णपणे दूषित झालेल्या आत्म्यांना अंतिम विसर्जन कक्षात (<em>Maha-Vilayana</em>) पाठवण्याचा <strong>अधिकार फक्त Yama कडे आहे</strong>. इतर कोणालाही हा अधिकार नाही.</li>
+<ul>
+<li><strong>Strict Judicial Separation [CANON LOCK / RESOLVED]:</strong> Yama हा केवळ <strong>न्यायाधीश आणि ऑडिटर</strong> आहे, नशीब लिहिणारा लेखक नाही. नशिबाच्या वादात Yama फक्त <strong>कायदेशीर कर्माचे नियम तपासतो</strong>; तो <strong>नशिबाचा एक शब्दही लिहू किंवा बदलू शकत नाही</strong>.</li>
+</ul>
+</ol>
+<h3 id="1_2_office_of_vidhata________-______destiny_architect___soul_collector">1.2 Office of Vidhata (विधाता-पद) — Destiny Architect & Soul Collector</h3>
+<ul>
+<li><strong>मुख्य घटनात्मक अधिकार:</strong> आत्म-संकलन (इतर विश्वांतून), नशिबाची रचना आणि त्रिस्तरीय कर्मबंधनाचे (<em>Prāṇa-Sūtra</em>) सार्वभौम व्यवस्थापन.</li>
+<li><strong>प्रमुख कार्ये:</strong></li>
+</ul>
+<ol>
+<li><em>Soul Collection & Custody (आत्म-संकलन):</em> योग्य आत्मा निवडणे, त्या विश्वाच्या <strong>यमाकडे <code>Ātma-Nirgama Patra</code></strong> ने विनंती करणे, <strong>Purṇa-Karma प्रमाणपत्र + Release Seal</strong> मिळाल्यावरच ताबा घेणे. तो आत्मा <strong>चोरत नाही</strong> आणि नियती पूर्ण होण्याआधी <strong>उचलत नाही</strong> (§3.0).</li>
+<li><em>Destiny Architecture (नियती-स्थापत्य):</em> Route A आत्म्यांसाठी <strong>Linear (Written) Destiny narrative (<em>Lihito</em>)</strong> लिहिणे—जन्मकुळ, आयुष्यातील महत्त्वाचे टप्पे (<em>Key Turns</em>), आणि कर्माची दिशा ठरवणे.</li>
+<li><em>Prāṇa-Sūtra Allocation (कर्मबंध वाटप):</em> आत्म्याला सूक्ष्म शरीर आणि स्थूल शरीराशी जोडणारी जीवनदोरी बांधणे. हा अधिकार <strong>फक्त Vidhata कडेच आहे</strong>.</li>
+<li><em>Physical Vessel Binding (शरीर-बंधन):</em> जन्माच्या वेळी किंवा नवीन शरीर देताना आत्म्याला मांसाच्या शरीराशी घट्ट जोडणे.</li>
+<li><em>Sole Correction Authority [CANON LOCK / RESOLVED]:</em> जेव्हा एखाद्या नशिबात विसंगती येते किंवा शरीर आत्मा नाकारते, तेव्हा <strong>केवळ Vidhata कडेच दुरुस्ती (Corrective Entry) लिहिण्याचा अधिकार असतो</strong>. Yama फक्त त्या दुरुस्तीला कायदेशीर मंजुरी देतो.</li>
+<ul>
+<li><strong>कडक बंदी:</strong> Vidhata स्वतः कोणताही न्यायालयीन निर्णय देऊ शकत नाही, कर्माचे पाप-पुण्य माफ करू शकत नाही, किंवा <strong>Power Band</strong> ठरवू शकत नाही — ते वाचन <strong>Dvāra Gate</strong> करते (§4.4).</li>
+</ul>
+</ol>
+<h3 id="1_3_office_of_chitragupta____________-______universal_ledger_keeper">1.3 Office of Chitragupta (चित्रगुप्त-पद) — Universal Ledger Keeper</h3>
+<ul>
+<li><strong>मुख्य घटनात्मक अधिकार:</strong> वैश्विक नोंदी ठेवणे, आत्म्याची ओळख निश्चित करणे आणि पूर्वजन्मांचे इंडेक्सिंग.</li>
+<li><strong>प्रमुख कार्ये:</strong></li>
+</ul>
+<ol>
+<li><em>Soul ID Generation (आत्मा-ओळख निर्मिती):</em> प्रत्येक आत्म्याचा अधिकृत कोड—<strong>Soul ID</strong>—तयार करणे, ज्यामध्ये कुळ, स्वभाव आणि क्षमता नोंदवलेल्या असतात.</li>
+<li><em>Past-Life Indexation (पूर्वजन्म निर्देशन):</em> मागच्या जन्मातील कर्मे, अपूर्ण राहिलेल्या प्रतिज्ञा आणि कर्जांचे पद्धतशीर वर्गीकरण.</li>
+<li><em>Timestamp Authority (समय-हक्क):</em> सर्व अधिकृत नोंदींवर अधिकृत वैश्विक वेळ (Timestamp) टाकण्याचा अधिकार फक्त चित्रगुप्ताच्या कार्यालयाला आहे.</li>
+<li><em>Blue vs. Red Ink Seals (मुद्रांक प्रणाली):</em></li>
+<ul>
+<li><strong>Blue Ink (नील-मुद्रा):</strong> नियमित, कायदेशीररित्या पूर्ण झालेल्या नोंदी.</li>
+<li><strong>Red-Ink Seal (रक्त-मुद्रा):</strong> त्रुटी किंवा संशय आल्यास त्वरित ॲडमिनिस्ट्रेटिव्ह फ्रीझ. रेड सीलची माहिती <strong>24 तासांच्या आत</strong> Chief Sage कडे सादर करावी लागते, अन्यथा सील आपोआप रद्द होतो.</li>
+</ul>
+</ol>
+<h3 id="1_4_strict_separation_of_duties_______-___________________canon_lock">1.4 Strict Separation of Duties (कार्य-विभाजन निषिद्धता) [CANON LOCK]</h3>
+<pre><code class="language-">[ SOVEREIGN DOMAIN ]                          [ FORBIDDEN OVERREACH ]
+Yama:        Justice + Clearance Seal          ──► Cannot author destiny or issue Soul IDs.
+Vidhata:     Destiny + Prana-Sutra + Vessel    ──► Cannot adjudicate karma or dissolve souls.
+Chitragupta: Records + Soul ID + Timestamps    ──► Cannot order fate or issue clearance seals.</code></pre>
+<ul>
+<li><strong>घटनात्मक कारण:</strong> एकाधिकारशाही आणि पक्षपात रोखण्यासाठी ही सत्ता विभागणी केलेली आहे. कोणतीही एक व्यक्ती एकाच वेळी परवाना देणे, नशीब लिहिणे आणि आयडी देणे अशी तिन्ही कामे करू शकत नाही.</li>
+</ul>
+<hr>
+<h2 id="2__ananta__________the_system_core__canon_lock">2. Ananta (अनंत) — The System Core [CANON LOCK]</h2>
+<h3 id="2_1_metaphysical_identity___operational_traits">2.1 Metaphysical Identity & Operational Traits</h3>
+<div class="table-container"><table><thead><tr>
+<th>Metaphysical Trait</th>
+<th>Canonical Rule & Behavior</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Soulless (आत्मा-विरही)</strong></td>
+<td>Ananta ला स्वतःचा कोणताही अहंकार, भीती किंवा ओळख नाही. हे एक निर्जीव, निष्पक्ष सिस्टीम आहे.</td>
+</tr>
+<tr>
+<td><strong>Emotionless (भावविहीन)</strong></td>
+<td>दया, राग, किंवा विनवणीने Ananta च्या नियमांमध्ये कोणताही बदल होत नाही.</td>
+</tr>
+<tr>
+<td><strong>Zero Favoritism (निष्पक्षता)</strong></td>
+<td>Devas, Asuras, Humans आणि Beasts सर्वांसाठी एकच नियम लागू असतो.</td>
+</tr>
+<tr>
+<td><strong>No Tenure (सेवा-कालसीमा निषिद्ध)</strong></td>
+<td>Ananta ची कोणतीही मुदत नसते, हे कधीही रिटायर होत नाही किंवा काढून टाकले जाऊ शकत नाही.</td>
+</tr>
+<tr>
+<td><strong>Absolute Immunity (अभेद्यता)</strong></td>
+<td>कोणताही देव, असुर किंवा काळे अस्तित्व Ananta ला हॅक किंवा भ्रष्ट करू शकत नाही.</td>
+</tr>
+<tr>
+<td><strong>Root Code (मूळ कोड)</strong></td>
+<td>हा केवळ Supreme Trinity च्या अधिकारात आहे. फक्त Trinity चे आदेशच मूळ नियम बदलू शकतात.</td>
+</tr>
+</tbody></table></div>
+<h3 id="2_2_sound_of_the_world__ananta-dhvani_-______________canon_lock">2.2 Sound of the World (Ananta-Dhvani - जगाचा आवाज) [CANON LOCK]</h3>
+<p>Ananta कधीही मानवासारखे बोलत नाही; ते केवळ तीन ध्वनी लहरींद्वारे संवाद साधते:</p>
+<pre><code class="language-">┌─────────────────────────────────────────────────────────────────────────────┐
+│                 THE THREE ACOUSTIC CHANNELS OF ANANTA                       │
+├─────────────────────┬───────────────────────────────┬───────────────────────┤
+│ 1. PERSONAL PING    │ Trigger: Individual Kruti     │ Heard by: ONLY that   │
+│    (अंतर्नाद)       │ breakthrough / skill unlock.  │ cultivator&#x27;s soul.    │
+├─────────────────────┼───────────────────────────────┼───────────────────────┤
+│ 2. COSMIC MANDATE   │ Trigger: Supreme Trinity      │ Heard by: ONLY voting │
+│    (वैश्विक घोषणा)   │ constitutional update.        │ Council Upadhi holders│
+├─────────────────────┼───────────────────────────────┼───────────────────────┤
+│ 3. KARMIC TRANSIT   │ Trigger: Soul ID issued,      │ Heard by: Soul precinct│
+│    CHIME (संक्रमण-घंटा)│ Route B arrival logged,      │ officers + the soul   │
+│                     │ Dvāra band recorded,          │ at moment of transit. │
+│                     │ Prana-Sutra sealed.           │                       │
+└─────────────────────┴───────────────────────────────┴───────────────────────┘</code></pre>
+<ul>
+<li><strong>घंटा वाजल्याने कोणतीही मोफत ताकद मिळत नाही:</strong> संक्रमण घंटा हा केवळ प्रशासकीय पावतीचा आवाज आहे. याने <strong>कोणतीही चीट स्किल किंवा फुकट पॉवर मिळत नाही</strong>.</li>
+<li>मेकॅनिकल रेकॉर्डरने हा आवाज रेकॉर्ड करता येत नाही; तो केवळ आत्म्याला जाणवतो.</li>
+</ul>
+<h3 id="2_3_read-only___append-only_master_archive">2.3 Read-Only / Append-Only Master Archive</h3>
+<ul>
+<li>Ananta ची खातेवही <strong>strictly append-only</strong> आहे. जुन्या नोंदी कधीही बदलता किंवा डिलीट करता येत नाहीत.</li>
+<li><strong>Read-Only Access:</strong> Yama, Vidhata, Chitragupta आणि वरिष्ठ अधिकारी फक्त माहिती पाहू शकतात.</li>
+<li><strong>दुरुस्तीचा नियम:</strong> कोणतीही चूक दुरुस्त करण्यासाठी जुन्या आयडीचा संदर्भ देऊन <strong>नवीन Corrective Entry</strong> करावी लागते. मूळ इतिहास कायम राहतो.</li>
+<li><strong>Dvāra Gate वाचन:</strong> प्रत्येक <strong>Power Band reading</strong>, त्याची पुनर्वाचन-नोंद आणि summoning-distortion ध्वज अनंताच्या append-only संग्रहालयात जातात. अनंत band <strong>ठरवत नाही</strong> — ती केवळ नोंदवते.</li>
+</ul>
+<hr>
+<h2 id="3__route_a__official_soul_migration______________-">3. Route A: Official Soul Migration (अधिकृत आत्मा-स्थलांतर)</h2>
+<p><em>(अधिकृत ६-स्तरीय पुनर्जन्म कार्यप्रणाली + Stage 5B official dock) [CANON LOCK]</em></p>
+<p>Route A हा Universe B मध्ये येणाऱ्या आत्म्यांचा अधिकृत कायदेशीर मार्ग आहे. सर्व सहा मुख्य टप्पे (आणि Stage 5B official dock) क्रमानेच पार पाडावे लागतात. त्याआधी <strong>प्रत्येक</strong> आत्म्यासाठी Collection Pre-Stage बंधनकारक आहे:</p>
+<h3 id="3_0_pre-stage___collection___two-yama_handover__canon_lock">3.0 Pre-Stage — Collection & Two-Yama Handover [CANON LOCK]</h3>
+<p>प्रत्येक विश्वाचा स्वतःचा यम असतो. Universe B चा विधाता दुसऱ्या विश्वातून आत्मा <strong>चोरत नाही</strong> — तो त्या विश्वाच्या यमाकडे अधिकृत विनंती करतो.</p>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>टप्पा</th>
+<th>कोण</th>
+<th>काय होते</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><strong>Target Selection</strong></td>
+<td>विधाता (B)</td>
+<td>गरज (band/category) व योग्यता नुसार विशिष्ट आत्मा निवड</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Requisition</strong></td>
+<td>विधाता (B) → मूळ यम</td>
+<td><code>Ātma-Nirgama Patra</code> — कोणता आत्मा, का</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Fate-Completion Audit</strong></td>
+<td><strong>मूळ यम</strong></td>
+<td>नियतीचे सर्व Key Turns पूर्ण? कर्म शिल्लक? प्रतिज्ञा प्रलंबित?</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Release</strong></td>
+<td><strong>मूळ यम</strong></td>
+<td><strong>Purṇa-Karma प्रमाणपत्र + Release Seal</strong> + खातेवही उतारा</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Custody Transfer</strong></td>
+<td>विधाता</td>
+<td>आत्मा ताब्यात; मूळ विश्वाचे अधिकार संपले</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Corridor + Gate</strong></td>
+<td>Dvāra</td>
+<td>karma + purity + standard → <strong>Power Band</strong></td>
+</tr>
+</tbody></table></div>
+<p><strong>Collection Standard (CS-1…CS-6) — विधाता कोणाला निवडतो:</strong></p>
+<div class="table-container"><table><thead><tr>
+<th>#</th>
+<th>निकष</th>
+<th>अपयशास काय होते</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>CS-1</strong></td>
+<td><strong>Purṇa-Karma</strong> — नियतीचे सर्व Key Turns जगले; अनभोगलेले प्रारब्ध शिल्लक नाही</td>
+<td>आत्मा त्या विश्वात परत</td>
+</tr>
+<tr>
+<td><strong>CS-2</strong></td>
+<td><strong>No Pending Vow</strong> — प्रतिज्ञा, ऋण, शाप-मुक्तीची अट पूर्ण</td>
+<td>तोच विश्वात थांबतो</td>
+</tr>
+<tr>
+<td><strong>CS-3</strong></td>
+<td><strong>Grade Fit</strong> — आत्म्याचा band व गरज यांची जुळणी</td>
+<td>निवड रद्द</td>
+</tr>
+<tr>
+<td><strong>CS-4</strong></td>
+<td><strong>No Active Seal</strong> — सात वैश्विक सील / काळा संसर्ग / दैवी बंधन नाही</td>
+<td>quarantine</td>
+</tr>
+<tr>
+<td><strong>CS-5</strong></td>
+<td><strong>Source Consent</strong> — मूळ यमाचा Release Seal अनिवार्य</td>
+<td>आत्मा हलत नाही</td>
+</tr>
+<tr>
+<td><strong>CS-6</strong></td>
+<td><strong>Ledger Extract</strong> — चित्रगुप्ताला मूळ खातेवहीचा उतारा</td>
+<td>अपूर्ण फाईल = Red-Ink</td>
+</tr>
+</tbody></table></div>
+<blockquote><strong>सुवर्ण नियम:</strong> <em>"नियती पूर्ण झाली नाही तर आत्मा मुक्त होत नाही."</em> हेच योग्य स्थलांतर आणि अपहरण (summoning) यातील फरक आहे.</blockquote>
+<pre><code class="language-">[ STAGE 0: COLLECTION &amp; TWO-YAMA HANDOVER ] ─── VIDHATA + SOURCE YAMA
+Purṇa-Karma तपासणी ──► Release Seal ──► custody विधाताकडे.
+        │
+        ▼
+[ STAGE 1: COMPATIBILITY AUDIT (सुसंगती पडताळणी) ] ─── YAMA
+पाच निकषांवर तपासणी; प्रवेश मंजुरी किंवा नकार.
+        │
+        ▼
+[ STAGE 2: SOUL ID GENERATION (आत्मा-ओळख निर्मिती) ] ─── CHITRAGUPTA
+कुळ, जन्मजात गुण आणि क्षमतांची अधिकृत नोंद.
+        │
+        ▼
+[ STAGE 3: SYSTEM REVIEW (प्रणाली पुनरावलोकन) ] ─── ANANTA
+Read-only नियमांची तपासणी; मंजुरी किंवा दुरुस्तीची मागणी.
+        │
+        ▼
+[ STAGE 4: LINEAR DESTINY MAPPING (रेषीय नियती-मांडणी) ] ─── VIDHATA
+Lihito (लिखित नशीब): जन्मकुळ, आयुष्यातील मुख्य टप्पे आणि अंतिम शिक्का.
+        │
+        ▼
+[ STAGE 5: PRANA-SUTRA ALLOCATION (कर्मबंध वाटप) ] ─── VIDHATA
+आत्म्याला सूक्ष्म शरीराशी जोडणारी दोरी बांधणे.
+        │
+        ▼
+[ STAGE 5B: PRATIGRAHA OFFICIAL DOCK (Route A lane) ] ─── SETUVRATA
+Scheduled sealed Ātma-Patra ──► intake log (RIKTA stamp नाही) ──► Lekhya verify.
+        │
+        ▼
+[ STAGE 6: APPROVED INCARNATION (अधिकृत अवतरण) ]
+भौतिक जन्माच्या वेळी शरीराशी जोडणे; Karmic Transit Chime वाजतो;
+Ananta च्या आर्काइव्हमध्ये कायमची नोंद होते.</code></pre>
+<blockquote><strong>Route A official dock (X7 resolved):</strong> कायदेशीर आत्मेही <strong>Pratigraha</strong> मधूनच येतात, पण वेगळ्या <strong>scheduled official lane</strong> मधून. त्यांना <code>[STATUS: RIKTA / UNINDEXED]</code> शिक्का नाही, Red-Ink नाही; Release Seal सह सीलबंद Ātma-Patra येते, सेतुव्रत फक्त receipt नोंद करतो, लेख्या पडताळणी करते आणि नंतर अवतरण होते. Route B हा quarantine lane वापरतो आणि RIKTA marker मारतो. दोन्ही मार्ग एकाच गोदामातून, वेगळ्या intake desks मधून जातात.</blockquote>
+<h3 id="3_1_the_compatibility_audit__five_inviolable_components">3.1 The Compatibility Audit: Five Inviolable Components</h3>
+<p>या पाच निकषांची तपासणी स्वतंत्रपणेच केली जाते:</p>
+<ol>
+<li><strong>Conduct (आचरण):</strong> मागच्या जन्मातील धर्मपालन आणि नैतिक चुका.</li>
+<li><strong>Desire & Attachment (इच्छा / आसक्ती):</strong> वासना आणि मानसिक आसक्तीची दिशा (<em>Vāsanā</em>).</li>
+<li><strong>State of the Tri-Gunas (त्रिगुण स्थिति):</strong> सत्व, रज आणि तम गुणांचे अचूक प्रमाण.</li>
+<li><strong>Karmic Results (कर्म-फल अवस्था):</strong> संचित कर्म आणि सध्या भोगायचे प्रारब्ध कर्म यातील फरक.</li>
+<li><strong>Liberation Inquiry (मुक्ति-प्रश्न):</strong> आत्म्याला मोक्ष मिळाला आहे की तो अजूनही जन्म-मरणाच्या चक्रात बांधलेला आहे याची खात्री.</li>
+</ol>
+<hr>
+<h2 id="4__route_b__unauthorized___unexpected_arrival">4. Route B: Unauthorized / Unexpected Arrival (अनधिकृत आगमन)</h2>
+<p><em>(summoning magic व दुर्मिळ void drift) [CANON LOCK / RESOLVED]</em></p>
+<h3 id="4_0_the_lawful_entry_distinction__f-02_resolved">4.0 The Lawful Entry Distinction [F-02 Resolved]</h3>
+<ul>
+<li><strong>Route B लगेच कायदेशीर मानला जात नाही:</strong> या आत्म्यांकडे <strong>मूळ विश्वाच्या यमाचा Release Seal नसतो</strong>. त्यांना <strong>Detected Unindexed Arrival</strong> मानले जाते.</li>
+<li><strong>दोन आगमन-वेक्टर:</strong></li>
+</ul>
+<ol>
+<li><strong>B-1 — Summoning Extraction (आवाहन-अपहरण):</strong> summoning magic ने आत्मा नियती पूर्ण होण्याआधीच ओढला जातो. हे <strong>अनपेक्षित आत्म्यांचे मुख्य कारण</strong> आहे. मूळ यमाला विचारले जात नाही → release नाही.</li>
+<li><strong>B-2 — Void Drift (वैश्विक प्रवाह):</strong> दुर्मिळ; भेग, आपत्ती किंवा प्रवाह-प्रतिध्वनीने आत्मा corridor मध्ये येतो. हाही release-seal-विरहित अनपेक्षित आगमन आहे.</li>
+<ul>
+<li><strong>तात्पुरता दर्जा:</strong> Warden Setuvrata ने दिलेला दर्जा हा केवळ <strong>क्वारंटाईन/तात्पुरता</strong> असतो.</li>
+<li><strong>कायदेशीर दर्जा कसा मिळतो:</strong></li>
+</ul>
+<li><em>Lekhya Bureau</em> खात्री करतो की आत्म्यावर कोणताही काळा संसर्ग नाही.</li>
+<li><em>Chitragupta</em> त्याला तात्पुरता अनिर्देशित Soul ID देतो.</li>
+<li><em>Vidhata</em> त्या आत्म्याला रिकाम्या मानवी शरीराशी <em>Prāṇa-Sūtra</em> द्वारे कायदेशीररित्या जोडतो.</li>
+<li><em>Yama</em> अंतिम Clearance Seal देतो — तोच प्रवेश कायदेशीर करतो.</li>
+</ol>
+<h3 id="4_1_the_5-stage_route_b_state_transition_machine__f-07_resolved">4.1 The 5-Stage Route B State Transition Machine [F-07 Resolved]</h3>
+<pre><code class="language-">[ STAGE 1: UNAUTHORIZED EXTRACTION / VOID BREACH ]
+summoning circle किंवा दुर्मिळ भेग ──► आत्मा मूळ विश्वातून बाहेर;
+मूळ यमाचा Release Seal नाही ──► fate अपूर्ण असू शकते.
+        │
+        ▼
+[ STAGE 2: SOUL CORRIDOR &amp; DVĀRA GATE ]
+Core मध्ये प्रवेश नाही (K2) ──► gate: karma + purity + standard
+──► तात्पुरता Power Band (summoning मुळे अस्थिर).
+        │
+        ▼
+[ STAGE 3: PRATIGRAHA INTAKE &amp; PROVISIONAL STAMP ]
+direct teleport ──► Yama office ground, Buffer Zone
+──► Setuvrata शिक्का: [ STATUS: RIKTA / UNINDEXED ] ──► containment cylinder.
+        │
+        ▼
+[ STAGE 4: LEKHYA AUDIT &amp; ARCHIVE ESCALATION ]
+चित्रगुप्ताच्या खात्यात तपासणी ──► जुनी नोंद नाही / release seal नाही
+──► Red-Ink अलर्ट ──► Satyaketu escalation.
+        │
+        ▼
+[ STAGE 5: UNCLAIMED MORTAL VESSEL ANCHORING ]
+रिकाम्या मानवी शरीराचे वाटप ──► Vidhata कडून Prāṇa-Sūtra बांधणे
+──► शरीरात प्रवेश ──► जागृती ──► Blank Destiny (Zero cheats!)
+──► Ananta कडून निर्णयांची नोंद.</code></pre>
+<h3 id="4_2_pratigraha_intake___setuvrata_s_stamp___status__rikta___unindexed____canon_lock">4.2 Pratigraha Intake — Setuvrata's Stamp <code>[STATUS: RIKTA / UNINDEXED]</code> [CANON LOCK]</h3>
+<p><strong>Pratigraha</strong> (प्रतिग्रह — प्रस्तावित नाव) हे Yama कार्यालयाच्या मैदानातील प्रचंड आगमन-गोदाम आहे. सेतुव्रता <strong>सागर-किनाऱ्यावर आत्मे अडवत नाही</strong> — किनारा अस्तित्वातच नाही; तो गोदामाचा वॉर्डन आहे. Dvāra Gate वरून direct teleport झालेले सीलबंद cylinders प्राप्त करतो, intake नोंद करतो आणि containment grade सुचवतो.</p>
+<p><strong>दोन intake lanes:</strong></p>
+<ul>
+<li><strong>Route A — Official Dock:</strong> scheduled, Release Seal सह सीलबंद Ātma-Patra; सेतुव्रत फक्त receipt नोंद करतो; <strong>RIKTA marker नाही</strong>, Red-Ink नाही; लेख्या verify → विधाता शरीर-वाटप.</li>
+<li><strong>Route B — Quarantine Dock:</strong> surprise/unindexed; <code>[STATUS: RIKTA / UNINDEXED]</code> marker, Floor D, Red-Ink audit.</li>
+</ul>
+<div class="table-container"><table><thead><tr>
+<th>Administrative Tag</th>
+<th>Precise Canonical Meaning</th>
+</tr></thead><tbody>
+<tr>
+<td><strong><code>RIKTA (रिक्त)</code></strong></td>
+<td><strong>आत्म्याचे नशीब पूर्णपणे कोरे आहे.</strong> भविष्यात काय घडणार याची कोणतीही पूर्वनियोजित कथा नाही. कर्माचे सर्व नियम पूर्ण ताकदीने लागू होतात, पण भविष्य कोरे असते.</td>
+</tr>
+<tr>
+<td><strong><code>UNINDEXED (अनिर्देशित)</code></strong></td>
+<td><strong>चित्रगुप्ताच्या दफ्तरात पूर्वीची कोणतीही नोंद नाही.</strong> पूर्वजन्म, कुळ आणि क्षमता "पेंडिंग" असतात; release seal चा अभावही नोंदवला जातो.</td>
+</tr>
+<tr>
+<td><strong>Provisional Nature</strong></td>
+<td>हा शिक्का केवळ <strong>प्रक्रियेचा तात्पुरता टप्पा</strong> दर्शवतो. याचा अर्थ आत्म्याला नियमांतून सूट मिळाली असा होत नाही; तर "फाइल अधिकृत मार्गाने पुढे पाठवा" असा होतो.</td>
+</tr>
+</tbody></table></div>
+<p>सेतुव्रताच्या अधिकाराच्या मर्यादा: तो आगमन नोंदवतो, तात्पुरती स्थिती मुद्रांकित करतो, containment grade सुचवतो आणि फाईल पुढे पाठवतो. तो <strong>नोंदणीकर्ता</strong> आहे — नियती-निश्चितीकर्ता नाही, न्यायाधीश नाही, आणि Soul ID जारी करणारा नाही.</p>
+<h3 id="4_3_lekhya_s_karmic_verification_bureau">4.3 Lekhya's Karmic Verification Bureau</h3>
+<ul>
+<li><strong>स्थान:</strong> <strong>Pratigraha — Floor D (Ledger Floor)</strong>; पितळी कॅटलॉग, लाखो ड्रॉवर्स आणि सीलबंद फाईल-रांगा.</li>
+<li><strong>तपासणीची कार्यपद्धती:</strong></li>
+</ul>
+<ol>
+<li><em>Soul Signature Scan:</em> आत्म्याची ऊर्जा तपासणे.</li>
+<li><em>Database Matching:</em> जुन्या नोंदींशी जुळवून पाहणे.</li>
+<li><em>Matched Record:</em> जुनी नोंद सापडल्यास कायमच्या <strong>Soul ID</strong> साठी चित्रगुप्ताच्या कार्यालयाकडे पाठवणे; त्यानंतर विधाताकडे शरीर-वाटपासाठी.</li>
+<li><em>Unmatched / Unauthorized Arrival:</em> कोणतीही नोंद किंवा release seal न सापडल्यास Red-Ink Seal लावून वरिष्ठ अधिकारी Satyaketu कडे पाठवणे.</li>
+</ol>
+<h3 id="4_4_dv_ra_gate___power_bands__canon_lock">4.4 Dvāra Gate & Power Bands [CANON LOCK — यंत्रणा]</h3>
+<p><em>(Power allocation: karma + soul purity + gating standard; नावे प्रस्तावित)</em></p>
+<p><strong>तीन इनपुट:</strong></p>
+<div class="table-container"><table><thead><tr>
+<th>इनपुट</th>
+<th>काय मोजले जाते</th>
+<th>स्रोत</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Karma</strong></td>
+<td>संचित/प्रारब्ध/क्रियमाण यांची दिशा — देणे आहे की जमा</td>
+<td>चित्रगुप्ताची खातेवही (gate वाचते, ठरवत नाही)</td>
+</tr>
+<tr>
+<td><strong>Soul Purity (Ātma-Śuddhi)</strong></td>
+<td><strong>मलिन · शुद्ध · निर्मल · विमल</strong> (४ श्रेणी, आकडे नाहीत)</td>
+<td>gate चे थेट वाचन</td>
+</tr>
+<tr>
+<td><strong>Gating Standard</strong></td>
+<td>world-tagged ladder + ५ pillars</td>
+<td>Trinity root code (बदल फक्त त्यांच्या आदेशाने)</td>
+</tr>
+</tbody></table></div>
+<p><strong>Power Bands <code>[PROVISIONAL NOMENCLATURE]</code>:</strong></p>
+<div class="table-container"><table><thead><tr>
+<th>Band</th>
+<th>नाव</th>
+<th>अर्थ</th>
+<th>सामान्यतः कोण</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Band 0</strong></td>
+<td><strong>Baddha (बद्ध)</strong></td>
+<td>कोणतीही अलौकिक access नाही</td>
+<td>बहुसंख्य सामान्य आत्मे</td>
+</tr>
+<tr>
+<td><strong>Band I</strong></td>
+<td><strong>Jāgṛta (जागृत)</strong></td>
+<td>प्राण + तपस्या basics; प्रशिक्षणाने वाढ</td>
+<td>शिस्तबद्ध सामान्य</td>
+</tr>
+<tr>
+<td><strong>Band II</strong></td>
+<td><strong>Siddha (सिद्ध)</strong></td>
+<td>प्रगत प्राण/मंत्र/यंत्र access; T5 छत</td>
+<td>उच्च पुण्य, शुद्ध आत्मे</td>
+</tr>
+<tr>
+<td><strong>Band III</strong></td>
+<td><strong>Ūrdhva (ऊर्ध्व)</strong></td>
+<td>दुर्मिळ; T6–T7 छत; मर्यादित affinity</td>
+<td>निर्मल + कर्म-जमा</td>
+</tr>
+<tr>
+<td><strong>Band IV</strong></td>
+<td><strong>Vimal (विमल)</strong></td>
+<td>अत्यंत दुर्मिळ; <strong>T7 hard cap</strong>; सर्वात रुंद affinity (सर्व categories प्रशिक्षणासाठी उघडतात)</td>
+<td>विमल आत्मे</td>
+</tr>
+</tbody></table></div>
+<blockquote><strong>T7 hard cap:</strong> नश्वर शरीराची कमाल T7 आहे. Band IV चा अर्थ T8–T10 प्रवेश नाही; तो फक्त <strong>T7 पर्यंतच सर्वात रुंद affinity</strong> देतो.</blockquote>
+<p><strong>Gate चे कठोर नियम:</strong></p>
+<ol>
+<li><strong>Band = छत, भेट नाही.</strong> Gate फक्त <strong>capacity ceiling + affinity</strong> देते (कोणते classes उघडतात). <strong>तंत्र, अस्त्र, अधिकार प्रशिक्षणाशिवाय मिळत नाही.</strong></li>
+<li><strong>Route B चे "no cheat" केनन वाचते.</strong> जे आत्म्याने आधीच कमावले नाही ते gate देऊ शकत नाही. रिकाम्या नियतीचा अर्थ "मोफत शस्त्रागार" नाही.</li>
+<li><strong>Yama वरचा नाही.</strong> Yama ने विलयन हुकूम दिला तर gate चालतच नाही.</li>
+<li><strong>Immutable.</strong> वाचन बदलता येत नाही; बदल हवा असेल तर <strong>Corrective Entry</strong> (विधाता अर्ज + Yama मंजुरी) — जुनी नोंद कायम.</li>
+<li><strong>Re-reading</strong> फक्त तीन प्रसंगी: (a) प्राण-सूत्र तुटणे, (b) प्रचंड कर्म-बदल (तपस्या/प्रतिज्ञा-भंग), (c) Trinity हस्तक्षेप.</li>
+<li><strong>Summoning distortion:</strong> अपूर्ण नियती + जबरदस्तीचे ओढणे यामुळे band <strong>अस्थिर</strong> असतो — शक्ती चढ-उतार होते; विकृत वाचन Red-Ink मध्ये जाते.</li>
+</ol>
+<h3 id="4_5_blank_destiny_mechanics________________________canon_lock___critical">4.5 Blank Destiny Mechanics (रिक्त नियती यंत्रणा) [CANON LOCK / CRITICAL]</h3>
+<h4 id="">हे काय आहे:</h4>
+<ul>
+<li><strong>Unindexed Growth Potential:</strong> आधीच ठरलेले नशीब नसल्याने, आत्म्याचे भविष्य पूर्णपणे त्याच्या स्वतःच्या निवडीवर, मेहनतीवर आणि कृतीवर (<em>Kṛyamāṇa Karma</em>) अवलंबून असते.</li>
+<li><strong>Ananta दिशा दाखवत नाही:</strong> Ananta फक्त घडणाऱ्या बदलांची नोंद घेते; ते कधीही मार्ग दाखवत नाही.</li>
+<li><strong>कर्माचे बंधन:</strong> कोरे नशीब म्हणजे कर्मातून सुटका नाही. प्रत्येक कृतीचे पूर्ण परिणाम भोगावेच लागतात.</li>
+<li><strong>Band हा छत आहे, कथा नाही:</strong> gate ने दिलेला band आत्म्याची capacity दाखवतो; तो नियतीचे Key Turns लिहीत नाही किंवा भविष्य ठरवत नाही.</li>
+</ul>
+<h4 id="">हे काय नाही:</h4>
+<ul>
+<li><strong>⚠️ कोणतीही मोफत चीट स्किल नाही. कडक बंदी.</strong> Route B मधून आलेल्या आत्म्याला <strong>कोणतीही मोफत ताकद, गेम मेनू किंवा जादुई स्क्रीन मिळत नाही</strong>.</li>
+<li>प्रगती केवळ शारीरिक सराव, वाचन आणि संकटातील धाडसी कृतीतूनच (<em>Kruti</em>) साध्य होते.</li>
+<li>Route A (लिखित नशीब) आणि Route B (कोरे नशीब) दोघांनाही भौतिक नियम आणि मेहनतीचे निकष सारखेच लागू होतात.</li>
+</ul>
+<h3 id="4_6_official_soul_id_string_format">4.6 Official Soul ID String Format</h3>
+<pre><code class="language-">SOUL-ID: CG / {KUL-CODE} / {EPOCH} / {SERIAL NO.} / {STATUS TAG}
+Example Route A: CG / HUM-EAST / E4 / 004217 / LIHITO-SEALED
+Example Route B: CG / UNREG / E4 / 000198 / RIKTA-UNINDEXED</code></pre>
+<hr>
+<h2 id="5__karmic_bond_mechanics___pr__a-s_tra_______-">5. Karmic Bond Mechanics — Prāṇa-Sūtra (प्राण-सूत्र)</h2>
+<p><em>(बंध-यंत्रणा, सूक्ष्म-शरीर व विसंगती) [CANON LOCK]</em></p>
+<pre><code class="language-">         [ ĀTMAN · आत्मा ]
+                │  ## Link 1: Allocated and sealed exclusively by VIDHATA ##
+                ▼
+ [ SŪKṢMA-ŚARĪRA · सूक्ष्म-शरीर ]
+   Prana-Nadi lattice, mental template, karmic carrier (Soul Template)
+                │  ## Link 2: The Mohor Seal, set exclusively by VIDHATA ##
+                ▼
+ [ STHŪLA-ŚARĪRA · स्थूल-शरीर ]
+   Gross physical vessel (mortal flesh / assigned re-housing body)</code></pre>
+<ul>
+<li><strong>Functional Reality:</strong> <em>Prāṇa-Sūtra</em> ही केवळ <strong>ऊर्जेची वहन करणारी वायर</strong> आहे, विचार नियंत्रित करणारी सिस्टीम नाही. ती जीवंतपणा शरीरात पोहोचवते; पण विचार काय करायचे हे सांगत नाही.</li>
+<li><strong>कायदेशीर अधिकार:</strong> केवळ Vidhata लाच Prāṇa-Sūtra बांधण्याचा आणि सील करण्याचा घटनात्मक अधिकार आहे.</li>
+</ul>
+<h3 id="5_1_vessel_mismatch___rejection_tiers">5.1 Vessel Mismatch & Rejection Tiers</h3>
+<div class="table-container"><table><thead><tr>
+<th>Severity Tier</th>
+<th>Subtle Body (<em>Sūkṣma</em>) Symptoms</th>
+<th>Gross Body (<em>Sthūla</em>) Consequences</th>
+<th>Required Stabilization Protocol</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Tier-1 — Mild Discord</strong></td>
+<td>सौम्य अस्वस्थता; एकाग्रता ढळणे.</td>
+<td>हलका निद्रानाश, डोकेदुखी, तात्पुरता थकवा.</td>
+<td><strong>Self-Correction:</strong> आत्मा नैसर्गिक वातावरणाशी हळूहळू जुळवून घेतो; उपचाराची गरज नसते.</td>
+</tr>
+<tr>
+<td><strong>Tier-2 — Moderate Drift</strong></td>
+<td>सूत्राची लय बिघडणे; ऊर्जेचा प्रवाह विस्कळीत होणे.</td>
+<td>तीव्र खोकला, नाड्यांना सूक्ष्म भेगा, सतत थकवा.</td>
+<td><strong>Lekhya Review & Vidhata Hearing:</strong> Vidhata कडून धाग्याची पुन्हा जुळणी आणि नवीन सील.</td>
+</tr>
+<tr>
+<td><strong>Tier-3 — Vessel Rejection</strong></td>
+<td>प्राण-सूत्र तुटणे; शरीराशी असलेला संपर्क तुटू लागणे.</td>
+<td>अवयव निकामी होणे, रक्ताची उलटी, आत्मा शरीराबाहेर फेकणे.</td>
+<td><strong>Yama Judicial Review:</strong> तात्काळ आणीबाणी; आत्म्याला परत काढून नवीन शरीराची व्यवस्था करणे.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="6__field_logistics___armored_custody">6. Field Logistics & Armored Custody</h2>
+<p><em>(क्षेत्रीय दळणवळण व सुरक्षा जाळे) [CANON LOCK]</em></p>
+<h3 id="6_1_high_transit_overseer_niyam">6.1 High Transit Overseer Niyam (नियम)</h3>
+<ul>
+<li><strong>हुद्दा व क्लिअरन्स:</strong> Grade-1 Field Coordinator, Department D; <strong>Tier 1 Classified Clearance</strong> (दैवी प्रतिनिधींची खरी ओळख माहिती आहे).</li>
+<li><strong>जबाबदारी:</strong> Yama-Loka, Buffer Zone, आणि High Council मधील आत्म्यांच्या सुरक्षित वाहतुकीचे व्यवस्थापन. तो <strong>Pratigraha Conduit Dock व convoy dispatch</strong> चा क्षेत्रीय समन्वयक आहे; <strong>सेतुव्रता गोदाम-वॉर्डन</strong> आहे. नियम <strong>वाहतुकीचा समन्वयक आहे, नशीब ठरवणारा नाही</strong>.</li>
+</ul>
+<h3 id="6_2_dootan_s_white_doot-y_nas____the_white_couriers">6.2 Dootan’s White Doot-Yānas — <em>The White Couriers</em> (पांढरी दूतवाहक)</h3>
+<ul>
+<li><strong>कमांडर:</strong> Dootan (Senior Ledger Courier; Tier 2 Clearance).</li>
+<li><strong>तळ:</strong> <strong>Pratigraha — Conduit Dock (Vahana-Tala)</strong> — Yama कार्यालयाच्या मैदानातील वार्ड-सीलबंद भूमिगत तळ; रूळ नाहीत, वाफ नाही, कोळसा नाही.</li>
+<li><strong>वाहनाचे वैशिष्ट्य:</strong> पितळी-स्फटिक कवचाचे <strong>levitating Doot-Yāna</strong>; स्थिर leyline conduit वर silence मध्ये धावते. बाहेरून <strong>पांढरा aether-glow</strong> दिसतो — हीच <em>पांढरी दूतवाहक</em> convoy ची अधिकृत ओळख.</li>
+<li><strong>Sealed Brass Dispatch Cylinders:</strong></li>
+</ul>
+<ol>
+<li>गुप्त दस्तऐवज आणि संवेदनशील आत्म्यांचे जार शिशाच्या पिशव्यांमध्ये ठेवले जातात.</li>
+<li>झाकणावर जड पितळी पट्ट्या नट-बोल्टने घट्ट आवळल्या जातात.</li>
+<li>दोन रुनिक चाव्यांनी सिलेंडर Doot-Yāna च्या लॉकरमध्ये बंद केले जाते.</li>
+<li>सुटताना घंटेचा नाद होतो आणि Dootan च्या रजिस्टरमध्ये नोंद होते.</li>
+<li>सील तुटलेले आढळल्यास संपूर्ण भागात त्वरित Red-Ink आणीबाणी जाहीर होते.</li>
+</ol>
+<h4 id="conduit_custody_rules____the_white_couriers___canon_lock">Conduit Custody Rules — <em>The White Couriers</em> [CANON LOCK]</h4>
+<p>पांढरी दूतवाहक ही <strong>custody line</strong> आहे, प्रवासी सेवा नाही. तिकीट नाही, नागरी थांबे नाहीत.</p>
+<div class="table-container"><table><thead><tr>
+<th>प्रवासी प्रकार</th>
+<th>Conduit?</th>
+<th>अट</th>
+</tr></thead><tbody>
+<tr>
+<td>सीलबंद अभिलेख / दस्तऐवज</td>
+<td>हो</td>
+<td>पितळी सिलिंडर + दूतान नोंद</td>
+</tr>
+<tr>
+<td>ताब्यातील आत्मे (flagged/restrained)</td>
+<td>हो</td>
+<td>Ātma-Patra मध्ये सीलबंद</td>
+</tr>
+<tr>
+<td>ड्युटीवरील अधिकारी (Grade 2+)</td>
+<td>हो</td>
+<td>नियमाचे प्रेषण-परवानगी</td>
+</tr>
+<tr>
+<td>सामान्य नागरिक</td>
+<td><strong>नाही</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>शक्तिशाली जिवंत व्यक्ती</strong></td>
+<td><strong>नाही</strong></td>
+<td>स्वतःच्या साधनांनी; अटक असेल तरच सीलबंद capsule मध्ये</td>
+</tr>
+<tr>
+<td><strong>शक्तिशाली आत्मा (Band III+)</strong></td>
+<td><strong>फक्त ताब्यात असेल तर</strong></td>
+<td>प्रक्रिया आटोपल्यावर स्वतः पुढे जातो</td>
+</tr>
+</tbody></table></div>
+<ol>
+<li><strong>Power = containment grade, सुविधा नाही.</strong> जास्त शक्ती → जाड पात्र, जास्त सील, हळू मार्ग, जास्त escort.</li>
+<li><strong>पांढरा aether-glow = immunity marker.</strong> Convoy वर हल्ला = Soul Administration वर हल्ला → Red-Ink + Tribunal.</li>
+<li><strong>Teleport का नाही?</strong> सीलबंद custody ला <strong>भौतिक, शोधता येणारी साखळी</strong> लागते; rifts teleport अडवतात, warded conduit त्यांना प्रतिबंधक. Divine teleport फक्त आत्म्यांसाठी राखीव आहे — evidence/custody साठी नाही.</li>
+</ol>
+<hr>
+<h2 id="7__master_integration_flow__complete_soul_lifecycle">7. Master Integration Flow: Complete Soul Lifecycle</h2>
+<pre><code class="language-">                          [ SOUL ORIGIN ]
+                                  │
+        ┌─────────────────────────┴─────────────────────────┐
+        ▼                                                   ▼
+[ ROUTE A: LAWFUL MIGRATION ]                    [ ROUTE B: UNAUTHORIZED ]
+0. Collection + Release Seal (Vidhata)            1. Summoning / Void Breach
+1. Compatibility Audit (Yama)                     2. Soul Corridor → Dvāra Gate (Band)
+2. Soul ID Generated (Chitragupta)                3. Teleport → Pratigraha; Setuvrata stamp
+3. System Review (Ananta, read-only)              4. Lekhya Audit → Red-Ink
+4. Linear Destiny Mapped (Vidhata)                5. Blank Destiny (No Cheat Skills!)
+5. Prana-Sutra Allocated (Vidhata)                6. Earned Evolution via Choice &amp; Kruti
+6. Approved Biological Birth                              │
+        │                                                 │
+        └────────────────────────┬────────────────────────┘
+                                 ▼
+                  [ VIDHATA PRĀṆA-SŪTRA SEAL ]
+                 ( Atman → Sthula-Sharira Binding )
+                                 │
+                                 ▼
+                  [ VESSEL STABILITY ASSESSMENT ]
+                    Tier-1 → Tier-2 → Tier-3
+                                 │ (Stable)
+                                 ▼
+              [ CHITRAGUPTA ENTRY + ANANTA ARCHIVE ]</code></pre></article>
+    <footer>03_Soul_Administration\01_Soul_Administration_Refined_Canon.md · 433 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

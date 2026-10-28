@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>09. Power System Architecture &amp; Ability Codex — Phase 1: Canon Audit — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">02_Metaphysics_and_Power_Systems\09_Power_System_Phase1_Canon_Audit.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/02_Metaphysics_and_Power_Systems/09_Power_System_Phase1_Canon_Audit.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__executive_summary__plain-language_architecture_of_universe_b">1. Executive Summary: Plain-Language Architecture of Universe B</a><a class="h3" href="#the_inviolable_core_principles">The Inviolable Core Principles</a><a class="h2" href="#2__integrated_power_flow_diagram">2. Integrated Power Flow Diagram</a><a class="h2" href="#3__inventory__established_canon_vs__undefined_mechanics">3. Inventory: Established Canon vs. Undefined Mechanics</a><a class="h3" href="#a__established_canon___canon">A. Established Canon ([CANON])</a><a class="h3" href="#b__undefined___missing_mechanics___unresolved___design_needed">B. Undefined & Missing Mechanics ([UNRESOLVED / DESIGN NEEDED])</a><a class="h2" href="#4__proposed_standardized_ability-profile_template">4. Proposed Standardized Ability-Profile Template</a><a class="h2" href="#5__the_ability_evolution_framework__universe_b_native">5. The Ability Evolution Framework (Universe B Native)</a><a class="h3" href="#the_three_legitimate_evolution_triggers_in_universe_b">The Three Legitimate Evolution Triggers in Universe B</a><a class="h2" href="#6__audit_of_unresolved_decisions_requiring_author_confirmation">6. Audit of Unresolved Decisions Requiring Author Confirmation</a><a class="h2" href="#7__recommended_execution_plan__phases_2_through_8">7. Recommended Execution Plan (Phases 2 through 8)</a></nav>
+  <div>
+    <article><h1 id="09__power_system_architecture___ability_codex___phase_1__canon_audit">09. Power System Architecture & Ability Codex — Phase 1: Canon Audit</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\02_Metaphysics_and_Power_Systems\09_Power_System_Phase1_Canon_Audit.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#power-system</span> <span class="badge">#phase-1-audit</span> <span class="badge">#pillars</span> <span class="badge">#two-axis-model</span> <span class="badge">#ability-codex</span> <span class="badge">#evolution-system</span> <span class="badge">#taxonomy</span> <span class="badge">#canon-audit</span></code></p>
+<p><strong>Status:</strong> [PHASE 1 DELIVERABLE — CANON AUDIT & ARCHITECTURAL FOUNDATION] · October 2026</p>
+<p><strong>Authority:</strong> Universe B Master Canon Codex, <code>02_Metaphysics_and_Power_Systems/08_Power_System_Consistency_Audit.md</code> (Module 7), and <code>UNIVERSE_B_FINAL_POWER_SYSTEM_BIBLE_V1.md</code>.</p>
+<hr>
+<h2 id="1__executive_summary__plain-language_architecture_of_universe_b">1. Executive Summary: Plain-Language Architecture of Universe B</h2>
+<p>Universe B employs a <strong>Two-Tier / Two-Axis Power Architecture</strong> that separates <strong>cosmic metaphysical validity</strong> from <strong>in-world mortal practice</strong>. A practitioner cannot simply "level up" or gain skills arbitrarily; every effect is governed by the constitutional laws of the cosmos.</p>
+<pre><code class="language-">┌─────────────────────────────────────────────────────────────────────────────┐
+│                    AXIS A: COSMIC GOVERNANCE BEDROCK                        │
+│         (The Invariable Laws of Adjudication — What Decides Reality)        │
+│                                                                             │
+│   AUTHORITY  ·  ENERGY  ·  KARMA  ·  TAPASYA  ·  BOONS  +  ĀTMA-TATTVA      │
+│   &quot;Are you      &quot;Can you   &quot;What causal  &quot;What have  &quot;What was  &quot;The Secret │
+│    permitted?&quot;   fuel it?&quot;  price is      you become  granted    Sixth: Core│
+│                             due?&quot;         through     under what Identity   │
+│                                           discipline?&quot;terms?&quot;    Continuity&quot;│
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                      Operational Adjudication Link
+            (Axis B provides the form; Axis A determines the result)
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    AXIS B: PRACTITIONER RITUAL AXIS                         │
+│            (The In-World Operational Layer — How Mortal Craft Works)        │
+│                                                                             │
+│      PRĀṆA   ·   TAPASYA   ·   MANTRA   ·   YANTRA   ·   ASTRA              │
+│   (Fuel/Life-  (Internal   (Resonant    (Geometric  (Invoked Divine         │
+│     Breath)     Friction/   Algorithm/   Channel/    Construct /            │
+│                 Endurance)  Syntax)      Engine)     Payload)               │
+└─────────────────────────────────────────────────────────────────────────────┘</code></pre>
+<h3 id="the_inviolable_core_principles">The Inviolable Core Principles</h3>
+<ol>
+<li><strong>Rule 1 (No Free Effect):</strong> Power never generates from a void. Yantras do not manufacture energy (they channel and shape external fuel). Mantras do not grant ownership (they require initiation and fuel). Astras do not fire without consequence (they require a formal three-stage commitment).</li>
+<li><strong>Rule 2 (Power is Not a Single Number):</strong> There are no universal stats, combat power levels (scouters), or gaming screens. A practitioner may possess vast Prāṇa reserves but terrible control; another may wield supreme Mantra initiation but lack physical throughput.</li>
+<li><strong>Rule 3 (The Separation of Four Stages):</strong> <code>Access ≠ Capacity ≠ Control ≠ Consequence</code>. Knowing a formula does not mean being initiated; initiation does not guarantee enough Prāṇa; having Prāṇa does not guarantee steady aim; hitting a target does not erase the karmic or bodily backlash.</li>
+<li><strong>Rule 8 & Transcendence of the Supreme Trinity:</strong> Brahma (Creator), Vishnu (Preserver), and Shiva/Mahesh (Destroyer) exist completely outside and above the ordinary Power System. They are unquantifiable and eternal. Boons requested through penance bind the <strong>Divine Office / Delegate</strong>, never coercing the Supreme Persons.</li>
+<li><strong>Zero-Avatar Protocol:</strong> Universe B possesses no physical descents of Rama, Krishna, or Kalki. The mortal power ceiling is capped strictly at <strong>Tier 7 (Transcendent / Realm Monarch)</strong>. T8 is reserved for unascended primordial Rishis/Chiranjivis; T9 and T10 are permanently inaccessible.</li>
+</ol>
+<hr>
+<h2 id="2__integrated_power_flow_diagram">2. Integrated Power Flow Diagram</h2>
+<p>The following text-based relational flow demonstrates how cosmic laws, practical delivery methods, individual abilities, and evolutionary transformations connect:</p>
+<pre><code class="language-">[ COSMIC BEDROCK (Axis A) ]
+  ├── Authority (Jurisdiction / Permission)
+  ├── Energy (Reserve, Throughput, Control, Stability)
+  ├── Karma (Causal Feedback &amp; Recoil Debt)
+  ├── Tapasya (Spiritual Heat, Tejas Radiation, Ojas Density)
+  ├── Boons (Specific Conditional Grants)
+  └── Ātma-Tattva (Secret Sixth: Immutable Core Identity)
+         │
+         ▼
+[ PRACTITIONER CRAFT (Axis B) ]
+  ├── Prāṇa Engine (72,000 Nādīs · 3 Granthis · Suṣumnā Channel)
+  ├── Tapasya Friction (Vow-discipline · Ascetic heat · Sankalpa focus)
+  ├── Mantra Invocation (Pada syntax · Dīkṣā authorization · Sankalpa beam)
+  ├── Yantra Conduits (Sacred Ritual [A] · Sādhana Anchor [B] · Industrial Steam/Steel [C])
+  └── Astra Deployment (Manasa [Intent] ➔ Sparsha [Binding] ➔ Visarjana [Formal Release])
+         │
+         ▼
+[ MANIFESTED ABILITY CODEX (14 Core Categories) ]
+  ├── Cat 1: Elemental &amp; Primordial Forces (Agni, Vāyu, Varuṇa, Prithvi, Vajra)
+  ├── Cat 2: Spatial &amp; Dimensional (Blink, Spatial Slashing, Dimensional Anchor)
+  ├── Cat 3: Time &amp; Chrono-Kinetic (LOCKED: Inaccessible via Axis B mortal craft)
+  ├── Cat 4: Mental, Psychic &amp; Illusion (Telepathy, Māyā, Sensory Hijack)
+  ├── Cat 5: Soul, Spirit &amp; Astral (Soul Sight, Cord Severing, Possession)
+  ├── Cat 6: Life, Death &amp; Healing (Cellular Regen, Toxin Craft, Mṛta-Sanjīvanī window)
+  ├── Cat 7: Physical Overdrive &amp; Body Cultivation (Vajra-Deha, Laghimā, Mahimā)
+  ├── Cat 8: Weapons Mastery &amp; Combat Arts (Blade Aura, Weapon Imbuement, Dhanurveda)
+  ├── Cat 9: Divine Astras &amp; Relic Armaments (Tier 2 Status ➔ Tier 1 Apocalyptic)
+  ├── Cat 10: Sealing, Barriers &amp; Formations (Chakravyūha, Kinetic Lamina, Wards)
+  ├── Cat 11: Transformation &amp; Morphology (Kāma-Rūpa, Beast Resonance, Titan Form)
+  ├── Cat 12: Sensory &amp; Eye Powers (Nādī Vision, Truth-Eye, Danger Sense)
+  ├── Cat 13: Domain Expansion (Mental Space Overwriting Physical Reality)
+  └── Cat 14: Ātma-Tattva Manifestations (Anomaly Armor, Sovereign Inviolability)
+         │
+         ▼
+[ EVOLUTIONARY LIFECYCLE (Original Universe B Mechanics) ]
+  ├── 1. MASTERY        ──&gt; Better efficiency, tighter aim, reduced Prāṇa drain.
+  ├── 2. GROWTH         ──&gt; Expanded range, increased output within identical form.
+  ├── 3. EVOLUTION      ──&gt; Qualitative mechanism shift (e.g. Surface Flame ➔ Piercing Heat Ray).
+  ├── 4. BRANCHING      ──&gt; Specialization divergence based on Sankalpa &amp; Granthi breakthrough.
+  └── 5. SYNTHESIS      ──&gt; Resonant harmony between two compatible techniques (Zero clashing).</code></pre>
+<hr>
+<h2 id="3__inventory__established_canon_vs__undefined_mechanics">3. Inventory: Established Canon vs. Undefined Mechanics</h2>
+<h3 id="a__established_canon___canon">A. Established Canon ([CANON])</h3>
+<ol>
+<li><strong>The Two-Axis Model (F-01):</strong> Axis A adjudicates; Axis B presents. Neither bypasses the other.</li>
+<li><strong>Prāṇa Mechanics:</strong> Circulates through 72,000 Nādīs; Iḍā and Piṅgalā active; Suṣumnā remains dormant until Brahma-Granthi, Viṣṇu-Granthi, and Rudra-Granthi are systematically unsealed. Four explicit axes: Reserve, Throughput, Control, Stability. Overdrawing causes Nādī-burn and biological exhaustion.</li>
+<li><strong>Mantra Execution Pipeline:</strong> Requires all four registers: Pāda-Integrity (sound syntax), Dīkṣā (initiatory license), Sankalpa (conscious intent/target), and Prāṇa-load (fuel). Failure to hold all four results in <em>Mantra-Vismaraṇa</em> (slip of mind) or catastrophic misfire.</li>
+<li><strong>Kinetic Lamina (F-03):</strong> Compressed sonic/aetheric shield generated by continuous Mantra recitation. Susceptible to acoustic harmonic disruption (resonance-breaking).</li>
+<li><strong>Yantra Three-Register Taxonomy (F-11):</strong> </li>
+<ul>
+<li>Register A: Sacred / Devotional (Sri Yantra - non-gamified, devotional only).</li>
+<li>Register B: Sādhana-Assisting (Geometric anchors, Chakravyūha formations, boundary wards).</li>
+<li>Register C: Secular / 18th–19th Century Industrial (Bolt-action rifles, steam engines, telegraph lines - zero AI). Prāṇa only interacts with Register C if etched with conductive conduits.</li>
+</ul>
+<li><strong>Astra Three-Stage Pipeline (F-02):</strong> <code>MANASA</code> (mental tuning, free cancellation) ➔ <code>SPARSHA</code> (carrier binding, active commitment) ➔ <code>VISARJANA</code> (formal release and cosmic grounding). Omitting Visarjana results in environmental blights and karmic decay.</li>
+<li><strong>Time Manipulation Ban (F-10):</strong> Chrono-kinetic abilities cannot be developed or trained through mortal Axis B craft. Tactical foresight (Ajna precognition) is an exception of perception, not true temporal control.</li>
+<li><strong>Technology vs. Cultivation Scale Bands (F-04):</strong></li>
+<ul>
+<li>Mortal (T1–T3): Bolt-action rifles and steam cannons are lethal and decisive.</li>
+<li>Trained (T4): Firearms are effective; massed volleys remain deadly.</li>
+<li>Crossover (T4+ ➔ T5−): First Granthi pierced, rudimentary Vajra-Deha; rifles lose single-shot kill potential against center mass; vulnerable at eyes/joints.</li>
+<li>Awakened (T5): Standard rifles deflected by Kinetic Lamina; requires prana-resonant ammunition.</li>
+<li>Ascendent (T6): Personal immunity to conventional firearms; vulnerable only to saturated siege weaponry.</li>
+<li>Transcendent (T7): Immune to conventional mortal technology.</li>
+</ul>
+<li><strong>Prāṇa-Bandhan (F-05):</strong> Mutual consensual bond between human and beast; restricted to T1–T4 beasts; token-mediated; ceases upon death with no inheritability.</li>
+<li><strong>Supreme Trinity & Zero-Avatar Lock:</strong> Brahma, Vishnu, and Shiva stand outside ordinary systems; no physical avatars in Universe B; mortal rank ceiling is T7.</li>
+</ol>
+<hr>
+<h3 id="b__undefined___missing_mechanics___unresolved___design_needed">B. Undefined & Missing Mechanics ([UNRESOLVED / DESIGN NEEDED])</h3>
+<div class="table-container"><table><thead><tr>
+<th>Gap Area</th>
+<th>Current Status</th>
+<th>Why It Must Be Resolved</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>1. Standard Ability IDs & Profiles</strong></td>
+<td>Fragmented across files without standardized schema</td>
+<td>Writers and choreographers lack a single operational card for individual abilities detailing activation delay, exact costs, and hard counters.</td>
+</tr>
+<tr>
+<td><strong>2. Ability Evolution Triggers</strong></td>
+<td>Not established in Canon; only basic "Tapasya progression" mentioned</td>
+<td>We need an original, non-video-game evolution system (unlike Slime or Pokémon) explaining <em>why</em> an ability qualitatively changes.</td>
+</tr>
+<tr>
+<td><strong>3. Evolution Eligibility Matrix</strong></td>
+<td>Undefined</td>
+<td>Which abilities can evolve, which are mastery-only, and which are completely static must be cataloged.</td>
+</tr>
+<tr>
+<td><strong>4. Granthi Breakthrough Mechanics</strong></td>
+<td>Named as lore, not detailed mechanically</td>
+<td>The exact criteria for piercing Brahma, Vishnu, and Rudra Granthis and their direct impact on ability scaling need explicit rules.</td>
+</tr>
+<tr>
+<td><strong>5. Prāṇa-Imbued Ammunition Limits</strong></td>
+<td>Mentioned as counter to T5, no manufacturing cost</td>
+<td>Does enchanting brass cartridges degrade firearms, require specific runes, or deplete the caster permanently?</td>
+</tr>
+<tr>
+<td><strong>6. Domain Expansion Clash Resolution</strong></td>
+<td>Conceptual JJK parallel mentioned, mechanics vague</td>
+<td>How do two overlapping domains resolve without resorting to arbitrary "power levels"? (e.g. Authority vs. Tapasya density).</td>
+</tr>
+<tr>
+<td><strong>7. Open Canon Choices (F-13 & F-14)</strong></td>
+<td>Formally open under Author Choice</td>
+<td>(F-13) Rama-Nama devotional efficacy in Zero-Avatar B; (F-14) Mortal capability to release a Tier 0 Astra under existential crisis.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="4__proposed_standardized_ability-profile_template">4. Proposed Standardized Ability-Profile Template</h2>
+<p>Every canonical ability in Universe B will be cataloged under this uniform structure:</p>
+<pre><code class="language-markdown">### [ABILITY-ID] Canon Name (संस्कृत / देशी नाव)
+
+**1. Identity &amp; Classification**
+- **Unique ID:** `ABL-[CAT]-[NN]` (e.g., `ABL-ELE-01`, `ABL-BOD-04`, `AST-T1-02`)
+- **Canon Name:** Primary English / Sanskrit formal title
+- **In-World Aliases:** Vernacular names across Sub-Realms (e.g., Human vs. Asura slang)
+- **Status:** [CANON] / [DERIVED] / [PROPOSED] / [UNRESOLVED]
+- **Primary Category:** One of the 14 Established Categories
+- **Secondary Tags:** Combat / Defensive / Utility / Industrial / Sādhana / Passive / Active
+- **Pillar Mapping (Axis A):** Authority / Energy / Karma / Tapasya / Boons / Sixth
+- **Ritual Vehicle (Axis B):** Prāṇa / Tapasya / Mantra / Yantra / Astra
+- **Scale Band Rating:** T1 (Mortal) through T7 (Transcendent)
+
+**2. Operating Concept &amp; Mechanism**
+- **One-Sentence Definition:** Exact summary of what the ability does.
+- **Underlying Mechanism:** Which Nādī, chakra, seed-syllable, or geometric conduit it operates through.
+- **What It Fundamentally Alters:** (e.g., thermal kinetic energy, optical index, flesh density).
+- **What It Cannot Touch:** Fundamental cosmic limits (e.g., cannot harm Ātma-Tattva, cannot alter linear time).
+
+**3. Acquisition &amp; Requirements**
+- **Acquisition Route:** Innate species trait / Ascetic Tapasya / Master-Disciple Dīkṣā / Engineered Yantra / Boon.
+- **Granthi &amp; Nādī Prerequisites:** Required physiological unsealing (e.g., Open Brahma-Granthi, pure Piṅgalā).
+- **Preconditions &amp; Compatibility:** Temperament, bloodline, or physical constitution needed.
+- **Repeatability &amp; Transferability:** Can it be taught, stolen, sealed, or inherited?
+
+**4. Activation, Execution &amp; Resource Economics**
+- **Activation Trigger:** Vocalized Mantra / Silent Sankalpa / Physical Stance / Carrier Contact / External Ignition.
+- **Activation Time &amp; Delay:** Instant / Multi-second rhythm / Extended ritual chant.
+- **Range &amp; Area of Effect:** Point-blank / Line-of-sight / Radial perimeter / Bound to horizon.
+- **Energy Draw &amp; Sustenance:** Prāṇa throughput per second; internal organ or Nādī thermal load.
+- **Physical &amp; Mental Recoil:** Fatigue, muscle tearing, neural burn, psychological vulnerability.
+- **Karmic &amp; Environmental Consequence:** Local atmospheric damage, karmic debt accumulation.
+
+**5. Tactical Counterplay &amp; Limitations**
+- **Direct Hard Counters:** Specific opposing elements, frequencies, or techniques that neutralize it.
+- **Environmental Inhibitors:** Weather, terrain, or vacuum conditions that weaken the output.
+- **Interrupt Vectors:** How an opponent can disrupt the user before or during manifestation.
+- **Failure Outcomes:** What occurs if the user is interrupted, runs out of fuel, or loses concentration.
+- **Technological Interaction:** Response to firearms, artillery, telegraph jamming, or mechanical shielding.
+
+**6. Worldbuilding &amp; Systemic Impact**
+- **Civilian &amp; Industrial Application:** How this ability functions outside warfare (mining, agriculture, transport, medicine).
+- **Why It Has Not Broken the World:** Rarity, resource cost, strict guild/state regulation, or lethal backlash that prevents monopolization.
+- **Legal &amp; Institutional Jurisdiction:** Setu or High Council treatment (Permitted, Regulated, Class-Omega Prohibited).
+
+**7. Evolutionary Profile**
+- **Evolutionary Class:** [Non-Evolving] / [Mastery-Only] / [Evolvable] / [Branch-Evolvable] / [Fusion-Compatible]
+- **Current Form:** Base state description.
+- **Evolution Trigger:** Specific crisis, insight, Granthi unsealing, or vow-sacrifice required.
+- **Potential Evolutionary Branches:**
+  - *Branch A (Specialized Focus):* ...
+  - *Branch B (Breadth / Utility):* ...
+- **Evolution Costs &amp; Risks:** What is permanently sacrificed or endangered during transformation.</code></pre>
+<hr>
+<h2 id="5__the_ability_evolution_framework__universe_b_native">5. The Ability Evolution Framework (Universe B Native)</h2>
+<p>To achieve the compelling progression found in series like <em>Slime</em> or <em>Pokémon</em> without copying their mechanics or violating Universe B's non-gaming philosophy, we establish <strong>Five Distinct Progression Stages</strong>:</p>
+<pre><code class="language-">[ LEVEL 1: MASTERY ] ────► Sādhana Refinement (Better aim, faster casting, 40% less Prāṇa burn)
+                              │
+[ LEVEL 2: GROWTH ]  ────► Capacity Expansion (Wider flame spread, thicker stone armor)
+                              │  (Critical Crisis / Granthi Breakthrough / Sankalpa Metamorphosis)
+                              ▼
+[ LEVEL 3: EVOLUTION ] ──► Qualitative Transformation (Elemental Flame ➔ Sub-Atomic Tejas Ray)
+                              │
+           ┌──────────────────┴──────────────────┐
+           ▼                                     ▼
+[ LEVEL 4: BRANCH A ]                 [ LEVEL 4: BRANCH B ]
+(Singular Destructive Focus)         (Spatial Geometry / Ward Synthesis)</code></pre>
+<h3 id="the_three_legitimate_evolution_triggers_in_universe_b">The Three Legitimate Evolution Triggers in Universe B</h3>
+<ol>
+<li><strong>Granthi-Piercing Metamorphosis (Physiological Breakthrough):</strong></li>
+<ul>
+<li>Unsealing the <strong>Brahma-Granthi</strong> (Base/Root unbinding), <strong>Viṣṇu-Granthi</strong> (Heart/Compassion unbinding), or <strong>Rudra-Granthi</strong> (Ajna/Cranial unbinding) alters the user's Nādī throughput permanently.</li>
+<li>An ability bound to the lower physical body qualitatively shifts into an energetic or conceptual state when higher Granthis open.</li>
+</ul>
+<li><strong>Kruti-Crisis Crystallization (Action Under Rupture):</strong></li>
+<ul>
+<li>In accordance with the <em>Kruti Law</em>, when a practitioner makes an irreversible, high-stakes moral or tactical decision at the absolute threshold of death/exhaustion, their inner Sankalpa permanently reconfigures their technique.</li>
+<li>Triggers the silent <strong>Ananta Chime</strong> within the Ajna Chakra, certifying that their internal matrix has evolved.</li>
+</ul>
+<li><strong>Resonant Synthesis (Yantra/Mantra Harmonization):</strong></li>
+<ul>
+<li>Two disparate techniques that have been practiced to total mastery fuse into a single composite art (e.g., combining <em>Vajra-Deha</em> flesh hardening with <em>Electrokinesis</em> to create bio-magnetic rail-strikes).</li>
+</ul>
+</ol>
+<hr>
+<h2 id="6__audit_of_unresolved_decisions_requiring_author_confirmation">6. Audit of Unresolved Decisions Requiring Author Confirmation</h2>
+<p>Before locking Phase 2 architecture, the following specific questions require authorial input:</p>
+<ol>
+<li><strong>Evolution Reversibility & Stability:</strong></li>
+<ul>
+<li><em>Option A (Permanent & Irreversible - Recommended):</em> Once an ability undergoes qualitative evolution, the user's soul-nadi matrix is permanently reshaped. The previous base form is subsumed into the new art.</li>
+<li><em>Option B (Temporary Transformed State):</em> Evolution is a high-cost "overdrive" form that drains massive Ojas and reverts to the base ability when exhausted.</li>
+</ul>
+<li><strong>Standard Ability Prefix Convention:</strong></li>
+<ul>
+<li>Proposal: Use a clean 3-letter alphanumeric code: <code>ABL-[CAT]-[NN]</code> (e.g. <code>ABL-ELE-01</code> for Pyrokinesis, <code>ABL-SPA-01</code> for Blink, <code>ABL-BOD-01</code> for Vajra-Deha).</li>
+</ul>
+<li><strong>Prāṇa-Imbued Ammunition Industrial Limit:</strong></li>
+<ul>
+<li><em>Option A (Sacrificial Brass - Recommended):</em> Conventional brass bullets can only hold Prāṇa for 60 seconds after chambering before melting or jamming, preserving the tactical supremacy of melee/cultivators in extended engagements.</li>
+<li><em>Option B (Special Aether-Alloy Casings):</em> High-tier guilds manufacture permanent enchanted cartridges, making industrial sniper-corps a terrifying peer threat to T5 cultivators.</li>
+</ul>
+<li><strong>Resolution of Open Canon Locks:</strong></li>
+<ul>
+<li><strong>F-13:</strong> Confirm whether Rama-Nama chanting retains autonomous purification potency in Universe B despite the Zero-Avatar Protocol.</li>
+<li><strong>F-14:</strong> Confirm that mortal characters can <strong>never</strong> trigger a Tier 0 Astra under any circumstances (preserving the Supreme Trinity monopoly).</li>
+</ul>
+</ol>
+<hr>
+<h2 id="7__recommended_execution_plan__phases_2_through_8">7. Recommended Execution Plan (Phases 2 through 8)</h2>
+<ul>
+<li><strong>Phase 2 (Architecture & Formal Taxonomy):</strong> Expand the 14 categories into concrete taxonomic rules; formalize Granthi-Piercing and Evolution mechanics in <code>04_Master_Power_and_Skill_Taxonomy.md</code> and a dedicated <code>Evolution_System.md</code>.</li>
+<li><strong>Phase 3 (Core Ability Profiles):</strong> Draft full-specification Ability Profiles for the top 20 foundational abilities across all species and realms using the approved template.</li>
+<li><strong>Phase 4 (Evolution Registry & Sample Trees):</strong> Build 5 fully developed evolution trees (Linear, Branching, Synthesis) to test system balance.</li>
+<li><strong>Phase 5 (Tactical Matrix & World Impact):</strong> Run stress tests against 19th-century firearms, steam artillery, economic monopolies, and institutional law.</li>
+<li><strong>Phase 6 (Constitutional Consistency Audit):</strong> Verify that zero rules violate the Supreme Trinity, Zero-Avatar Protocol, or Soul Administration boundaries.</li>
+<li><strong>Phase 7 (Document Sync & Portal Rebuild):</strong> Sync root mirrors, update <code>build_categories.py</code>, re-run <code>build_html_portal.py</code>, and achieve 100% verification pass.</li>
+<li><strong>Phase 8 (Final Handover Report):</strong> Deliver comprehensive ability registry statistics to author.</li>
+</ul></article>
+    <footer>02_Metaphysics_and_Power_Systems\09_Power_System_Phase1_Canon_Audit.md · 256 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

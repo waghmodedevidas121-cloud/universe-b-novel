@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>09. Interlocking Faction Relations, Grudges &amp; Cold War Geopolitics — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">07_Factions_Sociology_and_Cold_War\02_Interlocking_Faction_Relations_Grudges_Cold_War.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/07_Factions_Sociology_and_Cold_War/02_Interlocking_Faction_Relations_Grudges_Cold_War.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__executive_sociological___political_foundation">0. Executive Sociological & Political Foundation</a><a class="h3" href="#foundational_invariants__canon_lock">Foundational Invariants [CANON LOCK]:</a><a class="h2" href="#1__lineages___social_structure__vedic__kul___vamsha__in_an_industrial-mythic_world">1. Lineages & Social Structure: Vedic Kul / Vamsha in an Industrial-Mythic World</a><a class="h3" href="#1_1_strict_two-terminology_discipline">1.1 Strict Two-Terminology Discipline</a><a class="h2" href="#2__non-human___semi-divine_entities__guilds___functional_roles">2. Non-Human & Semi-Divine Entities: Guilds & Functional Roles</a><a class="h2" href="#3__pr__a-bandhana__the_beast_partnership_accord">3. Prāṇa-Bandhana: The Beast Partnership Accord</a><a class="h2" href="#4__the_two_grand_ideological_rifts">4. The Two Grand Ideological Rifts</a><a class="h3" href="#4_1_traditionalist_orders_vs__industrial_modernizers">4.1 Traditionalist Orders vs. Industrial Modernizers</a><a class="h3" href="#4_2_setu_loyalists_vs__astral_regional_autonomists">4.2 Setu Loyalists vs. Astral Regional Autonomists</a><a class="h2" href="#5__economic_warfare__the_levers_of_indirect_central_hegemony">5. Economic Warfare: The Levers of Indirect Central Hegemony</a><a class="h2" href="#6__the_independent_sapta-rishi_council___saptarshi_sabha">6. The Independent Sapta-Rishi Council (Saptarshi Sabha)</a></nav>
+  <div>
+    <article><h1 id="09__interlocking_faction_relations__grudges___cold_war_geopolitics">09. Interlocking Faction Relations, Grudges & Cold War Geopolitics</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\09_INTERLOCKING_FACTION_RELATIONS_GRUDGES_AND_COLD_WAR.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#factions</span> <span class="badge">#cold-war</span> <span class="badge">#geopolitics</span> <span class="badge">#grudge-matrix</span> <span class="badge">#economic-warfare</span> <span class="badge">#currency-hegemony</span> <span class="badge">#semi-divine-guilds</span> <span class="badge">#prana-bandhana</span> <span class="badge">#traditionalists-vs-modernizers</span> <span class="badge">#canon-lock</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official Canonical Sociological, Economic & Diplomatic Specification (October 2026)</p>
+<p><strong>Authority:</strong> Universe B मधील आंतर-पक्षीय संबंध, आर्थिक युद्ध, वैचारिक वाद आणि शीतयुद्धाचा अधिकृत single-source-of-truth. Merges, unifies, and expands <code>World/26</code>, <code>World/08</code>, <code>World/37</code>, <code>World/32</code>, and <code>World/36</code>.</p>
+<hr>
+<h2 id="0__executive_sociological___political_foundation">0. Executive Sociological & Political Foundation</h2>
+<p><em>(सामाजिक, आर्थिक व राजकीय तत्त्वज्ञान) [CANON LOCK]</em></p>
+<p>Universe B मध्ये विविध गट कॉमिक्समधील साध्या "चांगले विरुद्ध वाईट" किंवा "देव विरुद्ध राक्षस" अशा बालीश कारणांवरून लढत नाहीत. त्यांचे वाद हे <strong>भौतिक संसाधनांची स्पर्धा, आकारातील जैविक तफावत, जगण्यासाठीचे वेगळे दृष्टिकोन आणि युगांच्या इतिहासातील जखमांतून</strong> निर्माण झालेले आहेत:</p>
+<h3 id="foundational_invariants__canon_lock">Foundational Invariants [CANON LOCK]:</h3>
+<ol>
+<li><strong>The Twin-Function Doctrine (द्वि-कार्य सिद्धांत):</strong> देव किंवा असुर कोणीही जन्मजात चांगले किंवा वाईट नसतात. देव हे <strong>Order-Custodians (<em>Sthiti-Pālaka</em>)</strong> म्हणून विश्वाचे नियम आणि सुसंवाद राखतात; तर असुर हे <strong>Evolution-Catalysts (<em>Vikāsa-Preraṇa</em>)</strong> म्हणून उद्योग, आधुनिक तंत्रज्ञान आणि जैविक बदलांचे नेतृत्व करतात. विश्वाच्या वाढीसाठी या दोन्ही भूमिका अत्यंत आवश्यक आहेत.</li>
+<li><strong>Birth Equality is Inviolable:</strong> कुळामुळे (<em>Vamsha</em>) केवळ कौटुंबिक वारसा आणि कला मिळते; पण <strong>कोणताही कायदेशीर विशेषाधिकार किंवा मोफत पदवी मिळत नाही</strong>. प्रत्येक व्यक्तीचे स्थान केवळ त्याचे स्वतःचे कर्म (<em>Karma</em>), साधना (<em>Tapasya</em>) आणि संकटातील धाडसी निर्णय (<em>Kruti</em>) यावरून ठरते.</li>
+<li><strong>The Four Ideological Axes:</strong> संघर्ष केवळ वंशावरून होत नाही, तर दोन प्रमुख वैचारिक अक्षांवर चालतो:</li>
+<ul>
+<li><em>Axis 1: Traditionalist Orders vs. Industrial Modernizers</em> (पारंपरिक धार्मिक यज्ञ टिकवणे विरुद्ध वाफेची आणि स्फटिकांची आधुनिक यंत्रे चालवणे).</li>
+<li><em>Axis 2: Setu Loyalists vs. Astral Regional Autonomists</em> (मध्यवर्ती संरक्षण व्यवस्था विरुद्ध प्रादेशिक स्वातंत्र्य).</li>
+</ul>
+</ol>
+<hr>
+<h2 id="1__lineages___social_structure__vedic__kul___vamsha__in_an_industrial-mythic_world">1. Lineages & Social Structure: Vedic <em>Kul / Vamsha</em> in an Industrial-Mythic World</h2>
+<p><em>(कुळ, वंश व औद्योगिक-वैदिक सामाजिक रचना) [CANON LOCK]</em></p>
+<h3 id="1_1_strict_two-terminology_discipline">1.1 Strict Two-Terminology Discipline</h3>
+<p>समाजरचनेत गोंधळ होऊ नये म्हणून कायदेशीर दोन व्याख्या निश्चित केल्या आहेत:</p>
+<div class="table-container"><table><thead><tr>
+<th>Sanskrit Concept</th>
+<th>Operational Meaning</th>
+<th>Narrative / English Counterpart</th>
+<th>Legal Inheritance & Rights</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Vamsha (वंश)</strong></td>
+<td>Biological & Ancestral Lineage</td>
+<td><strong>Lineage</strong></td>
+<td>आनुवंशिक गुण, पूर्वजांच्या आठवणी आणि कौटुंबिक कला वारशाने मिळतात; <strong>कोणताही कायदेशीर विशेषाधिकार किंवा नोकरी मिळत नाही</strong>.</td>
+</tr>
+<tr>
+<td><strong>Kul (कुळ)</strong></td>
+<td>Socio-Industrial Unit built around shared craft, region, or guild charter</td>
+<td><strong>Clan-House / Guild-Kul</strong></td>
+<td>व्यावसायिक परवाने, पेटंट्स, रेल्वे कंत्राटे आणि स्थानिक क्षेत्र-सभांमध्ये मतदानाचा अधिकार.</td>
+</tr>
+<tr>
+<td><strong>Kul-Sabha (कुळ-सभा)</strong></td>
+<td>Deliberative assembly of a Clan-House</td>
+<td><strong>Clan Council</strong></td>
+<td>कारागिरांचे प्रशिक्षण, कामाचे नियम आणि राजासोबत होणाऱ्या वाटाघाटींचे व्यवस्थापन.</td>
+</tr>
+<tr>
+<td><strong>Kshetra-Sabha (क्षेत्र-सभा)</strong></td>
+<td>Multi-clan regional assembly</td>
+<td><strong>Provincial Parliament</strong></td>
+<td>प्रादेशिक कर, पाणीपुरवठा, स्थानिक सैन्य भरती आणि पायाभूत सुविधांचे कायदे.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="2__non-human___semi-divine_entities__guilds___functional_roles">2. Non-Human & Semi-Divine Entities: Guilds & Functional Roles</h2>
+<p><em>(अर्ध-दैवी प्रजाती, महा-संघ व वैश्विक योगदान) [CANON LOCK]</em></p>
+<p>अर्ध-दैवी आणि इतर प्रजाती जिवंत विश्वात अतिशय महत्त्वाची तांत्रिक आणि भौगोलिक जबाबदारी सांभाळतात:</p>
+<div class="table-container"><table><thead><tr>
+<th>Entity / Race</th>
+<th>Primary Habitat</th>
+<th>Core Biological / Metaphysical Aptitude</th>
+<th>Primary Guild & Institutional Role</th>
+<th>Concrete Universal Contribution</th>
+<th>Institutional Alignment</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Vanaras (वानर)</strong></td>
+<td>जंगले, पुलांच्या छावण्या, खोल दऱ्या</td>
+<td>झाडांवर चपळ हालचाल, मजबूत पकड, खडकांवर जलद चढणे</td>
+<td><em>Viaduct & Rail Kul</em>; Sapper Corps; Mountain Scouts</td>
+<td>५०,००० मैल लांब महा-सेतूची बांधणी व देखभाल; अवघड दऱ्यांमध्ये रेल्वे रूळ टाकण्यात निष्णात.</td>
+<td>Guild of Seekers (इंजिनिअरिंग), Order of Palaks (लॉजिस्टिक्स).</td>
+</tr>
+<tr>
+<td><strong>Gandharvas (गंधर्व)</strong></td>
+<td>आकाशातील तरंगती मैदाने, ढगांची उद्याने</td>
+<td>ध्वनी कंपने, मायावी संगीत, अचूक तिरंदाजी</td>
+<td><em>Aetheric Signal Kul</em>; Cipher Corps; Diplomatic Envoys</td>
+<td>टेलिग्राफचे सांकेतिक कोड्स आणि ध्वनी-रोधक तयार करणे; राजनैतिक दूत म्हणून काम करणे.</td>
+<td>Order of Palaks (संदेशवहन), Narada चा राजनैतिक विभाग.</td>
+</tr>
+<tr>
+<td><strong>Kinnaras (किन्नर)</strong></td>
+<td>बर्फाळ खिंडी, पर्वतीय टपाल मार्ग</td>
+<td>वेगवान धावणे, प्रचंड शारीरिक स्टॅमिना, पहाडी आवाज</td>
+<td><em>Sky-Courier Kul</em>; Mountain Messenger Corps</td>
+<td>रेल्वे न पोहोचू शकणाऱ्या अत्यंत खडतर भागांत सीलबंद पितळी सिलिंडर्स पोहोचवणे.</td>
+<td>Soul Administration (Dootan चे कुरिअर जाळे).</td>
+</tr>
+<tr>
+<td><strong>Yakshas (यक्ष)</strong></td>
+<td>खाणींचे डोंगर, भूमिगत गुहा, अलकापुरी</td>
+<td>खनिजांचे अचूक ज्ञान, स्फटिकांचे संरक्षण, कडक शिस्त</td>
+<td><em>Ore & Vault Kul</em>; Currency Mint Wardens; Gem Stewards</td>
+<td>नाणी पाडणे, प्राण-बॅटरी स्फटिकांचे उत्खनन आणि मध्यवर्ती बँकेच्या तिजोऱ्यांचे रक्षण.</td>
+<td>Guild of Seekers (खाणकाम), Chitragupta (नोंदी).</td>
+</tr>
+<tr>
+<td><strong>Nagas (नाग)</strong></td>
+<td>भूमिगत नद्या, भुयारी तलाव, लाव्हाच्या सीमा</td>
+<td>विषावर प्रभुत्व, नागमणी औषधे, द्रव गतीशास्त्र</td>
+<td><em>Venom-Pharmacopoeia Kul</em>; Deep-Tunnel Engineers</td>
+<td>अवकाशीय किरणोत्सर्गावर विषरोधक तयार करणे; भट्ट्यांच्या खाली पाण्याचे थंड बोगदे बांधणे.</td>
+<td>Order of Palaks (वैद्यकीय), Soul Admin (सीमा पाणी).</td>
+</tr>
+<tr>
+<td><strong>Garuda Scouts (गरुड)</strong></td>
+<td>उंच पर्वत शिखरे, एअरशिप टॉवर्स</td>
+<td>अति-उंच भरारी, दुर्बिणीसारखी तीक्ष्ण दृष्टी, हवेतील शिकार</td>
+<td><em>Sky Recon Wing</em>; Blimp Escort Squadrons</td>
+<td>महा-प्राकारावर हवाई गस्त घालणे; टपाल विमानांना आणि पक्षांना हवेत सुरक्षा पुरवणे.</td>
+<td>Order of Palaks (हवाई टेहळणी), Seekers (भेगांचा शोध).</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="3__pr__a-bandhana__the_beast_partnership_accord">3. Prāṇa-Bandhana: The Beast Partnership Accord</h2>
+<p><em>(प्राण-बंधन: श्वापद सहकार्य करार) [CANON LOCK]</em></p>
+<p>Universe B मध्ये पशू आणि हिंस्त्र प्राणी हे <strong>स्वतंत्र आध्यात्मिक जीव आहेत, गुलाम किंवा जनावरे नाहीत</strong>:</p>
+<ol>
+<li><strong>Mutual Consent (द्विपक्षीय संमती):</strong> बंधन दोघांच्या स्वेच्छेनेच होते; स्थानिक नोंदवहीत याची नोंद होते.</li>
+<li><strong>Inherent Dignity (स्वाभिमान रक्षण):</strong> पशूंना बाजारात विकता किंवा विकत घेता येत नाही; मारहाण किंवा अति-श्रमाची सक्ती केल्यास करार तत्काळ संपतो.</li>
+<li><strong>Reciprocal Duty (पारस्परिक कर्तव्य):</strong> मानवी जोडीदाराने खाणे आणि औषधोपचार पुरवायचे; पशूने सोबत राहून संरक्षण आणि माग काढायचा.</li>
+<li><strong>Legal Personhood (कायदेशीर अस्तित्व):</strong> पशूवर हल्ला केल्यास माणसावर हल्ला केल्यासारखाच फौजदारी गुन्हा दाखल होतो.</li>
+<li><strong>Civilian Equalizer (सामान्यांचे बळ):</strong> सामान्य नश्वर नागरिक या मैत्रीच्या जोरावर राक्षस आणि संकटांशी मुकाबला करतात.</li>
+<li><strong>Anti-Conscription (सक्तीची भरती बंदी):</strong> आणीबाणीशिवाय पशूंना सैन्यात सक्तीने भरती करता येत नाही.</li>
+</ol>
+<hr>
+<h2 id="4__the_two_grand_ideological_rifts">4. The Two Grand Ideological Rifts</h2>
+<p><em>(दोन महान वैचारिक संघर्ष) [CANON LOCK]</em></p>
+<h3 id="4_1_traditionalist_orders_vs__industrial_modernizers">4.1 Traditionalist Orders vs. Industrial Modernizers</h3>
+<ul>
+<li><strong>Traditionalists (वैदिक परंपरावादी):</strong> मंदिरातील पुरोहित आणि तपोवनातील ऋषींचे म्हणणे आहे की यज्ञातील <strong>आहुती</strong> विश्वाचा प्राण स्थिर ठेवते. फॅक्टऱ्यांचा काळा धूर विश्वाचा सत्वगुण नष्ट करतो; बेफिकीर प्रयोगांमुळे अवकाशात महा-भेगा पडतील.</li>
+<li><strong>Industrial Modernizers (औद्योगिक सुधारक):</strong> असुरांच्या भट्ट्या, मानवी रेल्वे आणि शास्त्रज्ञांचे म्हणणे आहे की वाफेच्या इंजिनाने आणि तोफांनी माणसाला पशूंच्या आणि दुष्काळाच्या भीतीतून मुक्त केले आहे. केवळ जप करत बसल्यास संपूर्ण जग अंधारात गोठून मरेल.</li>
+</ul>
+<h3 id="4_2_setu_loyalists_vs__astral_regional_autonomists">4.2 Setu Loyalists vs. Astral Regional Autonomists</h3>
+<ul>
+<li><strong>Setu Loyalists (मध्यवर्ती समर्थक):</strong> सेतूवरील लष्कर आणि न्यायमूर्तींचे मत आहे की संपूर्ण विश्वाचे रक्षण करण्यासाठी <strong>एकच समान कायदा, एकच रेल्वे प्रमाण आणि एकच ऑडिट यंत्रणा</strong> हवी.</li>
+<li><strong>Regional Autonomists (स्वायत्ततावादी):</strong> स्थानिक राजे आणि व्यापारी म्हणतात की आमचे स्थानिक स्वातंत्र्य अबाधित राहिले पाहिजे; सेतूने केवळ सीमेवर लक्ष ठेवावे, आमच्या घरात ढवळाढवळ करू नये.</li>
+</ul>
+<hr>
+<h2 id="5__economic_warfare__the_levers_of_indirect_central_hegemony">5. Economic Warfare: The Levers of Indirect Central Hegemony</h2>
+<p><em>(आर्थिक युद्ध, चलन मक्तेदारी व संप्रेषण वर्चस्व) [CANON LOCK]</em></p>
+<p>अवकाशीय पोकळीमुळे थेट लष्करी आक्रमण करता येत नसल्याने, मोठी राज्ये एकमेकांवर आर्थिक आणि गुप्त युद्ध लढतात:</p>
+<ol>
+<li><strong>The Central Aether-Rupee (चलन निर्बंध):</strong> मध्यवर्ती बँक <em>Aether-Rupee</em> नियंत्रित करते. युद्धाची धमकी देणाऱ्या राजाचे सोने गोठवून बँक त्याचे चलन रद्द करते.</li>
+<li><strong>Commodity Embargoes (सामग्री निर्बंध):</strong> असुरांचे पोलाद, मानवांचे धान्य आणि देवांचे रेशीम यांवर निर्बंध लादून प्रतिस्पर्धी देशाला उपाशी मारणे.</li>
+<li><strong>The Telegraph Monopoly (माहिती मक्तेदारी):</strong> सर्व तारा मध्य-नगरच्या स्विचिंग रूममधून जातात. मध्यवर्ती सरकार लष्करी तारा जाणीवपूर्वक उशिरा पोहोचवते किंवा डीकोड करून समतोल राखते.</li>
+</ol>
+<hr>
+<h2 id="6__the_independent_sapta-rishi_council___saptarshi_sabha">6. The Independent Sapta-Rishi Council (<em>Saptarshi Sabha</em>)</h2>
+<p><em>(स्वतंत्र सप्तर्षी परिषद) [CANON LOCK]</em></p>
+<ul>
+<li><strong>सात जागा:</strong> महर्षी दर्जाच्या ऋषींमधून निवडून आलेले सात निष्पक्ष विचारवंत.</li>
+<li><strong>अधिकार:</strong> नवी यंत्रे विश्वासाठी धोकादायक आहेत का याचे मूल्यमापन करणे.</li>
+<li><strong>Binding Upadesha on Kings:</strong> राजाने धर्माचा भंग केल्यास परिषद नैतिक आदेश (<em>Upadesha</em>) काढते, ज्यामुळे राजाची मान्यता संपुष्टात येते.</li>
+</ul></article>
+    <footer>07_Factions_Sociology_and_Cold_War\02_Interlocking_Faction_Relations_Grudges_Cold_War.md · 95 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

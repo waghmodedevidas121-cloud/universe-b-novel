@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18. Comprehensive Power System Master Compendium — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">02_Metaphysics_and_Power_Systems\05_Comprehensive_Power_Master_List.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/02_Metaphysics_and_Power_Systems/05_Comprehensive_Power_Master_List.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#1__the_core_architecture___mainstream_rules">1. The Core Architecture & Mainstream Rules (मूळ चौकट व लढाऊ नियम)</a><a class="h3" href="#universal_mainstream_combat_rules">Universal Mainstream Combat Rules (सार्वत्रिक लढाऊ नियम)</a><a class="h3" href="#naming___linguistic_conventions__canon_lock">Naming & Linguistic Conventions [CANON LOCK]</a><a class="h2" href="#2__exhaustive_master_power_catalog__14_comprehensive_categories">2. Exhaustive Master Power Catalog (14 Comprehensive Categories)</a><a class="h3" href="#category_1__elemental___primordial_forces">Category 1: Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)</a><a class="h3" href="#category_2__spatial___dimensional_manipulation">Category 2: Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)</a><a class="h3" href="#category_3__time___chrono-kinetic_forces">Category 3: Time & Chrono-Kinetic Forces (काल व गती प्रवाह)</a><a class="h3" href="#category_4__mental__psychic___illusion_arts">Category 4: Mental, Psychic & Illusion Arts (चित्त, मन व माया)</a><a class="h3" href="#category_5__soul__spirit___astral_arts">Category 5: Soul, Spirit & Astral Arts (आत्मा व सूक्ष्म शरीर)</a><a class="h3" href="#category_6__life__death__healing___necromancy">Category 6: Life, Death, Healing & Necromancy (प्राण, औषधी व संहार)</a><a class="h3" href="#category_7__physical_overdrive___body_cultivation">Category 7: Physical Overdrive & Body Cultivation (वज्र देह व बाहुबल)</a><a class="h3" href="#category_8__weapons_mastery___combat_arts">Category 8: Weapons Mastery & Combat Arts (धनुर्वेद व अस्त्रकला)</a><a class="h3" href="#category_9__divine_astras___relic_armaments">Category 9: Divine Astras & Relic Armaments (दिव्यास्त्र व महाशस्त्र)</a><a class="h3" href="#category_10__sealing__barriers___formations">Category 10: Sealing, Barriers & Formations (चक्रव्यूह, बंधन व वलय)</a><a class="h3" href="#category_11__transformation___morphology">Category 11: Transformation & Morphology (कामरूप व रूपान्तरण)</a><a class="h3" href="#category_12__sensory__extrasensory___eye_powers">Category 12: Sensory, Extrasensory & Eye Powers (नेत्र विद्या व दिव्य दृष्टी)</a><a class="h3" href="#category_13__domain__territory___boundary_expansion_________-">Category 13: Domain, Territory & Boundary Expansion (क्षेत्र-बंधन)</a><a class="h3" href="#category_14___tma-tattva_manifestations___________________-_secret_sixth_pillar">Category 14: Ātma-Tattva Manifestations (गुप्त आत्मतत्त्व - Secret Sixth Pillar)</a></nav>
+  <div>
+    <article><h1 id="18__comprehensive_power_system_master_compendium_________________-">18. Comprehensive Power System Master Compendium (सर्वसमावेशक महा-शक्ती सूची)</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\World\18_COMPREHENSIVE_POWER_MASTER_LIST.md</code></p>
+<p><strong>Scope:</strong> <strong>सर्वसमावेशक (All-Inclusive)</strong> — पौराणिक कथा, फँटसी, Anime, कॉमिक्स आणि आधुनिक काल्पनिक विश्वातील शक्तींचे एकत्रीकरण.</p>
+<p><strong>Reference:</strong> <strong>संतुलित संगम (Balanced Mix)</strong> — 5 Pillars (Authority, Energy, Karma, Tapasya, Boons) + गुप्त 6th Principle (Ātma-Tattva) अंतर्गत एकसंध.</p>
+<hr>
+<h2 id="1__the_core_architecture___mainstream_rules">1. The Core Architecture & Mainstream Rules (मूळ चौकट व लढाऊ नियम)</h2>
+<p>या मार्गदर्शिकेमध्ये जगभरातील लोकप्रिय आणि परिचित सर्व शक्तींना एकाच, सुसंगत आणि तार्किक नियमावलीत बांधले गेले आहे:</p>
+<pre><code class="language-">[ THE FIVE PILLARS FOUNDATION ]
+- AUTHORITY : वैश्विक कायदे, कार्यक्षेत्रे (Spheres), डोमेन्स आणि नियम लागू करण्याचे अधिकार.
+- ENERGY    : प्राण (Prāṇa), Mana, Ki, Aura, चक्र आणि शारीरिक स्टॅमिना (थेट इंधन).
+- KARMA     : संभाव्यता, वैश्विक गती, उलट तडाखा (Backlash), प्रायश्चित्त आणि प्रारब्धाचे धागे.
+- TAPASYA   : कठोर शिस्त, साधना, कौशल्य शुद्धीकरण, प्रभुत्वाच्या पायऱ्या आणि अंतर्गत कणखरता.
+- BOONS     : मिळालेले वरदान, दैवी करार, अलौकिक शस्त्रे आणि सशर्त संरक्षण.
+[ THE SIXTH PRINCIPLE ] : गुप्त आत्मतत्त्व (Ātma-Tattva) — याचे मूळ मेकॅनिक्स अज्ञात आहेत.</code></pre>
+<h3 id="universal_mainstream_combat_rules">Universal Mainstream Combat Rules (सार्वत्रिक लढाऊ नियम)</h3>
+<ol>
+<li><strong>Power vs. Skill:</strong> Power मुळे एकूण आउटपुट आणि विध्वंसक क्षमता मिळते; तर Skill मुळे अचूकता, ऊर्जेची बचत आणि दिशा ठरते.</li>
+<li><strong>Mastery Progression (प्रगतीचे टप्पे):</strong> प्राथमिक (Basic) ➔ सक्षम (Adept) ➔ निष्णात (Expert) ➔ महा-गुरू (Master) ➔ संकल्पनात्मक / सम्राट (Conceptual / Sovereign).</li>
+<li><strong>Resistances & Immunities (प्रतिकारशक्ती):</strong> तपस्या, अनुवंशिकता किंवा वरदानांद्वारे निर्माण होते (उदा. तत्त्वे, विष, मानसिक हल्ले, अवकाश कातरणे, आत्मिक प्रदूषण आणि शापांविरुद्ध प्रतिकार).</li>
+<li><strong>Energy Economy & Recoil (ऊर्जेचा ताण व उलट झटका):</strong> क्षमतेपेक्षा जास्त ऊर्जा ओढल्यास नाड्या जळणे, शरीराचे नुकसान होणे किंवा तात्काळ बेशुद्धी येणे अशा समस्या उद्भवतात.</li>
+<li><strong>Counters & Circumvention (तोड आणि मात करणे):</strong> पाशवी ताकदीने साध्या ढाली फुटतात; अवकाश कापणारे हल्ले भौतिक चिलखताला बायपास करतात; अढळ इच्छाशक्ती भ्रमाचा चुराडा करते; आणि नियमातील त्रुटी वरदानांना निष्प्रभ करतात.</li>
+<li><strong>Domain / Barrier Expansion (क्षेत्र-बंधन विस्तार):</strong> स्वतःचे आंतरिक मानसिक वास्तव बाहेर फेकून रणांगणावर स्वतःचे नियम लागू करणे (<em>क्षेत्र-निर्माण / Domain Expansion</em>).</li>
+</ol>
+<h3 id="naming___linguistic_conventions__canon_lock">Naming & Linguistic Conventions [CANON LOCK]</h3>
+<ul>
+<li><strong>अस्सल पौराणिक ओळख:</strong> मुख्य पौराणिक शस्त्रे, दिव्यास्त्रे आणि संकल्पनांची मूळ नावे तशीच राहतील (<em>Brahmāstra, Sudarśana Cakra, Pāśupatāstra, Nāgapāśa, Vajra, Garuḍāstra, Karma, Tapasya, Ātma-tattva, Kundalini, Chakravyūha</em>).</li>
+<li><strong>तंत्रज्ञान व उद्योगासाठी इंग्रजी संज्ञा:</strong> १९व्या व २०व्या शतकातील मेकॅनिकल व औद्योगिक संज्ञांसाठी कोणत्याही कृत्रिम संस्कृत शब्दांऐवजी थेट इंग्रजी शब्द वापरले जातील (<em>Steam Locomotives, Railways, Telegraph Wires, Printing Press, Bolt-Action Rifles, Revolvers, Pocket Watches, Brass Gears — Zero AI</em>).</li>
+<li><strong>गुंतागुंतीच्या संकल्पनांसाठी आधुनिक संज्ञा:</strong> अनोळखी किंवा जड तात्विक संकल्पना सोप्या आधुनिक इंग्रजीत मांडल्या जातील (<em>Domain Expansion, Spatial Severance, Dimensional Anchor, Retraction Code, Karmic Backlash</em>).</li>
+<li><strong>बहुभाषिक पोत:</strong> वेगवेगळ्या संस्कृती आपापल्या वैशिष्ट्यपूर्ण भाषेत दिसतील (मॅगिटेक शहरांसाठी इंग्रजी/वैज्ञानिक, प्राचीन राजवटींसाठी संस्कृत/हिंदी, असुरांसाठी इंजिनिअरिंग संज्ञा आणि पशू कुळांसाठी निसर्ग संकल्पना).</li>
+</ul>
+<hr>
+<h2 id="2__exhaustive_master_power_catalog__14_comprehensive_categories">2. Exhaustive Master Power Catalog (14 Comprehensive Categories)</h2>
+<hr>
+<h3 id="category_1__elemental___primordial_forces">Category 1: Elemental & Primordial Forces (पंचमहाभूत व तत्त्व शक्ती)</h3>
+<p><em>लोकप्रिय संदर्भ: Avatar The Last Airbender, Naruto, Bleach, वैदिक व ग्रीक तत्त्व जादू.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Pyrokinesis (अग्नि-शक्ती)</strong></td>
+<td>आगीचे गोळे, ज्वाला-तलवारी, नरकाग्नी, निळा सौर अग्नी, उष्णतेचे झोत.</td>
+<td>शुद्ध प्राण नसल्यास ऑक्सिजन/इंधन लागते; उच्च जलशक्ती किंवा व्हॅक्यूममध्ये विझते.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Hydrokinesis (जल-शक्ती)</strong></td>
+<td>पाण्याचे चाबूक, महापूर, अतिदाबाचे कापणारे पाण्याचे जेट्स, रक्तातील द्रव गोठवणे.</td>
+<td>समुद्रात सहज उपलब्ध; कोरड्या भागात शरीरातील आर्द्रता खेचावी लागते.</td>
+<td>Energy</td>
+</tr>
+<tr>
+<td><strong>Aerokinesis (वायू-शक्ती)</strong></td>
+<td>व्हॅक्यूम ब्लेड्स, सुपरसॉनिक उड्डाण, चक्रीवादळे, हवेच्या दाबाची ढाल.</td>
+<td>अदृश्य वार; मजबूत मातीच्या भिंतींनी किंवा उष्णतेच्या प्रवाहाने विखुरले जाते.</td>
+<td>Energy</td>
+</tr>
+<tr>
+<td><strong>Geokinesis & Terramancy (पृथ्वी व धातू)</strong></td>
+<td>दगडांचे भाले, भूकंपाचे धक्के, पाषाण चिलखत, वाळू व धातू वाकवणे.</td>
+<td>प्रचंड टिकाऊपणा; खोल अवकाशीय कातर किंवा भूकंपाच्या प्रतिध्वनीने फुटते.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Electrokinesis (वज्र व विद्युत)</strong></td>
+<td>विजेचे झटके, रेलगन डिस्चार्ज, मज्जासंस्थेचा ओव्हरड्राइव्ह, EMP पल्स.</td>
+<td>अतिवेगवान आणि भेदक; लांब पल्ल्यावर दिशा नियंत्रित करणे अत्यंत कठीण.</td>
+<td>Energy</td>
+</tr>
+<tr>
+<td><strong>Cryokinesis (हिम व बर्फ)</strong></td>
+<td>परम शून्य थंडी (Absolute Zero), बर्फाचे टोकदार सुळे, काइनेटिक हल्ले गोठवणे.</td>
+<td>गती थांबवते; पवित्र सौर अग्नीने वितळते किंवा जड प्रहाराने चुराडा होतो.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Photokinesis / Solar (सौर व प्रकाश)</strong></td>
+<td>लेझर किरण, अंधळे करणारा प्रकाश, दूषित ऊर्जा जाळणे, सोलर फ्लेअर्स.</td>
+<td>अंधाऱ्या भ्रमांचा नाश करते; १००% परावर्तक पृष्ठभागाने किंवा शून्याने अडवले जाते.</td>
+<td>Energy + Boons</td>
+</tr>
+<tr>
+<td><strong>Umbrakinesis / Shadow (छाया व अंधार)</strong></td>
+<td>सावलीतून प्रवास, सावलीचे भाले, अदृश्य होणे, प्रकाश गिळंकृत करणारे धुके.</td>
+<td>रात्री व अंधाऱ्या गुहांमध्ये घातक; दुपारच्या प्रखर सूर्यप्रकाशात शक्ती क्षीण होते.</td>
+<td>Energy + Karma</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_2__spatial___dimensional_manipulation">Category 2: Spatial & Dimensional Manipulation (अवकाश व दिक विद्या)</h3>
+<p><em>लोकप्रिय संदर्भ: Jujutsu Kaisen, Bleach, Doctor Strange, Xianxia अवकाश कंकणे.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Blink / Short Teleport (क्षणात स्थानांतर)</strong></td>
+<td>नजरेच्या टप्प्यात (१० ते १०० मीटर) तात्काळ जागेवर बदल करणे.</td>
+<td>आसपासच्या अवकाशात कंपने किंवा अस्थिरता असल्यास फसते.</td>
+<td>Energy</td>
+</tr>
+<tr>
+<td><strong>Spatial Severance (अवकाश कातरणे)</strong></td>
+<td>शत्रूच्या चिलखताला स्पर्श न करता त्याने व्यापलेली अवकाशाची जागाच कापणे.</td>
+<td>अफाट एकाग्रता लागते; अवकाशीय वॉर्ड्सद्वारे (Spatial Wards) अडवता येते.</td>
+<td>Authority / Tapasya</td>
+</tr>
+<tr>
+<td><strong>Pocket Dimension Vault (गुप्त अवकाश दालन)</strong></td>
+<td>शस्त्रे, अलौकिक वस्तू व रसद साठवण्यासाठी स्वतःचे वैयक्तिक सब-स्पेस.</td>
+<td>केवळ निर्जीव वस्तूंसाठी; सजीव ठेवण्यासाठी उच्च दर्जाची श्वसन चक्रे लागतात.</td>
+<td>Authority / Boons</td>
+</tr>
+<tr>
+<td><strong>Dimensional Lock (अवकाश टाळेबंदी)</strong></td>
+<td>शत्रू पळून जाऊ नये म्हणून स्थानिक अवकाशाला गोठवून टाकणे.</td>
+<td>क्षेत्रफळ वाढेल तसा ऊर्जेचा वापर प्रचंड वेगाने वाढतो.</td>
+<td>Authority</td>
+</tr>
+<tr>
+<td><strong>Gravitational Control (गुरुत्वाकर्षण नियंत्रण)</strong></td>
+<td>दाबून ठेवणारे गुरुत्वाकर्षण क्षेत्र, सूक्ष्म कृष्णविवर, हवेत तरंगणे (अँटी-ग्रॅव्हिटी).</td>
+<td>प्रचंड प्राण-साठा लागतो; लघिमा सिद्धी असलेल्या योद्ध्यांवर कमी परिणाम.</td>
+<td>Energy + Authority</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_3__time___chrono-kinetic_forces">Category 3: Time & Chrono-Kinetic Forces (काल व गती प्रवाह)</h3>
+<p><em>लोकप्रिय संदर्भ: JoJo, Fate Series, Bleach, Chronomancy.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Tactical Foresight (लढाऊ भविष्यवेध)</strong></td>
+<td>पुढील २ ते १० सेकंदांमधील घडामोडी आधीच पाहणे (Precognition).</td>
+<td>शत्रूच्या हेतूवर कार्य करते; अविवेकी, अनपेक्षित किंवा अती-वेगवान हल्ल्यांवर अयशस्वी.</td>
+<td>Tapasya (Ajna Eye)</td>
+</tr>
+<tr>
+<td><strong>Time Dilation / Acceleration (वेळेचे प्रसरण)</strong></td>
+<td>स्वतःसाठी वेळ संथ करणे (जग थांबलेले वाटते आणि मेंदू मायक्रोसेकंद वेगाने विचार करतो).</td>
+<td>मज्जासंस्थेवर प्रचंड ताण येतो; शारीरिक स्नायूंना तात्काळ अमर्याद वेग मिळत नाही.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Localized Temporal Stasis (स्थानिक वेळ गोठवणे)</strong></td>
+<td>समोरून येणारे अस्त्र, वस्तू किंवा शत्रूचा अवयव काही सेकंदांसाठी वेळेत गोठवणे.</td>
+<td>प्रचंड कार्मिक घर्षण; शत्रूची ऊर्जा खूप जास्त असल्यास तात्काळ तुटते.</td>
+<td>Authority / Sixth</td>
+</tr>
+<tr>
+<td><strong>Chrono-Rewind (काल-प्रत्यावर्तन - निषिद्ध)</strong></td>
+<td>विनाश किंवा प्राणघातक जखम भरून काढण्यासाठी स्थानिक काही सेकंद मागे नेणे.</td>
+<td>अफाट कार्मिक उलट फटका (पाप/ऋण संचय); Anantavel सिस्टीमद्वारे त्वरित पकडले जाते.</td>
+<td>Sixth Principle / Karma</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_4__mental__psychic___illusion_arts">Category 4: Mental, Psychic & Illusion Arts (चित्त, मन व माया)</h3>
+<p><em>लोकप्रिय संदर्भ: Sharingan, Tsukuyomi, Professor X, पौराणिक माया-युद्ध.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Telepathy & Mind-Link (मानसिक संवाद)</strong></td>
+<td>न बोलता क्षणात रणनीतिक संपर्क, विचार वाचणे, संवेदनेचे वहन करणे.</td>
+<td>प्राथमिक मानसिक संरक्षण भिंतींनी (<em>मानसिक कवच</em>) अडवले जाते.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Sensory Hijacking (इंद्रिय भ्रम / माया)</strong></td>
+<td>शत्रूच्या सैन्याला खोटे दृश्य, आवाज, वास आणि वेदना जाणवून दिशाभूल करणे.</td>
+<td>स्वतःच्या प्राणाचा स्फोट करणे, स्वतःला वेदना देणे किंवा आज्ञा चक्राने नष्ट होते.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Fear Induction & Despair (भय-तरंग)</strong></td>
+<td>शत्रूचे स्नायू अर्धांगवायू झाल्यासारखे गोठवून टाकणारे भय पसरवणे.</td>
+<td>अढळ इच्छाशक्ती (<em>संकल्प</em>) असलेल्या शूर योद्ध्यांवर निष्प्रभ ठरते.</td>
+<td>Energy + Karma</td>
+</tr>
+<tr>
+<td><strong>Absolute Command (वशित्व / अंतिम हुकूम)</strong></td>
+<td>शत्रूच्या मेंदूवर ताबा मिळवून थेट आज्ञा पाळण्यास भाग पाडणे.</td>
+<td>अखंड एकाग्रता हवी; आज्ञा थेट आत्महत्येची असल्यास मूळ जगण्याची प्रवृत्ती बंध तोडते.</td>
+<td>Authority / Tapasya</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_5__soul__spirit___astral_arts">Category 5: Soul, Spirit & Astral Arts (आत्मा व सूक्ष्म शरीर)</h3>
+<p><em>लोकप्रिय संदर्भ: Bleach, Solo Leveling, Shaman King, योगिक सूक्ष्म शरीर.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Soul Perception (आत्म-दर्शन)</strong></td>
+<td>चांदीचा प्राण-धागा (Silver Cord), कार्मिक ऑरा, आंतरिक जखमा आणि खरे रूप पाहणे.</td>
+<td>तिसरा डोळा उघडलेल्या साधकांचे हे मूलभूत कौशल्य आहे.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Soul-Piercing Strike (आत्म-वेधक प्रहार)</strong></td>
+<td>टायटॅनियम किंवा ऊर्जा ढालीला बायपास करून थेट सूक्ष्म शरीराला कापून काढणे.</td>
+<td>केवळ शुद्ध ओजस, आत्मिक चिलखत किंवा निष्कलंक <strong>Ātma-Śuddhi</strong> द्वारेच बचाव शक्य.</td>
+<td>Tapasya / Sixth</td>
+</tr>
+<tr>
+<td><strong>Spirit Ejection / Possession (परकाया-प्रवेश)</strong></td>
+<td>स्वतःचे सूक्ष्म शरीर बाहेर काढून दुसऱ्या रिकाम्या शरीरात किंवा पात्रात प्रवेश करणे.</td>
+<td>मूळ भौतिक शरीर अचेतन आणि पूर्णपणे असुरक्षित अवस्थेत राहते.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Soul Binding / Anchoring (आत्मा-बंधन)</strong></td>
+<td>भटकणाऱ्या आत्म्याला ताईत किंवा सीमा रचनेत कायमचे बंदिस्त करणे.</td>
+<td>उच्च आध्यात्मिक प्रतिकार; प्रचंड पुण्य असलेले आत्मे हे बंधन नैसर्गिकरित्या तोडतात.</td>
+<td>Authority / Sealing</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_6__life__death__healing___necromancy">Category 6: Life, Death, Healing & Necromancy (प्राण, औषधी व संहार)</h3>
+<p><em>लोकप्रिय संदर्भ: Tsunade, Recovery Girl, Necromancy, मृत-संजीवनी विद्या.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Cellular Regeneration (पेशी पुनरुत्थान)</strong></td>
+<td>रक्त तात्काळ गोठवणे, हाडे जोडणे आणि स्नायू पुन्हा वेगाने शिवले जाणे.</td>
+<td>दैवी प्राण नसल्यास शरीराच्या मूळ कॅलरीज आणि पेशींचे आयुष्य खर्च होते.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Toxin Synthesis & Neutralization (विष व अमृत)</strong></td>
+<td>न सापडणारे प्राणघातक विष तयार करणे किंवा जैविक विषाचे त्वरित शुद्धीकरण करणे.</td>
+<td>नागमणी, विशेष अमृतरस किंवा रक्तातील विष जाळणारा अग्नि हे यावर तोड आहेत.</td>
+<td>Tapasya / Boons</td>
+</tr>
+<tr>
+<td><strong>Necrotic Rot & Decay (नेक्रोटिक क्षय)</strong></td>
+<td>सेंद्रिय घटकांचे तात्काळ विघटन करणे, स्पर्शाने मांस सडवणे.</td>
+<td>पवित्र ऑरा, शुद्ध सुवर्ण आणि पावन जल यांच्या संपर्काने रोखले जाते.</td>
+<td>Karma + Energy</td>
+</tr>
+<tr>
+<td><strong>Resuscitation Arts (मृत-संजीवनी)</strong></td>
+<td>आत्मा यमाचा निर्गमन शिक्का बसण्यापूर्वी मृतदेहाला पुन्हा जिवंत करणे.</td>
+<td>यमाच्या खात्यावर निर्गमन शिक्का बसण्यापूर्वीच्या गोल्डन विंडोमध्येच शक्य. <strong>Kshira Sagara हा भौतिक सीमा नाही.</strong></td>
+<td>Boons / Authority</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_7__physical_overdrive___body_cultivation">Category 7: Physical Overdrive & Body Cultivation (वज्र देह व बाहुबल)</h3>
+<p><em>लोकप्रिय संदर्भ: Dragon Ball, Hulk, Superman, भीम व हनुमानाचे वज्र शरीर.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Vajra-Deha (वज्र-देह / हिऱ्यासारखे शरीर)</strong></td>
+<td>पोलादी तलवारी ज्या शरीरावर आदळून तुकडे होतात असे अभेद्य मांस.</td>
+<td>अंतर्गत ध्वनिक धक्के (Acoustic Shockwaves) किंवा आत्मिक प्रहारांपुढे कमजोर.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Superhuman Velocity (लघिमा / अतिवेग)</strong></td>
+<td>ध्वनीचा पडदा तोडणारा वेग; पाण्यावर धावणे, हवेच्या प्रवाहावर स्वार होणे.</td>
+<td>घर्षणाची प्रचंड उष्णता; डोळे व फुप्फुसांच्या संरक्षणासाठी काइनेटिक ढाल लागते.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Colossal Expansion (महिमा / विराट रूप)</strong></td>
+<td>स्नायूंची घनता आणि शरीराचा आकार पर्वतासारखा प्रचंड मोठा करणे.</td>
+<td>शरीराचा टार्गेट आकार वाढतो; प्रचंड वस्तुमानामुळे चपळता थोडी कमी होते.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Kinetic Impact Amplification (आघात वर्धन)</strong></td>
+<td>मुठीत किंवा लाथेत प्राण दाबून हवेत प्रचंड शॉकवेव्ह निर्माण करणे.</td>
+<td>मध्यम ते उच्च दर्जाच्या योद्ध्यांचे हे मूळ युद्धकौशल्य आहे.</td>
+<td>Energy + Tapasya</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_8__weapons_mastery___combat_arts">Category 8: Weapons Mastery & Combat Arts (धनुर्वेद व अस्त्रकला)</h3>
+<p><em>लोकप्रिय संदर्भ: Fate Saber/Archer, Zoro, Hawkeye, द्रोण व अर्जुनाची धनुर्विद्या.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Blade Aura (असि-धारा / तलवार तेज)</strong></td>
+<td>तलवारीच्या पात्यावरून लोखंड कापणारी धगधगती ऊर्जा प्रक्षेपित करणे.</td>
+<td>शस्त्राची क्षमता संपवते; एकाग्रता ढळल्यास धार बोथट होते.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Infallible Archery (अचूक धनुर्वेद)</strong></td>
+<td>एकाच वेळी अनेक बाण सुटणे, उष्णता व प्राण शोधणारे बाण, वळण घेणारे बाण.</td>
+<td>सर्वदिशा संरक्षण घुमट किंवा प्रचंड हवेच्या आवर्ताने मार्ग बदलतो.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Weapon Imbuement (शस्त्र भारणे)</strong></td>
+<td>साध्या आधुनिक शस्त्रांना (चाकू, स्नायपरच्या गोळ्या) प्राणाने भारून जादुई बनवणे.</td>
+<td>अतिउच्च फ्रिक्वेन्सीची ऊर्जा जास्त वेळ दिल्यास सामान्य धातू वितळतो.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Living Weapon Bond (जिवंत शस्त्र संवाद)</strong></td>
+<td>शस्त्राच्या सुप्त आत्म्याला जागे करणे, ज्यामुळे ते हाकेसरशी हातात परत येते.</td>
+<td>शस्त्र तुटल्यास वापरकर्त्याच्या सूक्ष्म शरीराला तीव्र मानसिक हादरा बसतो.</td>
+<td>Boons / Tapasya</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_9__divine_astras___relic_armaments">Category 9: Divine Astras & Relic Armaments (दिव्यास्त्र व महाशस्त्र)</h3>
+<p><em>लोकप्रिय संदर्भ: Noble Phantasms, Zanpakuto Bankai, पौराणिक महा-अस्त्रे.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Cataclysmic Piercing Arrows (ब्रह्मास्त्र वर्ग)</strong></td>
+<td>एका बिंदूवर संपूर्ण शहराचा नायनाट करणारे ऊर्जा किरण.</td>
+<td>पर्यावरणाचा प्रचंड नाश होतो; मागे घेण्यासाठी उपसंहार मंत्र अनिवार्य.</td>
+<td>Boons + Authority</td>
+</tr>
+<tr>
+<td><strong>Homing Absolute Annihilation (सुदर्शन वर्ग)</strong></td>
+<td>अवकाश व काळाचा भेद करून जीवन-तंतू कापणारे स्वयंचलित चक्र.</td>
+<td>चिलखताने रोखणे अशक्य; मूळ दैवताला पूर्ण नैतिक आत्मसमर्पण करणे हीच एकमेव तोड.</td>
+<td>Authority + Boons</td>
+</tr>
+<tr>
+<td><strong>Absolute Inviolable Armor (कवच-कुंडल वर्ग)</strong></td>
+<td>सर्व प्रकारच्या शस्त्रांपासून १००% संपूर्ण संरक्षण देणारे नैसर्गिक चिलखत.</td>
+<td>आंतरिक अस्तित्वाच्या शापांवर चालत नाही; स्वतःहून काढून दिल्यास संरक्षण संपते.</td>
+<td>Boons</td>
+</tr>
+<tr>
+<td><strong>Swarm Ordinance Weapons (नारायणास्त्र वर्ग)</strong></td>
+<td>एकाच वेळी लाखो ऊर्जा क्षेपणास्त्रांचा पाऊस पाडणे.</td>
+<td>विचित्र तोड: विरोध केल्यास अस्त्राचा मारा वाढतो; पूर्ण शस्त्रत्याग केल्यास शांत होते.</td>
+<td>Boons + Authority</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_10__sealing__barriers___formations">Category 10: Sealing, Barriers & Formations (चक्रव्यूह, बंधन व वलय)</h3>
+<p><em>लोकप्रिय संदर्भ: Uzumaki Fuinjutsu, Jujutsu Kaisen Barriers, कुरुक्षेत्र चक्रव्यूह.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Absolute Isolation Ward (एकांत वलय)</strong></td>
+<td>रणांगणाला ध्वनी, सिग्नल आणि ऊर्जेपासून पूर्णपणे तोडणाऱ्या गोलाकार घुमटात बंद करणे.</td>
+<td>परिमितीवर अँकर किंवा अखंड ऊर्जेचा पुरवठा लागतो.</td>
+<td>Energy + Authority</td>
+</tr>
+<tr>
+<td><strong>Chakravyūha Formations (चक्रव्यूह रचना)</strong></td>
+<td>फिरणारी एकाकेंद्रित सैन्यरचना, जी शत्रूला थकवून आत खेचून घेते.</td>
+<td>प्रवेश, फिरण्याचा वेग आणि बाहेर पडण्याचा ताल ठाऊक असल्यासच भेदता येते.</td>
+<td>Tapasya (Tactics)</td>
+</tr>
+<tr>
+<td><strong>Energy Drain Seals (ऊर्जा शोषक मुद्रा)</strong></td>
+<td>येणाऱ्या मंत्रांना किंवा हल्ल्यांना शोषून स्वतःची ढाल मजबूत करणे.</td>
+<td>कमाल क्षमतेपेक्षा जास्त भार आल्यास मुद्रा गरम होऊन फुटते.</td>
+<td>Energy + Boons</td>
+</tr>
+<tr>
+<td><strong>Exorcism & Curse Cleansing (शाप-मुक्ती)</strong></td>
+<td>पवित्र मंत्र आणि पावन जलाद्वारे दुष्ट आत्मिक परोपजीवी घटकांना हाकलून लावणे.</td>
+<td>Anantavel द्वारे अधिकृतरीत्या नोंदवलेल्या कार्मिक न्यायाविरुद्ध चालत नाही.</td>
+<td>Tapasya + Karma</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_11__transformation___morphology">Category 11: Transformation & Morphology (कामरूप व रूपान्तरण)</h3>
+<p><em>लोकप्रिय संदर्भ: Ben 10, Animorphs, पौराणिक असुर कामरूप विद्या.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Kāma-Rūpa (कामरूप / स्वैर रूपबदल)</strong></td>
+<td>इतर व्यक्ती, प्राणी किंवा निर्जीव वस्तूचे अचूक हुबेहूब रूप घेणे.</td>
+<td>वास, आवाज आणि वजन बदलले तरी दिव्य-दृष्टीने मूळ प्राण ओळखला जातो.</td>
+<td>Energy + Tapasya</td>
+</tr>
+<tr>
+<td><strong>Beast-Spirit Manifestation (पशू-आत्मा संयोग)</strong></td>
+<td>स्वतःच्या अंतरातील पशू चिन्हाशी (नाग, वानर, वराह, व्याघ्र) एकरूप होणे.</td>
+<td>पाशवी सहजप्रवृत्ती व वेग वाढतो; अतिवापराने विवेकावर रानटीपणा ताबा मिळवतो.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Titan / Battle Form Release (विराट असुर रूप)</strong></td>
+<td>नश्वर मर्यादा झुगारून अनेक हात असलेले महाकाय दैवी किंवा असुरी युद्धरूप प्रगट करणे.</td>
+<td>प्रचंड चयापचय ऊर्जा खर्च होते; दैवी पुरवठ्याशिवाय जास्त काळ टिकवता येत नाही.</td>
+<td>Energy + Boons</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_12__sensory__extrasensory___eye_powers">Category 12: Sensory, Extrasensory & Eye Powers (नेत्र विद्या व दिव्य दृष्टी)</h3>
+<p><em>लोकप्रिय संदर्भ: Byakugan, Six Eyes, आज्ञा चक्र, दिव्य दृष्टी.</em></p>
+<div class="table-container"><table><thead><tr>
+<th>शक्ती व उप-कौशल्य (Power / Sub-skill)</th>
+<th>प्रकटीकरण व वापर (Manifestation & Applications)</th>
+<th>मर्यादा आणि तोड (Limits & Counters)</th>
+<th>पिलर मॅपिंग (Pillar Mapping)</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Energy-Pathway Sight (नाडी-दर्शन)</strong></td>
+<td>७२,००० नाड्या, ऊर्जेचा प्रवाह, गाठी आणि शत्रूच्या हल्ल्याची तयारी आधीच पाहणे.</td>
+<td>हल्ल्याचे कोन उघड करते; अचानक झालेल्या प्रखर प्रकाशाने डोळे दिपू शकतात.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Omnidirectional Danger Sense (सर्वदिशा धोक्याची जाणीव)</strong></td>
+<td>स्नायू आकुंचन पावण्याआधीच शत्रूचा घातक हेतू ओळखणारी ३६० अंश जाणीव.</td>
+<td>हेतूवर आधारित असल्याने पूर्णपणे स्वयंचलित, निर्जीव यांत्रिक सापळ्यांना पकडत नाही.</td>
+<td>Tapasya</td>
+</tr>
+<tr>
+<td><strong>Truth Perception (सत्य-नेत्र)</strong></td>
+<td>सर्व प्रकारचे दृश्य, श्राव्य आणि अवकाशीय भ्रम क्षणात फाडून टाकणे.</td>
+<td>अति-एकाग्रता लागते; जास्त वेळ ताणल्यास डोळ्यांच्या रक्तवाहिन्या फुटतात.</td>
+<td>Tapasya + Karma</td>
+</tr>
+<tr>
+<td><strong>Cosmic Clairaudience (दिव्य-श्रोत्र)</strong></td>
+<td>दूरच्या खंडातील किंवा इतर लोकांमधील सूक्ष्म कुजबुज आणि घोषणा ऐकणे.</td>
+<td>विश्वाच्या प्रचंड आवाजातून योग्य वारंवारता निवडण्यासाठी अचूक ट्युनिंग लागते.</td>
+<td>Tapasya</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="category_13__domain__territory___boundary_expansion_________-">Category 13: Domain, Territory & Boundary Expansion (क्षेत्र-बंधन)</h3>
+<p><em>लोकप्रिय संदर्भ: Domain Expansion, Reality Marble, Bounded Field.</em></p>
+<ul>
+<li><strong>कार्यपद्धती:</strong> योद्धा स्वतःचा अफाट प्राण खर्च करून स्वतःचे आंतरिक मानसिक जग (<em>मानसिक क्षेत्र</em>) बाह्य भौतिक अवकाशावर अधिलिखित (Overwrite) करतो.</li>
+<li><strong>क्षेत्र-बंधनाचे नियम:</strong></li>
+<li>डोमेनच्या आत वापरकर्त्याच्या मूळ तत्त्वाला किंवा शस्त्रास्त्रांना <strong>१००% अतिरिक्त सामर्थ्य</strong> मिळते.</li>
+<li>सामान्य हल्ले <strong>निसटणे अशक्य</strong> होतात (Sure-Hit Effect).</li>
+<li><strong>तोड:</strong> प्रतिस्पर्ध्याने अधिक शुद्ध व शक्तिशाली डोमेन उघडणे, बाहेरून डोमेनचे कवच फोडणे किंवा मुख्य संरचनात्मक आधार शोधून नष्ट करणे.</li>
+<li><strong>Pillar Mapping:</strong> <strong>Authority</strong> + <strong>Energy</strong> + <strong>Tapasya</strong>.</li>
+</ul>
+<hr>
+<h3 id="category_14___tma-tattva_manifestations___________________-_secret_sixth_pillar">Category 14: Ātma-Tattva Manifestations (गुप्त आत्मतत्त्व - Secret Sixth Pillar)</h3>
+<p><em>Status: [CANON LOCK] Strict Mystery Anchor — मेकॅनिक्स आणि उगम १००% गुप्त.</em></p>
+<ul>
+<li>हे सामान्य Authority, Energy, Karma, Tapasya, आणि Boon यांच्या सर्व गणितांना चकवा देणाऱ्या अनाकलनीय घटनांच्या रूपात समोर येते.</li>
+<li>याचा पाया या मूलभूत सिद्धांतात आहे की <strong>आत्मा (Ātman)</strong> हा कोणत्याही नश्वर यंत्राने तयार करता येत नाही, बदलता येत नाही आणि कोणत्याही शस्त्राने नष्ट करता येत नाही.</li>
+<li>हे केवळ न सुटणाऱ्या चमत्कारांच्या रूपात दिसते: अस्तित्व संपवणारे अंतिम हल्ले आत्म्याच्या मूळ कणाला नष्ट करू न शकणे, Ananta च्या नोंदींमध्ये न बसणाऱ्या विसंगती उमटणे, किंवा वास्तव बदलणाऱ्या आदेशांनाही न जुमानणारा आत्मिक प्रतिकार.</li>
+<li>वाचक आणि पात्रांना केवळ याचे <strong>अंतिम परिणाम</strong> दिसतात; पण याचे <strong>मूळ कारण व मेकॅनिक्स हे या विश्वाचे सर्वात मोठे गूढ</strong> राहते.</li>
+</ul></article>
+    <footer>02_Metaphysics_and_Power_Systems\05_Comprehensive_Power_Master_List.md · 208 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>

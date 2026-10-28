@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universe B — Season 1, Chapter 1: The Hay, the Horns, and the Dead Glass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void: #050811;
+  --bg-surface: #0a0f1d;
+  --bg-card: rgba(19, 28, 49, 0.7);
+  --bg-card-border: rgba(56, 189, 248, 0.18);
+  --border-gold: rgba(245, 158, 11, 0.28);
+  --text-primary: #f1f5f9;
+  --text-hindi: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent-gold: #f59e0b;
+  --accent-gold-glow: #fbbf24;
+  --accent-cyan: #06b6d4;
+  --accent-cyan-bright: #38bdf8;
+  --accent-electric: #60a5fa;
+  --accent-crimson: #f43f5e;
+  --monologue-bg: rgba(6, 182, 212, 0.08);
+  --monologue-border: #06b6d4;
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-hindi: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.85;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(6, 182, 212, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 80%, rgba(245, 158, 11, 0.06), transparent),
+    radial-gradient(circle at 10% 40%, rgba(96, 165, 250, 0.05), transparent);
+}
+
+/* Reader Container */
+.reader-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 24px 96px;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-card-border);
+  border-radius: 14px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-gold), #d97706);
+  color: #050811;
+  padding: 4px 8px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-pill {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-pill:hover, .btn-pill.active {
+  background: rgba(6, 182, 212, 0.18);
+  border-color: var(--accent-cyan);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+/* Header Chapter Card */
+.chapter-header {
+  text-align: center;
+  padding: 40px 24px;
+  background: linear-gradient(180deg, rgba(19, 28, 49, 0.8) 0%, rgba(10, 15, 29, 0.95) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chapter-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold-glow), transparent);
+}
+
+.series-tag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 2.5px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.chapter-number {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.chapter-title-en {
+  font-family: var(--font-display);
+  font-size: 1.95rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.chapter-title-hi {
+  font-family: var(--font-hindi);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent-cyan-bright);
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.chapter-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+}
+
+/* Sticky Mode Switcher */
+.script-switch-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  position: sticky;
+  top: 16px;
+  z-index: 50;
+}
+
+.switch-pill-container {
+  display: inline-flex;
+  background: rgba(10, 15, 29, 0.92);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 4px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.tab-btn {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 24px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--accent-cyan), #0284c7);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(6, 182, 212, 0.4);
+}
+
+/* Typography & Content Block */
+.content-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-card-border);
+  border-radius: 16px;
+  padding: 44px 38px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+}
+
+.content-pane {
+  display: none;
+}
+
+.content-pane.active {
+  display: block;
+}
+
+/* Hindi Dub Body Typography */
+.pane-hindi {
+  font-family: var(--font-hindi);
+  font-size: 1.15rem;
+  line-height: 2.05;
+  color: var(--text-hindi);
+}
+
+.pane-hindi p {
+  margin-bottom: 22px;
+  letter-spacing: 0.2px;
+}
+
+/* English Body Typography */
+.pane-english {
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  line-height: 1.95;
+  color: #e2e8f0;
+}
+
+.pane-english p {
+  margin-bottom: 22px;
+}
+
+/* Lead Paragraph */
+p.lead-drop {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  border-left: 3px solid var(--accent-gold);
+  padding-left: 16px;
+  margin-bottom: 26px;
+}
+
+/* Sound Effect / Action Sparks */
+.sfx {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--accent-gold-glow);
+  display: inline-block;
+  padding: 2px 8px;
+  background: rgba(245, 158, 11, 0.12);
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.sfx-spark {
+  color: var(--accent-cyan-bright);
+  background: rgba(6, 182, 212, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.sfx-bell {
+  color: #fb923c;
+  background: rgba(251, 146, 60, 0.15);
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  display: block;
+  text-align: center;
+  margin: 28px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 3px solid #fb923c;
+  border-right: 3px solid #fb923c;
+}
+
+/* Inner Monologue Callout */
+.inner-monologue {
+  background: var(--monologue-bg);
+  border-left: 4px solid var(--monologue-border);
+  padding: 14px 18px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #e0f2fe;
+}
+
+.inner-monologue .tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--accent-cyan-bright);
+  margin-right: 8px;
+  letter-spacing: 1px;
+}
+
+/* Highlighted Terms in English */
+.term {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+}
+
+/* Inscription Block */
+.inscription-block {
+  text-align: center;
+  margin: 36px 0;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(5, 8, 17, 0.95));
+  border: 1px solid var(--accent-gold);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.15);
+}
+
+.inscription-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.inscription-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2.5px;
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.4);
+}
+
+/* Footer & Chapter Navigation */
+.chapter-footer {
+  margin-top: 48px;
+  padding: 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-card-border);
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav-ch-btn {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-ch-prev {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-dim);
+  pointer-events: none;
+}
+
+.nav-ch-next {
+  background: linear-gradient(135deg, var(--accent-cyan), #0284c7);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.35);
+}
+
+.nav-ch-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.5);
+}
+
+@media (max-width: 640px) {
+  .reader-wrapper { padding: 16px 12px 64px; }
+  .content-box { padding: 24px 18px; }
+  .chapter-title-en { font-size: 1.5rem; }
+  .chapter-title-hi { font-size: 1.15rem; }
+  .chapter-footer { flex-direction: column; align-items: stretch; }
+  .nav-ch-btn { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="reader-wrapper">
+
+  <!-- Top Navigation Header -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-badge">UNIVERSE B</span>
+      <span class="brand-title">ASTRAL CODEX</span>
+    </a>
+    <div class="nav-actions">
+      <a href="index.html" class="btn-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        Index
+      </a>
+      <a href="character_codex.html" class="btn-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"></circle><path d="M5.5 21a8.5 8.5 0 0 1 13 0"></path></svg>
+        120 Roster
+      </a>
+      <a href="ability_codex.html" class="btn-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        Abilities
+      </a>
+    </div>
+  </nav>
+
+  <!-- Chapter Intro Hero Header -->
+  <header class="chapter-header">
+    <span class="series-tag">Season 1 • Volume 1: The Mud, the Beast & the D-Tier Blood-Pit</span>
+    <div class="chapter-number">CHAPTER 01</div>
+    <h1 class="chapter-title-en">The Hay, the Horns, and the Dead Glass</h1>
+    <h2 class="chapter-title-hi">घास, सींग और बुझा हुआ शीशा</h2>
+    <div class="chapter-meta">
+      <div class="meta-item"><span class="meta-dot"></span> Protagonist: Neel (CHR-ALN-06)</div>
+      <div class="meta-item"><span class="meta-dot"></span> Companion: Sheru (Dusk-Scrapper)</div>
+      <div class="meta-item"><span class="meta-dot"></span> Location: Central Shard Outer Flats</div>
+      <div class="meta-item"><span class="meta-dot"></span> Status: Canonical Dub</div>
+    </div>
+  </header>
+
+  <!-- Sticky Language Switcher -->
+  <div class="script-switch-bar">
+    <div class="switch-pill-container">
+      <button class="tab-btn active" id="tabHindiBtn" onclick="switchPane('hindi')">
+        🇮🇳 Official Hindi Dub
+      </button>
+      <button class="tab-btn" id="tabEnglishBtn" onclick="switchPane('english')">
+        🇬🇧 English Original
+      </button>
+    </div>
+  </div>
+
+  <!-- Content Container Box -->
+  <main class="content-box">
+
+    <!-- ========================================== -->
+    <!-- 1. HINDI DUB PANE (OFFICIAL CRUNCHYROLL / MUSE STYLE) -->
+    <!-- ========================================== -->
+    <article class="content-pane pane-hindi active" id="paneHindi">
+      <p class="lead-drop">सिर का दर्द ऐसा था जैसे किसी ने खोपड़ी के पिछले हिस्से में लाल-तपते लोहे की कील ठोक दी हो।</p>
+
+      <p><span class="term">Neel</span> ने फ़ौरन आँखें नहीं खोलीं, लेकिन दिमाग़ के जागने से पहले ही उसकी इंद्रियों ने इस अजनबी बदलाव को भाँप लिया था। यहाँ <span class="term">wet Mumbai asphalt</span> की वो भीगी लाल मिट्टी जैसी महक नहीं थी। और न ही <span class="term">Dadar station</span> से आने वाला वो भारी डीज़ल का धुआँ और सूखती हुई <span class="term">Bombay duck</span> की तीखी बदबू थी, जो पिछले तीन सालों से हर सुबह उसकी नाक में भरती आई थी।</p>
+
+      <p>यहाँ की हवा हड्डियों को जमा देने वाली बर्फीली थी—इतनी पतली और साफ़ कि हर साँस गले में पिसे हुए काँच की तरह चुभ रही थी। और उस ठंडी हवा में दो बिल्कुल अजनबी गंध घुली हुई थीं: सूखी जंगली घास की खट्टी महक, और वो तीखा <span class="term">metallic ozone</span> जैसा अहसास, जो किसी <span class="term">electrical transformer</span> के फटने से ठीक पहले हवा में भर जाता है।</p>
+
+      <p>"उफ़्फ़... मेरा सिर..."</p>
+
+      <p><span class="term">Neel</span> करवट लेकर घूमा। किसी नुकीली चीज़ ने उसकी पसलियों में ज़ोर से खरोंच मारी। उसकी उँगलियों ने नीचे की ज़मीन को टटोला तो खुरदरे, सूखे तिनके हाथ में आए। सूखी घास। सदियों पुरानी, गर्द से सनी सूखी पुआल।</p>
+
+      <p>उसने भारी पलकें धीरे से उठाईं।</p>
+
+      <p>ऊपर कोई छत नहीं थी। उसके किराये के <span class="term">1-BHK</span> फ्लैट की सीलन से पीली पड़ी सीलिंग वहाँ नहीं थी।</p>
+
+      <p>और जो नज़ारा ऊपर दिखा, उसने <span class="term">Neel</span> की नसों से बुख़ार और सुस्ती का एक-एक कतरा सेकंडों में निचोड़ कर बाहर फेंक दिया।</p>
+
+      <p>वहाँ कोई नीला आसमान नहीं था। कोई सुबह का सूरज नहीं था।</p>
+
+      <p>सिर के ठीक ऊपर एक अंतहीन, जमा देने वाली, रोशनी से महरूम अथांग खाई फैली हुई थी—<span class="term">The Infinite Void</span>! एक ऐसा दमघोंटू सन्नाटा, जहाँ दूर टिमटिमाते सितारे चमकने के बजाय ख़ौफ़ से काँपते महसूस हो रहे थे। और उस भयानक शून्य के सीने पर, हज़ारों मील की दूरी पर लटके हुए थे दो विशालकाय ग्रह-खंड!</p>
+
+      <p>पश्चिम दिशा में एक खंडित ज्वालामुखीय महाद्वीप अंधेरे में गाढ़ा लाल <span class="term">magma</span> उगल रहा था; और उत्तर दिशा में, बादलों के ऊँचे पहाड़ों के पार तैरते हुए सफ़ेद संगमरमर के पठार किसी भी सहारे के बिना, शुद्ध दिव्य प्रकाश में जगमगा रहे थे।</p>
+
+      <p><span class="term">Neel</span> जहाँ का तहाँ जम गया। उसकी पीठ नीचे लकड़ी के तख्तों से चिपक गई और साँस गले में ही अटक गई।</p>
+
+      <div class="inner-monologue">
+        <span class="tag">Neel · मनात</span> "What the hell... क्या मेरी आँखों का कोई rendering glitch है?"
+      </div>
+
+      <p>उसका हाथ बिजली की फुर्ती से उसकी <span class="term">faded denim jacket</span> की जेब में गया। उँगलियों ने जानी-पहचानी चीज़ें टटोलीं: उसका लैमिनेटेड <span class="term">Mumbai University student ID</span>, फ्लैट के मुख्य दरवाज़े की पीतल की चाबी, और उसका पुराना <span class="term">Redmi smartphone</span>, जिसका <span class="term">tempered glass</span> स्क्रीन पर आड़ा-तिरछा चटका हुआ था।</p>
+
+      <p>काँपते अँगूठे से उसने <span class="term">power button</span> दबाया। फिर दबाया। और ज़ोर से दबाया।</p>
+
+      <p>स्क्रीन काले शीशे का एक ठंडा, बेजान टुकड़ा बनी रही। शून्य परसेंट बैटरी।</p>
+
+      <p>"सही है... पानी घुस गया होगा। गड्ढे में गिरा था ना..." <span class="term">Neel</span> बुदबुदाया, इस असीम सन्नाटे में उसकी आवाज़ काग़ज़ जितनी पतली लग रही थी। उसका उन्नीस साल का <span class="term">engineering</span> वाला दिमाग़ ख़ौफ़ के आगे दलीलों की दीवार खड़ी करने की कोशिश कर रहा था। "सोच <span class="term">Neel</span>, सोच। ठीक से याद कर। शाम के सवा सात बजे थे। बारिश में कॉलेज से लौट रहा था। <span class="term">Dadar bridge</span>। एक पानी से भरे गड्ढे को पार कर रहा था। तभी हवा में अचानक जलने की चटचटाहट हुई, जैसे कोई मोटा तिरपाल फट गया हो... और फिर..."</p>
+
+      <p>और फिर कुछ नहीं। बस एक चकाचौंध सफ़ेद-सुनहरी रोशनी की सुरंग में बेभार होकर नीचे गिरने का अहसास।</p>
+
+      <p>"Status Window?" <span class="term">Neel</span> ने पुआल में मुँह दबाए फुसफुसाते हुए दाएँ-बाएँ देखा। "System Menu? Open Profile?"</p>
+
+      <p>सामने कोई नीला <span class="term">floating box</span> नहीं खुला। न ही किसी जादुई सिस्टम की आवाज़ कान में गूँजी। बस दूर से ज़मीन को कँपा देने वाली एक भारी थरथराहट सुनाई दे रही थी—मील दूर किसी विशालकाय पत्थर की इमारत से गूँजती हज़ारों आदमियों की एक जैसी चीख-पुकार।</p>
+
+      <p>तभी, जिस गाड़ी के लकड़ी के तख्ते पर वह पड़ा था, उसके ठीक नीचे से एक भारी साँस निकली।</p>
+
+      <p><span class="sfx">फुस्सस्सशश!</span></p>
+
+      <p>गंधक की गर्म, दमघोंटू भाप का एक झोंका <span class="term">Neel</span> के भीगे स्नीकर्स पर आकर लगा। वह रेंगता हुआ किनारे पहुँचा और लकड़ी की बाड़ के ऊपर से नीचे झाँका।</p>
+
+      <p>वह किसी कमरे में नहीं था। वह बिना जुते हुए एक चार पहियों वाले भारी लकड़ी के <span class="term">Beast-Cart</span> के पिछले हिस्से में लेटा हुआ था। और आगे जुए से बंधी हुई कोई साधारण बैलगाड़ी की गाय नहीं थी। वह आठ फीट ऊँचा, बेसाल्ट चट्टान जैसी चमड़ी वाला एक दैत्य था—एक <span class="term">Lava-Bull</span>! उसके कंधों पर ख़ौफ़नाक माँसपेशियाँ उभरी हुई थीं, और सिर पर मुड़े हुए दो भारी सींग थे, जिनके भीतर से कोयले जैसी लाल भूमिगत आग धधक रही थी।</p>
+
+      <p><span class="term">Neel</span> की रीढ़ में बर्फ़ की ठंडी लहर दौड़ गई।</p>
+
+      <div class="inner-monologue">
+        <span class="tag">Neel · मनात</span> "Aliens... या तो मैं किसी wormhole से फिसलकर किसी अनजान ग्रह की बस्ती में आ गिरा हूँ, या फिर मेरे दिमाग़ की नसें फट चुकी हैं।"
+      </div>
+
+      <p><span class="sfx">घुर्र्र्र्र्र...</span></p>
+
+      <p>उसकी बुदबुदाहट के बीच एक बारीक, खुरदरी आवाज़ उभरी। यह आवाज़ उस विशालकाय बैल की नहीं थी। यह गाड़ी के पिछले लोहे के पहिये के नीचे से आ रही थी।</p>
+
+      <p><span class="term">Neel</span> ने नज़रें नीचे झुकाईं।</p>
+
+      <p>पहिये के पास कीचड़ में, एक जंग लगी लोहे की कड़ी से बँधी टूटी हुई सन की रस्सी में लिपटा एक छोटा सा <span class="term">hound pup</span> बैठा था। यह <span class="term">Bombay</span> की गलियों के किसी लावारिस कुत्ते जैसा नहीं था। उसका छोटा, कड़ा रोआँ ताज़ा कोयले की राख जैसा था, जो अपने आसपास की रोशनी को सोख रहा था। उसका बायाँ कान आधा कटा हुआ था—मानो किसी अखाड़े की लड़ाई में बेरहमी से फाड़ दिया गया हो—और थूथन पर एक फीका सा <span class="term">cross-cut scar</span> था। लेकिन उसकी आँखें... उसकी आँखें अंबर-गोल्ड रंग की थीं, जिनमें एक ऐसी चालाक, भूखी समझदारी चमक रही थी जो किसी आम जानवर में हो ही नहीं सकती।</p>
+
+      <p>वह छोटा पिल्ला ऊपर <span class="term">Neel</span> को घूर रहा था, उसकी पतली पसलियाँ तेज़ और उथली साँसों से फूल-पिचक रही थीं।</p>
+
+      <p><span class="term">Neel</span> ने सूखा थूक निगला। "अरे... सुनो दोस्त। अच्छे कुत्ते हो ना तुम? Good boy?"</p>
+
+      <p>पिल्ले ने अपने ऊपरी होंठ सिकोड़े और दाँत दिखा दिए। वे सफेद हड्डियाँ नहीं थीं—उन पर बंदूक के लोहे जैसी <span class="term">gunmetal-grey metallic</span> चमक थी, जो ठंड में तेज़ सुइयों की तरह चमक रही थी।</p>
+
+      <p>"ठीक है भाई। समझ गया। हाथ नहीं लगाना है," <span class="term">Neel</span> ने दोनों हथेलियाँ खुली रखते हुए धीमी आवाज़ में कहा। ठीक उसी पल, उसके पेट में भूख की ऐसी भयानक मरोड़ उठी कि लगा आँतें आपस में ऐंठ गई हों। कल दोपहर कैंटीन के सस्ते समोसे के बाद से उसने एक दाना तक नहीं चखा था।</p>
+
+      <p>उसने अपने भीगे <span class="term">backpack</span> की ज़िप खोली। इंजीनियरिंग की किताबें भीग कर ईंट बन चुकी थीं। प्लास्टिक की बोतल में बस तीन घूँट गुनगुना पानी बचा था। और सबसे नीचे, एक प्लास्टिक की थैली में दबा हुआ, आधा खाया सूखा मटन रोल और तीन ग्लूकोज बिस्कुट रखे थे, जो उसने बारिश शुरू होने से पहले खरीदे थे।</p>
+
+      <p><span class="term">Neel</span> ने वो मटन रोल बाहर निकाला। मुँह के पास ले जाने ही वाला था...</p>
+
+      <p>तभी वह रुक गया।</p>
+
+      <p>पहिये के नीचे से, उन अंबर-गोल्ड आँखों ने उस खाने को ताक लिया था। पिल्ले की सूखी, फटी हुई जीभ अपने मुँह पर फिरी, और उसके गले से एक हल्की, बेबस सी कराह निकली—किसी शिकारी की गुर्राहट नहीं, बल्कि कई दिनों से भूखे किसी अनाथ बच्चे की लाचारी।</p>
+
+      <p><span class="term">Neel</span> का हाथ बीच हवा में ही जम गया।</p>
+
+      <p>सोलह साल की उम्र में हाईवे पर एक सड़क हादसे में माता-पिता को खोने के बाद, <span class="term">Bombay</span> के खाली <span class="term">1-BHK</span> में अकेले रहकर, ट्यूशन पढ़ा-पढ़ा कर कॉलेज की फीस भरने वाले <span class="term">Neel</span> को उस नज़र का मतलब अच्छी तरह पता था। महीने के आख़िरी हफ्ते में जब पैसे खत्म हो जाते थे, तब उसके अपने पेट में भी बिल्कुल ऐसी ही आग जलती थी।</p>
+
+      <p>"तू भी मेरी तरह <span class="term">stowaway</span> ही है, है ना?" <span class="term">Neel</span> ने नरमी से कहा।</p>
+
+      <p>उसने रोल को बीच से तोड़ दिया। सूखी पपड़ी वाला छोटा टुकड़ा उसने अपने पास रखा, और गोश्त वाला बड़ा हिस्सा नीचे पुआल पर उस पिल्ले के पंजों के पास डाल दिया। "ये ले। खा ले। ज़हर नहीं है इसमें।"</p>
+
+      <p>पिल्ला पहले झिझका, फिर उसने गोश्त को एक बार सूंघा, और बिना चबाए पूरा निगल गया। उसकी अंबर आँखें एक पल के लिए नरम पड़ीं। उसकी छोटी कटी हुई पूँछ ने कीचड़ पर एक बार हल्की सी हरकत की।</p>
+
+      <p><span class="term">Neel</span> के चेहरे पर एक थकी हुई मुस्कान आई और उसने अपनी सूखी रोटी चबाई। वह बासी और ठंडी थी, लेकिन इस वक़्त किसी अमृत से कम नहीं लग रही थी।</p>
+
+      <p>"चलो भाई," <span class="term">Neel</span> ने गाड़ी के पिछले हिस्से से नीचे कूदने की तैयारी करते हुए बुदबुदाया। "अब ज़रा पता करें कि इस दुनिया के टिकट काउंटर पर—"</p>
+
+      <p>जैसे ही उसका फटा हुआ स्नीकर नीचे ज़मीन पर पड़ा, उसका हाथ अनजाने में ही उस पिल्ले के ज़ख्मी सिर को छू गया।</p>
+
+      <p><span class="sfx sfx-spark">ZZZZZT!</span></p>
+
+      <p><span class="term">Neel</span> की हथेली और पिल्ले के काले रोएँ के बीच एक तेज़ <span class="term">static discharge</span> कौंधा!</p>
+
+      <p><span class="term">Neel</span> के हाथ में आँख खुलने के वक़्त से जो सुन्न करने वाली जलन मची हुई थी, वह अचानक भड़क उठी। एक पतली, <span class="term">electric-blue</span> चिंगारी—ताक़त का एक सूक्ष्म झटका—पिल्ले के माथे पर चमका। गतिज ऊर्जा के उस अचानक झटके से, पिल्ले के लोहे जैसी चमक वाले जबड़े अनायास ही भींच गए और उसने झटके से अपनी गर्दन खींची। वो पुरानी, गली हुई सन की रस्सी एक तेज़ चटचटाहट के साथ टूट गई! कटी हुई रस्सी कीचड़ में जा गिरी, और पिल्ला पूरी तरह आज़ाद हो गया।</p>
+
+      <p>और उसी एक माइक्रोसेकंड में, दूर अखाड़े से आती हज़ारों की आवाज़ <span class="term">Neel</span> के कानों से गायब हो गई।</p>
+
+      <p><span class="sfx">धक। धक। धक।</span></p>
+
+      <p><span class="term">Neel</span> के अपने दिल की धड़कन और उस पिल्ले के सीने की तेज़, काँपती नब्ज़ ठीक एक ही रफ्तार पर लॉक हो गई!</p>
+
+      <p><span class="term">Neel</span> को सिर्फ़ वो जानवर नहीं दिखा; आधे सेकंड के लिए उसे पिल्ले के पिछले बाएँ पैर की टीस अपने बदन में महसूस हुई, और उस पिल्ले ने <span class="term">Neel</span> के सिर में लोहे की कील जैसी चुभन को महसूस कर लिया। एक अदृश्य <span class="term">bio-rhythm</span> ने उन दोनों की साँसों को एक सुर में बाँध दिया था।</p>
+
+      <p>"ये क्या बवाल है..." <span class="term">Neel</span> ने अपना हाथ पीछे खींचा और हथेली को घूरा। एक सेकंड के लिए उसकी चमड़ी के नीचे एक बारीक जालीदार नक्शा चमका और फिर उसकी जीवन-रेखा में समा गया।</p>
+
+      <p>पिल्ला अब गुर्रा नहीं रहा था। अपनी रस्सी से आज़ाद होकर, वह आगे बढ़ा, उसने <span class="term">Neel</span> की भीगी जींस के निचले हिस्से को सूंघा, और अपने ज़ख्मी सिर को लड़के की पिंडली से टिका दिया। एक अजीब सा, शांत भरोसा <span class="term">Neel</span> की घबराहट पर हावी हो गया।</p>
+
+      <div class="sfx-bell">🔔 ढूँऽऽऽऽऽऽऽण!</div>
+
+      <p>एक महाकाय, ज़मीन को हिला देने वाले पीतल के घंटे की आवाज़ मैदानों में गूँज उठी। इतनी भारी कि पूरी लकड़ी की गाड़ी काँप उठी।</p>
+
+      <p><span class="term">Neel</span> ने चौंक कर नज़रें घुमाईं।</p>
+
+      <p>वे <span class="term">Central Shard</span> के <span class="term">Outer Caravan Staging Grounds</span> में, शहर की प्राचीर के ठीक बाहर धूल भरे खुले मैदान में खड़े थे। आधा मील आगे, दो मील लंबी सफ़ेद पत्थर की प्राचीर के बीचोंबीच, काले बेसाल्ट पत्थर से तराशा गया सौ फीट ऊँचा एक विशालकाय दरवाज़ा खड़ा था—<span class="term">Central City</span> की मुख्य सीमा में दाखिल होने वाला बाहरी नाका! और उस विशाल मेहराब के बीच से, बिना किसी गियर या मशीन के, साँस लेने लायक नीली <span class="term">Aether-mist</span> का एक चमकदार गलियारा बह रहा था। हज़ारों मुसाफ़िर, <span class="term">Asura Shard</span> से आए सींगों वाले बैलों की गाड़ियाँ, और लबादे ओढ़े हथियारबंद योद्धा सुबह के <span class="term">Muhurta window</span> में चेकिंग लाइनें खुलते ही धीरे-धीरे आगे बढ़ रहे थे।</p>
+
+      <div class="inscription-block">
+        <div class="inscription-label">Monolithic Gateway Inscription</div>
+        <div class="inscription-text">CENTRAL CITY — THE CROSSROADS OF THE FIVE SHARDS</div>
+      </div>
+
+      <p><span class="term">Neel</span> ने अपने बुझे हुए स्मार्टफोन को जैकेट की अंदरूनी जेब में गहरा खिसकाया, अपने भीगे बैग के फीते कंधों पर कसे, और अपने जूते के पास आज़ाद खड़े उस एक कान वाले काले पिल्ले की तरफ़ देखा।</p>
+
+      <p>"देख <span class="term">Sheru</span>," <span class="term">Neel</span> बुदबुदाया, उसका गला सूखा था लेकिन चेहरे पर एक बेपरवाह, ज़िद्दी मुस्कान तैर रही थी। "हम दोनों में से किसी को नहीं पता कि हम कहाँ फँसे हैं। लेकिन एक बात बिल्कुल शीशे जैसी साफ़ है... अगर सूरज डूबने से पहले हमने उस शहर में कुछ <span class="term">copper coins</span> कमाने का जुगाड़ नहीं किया, तो आज रात हम दोनों ठंड में ठिठुर कर मरेंगे।"</p>
+
+      <p>पिल्ले ने सहमति में अपनी नाक से एक छोटी, भारी साँस छोड़ी।</p>
+
+      <p>और इसी के साथ, <span class="term">Bombay</span> के उस उन्नीस साल के संशयवादी लड़के ने <span class="term">Central Realm</span> के ख़तरनाक, जादुई अखाड़ों की दुनिया में अपना पहला कदम रख दिया।</p>
+    </article>
+
+    <!-- ========================================== -->
+    <!-- 2. ENGLISH ORIGINAL PANE -->
+    <!-- ========================================== -->
+    <article class="content-pane pane-english" id="paneEnglish">
+      <p class="lead-drop">The headache felt like someone had driven a red-hot iron nail through the base of his skull.</p>
+
+      <p>Neel did not open his eyes immediately, but his senses registered the shift before his mind could. There was no smell of wet Mumbai asphalt. Missing too was that familiar, suffocating reek of diesel exhaust and drying Bombay duck from Dadar station that had anchored his mornings for three years. The air here was bitter-cold—so thin and clean that each inhalation stung his throat like crushed glass. And layered over that chill were two distinctly alien scents: the sour tang of dry mountain hay, and the sharp, metallic ozone smell that precedes an electrical transformer detonation.</p>
+
+      <p>"Ugh... my head..."</p>
+
+      <p>Neel rolled onto his side. Something sharp jabbed his ribs. His fingers closed around coarse, brittle stalks. Straw. Centuries-old, dust-caked straw.</p>
+
+      <p>He cracked his eyelids open.</p>
+
+      <p>There was no ceiling above him. No water-stained plaster of his rented one-bedroom flat.</p>
+
+      <p>What hung overhead instantly dragged every trace of fever and grogginess from his veins.</p>
+
+      <p>There was no blue sky. There was no morning sun.</p>
+
+      <p>Above him yawned an incomprehensible, frozen, lightless chasm—<strong>The Infinite Void</strong>—a breathless black where even distant stars seemed to shiver rather than shine. And suspended against that terrible void, thousands of miles apart, hung two colossal planetary landmasses! To the west, a fractured volcanic continent bled sullen crimson magma into the dark; to the north, floating marble plateaus hovered beyond mountain-high cloudbanks, gleaming in pure, untainted light without a single pillar to hold them up.</p>
+
+      <p>Neel froze, his back pressed hard against the wooden slats beneath the hay. His breath hitched in his throat.</p>
+
+      <div class="inner-monologue">
+        <span class="tag">Neel</span> "What the hell... Is this a rendering glitch?"
+      </div>
+
+      <p>His hand shot down into the pockets of his faded denim jacket. His fingers mapped familiar objects: his laminated Mumbai University student ID, his flat’s brass front-door key, and his old Redmi smartphone, its tempered glass protector cracked diagonally across the screen.</p>
+
+      <p>He pressed the power button with a trembling thumb. Pressed it again. Harder.</p>
+
+      <p>The screen remained a flat, dead slab of black glass. Zero battery.</p>
+
+      <p>"Right... water damage. It fell in a puddle..." Neel muttered aloud, his voice paper-thin in the vast air. His nineteen-year-old engineering brain scrambled to erect an intellectual wall against panic. "Think, Neel. Chronology. It was 07:15 PM. You were walking back from college in the drizzle. Dadar bridge. Stepping over a flooded pothole. A sudden dry sizzle in the air, a tearing sound like canvas ripping, and then..."</p>
+
+      <p>And then nothing. Just the sensation of weightless falling through a corridor of blinding white-gold light.</p>
+
+      <p>"Status Window?" Neel whispered tentatively into the hay, glancing left and right. "System Menu? Open Profile?"</p>
+
+      <p>No floating blue boxes appeared. No synthesized celestial voice chimed in his ear. There was only a distant, thunderous vibration that rattled his teeth—the muffled, continuous roar of thousands of voices echoing from a massive stone structure miles away.</p>
+
+      <p>Then, from directly beneath the wooden bed of his wagon, came a heavy exhalation.</p>
+
+      <p><span class="sfx">Phussssshh.</span></p>
+
+      <p>A gust of sulfur-tainted heat washed over Neel’s damp sneakers. He crawled to the edge of the straw and peered over the sideboards.</p>
+
+      <p>He wasn't in a building. He was lying in the cargo bed of an unhitched, heavy timber wagon—a <strong>Beast-Cart</strong>. And tethered to the hitch ahead was no ordinary draft ox. It was an eight-foot-tall, slab-sided behemoth of basalt-colored hide—a <strong>Lava-Bull</strong>—its shoulders bunched with terrifying muscle, crowned by two thick, sweeping horns that pulsed with a dull, coal-red subterranean heat from within the horn-core itself.</p>
+
+      <p>A cold trickle of sweat ran down Neel’s spine.</p>
+
+      <div class="inner-monologue">
+        <span class="tag">Neel</span> "Aliens... Either I fell through a wormhole onto an unmapped planetary colony, or my temporal lobe has suffered a catastrophic stroke."
+      </div>
+
+      <p><span class="sfx">Ghhhuuurrrr.</span></p>
+
+      <p>A low, raspy sound cut through his muttering. It hadn't come from the giant bull. It came from beneath the rear iron-rimmed wheel of the cart.</p>
+
+      <p>Neel lowered his gaze.</p>
+
+      <p>Curled in the churned mud beside the wheel, secured by a frayed hemp cord attached to an iron ring, sat a small canine pup. It was unlike any stray dog on the streets of Bombay. Its short, bristled coat was the color of fresh charcoal slag, swallowing the ambient light around it. Its left ear was half-torn away—ragged at the edge as if ripped in a fighting pit—and a pale cross-shaped scar marked the bridge of its muzzle. But its eyes... its eyes were an astonishing, pale amber-gold, burning with a hungry, cynical intelligence that no ordinary animal should possess.</p>
+
+      <p>The pup was staring up at Neel, its thin ribcage expanding and contracting with ragged, shallow breaths.</p>
+
+      <p>Neel swallowed dryly. "Uhh... hey there, buddy. Nice dog. Good boy?"</p>
+
+      <p>The pup curled its upper lip, exposing its teeth. They weren't white bone—they held a faint, gunmetal-grey metallic sheen, catching the cold light like needles of polished iron.</p>
+
+      <p>"Right. Message received. No petting," Neel murmured, keeping his palms open. At that moment, his stomach let out an agonizing, hollow growl that felt like his intestines were folding in on themselves. He hadn't eaten since yesterday's cheap college canteen samosa.</p>
+
+      <p>He unzipped his damp backpack. The engineering textbooks were warped into soggy bricks. His plastic water bottle had roughly three mouthfuls of warm water left. And at the bottom, wrapped in a plastic pouch, sat a crushed, half-eaten dry mutton roll and three glucose biscuits he had bought before the storm.</p>
+
+      <p>Neel pulled out the meat roll. He brought it halfway to his mouth.</p>
+
+      <p>Then he stopped.</p>
+
+      <p>From beneath the wheel, those amber eyes had locked onto the food. The pup’s dry, cracked tongue dragged across its snout, and from its throat came a faint, involuntary whine—not the growl of a predator, but the raw, shameful desperation of a street orphan who hadn't eaten in days.</p>
+
+      <p>Neel’s hand froze.</p>
+
+      <p>Living alone in an empty apartment since age sixteen, scraping through college on part-time tutoring gigs after his parents died on the highway, Neel knew that exact look. When the money ran out on the fourth week of the month, his own stomach had burned with that exact hollow fire.</p>
+
+      <p>"You're a stowaway too, huh?" Neel said softly.</p>
+
+      <p>He snapped the roll in two. He kept the smaller crust for himself and tossed the meat-filled half down onto the straw near the pup’s paws. "Here. Take it. It’s not poisoned."</p>
+
+      <p>The pup flinched, sniffed the meat once, and inhaled it whole without chewing. Its amber eyes softened by a fraction of a millimeter. The stump of its tail gave a single, tentative twitch against the mud.</p>
+
+      <p>Neel gave a tired smirk and chewed his own crust. It was cold and stale, but it tasted like absolute salvation.</p>
+
+      <p>"Alright," Neel muttered, preparing to vault down from the tailgate. "Time to find out which dimension's ticket counter I need to—"</p>
+
+      <p>As his worn sneaker hit the packed earth, his hand instinctively reached out and brushed the top of the pup’s scarred head.</p>
+
+      <p><span class="sfx sfx-spark">ZZZZZT!</span></p>
+
+      <p>A sharp static discharge cracked between his palm and the pup’s charcoal fur.</p>
+
+      <p>The dull, feverish itch that had been simmering in Neel’s hands since he opened his eyes suddenly ignited. A thin, electric-blue spark—a minute burst of kinetic heat—snapped across the pup’s brow. At that sudden jolt of kinetic feedback, the pup’s iron-sheened jaws clamped and yanked reflexively, snapping the frayed, brittle hemp cord with a sharp <span class="sfx">SNAP!</span> The severed rope fell into the mud, leaving the pup completely free.</p>
+
+      <p>In that single microsecond, the roar of the distant arena vanished from Neel's ears.</p>
+
+      <p><span class="sfx">Thump. Thump. Thump.</span></p>
+
+      <p>His own heartbeat and the rapid, fluttering pulse inside the pup’s chest locked into the exact same tempo.</p>
+
+      <p>Neel didn't just see the dog; for half a heartbeat, he felt the throbbing ache in the pup's left hind leg, and the pup felt the blinding iron ache behind Neel’s temples. An invisible, subtle line of bio-rhythm had tied their breathing together like two instruments struck in harmony.</p>
+
+      <p>"What in the..." Neel pulled his hand back, staring at his palm. For a second, a faint geometric lattice had flickered under his skin before dissolving back into his lifeline.</p>
+
+      <p>The pup didn't growl. Free from its tether, it stepped forward, sniffed Neel's frayed denim trouser cuff, and rested the side of its scarred head firmly against his shin. A strange, grounded calm washed through Neel's frantic thoughts.</p>
+
+      <div class="sfx-bell">🔔 DHOOONNNNNNN!</div>
+
+      <p>A colossal, mountain-shaking brass bell tone rolled across the plains, deep enough to make the hay-cart vibrate.</p>
+
+      <p>Neel snapped his head around.</p>
+
+      <p>They were parked in the Outer Caravan Staging Grounds of the Central Shard, on the dust-churned flats just outside the city's perimeter. Half a mile ahead, embedded in the center of a two-mile-long white stone rampart, stood a hundred-foot-tall archway carved from seamless black basalt—the outer customs gate leading into Central City proper. And through its yawning arch, without a single gear or piston in sight, billowed a stable, shimmering corridor of breathable blue Aether-mist. Thousands of travelers, armored horn-bull carts from the Asura Shard, and cloaked swordsmen were quietly moving forward as the morning Muhurta window unlocked the inspection lines.</p>
+
+      <div class="inscription-block">
+        <div class="inscription-label">Monolithic Gateway Inscription</div>
+        <div class="inscription-text">CENTRAL CITY — THE CROSSROADS OF THE FIVE SHARDS</div>
+      </div>
+
+      <p>Neel slipped his dead smartphone deep into his inner jacket pocket, pulled his backpack straps tight over his shoulders, and looked down at the one-eared black pup standing freely beside his boot.</p>
+
+      <p>"Look, Sheru," Neel muttered, his throat dry, a reckless, desperate grin cracking through his exhaustion. "Neither of us has a clue where we are. But one thing is crystal clear... If we don't figure out how to make some copper coins in that city before nightfall, we're both sleeping in the cold."</p>
+
+      <p>The pup let out a short, guttural huff of agreement.</p>
+
+      <p>And with that, the nineteen-year-old college skeptic from Bombay took his first steps into the deadly, magical arenas of the Central Realm.</p>
+    </article>
+
+  </main>
+
+  <!-- Bottom Chapter Navigation -->
+  <footer class="chapter-footer">
+    <a href="#" class="nav-ch-btn nav-ch-prev">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      Previous Chapter
+    </a>
+    <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+      Chapter 1 of 3 Available
+    </div>
+    <a href="chapter_2_reader.html" class="nav-ch-btn nav-ch-next">
+      Next: Chapter 2
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </a>
+  </footer>
+
+</div>
+
+<script>
+function switchPane(language) {
+  const paneHindi = document.getElementById('paneHindi');
+  const paneEnglish = document.getElementById('paneEnglish');
+  const tabHindiBtn = document.getElementById('tabHindiBtn');
+  const tabEnglishBtn = document.getElementById('tabEnglishBtn');
+
+  if (language === 'hindi') {
+    paneHindi.classList.add('active');
+    paneEnglish.classList.remove('active');
+    tabHindiBtn.classList.add('active');
+    tabEnglishBtn.classList.remove('active');
+  } else {
+    paneEnglish.classList.add('active');
+    paneHindi.classList.remove('active');
+    tabEnglishBtn.classList.add('active');
+    tabHindiBtn.classList.remove('active');
+  }
+}
+</script>
+
+</body>
+</html>

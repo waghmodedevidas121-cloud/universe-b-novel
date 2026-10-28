@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02. Cosmic History, The Four Eras &amp; The Seven Void Seals — Universe B Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void:#050811; --bg-primary:#090d1a; --bg-card:rgba(22,32,58,.65);
+  --text-main:#f8fafc; --text-muted:#94a3b8; --text-dim:#64748b;
+  --gold:#f59e0b; --gold-light:#fbbf24; --cyan:#06b6d4; --cyan-light:#38bdf8;
+  --emerald:#10b981; --rose:#f43f5e; --purple:#a855f7;
+  --border:rgba(148,163,184,.16); --border-gold:rgba(245,158,11,.4);
+  --font-display:'Cinzel',Georgia,serif; --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg-void); color:var(--text-main); font-family:var(--font-sans);
+  font-weight:400; line-height:1.75; letter-spacing:.005em;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6,182,212,.10), transparent),
+                   radial-gradient(ellipse 60% 50% at 90% 10%, rgba(245,158,11,.05), transparent);
+  background-attachment:fixed; min-height:100vh;
+}
+a { color:var(--cyan-light); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.topbar {
+  position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+  padding:14px 26px; background:rgba(5,8,17,.88); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.brand {
+  font-family:var(--font-display); font-weight:700; letter-spacing:.14em; font-size:.78rem;
+  color:var(--gold-light); text-transform:uppercase; white-space:nowrap;
+}
+.crumb { color:var(--text-dim); font-size:.78rem; font-family:var(--font-mono); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.spacer { flex:1; }
+.btn {
+  font-size:.74rem; padding:7px 13px; border-radius:7px; border:1px solid var(--border-gold);
+  color:var(--gold-light); background:rgba(245,158,11,.07); white-space:nowrap;
+}
+.btn:hover { background:rgba(245,158,11,.16); text-decoration:none; }
+
+.layout { display:grid; grid-template-columns:280px minmax(0,1fr); gap:34px; max-width:1440px; margin:0 auto; padding:34px 28px 90px; }
+.toc {
+  position:sticky; top:86px; align-self:start; max-height:calc(100vh - 110px); overflow-y:auto;
+  border:1px solid var(--border); border-radius:14px; background:var(--bg-card);
+  padding:18px 16px; backdrop-filter:blur(8px);
+}
+.toc h4 { font-family:var(--font-display); font-size:.72rem; letter-spacing:.16em; color:var(--cyan); text-transform:uppercase; margin-bottom:12px; }
+.toc a { display:block; color:var(--text-muted); font-size:.8rem; padding:4px 0 4px 10px; border-left:2px solid transparent; line-height:1.45; }
+.toc a:hover { color:var(--text-main); border-left-color:var(--gold); text-decoration:none; }
+.toc a.h3 { padding-left:24px; font-size:.76rem; color:var(--text-dim); }
+
+article {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:44px 52px 56px; backdrop-filter:blur(6px); max-width:1000px;
+}
+article h1 {
+  font-family:var(--font-display); font-size:1.72rem; line-height:1.3; color:#fff;
+  padding-bottom:16px; margin-bottom:20px; border-bottom:2px solid var(--border-gold); letter-spacing:.01em;
+}
+article h2 {
+  font-family:var(--font-display); font-size:1.24rem; color:var(--gold-light);
+  margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); letter-spacing:.02em;
+}
+article h3 { font-size:1.02rem; font-weight:700; color:var(--cyan-light); margin:30px 0 12px; }
+article h4 { font-size:.92rem; font-weight:700; color:var(--purple); margin:22px 0 10px; }
+article p { margin:12px 0; color:#e2e8f0; font-size:.94rem; }
+article strong { color:#fff; font-weight:600; }
+article em { color:var(--gold-light); font-style:italic; }
+article ul, article ol { margin:12px 0 12px 24px; color:#e2e8f0; font-size:.94rem; }
+article li { margin:6px 0; }
+article hr { border:0; height:1px; background:var(--border); margin:34px 0; }
+article blockquote {
+  margin:18px 0; padding:14px 20px; border-left:3px solid var(--gold);
+  background:rgba(245,158,11,.06); border-radius:0 10px 10px 0; color:#f1f5f9;
+}
+article blockquote p { margin:6px 0; }
+article code {
+  font-family:var(--font-mono); font-size:.83em; background:rgba(6,182,212,.1);
+  color:var(--cyan-light); padding:2px 6px; border-radius:5px; border:1px solid rgba(6,182,212,.18);
+}
+article pre {
+  margin:18px 0; padding:18px 20px; overflow-x:auto; border-radius:12px;
+  background:#060a14; border:1px solid var(--border); font-size:.82rem; line-height:1.7;
+}
+article pre code { background:none; border:0; color:#cbd5e1; padding:0; font-size:1em; }
+.table-container { overflow-x:auto; margin:20px 0; border:1px solid var(--border); border-radius:12px; }
+table { border-collapse:collapse; width:100%; font-size:.84rem; min-width:560px; }
+thead { background:rgba(6,182,212,.09); }
+th { text-align:left; padding:11px 14px; color:var(--cyan-light); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+td { padding:10px 14px; border-bottom:1px solid rgba(148,163,184,.08); color:#dbe3ef; vertical-align:top; }
+tbody tr:hover { background:rgba(30,45,78,.4); }
+tbody tr:last-child td { border-bottom:0; }
+.badge {
+  display:inline-block; font-size:.68rem; font-family:var(--font-mono); padding:2px 7px;
+  border-radius:20px; background:rgba(168,85,247,.12); color:#d8b4fe; border:1px solid rgba(168,85,247,.25);
+}
+footer { max-width:1000px; margin:26px auto 0; padding:0 8px; color:var(--text-dim); font-size:.74rem; font-family:var(--font-mono); }
+@media (max-width:1080px) {
+  .layout { grid-template-columns:1fr; padding:22px 16px 70px; }
+  .toc { position:static; max-height:none; order:2; }
+  article { padding:28px 20px 38px; }
+  article h1 { font-size:1.34rem; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Universe B</span>
+  <span class="crumb">01_Cosmology_and_Realms\02_Cosmic_History_The_Four_Eras_and_Seals.md</span>
+  <span class="spacer"></span>
+  <a class="btn" href="file:///D:/Web%20Novel/New/01_Cosmology_and_Realms/02_Cosmic_History_The_Four_Eras_and_Seals.md" target="_blank">Open .md</a>
+</div>
+<div class="layout">
+  <nav class="toc"><h4>Contents</h4><a class="h2" href="#0__historical_framework___macro-timeline">0. Historical Framework & Macro-Timeline</a><a class="h2" href="#1__era_1__primordial_genesis_____-______the_dawning_age">1. Era 1: Primordial Genesis (आदि-युग — The Dawning Age)</a><a class="h3" href="#1_1_the_act_of_cosmic_creation__the_singularity___kshira_sagara">1.1 The Act of Cosmic Creation: The Singularity & Kshira Sagara</a><a class="h3" href="#1_2_the_living_geography_of_era_1">1.2 The Living Geography of Era 1</a><a class="h2" href="#2__era_2__the_void_cataclysm___the_great_sealing_____-">2. Era 2: The Void Cataclysm & The Great Sealing (महा-भ्रंश युग)</a><a class="h3" href="#2_1_the_cosmic_rupture">2.1 The Cosmic Rupture</a><a class="h3" href="#2_2_the_catastrophic_containment_war">2.2 The Catastrophic Containment War</a><a class="h3" href="#2_3_the_seventh_void_seal___shrutayudha_s_eternal_penance">2.3 The Seventh Void Seal & Shrutayudha's Eternal Penance</a><a class="h3" href="#2_4_construction_of_the_grand_aegis_____-">2.4 Construction of The Grand Aegis (महा-चैतन्य प्राकार)</a><a class="h3" href="#2_5_the_soul-sorting_collapse__birth_of_the_devils">2.5 The Soul-Sorting Collapse: Birth of the Devils (दैत्यांचा जन्म)</a><a class="h2" href="#3__era_3__the_great_partition___the_ashen_eclipse_____-">3. Era 3: The Great Partition & The Ashen Eclipse (महा-विभाजन युग)</a><a class="h3" href="#3_1_the_biological_scale_mismatch___the_kin_wars">3.1 The Biological Scale Mismatch & The Kin Wars</a><a class="h3" href="#3_2_the_great_partition_____-_________the_spatial_sundering">3.2 The Great Partition (महा-विभाजन — The Spatial Sundering)</a><a class="h3" href="#3_3_the_ashen_eclipse_catastrophe">3.3 The Ashen Eclipse Catastrophe (राखेचे ग्रहण)</a><a class="h3" href="#3_4_the_class-omega_taboo_____-">3.4 The Class-Omega Taboo (महा-निषिद्ध विद्या)</a><a class="h2" href="#4__era_4__the_steam-aether_age________________present_era">4. Era 4: The Steam-Aether Age (वर्तमान युग — Present Era)</a><a class="h3" href="#4_1_the_industrial_leap_forward">4.1 The Industrial Leap Forward</a><a class="h3" href="#4_2_the_cold_war___the_grand_concord">4.2 The Cold War & The Grand Concord</a><a class="h3" href="#4_3_the_incipient_crisis__the_kshira_singularity___corridor_breach">4.3 The Incipient Crisis: The Kshira Singularity & Corridor Breach</a><a class="h2" href="#5__the_seven_cosmic_seals__________-______unified_master_register">5. The Seven Cosmic Seals (सप्त महा-बंध — Unified Master Register)</a></nav>
+  <div>
+    <article><h1 id="02__cosmic_history__the_four_eras___the_seven_void_seals">02. Cosmic History, The Four Eras & The Seven Void Seals</h1>
+<p><strong>File:</strong> <code>D:\Web Novel\New\02_COSMIC_HISTORY_THE_FOUR_ERAS_AND_VOID_SEALS.md</code></p>
+<p><strong>Tags:</strong> <code><span class="badge">#history</span> <span class="badge">#four-eras</span> <span class="badge">#primordial-genesis</span> <span class="badge">#void-cataclysm</span> <span class="badge">#the-great-partition</span> <span class="badge">#ashen-eclipse</span> <span class="badge">#steam-aether-age</span> <span class="badge">#seven-void-seals</span> <span class="badge">#shrutayudha</span> <span class="badge">#canon-lock</span></code></p>
+<p><strong>Status:</strong> [CANON LOCK] Official Historical Timeline & Macro-Chronology of Universe B (October 2026)</p>
+<p><strong>Authority:</strong> Universe B ची अधिकृत, शब्दन्-शब्द कॅनॉनिकल हिस्टरी. Merges, refines, and expands <code>World/33</code>, <code>World/02</code>, <code>World/29</code>, and <code>World/35</code>.</p>
+<hr>
+<h2 id="0__historical_framework___macro-timeline">0. Historical Framework & Macro-Timeline</h2>
+<p><em>(ऐतिहासिक चौकट व विश्वाची कालमर्यादा)</em></p>
+<p>Universe B मध्ये लाखो वर्षांची जुनी अस्वच्छता किंवा स्तब्धता नाही. हे हजारो वर्षांपूर्वी Supreme Trinity ने निर्माण केलेले एक <strong>Child Cosmos (बाल्य विश्व)</strong> आहे, जे संकटे, जैविक बदल आणि सिस्टीम अपडेट्समधून सक्रियपणे विकसित होत आहे:</p>
+<pre><code class="language-">[ ERA 1: PRIMORDIAL GENESIS (आदि-युग) ]
+सृष्टीची निर्मिती · अखंड आकाश · Ananta ची स्थापना · Six Constitutional Offices
+                     │
+                     ▼
+[ ERA 2: THE VOID CATACLYSM &amp; THE GREAT SEALING (महा-भ्रंश युग) ]
+7 Dark Entities चे आक्रमण · वैश्विक युद्ध · 6 टेक्टोनिक सील · सातवे पाताळ सील
+The Grand Aegis ची उभारणी · Soul-Sorting सिस्टीम कोसळली → Devils चा जन्म
+                     │
+                     ▼
+[ ERA 3: THE GREAT PARTITION &amp; THE ASHEN ECLIPSE (महा-विभाजन युग) ]
+प्रजातींमधील अवाढव्य तफावत · एका खंडाचे 5 स्वतंत्र Sub-Realms मध्ये तुकडे
+Aetheric Spatial Void ची निर्मिती · The Central Hub ची स्थापना · Ashen Eclipse चे संकट
+50,000 आत्मे खाक · Class-Omega Taboo: Devil Summoning चे ज्ञान इतिहासातून नष्ट
+                     │
+                     ▼
+[ ERA 4: THE STEAM-AETHER AGE (वर्तमान वाष्प-आयामी युग — Present Day) ]
+औद्योगिक क्रांती: Double-Gauge Rails, Rifled Carbines, Aether Telegraph
+Madhya-Nagara मध्ये शांतता करार · महासत्तांचे Cold War आणि व्यापारी कार्टेल्स
+Soul Corridor मधील भेगा → Route B Drift Souls (दुर्मिळ; कोणतेही नामनिर्देशित पात्र नाही)</code></pre>
+<hr>
+<h2 id="1__era_1__primordial_genesis_____-______the_dawning_age">1. Era 1: Primordial Genesis (आदि-युग — The Dawning Age)</h2>
+<p><em>(सृष्टीची निर्मिती व सुवर्ण प्रभात)</em></p>
+<h3 id="1_1_the_act_of_cosmic_creation__the_singularity___kshira_sagara">1.1 The Act of Cosmic Creation: The Singularity & Kshira Sagara</h3>
+<ul>
+<li><strong>The Genesis Starting Point:</strong> विश्वाच्या सुरुवातीच्या अंतिम बिंदूवर (Cosmic Singularity / Hiranyagarbha) <strong>क्षीर सागर (Kshira Sagara)</strong> स्थित आहे. हे ते मूळ स्थान आहे जिथून हे संपूर्ण Universe B जन्माला आले.</li>
+<li><strong>Garbhodakashayi Vishnu:</strong> या मूळ क्षीर सागरावर <strong>Garbhodakashayi Vishnu</strong> अनंत-शेषावर (Ananta-Shesha) विश्राम करतात. त्यांच्या नाभी-कमलातून चतुर्मुख ब्रह्मदेव प्रकट झाले आणि सृष्टीचा विस्तार सुरू झाला.</li>
+<li><strong>Pure Spiritual Energy Fountainhead:</strong> क्षीर सागर हा <strong>शुद्ध आध्यात्मिक ऊर्जेचा (Pure Spiritual Energy) अखंड स्त्रोत</strong> आहे, जिथून विश्वातील सर्व आत्म्यांना (Souls) मूळ चैतन्य आणि प्राण-शक्ती प्राप्त होते.</li>
+<li><strong>The Supreme Architect:</strong> Supreme Trinity (Brahma, Vishnu, Shiva) ने या ऊर्जेतून Universe B ला एक गतिशील आणि विकसित होणारे विश्व (<em>Bālya-Avasthā</em>) म्हणून सुरू केले.</li>
+<li><strong>The Foundational Substrate:</strong> Maha-Vishnu ने स्पेस-टाइम फॅब्रिकला <strong>Ananta-Shesha</strong> (The System Core) वर स्थिर केले. Ananta हे निष्पक्ष, निर्जीव आणि Read-Only आर्काइव्ह म्हणून सुरू झाले, जे कोणाचीही बाजू न घेता कर्माच्या नोंदी ठेवते.</li>
+<li><strong>The Six Constitutional Upadhis:</strong> कोणाचीही एकाधिकारशाही निर्माण होऊ नये म्हणून Trinity ने तटस्थ High Council Realm (सभा-लोक) मध्ये <strong>सहा घटनात्मक पदे</strong> स्थापन केली:</li>
+</ul>
+<ol>
+<li><em>Yama-Dharma:</em> मृत्यू, न्याय आणि आत्म्यांच्या रिसायकलिंगचे मुख्य न्यायाधीश.</li>
+<li><em>Vidhata:</em> नशिबाचे शिल्पकार आणि <em>Prana-Sutra</em> द्वारे कर्म बंधनांचे नियंत्रक.</li>
+<li><em>Citragupta:</em> वैश्विक लेजर (<em>Maha-Lekha</em>) आणि Soul IDs चे मुख्य व्यवस्थापक.</li>
+<li><em>Mahā-Pālaka:</em> वैश्विक कायदा रक्षक आणि सेतूच्या अखंडतेचे प्रमुख कमांडर.</li>
+<li><em>Chief Sage (Maha-Rishi):</em> सत्य शोधक, सिस्टीम त्रुटींचे ऑडिटर आणि शास्त्रीय संशोधक.</li>
+<li><em>Prime Seeker (Jijnasu-Pati):</em> सिस्टीम स्ट्रेस-टेस्टिंग, उत्क्रांती आणि नव्या सीमांचे संशोधक.</li>
+</ol>
+<h3 id="1_2_the_living_geography_of_era_1">1.2 The Living Geography of Era 1</h3>
+<ul>
+<li><strong>The Unified Continent:</strong> Era 1 मध्ये Devas, Asuras, मानव आणि प्राचीन प्राणी एकाच अखंड जमिनीवर एकाच आकाशाखाली एकत्र राहत होते.</li>
+<li><strong>Geomancy & Early Arts:</strong> नश्वर जीवांनी सुरुवातीचे शेती तंत्रज्ञान, प्राणायाम आणि कल्पवृक्षांशी संवाद साधण्याच्या पद्धती विकसित केल्या.</li>
+<li><strong>The Latent Flaw:</strong> जसजशी लोकसंख्या आणि ऊर्जेचा वापर वाढला, तसतसा विश्वाच्या बाहेरील आयामी आवरणावर ताण पडू लागला, कारण बाहेरील अवकाशीय किरणोत्सर्गापासून संरक्षणाची पुरेशी व्यवस्था नव्हती.</li>
+</ul>
+<hr>
+<h2 id="2__era_2__the_void_cataclysm___the_great_sealing_____-">2. Era 2: The Void Cataclysm & The Great Sealing (महा-भ्रंश युग)</h2>
+<p><em>(शून्य-प्रलय, काळे अस्तित्व व महा-बंध)</em></p>
+<h3 id="2_1_the_cosmic_rupture">2.1 The Cosmic Rupture</h3>
+<ul>
+<li>निर्मितीनंतर सुमारे दोन हजार वर्षांनी Universe B च्या दक्षिणेकडील सीमेवर प्रचंड अवकाशीय भेगा पडल्या. बाहेरील शून्यातून काळी ऊर्जा विश्वात शिरली आणि <strong>Seven Primeval Dark Entities (Kāla-Astitva / सप्त काळे अस्तित्व)</strong> प्रकट झाले.</li>
+<li>हे साधे राक्षस किंवा प्राणी नव्हते; ते प्रकाश गिळंकृत करणारे असे भयानक भोवरे होते जे अणूंना विस्कळीत करत आणि आत्म्यांच्या गाभ्याला थेट विरघळवून टाकत.</li>
+</ul>
+<h3 id="2_2_the_catastrophic_containment_war">2.2 The Catastrophic Containment War</h3>
+<ul>
+<li>संपूर्ण विश्वाचा विनाश (<em>Maha-Samhāra</em>) जवळ आल्याचे पाहून High Council, प्राचीन ऋषी, Devas आणि Asura वीरांनी <strong>पहिली महाआघाडी</strong> स्थापन केली.</li>
+<li><strong>The Immortal Nature of the Horrors:</strong> या काळ्या अस्तित्वांना नष्ट करणे अशक्य होते, कारण त्यांची पाळेमुळे विश्वाच्या मूळ भूगर्भीय रचनेशी घट्ट जोडली गेली होती. त्यांना पूर्ण मारल्यास संपूर्ण विश्वच कोसळले असते.</li>
+<li><strong>The Sealing Campaign:</strong> अतोनात त्याग करून महाआघाडीने सहा काळ्या अस्तित्वांना जमिनीखाली प्रचंड टेक्टोनिक सील (<em>Maha-Bandhas</em>) लावून कायमचे बंदिस्त केले.</li>
+</ul>
+<h3 id="2_3_the_seventh_void_seal___shrutayudha_s_eternal_penance">2.3 The Seventh Void Seal & Shrutayudha's Eternal Penance</h3>
+<ul>
+<li><strong>सातवे काळे अस्तित्व (Mahā-Tamas)</strong> इतके प्रचंड आणि अनियंत्रित होते की कोणताही जिवंत लोक त्याचे गुरुत्वाकर्षण पेलू शकत नव्हता.</li>
+<li>अमर योद्धा राजा <strong>Shrutayudha</strong> याने स्वतःचे सर्वस्व अर्पण केले. त्या भयानक अस्तित्वाला दक्षिणेकडील सर्वात खोल ज्वालामुखीच्या गर्तेत (<strong>Niraya-Kshetra</strong>) खेचून नेण्यात आले.</li>
+<li>Shrutayudha ला उल्कापिंडाच्या थंड पोलादी खांबाला दैवी साखळ्यांनी बांधण्यात आले, डोळ्यांवर शिसाचे सील लावले गेले, आणि तो त्याचा पाषाणी कावळा <strong>Andha-Kāka (The Stone-Eyed Raven)</strong> याच्यासह सातव्या सीलचा अमर रक्षक बनला.</li>
+</ul>
+<h3 id="2_4_construction_of_the_grand_aegis_____-">2.4 Construction of The Grand Aegis (महा-चैतन्य प्राकार)</h3>
+<ul>
+<li>दक्षिणेकडील विषारी धूळ आणि किरणोत्सर्ग रोखण्यासाठी Buffer Zone च्या इंजिनिअर्सनी <strong>The Grand Aegis</strong> ची भिंत उभारली:</li>
+<li><em>Physical Rampart:</em> 5,000 मैल लांब आणि 300 फूट उंच काळ्या बेसॉल्ट दगडांची भिंत, जी विषारी वादळे आणि जमिनीतील हादरे रोखते.</li>
+<li><em>Spiritual Resonance Veil:</em> सोन्यासारखी चमकणारी उच्च-ऊर्जा पडदा, जी High Council च्या सिस्टीमशी जोडलेली आहे; कोणतीही राक्षसी शक्ती थेट ओलांडण्याचा प्रयत्न केल्यास तिचे प्राण क्षणात जाळून टाकते.</li>
+</ul>
+<h3 id="2_5_the_soul-sorting_collapse__birth_of_the_devils">2.5 The Soul-Sorting Collapse: Birth of the Devils (दैत्यांचा जन्म)</h3>
+<p>महाप्रलयाच्या वेळी दक्षिणेकडील पुनर्जन्म यंत्रणा पूर्णपणे कोसळली:</p>
+<ol>
+<li><strong>Ledger Disconnection:</strong> अवकाशीय किरणोत्सर्गामुळे कोट्यवधी मरणाऱ्या आत्म्यांचे कर्माचे धागे तुटले आणि Chitragupta च्या खात्याशी असलेला संपर्क तुटला. त्यांचे Soul IDs नष्ट झाल्याने ते बेवारस (<em>Anirdeshit</em>) झाले.</li>
+<li><strong>Yama's Death Threshold Blocked:</strong> आत्म्यावर विषारी धूळ बसल्यामुळे ते Yama च्या न्यायालयात जाऊ शकले नाहीत, कारण त्यांच्यामुळे पवित्र पुनर्जन्म नदी दूषित होण्याचा धोका होता.</li>
+<li><strong>The Abyssal Mutation:</strong> शेकडो वर्षे अंधारात शरीराविना अडकल्यामुळे त्यांचे मूळ आत्मतत्त्व (<strong>Ātma-tattva</strong>) जिवंत राहिले, पण सूक्ष्म शरीर भयानक हिंस्र शक्तीमध्ये बदलले: ज्यातून जन्म झाला <strong>The Devils (अधो-दैत्य / Corrupted Soul-Lifeforms)</strong> चा.</li>
+</ol>
+<hr>
+<h2 id="3__era_3__the_great_partition___the_ashen_eclipse_____-">3. Era 3: The Great Partition & The Ashen Eclipse (महा-विभाजन युग)</h2>
+<p><em>(महा-विभाजन, राखेचे ग्रहण व महा-निषिद्ध विद्या)</em></p>
+<h3 id="3_1_the_biological_scale_mismatch___the_kin_wars">3.1 The Biological Scale Mismatch & The Kin Wars</h3>
+<p>Era 3 च्या सुरुवातीला एकाच जमिनीवर एकत्र राहणे अशक्य झाले:</p>
+<ol>
+<li><strong>Colossal Biological Disparity:</strong> एखादा बलाढ्य Deva मानवी गावावरून चालत गेल्यास त्याच्या नैसर्गिक दैवी किरणांनी मानवांची मज्जासंस्था निकामी होई; संतापलेल्या Asura ने हातोडा मारल्यास होणाऱ्या भूकंपाने मानवी वस्त्या उद्ध्वस्त होत; महाकाय पशूंमुळे शेते तुडवली जात. <strong>९३–९५%</strong> सामान्य असलेल्या मानव जातीवर विनाशाची टांगती तलवार होती.</li>
+<li><strong>The Mineral Kin Wars:</strong> शुद्ध Aether स्फटिकांच्या खाणींवरून Devas आणि Asuras मध्ये रक्तरंजित युद्धे झाली, ज्यामुळे पृथ्वीचा गाभाच फुटण्याची भीती निर्माण झाली.</li>
+</ol>
+<h3 id="3_2_the_great_partition_____-_________the_spatial_sundering">3.2 The Great Partition (महा-विभाजन — The Spatial Sundering)</h3>
+<p>High Council आणि प्राचीन ऋषींच्या मार्गदर्शनाखाली अखंड जमिनीचे <strong>पाच स्वतंत्र Sub-Realms</strong> मध्ये तुकडे करण्यात आले:</p>
+<ol>
+<li><em>The Human Sub-Realm (Hastinapura, Samudra-Pattanam, Tapovana)</em></li>
+<li><em>The Asura Sub-Realm (Vajra-Nagara, Shaila-Gadha, Basalt Foundries)</em></li>
+<li><em>The Deva Sub-Realm (Amaravati, Gandharva-Puri, Floating Spires)</em></li>
+<li><em>The Beast Sub-Realm (Mahā-Kāntāra, Pakshi-Shaila, Gupt-Kandara)</em></li>
+<li><em>The Central Sub-Realm (Madhya-Nagara — Neutral Crossroads)</em></li>
+<ul>
+<li><strong>The Aetheric Spatial Void:</strong> सर्व जमिनीवरील रस्ते, पूल आणि समुद्र कायमचे नष्ट करण्यात आले. प्रत्येक उप-लोकाच्या मध्ये प्राणघातक अवकाशीय पोकळी आहे. आयामी जादू किंवा विशेष एअरटाईट केबिन्सशिवाय ही पोकळी ओलांडल्यास शरीराचे क्षणात तुकडे होतात.</li>
+</ul>
+</ol>
+<h3 id="3_3_the_ashen_eclipse_catastrophe">3.3 The Ashen Eclipse Catastrophe (राखेचे ग्रहण)</h3>
+<p>Era 3 च्या शेवटी मानवी किमयागार आणि फितूर Asura अभ्यासकांच्या <strong>The Hollow Sect</strong> या गटाने The Grand Aegis ओलांडून निषिद्ध रक्त-विधी केला:</p>
+<ul>
+<li><strong>The Ritual Breach:</strong> निषिद्ध विधीद्वारे त्यांनी मानवांच्या पांचाल (Panchala) शहरात एका उच्चपदस्थ डेव्हिलला पाचारण केले.</li>
+<li><strong>The Soul-Rot Contagion:</strong> आव्हानकर्त्यांचे नियंत्रण सुटले. शरीराशिवाय आलेल्या त्या राक्षसी आत्म्याने आत्म्याचा क्षयरोग (<em>Atma-Kshaya</em>) पसरवला. 72 तासांच्या आत 50,000 नागरिकांचे डोके खाल्ले गेले आणि ते वेड्यासारखे स्वतःच्याच कुटुंबीयांना फाडू लागले.</li>
+<li><strong>The Purge:</strong> संसर्ग बाहेर पसरू नये म्हणून High Council च्या मार्शल्सनी पवित्र अस्त्रांचा मारा करून संपूर्ण पांचाल शहर पांढऱ्या राखेत जाळून खाक केले.</li>
+</ul>
+<h3 id="3_4_the_class-omega_taboo_____-">3.4 The Class-Omega Taboo (महा-निषिद्ध विद्या)</h3>
+<p>राखेच्या ग्रहणानंतर High Council ने <strong>Class-Omega Taboo</strong> कायदा लागू केला:</p>
+<ul>
+<li>डेव्हिल बोलावण्याचे सर्व ग्रंथ, मुद्रा आणि विधी होमहवनात जाळून नष्ट करण्यात आले.</li>
+<li>इतिहास बदलण्यात आला: 99.9% सामान्य लोकांना सांगण्यात आले की डेव्हिल्स केवळ लहान मुलांच्या काल्पनिक गोष्टी आहेत.</li>
+<li>डेव्हिल्स बोलावण्याचा प्रयत्न करणाऱ्याला थेट आत्मा विसर्जित करण्याची (फाशीपेक्षा भयंकर) शिक्षा निश्चित करण्यात आली.</li>
+</ul>
+<hr>
+<h2 id="4__era_4__the_steam-aether_age________________present_era">4. Era 4: Kali Yuga (वर्तमान कलि युग — Present Era)</h2>
+<p><em>(वाष्प-आयामी युग, शीतयुद्ध व आधुनिक वास्तव)</em></p>
+<h3 id="4_1_the_industrial_leap_forward">4.1 The Industrial Leap Forward</h3>
+<p>दुर्मिळ साधू-संतांवर अवलंबून न राहता नश्वर मानवांनी आणि असुरांनी आधुनिक मेकॅनिकल इंजिनिअरिंगचा आधार घेतला:</p>
+<ul>
+<li><strong>High-Pressure Steam Boilers:</strong> बॉयलरवर बारीक रुन्स कोरून 400 psi इतका प्रचंड वाफेचा दाब स्फोट न होता सुरक्षित ठेवणे शक्य झाले.</li>
+<li><strong>Armored Locomotive Networks:</strong> डबल-गेज रेल्वे रुळ, न्यूमॅटिक ब्रेक्स, आणि अवकाशीय पोकळीतून प्रवास करू शकणाऱ्या शिशाच्या आवरणाच्या <em>Bubble-Cars</em> ची निर्मिती झाली.</li>
+<li><strong>Ballistics & Communications:</strong> बोल्ट-ॲक्शन रायफल्स, कार्बाइन्स, वाफेवर चालणाऱ्या मोठ्या तोफा आणि 10,000 मैल लांब तांब्याच्या तारांचे टेलिग्राफ नेटवर्क उभे राहिले.</li>
+</ul>
+<h3 id="4_2_the_cold_war___the_grand_concord">4.2 The Cold War & The Grand Concord</h3>
+<p>पोकळीमुळे आणि The Central च्या तटस्थतेमुळे थेट लष्करी आक्रमण अशक्य झाल्याने महासत्तांमध्ये <strong>Cold War</strong> सुरू झाले:</p>
+<ul>
+<li><strong>Economic Warfare:</strong> गव्हर्नर Ambika च्या नेतृत्वाखाली बँकिंग सिस्टीम, कर्जाचे सापळे आणि व्याजदरांची आर्थिक लढाई.</li>
+<li><strong>Resource Cartels:</strong> असुरांची पोलाद बंदी विरूद्ध देवांची स्फटिक बंदी विरूद्ध मानवांची धान्य नाकेबंदी.</li>
+<li><strong>Industrial Espionage:</strong> इंजिनच्या झडपांचे नकाशे आणि दारूगोळ्याच्या फॉर्म्युल्यांची गुप्तहेर चोरी.</li>
+</ul>
+<h3 id="4_3_the_incipient_crisis__the_kshira_singularity___corridor_breach">4.3 The Incipient Crisis: The Kshira Singularity & Corridor Breach</h3>
+<p>अलिकडच्या काळात विश्वाच्या पूर्व सीमेवर सूक्ष्म अवकाशीय भेगा पडू लागल्या आहेत:</p>
+<ul>
+<li><strong>Kshira Sagara चे वास्तव स्वरूप:</strong> हा Divine Realm मधील <strong>Singularity Apex</strong> आहे; पाण्याचा समुद्र नाही, बंदर नाही, नकाशावरील सीमा नाही. त्यात प्रवेश करणारे कोणतेही जिवंत शरीर, नश्वर वस्तू किंवा जहाज विलीन होते. किनारा, जलचर, रक्षक किंवा wards नाहीत.</li>
+<li><strong>Corridor Breach:</strong> सीलबंद <strong>Soul Corridor</strong> मध्ये अपवादात्मक भेग पडल्यास अनधिकृत आत्मा <strong>Dvāra Gate</strong> जवळ पोहोचू शकतो — हा Route B drift चा दुर्मिळ स्रोत. भौतिक जहाज किंवा जिवंत शरीर क्षीरात प्रवेश करू शकत नाही.</li>
+<li>अशा आत्म्यांवर <code>[STATUS: RIKTA / UNINDEXED]</code> intake marker मारून <strong>Pratigraha</strong> गोदामात पुढील प्रक्रियेसाठी पाठवले जाते.</li>
+</ul>
+<hr>
+<h2 id="5__the_seven_cosmic_seals__________-______unified_master_register">5. The Seven Cosmic Seals (सप्त महा-बंध — Unified Master Register)</h2>
+<p><em>(अधिकृत सात वैश्विक बंध, स्थान, संरक्षक व प्रलयंकारी परिणाम) [CANON LOCK / RESOLVED]</em></p>
+<div class="table-container"><table><thead><tr>
+<th>Seal #</th>
+<th>Geographic Location</th>
+<th>Entombment Subject (Primeval Horror)</th>
+<th>Structural Anchorage & Guardian Force</th>
+<th>Statutory Inspection Authority</th>
+<th>Catastrophic Breach Consequence</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Seal 1</strong></td>
+<td>Deep Crust Subterranean Mantle (Tier 4 Deep Floor)</td>
+<td><strong>Kāla-Kūṭa</strong> <em>(Primordial Thermal Venom)</em></td>
+<td>Chthonic Basalt Pressure Valves; supervised by Muchukunda & stone-sentinels.</td>
+<td>Guild of Seekers (Thermal Audit)</td>
+<td>दक्षिणेकडील भूगर्भाची लाव्हा राख होणे; संपूर्ण खंडाचा पाया कोसळणे.</td>
+</tr>
+<tr>
+<td><strong>Seal 2</strong></td>
+<td>Sunken Trench of Netherholme</td>
+<td><strong>Vṛtra-Chāyā</strong> <em>(Light-Devouring Shadow)</em></td>
+<td>Automated Aetheric Light-Siphons; guarded by Obsidian Basalt Runes.</td>
+<td>Assembly of Sages (Forensic Audit)</td>
+<td>दक्षिणेकडील आकाशातून कायमचा सूर्यप्रकाश नष्ट होणे; कायमचे अंधत्व.</td>
+</tr>
+<tr>
+<td><strong>Seal 3</strong></td>
+<td>Abyssal Iron Mines (Shaila-Gadha Border)</td>
+<td><strong>Lauha-Bhakshaka</strong> <em>(The Rust Colossus)</em></td>
+<td>The Eisen Clan Wardens; four-inch cold-iron anchors.</td>
+<td>Order of Palaks (Border Inspectorate)</td>
+<td>हवेतून गंज पसरून 1,000 मैलांतील सर्व रेल्वे रुळ आणि मशिन्स वितळून जाणे.</td>
+</tr>
+<tr>
+<td><strong>Seal 4</strong></td>
+<td>Western Acid Marsh Basin</td>
+<td><strong>Shūnya-Jvala</strong> <em>(The Cold Void Flame)</em></td>
+<td>Chemical Neutralization Reservoirs; high-density lime vaults.</td>
+<td>Order of Palaks & Naga Toxicologists</td>
+<td>उणे तापमानाची रासायनिक आग पसरून हवेतील ऑक्सिजन गोठणे.</td>
+</tr>
+<tr>
+<td><strong>Seal 5</strong></td>
+<td>Northern Permafrost Rifts</td>
+<td><strong>Hima-Rākshasa</strong> <em>(The Entropy Sovereign)</em></td>
+<td>Glacial Cryo-Runic Pressure Chambers; monitored by Setu Sapper Corps.</td>
+<td>Tri-Departmental Field Taskforce</td>
+<td>संपूर्ण उष्णता नष्ट होऊन जिवंत आत्म्यांना काचेसारखे गोठवून टाकणे.</td>
+</tr>
+<tr>
+<td><strong>Seal 6</strong></td>
+<td>Central Abyssal Rift Floor</td>
+<td><strong>Prāṇa-Shūnyatā</strong> <em>(Soul-Dissolving Void)</em></td>
+<td>High Council Dharmic Barrier Seals; four-layer starlight lattice.</td>
+<td>Chief Sage (Annual Constitutional Audit)</td>
+<td>मोठी भेग पडून लाखो जिवंत माणसांचे आत्मे थेट अवकाशात खेचले जाणे.</td>
+</tr>
+<tr>
+<td><strong>Seal 7</strong></td>
+<td>Abyssal Dead Zone (Niraya-Kshetra)</td>
+<td><strong>Mahā-Tamas</strong> <em>(The Seventh Primordial Horror)</em></td>
+<td><strong>Shrutayudha (The Chained King) & Andha-Kāka (Stone-Eyed Raven)</strong>; meteoric cold-iron chains.</td>
+<td><strong>Rudra's Department (Direct Trinity Mandate)</strong></td>
+<td>वैश्विक महाप्रलय (<em>Maha-Samhara</em>); Universe B चे सर्व नियम आणि अस्तित्व कायमचे विसर्जित होणे.</td>
+</tr>
+</tbody></table></div></article>
+    <footer>01_Cosmology_and_Realms\02_Cosmic_History_The_Four_Eras_and_Seals.md · 157 lines · rendered 2026-10-20</footer>
+  </div>
+</div>
+</body>
+</html>
