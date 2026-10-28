@@ -203,6 +203,7 @@ Universe B हे एका कागदावर आखलेले निर�
 └── rules/season_1_chapter_3.md — Season 1, Volume 1, Chapter 3: The Sand, the Steel, and the First Spark (D-Tier Bout & Spark-Pulse Awakening).
 
 [ 6. INTERACTIVE VISUALIZERS & CARTOGRAPHY (`New/*.html`) ]
+├── universe_b_writer_studio.html — Universe B Writer Studio (write/read modes, 8 chapters, 7 codex entries, localStorage autosave).
 ├── index.html                 — Master Living Story Chronicle & Codex Portal (Interactive Tabbed Reader).
 ├── chapter_1_reader.html       — Dedicated Dual-Script Web Novel Reader UI (Official Hindi Dub & English).
 ├── ability_codex.html         — Interactive Ability Codex UI (Tensura + LOTM + MHA Multi-Filter Engine).
@@ -312,6 +313,9 @@ Universe B's web novel is officially authored and maintained in **Bilingual Twin
 2. **Official Hindi Dub Novel Prose:** Authentic Crunchyroll / Muse style dub prose (All names/skills/places in English Roman script; casual conversational Hindi narration ending with `।`; inner monologues tagged with `· मनात`).
 
 ### Chapter Master Track:
+- **Prologue — The Glitch in the Rain:** *(true story entry point)*
+  - English: `18A_Season_1_Volume_1_Prologue.md`
+  - Hindi: `18A_Season_1_Volume_1_Prologue_Hindi.md`
 - **Chapter 1:**
   - English: `19_Season_1_Chapter_1.md`
   - Hindi: `19_Season_1_Chapter_1_Hindi.md`

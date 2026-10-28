@@ -20,7 +20,10 @@ UNIVERSE B/
 │   ├── CHANGES_MASTER_RECORD.md            # Comprehensive audit of discussions, fixes & evolution
 │   │
 │   ├── [THE WEB NOVEL CHAPTERS & READERS (DUAL-LANGUAGE PRIMARY CANON)]
+│   │   ├── universe_b_writer_studio.html   # Universe B Writer Studio (8 chapters, codex, autosave)
 │   │   ├── chapter_1_reader.html           # Dedicated Dual-Toggle Web Novel Reader UI (Dark Mode)
+│   │   ├── 18A_Season_1_Volume_1_Prologue.md       # Volume 1 Prologue — The Glitch in the Rain (English)
+│   │   ├── 18A_Season_1_Volume_1_Prologue_Hindi.md # Volume 1 Prologue — Hindi Anime Dub
 │   │   ├── 19_Season_1_Chapter_1.md        # Chapter 1 Canonical English Novel Prose
 │   │   ├── 19_Season_1_Chapter_1_Hindi.md  # Chapter 1 Official Crunchyroll/Muse Style Hindi Dub Novel
 │   │   ├── 20_Season_1_Chapter_2.md        # Chapter 2 Canonical English Novel Prose
@@ -121,6 +124,7 @@ UNIVERSE B/
 │   └── worldbuilding_master_architecture.md# Ecological, Sociological & Mythic Bedrock
 │
 ├── ⚙️ scripts/                              # [VERIFICATION SUITES & COMPILATION ENGINES]
+│   ├── build_universe_b_studio.ps1         # Regenerates the Writer Studio from canonical markdown
 │   ├── verify_index.py                     # 28-Assertion Master Verification Test Suite
 │   ├── verify_dynasties_codex.py           # Integrity Verification for Dynasty Roster
 │   ├── build_html_portal.py                # Standalone Web Portal Compiler
@@ -151,6 +155,7 @@ UNIVERSE B/
 
 ## 🚀 Interactive Readers & Visualization
 
+- **Universe B Writer Studio:** Open `New/universe_b_writer_studio.html` — writer-mode editor plus reader mode with all 8 launched chapters (4 English + 4 Hindi), 7 codex entries, autosave. Rebuild with `scripts/build_universe_b_studio.ps1` after any chapter edit.
 - **Chapter 1 Dual-Reader:** Open `New/chapter_1_reader.html` in any browser to experience the official Hindi Dub alongside the English narrative with instant toggle.
 - **Master Story Portal:** Open `New/index.html` for the complete 18-module interactive chronicle.
 - **Character Codex:** Open `New/character_codex.html` to explore all 120 canonical characters with dynamic multi-filtering.
