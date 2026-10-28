@@ -26,6 +26,7 @@ UNIVERSE B/
 │   │   ├── 20_Season_1_Chapter_2.md        # Chapter 2 Narrative Draft (Sheru Bond & Sand-Pit Entry)
 │   │   ├── 21_Season_1_Chapter_3.md        # Chapter 3 Narrative Draft (D-Tier Bout & First Spark)
 │   │   └── rules/                          # Canonical scene staging, craft rules & draft mirrors
+│   │       ├── volume_structure_spec.md    # Master Light Novel / Web Novel 7-Part Volume Architecture Spec
 │   │       ├── season_1_chapter_1.md
 │   │       ├── season_1_chapter_2.md
 │   │       ├── season_1_chapter_3.md
