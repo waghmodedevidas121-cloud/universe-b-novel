@@ -163,7 +163,7 @@ Across the pit, twenty paces away, Sheru pushed itself up on trembling legs, let
 
 The connection snapped shut.
 
-Through the cold arena air, Neel felt it: a sudden, terrifying surge of heat rushing from his chest straight down both arms, vibrating through his 72,000 newly unsealed Nadis like lightning coursing through dry copper wire. 
+Through the cold arena air, Neel felt it: a sudden, terrifying surge of heat rushing from his chest straight down both arms, vibrating through the tens of thousands of open Vessel Channels inside him like lightning coursing through dry copper wire.
 
 His pulse and Sheru’s pulse merged into one deafening, synchronized rhythm inside his eardrums.
 

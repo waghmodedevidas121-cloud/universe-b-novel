@@ -199,7 +199,9 @@ The smell came in layers. Wet hide. Hot iron from the smithies. Boiling grain, s
 
 The sound came in pieces. A horn from the rampart—two short blasts, one long—and every teamster in earshot turning his head. A crier reading names off a board, his voice cracking, men crowding close to hear whether they owed money or were owed it. Two drovers screaming at each other over a splintered axle, foreheads almost touching, neither willing to be the first to step back.
 
-And past all of it, a line of men standing very still with their hands loose at their sides, being counted by an overseer with a rod.
+And past all of it, a line of men standing very still with their hands loose at their sides, being counted by an overseer with a rod. Children wove between the wheels with flat baskets, scooping dung before some other child's basket could reach it.
+
+Neel counted with the rod. Fifty-one. Then fifty-two, when another man was shoved into the line.
 
 Nobody in the staging ground was looking up.
 
@@ -239,7 +241,7 @@ Then, far off and final, the third.
 
 Neel turned toward the wall.
 
-Half a mile ahead, embedded in the center of a two-mile-long white stone rampart, stood a hundred-foot-tall archway carved from seamless black basalt—the outer customs gate leading into Central City proper. Through its yawning mouth, without a single gear or piston in sight, billowed a stable, shimmering corridor of breathable blue Aether-mist. Thousands of travelers, armored horn-bull carts from the Asura Shard, and cloaked swordsmen were already shuffling forward as the morning Muhurta window unlocked the inspection lines.
+Half a mile ahead, embedded in the center of a two-mile-long white stone rampart, stood a hundred-foot-tall archway carved from seamless black basalt—the outer customs gate leading into Central City proper. Through its yawning mouth, without a single gear or piston in sight, billowed a stable, shimmering corridor of breathable blue Aether-mist. Thousands of travelers, armored horn-bull carts from the Western Caldera, and cloaked swordsmen were already shuffling forward as the morning Muhurta window unlocked the inspection lines.
 
 And chiseled into the stone entablature above the gateway was an inscription in sharp, elegant letters that Neel’s newly rebooted mind could somehow read with effortless clarity:
 

@@ -32,14 +32,14 @@ Upload **only these 6 narrative files**. Nothing else.
 | :-- | :--- | :--- | :--- | :--- |
 | 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 1,418 |
 | 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 1,582 |
-| 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 3,095 |
-| 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,648 |
+| 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 3,129 |
+| 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,325 |
 | 4 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2.md` | English | 2,561 |
-| 5 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2_Hindi.md` | Hindi Dub | 3,139 |
-| 6 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3.md` | English | 2,592 |
-| 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,111 |
+| 5 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2_Hindi.md` | Hindi Dub | 3,135 |
+| 6 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3.md` | English | 2,597 |
+| 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,108 |
 
-**Total launch content:** 9,666 English words + 11,480 Hindi words (8 files).
+**Total launch content:** 9,705 English words + 11,150 Hindi words (8 files).
 
 ### Do NOT upload in Phase 1
 | File / Folder | Reason |

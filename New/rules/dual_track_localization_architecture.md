@@ -14,8 +14,8 @@ The Universe B codebase mandates complete separation between English and Hindi c
 
 Every narrative unit—whether a prologue, core chapter, interlude, or omake—must exist in two parallel, dedicated files housed in the canonical narrative directory:
 
-- **English Narrative Master File:** `<prefix>_<unit_slug>.md` (e.g., `19_Season_1_Chapter_1.md`, `20_Season_1_Chapter_2.md`)
-- **Hindi Anime Dub Novel File:** `<prefix>_<unit_slug>_Hindi.md` (e.g., `19_Season_1_Chapter_1_Hindi.md`, `20_Season_1_Chapter_2_Hindi.md`)
+- **Hindi Master File:** `<prefix>_<unit_slug>_Hindi.md` (e.g., `19_Season_1_Chapter_1_Hindi.md`, `20_Season_1_Chapter_2_Hindi.md`) — **authored first**
+- **English Dub File:** `<prefix>_<unit_slug>.md` (e.g., `19_Season_1_Chapter_1.md`, `20_Season_1_Chapter_2.md`) — **derived from the Hindi master**
 
 This strict file separation enables the interactive dual-toggle reader interface to load both texts into synchronized side-by-side or toggled viewing panels without parsing complex mixed-language files.
 
@@ -52,7 +52,7 @@ Dialogue in the Hindi track must reflect authentic spoken dynamics rather than t
 
 ### Comparative Dialogue Analysis across Language Registers
 
-| Narrative Context | English Master Track | Modern Anime Dub Hindi (Canonical) | Rejected Formal Literary Hindi |
+| Narrative Context | English Dub Track (derived) | Modern Anime Dub Hindi (Master) | Rejected Formal Literary Hindi |
 | :--- | :--- | :--- | :--- |
 | **Urgent Warning** | "Look out, Neel! The energy in the air is destabilizing!" | "अरे, संभल के Neel! हवा में एनर्जी का बैलेंस बिगड़ रहा है!" | "सावधान Neel! वायु में ऊर्जा का संतुलन असंतुलित हो रहा है।" |
 | **Street Reaction** | "What kind of crazy rain is this? It's turning into static grid lines!" | "अरे यार, ये कैसी अजीब बारिश है! पानी गिरते ही ग्रिड लाइन्स की तरह फट रहा है!" | "यह किस प्रकार की विचित्र वर्षा है? जल गिरते ही जालीदार रेखाओं में परिवर्तित हो रहा है।" |
@@ -61,15 +61,21 @@ Dialogue in the Hindi track must reflect authentic spoken dynamics rather than t
 
 ---
 
-## 3. English Narrative Writing Standard
+## 3. English Dub Writing Standard (Derived Track)
 
-The English track serves as the master canonical prose text. It operates under a sensory-grounded, visceral fantasy narrative voice influenced by modern dark fantasy, web serials (*Shadow Slave*, *Lord of the Mysteries*), and Japanese light novels (*Mushoku Tensei*).
+**Authorship order (binding):** the Hindi file is written first, with word choice verified against `rules/hindi_dub_lexicon.md`. The English file is then derived from the Hindi scene — same beats, same dialogue intent, same length. English does not invent plot, imagery, or lines that the Hindi master does not contain.
+
+Because English is derived, it is free to sound like good English prose; it is not a word-for-word gloss of the Hindi. What it may not do is drift. Every beat in the Hindi appears in the English, and any beat the Hindi cut stays cut.
+
+The English track operates under a sensory-grounded, visceral fantasy narrative voice influenced by modern dark fantasy, web serials (*Shadow Slave*, *Lord of the Mysteries*), and Japanese light novels (*Mushoku Tensei*).
 
 ### Five-Sense Grounding & Action Rhythm
 
-1. **Tactile & Olfactory Detail:** Every scene must evoke specific tactile, auditory, and olfactory markers: the weight of waterlogged Bombay denim, the reek of ozone and scorched mutton tallow in the Feeder Slums, the gritty crunch of wet sand under worn sneakers, and the heat radiating from raw *Prana* circulation.
+1. **Tactile & Olfactory Detail:** Every scene must evoke specific tactile, auditory, and olfactory markers: the weight of waterlogged Bombay denim, the reek of ozone and scorched mutton tallow in the Feeder Slums, the gritty crunch of wet sand under worn sneakers, and the heat radiating from raw *Aether-Breath* circulation.
 2. **Cinematic Short Syntax:** Combat narration uses clipped, aggressive sentence structures to accelerate pacing. Long compound sentences are reserved for macro worldbuilding or interlude perspectives.
-3. **Zero Video-Game Interface Tropes:** Per Canonical Invariant #1, English narration never references floating status panels, numerical level-up notifications, HP bars, or system menus. Internal progression is conveyed physically through body temperature, muscular tension, *Nadi* heat, and beast resonance.
+3. **Zero Video-Game Interface Tropes:** Per Canonical Invariant #1, English narration never references floating status panels, numerical level-up notifications, HP bars, or system menus. Internal progression is conveyed physically through body temperature, muscular tension, *Vessel Channel* heat, and beast resonance.
+
+> **Veil reminder (Volumes 1–3):** use the cover terms from `rules/narrative_veil_protocol.md` in both tracks — *Aether-Breath*, *Vessel Channels*, *Three Locks*, *Bell in the Skull*, *Western Caldera*, *Northern Solar Spire*. Never write *Prana*, *Nadi*, *Granthi*, *Asura*, *Deva*, *Amaravati*, *Hastinapur*, or *Vajra-Nagara* in prose before the Volume 3 reveal.
 
 ---
 
