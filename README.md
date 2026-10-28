@@ -29,6 +29,7 @@ UNIVERSE B/
 │   │   ├── 21_Season_1_Chapter_3_Hindi.md  # Chapter 3 Official Crunchyroll/Muse Style Hindi Dub Novel
 │   │   └── rules/                          # Canonical scene staging, craft rules & draft mirrors
 │   │       ├── volume_structure_spec.md    # Master Light Novel / Web Novel 7-Part Volume Architecture Spec
+│   │       ├── dual_track_localization_architecture.md # Dual-Track Language Continuity & Anime Dub Standards
 │   │       ├── season_1_chapter_1.md
 │   │       ├── season_1_chapter_2.md
 │   │       ├── season_1_chapter_3.md
