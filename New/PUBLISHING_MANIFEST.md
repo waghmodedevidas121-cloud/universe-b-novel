@@ -8,14 +8,13 @@
 ## 1. HONEST GAP AUDIT (READ THIS FIRST)
 
 ### ✅ What Is Launch-Ready
-- **Prologue (English + Hindi)** — 1,292 words. Bombay monsoon, Dadar bridge, the dry sizzle, the vertical seam, the pothole fold. True entry point. **COMPLETE.**
-- Chapter 1 (English + Hindi) — complete arc: glitch → beast-cart → Sheru's cord snaps → gate visible.
+- **Prologue (English + Hindi)** — 1,418 words. Bombay monsoon, Dadar bridge, the dry sizzle, the vertical seam, the pothole fold. True entry point. **COMPLETE.**
+- Chapter 1 (English + Hindi) — 3,095 words. glitch → beast-cart → wagon master's toll warning → staging-ground crowd → sky reveal → Sheru's cord snaps → gate visible. **EXPANDED AND COMPLETE.**
 - Chapter 2 (English + Hindi) — complete arc: water → gate rejection → scrap-pen → Sheru rescued and bonded.
 - Chapter 3 (English + Hindi) — complete arc: registration → Sand-Pit bout → first Spark discharge → purse + pass.
 
-### ⚠️ Two Real Gaps
-1. **Chapter 1 is underweight: 1,743 English words** vs. the 2,500–3,200 target. Chapter 2 is 2,561 and Chapter 3 is 2,592. Chapter 1 reads fast but is ~30% short — the caravan staging grounds, the wagon master, and the gate crowd need one more expanded beat.
-2. **Interlude, Epilogue, and Omake files do not exist yet** for Volume 1, even though `volume_structure_spec.md` mandates all four for a finished volume.
+### ⚠️ One Real Gap
+1. **Interlude, Epilogue, and Omake files do not exist yet** for Volume 1, even though `volume_structure_spec.md` mandates all four for a finished volume.
 
 ### ✅ Note on the Genesis Prologue
 `00_World_Genesis_Prologue.md` (3,840 words) remains **Codex-only**. The real story prologue now exists as `18A_Season_1_Volume_1_Prologue.md` and is the correct Chapter 0.
@@ -31,16 +30,16 @@ Upload **only these 6 narrative files**. Nothing else.
 
 | # | Upload Order | File | Language | Words |
 | :-- | :--- | :--- | :--- | :--- |
-| 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 1,292 |
-| 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 1,430 |
-| 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 1,743 |
-| 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 2,193 |
+| 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 1,418 |
+| 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 1,582 |
+| 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 3,095 |
+| 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,693 |
 | 4 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2.md` | English | 2,561 |
-| 5 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2_Hindi.md` | Hindi Dub | 3,171 |
+| 5 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2_Hindi.md` | Hindi Dub | 3,139 |
 | 6 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3.md` | English | 2,592 |
-| 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,149 |
+| 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,111 |
 
-**Total launch content:** ~8,200 English words + ~9,900 Hindi words (8 files).
+**Total launch content:** 9,666 English words + 11,525 Hindi words (8 files).
 
 ### Do NOT upload in Phase 1
 | File / Folder | Reason |
@@ -103,7 +102,7 @@ That single paragraph is what is currently missing, not the story.
 
 1. ~~**Write the real Prologue**~~ — **DONE.** `18A_Season_1_Volume_1_Prologue.md` + `_Hindi.md`, 1,292 words, cold-open in Bombay monsoon.
 2. ~~**Build the writing studio**~~ — **DONE.** `New/universe_b_writer_studio.html` — 8 chapters (4 English + 4 Hindi), 7 codex entries, write/read toggle, localStorage autosave.
-3. **Expand Chapter 1** from 1,743 to ~2,600 words — add the wagon master's dialogue and the staging-ground crowd beat before the gate.
+3. ~~**Expand Chapter 1**~~ — **DONE.** Expanded 1,743 → 3,095 words (Hindi 3,693). Added the wagon master's toll briefing, the staging-ground crowd, the sky reveal, and the three-bell gate opening.
 4. **Build a public reader page** (separate from the studio) with a real English/Hindi toggle for website visitors.
 5. **Then** start Chapter 4 (Outer Bazaar, pawnshop, Reva & Kira).
 

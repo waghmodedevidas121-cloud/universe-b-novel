@@ -25,7 +25,7 @@ What hung overhead instantly dragged every trace of fever and grogginess from hi
 
 There was no blue sky. There was no morning sun.
 
-Above him yawned an incomprehensible, frozen, lightless chasm—The Infinite Void—a breathless black where even distant stars seemed to shiver rather than shine. And suspended against that terrible void, thousands of miles apart, hung two colossal planetary landmasses! To the west, a fractured volcanic continent bled sullen crimson magma into the dark; to the north, floating marble plateaus hovered beyond mountain-high cloudbanks, gleaming in pure, untainted light without a single pillar to hold them up.
+Above him there was no sky at all. There was a blackness so complete that his eyes refused to give it a floor, and somewhere inside that blackness, impossibly far away, something enormous hung in the dark and did not fall.
 
 Neel froze, his back pressed hard against the wooden slats beneath the hay. His breath hitched in his throat.
 
@@ -115,13 +115,131 @@ Neel didn't just see the dog; for half a heartbeat, he felt the throbbing ache i
 
 The pup didn't growl. Free from its tether, it stepped forward, sniffed Neel's frayed denim trouser cuff, and rested the side of its scarred head firmly against his shin. A strange, grounded calm washed through Neel's frantic thoughts.
 
+Then a shadow fell across the straw.
+
+Neel's head came up so fast his neck cracked.
+
+A man stood at the tailgate—short, wide, built like a door turned sideways, a leather apron stiffened into the shape of his belly, a split tally-stick through his belt like a knife he had never needed to draw. A clay cup sat in one fist. He chewed with the joyless patience of a man who had eaten the same breakfast for thirty years.
+
+"Awake," he said. Not a question. "Good. Saves me the corpse-tax."
+
+Neel's mouth opened. Only a dry click came out. "Where am I?"
+
+"South flats. Staging ground eleven." The man tipped his chin at the horizon without looking at it, the way you point at a relative you are tired of. "City's through that gate. You're not. That's the whole of your situation, and it isn't my problem."
+
+"And you are?"
+
+"The man whose cart you've been bleeding on." He drank. "Found you in the drainage ditch by the east post, face down, breathing mud. A body in the ditch costs me four Panas and half a morning with an inspector, so I put you in with the hay instead. You're welcome."
+
+Neel pressed two fingers to the back of his skull. No blood. Just the nail of pain, still driven in, still red. "How long was I out?"
+
+"Two bells. Three, if you count the one you spent talking to nobody." The man's eyes went over him—shoes, jeans, the laminated card on its cheap blue lanyard. "Drifter."
+
+It wasn't a question either, but it wasn't the same kind of statement. He said it the way another man might say *stray*.
+
+"You came out of nowhere," he went on. "No seal, no papers, no guild tag, no family walking behind you with a claim. Happens. Not often. Gate clerks have a word for it. Unindexed."
+
+*Unindexed. Not illegal. Not criminal. Uncounted.*
+
+"I have to get into that city," Neel said.
+
+"Then get three copper Panas."
+
+"Three."
+
+"Three. That's the toll. Farmers, carters, drovers, every soul without a brass medallion pays three." The man tilted the cup and watched the last of it slide. "And no, I'm not lending you three. I've hauled nineteen years and never once been paid back by a man with no name."
+
+"What happens if I just walk up?"
+
+"The clerk asks for your coin. You show him empty hands. He says one word, and two spears move you to the right." The cup made a small lazy arc toward the wall. "There's a pen there. Mud floor, no roof, thirty men to a rail. By noon they'll hand you a chisel and put you in the south trench, cutting salt-grass roots out of a wall that grows them back by the next bell."
+
+"And if I refuse?"
+
+"Then they take you through the other door. The sand-pits. Cheap men, cheap bouts, a purse for whoever's still standing." His mouth did something that was not a smile. "Either way nobody walks out with all their teeth."
+
+Neel looked down at his own hands. Thin, ink-stained, scabbed across the knuckles. Hands that had spent three years holding a stylus and a cheap phone and had never once, in nineteen years, been asked to hold anything that mattered.
+
+*Three Panas. A bowl of gruel, a bed, and a bad night's sleep. Or a gate-pass. Not both.*
+
+The architecture of his life, following him across dimensions.
+
+"Boy."
+
+"What?"
+
+"The dog."
+
+Neel followed his gaze. The pup hadn't moved from his shin. It sat in the mud with its one ear cocked, eyes fixed on the teamster with a hatred that was almost ceremonial.
+
+"That's not mine," Neel said.
+
+"Technically it's mine. Bought the ring and the cord off a Caldera hauler for two Panas." The man shook his head slowly, disgusted with a decision he had made a season ago. "Worst two Panas I ever spent. Won't pull. Won't guard. Won't eat anything that isn't already dead. I was going to leave it at the pens when I cleared the gate and sell the cord for a Masha."
+
+Neel glanced at the frayed hemp lying in the mud. "The cord's snapped."
+
+"I noticed." The teamster looked at the rope, then at the pup, then at Neel's right hand—and something behind his flat brown eyes moved and closed again, like a shutter in a storm. "You snapped it."
+
+"It snapped on its own. It's rotten."
+
+"Mm." He set the cup on the sideboard, and now he was looking properly, and Neel understood all at once that this was a man who had spent nineteen years reading animals for sickness before the sickness showed. "Your fingers are buzzing, drifter. I can hear them from here."
+
+Neel flexed his hand. The itch under the skin was still there—thin and hot, a wire pulled tight from his wrist to his smallest finger.
+
+"That's static," he said.
+
+"Static doesn't hum." The teamster picked the cup back up, stepped away from the cart, and put two good paces between himself and the wheel. "I've hauled runic freight since before that wall had a name. Keep it away from my bull."
+
+Then he was gone, swallowed into the noise.
+
+Because the staging ground was waking up. Neel hadn't heard it while the man was talking—or rather, he had heard it, and his brain had filed it into the background the way a Bombayite stops hearing traffic. Now it arrived all at once.
+
+Carts. Hundreds, nose to tail in long chocked rows, wheels braced with cut stone, axles greased until the mud beneath them shone black. Bull teams between them—not only the basalt giants, but smaller draft beasts with striped hides, and one enormous grey thing with a horn grown clean through its own cheek like a mistake nobody had been brave enough to correct.
+
+The smell came in layers. Wet hide. Hot iron from the smithies. Boiling grain, sour and thick. Dung, and under the dung the cold mineral breath of the arch, like air off a well.
+
+The sound came in pieces. A horn from the rampart—two short blasts, one long—and every teamster in earshot turning his head. A crier reading names off a board, his voice cracking, men crowding close to hear whether they owed money or were owed it. Two drovers screaming at each other over a splintered axle, foreheads almost touching, neither willing to be the first to step back.
+
+And past all of it, a line of men standing very still with their hands loose at their sides, being counted by an overseer with a rod.
+
+Nobody in the staging ground was looking up.
+
+So Neel looked up.
+
+The bottom fell out of his stomach.
+
+The sky was not a sky. It was a hole—black, absolute, so deep that his eyes kept trying to find an edge and kept sliding off it. And hanging inside that hole were two pieces of a world.
+
+To the west, a continent of broken volcanic rock, its seams bleeding dull red into the dark like a coal fire under ash. To the north, a plateau of white marble floating in the middle of nothing at all, ringed in cloud, lit by a light that came from no sun he could find.
+
+No pillars. No cables. No ground beneath them.
+
+Just rock, hanging.
+
+"Don't."
+
+Neel turned. The teamster had stopped ten paces off, cup still in hand.
+
+"Don't stare at it. First-timers stare, then they get the shakes, then they're no good for a week. It's the same sky it was yesterday. Look at the ground and walk."
+
+"What is this place?" Neel's voice had gone strange on him. Not afraid. Worse than afraid. *Small*.
+
+The man looked at him for a long moment. Something crossed his face then that Neel could not read, and would think about later, in a cell, with a ledger open in front of him.
+
+"Central City," he said. "Crossroads of the five. You wanted in." He turned away. "Gate opens on the third bell. If you're still standing in this mud when it does, you'll be standing in it for a season."
+
 *DHOOONNNNNNN!*
 
-A colossal, mountain-shaking brass bell tone rolled across the plains, deep enough to make the hay-cart vibrate.
+The first bell went through the staging ground like a plough.
 
-Neel snapped his head around.
+Neel felt it in his back teeth. Every cart in the row shuddered. The bull teams came awake at once—a hundred heads lifting, a hundred chains going taut—and the whole field began to lean toward the wall in one slow, grumbling tide.
 
-They were parked in the Outer Caravan Staging Grounds of the Central Shard, on the dust-churned flats just outside the city's perimeter. Half a mile ahead, embedded in the center of a two-mile-long white stone rampart, stood a hundred-foot-tall archway carved from seamless black basalt—the outer customs gate leading into Central City proper. And through its yawning arch, without a single gear or piston in sight, billowed a stable, shimmering corridor of breathable blue Aether-mist. Thousands of travelers, armored horn-bull carts from the Asura Shard, and cloaked swordsmen were quietly moving forward as the morning Muhurta window unlocked the inspection lines.
+Then the second bell.
+
+Then, far off and final, the third.
+
+Neel turned toward the wall.
+
+Half a mile ahead, embedded in the center of a two-mile-long white stone rampart, stood a hundred-foot-tall archway carved from seamless black basalt—the outer customs gate leading into Central City proper. Through its yawning mouth, without a single gear or piston in sight, billowed a stable, shimmering corridor of breathable blue Aether-mist. Thousands of travelers, armored horn-bull carts from the Asura Shard, and cloaked swordsmen were already shuffling forward as the morning Muhurta window unlocked the inspection lines.
 
 And chiseled into the stone entablature above the gateway was an inscription in sharp, elegant letters that Neel’s newly rebooted mind could somehow read with effortless clarity:
 
