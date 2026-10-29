@@ -30,8 +30,8 @@ Upload **only these 6 narrative files**. Nothing else.
 
 | # | Upload Order | File | Language | Words |
 | :-- | :--- | :--- | :--- | :--- |
-| 0 | Vol 1 · Prologue | 18A_Season_1_Volume_1_Prologue.md | English | 1851 |
-| 1 | Vol 1 · Prologue | 18A_Season_1_Volume_1_Prologue_Hindi.md | Hindi Dub | 1949 |
+| 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 2,564 |
+| 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 2,797 |
 | 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 2,983 |
 | 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,085 |
 | 4 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2.md` | English | 2,561 |
@@ -39,7 +39,7 @@ Upload **only these 6 narrative files**. Nothing else.
 | 6 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3.md` | English | 2,597 |
 | 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,108 |
 
-**Total launch content:** 9992 English words + 11277 Hindi words (8 files).
+**Total launch content:** 10,705 English words + 12,125 Hindi words (8 files).
 
 ### Do NOT upload in Phase 1
 | File / Folder | Reason |

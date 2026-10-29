@@ -7,196 +7,588 @@
 ---
 
 ### [SEASON 1 • VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT]
-#### PROLOGUE: THE GLITCH IN THE RAIN
+#### PROLOGUE: THE GLITCH IN THE RAIN (बारिश में एक दरार)
 
-When rain falls outside Dadar Station, it doesn't smell like earth. It rots.
+Mumbai’s monsoon had an identity of its own.
 
-It had been pouring for six straight hours, and Mumbai had done what it always did—quietly accepted that expecting the gutters to work was an exercise in stupidity. Water had swallowed the asphalt up to knee-level, and trapped traffic crawled along the flyover like an exhausted python.
+Yet outside Dadar Station that evening, the air carried far less the petrichor of wet earth and far more the stench of rotting garbage.
 
-Underneath Dadar Bridge, Neel stood stranded on the cracked footpath. He kept his waterlogged college backpack clamped tight against his chest with one hand, while the other wrestled with a broken umbrella whose rib had snapped near Parel, jutting out like a mangled wing. Ahead of him, a red BEST bus surged through the flooded lane, throwing up a filthy wake. Neel squeezed his eyes shut, but there was nowhere to run.
+Rain had been falling without pause for six hours straight. It felt as if the sky had decided to settle an ancient score with Mumbai. Roads were flooded, gutters had given up, and traffic showed no intention of shifting an inch.
 
-*Splash.*
+Underneath Dadar Bridge, on the cracked pavement, stood Neel.
 
-A heavy sheet of black, foul-smelling gutter water cleared the guardrail and slammed directly into his face, shirt, and hair.
+With one hand he clutched his college bag tight against his chest, while with the other he held his broken umbrella. Watching the wheels of an oncoming BEST bus, all he hoped for was that, at least this time, gutter water wouldn’t splash across him.
 
-Neel stood frozen for a few seconds. Then, wiping the grease from his mouth with the back of his hand, he glared at the bus's red taillights tearing away toward Sion.
+Mumbai, however, had little regard for his hopes.
 
-"Much appreciated, boss," he muttered, spitting onto the concrete. "Put a little more back into it next time, could've washed the rest of my jeans too."
+The bus charged at full speed straight through a deep crater in the middle of the road.
 
-The bus was already gone. The driver didn't care whether the shape on the footpath was a breathing teenager or a concrete post. Neel ground his teeth. His jeans were soaked through to the knees, and inside his right sneaker, a soaked sock squelched with a nauseating wet sound on every step.
+*Splash!*
 
-*Squelch. Squelch. Squelch.*
+A thick wave of filthy water rose into the air, cleared the pavement railing, and crashed squarely onto Neel.
 
-"Right on cue," he muttered at his shoe. "Turn against me too, why don't you."
+His hair, face, shirt—everything was soaked in a single second.
 
-It was half-past seven. Sodium streetlights blurred into pale orange smudges through the falling downpour. Blaring horns, grinding diesel engines, and vegetable vendors shouting over the storm formed a steady, abrasive roar. But inside Neel's head, only one thought had any traction: the hollow ache gnawing at his stomach.
+For a few moments, he just stood there.
 
-He hadn't eaten since noon. On the far corner of the curb, a street vendor was fishing fresh Vada Pav from an iron vat. The sharp scent of boiling peanut oil and fried green chilies cut clean through the sewage reek, hitting his nostrils like an insult. A cardboard sign hung crooked above the stall:
+Then he slowly lifted his face and stared at the bus’s receding red taillights.
+
+"Much obliged, boss," Neel muttered. "Hit it a little harder next time, why don’t you—wash me clean through."
+
+The bus barreled on. The driver hadn’t bothered to look back.
+
+Neel wiped his soaked face with the back of his hand.
+
+"Bravo, Mumbai. Free rain, free shower... only the road back home is behind a premium subscription."
+
+He couldn't even laugh at his own joke.
+
+Because things were genuinely miserable.
+
+His umbrella had already given up the ghost near Parel. A snapped iron rib poked outward, making it look like the broken wing of an injured bird. Neel held it closed in his hand, like someone trying to defend his dignity with a useless sword.
+
+His shoes were sloshing with water. His jeans were soaked to the knees, and with every step his right sock let out a wretched, squelching slap.
+
+For the past forty minutes, that sound had been driving him insane.
+
+*Squish. Squish. Squish.*
+
+"Just what was missing," he said, glaring down at his shoe. "Now even my feet have turned against me."
+
+It was half-past seven in the evening.
+
+Streetlights along the curb looked like blurred orange smudges through the dense sheets of rain. Red brake lights crawled sluggishly forward, like an exhausted python dragging itself along the asphalt.
+
+Horns blared on every side.
+
+Engines rumbled.
+
+Shouts and calls echoed across the crowd.
+
+And standing amid it all, Neel could only think of one thing.
+
+Food.
+
+Nothing substantial had entered his stomach since morning. Over at the road corner stood a Vada Pav cart. The aroma of hot peanut oil wrestled with the stench of rain and sewer, drifting straight into his nostrils.
+
+Neel’s eyes drifted to the price board on the stall:
 
 **Vada Pav — ₹15**
 
-Neel dug into his pocket. A crumpled ten-rupee note and a worn coin. Eleven rupees in total.
+He reached into his pocket.
 
-He pulled out his phone. The battery icon blinked red on the cracked display: eight percent.
+A crumpled ten-rupee note.
 
-*Neel · मनात:* "A fifteen-rupee Vada Pav, or a shared auto home. Can't have both, bhai. And the way the water's rising, the auto driver will drop me into the gutter before he takes eleven rupees."
+A single coin.
 
-At nineteen, that was the balance sheet of his daily life: scraping through the next few hours, dodging avoidable expenses, and pretending that sheer survival counted as discipline.
+Eleven rupees in total.
 
-He shoved the phone back into his pocket and kept moving.
+He stared at the money for a few seconds.
 
----
+Then he pulled out his phone.
 
-Three paces ahead, he stopped dead.
+**Battery: 8%**
 
-A massive pothole sat right at the curb—knee-deep and wide as a scooter tire. Rainwater filled it level with the concrete.
+Neel looked first at his phone, then at his money, then at the Vada Pav cart.
 
-At first glance, it looked like every other pothole between Dadar and Kurla. But something about it sent a cold prickle straight down Neel's spine.
+*Neel · मनात:* "Fifteen rupees... or an auto home. Can only get one of them, brother. And with hunger like this, even the auto driver will double the fare just looking at my face."
 
-Across the flooded road, sodium streetlights fractured across the moving ripples. Headlights smeared through sheets of rainwater, and every falling drop kicked up spray. But the surface of this puddle didn't have a single ripple.
+He was nineteen years old.
 
-It was completely motionless. Like a sheet of black, unblemished glass.
+An age when people ought to dream about their future. But Neel usually spent his days calculating how to survive until nightfall without stumbling into another catastrophe.
 
-And what set his teeth on edge was that not a single streetlamp or headlight reflected off its surface.
+He slid the coins back into his pocket and turned off the phone screen.
 
-Neel leaned forward slightly. The water wasn't just muddy—it was an absolute void. It looked as if someone had taken an exact scalpel to the asphalt and cut that patch of reality clean out of the street. Below it, there was no gutter floor, no concrete, no earth. Only a bottomless, suffocating depth.
+He needed to save the battery until he reached home.
 
-And suspended inside that depth, impossible miles below... something massive was hanging in mid-air with nothing holding it up.
+At least, that was the plan.
 
-The breath caught hard in Neel's throat.
+✦ ✦ ✦
 
-He blinked. Looked again. The silhouette was still there—a colossal slab of stone suspended motionlessly in the blackness.
+He had just turned to push forward when his eyes caught a pothole at the curb.
 
-Behind him, Mumbai's monsoon kept hammering down, but it suddenly felt as if the volume of the entire world had been jerked down to zero. The blaring horns, the screech of taxis, the hiss of rain—everything cut out, muffled as though hot wax had sealed his ears.
+At first glance, it was just like every other puddle.
 
-The air went bone-dry. It wasn't the damp chill of the storm, but the sharp, scorching stench of overheated copper that fills the air a second before a transformer explodes.
+Nearly knee-deep.
 
-Panic kicked in. He took a hasty step back.
+As wide as a scooter wheel.
 
-Right then, his phone went berserk against his thigh.
+Rainwater filled it flush to the asphalt.
+
+Yet something felt wrong.
+
+Neel stopped.
+
+He looked down at the puddle.
+
+Across the surrounding asphalt, the orange glare of streetlights shimmered on the water. Car headlights shattered across splashing ripples. Everywhere was movement, splash, chaos.
+
+Yet the water in this pothole was completely motionless.
+
+Not a wave.
+
+Not a tremor.
+
+And strangest of all—
+
+Not a single glimmer of light reflected upon it.
+
+Neel leaned down slightly.
+
+The water was black.
+
+Not merely dirty or murky.
+
+It was black as though, in that spot, not only the water's color but the very existence of light had been erased.
+
+Neel's brow furrowed.
+
+"What is this?"
+
+He glanced at the road. Then back down at the hole.
+
+There was something here his brain was scrambling to process, yet with every attempt, the puzzle only tangled further.
+
+Beneath that black water lay no road.
+
+No soil.
+
+No measurable depth his eyes could gauge.
+
+There was only an endless, terrifying Void.
+
+And inside that Void...
+
+Something colossal was suspended.
+
+Something whose scale his vision couldn't properly grasp. Part of it sank into darkness while the rest hovered fixed at some incomprehensible distance.
+
+Without support.
+
+Without swaying.
+
+As if, for that thing, gravity simply did not exist.
+
+Neel's heart seemed to forget to beat for a beat.
+
+He blinked.
+
+Looked again.
+
+The thing was still there.
+
+Behind him, Mumbai’s downpour kept hammering, but it suddenly felt as if someone had turned down the volume of the entire world.
+
+Horns drifted away.
+
+Engine rumbles dimmed.
+
+Raindrops still fell, yet their noise felt sealed behind a thick, impenetrable wall.
+
+Neel drew a slow breath.
+
+The air was hot.
+
+Strangely hot.
+
+Like the blistering wind of a desert had suddenly planted itself in the middle of a monsoon storm. A dry warmth washed over his skin, even while rain dripped from his clothes.
+
+He took a step back.
+
+"No... no, what is—"
+
+The phone in his pocket suddenly began vibrating violently.
 
 *BZZZZT!*
 
-Neel wrenched it out of his pocket.
+Neel started.
 
-Thin blue-and-white static crawled across the screen like insect legs. Pixels shattered, reforming into squares, knitting together into an intricate runic lattice.
+He whipped out the phone.
 
-"What the hell is this—"
+A blue-white glow flared across the screen. Bizarre lines traced themselves across the display, intersecting, snapping, and reconnecting as though an unseen hand was rewriting reality inside the glass.
+
+The battery icon flickered into view for a split second.
+
+Then vanished.
+
+Black static spread across the screen.
+
+"Hey, are you kidding me—"
 
 *Click.*
 
-The screen went pitch black. Dead. Zero battery.
+The phone shut down.
 
-Neel instinctively recoiled, but his wet sneaker skated off the slick lip of the curb.
+**Battery: 0%**
 
-His balance failed. He went down hard onto his back in six inches of filthy water. His backpack tore free, flying into the darkness. His elbow cracked violently against the concrete, ripping a sharp gasp from his throat. And the phone slipped from his fingers, bounced twice on the pavement—
+Neel stabbed his thumb against the screen.
 
-And slid right over the rim of the black puddle.
+Nothing.
 
-"MY PHONE!"
+He held the power button down.
 
-Pain vanished. Neel threw himself forward, his fingers snapping around the top corner of the casing. Half a second more and he would have hauled it back.
+Nothing.
 
-Except the phone was already dipping into the black liquid.
+"Brother, today of all days? Seriously?"
 
-Neel clamped his grip and hauled back with his shoulder.
+He gave the phone a shake, trying once more to turn it on.
 
-The instant his fingers locked, a violent force seized his wrist.
+At that exact second, a car horn blasted from right behind him.
 
-It didn't feel like moving water—it felt as though an iron vise had clamped shut beneath the surface, dragging his arm down into the depths.
+Startled, Neel lurched backward.
 
-"Hey—let go!"
+His heel caught on a jagged lip of broken curb.
 
-He planted his left palm on the road, shoving back with every ounce of strength he had. But the downward pull doubled every second. The tendons in his forearm strained to snapping point. He tried to unclamp his fingers and abandon the phone, but his own hand remained locked around the chassis like a magnetized clamp.
+"Whoa—!"
 
-The black pothole shuddered. Tight concentric ripples burst across the surface, with Neel's submerged wrist at their epicenter.
+His balance vanished.
 
-The black fluid brushed his skin. Neither hot nor cold. It felt as if acid had burned away the very concept of sensation from his flesh.
+The next second, he fell backward.
 
-The next instant, the asphalt tore open beneath him.
+*Splash!*
 
----
+He crashed down into six inches of filthy water. His elbow struck bare concrete, sending a violent jolt of pain tearing from his arm to his shoulder.
 
-The street, the rain, Dadar, and Mumbai vanished in a single concussive crack.
+His college bag slipped from his shoulder, tumbling into the mud.
 
-Neel opened his mouth to shout, but all air had been vacuumed from his lungs.
+And the phone...
 
-He wasn't falling into a hole in the road. He was plummeting through an endless, spiraling vortex of blinding white-and-gold brilliance.
+The phone slipped from his fingers, skittering straight toward the rim of that black crater.
 
-Freezing wind tore through his wet t-shirt, biting straight into his ribs like iron needles. Yet within that radiance roared an unnatural furnace heat. The light wasn't passive—it surged like boiling mercury against invisible boundaries, twisting, and compressing Neel's body like a hydraulic shear with every turn.
+Neel’s eyes widened.
 
-Crushing pressure built inside his bones. His jaws clamped together so hard that the metallic tang of blood flooded his tongue.
+"My phone!"
 
-*Neel · मनात:* "Stop... somebody just stop this!"
+Forgetting the pain, he lunged for it.
 
-There was nobody to stop it.
+His fingertips brushed the casing edge.
 
-No face appeared within the brilliance. No blue status screens floated before his eyes, and no voice whispered instructions. Only an immovable, indifferent gravity—an alien pressure hammering into his marrow, telling him that his mortal frame had no right to exist within this passage.
+Just a fraction of a second away.
 
-His veins burned as if acid had replaced his blood. Every ragged gasp felt like inhaling broken glass.
+Yet the phone slipped from his grip, sliding straight into the black water.
 
-Yet nineteen years of clawing through an indifferent city had left him with one stubborn defect: refusing to stay down.
+Leaning forward with everything he had, Neel clamped his fingers around it.
 
-The brutal crush of local train compartments, nights spent ignoring an empty stomach, the silent room in Dadar where no one was coming to check on him—all that raw, bitter defiance condensed straight into his clenched fist. He locked his grip even tighter around the dead phone.
+"Got you, bastard!"
 
-"Not this easily..." A guttural rasp tore past his cracked lips. "You bastards... I'm not dying this easy."
+He locked the phone tight in his fist.
 
-Right then, a concussive shock detonated at the exact center of his skull. As though a hundred-ton sledgehammer had struck a colossal bronze bell inside his brain.
+Yet right then, he realized something was terribly wrong.
+
+His hand was still above the surface.
+
+Yet on his wrist, he felt a powerful drag.
+
+As though someone below had caught hold of his arm.
+
+Neel planted his other palm on the concrete, shoving back with all his might.
+
+Yet the drag only strengthened.
+
+Slowly at first.
+
+Then with such violent force that his fingers trembled.
+
+"Hey... let go!"
+
+He tried to let go of the phone, but his fist felt locked around it.
+
+The black water was no longer calm.
+
+Small concentric ripples began churning across the surface.
+
+And the epicenter of those ripples was Neel's hand.
+
+The water touched his wrist.
+
+The touch wasn't cold.
+
+Nor was it hot.
+
+It felt as though someone had scraped away the very feeling of having skin.
+
+Neel’s breath seized.
+
+The next instant, the ground slipped clean away from under him.
+
+He began falling.
+
+Not into a pothole.
+
+Into something else entirely.
+
+✦ ✦ ✦
+
+The road, the pavement, the rain, and all the sounds of Mumbai shattered and vanished at once.
+
+Neel opened his mouth to scream.
+
+No sound came out.
+
+Around him now lay no road.
+
+No sky.
+
+Only an endless corridor woven of white and golden brilliance, within which he was falling without end.
+
+The air was so freezing that pain stabbed straight into his bones. Yet within that radiance burned something that felt like molten metal.
+
+The corridor was no lifeless tunnel.
+
+Light surged within it.
+
+Like an ocean of boiling milk—white, gold, and constantly shifting.
+
+At times the light rose like swelling waves; at times it closed around him like walls.
+
+Neel tried to thrash his arms and legs.
+
+Useless.
+
+Now he was no longer merely falling—he was being squeezed.
+
+An invisible force dragged him in one direction. Crushing pressure, like a colossal hydraulic press, mounted upon his body.
+
+His chest began to cave inward.
+
+Bones felt on the verge of snapping.
+
+Fire spread through his veins.
+
+He shut his eyes.
+
+*Neel · मनात:* "Stop... just stop."
+
+Yet the force did not relent.
+
+At that moment, within that endless white-and-gold brilliance, a law descended upon his existence that Neel's mortal mind could not comprehend.
+
+There was no face.
+
+No machine.
+
+No screen.
+
+No voice resembling man or device.
+
+Yet a presence was there—colossal, unyielding, and so ancient that even the concept of time shrank before it.
+
+Neel felt as though his existence were placed upon a scale whose rules he had never known.
+
+A deep resonance descended within him.
+
+It was not heard through ears.
+
+He felt it in every bone, every vein, and every heartbeat of his body.
+
+The meaning of that resonance took shape in his mind on its own:
+
+**An external existence.**
+
+**An incompatible vessel.**
+
+Neel could not fathom how he understood these meanings. No words appeared. No one spoke to him.
+
+Yet he understood that this was no ordinary passage.
+
+This was the **Singularity Sieve**—the cosmic filter of karma and existence, where fragile souls unable to endure the pressure shattered like glass.
+
+And Neel...
+
+Neel possessed no power.
+
+No specialized training.
+
+No divine boon with which to contest this place.
+
+He was merely a nineteen-year-old kid who, just minutes ago, had been trying to decide between his hunger and an auto ride home with eleven rupees.
+
+Now his veins were threatening to burst.
+
+Pain like fissures spider-webbed across his body.
+
+Every breath felt like an execution.
+
+Yet within him, something still refused to yield.
+
+Perhaps it was the daily crush of Mumbai’s local trains.
+
+Perhaps the nights spent on an empty stomach.
+
+Perhaps the stubborn habit of bowing before circumstances, only to rise and walk again the next morning.
+
+Or perhaps just the raw, bull-headed defiance of refusing to die right now.
+
+Neel looked down at his fist.
+
+His phone was still locked in his hand.
+
+The screen had died.
+
+It was utterly useless.
+
+Yet Neel clamped his grip around it even tighter.
+
+"Not this easily..."
+
+His lips barely moved.
+
+"Not... yet."
+
+Right then, a gargantuan tremor erupted at the dead center of his mind.
+
+As though the reverberation of an ancient, colossal brass bell had tolled inside his skull.
 
 *DHOOONNNNNNN...*
 
-The sound didn't hit his ears; it vibrated straight through his spine.
+In that sound lay neither wrath nor mercy.
 
-For one suspended microsecond, his heartbeat flatlined.
+Only an immutable decree.
 
-And in that dead silence, a vivid blue spark tore free from the golden radiance. It dropped straight onto Neel's right wrist and drilled into his flesh.
+His body was incompatible with the laws of this new world. The harmony between his soul and his frame began to fracture. That pressure could have unmade him.
 
-*CRACK!*
+Yet in that very instant, something within his existence began to shift.
 
-Neel's whole body arched violently.
+Neel heard no machine command. No system prompt materialized.
 
-From his wrist to his shoulder, his channels ignited in azure fire. Something buried deep beneath his skin tore open—like iron locks that had rusted for centuries being smashed in a single blow. Unknown fragments of language, alien bearings, and fractured contours of an impossible world flared through his consciousness at lightning speed.
+An unbearable traction merely surged through his frame—as if every cell, every vein, and every pulse were forced to recalibrate into harmony with an unfamiliar cadence.
 
-Too massive. Too dense for a nineteen-year-old brain to bear.
+His heartbeat faltered.
 
-The golden radiance collapsed into ink.
+Once.
 
-And Neel's head rolled backward into darkness.
+Twice.
 
----
+Then, for several beats, everything fell silent.
 
-When the first layer of sensation returned, cold came with it.
+From the heart of that white-and-gold ocean emerged a tiny spark.
 
-Not the razor-wire chill of the light vortex. This was a thin, dry mountain wind that filled his lungs with sharp clarity.
+It did not stray.
 
-Neel's fingers twitched.
+It dropped straight onto Neel’s right wrist.
 
-Something coarse and brittle pressed into his cheek. Straw. Old, dust-caked, weathered hay.
+Then sank beneath his skin.
 
-He drew a breath.
+*SNAP!*
 
-The air carried the sour tang of dry straw. And beneath it drifted a sharp trace of sulfur—like the ozone left hanging after a heavy electrical discharge.
+Neel’s entire body shuddered.
 
-Memories hammered back into his skull. Dadar Station. The puddle. The phone clenched in his fist...
+That spark began coursing through his veins. From wrist to hand, from hand to shoulder, then cascading through his entire body.
 
-Yet there was no sound of rain here. No grinding Mumbai traffic.
+Everywhere it passed, he felt as though an unseen lock were springing open.
 
-Only a heavy, watchful stillness.
+Meanings of unknown words flared across his mind.
 
-Then, inches from his face, an enormous sound broke the silence.
+Strange maps.
 
-*Phussssshh...*
+Broken glyphs.
 
-A deep, furnace-like exhale.
+Resonances whose significance he did not know, yet his mind instinctively strained to recognize.
 
-The breath was so close that the wooden planks beneath Neel's cheek trembled. A wave of suffocating heat, heavy with the reek of burning coal, washed across his damp skin.
+Everything at once.
 
-Every hair on Neel's neck stood on end.
+Too fast.
 
-He didn't dare open his eyes. He choked his breath back into his throat.
+So fast that his mind could not hold the weight of it.
 
-And in that exact instant, a searing spike of pain ignited behind his skull—as if someone had driven a red-hot iron nail straight into the bone.
+Then the brilliance began to snuff out.
 
----
+White.
 
-*AUTHOR'S NOTE: Volume 1 begins inside his head. Turn the page.*
+Gold.
+
+Everything plunged into darkness.
+
+And Neel lost consciousness.
+
+✦ ✦ ✦
+
+The first thing he felt was cold.
+
+Not the razor chill of that white-and-gold tunnel, where his body had been breaking under invisible pressure.
+
+This cold was different.
+
+Dry.
+
+Thin.
+
+Like morning in high mountain passes, when wind cuts straight through clothing.
+
+Neel’s fingers twitched faintly.
+
+Beneath his cheek pressed something rough. The coarse prickle of dried stems and old straw was jabbing into his skin.
+
+He took a breath.
+
+The air held an unfamiliar scent.
+
+The sour, stale tang of old hay.
+
+And mixed with it, the sharp reek of sulfur that stung his nostrils the moment he drew breath.
+
+Inside, his head throbbed viciously. But he was in no state to force his eyes open.
+
+Memories returned like scattered shards.
+
+Dadar Station.
+
+Rain.
+
+The black puddle.
+
+The phone.
+
+Then that strange white-and-gold brilliance...
+
+Yet here there was no sound of falling rain.
+
+No traffic noise.
+
+Not a single trace of Mumbai.
+
+All around lay a stillness that felt utterly unnatural.
+
+Then he heard the sound.
+
+*Hhhhhhhh...*
+
+A deep, heavy exhale.
+
+Neel’s body went taut.
+
+The sound came from very close.
+
+Slow.
+
+Deep.
+
+So massive that with each breath, the ground beneath his cheek seemed to shudder faintly.
+
+Then a gust of warm air struck his face.
+
+It held the smoldering heat of burnt coals.
+
+The hair on the back of Neel’s neck stood on end.
+
+He didn't move.
+
+He slowed his breathing to a whisper.
+
+*Whatever is there... it isn't human.*
+
+Beside him, that colossal thing drew breath once more.
+
+*Hhhhhhhh...*
+
+Neel’s heavy eyelids fluttered.
+
+Cold was seeping through his skin.
+
+Dry straw pricked against his cheek.
+
+And the heat of that strange, heavy breath against his face told him that whatever it was, it wasn't far away.
+
+Slowly, he opened his eyes.
+
+**[END OF PROLOGUE]**
