@@ -31,7 +31,7 @@ No pillars. No chains. Just colossal black stone, floating motionlessly in mid-a
 
 Neel froze. His spine glued itself to the rough timber planks beneath him, and the ragged gasp in his throat choked off into silence.
 
-*Neel · मनात:* "What the hell is this... did an artery pop in my brain, or did my retina just tear clean off?"
+*What the hell is this... did an artery pop in my brain, or did my retina just tear clean off?*
 
 With shaking hands, he dug into the inner lining of his denim jacket. His fingers snagged on familiar edges—his laminated Mumbai University ID card, flat keys, and his battered Redmi smartphone with its spiderweb-cracked tempered glass.
 
@@ -63,7 +63,7 @@ A Lava-Bull.
 
 Ice-water poured straight down Neel's spine.
 
-*Neel · मनात:* "Either I slipped through a black hole onto some alien rock... or I'm lying in an ICU hallucinating the worst fever dream of my life."
+*Either I slipped through a black hole onto some alien rock... or I'm lying in an ICU hallucinating the worst fever dream of my life.*
 
 *Ghhhuuurrrr...*
 
@@ -153,7 +153,7 @@ There was no surprise in his voice, only the flat indifference reserved for an u
 
 "Wherever you dropped from," the man continued, "you've got no seal, no guild medallion, no paperwork. No family backing you up with a clan claim. Every now and then, trash falls out of the sky. The gate clerks have a single word for your kind—unindexed."
 
-*Neel · मनात:* "unindexed. No records, no identity. In this world, I don't even exist."
+*"unindexed. No records, no identity. In this world, I don't even exist."*
 
 "I need to get inside that city," Neel said, glancing toward the monumental wall.
 
@@ -173,7 +173,7 @@ There was no surprise in his voice, only the flat indifference reserved for an u
 
 Neel looked down at his own hands. Slender fingers, ink stains near the nails, raw scraped knuckles. For three years, those hands had handled nothing heavier than engineering textbooks and cheap styluses; they had never fought for their life.
 
-*Neel · मनात:* "Three Panas. Either food and a dry floor for the night, or an entry token through the gates. Scraping both together is impossible."
+*Three Panas. Either food and a dry floor for the night, or an entry token through the gates. Scraping both together is impossible.*
 
 The grinding math of Mumbai had followed him across worlds.
 

@@ -48,7 +48,7 @@ Dialogue in the Hindi track must reflect authentic spoken dynamics rather than t
 2. **Zero Artificial English Slang:** Avoid lazy corporate filler words (*"literally"*, *"basically"*, *"bro"*). Dialogue relies on authentic Hindi/Urdu conversational connectives (*"bhai"*, *"yaar"*, *"dekh"*, *"sun"*, *"saale"*, *"boss"*).
 3. **Preservation of Core Fantasy Terms:** Canonical system, rank, and worldbuilding terminology must be transliterated directly (or preserved in clean Roman English script) without translating the core proper nouns into literal Hindi.
 4. **Sentence Punctuation:** All narration and spoken Hindi sentences conclude cleanly with the authentic Purna Viram `।`.
-5. **Inner Monologue Conventions:** Neel's internal thoughts are explicitly tagged with `· मनात` or enclosed within clear quotation marks to differentiate inner voice from outer narration.
+5. **Inner Monologue Conventions:** Neel's internal thoughts are rendered in clean standard italics (`*...*`) without artificial monologue tags to keep prose literary and seamless.
 
 ### Comparative Dialogue Analysis across Language Registers
 

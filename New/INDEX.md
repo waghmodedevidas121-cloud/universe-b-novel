@@ -310,7 +310,7 @@ Universe B हे एका कागदावर आखलेले निर�
 
 Universe B's web novel is officially authored and maintained in **Bilingual Twin Canonical Editions**:
 1. **Canonical English Web Novel Prose:** Grounded high-fantasy narrative (Neel POV, 5-sense sensory anchoring).
-2. **Official Hindi Dub Novel Prose:** Authentic Crunchyroll / Muse style dub prose (All names/skills/places in English Roman script; casual conversational Hindi narration ending with `।`; inner monologues tagged with `· मनात`).
+2. **Official Hindi Dub Novel Prose:** Authentic Crunchyroll / Muse style dub prose (All names/skills/places in English Roman script; casual conversational Hindi narration ending with `।`; inner monologues in clean italics `*...*`).
 
 ### Chapter Master Track:
 - **Prologue — The Glitch in the Rain:** *(true story entry point)*

@@ -139,7 +139,7 @@ If the concept is technical, either commit to the Roman English term (Section 4)
 2. **Dashes are rare.** Max one `—` per paragraph. English uses them for rhythm; Hindi uses `।` and short sentences.
 3. **No exclamation marks in narration.** Only in dialogue, and sparingly.
 4. **`।` ends every narration and dialogue line.** No `.` unless the line ends in a Roman term inside a quotation.
-5. **Monologue tag:** `*Neel · मनात:* "…"` — always italic block, always the middle dot.
+5. **Monologue format:** Internal thoughts are written in standard clean italics (`*...*`) without any tag labels.
 6. **Read-aloud test:** if a line cannot be spoken in one breath by a dubbing artist, it is too long.
 
 ---
@@ -153,7 +153,7 @@ The dub track runs in **third person, past tense** — the standard anime-dub na
 
 **Exception — one paragraph maximum:** a chapter may open with a single first-person hook line in the narrator's own voice, immediately handing over to third person. `20_Season_1_Chapter_2_Hindi.md` does this (`इज़्ज़त-विज़्ज़ता सब बाद की बात थी, भाई।`). More than one paragraph and the chapter is broken.
 
-Inner monologue stays first person — that is the whole point of the `· मनात` tag.
+Inner monologue stays first person rendered in clean italics.
 
 ---
 
@@ -164,7 +164,7 @@ Inner monologue stays first person — that is the whole point of the `· मन
 3. **`।` count ≥ sentence count.** No stray English full stops in narration.
 4. **Dash count:** `—` should be under one per paragraph on average.
 5. **Read-aloud:** speak the first 200 words. If you run out of breath or hit a clause you would never say, rewrite it.
-6. **Person check:** count `मैं` outside `· मनात` blocks. It must stay inside the single opening paragraph, if used at all.
+6. **Person check:** count `मैं` outside italic monologue blocks. It must stay inside the single opening paragraph, if used at all.
 
 ---
 

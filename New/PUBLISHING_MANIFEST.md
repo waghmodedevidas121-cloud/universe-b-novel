@@ -97,7 +97,7 @@ That single paragraph is what is currently missing, not the story.
 2. **Never mix languages in one page.** Use the toggle or separate URLs (`/en/` and `/hi/`).
 3. **Strip the YAML header block** (the `**File:**`, `**Tags:**`, `**Status:**` lines) before pasting to a website. Those are internal metadata.
 4. **Keep the `### [VOLUME 1...]` heading** — it is the volume label readers see.
-5. **Hindi page must keep `।` punctuation and `· मनात` monologue tags** — that is the dub voice signature.
+5. **Hindi page must keep `।` punctuation and clean italics for monologues** — that is the dub voice signature.
 6. **Publish 1 chapter per week minimum**, 2 if possible. Web novel sites reward consistency over volume.
 
 ---

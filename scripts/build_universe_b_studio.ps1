@@ -146,15 +146,12 @@ $html = $html.Replace('CHRONICLES OF THE VOID MONARCH', 'UNIVERSE B')
 $html = $html.Replace('Chapter 1: The Broken Altar', 'PROLOGUE: The Glitch in the Rain')
 $html = $html.Replace('e.g. Aarav Varma, Abyssal Flame, Floor 7...', 'e.g. Neel, Sheru, Feeder Sand-Pits...')
 
-# --- Zero floating gamer menus: repurpose the LitRPG insert button into a Hindi monologue tag ---
-$html = $html.Replace('onclick="insertSystemBox()"', 'onclick="insertMonologue()"')
-$html = $html.Replace('title="Insert LitRPG / Fantasy System Status Box"', 'title="Insert Hindi inner-monologue tag (middle dot Manat)"')
-$html = $html.Replace('<span>System Box</span>', '<span>Manat Tag</span>')
-$html = $html.Replace('function insertSystemBox()', 'function insertMonologue()')
+# --- Zero floating gamer menus & no manat tags: remove the LitRPG system box button & function completely ---
+$btnPattern = '(?s)<button onclick="insertSystemBox\(\)".*?<\/button>\s*'
+$html = [regex]::Replace($html, $btnPattern, '')
 
-# Devanagari built from code points so this .ps1 stays pure ASCII (PS 5.1 reads BOM-less UTF-8 as ANSI).
-$manat = [string][char]0x00B7 + ' ' + [string][char]0x092E + [string][char]0x0928 + [string][char]0x093E + [string][char]0x0924
-$html = $html.Replace('<div class="system-box">[SKILL AWAKENED]<br>Name: Void Slash (Rank C)<br>Effect: Deals +150% dark damage to targets.</div><p><br></p>', "<p><em>${manat}:</em> </p>")
+$funcPattern = '(?s)function insertSystemBox\(\)\s*\{.*?\}\s*'
+$html = [regex]::Replace($html, $funcPattern, '')
 
 # --- Replace the demo editor body with a clean placeholder ---
 $openMarker  = '<div id="editor-content" contenteditable="true"'

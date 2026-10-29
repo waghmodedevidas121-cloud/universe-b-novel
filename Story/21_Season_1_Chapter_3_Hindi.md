@@ -1,7 +1,7 @@
 # 21. Season 1, Volume 1, Chapter 3: The Sand, the Steel, and the First Spark (Official Hindi Dub)
 **File:** `D:\Web Novel\New\21_Season_1_Chapter_3_Hindi.md` / `rules\season_1_chapter_3_hindi.md`  
 **Format:** Official Modern Anime Dub Script (Crunchyroll & Muse India Style)  
-**Voice Register:** Colloquial Desi / Mumbai street-smart youth dub. Natural conversational dialogue, punchy cinematic narration ending with `।`. Proper nouns in English Roman script. Inner monologues tagged with `· मनात`.  
+**Voice Register:** Colloquial Desi / Mumbai street-smart youth dub. Natural conversational dialogue, punchy cinematic narration ending with `।`. Proper nouns in English Roman script.  
 **Tags:** `#chapter-3 #season-1 #volume-1 #neel #hindi-dub #crunchyroll-style #muse-style #anime-dub #canon-lock`  
 
 ---
@@ -85,7 +85,7 @@ Neel ने कोई जवाब नहीं दिया।
 
 उसका दिमाग़ चालू हो चुका था, वह उस आदमी के खड़े होने के अंदाज़ का एक-एक हिसाब बर्फ़ जैसी ठंडक से लगा रहा था।
 
-*Neel · मनात:* "दायाँ पैर तीस डिग्री बाहर की तरफ़। सारा वज़न आगे की एड़ी पर है। कंधों के पीछे का कवच बहुत ज़्यादा कसा हुआ है—जब भी यह गदा उठाएगा, चमड़ा इसकी माँसपेशियों को जकड़ लेगा, जिससे इसका हाथ आधा सेकंड धीमा पड़ेगा। और वो सूअर..."
+*दायाँ पैर तीस डिग्री बाहर की तरफ़। सारा वज़न आगे की एड़ी पर है। कंधों के पीछे का कवच बहुत ज़्यादा कसा हुआ है—जब भी यह गदा उठाएगा, चमड़ा इसकी माँसपेशियों को जकड़ लेगा, जिससे इसका हाथ आधा सेकंड धीमा पड़ेगा। और वो सूअर...*
 
 Neel ने जानवर को देखा। उसकी साँसें उथली थीं, उसकी छोटी लाल आँखें पूरी तरह कुत्ते पर टिकी थीं। उसे सिर्फ़ एक ही तरकीब सिखाई गई थी: सीधी लकीर में दौड़ना, बाएँ दाँत से पेट चीरना, और दीवार से चिपका देना।
 
@@ -205,7 +205,7 @@ Neel हाँफता हुआ खड़ा रहा, उसका सीन
 
 उसकी उँगलियों के नाख़ूनों पर अभी भी नीली चिंगारियाँ तैर रही थीं, जो धीरे-धीरे ठंडी हवा में विलीन हो गईं।
 
-*Neel · मनात:* "यह कोई static electricity नहीं थी यार... यह कुछ और ही बवाल था।"
+*यह कोई static electricity नहीं थी यार... यह कुछ और ही बवाल था।*
 
 उसने धीरे से गर्दन घुमाई। Sheru लँगड़ाता हुआ पास आया, उसकी पूँछ ने दो बार ज़मीन को छुआ, और उसने अपना गर्म, ज़ख्मी सिर Neel के बाएँ घुटने पर टिका दिया।
 

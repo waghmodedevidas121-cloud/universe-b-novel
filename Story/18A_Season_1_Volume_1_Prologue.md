@@ -91,7 +91,7 @@ Then he pulled out his phone.
 
 Neel looked first at his phone, then at his money, then at the Vada Pav cart.
 
-*Neel · मनात:* "Fifteen rupees... or an auto home. Can only get one of them, brother. And with hunger like this, even the auto driver will double the fare just looking at my face."
+*Fifteen rupees... or an auto home. Can only get one of them, brother. And with hunger like this, even the auto driver will double the fare just looking at my face.*
 
 He was nineteen years old.
 
@@ -357,7 +357,7 @@ Fire spread through his veins.
 
 He shut his eyes.
 
-*Neel · मनात:* "Stop... just stop."
+*Stop... just stop.*
 
 Yet the force did not relent.
 

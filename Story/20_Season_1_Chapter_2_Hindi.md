@@ -1,7 +1,7 @@
 # 20. Season 1, Volume 1, Chapter 2: Copper, Crusts, and the Scrap-Hound (Official Hindi Dub)
 **File:** `D:\Web Novel\New\20_Season_1_Chapter_2_Hindi.md` / `rules\season_1_chapter_2_hindi.md`  
 **Format:** Official Modern Anime Dub Script (Crunchyroll & Muse India Style)  
-**Voice Register:** Colloquial Desi / Mumbai street-smart youth dub. Natural conversational dialogue, punchy cinematic narration ending with `।`. Proper nouns in English Roman script. Inner monologues tagged with `· मनात`.  
+**Voice Register:** Colloquial Desi / Mumbai street-smart youth dub. Natural conversational dialogue, punchy cinematic narration ending with `।`. Proper nouns in English Roman script.  
 **Tags:** `#chapter-2 #season-1 #volume-1 #neel #hindi-dub #crunchyroll-style #muse-style #anime-dub #canon-lock`  
 
 ---
@@ -27,7 +27,7 @@ Neel रुका रहा। कोई हड़बड़ी नहीं। �
 
 यह नगर निगम का क्लोरीन वाला पानी नहीं था। यह तीखा, बर्फीला, शीशे जैसा साफ़, और चूने के पत्थर व जस्ते के अजीब स्वाद से भरा हुआ था। जैसे ही वो पानी गले से नीचे उतरा, कलेजे की सारी जलन एक झटके में ठंडी पड़ गई, और छाती में एक अजीब सी मीठी झनझनाहट फैल गई।
 
-*Neel · मनात:* "अरे यार... ये पानी तो एकदम ताज़ा करंट मार रहा है! Aether-rich spring water... पक्का इसमें कोई अजीब एनर्जी घुली हुई है।"
+*अरे यार... ये पानी तो एकदम ताज़ा करंट मार रहा है! Aether-rich spring water... पक्का इसमें कोई अजीब एनर्जी घुली हुई है।*
 
 उसका दिमाग़ चाहकर भी इस अहसास को नज़रअंदाज़ नहीं कर पाया। उसने बोतल दोबारा भरी, ढक्कन कसा, और अपने बैग की जाली वाली जेब में ठूँस दिया।
 
@@ -57,13 +57,13 @@ Neel ने बाज जैसी नज़र से दस लोगों �
 
 Neel के जबड़े भींच गए।
 
-*Neel · मनात:* "गाड़ीवान सच कह रहा था यार।"
+*गाड़ीवान सच कह रहा था यार।*
 
 अपने यहाँ शहरों में बिना टिकट वालों पर फाइन लगता था या पुलिस थाने ले जाती थी। लेकिन यहाँ? अगर जेब खाली है, तो तुम सीधे सरकारी गुलाम हो। या तो शहर की दीवार के बाहर खाइयाँ खोदो, या फिर सीधे उन मौत के "blood-pits" में झोंक दिए जाओ।
 
 Neel ने दोबारा अपनी दाईं जेब टटोली। अशोक चक्र वाला भारत सरकार का दस रुपये का एक अकेला सिक्का। इन गार्ड्स के लिए यह एक अजीब, पराया धातु का टुकड़ा था जिसकी यहाँ धेले भर की औकात नहीं थी। वह घूस देकर अंदर नहीं जा सकता था। और आठ फीट के भाले थामे चार सांड जैसे गार्ड्स से उलझना मतलब सीधे आत्महत्या थी।
 
-*Neel · मनात:* "सोच Neel, दिमाग़ चला भाई।"
+*सोच Neel, दिमाग़ चला भाई।*
 
 उसने फाटक से पीठ फेर ली, और शहर की बाहरी दीवार के किनारे फैली उस कच्ची झोपड़पट्टी की ओर देखा।
 
@@ -78,7 +78,7 @@ Neel ने दोबारा अपनी दाईं जेब टटोल�
 
 Neel की आँखें चमक उठीं।
 
-*Neel · मनात:* "मुफ़्त खाना। और शहर में एंट्री का पास।"
+*मुफ़्त खाना। और शहर में एंट्री का पास।*
 
 "सही है बॉस," वह अपने आप से बुदबुदाया, उसके होंठों पर एक ठंडी, तंजिया मुस्कान आ गई। "अखाड़ा। इतिहास के हर भ्रष्ट शहर में खून का तमाशा दिखाने वाला एक अखाड़ा ज़रूर होता है।"
 
