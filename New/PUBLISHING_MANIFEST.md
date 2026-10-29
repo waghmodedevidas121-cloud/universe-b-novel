@@ -22,22 +22,26 @@
 ### 📌 Verdict on "Starting"
 The **writing itself starts correctly**. Chapter 1 opens with a cold, sensory, in-scene hook (headache → alien cold → void sky → dead phone → Lava-Bull → pup). That is a textbook strong web-novel opening. What the user is missing is not a story start — it is a **website entry point** that tells a new reader "click here first."
 
+### 📌 Note on Directory Structure
+- Worldbuilding lore & canon modules (00 through 18) remain in `New/`.
+- Active narrative story chapters (Prologue, Chapter 1, 2, 3...) live in `Story/`.
+
 ---
 
 ## 2. WHAT TO UPLOAD — PHASE 1 (LAUNCH SET)
 
-Upload **only these 6 narrative files**. Nothing else.
+Upload **only these 8 narrative files** from `Story/`. Nothing else.
 
 | # | Upload Order | File | Language | Words |
 | :-- | :--- | :--- | :--- | :--- |
-| 0 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue.md` | English | 2,564 |
-| 1 | Vol 1 · Prologue | `18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 2,797 |
-| 2 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1.md` | English | 2,983 |
-| 3 | Vol 1 · Ch 1 | `19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,085 |
-| 4 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2.md` | English | 2,561 |
-| 5 | Vol 1 · Ch 2 | `20_Season_1_Chapter_2_Hindi.md` | Hindi Dub | 3,135 |
-| 6 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3.md` | English | 2,597 |
-| 7 | Vol 1 · Ch 3 | `21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,108 |
+| 0 | Vol 1 · Prologue | `Story/18A_Season_1_Volume_1_Prologue.md` | English | 2,564 |
+| 1 | Vol 1 · Prologue | `Story/18A_Season_1_Volume_1_Prologue_Hindi.md` | Hindi Dub | 2,797 |
+| 2 | Vol 1 · Ch 1 | `Story/19_Season_1_Chapter_1.md` | English | 2,983 |
+| 3 | Vol 1 · Ch 1 | `Story/19_Season_1_Chapter_1_Hindi.md` | Hindi Dub | 3,085 |
+| 4 | Vol 1 · Ch 2 | `Story/20_Season_1_Chapter_2.md` | English | 2,561 |
+| 5 | Vol 1 · Ch 2 | `Story/20_Season_1_Chapter_2_Hindi.md` | Hindi Dub | 3,135 |
+| 6 | Vol 1 · Ch 3 | `Story/21_Season_1_Chapter_3.md` | English | 2,597 |
+| 7 | Vol 1 · Ch 3 | `Story/21_Season_1_Chapter_3_Hindi.md` | Hindi Dub | 3,108 |
 
 **Total launch content:** 10,705 English words + 12,125 Hindi words (8 files).
 

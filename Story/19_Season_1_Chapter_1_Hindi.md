@@ -1,5 +1,5 @@
 # 19. Season 1, Volume 1, Chapter 1: The Hay, the Horns, and the Dead Glass (Official Hindi Dub — Master Track)
-**File:** `D:\Web Novel\UNIVERSE B\New\19_Season_1_Chapter_1_Hindi.md`  
+**File:** `D:\Web Novel\UNIVERSE B\Story\19_Season_1_Chapter_1_Hindi.md`  
 **Format:** Official Crunchyroll / Muse Style Hindi Dubbing Adaptation  
 **Track Status:** **PRIMARY MASTER.** Authored first. The English file is the derived dub.  
 **Language Contract:** Places, ranks, classes, currency and names stay Roman English. Narration and dialogue in conversational Hindi ending with `।`. Inner monologue tagged with `· मनात`. Rules: `rules/hindi_dub_lexicon.md`.  

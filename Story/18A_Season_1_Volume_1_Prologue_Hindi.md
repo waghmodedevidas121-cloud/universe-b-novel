@@ -1,5 +1,5 @@
 # 18A. Season 1, Volume 1 — PROLOGUE: The Glitch in the Rain (Official Hindi Dub — Master Track)
-**File:** `D:\Web Novel\UNIVERSE B\New\18A_Season_1_Volume_1_Prologue_Hindi.md`  
+**File:** `D:\Web Novel\UNIVERSE B\Story\18A_Season_1_Volume_1_Prologue_Hindi.md`  
 **Format:** Official Modern Anime Dub Script (Crunchyroll & Muse India Style)  
 **Track Status:** **PRIMARY MASTER.** Authored first; the English file is derived from it.  
 **Tags:** `#prologue #volume-1 #season-1 #neel-origin #bombay #dadar #hindi-dub #master-track #canon-lock`  

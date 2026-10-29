@@ -5,6 +5,7 @@ $ErrorActionPreference = 'Stop'
 
 $root      = 'D:\Web Novel\UNIVERSE B'
 $newDir    = Join-Path $root 'New'
+$storyDir  = Join-Path $root 'Story'
 $srcHtml   = 'D:\assests\video\web_novel_writer_studio.html'
 $outHtml   = Join-Path $newDir 'universe_b_writer_studio.html'
 
@@ -82,7 +83,8 @@ function Convert-MdChapters {
 
 function New-Chapter {
     param($Id, $Title, $Status, $File)
-    $path = Join-Path $newDir $File
+    $path = Join-Path $storyDir $File
+    if (-not (Test-Path $path)) { $path = Join-Path $newDir $File }
     $lines = [System.IO.File]::ReadAllLines($path, [System.Text.Encoding]::UTF8)
     $html = Convert-MdChapters -Lines $lines
     $words = ([regex]::Matches($html, '\S+')).Count

@@ -1,5 +1,5 @@
 # 19. Season 1, Volume 1, Chapter 1: The Hay, the Horns, and the Dead Glass (English Dub — Derived Track)
-**File:** `D:\Web Novel\UNIVERSE B\New\19_Season_1_Chapter_1.md`  
+**File:** `D:\Web Novel\UNIVERSE B\Story\19_Season_1_Chapter_1.md`  
 **Tags:** `#chapter-1 #season-1 #volume-1 #neel #beast-cart #lava-bull #sheru #derived-dub #canon-lock`  
 **Track Status:** **DERIVED DUB.** Derived beat-for-beat from `19_Season_1_Chapter_1_Hindi.md` (the primary authored master).  
 **Setting:** Beast-Cart Caravan outside Central City — Morning, Season 1  
