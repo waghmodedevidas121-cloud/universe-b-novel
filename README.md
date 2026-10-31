@@ -123,19 +123,31 @@ UNIVERSE B/
 │       ├── 10_CANONICAL_SOURCES_AND_BIBLIOGRAPHY.md
 │       └── 11_POWER_SYSTEMS_AND_EVOLUTION_MECHANICS.md
 │
-├── 📐 rulebook/                             # [CORE STYLISTIC & NAMING RULES]
-│   ├── naming_rules.md                     # Indo-Global Phonetic Clipping Architecture
-│   └── worldbuilding_master_architecture.md# Ecological, Sociological & Mythic Bedrock
+├── 📐 rulebook/                             # [CORE STYLISTIC, CANONICAL & NAMING RULES]
+│   ├── master_writing_flow_bible.md        # Single Source of Truth: 18-Section Master Writing Craft Bible
+│   ├── UNIVERSE_B_DIRECTORS_PLAYBOOK.md    # Director's Master Vision, Tone & Scene Directives
+│   ├── worldbuilding_master_architecture.md# Ecological, Sociological & Mythic Bedrock
+│   ├── CANONICAL_PROSE_STYLE_AND_GOLD_STANDARD.md # Muse/Crunchyroll Prose Dub Benchmarks
+│   ├── NEEL_CANONICAL_CHARACTER_DOSSIER.md # Neel's Canonical Physiology, Wardrobe & Pocket Inventory
+│   ├── SHERU_CANONICAL_CHARACTER_DOSSIER.md# Sheru's Canonical Model Sheet, Marks & Companion Mechanics
+│   ├── COMPLETE_125_CHARACTER_MASTER_SHEET.md # Master 125-Character Roster & Faction Assignments
+│   ├── MASTER_CLANS_DYNASTIES_AND_REGIONS_CODEX.md # 5 Shards, Dynasties & Bloodlines
+│   └── naming_rules.md                     # Indo-Global Phonetic Clipping Architecture
 │
 ├── ⚙️ scripts/                              # [VERIFICATION SUITES & COMPILATION ENGINES]
 │   ├── build_universe_b_studio.ps1         # Regenerates the Writer Studio from canonical markdown
-│   ├── verify_index.py                     # 28-Assertion Master Verification Test Suite
-│   ├── verify_dynasties_codex.py           # Integrity Verification for Dynasty Roster
-│   ├── build_html_portal.py                # Standalone Web Portal Compiler
-│   └── ...
+│   ├── patch_studio_ui.py                  # Warm Dark Minimalist Theme & Reading Persistence Engine
+│   └── verify_index.py                     # 29-Assertion Master Verification Test Suite (100% PASS)
 │
-└── 🗄️ trash/                                # [LEGACY ARCHIVE & SCRAPPED CONCEPTS]
-    └── legacy_mirrors/                     # Pre-Purge reference files and deprecated drafts
+└── 🗄️ trash/                                # [STRUCTURED ARCHIVE & AUDIT GENEALOGY]
+    ├── World/                              # Phase 1: V0.1 Foundational Drafts (Modules 01–40)
+    ├── legacy_mirrors/                     # Phase 2: V1 Category Mirrors & Audits
+    ├── archive_preliminary/                # Early preliminary chapter and tier breakdowns
+    ├── legacy_drafts/                      # Superseded chapter drafts and intermediate scene fragments
+    ├── legacy_rules_and_world/             # Outdated power system bibles and truncated writing guides
+    ├── legacy_previews_and_html/           # Retired HTML preview dashboards and standalone viewers
+    ├── one_off_scripts/                    # Scratch migration and debug python scripts
+    └── root_duplicates/                    # Superseded root copies (duplicate playbook, merge.py, dump)
 ========================================================================================
 ```
 

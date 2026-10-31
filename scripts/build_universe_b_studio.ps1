@@ -117,7 +117,7 @@ $codex = @(
     [PSCustomObject]@{ id='cod-4'; name='Feeder Sand-Pits'; category='Location'; desc='D-Tier rookie feeder circuit sunk into the exterior south trench. Free rations for contenders, ten copper Panas and a transit pass for winners. Bottom rung of the Proving Games.' },
     [PSCustomObject]@{ id='cod-5'; name='Nadi and Prana'; category='Power/System'; desc='72,000 meridian channels carrying vital force. No mana bar, no levels. Overdraw causes The Blowout: internal channel rupture and black charring.' },
     [PSCustomObject]@{ id='cod-6'; name='The Chime'; category='Power/System'; desc='A private brass bell heard only inside the skull at a moment of deathly crisis. Ananta registers the breakthrough. No screen, no notification, no numbers.' },
-    [PSCustomObject]@{ id='cod-7'; name='Copper Panas'; category='Power/System'; desc='Local copper currency. Three Panas buys gate entry. Ten Panas is a winning purse. One Aether-Rupee equals one hundred Silver Panas.' }
+    [PSCustomObject]@{ id='cod-7'; name='Copper Panas'; category='Power/System'; desc='Local copper currency. Five Panas is the official city gate toll. Ten Panas is a rookie winning purse. One Aether-Rupee equals one hundred Silver Panas.' }
 )
 
 $project = [PSCustomObject]@{
