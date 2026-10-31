@@ -54,6 +54,38 @@ These are actual lines that were written, caught, and rejected. Learn the patter
 | 10 | `एक जैसी चीख-पुकार` | "a uniform screaming" — meaningless | `हज़ारों गलियों की एक साथ चीख-पुकार` |
 | 11 | `कोई साधारण बैलगाड़ी की गाय नहीं थी` | cows are not tied to bullock carts | `कोई सीधा-सादा बैल नहीं था` |
 | 12 | `वायु में ऊर्जा का संतुलन असंतुलित हो रहा है` | the classic Shuddh-Hindi dub failure | `हवा में एनर्जी का बैलेंस बिगड़ रहा है` |
+| 13 | `सामने जो पहली चीज़ दिखाई दी—वह कोई इंसान नहीं था` | formal Doordarshan bookish Hindi | `और सामने जो दिखा... वो कोई इंसान तो बिल्कुल नहीं था` |
+| 14 | `दो विशाल, मुड़ी हुई सींगें` | "विशाल" is formal Sanskritised; सींग is masculine plural | `दो भारी, नुकीले सींग` |
+| 15 | `गर्म भाप का एक तेज़ फव्वारा बाहर निकला` | archaic textbook prose | `खौलती हुई भाप सीधे बाहर छूटी` |
+| 16 | `खोपड़ी में लाल-तपती कील आर-पार ठोक दी हो` | 90s B-grade action melodrama cliché | `कनपटी के पीछे एक भारी, सुन्न कर देने वाला दर्द था` |
+| 17 | `वह` everywhere in narration | bookish textbook pronoun, kills conversational dub delivery | `वो` (spoken Hindi dub default) |
+
+---
+
+## 2.1 Modern Anime Dub Spoken Cadence (Crunchyroll & Muse India Voice)
+
+1. **Pronoun Mandate (Voice-Over Standard):** 
+   - Use `वो` instead of `वह` in both narration and dialogue (`वो वहाँ खड़ा था`, never `वह वहाँ खड़ा था`). `वह` makes the voice actor sound like an old radio reader. `वो` creates immediate modern dub immersion.
+   - Use `ये` instead of `यह` (`ये कोई साधारण जानवर नहीं है`, never `यह कोई साधारण जानवर नहीं है`).
+2. **Breathing Paragraph Format:**
+   - 1 to 3 sentences maximum per paragraph.
+   - Use dramatic single-line anchors (`खाना।`, `कुल ग्यारह रुपये।`, `काला शीशा।`, `घंटा कुछ नहीं हुआ।`).
+3. **Sequential Sensory Unfolding:** Never dump temperature, smell, sound, and sight in one overloaded sentence. Unfold them in chronological order:
+   - Cold / Touch ➔ Scent / Smell ➔ Sound ➔ Eyes open (Visual).
+4. **Street Reality Filter:** Neel speaks and thinks like a 19-year-old Mumbai student living on 11 rupees, not a classical philosopher. He thinks in terms of batteries, train passes, garage levers, and immediate survival.
+
+---
+
+### 2.2 Natural Spoken Hindi Pronunciation & Voice-Over Mapping (Anti-AI Writing Standard)
+
+| Written (Textbook Hindi) | Spoken / Voice-Over (Narration & Dialogue) | Why (Voice Impact & Zero AI Token) |
+| :--- | :--- | :--- |
+| **वह** | **वो** | 'वह' sounds like Doordarshan news; 'वो' sounds human and alive. |
+| **यह** | **ये** | 'यह' sounds like a textbook question; 'ये' is natural conversational speech. |
+| **नहीं** | **नहीं / नही** | In fast speech, the nasal bindu softens; keep natural flowing speech. |
+| **चाहिए** | **चाहिए / चाहिये** | Natural colloquial cadence. |
+| **मानो** | **BANNED IN PROSE** | AI signature #1. Replace with direct physical reality. |
+| **एक अजीब-सी** | **BANNED IN PROSE** | AI signature #2. Replace with exact sensory detail (बर्फ जैसी चुभन, कड़वा धुआँ). |
 
 ---
 

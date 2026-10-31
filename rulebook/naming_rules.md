@@ -24,7 +24,7 @@ Every name, label, or designation in Universe B belongs to exactly one of the fo
 ```
 +-------------------------------------------------------------------------+
 | Layer A: PERSONAL NAME (Primary identity, culture, lineage)            |
-| Example: "Maitreyi", "Alistair Vance", "Ulka", "Parikshit"              |
+| Example: "Maitreyi", "Alistair Vance", "Ulka", "Parikshat"              |
 +-------------------------------------------------------------------------+
                                     |
                                     v
@@ -177,6 +177,14 @@ The following categories of artificial titles are permanently banned from Univer
 - **The "Inflated Grandeur" Category:**
   - Putting *High*, *Grand*, *Supreme*, or *Arch-* in front of every position (e.g., *Grand Marshal*, *High Chief Magistrate*, *Supreme Scholar*).
   - *Why it fails:* When everyone is "Grand", nobody is. Real institutions reserve such words for at most one or two constitutional figureheads.
+
+---
+
+## 9. OFFICIAL INTOXICANTS, BREWS & STIMULANTS (मदिरा व उत्तेजक पेये - Canon Standard)
+1. **मदिरा / सुरा (Madira / Sura):** सामान्य मजूर, गाडीवान आणि सैनिकांचे स्वस्त, आंबट आणि दुर्गंधीयुक्त मद्य. 'दारू' हा आधुनिक शब्द वापरण्यास सक्त मनाई आहे; त्याऐवजी नेहमी **'सड़ी हुई मदिरा'** किंवा **'कच्ची सुरा'** हाच शब्द वापरावा.
+2. **वारुणी (Varuni):** असुर आणि लोहार वर्गाची कडक, भट्टीतील ज्वलनशील मदिरा.
+3. **सोम-रस (Soma-Dew):** देवांचे आणि उच्चवर्गीयांचे अत्यंत महागडे, चमकदार दैवी पेय.
+4. **कड़वी पत्ती (Astringent Chew-Leaf):** मजुरांमध्ये थकवा घालवण्यासाठी चघळली जाणारी तापोवन वनस्पती; 'गुटखा/तंबाखू' पूर्णपणे निषिद्ध आहे.
 
 ### 8.3 Unresolved Facts Required Before Finalizing Related Roster Names
 Before extending this audit across the remaining 87 characters, the following worldbuilding facts must be explicitly confirmed by the author:

@@ -150,7 +150,7 @@ Official Vidhata Reincarnation     Illicit Occult Summons               Mortal M
 
 | Character Archetype | Historical Era | Biological Lifespan | How They Are Still Alive in Era 4 | Narrative Function |
 |---|---|---|---|---|
-| **Mortal Humans** (Parikshit, Vance, Coraline, Devayani) | **Era 4** (Present Era of Runic Steel & Quirks) | **60 – 85 years** | Normal biological aging. Vulnerable to respiratory fatigue, shrapnel infection, runic burns, and old age. | Grounded mortal perspective. They feel the ticking clock of mortality, making their courage and sacrifices deeply moving. |
+| **Mortal Humans** (Parikshat, Vance, Coraline, Devayani) | **Era 4** (Present Era of Runic Steel & Quirks) | **60 – 85 years** | Normal biological aging. Vulnerable to respiratory fatigue, shrapnel infection, runic burns, and old age. | Grounded mortal perspective. They feel the ticking clock of mortality, making their courage and sacrifices deeply moving. |
 | **Asuras & Danavas** (Maya, Mandor, Simhika, Erika) | **Era 3** (The Great Partition) | **350 – 500 years** | Dense basalt-infused skeletal structure, sulfurous metabolic efficiency, and regenerative bone marrow. | Bridge between ancient knowledge and runic innovation. Maya is 410 years old; he built the old stone gates and now forges armored Ratha hulls and runic ballistas. |
 | **Yogis & Ascetics** (Sage Shamika, Envoy Astika) | **Era 3 / Late Era 2** | **200 – 400 years** | **Kevala Kumbhaka** (complete respiratory and metabolic suspension) and Ojas preservation through celibate Tapasya. Cellular oxidation is slowed to a crawl. | Philosophical guardians. They do not care for industrial politics, acting only when cosmic cosmic dharma is threatened. |
 | **Void Seal Guardians** (Muchukunda, Shrutayudha) | **Era 2** (The Void Cataclysm) | **Thousands of Years (Static)** | **Divine Boons or Cosmic Curses:**<br>• *Muchukunda:* Sleeping in a deep magma stasis vault; wakes only if an intruder disturbs his slumber.<br>• *Shrutayudha:* Cursed with biological immortality, physically chained to the 7th Void Seal as a living biological lock. | Living historical monuments. They represent the terrifying horrors of the past that modern mortals have forgotten. |
@@ -250,7 +250,7 @@ Official Vidhata Reincarnation     Illicit Occult Summons               Mortal M
 │ (Buffer Breakdown)  │ containment breach; Void Seal 3 miasma leak at the border.            │
 ├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
 │ ARC 4: THE ASHEN PIT│ Crisis beyond the Grand Aegis in Tier 4; destabilization of the 7th   │
-│ (Abyssal Crucible)  │ Void Seal; King Shrutayudha's ancient warning; Paundraka's uprising. │
+│ (Abyssal Crucible)  │ Void Seal; King Shrutayudha's ancient warning; Paundraa's uprising. │
 ├─────────────────────┼───────────────────────────────────────────────────────────────────────┤
 │ ARC 5: SOUND OF THE │ Systemic fatigue of the Written Destiny (Lihito); the mystery of the  │
 │ WORLD (Cosmic Nexus)│ Singularity Apex; the High Council trial before Yama and Chitragupta. │

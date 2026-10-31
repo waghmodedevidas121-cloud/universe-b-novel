@@ -1,6 +1,6 @@
 # 19. Season 1, Volume 1, Chapter 1: The Hay, the Horns, and the Dead Glass (English Dub — Derived Track)
 **File:** `D:\Web Novel\UNIVERSE B\Story\19_Season_1_Chapter_1.md`  
-**Tags:** `#chapter-1 #season-1 #volume-1 #neel #beast-cart #lava-bull #sheru #derived-dub #canon-lock`  
+**Tags:** `#chapter-1 #season-1 #volume-1 #neel #sheru #boran #one-rupee-hustle #derived-dub #canon-lock`  
 **Track Status:** **DERIVED DUB.** Derived beat-for-beat from `19_Season_1_Chapter_1_Hindi.md` (the primary authored master).  
 **Setting:** Beast-Cart Caravan outside Central City — Morning, Season 1  
 
@@ -9,250 +9,456 @@
 ### [SEASON 1 • VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT]
 #### CHAPTER 1: THE HAY, THE HORNS, AND THE DEAD GLASS
 
-Pain hit the back of his skull like someone had driven a red-hot iron spike straight through bone.
+### SCENE 1: THE AWAKENING IN THE DUNG-CART
 
-Neel didn't open his eyes immediately. He didn't have the stomach for it, but before his conscious mind even fully engaged, his nose and ears made it clear he wasn't lying on a hospital cot in Mumbai.
+A scalding blast of living breath slammed into his face.
 
-There was none of the smell of rain-soaked Dadar asphalt or heavy diesel exhaust. None of the familiar reek of drying Bombay duck fish that drifted through his 1-BHK window every morning. The air here was thin, biting, and dry—so sharp that every lungful scraped his throat like crushed glass. And cutting through that freezing air were two unmistakable scents: the sour, fermented tang of rotting straw, and beneath it, that sharp, burning sulfur stench that fills the air a second before a massive electrical transformer detonates.
+Neel tried to force his eyes open, but a blinding, numbing ache exploded across the back of his skull, like an iron tire iron had come down straight across bone. The tendons in his jaw locked tight.
 
-"Ugh... damn it, my head..."
+And what stood directly before him... was definitely not human.
 
-As he rolled onto his side, something sharp jabbed hard into his ribs. He clawed his fingers outward, his fist coming away packed with dust-caked, brittle straw.
+Two massive, blackened horns. Rough like broken basalt boulders, and seeping from their deep fissures came the dull, crimson embers of living magma.
 
-Slowly, he forced his eyelids open.
+And right between those two horns—scalding sulfur steam erupted straight from the snout.
 
-There was no yellowed ceiling overhead. No peeling plaster, no rusted fan blades.
+*Fsssshhhh!*
 
-And what sat above him killed the headache with sheer shock.
+The breath hitched dead in Neel's throat. His spine turned to ice, but he didn't make the mistake of moving even a single millimeter.
 
-There was no sky. Only an absolute, bottomless well of ink that swallowed vision whole, defying his eyes to find any horizon. And suspended in the dead center of that blackness, hundreds of thousands of miles above the ground, hung a fractured, gargantuan continent of shattered rock with nothing holding it up.
+*Don't move, Neel. Not even an inch.*
 
-No pillars. No chains. Just colossal black stone, floating motionlessly in mid-air.
+His right cheek was pressed flat against rotting, wet straw. His cold, soaked jeans clung stiffly to his shins, and his teeth chattered uncontrollably. The creature towering over him looked as wide as a freight truck. If it set even one hoof this way, he'd be paste in half a second.
 
-Neel froze. His spine glued itself to the rough timber planks beneath him, and the ragged gasp in his throat choked off into silence.
+Neel wasn't on the ground.
 
-*What the hell is this... did an artery pop in my brain, or did my retina just tear clean off?*
+He was lying flat on his stomach in the bed of a massive wooden beast-cart, sprawled across a pile of damp hay. The wagon's iron-rimmed wheels were sunk halfway to their axles in black mire.
 
-With shaking hands, he dug into the inner lining of his denim jacket. His fingers snagged on familiar edges—his laminated Mumbai University ID card, flat keys, and his battered Redmi smartphone with its spiderweb-cracked tempered glass.
+From all around came the grinding screech of trapped wagons and splintering timber. Far off across the mud, a rawhide whip cracked—*crack!*—and a teamster began screaming filthy curses at the top of his lungs.
 
-He hammered the power button with his thumb. Once. Twice. Then held it down until his joint ached.
+Neel cautiously flexed his fingers and toes.
 
-The screen stayed dead black. Zero percent battery.
+Everything was attached. But the ache in his ribs felt like he'd taken a steel-toed boot to the chest while dangling from the open doorway of a Churchgate rush-hour local train.
 
-"Water must've flooded the circuits... when I went into the pothole..." His voice sounded paper-thin against the vast open air. "Think, Neel. Think back. Dadar Bridge. Rain. The filthy puddle. Then that dry, tearing pull... and after that..."
+He tilted his gaze upward.
 
-After that was only the roaring white-and-gold vortex, compressing his ribs like an industrial press.
+There was no ceiling, no railway trestle, no Dadar high-rises. Overhead, the entire sky was an overcast, dead grey. No sun, no distinct clouds. Just a flat, lifeless pall that cut straight through wet cloth and chilled the bone.
 
-"Status Window?" he whispered into the straw. "System Menu? Open Profile?"
+Neel mumbled under his breath, barely parting his lips: "Where the hell did I drop? Does the Dadar stormwater drain open straight into hell?"
 
-No blue transparent interface flickered into existence. No disembodied narrator rang in his ear with quest markers.
+Without making a sound, he slipped his hand into the inner pocket of his soaked jacket.
 
-Only a distant, ground-trembling roar vibrated through the wagon's chassis. A mile away, from behind colossal stone ramparts, rose the unified roar of thousands of throats—the distinct sound of blood sport in an ancient coliseum.
+His fingertips brushed against a bent, laminated card.
 
-Right then, directly beneath the wagon bed he was lying on, something exhaled a massive, furnace-like blast.
+His Dadar-to-Matunga local train pass. Wet, cold... and completely useless here.
 
-*Phussssshh!*
+Right next to it rested his old Redmi phone.
 
-A wave of boiling sulfur steam washed over his wet sneakers. Neel scrambled back on his hands and knees, peering over the rough timber railing.
+Neel slid it out. The tempered glass was a spiderweb of hairline cracks, with dried mud caked around the edges. He pressed the power button with his thumb.
 
-He wasn't in a building. He was sprawled in the flatbed of a massive, reinforced wooden Beast-Cart, unhitched and parked in the mud. And the animal harnessed to the front yoke was no ordinary ox.
+One second... three seconds... five seconds.
 
-It was an eight-foot-tall juggernaut forged of basalt-black muscle. Heavy, rope-like sinews bulged beneath its hide like tightened cables. And curving from its skull were two massive, wickedly swept horns, their hollow interiors pulsing with the dull red embers of a banked coal furnace.
+The screen stayed dead black. Battery: 0%.
 
-A Lava-Bull.
+Neel stared at the dark glass and whispered, "Brilliant. Exactly when I need you, you tap out. Eleven rupees and a dead phone... my luck didn't even upgrade outside Mumbai."
 
-Ice-water poured straight down Neel's spine.
+Then, a sudden thought sparked in his mind.
 
-*Either I slipped through a black hole onto some alien rock... or I'm lying in an ICU hallucinating the worst fever dream of my life.*
+All those late nights reading *Solo Leveling*, Marvel comics, and bingeing Isekai anime flashed before his eyes in an instant. The truck impact, falling through a portal, waking up in an alien world...
 
-*Ghhhuuurrrr...*
+He raised a single finger into the air and barked in a sharp, low whisper: "System... Status Window Open! Show Location and Map!"
 
-A low, grating snarl rose from near the rear iron wheel, breaking through his muttering. It wasn't the bull.
+He blinked and waited for two full seconds.
 
-Neel craned his neck over the tailgate.
+No glowing blue hologram hovered in mid-air. No floating interface menu opened. No robotic AI voice spoke inside his skull.
 
-Huddled in the mud beside the iron-shod rim was a small hound pup. Tied around its throat was a frayed, grease-stained hemp tether anchored to the wagon's iron axle hub.
+Not a damn thing happened.
 
-This was no helpless Mumbai alley stray. Its short coat was the color of fresh coal dust, sucking ambient light straight into its fur. Its left ear was half-torn away, the ragged edge looking as if it had been ripped by teeth in a pit fight. A pale cross-cut scar ran across its snout, but its amber-gold eyes burned with a feral, calculating intelligence unheard of in ordinary hounds.
+The freezing wind blew as unforgiving as ever, and the horned titan before him snorted another plume of scalding vapor right across his face.
 
-The pup watched Neel with unblinking scrutiny. Its ribs showed clearly through its lean flank, its breathing shallow and rapid.
+Neel's face fell.
 
-Neel swallowed hard. "Hey... easy, buddy. Good boy? You're not going to bite my hand off, right?"
+He took a slow, freezing breath, slid the dead phone back into his pocket, and muttered to himself: "Nice going, genius. Anime fever broken? This isn't a game. Well... at least my brain is still firing."
 
-The pup wrinkled its black upper lip, flashing a row of teeth. They weren't white bone—they carried the cold, gunmetal sheen of bare steel.
+---
 
-"Right. Got it. Friendship later." Neel held both open palms up in surrender.
+### SCENE 2: THE MONOLITHIC WALL & THE STAGING GROUND
 
-At that exact moment, a vicious cramp seized his stomach. His intestines twisted in on themselves. He hadn't eaten since noon yesterday. Reaching back into the cart, he hauled his soaked college backpack toward him. The engineering textbooks had dissolved into wet bricks. The plastic bottle held barely two swallows of warm water. But jammed at the very bottom, wrapped in a plastic grocery bag, was half a dry mutton roll and three glucose biscuits.
+Neel peered over the timber railing of the wagon.
 
-Neel pulled the roll free. The hunger was raw enough that he could have swallowed it whole in two bites.
+The vista that unfolded before him stole whatever breath remained in his chest.
 
-Then his hand stopped.
+This was no road. This was an endless sea of churned, black mire—**The Staging Ground**.
 
-Those two burning amber eyes under the wheel had locked onto the food like iron clamps. The pup ran a cracked, dry tongue over its jaws, and from its throat came a faint, desperate whine. Not a snarl—just the sheer, raw helplessness of starvation.
+As far as the eye could see, hundreds of colossal Beast-Carts were wedged bumper-to-tail in deep wagon ruts. Thick stones had been shoved behind the iron-banded wheels to keep them from sliding, and axle grease smeared black across the frozen, stagnant puddles.
 
-Neel's hand hung suspended in the air.
+The beasts tethered to the yokes were unlike anything on Earth—not just eight-foot Lava-Bulls, but striped predators with lean flanks and hulking grey bisons whose curled horns punched out directly from their cheekbones. Strapped to the backs of several wagons were iron-barred crates, venting musk and the rasping scratch of giant insect carapaces.
 
-Having lost both parents on a highway collision at sixteen, surviving alone in that empty Dadar flat, grading tutorial papers to pay college tuition fees—Neel knew that look down to his bones. During the final three days of the month when his pocket held barely five rupees, his gut had burned with that exact same fire.
+The air was dense with layers of stench: wet hides, coal-fed forge smoke, rotting grain, and animal dung.
 
-"You didn't buy a ticket either, did you, brother?" Neel murmured.
+And beyond the sprawling sea of wagons, half a mile ahead—
 
-He tore the roll in two. Keeping the smaller, dry crust for himself, he reached down over the tailgate and dropped the thick meat-filled section into the mud near the pup's paws. "Here. Eat up. It's not poisoned."
+Neel's gaze locked dead.
 
-The pup hesitated for half a second, sniffed once, and bolted the entire portion down without chewing.
-
-The feral hostility in its amber eyes softened just a fraction. Its stub of a tail twitched once against the mud.
-
-Neel chewed his own stale crust. It was cold and rubbery, but right then it tasted better than anything he could remember.
-
-"All right," Neel muttered, slinging his bag over one shoulder as he prepared to drop down. "Let's see where the main gate of this madhouse is—"
-
-The moment his torn sneaker hit the cart's lower iron step, his right hand instinctively reached down and rested upon the pup's scarred brow.
-
-*ZZZZZT!*
-
-A vicious burst of azure electricity flared between his palm and the black fur.
-
-The dull, tingling numbness that had plagued his hands since waking erupted into a live current. A thin crackle of blue static danced across the pup's skull, and the shock snapped the animal's jaws shut. In a panic, the hound jerked its neck back—
-
-*SNAP!*
-
-The rotten tether snapped clean through, and the pup sprang free.
-
-In that single instant, the distant roar of the arena vanished completely from Neel's ears.
-
-*Thump. Thump. Thump.*
-
-His heartbeat and the rapid flutter of the pup's pulse locked into a single harmonic cadence. For half a second, Neel felt the dull ache of the pup's scarred hind leg in his own body, and the hound shuddered as it perceived the searing spike lodged in Neel's brain.
-
-Their breathing fused into one.
-
-"What kind of madness is this..." Neel wrenched his hand back, staring at his palm. Beneath his skin, an azure circuit-like tracery flared briefly before sinking deep into his lifeline.
-
-The pup wasn't growling anymore. Free of its rope, it stepped forward, sniffed Neel's waterlogged denim hem, and rested its scarred head firmly against his shin. A strange, grounded calm washed through Neel's panic.
-
-Then a heavy shadow dropped across the straw, blotting out the ambient light.
-
-Standing at the tailgate was a burly, barrel-chested man who looked as though someone had ripped an oak door off its hinges and planted it in the mud. A stiffened leather apron hugged his gut, and jammed into his belt like a hidden dagger was a split wooden tally-stick. He held a clay cup in one calloused fist, chewing with the cold, joyless patience of someone who had eaten the identical breakfast for thirty years.
-
-"Awake," the man stated flatly. "Good. Saves me the corpse-tax."
-
-Neel's mouth felt like sandpaper. "Where... where am I?"
-
-"South Flats. Staging Ground eleven." The wagon master jerked his chin toward the distant horizon without bothering to look. "City's past that wall. You're out here. That's your whole story, and it isn't my problem."
-
-"And who are you?"
-
-"The man whose cart you've been bleeding on." He took a slow sip. "Found you face down in the drainage ditch near the east post, drinking mud. A stray body in the ditch means four Panas in fines and half a morning dealing with the magistrate. So I dumped you in the hay. Now say your thanks and clear out."
-
-Neel pressed two fingers behind his ear. No blood, but that searing nail of pain was still throbbing. "How long was I out?"
-
-"Two bells. Call it three if you count the time you spent babbling to the sky." The carter's gaze raked over Neel's clothes—the jeans, the soaked sneakers, and the blue lanyard dangling from his collar. "Drifter."
-
-There was no surprise in his voice, only the flat indifference reserved for an uncollared dog on the roadside.
-
-"Wherever you dropped from," the man continued, "you've got no seal, no guild medallion, no paperwork. No family backing you up with a clan claim. Every now and then, trash falls out of the sky. The gate clerks have a single word for your kind—unindexed."
-
-*"unindexed. No records, no identity. In this world, I don't even exist."*
-
-"I need to get inside that city," Neel said, glancing toward the monumental wall.
-
-"Then pull out three copper Panas."
-
-"Three Panas?"
-
-"Three. That's the gate toll. Farmers, draymen, caravan bosses—anyone without an official merchant's brass badge pays three." The man tilted his cup. "And don't look at me for credit. I've hauled freight on this highway for nineteen years, and I've never seen a copper returned by a nameless drifter."
-
-"What happens if I just walk up to the gate without coin?"
-
-"The clerk holds out his palm. You show him empty pockets. He blows a whistle, and two guard-spears shove you into the pen on the right." The teamster pointed his chin toward a distant palisade. "Mud floor, no roof, thirty men chained to a timber rail. By noon they'll hand you an iron chisel and drop you into the South Trench—scraping toxic salt-grass roots off stone walls that sprout them back before sunrise."
-
-"And if someone refuses the labor?"
-
-"They shove him through the other arch. Sand-Pits. The blood bazaar." The carter's mouth twisted in a humorless smirk. "Cheap fighters, cheap slaughter, and a fistful of copper for whoever's still standing at sunset. Either way, nobody walks away with all their teeth."
-
-Neel looked down at his own hands. Slender fingers, ink stains near the nails, raw scraped knuckles. For three years, those hands had handled nothing heavier than engineering textbooks and cheap styluses; they had never fought for their life.
-
-*Three Panas. Either food and a dry floor for the night, or an entry token through the gates. Scraping both together is impossible.*
-
-The grinding math of Mumbai had followed him across worlds.
-
-"Boy," the wagon master grunted.
-
-"What?"
-
-"The hound."
-
-Neel glanced down. The black pup remained pressed against his calf, one ear cocked, glaring at the carter with ancient venom.
-
-"He's not mine," Neel said.
-
-"On paper, he's mine. Bought him off a Caldera hauler for two Panas, cord included." The man scowled, disgusted with his own investment. "Worst two coppers I ever spent. Won't pull, won't guard, and won't touch meat that isn't already dead. Figured I'd dump him at the cull-pen at the gate and sell the cord for a Masha."
-
-Neel glanced at the severed rope lying in the muck. "The cord's already broken."
-
-"I can see that." The carter's eyes moved from the rope to the pup's face, then settled on Neel's right hand. A heavy, dangerous suspicion flickered across his gaze. "You cut that?"
-
-"Snapped on its own. Rotten fiber."
-
-"Hmm..." The carter set his clay cup on the cart rim, studying Neel's knuckles with the sharp eye of a man who had diagnosed cattle diseases for two decades. "Your fingers are humming, Drifter. I can hear the buzz from here."
-
-Neel clenched his fist tight. Beneath his skin, that thin, warm thread of current was still pulsing from wrist to pinky.
-
-"It's... just static electricity," Neel deflected.
-
-"Static doesn't hum in fifths." The carter took two deliberate steps back, putting the full breadth of the iron wheel between them. "I was hauling runic freight before that wall was quarried. Keep your cursed fingers away from my Lava-Bull."
-
-He turned on his heel and melted into the growing roar of Staging Ground eleven.
-
-Because the entire staging camp was roaring to life.
-
-Hundreds of beast-carts stood bumper-to-tail in massive chocked rows. Iron-banded wheels were blocked with dressed stone, their axles slathered in thick grease that glistened black in the mud. Between them surged teams of colossal draft beasts—not just the basalt Lava-Bulls, but striped savanna horn-beasts and an enormous grey brute with a spiraled horn erupted straight through its own cheekbone.
-
-The reek came in waves—wet hide, the red glow of roadside smithy forges, boiling sour porridge, and animal dung. A brass horn sounded from the ramparts—two short blasts, one long. Criers shouted manifests from raised stone platforms while teamsters squared up over freight rates. Between the rolling wheels, ragged children darted through the muck with wicker baskets, scooping fresh manure before rival gatherers could reach it.
-
-And beyond the carts, a ragged line of unindexed men stood in silence, being counted off with an overseer's rod. Fifty-two... fifty-three...
-
-In the entire staging ground, not a single person looked up.
-
-Neel raised his eyes.
-
-There was no sky. Only a yawning chasm of blackness, and within that abyss hung two fractured worlds. To the west, a shattered continent of volcanic basalt bleeding sluggish red magma from its rifts. To the north, an enormous plateau of glistening white marble floating in the void without a sun to illuminate it.
-
-"Don't stare."
-
-Neel spun around. The wagon master stood ten paces away, eyeing him cold.
-
-"First-timers always gawk. Then their wits scramble and they shake for a week. Look at the mud and keep your feet moving."
-
-"What is this place?" Neel asked, his voice swallowed by the sheer scale of it all.
-
-The carter gave him a frigid glance. "Central City. Crossroads of the Five Shards. Gate opens on the third bell. If you're still standing in this mud when the clapper drops, you'll rot out here all season."
-
-*DHOOONNNNNNN!*
-
-The first great bell detonated from atop the ramparts.
-
-Neel felt the vibration rattle in his molars. Every cart in the staging ground shuddered, and hundreds of harnessed beasts leaned into their traces as one.
-
-Then the second bell toll rang across the flats.
-
-And finally, from far across the expanse, came the deep, reverberating toll of the third bell.
-
-Neel turned toward the gateway.
-
-Half a mile ahead, set into the center of a two-mile-long white stone rampart, the hundred-foot-tall black basalt gate of Central City began to groan open. Through its yawning mouth billowed a luminous corridor of breathable blue Aether-mist. Freight carts from the Western Caldera and cloaked mercenaries began shuffling forward as the morning Muhurta window unlocked the inspection barriers.
-
-Carved across the basalt lintel in sharp, monumental characters, Neel's newly awakened senses deciphered the inscription with effortless clarity:
+Carved from seamless black and white stone, a colossal 100-foot rampart rose straight up to meet the ink-black void. Anchored in the center of that immense wall stood an archway of blackened basalt, its keystones inscribed with bold, chisel-cut letters:
 
 **CENTRAL CITY — THE CROSSROADS OF THE FIVE SHARDS.**
 
-Neel drove the dead smartphone deep into his inner jacket pocket. He hitched the strap of his waterlogged backpack over his shoulder, then looked down at the one-eared black pup standing resolute beside his sneaker.
+Armed sentries patrolled the high battlements, their spearheads glinting cold even beneath the sunless sky. Down in the mud below, the crack of rawhide whips and harsh shouting echoed continuously.
 
-"Listen up, Sheru," Neel murmured, a grim, reckless grin tugging at his lips. "I don't know what kind of hell we've landed in. But one thing's dead certain—if we don't squeeze some Panas out of this city before sundown, we're sleeping in this freezing mud tonight."
+Neel had no papers, no guild pass, and not a single coin to his name.
 
-The pup snorted, venting a sharp puff of hot breath into the air.
+---
 
-And with that, the nineteen-year-old from Mumbai took his first step forward, wading through the mud toward the blood-soaked arenas of Central City.
+### SCENE 3: THE ONE-EARED HOUND & THE MUD DEAL
+
+Neel was still staring at that colossal 100-foot wall when the timber flatbed beneath him shuddered under heavy, deliberate footsteps.
+
+"Hey! Who the hell are you?!"
+
+A raspy, thunderous bark exploded right beside his ear. Before Neel could spin around, a thick, calloused hand clamped onto the collar of his wet jacket.
+
+With a single violent jerk, Neel was hauled off the burlap sacks and slammed onto the wooden deck.
+
+His spine rattled against the oak planks.
+
+Standing over him was a dwarf carter, his face mottled with wrath. Dark grime covered his skin, his bloodshot eyes glared like hot coals, and a heavy coiled whip hung from his grip. A rancid reek of sour booze and stale sweat washed over him.
+
+He dug the butt of his whip into Neel's chest and ground his teeth. "Hiding on my wagon, thief? Here to filch my freight?!"
+
+Winded, Neel threw both hands up in a placating gesture. "Hold on, mister! Calm down! I'm not stealing anything... didn't touch a single insect in your crates."
+
+The dwarf's eyes narrowed. He looked over Neel's bizarre clothes—blue denim jeans, soaked sneakers, and a damp grey hoodie. In all his years on the trade routes, he had never seen anyone dressed in such alien cloth.
+
+The carter spat into the straw, raising his whip. "Then what the hell are you doing on my wagon? Get down before I flay the skin right off your back!"
+
+Just then, from beneath the rear wheel, a low, guttural growl broke out.
+
+*Grrrr...*
+
+The carter snapped his head around.
+
+Standing in the mud beside the mired rear wheel was a large, charcoal-black hunting hound.
+
+The beast was built like a wild wolf, standing waist-high with a deep, muscular chest and sturdy flanks. Tattered green wraps were bound tightly around all four of his legs. Three old claw scars were etched across his left shoulder, and his left ear was torn in half from some vicious past battle. He had pinned a cracked insect carapace under one heavy paw, chewing through the tough shell with serrated gunmetal teeth.
+
+The carter's temper flared instantly.
+
+"Filthy stray! Get away from that wheel before I crush your skull!" Cursing foully, the dwarf lashed out with a heavy iron-toed boot.
+
+The hound moved like black lightning, stepping back just out of reach.
+
+He planted his broad paws in the mud, lowered his muzzle, and bared his teeth, letting loose a sharp, warning rumble. His deep amber-gold eyes held zero fear. This was no cowering stray begging for scraps; this was a wild predator ready to defend his meal with blood.
+
+Neel's eyes locked onto the one-eared hound.
+
+A vivid memory flashed through his mind—stray dogs huddled under Dadar station in the monsoon downpour, kicked by commuters yet baring their teeth to survive another night. In the cruel mud of this alien world, that hound was just like him: solitary, starving, and entirely on his own.
+
+The carter raised his whip again, this time aiming to lash the hound across the snout.
+
+"Hey, hold up!" Neel lunged forward, his voice cutting sharp and firm. "Why take it out on the dog? The wheel's buried in the muck—how is that his fault?"
+
+The dwarf spun around, glaring at Neel. "You lecturing me, beggar? If you want to keep breathing, crawl into the ditch before I put this whip across your teeth!"
+
+Neel looked down.
+
+The heavy wooden wheel was buried halfway to its axle in black mire. Ahead, the massive Lava-Bull heaved against the yoke, snorting white foam from its maw. Behind them, hundreds of stalled wagons clattered with iron bells, their drivers howling furious curses. At the 100-foot gate, sentries were already descending with leather whips. If this wagon didn't clear the road in two minutes, the guards would beat the carter bloody and tip his freight down the ravine.
+
+A familiar, street-smart Mumbai grin surfaced on Neel's face.
+
+He pointed at the submerged wheel. "You can whip me later, boss. But tell me this—if that wheel isn't out of the mud in the next five minutes, do you think those guards at the gate are letting you through?"
+
+The carter's hand froze mid-air. He glanced toward the gate, where the blackened iron spearheads of the garrison glinted cold. Sweat broke out across his forehead.
+
+The dwarf lowered his whip slightly, staring at Neel with raw skepticism. "You? You think you can haul it out? Two grown men couldn't even budge it."
+
+Neel hitched up his jeans. "I'll get it out. But back in Mumbai, nobody moves a wheel for free. What do I get if it rolls?"
+
+A sly gleam entered the dwarf's bloodshot eyes. He rolled the whip around his wrist. "A wager, boy! If you pop that wheel free in two minutes, I'll give you three copper Panas and that dry loaf of barley bread tied to the sack."
+
+The dwarf leaned in, a nasty smirk splitting his weathered face. "And if it doesn't move... you spend the next two days hauling my wagon through the dirt like a pack mule. No pay, no rations. Deal?"
+
+Neel's heart pounded against his ribs. The stakes were brutal: three coins and a meal on one side, outright slavery on the other.
+
+But after years of hanging by his fingertips from the open doors of overcrowded Dadar locals, risk was second nature to him.
+
+Neel shoved his sleeves past his elbows. "Deal, boss. You're on."
+
+Neel stepped straight into the freezing mud. Filthy black water surged past his shins. A shiver rattled through his core, but he ignored it.
+
+He surveyed the thick timber lodged beneath the hub. This was basic physics—pure leverage.
+
+He wedged a stout wooden beam deep under the wheel rim, then set both hands firmly onto the cold iron tire.
+
+*Thump-thump... thump-thump...*
+
+Suddenly, Neel's pulse surged.
+
+Beneath the skin of his right wrist, that same faint blue spark flickered to life. Along one razor-thin meridian among seventy-two thousand, a sharp current of heat shot into his palms, locking his grip with a terrifying, unnatural strength he had never felt in his life.
+
+Neel roared over his shoulder, "Drive the bull! Pull with everything he's got!"
+
+The dwarf cracked his whip. The Lava-Bull lowered its massive brow, digging blackened hooves into the road as crimson steam hissed from its joints.
+
+Neel planted his feet into the mire and threw his entire body weight upward, levering the beam as blue heat bled invisibly into the cold iron rim.
+
+*Creeeeak—CLACK!*
+
+The massive wagon wheel snapped the suction of the mud, surging over the lever and slamming onto solid stone paving!
+
+The cart rolled forward clean.
+
+The carter's jaw dropped. "It's out... it's actually out!"
+
+Neel hauled himself out of the sludge, gasping for air. His lungs burned, but his hands were intact.
+
+He reached onto the wagon's tailgate and scooped up the three copper Panas. The coins were heavy and freezing cold. Next to them, he grabbed the stale, rock-hard loaf of barley bread.
+
+The carter scrambled into his seat and cracked his reins toward the gate, never once looking back.
+
+Neel sank onto a dry boulder by the roadside, soaked and exhausted.
+
+His stomach twisted violently with hunger. Fourteen hours had passed since his last meal in Mumbai. He brought the dry bread toward his mouth—
+
+Then, a soft sound stirred a few paces away.
+
+Neel looked up.
+
+The charcoal-grey hunting hound stood a short distance away. His green leg wraps were caked in mud. He wasn't begging, and his tail didn't wag. He simply stood there, his deep amber-gold eyes watching Neel and the bread with calm, unwavering focus.
+
+Neel paused.
+
+He looked at the sole crust of bread in his hands. Then he looked at the scarred, one-eared survivor standing before him.
+
+A quiet, genuine smile touched Neel's lips.
+
+Neel gripped the loaf with both hands and snapped it clean in two—*crack!*
+
+He shoved one half into his own mouth, and laid the other half down on the stone, extending it gently toward the beast. "Here, eat. In Dadar, we never ate a vadapav alone. From today, your name is Sheru."
+
+Sheru looked into Neel's eyes for a quiet moment. There was no greed in that gaze, only a silent, mutual understanding. Then the hound stepped forward, picked up the bread, and settled down nearby to eat.
+
+---
+
+### SCENE 4: THE FIVE-PANA TOLL & THE DAWN BELL
+
+Neel stood up and brushed the dried crust of mud off his damp jeans.
+
+Sheru rose from the stones as well. He gave his lean frame a violent shake, scattering muddy droplets from his dark coat, and then fell into stride right beside Neel's hip.
+
+Neel glanced down at him with a smirk. "Come on. Let's see what kind of game is waiting behind that white wall."
+
+Together, they made their way through the churned mud toward the colossal 100-foot gates. Sheru stayed tight beside him, ears upright, his sharp gaze sweeping the road with the seasoned caution of an experienced predator.
+
+As they drew closer, the mud gave way to broad slabs of cracked black flagstones.
+
+And the scene at the threshold looked like a slaughterhouse intake pen.
+
+Heavy iron chains barred the entrance, flanked by a full garrison of black-armored sentries wielding spears and spiked rawhide whips. Next to the archway stood a reinforced timber toll-shack, where an intake clerk collected copper coins from travelers, hurling them into an iron-banded lockbox.
+
+Carved into a weathered wooden board above the window, painted in charcoal, were the official terms:
+
+**GATE TOLL — 5 COPPER PANAS PER HEAD.**
+
+Neel stopped dead in his tracks.
+
+He uncurled his fist.
+
+Sitting in his palm were the three cold copper coins the carter had thrown him.
+
+Only three Panas.
+
+Neel's throat went bone-dry.
+
+Back in Dadar, eleven rupees had stood between him and a fifteen-rupee vadapav... and here, at the gates of life and death, he had only three Panas against a five-Pana toll!
+
+Two coins short.
+
+Just ahead in line, an old, gaunt traveler bowed low before the clerk, pleading desperately: "Master, take these three Panas... I'll work off the other two once I get inside—"
+
+*CRACK!*
+
+A sentry brought a heavy timber staff down across the old man's spine.
+
+The traveler collapsed face-first onto the stones.
+
+"Back off, beggar!" the guard bellowed. "No five Panas, go die in the ditch! Clear the line!"
+
+Several red-turbaned brokers lunged forward from the perimeter, grabbing the fallen man by his arms and dragging him toward waiting transport wagons. Anyone lacking the entry toll was instantly swept up by slave-traffickers for pennies on the copper.
+
+Sheru bared his gunmetal teeth, a low, menacing rumble vibrating in his chest.
+
+Neel immediately pressed a hand against the hound's nape. "Easy, Sheru. Start a fight here and they'll bury us in the trench."
+
+Inside Neel's pocket, the three copper coins felt slick with cold sweat.
+
+He couldn't stand in that line. Anyone short of five Panas was beaten into the dirt or dragged off into lifelong bondage.
+
+Then—
+
+From the high parapet atop the 100-foot wall, a massive brass bell exploded with a deafening chime that rattled the very bedrock:
+
+*TOOOOONG... TOOOOONG!*
+
+The Dawn Bell.
+
+The garrison commander's voice bellowed down from the ramparts: "The bell has rung! Gates close in ten minutes! Pay five Panas or get whipped into the ditch!"
+
+Panic ripped through the crowd. Men shoved desperately forward as the colossal black basalt gates began to grind inward with a screech of rusted iron hinges.
+
+Neel thrust his hand into his jeans pocket.
+
+His fingers brushed against the crumpled ₹10 banknote and the loose ₹1 steel coin that had crossed worlds with him from Mumbai.
+
+Neel clenched his jaw.
+
+He glanced down at Sheru, a dangerous Mumbai grin sparking in his eyes. "Two coins short, huh? Come on, Sheru... let's see if Mumbai street hustle works in this town."
+
+---
+
+### SCENE 5: THE ONE-RUPEE HUSTLE & THE SLAMMING GATES
+
+From atop the ramparts, the second bell struck:  
+*TOOOOONG!*
+
+"Five minutes remaining!" the watch commander's gravelly voice bellowed down. "Clear the final wagons! Prepare to drop the gates!"
+
+A frenzy swept through the crowd outside the threshold. People shoved wildly, clawing forward. Those who slipped were kicked straight into the drainage gutters by sentries with spear-shafts.
+
+Neel took a slow, measured breath.
+
+He reached down and patted the fur at the base of Sheru's neck. "Stay on my hip. Don't break."
+
+Sheru looked up into Neel's eyes. His ears were pinned back, his jaw clamped shut. He didn't bolt. Moving with the silent, deliberate gait of a seasoned stalker, he pressed tight against Neel's knee. The tattered green wraps around his paws trod soundlessly over the cold black flagstones.
+
+Neel shoved his way through the surging mob, planting himself directly in front of the timber toll booth.
+
+Inside, the intake clerk was drenched in sweat. A feathered quill was clamped in one hand, while before him lay an open, iron-banded chest overflowing with copper coins.
+
+"Five Panas!" the clerk barked without looking up. "Drop them now! No time!"
+
+Neel uncurled his palm.
+
+*Clink... clink... clink!*
+
+He slapped the three copper Panas onto the worn oak counter.
+
+The clerk raked the coins into his palm. As he tallied them, his face darkened with furious disgust. He lifted narrow, rat-like eyes, glaring at Neel's strange attire—the soaked blue jeans and damp grey hoodie—and ground his teeth.
+
+"What is this trash? Only three Panas?!" The clerk reached toward an iron whistle hanging from his neck. "Cough up two more, or I whistle the sentries and toss you straight onto that red slaver cart!"
+
+Neel didn't give up an inch of ground. Back at Dadar station, when a ticket inspector cornered someone without a pass, fear was the first thing that got you locked up.
+
+Neel kept his face like granite.
+
+He slipped his right hand into his pocket.
+
+*CLIIIINK!*
+
+A gleaming disk of precision-cut metal bounced dead-center onto the counter, right beside the copper coins.
+
+A one-rupee steel coin from the Republic of India.
+
+In that filthy, mud-choked world where every coin was a lump of hand-beaten, pitted copper or dull lead... that steel coin shone like a miracle.
+
+Flawlessly machined, serrated circular edges.
+
+A mirror-polished stainless-steel surface that caught the flickering red torchlight and hurled it back like a flash of white lightning.
+
+Embossed at the center stood the three lions of the Ashoka pillar—sharp, proud, and intricately detailed—flanked by stalks of wheat and cleanly stamped in Devanagari and English: `1` and `BHARAT`.
+
+The clerk's hand froze over the whistle.
+
+His eyes went wide as saucers.
+
+In all his decades at the gate, he had weighed thousands of coppers and inspected rough ingots of silver. Never in his wildest dreams had he held metal worked with such magical, pristine perfection.
+
+With trembling fingers, the clerk picked up the coin.
+
+He rubbed it against the greasy sleeve of his coat. Not a scratch appeared. It was wrought from an alien, cold, unyielding alloy that made copper look like dirt.
+
+"What... what is this?" the clerk's voice dropped to a breathless whisper, his eyes gleaming with raw greed. "Which realm is this minted in? This seal with three lions... is it an imperial decree?"
+
+Neel leaned in slightly. Keeping his voice calm, low, and perfectly measured, he murmured:
+
+"From an empire far to the west. Pure cold-pressed steel. It never rusts, and it's ten times harder than forged iron."
+
+Neel locked eyes with the clerk:
+
+"The math is simple, Munshi-ji. Log three copper Panas in your official ledger. Cover the other two Panas into the lockbox out of your own pocket. And slip this steel coin straight into your coat's inner lining."
+
+Neel paused for a beat, letting a faint, knowing smirk curl the corner of his lips:
+
+"Show this to any master jeweler in the upper city, and he'll trade you at least fifty copper Panas on the spot. You walk away with a fortune; I walk through the gate. Win-win deal."
+
+The clerk's throat went completely dry.
+
+His mind raced at a breakneck pace. If this coin went into the treasury box, his garrison commander would confiscate it in a heartbeat. But if he pocketed it himself...
+
+From high atop the battlement, the war-horn wailed—  
+*HOOOOOONK!*
+
+"Seal the gates!"
+
+The colossal 100-foot iron-banded doors ground inward with a bone-jarring shriek of iron. The flagstones trembled. The gap between the closing leaves was down to barely four feet!
+
+The clerk didn't hesitate for a fraction of a second. With lightning speed, he shoved the steel coin deep into his inner tunic, scooped a stamped red wooden intake token off his desk, and flung it across the counter.
+
+"Get in! Before I change my mind!"
+
+Neel caught the token out of the air and roared, "Sheru, run!"
+
+Neel and Sheru surged forward together.
+
+The massive iron slabs were meeting fast—the gap had shrunk to two feet. Behind them, the desperate crowd wailed, and sentry whips cracked through the freezing air.
+
+Neel dropped his hips and threw himself forward in a flat, reckless baseball slide alongside Sheru, shooting through the narrow slit—
+
+*THUUUUUUM!*
+
+Directly behind them, the multi-ton basalt gates slammed shut with a deafening, thunderous crash.
+
+The ground bucked like an earthquake.
+
+Heavy iron drop-bars and massive locking beams thudded into place—*CLACK! CLACK!*
+
+The outside world—the frozen mud, the screaming refugees, the slaver cages—was sealed away forever on the other side of that 100-foot wall.
+
+Dead silence fell over the avenue.
+
+Neel lay on his knees against the freezing cobblestones, panting hard. His chest heaved like a blacksmith's bellows, but his limbs and clothes were intact.
+
+Sheru stood right beside him, his pink tongue lolling, his deep amber-gold eyes completely calm, his thick tail hanging still just above the stone. He shook his shoulders once and pressed his heavy forehead firmly against Neel's thigh.
+
+Neel slowly lifted his head.
+
+And for the first time, the interior of Central City opened before his eyes.
+
+Towering black stone arches soaring into the dusk.
+
+The rich, heavy scents of burning coal, molten iron, sizzling meats, and pungent spices hanging thick in the air.
+
+Glowing yellow smithy forges lining both flanks of the avenue, the rhythmic chime of heavy hammers, and spreading outward before them, countless narrow, stair-stepped alleys bustling with hundreds of armored souls.
+
+This was not Mumbai.
+
+Nor was it a world ruled by any gentle god.
+
+Neel checked his jeans pockets.
+
+The three copper Panas were gone. The ₹1 coin was inside the clerk's tunic.
+
+All that remained was a damp ₹10 paper note, his dead Redmi phone with 0% battery, and an empty plastic bottle.
+
+Cash on hand: 0 Panas.
+
+Yet he was on the other side of the wall.
+
+Alive. Free. Standing on his own two feet.
+
+That stubborn, exhausted Mumbai grin broke across Neel's lips. He reached up and firmly patted the fur behind Sheru's torn ear.
+
+"First round goes to us, Sheru," Neel said softly. "Now let's see what this city tries to take from us... and what we take from it."
+
+Sheru exhaled a slow, heavy breath, and together, the two stepped forward into the first smoky alley of the unknown city.
 
 ---

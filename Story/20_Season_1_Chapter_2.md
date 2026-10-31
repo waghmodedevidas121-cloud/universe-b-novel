@@ -1,219 +1,287 @@
-# 20. Season 1, Volume 1, Chapter 2: Copper, Crusts, and the Scrap-Hound
-**File:** `D:\Web Novel\New\20_Season_1_Chapter_2.md` / `rules\season_1_chapter_2.md`  
-**Tags:** `#chapter-2 #season-1 #volume-1 #neel #dusk-scrapper #d-tier-sandpit #central-city #survival-isekai #canon-lock`  
-**Status:** [CANONICAL NARRATIVE DRAFT — 100% NEEL PERSPECTIVE / GROUNDED SURVIVAL]  
-**Setting:** The Low Slum Trench, Exterior South Gate & Scrap Pens, Central City  
+# 20. Season 1, Volume 1 — CHAPTER 2: Rank #84 and the Shifting Field
+**Tags:** `#chapter-2 #season-1 #grand-plaza #proving-games #ark-vs-korvus #dual-registration #master-track #canon-lock`
 
 ---
 
-### [VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT]
-#### CHAPTER 2: COPPER, CRUSTS, AND THE SCRAP-HOUND
+### **Scene 1: The Foundry Alley and the Brass Spire**
 
-Water came first. 
+Past the South Gate, in the climbing narrow alley of the Foundry Quarter, the air hung thick and suffocating.
 
-Before dignity, before questions about which solar system he had crashed into, before worrying about how he was ever getting back to a rented flat in Ghatkopar—his throat demanded tribute.
+All around them, blacksmith forges blazed hot, and the heavy rhythmic strikes of iron hammers echoed off stone walls—*clang... clang... clang!* The air was saturated with the acrid stench of molten iron and smoldering coal.
 
-Neel stayed on the muddy margins of the main thoroughfare, blending into the sluggish human current flowing toward the South Gate. He kept his shoulders rounded, head tilted slightly downward, matching the weary slouch of the day-laborers around him. In suburban Mumbai, walking like you owned the street invited pickpockets and cops; walking like you were invisible let you pass right through the eye of a storm.
+Neel’s legs felt like lead.
 
-Fifty yards from the gatehouse, between two leaning timber cook-shacks venting the greasy smell of scorched mutton tallow, he spotted what he needed: a stone water trough fed by an exposed lead pipe jutting from the city foundation.
+The sheer strain of levering that heavy wagon and the desperate sprint beneath the falling gate had finally settled into his body. From his calves up to his ribs, every muscle throbbed with dull ache.
 
-A burly teamster in stained burlap trousers was splashing water over his hairy forearms, grunting as he scrubbed dried bull-sweat from his skin. 
+His throat was bone-dry, as if lined with desert sand.
 
-Neel waited. He didn't rush. He watched the man finish, shake his dripping hands, and turn back toward his wagon. The instant the teamster’s back cleared the stone basin, Neel slipped in.
+That stale barley bread from the dwarf carter? In the adrenaline rush of diving under the closing gate, his body had burned through it hours ago. Deep in his empty stomach, the familiar sour pang of hunger acid stirred again.
 
-He unscrewed the blue plastic cap of his empty bottle, shoved it beneath the spout, and let the ice-cold jet fill it to the brim. He didn't wait to find a cup. He jammed the bottle mouth between his lips and drank like a man who had crawled out of the Thar Desert.
+"Just a few more steps, Sheru..." Neel panted. "Or we're both dropping right here."
 
-The water hit his tongue with an electric shock. 
+Then, around a bend in the dark stone alley, he spotted an old carved water-basin.
 
-It wasn't municipal tap water smelling of chlorine. It was piercingly cold, razor-clean, and tasted intensely of limestone and something like dissolved zinc. The moment it rushed down his esophagus, the fiery, chalky burn in his throat vanished, replaced by an odd, tingling coolness that spread directly into his chest.
+From a thick iron pipe jutting out of the stone wall, crystal-clear, ice-cold mountain water poured steadily into a wide granite trough.
 
-*Aether-rich spring water.* His brain filed the sensation away before he could stop it. 
+Neel didn't hesitate for a single second.
 
-He refilled the bottle, capped it, and shoved it deep into the side mesh of his backpack. 
+He stepped forward, cupped both hands into the trough, and brought the freezing water straight to his mouth, gulping it down.
 
-Step one: hydration secured. He wasn't going to die of dehydration within the hour.
+It was shockingly cold.
 
-Step two was far uglier: the gate.
+The burn on his cracked lips and the fire in his chest vanished with that single long swallow.
 
-Neel leaned against the rough timber post of a grain merchant's awning, watching the checkpoint forty paces ahead. 
+Neel scooped another handful and splashed it hard against his face—*splash!*
 
-Four guards in segmented iron cuirasses stood beneath the shadow of the massive granite arch. Across their chestplates was embossed the city seal—a set of balanced scales flanked by twin serpents. In their right hands they held heavy, leaf-bladed spears; at their hips swung thick wooden truncheons wrapped in wire. 
+The sticky sweat and soot clinging to his brow and lashes washed away clean. Neel let out a long, shuddering breath of relief and wiped his face against the sleeve of his ash-grey hoodie.
 
-Between the guards stood a wooden toll-booth where a pale, ledger-keeping clerk in a high-collared gray coat sat behind a brass grille. 
+Beside him, Sheru lapped hungrily from the lower overflow of the basin. Then the hound gave his body a violent shake, scattering fine water droplets into the air.
 
-Every person entering had to present something. 
+"Easy, Sheru," Neel said with a faint grin, scratching behind the hound's torn ear. "At least the water here is free."
 
-Neel tracked ten transactions with predatory precision. 
+Neel tapped his jeans pockets.
 
-The wealthy merchants riding atop ironwood carriages held up gleaming brass medallions; the clerk barely glanced at them before nodding to the spearmen to lift the barrier. The local farmers and cart drivers tossed small, triangular copper coins—three apiece—into a wooden bowl, receiving a notched wooden slip stamped in red ink. 
+The same crumpled ₹10 note, his laminated Dadar-Matunga local train pass, and a dead Redmi phone with 0% battery.
 
-Then came the strays. 
+Cash on hand: 0 Panas.
 
-A ragged youth in torn wool trousers stepped up to the grille, muttering with downcast eyes, his empty palms open. The clerk didn't even look up from his ledger. He barked one harsh word. 
+"Alright, let's see what kind of game this city is playing," Neel muttered, taking a deep breath.
 
-Two spearmen stepped forward instantly. One caught the youth by the nape of his tunic, shoving him hard to the right—toward a muddy wooden stockade pen where thirty other shivering, ragged men were being lined up under the supervision of overseers holding rawhide whips.
+The two reached the final bend of the ascending alley.
 
-"Trench labor or the blood-pits, stray!" a guard barked, loud enough for Neel to catch every syllable. "No toll, no charter, no trade guild? You earn your gate-pass with salt and sweat, or you rot in the ditch!"
+Ahead stood a massive, vaulted stone archway. And the moment Neel and Sheru stepped through—
 
-Neel’s jaw tightened. 
+The harsh, blinding glare of midday sun slammed into their eyes.
 
-*The wagon master wasn't lying.*
+The sight that opened before them froze Neel dead in his tracks.
 
-In modern cities, illegal immigrants got deported or fined. Here, if you had no coins, you were state property. Conscripted into digging trenches outside the walls or shoved into whatever "the blood-pits" were.
+This was no narrow alley or backwater bazaar. Sprawling out before them was a vast, open expanse—**The Grand Plaza**.
 
-Neel checked his right pocket again. One ten-rupee coin with the Lion Capital of Ashoka minted on it. To these guards, it was a piece of bizarre, foreign metal with zero purchasing power. He couldn't buy his way in. He couldn't charm his way past four men holding eight-foot spears.
+A miles-wide concourse paved in dark basalt and slate. Three-story stone facades lined the perimeter, their carved balconies draped in long banners of crimson and indigo silk. A bustling sea of thousands surged across the flags—soldiers clad in blackened iron armor, wanderers accompanied by hunting raptors and dire-wolves, and brisk merchants clutching sheaves of parchment. The air smelled of roasting flatbreads, sharp spices, and fragrant musk oils.
 
-*Think, Neel. Think.*
+Yet what seized Neel’s gaze wasn't the crowd.
 
-He turned his back to the gate, scanning the sprawling perimeter encampment that hugged the exterior granite walls. 
+Right in the dead center of the plaza, piercing two hundred feet into the open sky, stood a colossal weathered tower—**The Split-Flap Leaderboard Spire**!
 
-It was a chaotic slum-city in its own right. Tents made of grease-painted hide, open-air blacksmith sheds pounding out iron horseshoes and plow-tips, butcher stalls hanging slabs of strange ribbed meat, and a deep, descending stone trench that wound along the southwestern curve of the foundation wall. 
+Across the face of that brass monolith, tens of thousands of mechanical metal tiles were fluttering and clicking at frantic speed—*clack-clack-clack-clack...*
 
-Above that sunken trench hung a weathered wooden sign, painted with a crude red crest: two crossed daggers over a sand-pit. 
+Just like the massive railway indicator boards at Dadar or CSMT station when trains were running late!
 
-Beneath the crest, hand-carved letters read:
+Every 5 seconds, the tiles locked into place with a sharp snap, displaying the realm's top-ranked contenders in gleaming gilt letters:
 
-**[ROOKIE SAND-PITS: D-TIER FEEDER CIRCUIT]**  
-*Daily Bouts. Free Rations for Contenders. Winner Takes Entry Chit & 10 Panas.*
+`#1 VIKRANT`  
+`#2 HILDA`  
+`#3 KAELOS`  
 
-Neel’s eyes narrowed. 
+And suspended directly beneath that 200-foot spire, anchored between two basalt pillars, hung a 50-foot wide liquid screen—**The Water-Crystal Mirror**!
 
-*Free rations. Entry chit.*
+Crafted from enchanted water and crystal, it gleamed like a colossal IMAX jumbotron.
 
-"Of course," he muttered under his breath, a cold, self-deprecating smirk touching the corner of his lips. "It's an arena. Every corrupt city in history has an arena."
+And across that liquid display, a live ranked match from the city's main Coliseum was being broadcast in terrifying clarity!
 
-He adjusted the strap of his backpack, stepped off the timber boardwalk, and headed down the muddy slope toward the trench.
+Suddenly, an amplified voice boomed across the entire plaza, echoing like a brass loudspeaker:
 
-The stench hit him before he reached the bottom: stale sweat, dry sawdust, cheap liniment, blood, and the unmistakable musk of caged animals. 
+*"Citizens, merchants, and Guild Masters of the Five Shards! The Proving Games presents an official B-Class Ranked Match!"*
 
-The trench opened into a wide, sunken flagstone courtyard surrounded by rough wooden palisades. In the center was an iron-fenced training pit where two young men with bruised torsos and wooden practice swords were beating the hell out of each other while a scarred instructor screamed obscenities from a stool. 
+Thousands of heads across the concourse turned in unison toward the floating mirror.
 
-Around the perimeter were the refuse pens—where broken carts, shattered armor plates, discarded iron weapons, and injured draft animals were dumped.
+The commentator's voice crackled with electric adrenaline:
 
-And in the far corner, something was snarling.
+*"Contender Rank #84 ARK, The Cinder-Lance... and his Stage-2 Firehawk 'Soot'!"*
 
-It wasn't the deep, furnace-like rumble of the Lava-Bull. It was a vicious, high-pitched, desperate sound—the snarl of an animal that knew it was cornered and was ready to tear whatever throat came near it, even if it died in the process.
+A wiry, twenty-year-old youth flashed onto the screen. A smoke-plumed raptor rested on his shoulder, while his right forearm was wrapped tightly in scorched, blackened linen.
 
-Neel paused, his instincts piquing. 
+*"VS... Contender Rank #71 KORVUS, Black-Anvil Syndicate... and his two-ton Armored Lava-Bison!"*
 
-Near a pile of rusted wheel rims and splintered crates, two stockade kennel-hands in blood-spattered leather aprons stood over an iron cage. One held a long pole tipped with an iron noose; the other held an executioner's mallet with a heavy lead head.
+On the opposing platform stood a seven-foot Asura warrior in heavy iron plating, standing beside a terrifying behemoth leaking sluggish orange magma from its horns.
 
-"Useless scrap-mutt," the man with the mallet spat, raising the heavy hammer. "Its left ear is torn clean off, its flank is gouged from the pit-drake fight, and nobody's buying a Stage-1 runt that bites its handler. Hold its neck still, Vane. I'll crack its skull and sell the pelt to the glue-shed."
+*"Field selection by the Arbiter Panel... **The Basalt Caldera**!"*
 
-Inside the cage was a beast no larger than an Indian stray dog, but built with the sinewy, low-slung frame of a jackal. 
+*THUM. THUM. THUM.*
 
-Its coat was dark charcoal gray, brindled with faint, soot-colored stripes along its ribs. Its left ear was a mangled, scarred stump, clotted with dried black blood. Its yellow, predatory eyes were wide, bloodshot with pure fury, and its lips were pulled back over needle-sharp white fangs dripping with foamy saliva. 
+The heavy, seismic reverberation of the Coliseum’s war-drums traveled straight through the ground, vibrating into the soles of Neel’s shoes. A massive roar erupted across the plaza as the crowd cheered and yelled wagers.
 
-As the iron noose swung toward its neck, the hound lunged with blinding speed, its jaws snapping shut on the iron ring with a sickening *clang*, biting the metal so hard its gums bled. 
+Neel’s breath caught in his throat.
 
-"Damn beast!" the man with the pole yelled, stumbling back as the hound’s violent thrash nearly yanked the stick from his grip. "Swing the mallet, you idiot! Before it breaks the hinge!"
+He had heard forty thousand roaring fans at Wankhede Stadium during a tense IPL match, but the sheer madness of this crowd was on a whole other level.
 
-Neel stared at the dog.
+Sheru’s ears locked straight forward. The bristles along his charcoal mane stiffened, and he pressed his heavy head against Neel’s knee.
 
-He didn't see an alien monster. 
+Neel looked up at the 200-foot Spire, watching the live rankings gleam under the sun.
 
-He saw himself at sixteen, standing in the doorway of a Mumbai 1-BHK, staring down three distant relatives who had shown up two days after his parents' funeral—not to offer him a roof, but to ask who was going to take the mother's gold bangles and whether the car insurance payout was coming to them. He remembered baring his teeth, grabbing the kitchen meat cleaver from the counter, and screaming at them to get out of his house until they backed down the stairwell calling him a feral maniac.
+A quiet, stubborn smile spread across Neel’s lips.
 
-When the world decides you are garbage, you either bite until your teeth break, or you end up in the glue-shed.
-
-"Hey!" Neel’s voice cut across the courtyard like a whip-crack. 
-
-The man with the mallet stopped mid-swing, turning a scowling, sweat-streaked face toward Neel. 
-
-"Who the hell are you, whelp? This is a restricted scrap yard. Get lost before I test this hammer on your knees."
-
-Neel didn't flinch. He walked forward with calm, deliberate strides, his hands relaxed at his sides, his face wearing an easy, casual smile that radiated complete, unbothered confidence. 
-
-"Put the hammer down, boss," Neel said smoothly, his Common Concord pronunciation crisp and entirely devoid of fear. "You're about to throw away good money."
-
-The two handlers exchanged a baffled look. 
-
-"Good money?" the man with the pole snorted. "For this crippled scrapper? It lost its bout this morning in thirty seconds. Its front shoulder is sprained, its ear is gone, and it tried to take my thumb off twice. It's scrap."
-
-"It's scrap because you idiots don't know how to read a brawler," Neel said, stopping five feet from the cage. 
-
-He didn't look at the men. He looked directly into the yellow eyes of the dog. 
-
-The hound froze, its ragged chest heaving, a low, murderous rattle vibrating in its throat. Its fangs were bared, inches from the iron mesh, ready to lunge at Neel’s face.
-
-"Look at its rear hocks," Neel said, pointing a finger without looking away from the beast. "It didn't lose because it was weak. It lost because you put it in an oversized iron collar that choked its airway every time it lunged. You suffocated your own fighter. And now you want to smash its head in for two copper coppers' worth of scrap leather?"
-
-The mallet-wielder hesitated, his brow furrowing. "You talking like you know pit beasts, boy. What are you, an apprentice scout?"
-
-"I'm the guy who's going to take it off your hands," Neel said, meeting the man's gaze. "Sign the transfer chit to me. I register as a rookie in the D-Tier bouts today. If the hound dies in the sand, you get the carcass anyway. If it wins, I pay you double the pelt fee from my purse. You risk zero copper, you save the effort of burying it, and you get a cut of the purse if it walks out alive."
-
-The two handlers stared at him. 
-
-Neel could see the gears turning in the man's greedy, slow-witted brain. It was the same calculation every shady contractor in Mumbai made when someone offered to take a liability off their balance sheet for free.
-
-"Five Panas," the mallet-wielder grunted, lowering his hammer. "If it survives its bout, you owe me five Panas before sundown. If you try to run with the beast, I report your description to the gate watch. They'll hang you from the outer gallows."
-
-"Five Panas," Neel agreed instantly, without blinking. "Hand over the latch pin."
-
-The man unhooked an iron rod from his belt and tossed it into the mud at Neel’s feet. "Go on then, genius. Let's see you get it out without losing an arm."
-
-The handlers stepped back, grinning maliciously, waiting for the blood to spray.
-
-Neel knelt down in the mud. 
-
-He didn't grab the latch. He slowly took off his soaked backpack, unzipped the front pouch, and pulled out his half-filled plastic bottle of cold spring water. 
-
-He didn't touch the dog. He didn't make high-pitched, comforting baby noises. 
-
-He poured a small puddle of clear water into the hollow of a clean, flat stone right outside the cage bars. 
-
-The hound watched him, its nostrils twitching violently. It hadn't tasted water since before the morning bout. Its throat was dry, its tongue swollen. 
-
-"I know," Neel murmured softly, his voice dropping into a low, quiet Mumbai register. *"Tujhi pn vaat lagli ahe na, mitra?* Nobody gave you an umbrella either."
-
-He slowly reached his right hand out—palm open, low to the ground, below the animal's eye line. 
-
-The hound’s yellow eyes flared with suspicion. It growled, a warning rumble that threatened to snap his fingers in half. 
-
-Then, something shifted. 
-
-The intense, prickling warmth centered in the fleshy pad of Neel's palm suddenly ignited. 
-
-Not with violent sparks, but with a deep, rhythmic, internal hum. 
-
-*Thump-thump. Thump-thump.*
-
-It was his own pulse. But as his open hand hovered four inches from the dog’s bloodied snout, Neel felt something astonishing: 
-
-Beneath the animal's jagged, terrified breathing, another pulse was racing at double speed—a rapid, fluttering, panicked heartbeat. 
-
-*One-two, one-two, one-two.*
-
-Instinctively, without knowing why, Neel exhaled slowly. He relaxed his shoulder muscles. He deliberately slowed his own breathing, letting his pulse settle into a steady, unhurried cadence. 
-
-Through the invisible air between his skin and the dog's scarred muzzle, the two rhythms touched. 
-
-The hound flinched. Its ears—or what was left of them—twitched violently. Its yellow eyes dilated, staring not at Neel’s face, but directly at his right palm. 
-
-The dog felt it. 
-
-It felt the strange, stabilizing resonance humming from the boy's skin—a pulse that didn't demand submission, didn't threaten with iron sticks, and didn't reek of fear. It felt like an anchor dropped into a raging storm.
-
-Slowly, the hound’s bared fangs retracted. 
-
-The vicious snarl died in its throat. 
-
-With agonizing caution, the battered beast leaned forward, pressed the tip of its black, wet nose against the center of Neel's palm, and closed its eyes.
-
-A tiny, brilliant flare of blue-white static snapped softly between the boy's skin and the dog's fur—silent, painless, and invisible to the two handlers standing six paces back.
-
-Neel picked up the iron latch pin with his left hand, slid it into the lock, and pulled the cage door wide open. 
-
-The dog didn't lunge. It stepped out on trembling, mud-caked paws, lowered its head, and drank the pool of water from the stone down to the last drop. 
-
-Then, it turned and sat down directly against Neel’s knee, its lean flank leaning firmly against his soaked denim jeans, growling warningly at the two handlers whose jaws were hanging open in stunned disbelief.
-
-Neel stood up, wiping the mud from his trousers. 
-
-The hound rose with him, matching his posture, its one remaining ear swiveling toward the sunken arena gate.
-
-Neel looked over at the registration desk across the courtyard, where a bored guild master was dipping a quill into black ink.
-
-"Come on, partner," Neel said, his hand resting lightly on the scarred scruff of the hound's neck, feeling the steady, synchronized thump of their shared heartbeat through his fingers. "Let's go get our bread."
+"Sheru..." Neel whispered softly. "We didn't land in some primitive ruin. This whole world is a massive Sports and Arena Empire!"
 
 ---
+
+### **Scene 2: Politics in the Clouds — The Marble VIP Balconies**
+
+Inside the Grand Coliseum, the atmosphere burned like an open volcanic caldera.
+
+One hundred thousand spectators filled the tiered granite bowls, brandishing faction banners and brass betting chits.
+
+One hundred feet above the red sand, the air was cool, carrying the scent of crushed mint leaves and wild jasmine. 
+
+Here, in the cantilevered marble balconies of the upper tiers, the grit and heat of the lower city ceased to exist.
+
+Beatrice Rosso, High Arbitrator of the Golden-Vault Bank, pushed the gold frames of her spectacles up the bridge of her nose with a single manicured finger. In her left hand she held a thin crystal goblet of chilled plum wine. Her iron quill rested upon an open commercial sponsorship contract.
+
+Behind her, reclining in a carved ebony chair, sat Shakuni of the Gandhar mercantile syndicate. He smoothed a length of embroidered silk over his withered right leg. Between his thin, jaundiced fingers, two yellowed cubes of carved bone rubbed against one another with a faint *creak-clack*.
+
+"Where are the opening wagers leaning today, Shakuni?" Beatrice asked without turning.
+
+"Toward the Black-Anvil, Arbitrator," Shakuni replied with smooth poison. "If Korvus wins today, the 10,000-ton basalt-iron supply contract for Central City’s new aqueduct bridges falls into Asura hands. But if your boy Ark should happen to prevail..."
+
+"...then the entire infrastructure contract goes to our bank and the artisans of the Eastern Crownlands," Beatrice said, taking a slow sip. "And our ledgers clear a 40,000-Pana dividend before sundown."
+
+Shakuni let both bone-dice tumble onto the polished marble balustrade.
+
+*Clack-clack...*
+
+Both dice settled on a single black pip.
+
+"We shall see," Shakuni murmured. "Whether Asura iron holds sway, or your boy’s scorched wrist gives out first."
+
+Just then, a stray droplet of blood and crimson sand arced upward from the pit below, splashing against the pristine marble railing.
+
+A golden-haired Solarian noble sitting nearby wrinkled his nose in disgust. He snapped his thumb and forefinger—a needle-thin spark of solar fire ignited from his flesh, instantly incinerating the bloodstain into a puff of white ash before it could mar the stone.
+
+Down below, the earth shuddered. One-hundred-and-twenty-ton basalt blocks ground into place along subterranean hydraulic tracks, locking the glowing magma trenches of the Basalt Caldera Field into position!
+
+---
+
+### **Scene 3: The Ring of Fire — Ark & Soot in Action!**
+
+At the eastern threshold of the arena stood 20-year-old Ark.
+
+He stood barefoot in coarse hemp, his left arm lean and unblemished, but his right—from the cracked knuckles to the elbow—charred into a glossy, blackened carapace of blowout scars. Those were the permanent wounds of raw mana compressed through mortal conduits, bound tightly in coarse linen.
+
+Perched upon his shoulder was Soot, wisps of cyan thermal vapor curling from its feathers.
+
+Thirty yards across the steaming stones, Korvus stepped forward. His ribbed armor hissed against the rising volcanic mist as his two-ton Lava-Bison snorted a spray of molten slag.
+
+"Rank #84 scrub! Your tournament run ends right here on the stones!" Korvus bellowed.
+
+He slammed his war-maul against the beast’s plated flank.
+
+*THUD. THUD. THUD.*
+
+Two tons of charging muscle accelerated with the terrifying momentum of a Tectonic Ram. Slabs of basalt fractured and flew into the air under its hooves. Ten paces.
+
+One-hundred-thousand spectators rose to their feet.
+
+Ark did not yield an inch of ground.
+
+"Soot. The draft," Ark commanded in a quiet murmur.
+
+*SCREEE!*
+
+The Firehawk launched like a streak of pure smoke. Spiraling through the thermal updraft, it unleashed a concentrated vortex—Thermal Gale—striking the bison’s optical plate with talons of cold iron.
+
+Blind and disoriented, the beast jerked its massive head to the left, exposing the two-inch vulnerability along its neck-armor for a fraction of a heartbeat.
+
+Ark closed his eyes.
+
+*Breath Reset.*
+
+He drew the 70-pound black iron recurve bow from his shoulder.
+
+His soul held no divine lineage. His vessel contained only a common Ember spark—the trivial warmth rural villagers used to light their stoves.
+
+Yet Ark did not release that warmth outward. He seized that single spark and drove it backward through his meridians, compressing it 100-fold into the grip of that 70-pound frame.
+
+*SSSSSSSS...*
+
+The coarse linen binding around his right wrist blackened, smoking and splitting open from the pressure within. Droplets of blood boiled from his cracked skin, turning to steam.
+
+Ark opened his eyes.
+
+*The Sing.*
+
+For precisely 0.2 seconds, the roar of 100,000 spectators vanished into a terrifying vacuum. Complete, suffocating silence swallowed the Coliseum.
+
+From the iron tip of the arrow arose a single, ear-splitting acoustic tell—a glass-cutting shriek: *EEEEEEE!*
+
+Ark loosened his fingertips.
+
+The arrow was never seen in flight.
+
+*CRACK!*
+
+The sound barrier shattered.
+
+A 3,000-degree bolt of condensed white-hot plasma—a Thermal Lance—vaporized the air along its trajectory. The arena sand instantly liquified into green glass beneath its wake. 
+
+The lance punched straight through Korvus’s heavy iron tower shield like warm tallow, grazed the spinal conduit of the charging beast, and buried itself five feet deep into the opposing basalt wall.
+
+The kinetic shockwave was so catastrophic that the seven-foot Asura was hurled twenty feet backward through the air, crashing violently over the 432 Hz Golden Boundary Cord!
+
+Dead silence fell over the Coliseum.
+
+---
+
+### **Scene 4: The Live Rank-Up & The Official Purse**
+
+Standing at the perimeter of the Quad-Referee Panel, Grand Marshal Satyabhama—a formidable 42-year-old warrior woman clad in ribbed black iron armor—raised her heavy iron staff and thrust forward a crimson flag.
+
+"RING-OUT!" Satyabhama’s voice echoed across the stones with immutable authority. "Match concluded! Winner: Contender Rank #84 ARK and his Firehawk Soot!"
+
+*ROAAARRRR!*
+
+The stadium and the outer plaza erupted in an earthquake of cheers.
+
+*"ARK! ARK! CINDER-LANCE!"*
+
+High above the arena, and simultaneously upon the 200-foot bronze spire in the Grand Plaza, the mechanical plates flipped in a furious cascade: *clack-clack-clack-clack...*
+
+The numerals updated in brilliant gold:
+`[RANK #84 ──► RANK #68: ARK THE CINDER-LANCE]`
+
+An attendant referee marched onto the sand, presenting Ark with a formal pouch of heavy crimson velvet.
+
+Inside clinked two thick coins of purified Aether-Gold—2 Gold Aether-Rupees, worth an astronomical 200 Silver Panas.
+
+Ark accepted the purse with blistered, trembling fingers. He hoisted his black recurve bow high toward the sky.
+
+Above him, Soot circled through the stadium air, throwing its head back in a piercing cry of triumph.
+
+This was no back-alley slaughter. This was the unvarnished glory of a recognized athletic champion standing before 100,000 souls on his own two feet!
+
+---
+
+### **Scene 5: Back to the Plaza — The Dual Registration & The Dream**
+
+Out in the Grand Plaza, staring up at the giant Water-Crystal Mirror, Neel felt a tremor run through his core.
+
+Around him, thousands of common citizens and aspiring fighters cheered as Ark’s new rank of #68 locked into the spire.
+
+Neel tightened his fists.
+
+For the first time since falling through the monsoon rain of Dadar, he understood the true architecture of this world. It was not merely a pit of shadows and misery. There were laws here. There was honor here. And above all: even a nameless, unindexed orphan with nothing but calloused hands and a loyal beast could stand at the summit if he possessed the will to climb!
+
+Neel’s eyes tracked downward, settling upon a magnificent carved stone pavilion nestled at the base of the Great Spire.
+
+Above its wide archway gleamed a plaque inscribed in gold and bronze:
+
+`[THE PROVING GAMES & PAN-ASTRAL ADVENTURER GUILD: CENTRAL REGISTRATION]`
+`• D-CLASS CONTENDER SLATE: Pass Entrance Trial + Bonded Beast = Official Identity + Free Contender Dormitory!`
+`• COPPER ADVENTURER TAG: Open Wild Hunts + Beast-Core Harvesting + Silver Panas Authorized!`
+
+Neel’s empty stomach twisted with hunger, yet his jaw was set like iron.
+
+He looked down at Sheru.
+
+The one-eared hound’s ears were pinned back with rapt intensity, his amber-gold eyes locked on the pavilion doors, his thick tail swaying in a slow, rhythmic cadence.
+
+A familiar, defiant Mumbai grin spread across Neel’s face. He reached down and firmly patted Sheru’s shoulder.
+
+"See that, Sheru?" Neel murmured with steady conviction. "We didn't come to this city to beg for scraps. We're going to climb that entire 200-foot tower."
+
+Sheru let out a low, resonant growl of complete agreement.
+
+Neel shoved his hands into his jeans pockets, squared his shoulders, and walked straight into the main line of the Dual Registration Pavilion.
+
+---
+
+### **[SEASON 1 • VOLUME 1 • CHAPTER 2: END]**

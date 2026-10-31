@@ -99,14 +99,15 @@ function New-Chapter {
 }
 
 $chapters = @(
-    (New-Chapter -Id 'chap-pro-en' -Title 'PROLOGUE - The Glitch in the Rain (English)'      -Status 'Edited' -File '18A_Season_1_Volume_1_Prologue.md'),
-    (New-Chapter -Id 'chap-pro-hi' -Title 'PROLOGUE - The Glitch in the Rain (Hindi Dub)'    -Status 'Edited' -File '18A_Season_1_Volume_1_Prologue_Hindi.md'),
-    (New-Chapter -Id 'chap-1-en'   -Title 'Chapter 1 - The Hay, the Horns, and the Dead Glass' -Status 'Edited' -File '19_Season_1_Chapter_1.md'),
-    (New-Chapter -Id 'chap-1-hi'   -Title 'Chapter 1 - The Hay, the Horns, and the Dead Glass (Hindi Dub)' -Status 'Edited' -File '19_Season_1_Chapter_1_Hindi.md'),
-    (New-Chapter -Id 'chap-2-en'   -Title 'Chapter 2 - Copper, Crusts, and the Scrap-Hound'    -Status 'Edited' -File '20_Season_1_Chapter_2.md'),
-    (New-Chapter -Id 'chap-2-hi'   -Title 'Chapter 2 - Copper, Crusts, and the Scrap-Hound (Hindi Dub)' -Status 'Edited' -File '20_Season_1_Chapter_2_Hindi.md'),
-    (New-Chapter -Id 'chap-3-en'   -Title 'Chapter 3 - The Sand, the Steel, and the First Spark' -Status 'Edited' -File '21_Season_1_Chapter_3.md'),
-    (New-Chapter -Id 'chap-3-hi'   -Title 'Chapter 3 - The Sand, the Steel, and the First Spark (Hindi Dub)' -Status 'Edited' -File '21_Season_1_Chapter_3_Hindi.md')
+    (New-Chapter -Id 'chap-pro-hi' -Title 'PROLOGUE: The Glitch in the Rain' -Status 'Edited' -File '18A_Season_1_Volume_1_Prologue_Hindi.md'),
+    (New-Chapter -Id 'chap-1-hi'   -Title 'Chapter 1: The Hay, the Horns, and the Dead Glass' -Status 'Edited' -File '19_Season_1_Chapter_1_Hindi.md'),
+    (New-Chapter -Id 'chap-2-hi'   -Title 'Chapter 2: Rank #84 and the Shifting Field' -Status 'Edited' -File '20_Season_1_Chapter_2_Hindi.md'),
+    (New-Chapter -Id 'chap-3-hi'   -Title 'Chapter 3: The Sand, the Steel, and the First Spark' -Status 'Edited' -File '21_Season_1_Chapter_3_Hindi.md'),
+
+    (New-Chapter -Id 'chap-pro-en' -Title 'PROLOGUE: The Glitch in the Rain' -Status 'Edited' -File '18A_Season_1_Volume_1_Prologue.md'),
+    (New-Chapter -Id 'chap-1-en'   -Title 'Chapter 1: The Hay, the Horns, and the Dead Glass' -Status 'Edited' -File '19_Season_1_Chapter_1.md'),
+    (New-Chapter -Id 'chap-2-en'   -Title 'Chapter 2: Rank #84 and the Shifting Field' -Status 'Edited' -File '20_Season_1_Chapter_2.md'),
+    (New-Chapter -Id 'chap-3-en'   -Title 'Chapter 3: The Sand, the Steel, and the First Spark' -Status 'Edited' -File '21_Season_1_Chapter_3.md')
 )
 
 $codex = @(
@@ -124,7 +125,7 @@ $project = [PSCustomObject]@{
     author   = 'waghmodedevidas121-cloud'
     genre    = 'Dark Anime Fantasy / Tournament Isekai'
     synopsis = 'A 19-year-old Mumbai college student falls through a puddle into a frozen void. He wakes in a beast-cart with a dead phone, no coins and no system - only street instinct and a one-eared stray hound.'
-    activeChapterId = 'chap-pro-en'
+    activeChapterId = 'chap-pro-hi'
     chapters = $chapters
     codex    = $codex
 }
@@ -182,10 +183,47 @@ $block = "// --- Universe B Canonical Project Data ---`r`n        const DEFAULT_
 $html = $html.Substring(0, $s) + $block + $html.Substring($e)
 
 # unique storage key so the demo project does not collide
-$html = $html.Replace("novelcraft_studio_v1", "universe_b_studio_v2")
+$html = $html.Replace("novelcraft_studio_v1", "universe_b_studio_v6")
 
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 [System.IO.File]::WriteAllText($outHtml, $html, $utf8)
+
+# Apply Warm Dark Minimalist Theme & Reading Persistence
+python "$root\scripts\patch_studio_ui.py"
+
+# Post-patch: Permanently eliminate chapter caching so the studio ALWAYS renders the compiled canonical HTML
+$patched = [System.IO.File]::ReadAllText($outHtml, [System.Text.Encoding]::UTF8)
+
+$zeroCacheCode = @"
+        // --- Zero-Cache Pure Direct Canonical Content Engine ---
+        function loadFromStorage() {
+            // ALWAYS initialize novelData directly from DEFAULT_PROJECT so no stale cache can ever exist
+            novelData = JSON.parse(JSON.stringify(DEFAULT_PROJECT));
+            try {
+                // Clear any legacy localStorage keys that cause conflicting caches
+                for (let i = 0; i <= 30; i++) {
+                    localStorage.removeItem('universe_b_studio_v' + i);
+                }
+                localStorage.removeItem('novelcraft_studio_v1');
+            } catch (e) {}
+        }
+
+        function saveToStorage() {
+            // Do not store chapter texts in localStorage to avoid browser caching conflicts
+            try {
+                const statusEl = document.getElementById('save-status');
+                if (statusEl) {
+                    statusEl.innerHTML = '<i data-lucide="check-circle-2" class="w-3 h-3"></i> Synced';
+                    statusEl.className = 'flex items-center gap-1 text-[11px] text-emerald-400';
+                    lucide.createIcons();
+                }
+            } catch (e) {}
+        }
+"@
+
+$patched = [regex]::Replace($patched, '(?s)//\s*--- (?:LocalStorage Management|Zero-Cache Pure Direct Canonical Content Engine) ---.*?console\.error\("Storage error:", e\);\s*\}\s*\}', $zeroCacheCode)
+
+[System.IO.File]::WriteAllText($outHtml, $patched, [System.Text.Encoding]::UTF8)
 
 $words = ($chapters | ForEach-Object { ([regex]::Matches($_.content, '\S+')).Count } | Measure-Object -Sum).Sum
 Write-Output "OK"
