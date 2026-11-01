@@ -111,33 +111,31 @@ Neel plummeted.
 
 ---
 
-He did not crash into a drain.
+He didn’t drop into any ordinary sewer drain. This was on a completely different level.
 
-All around him was a colossal, churning cosmic vortex of blinding white radiance. A bottomless celestial cataract with no ceiling and no floor.
+All around him was a massive, spiraling cosmic vortex of blinding white light—an endless, blinding chasm with literally no beginning and no end.
 
 **The Celestial Cataract...**
 
-There was no air to breathe.
+There wasn’t a trace of oxygen to breathe.
 
-And then, amidst that terrifying drag, an unimaginable, bone-crushing cosmic pressure slammed squarely against his mortal frame!
+And amidst that insane gravitational drag, a brutal, bone-crushing cosmic pressure launched a direct assault against his mortal frame!
 
-The agony was so horrific and absolute that mortal consciousness could not endure it for a single second. It felt as though every fiber of his being was being ripped apart at the seams.
+The pain was so extreme that an ordinary human mind couldn’t sustain it for a single second. It felt as though every atom of his body was being violently ripped apart!
 
-Behind his right ear, the embedded silicon chip flared with searing, blinding heat...
+Behind his right ear, the custom silicon chip overheated with searing, unbearable intensity...
 
-Total darkness rushed across Neel’s eyes.
+Neel’s vision blurred completely. His brain tapped out instantly.
 
-His mind shut down.
+Consciousness shattered in a single split-second, plunging him headfirst into a coma-level blackout.
 
-Reaching the breaking point of physical pain, he blacked out completely.
+Total, absolute blackout.
 
-A total, absolute blackout.
-
-He remembered nothing after that... neither what happened to him within that churning milky void, nor how many fathoms he fell into the infinite abyss.
+He remembered nothing after that... not what happened in that cosmic glitch, nor how many leagues he sank into the abyss. System completely shutdown.
 
 ---
 
-Within the dead silence of the administrative void between realms, a single cold cosmic iron stamp slammed onto that unconscious drifting soul:
+Within the dead silence of the administrative void between realms, a single cold, ruthless cosmic seal was punched onto that unconscious drifting soul:
 
 *`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
 *`[STATUS: RIKTA / UNINDEXED]`*  
@@ -145,20 +143,20 @@ Within the dead silence of the administrative void between realms, a single cold
 
 ---
 
-When consciousness finally flickered back, he had no idea how much time had passed.
+When consciousness finally revived, Neel had zero clue how much time had passed.
 
-After drowning in endless darkness, the very first sensation that violently registered...
+After drowning in endless darkness, his first brutal reality check...
 
-Was the bone-jarring, brutal crash of landing face-down upon a mound of wet, rotting hay!
+Was the bone-rattling crash-landing face-down upon a mound of wet, rotting hay!
 
-And the suffocating stench of sulfur, ash, and burning coal filling his throat.
+And the toxic stench of sulfur, ash, and burning coal choking his throat.
 
-The torrential Mumbai rain was gone.
+The Mumbai monsoon scene was permanently cut.
 
-The opulent Worli penthouse was lost to another world.
+The multi-million-dollar Worli penthouse was history.
 
-Earth’s nineteen-year-old billionaire prodigy... knocked out cold, had crash-landed onto a heap of refuse in an alien and brutal realm.
+Earth’s 19-year-old billionaire tech prodigy... knocked out cold, had been dumped onto a garbage heap in a brutal, alien world.
 
-And he had not the faintest clue how he had survived to get here!
+And he didn’t have a single percent of a clue how he’d glitched through to get here!
 
 ---

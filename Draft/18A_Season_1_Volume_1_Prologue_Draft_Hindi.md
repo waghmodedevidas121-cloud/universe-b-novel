@@ -153,33 +153,31 @@ Neel सीधा नीचे गिर पड़ा।
 
 ---
 
-वो किसी gutter या नाले में नही गिरा था।
+वो किसी normal gutter या नाले में नही गिरा था। Scene कुछ और ही level का था।
 
-चारों तरफ दूधिया-सफेद रोशनी का एक विशाल, घूमता हुआ cosmic vortex था। एक ऐसा अथाह भंवर, जिसका न कोई सिरा था, न कोई छोर।
+चारों तरफ दूधिया-सफेद light का एक massive, घूमता हुआ cosmic vortex था। एक ऐसा endless, blinding भंवर... जिसका literally न कोई start था, न कोई end।
 
 **The Celestial Cataract...**
 
-वहाँ सांस लेने के लिए हवा नही थी।
+वहाँ सांस लेने के लिए हवा का नामो-निशान तक नही था।
 
-और उस भयानक खिंचाव के बीच, एक अकल्पनीय, हड्डियों को तोड़ देने वाले cosmic दबाव ने उसकी mortal body पर सीधा वार किया!
+और उस crazy gravity pull के बीच, हड्डियों को crush कर देने वाले एक brutal cosmic pressure ने उसकी mortal body पर सीधा attack किया!
 
-दर्द इतना भयंकर और खौफनाक था कि इंसान का दिमाग उसे एक पल भी झेल नही सकता था। ऐसा लगा जैसे शरीर का एक-एक कतरा खिंचकर चकनाचूर होने वाला हो।
+Pain का level इतना extreme और खौफनाक था कि एक normal इंसान का दिमाग उसे एक second भी sustain नही कर सकता था। ऐसा लगा जैसे body का एक-एक atom खिंचकर rip apart होने वाला हो!
 
-उसके दाएँ कान के पीछे लगी silicon chip भयंकर गर्मी से दहक उठी...
+उसके दाएँ कान के पीछे लगी custom silicon chip violently overheat होकर दहक उठी...
 
-Neel की आँखों के आगे घोर अंधकार छाने लगा। 
+Neel का vision पूरी तरह blur हो गया। Brain ने instant give up कर दिया।
 
-उसकी consciousness एक ही झटके में टूटकर बिखर गई। 
+Consciousness एक ही झटके में shatter होकर बिखर गई, और वो सीधा एक coma-level blackout में चला गया।
 
-उस दर्द की आखिरी सीमा पर पहुँचकर वो पूरी तरह बेहोश हो गया।
+Total, absolute blackout!
 
-टोटल blackout।
-
-उसे कुछ याद नही रहा... न ये कि उस दूधिया भंवर में उसके साथ क्या हुआ, न ये कि वो कितनी गहराइयों में गिरता चला गया। वो होश पूरी तरह खो चुका था।
+उसे रत्ती भर भी याद नही रहा... न ये कि उस cosmic glitch में उसके साथ क्या हुआ, न ये कि वो कितनी गहराइयों में sink होता चला गया। System completely shutdown!
 
 ---
 
-Realms के बीच फैले administrative void के सन्नाटे में, बस एक ठंडी, बेजान cosmic seal उस अचेत soul पर धड़ाम से आकर ठुक गई:
+Realms के बीच फैले administrative void के dead silence में, बस एक cold, ruthless cosmic seal उस unconscious soul पर धड़ाम से आकर punch हुई:
 
 *`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
 *`[STATUS: RIKTA / UNINDEXED]`*  
@@ -187,20 +185,20 @@ Realms के बीच फैले administrative void के सन्ना�
 
 ---
 
-चेतना कब वापस लौटी, उसे खुद पता नही चला।
+Consciousness कब revive हुई, Neel को घंटा कुछ खबर नही थी।
 
-पूरी तरह darkness में डूबे रहने के बाद, जो पहली चीज उसने महसूस की...
+Endless darkness में डूबे रहने के बाद, जो पहला reality check उसे मिला...
 
-वो थी गीली और सड़ती हुई hay के ढेर पर अपनी हड्डियों को हिला देने वाला एक भारी crash!
+वो था गीली और सड़ती हुई hay के ढेर पर अपनी हड्डियों को rattle कर देने वाला एक brutal crash-landing!
 
-और गले में भरती sulfur, राख और जलते हुए कोयले की एक sharp smell।
+और गले में direct choke करती sulfur, राख और burning coal की toxic smell।
 
-Mumbai की वो मूसलाधार बारिश अब खत्म हो चुकी थी।
+Mumbai का monsoon scene अब permanently cut हो चुका था।
 
-Worli का वो आलीशान penthouse हमेशा के लिए पीछे छूट चुका था।
+Worli का वो multi-million dollar penthouse हमेशा के लिए पीछे छूट चुका था।
 
-Earth का 19 वर्षीय billionaire prodigy... बेहोशी की हालत में, एक अनजान और क्रूर दुनिया के कचरे के ढेर पर आ गिरा था।
+Earth का 19-year-old billionaire tech prodigy... full unconscious state में, एक brutal, alien world के कचरे के ढेर पर dump हो चुका था।
 
-और उसे रत्ती भर भी याद नही था कि वो यहाँ कैसे पहुँचा!
+और उसे literally 1% भी idea नही था कि वो यहाँ किस glitch के थ्रू पहुँचा!
 
 ---
