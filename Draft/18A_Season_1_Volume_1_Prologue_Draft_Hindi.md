@@ -15,7 +15,7 @@
 ## PROLOGUE: THE GLITCH IN THE RAIN
 ### (बारिश में एक दरार)
 
-सड़ते हुए कचरे की भयानक smell, जले हुए diesel का धुआँ और overflowing gutters की गंदी बदबू... सब कुछ literally सांस लेना मुश्किल कर रहा था।
+सड़ते हुए कचरे की भयानक smell, जले हुए diesel का धुआँ और overflowing gutters की गंदी बदबू... हवा में सांस लेना तक भारी पड़ रहा था।
 
 Dadar Station के बाहर पिछले 6 घंटों से non-stop बारिश हो रही थी। पूरी सड़क करीब 2 feet तक गंदे पानी में डूबी हुई थी। पानी में गाड़ियों का oil और grease, जगह-जगह पड़ा plastic waste और सड़ी हुई सब्जियाँ तैर रही थीं।
 
@@ -107,9 +107,7 @@ Neel ने अपना हाथ वापस खींचा, Black Card क�
 
 "अगर uncle Kani या वो arrogant Sunny यहाँ होते, तो जिंदगी भर boardroom में taunt मारते।"
 
-Neel... 19 साल का इकलौता वारिस।
-
-3 साल पहले एक tragic highway accident में parents (Aarav और Suman) के गुजरने के बाद, अरबों की equity, shipping docks और international tech patents सीधे Neel के नाम transfer हो गए थे। Uncle Kani और aunt Cheri पूरा business संभालते थे और उसे सिर-आँखों पर रखते थे—ताकि वो अपनी lab में ही मस्त रहे और कभी boardroom में आकर accounts का हिसाब न माँगे। उनका बेटा Sunny खुद को Gadora empire का अगला prince समझता था। लेकिन reality ये थी कि Neel को उनकी boring corporate politics में रत्ती भर भी interest नही था।
+लेकिन सच तो ये था कि Gadora empire की boring corporate politics, boardroom meetings और अरबों की equity में Neel को रत्ती भर भी interest नही था।
 
 उसका असली obsession था उसकी private high-tech lab... और temporal bone में surgically implant की गई उसकी वो prototype silicon chip—**GENI (Gemma-4 Neural Interface)**। उसका 24/7 personal, in-skull AI assistant।
 
@@ -147,7 +145,7 @@ Neel सीधा नीचे गिर पड़ा।
 
 वहाँ सांस लेने के लिए हवा का नामो-निशान तक नही था।
 
-और उस crazy gravity pull के बीच, हड्डियों को crush कर देने वाले एक brutal cosmic pressure ने उसकी mortal body पर सीधा attack किया!
+और उस बेरहम, अंतहीन gravitational pull के बीच, हड्डियों को crush कर देने वाले एक brutal cosmic pressure ने उसकी mortal body पर सीधा attack किया!
 
 Pain का level इतना extreme और खौफनाक था कि एक normal इंसान का दिमाग उसे एक second भी sustain नही कर सकता था। ऐसा लगा जैसे body का एक-एक atom खिंचकर rip apart होने वाला हो!
 

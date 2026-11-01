@@ -81,9 +81,7 @@ Neel pulled his empty hand out, slid the Black Card back into his pocket, and le
 
 "Brilliant," he muttered into the roar of the rain. "Thousands of crores in the family empire, a Black Card with a one-lakh daily limit in my pocket, and I'm four rupees short of fried dough because this city's network died in three inches of water. If Uncle Kani or that arrogant Sunny saw this, they'd never let me live it down in the boardroom."
 
-Neel. Nineteen years old, sole heir.
-
-Following his parents' death in an accident three years earlier, billions in equity, shipping docks, and tech patents had transferred directly into his name. Uncle Kani and Aunt Cheri ran the empire and pampered him rotten—anything to keep him busy in his lab and out of their boardrooms. Their son Sunny could play corporate prince all he wanted; Neel had zero interest in their paper politics.
+The truth was, Neel didn't give a damn about Gadora Empire's corporate politics, boardroom meetings, or billions in equity.
 
 His real obsession was his private coastal lab... and the custom prototype silicon chip self-implanted behind his right temporal bone—**GENI (Gemma-4 Neural Interface)**. His 24/7 personal, in-skull AI assistant.
 
