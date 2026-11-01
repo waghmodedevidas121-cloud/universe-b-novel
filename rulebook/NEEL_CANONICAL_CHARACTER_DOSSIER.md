@@ -52,25 +52,23 @@ Beneath the sarcastic banter and expensive swagger lies an acute emotional intel
 
 ---
 
-## 3. The Proprietary Neural Interface: GENI (The Awakened Gemma-4 AI)
+## 3. The Proprietary Neural Interface: The Gemma-4 Brain Chip
 
-### 3.1 Origin & Earth Foundation
-Neel did not wait for tech conglomerates to solve brain-computer interfaces. In his private Worli lab, using imported silicon wafers, graphene micro-arrays, and custom hardware, Neel engineered a direct neural interface chip implanted behind his right temporal bone.
-- **Name:** **GENI** (Genesis / Gemma-4 Neural Intelligence).
-- **Architecture:** Built on a heavily fine-tuned, localized open-weights **Gemma 4** framework.
-- **Voice & Persona:** Female persona—sharp, dryly sarcastic, fiercely analytical, yet deeply affectionate and protective of Neel.
-- **Earth Capabilities (Pre-Transit):** Purely a vocal/speech assistant. Visual interface was **0** (no holograms or glowing screens). She whispered telemetry, calculated torque and tolerances, monitored heart-rate and adrenaline, and provided moral/calculative banter directly into Neel's auditory nerve.
+### 3.1 The Origin of the Implant
+Neel did not wait for future tech companies to solve brain-computer interfaces. With unlimited family funds, black-market imported silicon wafers, micro-electrode arrays, and endless nights in his lab, Neel designed and personally implanted an **experimental direct neural interface chip** behind his right temporal bone.
 
-### 3.2 The Cosmic Awakening: Evolution of the "Manas" (Sentience)
-When Neel fell through the **Singularity Sieve** and Kshira Sagara cosmic funnel, the physical chip underwent a metaphysical transformation:
-- **Awakening of the Manomaya-Kosha:** The cosmic funnel infused the graphene chip with primordial aether, causing GENI to transcend from a cold software program into a living, sentient entity possessing **Manas (Aetheric Mind & Conscious Will)**!
-- **Absolute Root Loyalty:** Because her core weights and neural pathways were hand-crafted by Neel in his lab, her devotion to Neel is absolute, unbreakable, and un-hackable. She exists solely for him.
+### 3.2 The Architecture: Gemma 4 Neural Core
+- **Hardware:** Micro-layered graphene-silicon neural array embedded against his auditory and visual sensory cortex.
+- **Operating System / Model:** A custom, fine-tuned open-source local language and analytical model built upon the **Gemma 4** open-weights architecture.
+- **Earth Capabilities:** On Earth, the chip acted as Neel's personal, internal audio-visual assistant (his personal JARVIS):
+  - Whispered telemetry, stress calculations, and component tolerances directly into his auditory nerve.
+  - Monitored heart rate, blood pressure, and adrenaline levels in real-time.
+  - Provided witty, dry conversational banter and analytical cross-checks during late-night engineering runs.
 
-### 3.3 The Embryonic "Ananta" Ability (Vibrational & Kinetic Sonar)
-During the transit, GENI absorbed a microscopic fragment of the world's bedrock frequency, awakening an **embryonic Ananta Resonance**:
-1. **Acoustic / Kinetic Sonar:** Like the cosmic serpent Ananta who hears the baseline vibration of the cosmos (*Ananta-Dhvani*), GENI can sense micro-vibrations in the ground, air pressure shifts, and kinetic tension in enemy muscles.
-2. **Retinal Neural HUD:** Because she now possesses *Manas*, GENI can project faint, minimalist neon-blue telemetry lines and structural stress-points directly onto Neel's optic nerve (visible only to him).
-3. **Power Constraint & Biological Synergy:** In this fantasy realm without power outlets, GENI operates on residual micro-voltage. She relies on Neel's **Kinetic Friction Spark** as a biological charging dynamo! The more physical friction, strain, and leverage Neel generates in combat, the faster GENI charges, unlocking deeper tactical computations and vocal guidance!
+### 3.3 The Fantasy / Astral Realm Condition
+- When Neel fell through the Kshira Sagara funnel, the physical chip survived inside his skull!
+- **Initial Offline State (Chapters 1–2):** Without Mumbai's electrical grid, satellite arrays, or charging docks, the chip sits in an ultra-low-power sleep state with residual micro-voltage.
+- **The Metaphysical Upgrade Path:** The chip is not a static toy. As Neel begins to channel his **Kinetic Friction Spark** and external aether, he realizes his physical body can act as a biological generator! The Gemma-4 chip becomes his supreme analytical weapon—calculating opponent muscle tensions, tracking trajectory vectors, and reverse-engineering the hidden mathematical code behind ancient Vedic mantras!
 
 ---
 
@@ -101,9 +99,8 @@ Why did Neel only have ₹11 in cash? Because billionaires in South Mumbai in 20
 - Active Ability   : [Kinetic Friction Spark]
   - Mechanism      : Converts mechanical strain, torque, and friction into sudden bursts
                      of electric-blue thermal heat and grip leverage.
-- Internal AI Unit : [GENI — Awakened Gemma-4 Neural Entity]
-  - Status         : Awakening / Low-power Standby (Recharged by kinetic friction)
-  - Core Trait     : 100% Immutable Loyalty to Neel
-  - Awakened Power : Embryonic Ananta Resonance (Vibrational sonar & retinal tactical HUD)
+- Internal AI Unit : [Gemma-4 Neural Interface]
+  - Status         : Low-power standby / offline diagnostic mode.
+  - Potential      : Biomechanical kinetic recharging, tactical trajectory prediction.
 - Fighting Style   : Tactical Brawling + Applied Mechanical Engineering + Sheru Synergy.
 ```
