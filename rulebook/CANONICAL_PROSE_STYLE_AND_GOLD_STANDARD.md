@@ -19,9 +19,13 @@ flowchart TD
 
 ## 1. THE GOLD STANDARD BENCHMARK (प्रमाणित नमुना)
 
-कथेतील प्रत्येक सीनची संवेदी खोली, लय आणि भाषा खालील प्रमाणित आधुनिक हिंग्लिश मजकुराशी १००% जुळली पाहिजे:
+कथेतील प्रत्येक सीनची संवेदी खोली, लय आणि भाषा खालील प्रमाणित **Modern Cinematic Hinglish Storytelling (VO Formula)** शी १००% जुळली पाहिजे:
 
-> *"सड़क के गहरे गड्ढे में सामने से आती लाल BEST bus पूरी रफ्तार में कूद पड़ी। छपाक! काले नाले के खौलते पानी की एक मोटी धार हवा में उछली। Railing के ऊपर से होती हुई, वो सारी गंदगी सीधे Neel के चेहरे, गले और उसके premium ash-grey cashmere hoodie पर आ गिरी। Neel 5 seconds तक बिना हिले-डुले वहीं खड़ा रहा। फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर एक तीखी, बेपरवाह और आत्मविश्वासी मुस्कान तैर गई। 'शाबाश, BEST। Worli की safe lab छोड़कर खुद prototype parts लेने निकला था, और Mumbai ने सीधा gutter के पानी से स्वागत किया। Classic civic infrastructure।'"*
+> *"सड़ते हुए कचरे की भयानक smell, जले हुए diesel का धुआँ और overflowing gutters की गंदी बदबू... सब कुछ literally सांस लेना मुश्किल कर रहा था। Dadar Station के बाहर पिछले 6 घंटों से non-stop बारिश हो रही थी। पूरी सड़क करीब 2 feet तक गंदे पानी में डूबी हुई थी। पानी में गाड़ियों का oil और grease, जगह-जगह पड़ा plastic waste और सड़ी हुई सब्जियाँ तैर रही थीं। हालत इतनी खराब थी कि गाड़ियों के silencers तक पानी में डूब चुके थे। वहीं दूसरी तरफ, इस भयंकर traffic jam में फंसे trucks के लगातार बजते air horns पूरे माहौल को और भी chaotic बना रहे थे। ऐसा लग रहा था जैसे कोई सीधे कानों में लोहे के पाइप मार रहा हो।"*
+
+**The Master Formula:**  
+`Original Meaning + Natural Hinglish + Visual Details + Emotional Impact + Smooth VO Flow`  
+*(वापर: Conversational Language, Visual Storytelling, Emotional Impact, Natural Hinglish, Smooth VO Flow + 7 Writing Techniques)*
 
 ---
 
