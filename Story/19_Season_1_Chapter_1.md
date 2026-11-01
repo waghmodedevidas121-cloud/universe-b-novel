@@ -61,13 +61,13 @@ One second... three seconds... five seconds.
 
 The screen stayed dead black. Battery: 0%.
 
-Neel stared at the dark glass and whispered, "Brilliant. Exactly when I need you, you tap out. Eleven rupees and a dead phone... my luck didn't even upgrade outside Mumbai."
+Neel stared at the dead screen and muttered, "Brilliant. Exactly when I need you, you tap out. Eleven rupees and a dead phone... my luck didn't even upgrade outside Mumbai."
 
 Then, a sudden thought sparked in his mind.
 
 All those late nights reading *Solo Leveling*, Marvel comics, and bingeing Isekai anime flashed before his eyes in an instant. The truck impact, falling through a portal, waking up in an alien world...
 
-He raised a single finger into the air and barked in a sharp, low whisper: "System... Status Window Open! Show Location and Map!"
+He raised a single finger into the air and barked in a sharp, low whisper: "System... Status Window Open! Show Map!"
 
 He blinked and waited for two full seconds.
 
