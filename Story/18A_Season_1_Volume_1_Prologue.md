@@ -1,8 +1,8 @@
-﻿# 18A. Season 1, Volume 1 — PROLOGUE: The Glitch in the Rain
+# 18A. Season 1, Volume 1 — PROLOGUE: The Glitch in the Rain (Official Master Edition)
 **File:** `D:\Web Novel\UNIVERSE B\Story\18A_Season_1_Volume_1_Prologue.md`  
-**Format:** Official Modern Anime Dub Script (Crunchyroll & Muse Style Adaptation)  
-**Track Status:** **DERIVED DUB.** Mirrors the pacing, tone, and canon locks of the Hindi Master.  
-**Tags:** `#prologue #volume-1 #season-1 #neel-origin #bombay #dadar #english-dub #canon-lock`  
+**Format:** Canonical English Web Novel Prose (Muse & Crunchyroll Benchmark)  
+**Track Status:** Canonical English Edition (Mirrors the Hindi Master 1:1)  
+**Tags:** `#prologue #volume-1 #season-1 #neel-origin #bombay #dadar #webnovel-master #canon-lock`  
 
 ---
 
@@ -10,165 +10,157 @@
 
 ## PROLOGUE: THE GLITCH IN THE RAIN
 
-Mumbai's monsoon had its own distinct signature, but that evening outside Dadar Station, the scent of damp earth was utterly drowned beneath the stench of overflowing gutters and rotting refuse.
+The bitter stench of rotting garbage, burnt diesel fumes, and overflowing open gutters caught straight in his throat.
 
-Rain had been pounding the asphalt for 6 hours straight. Gutters spewed filthy grey froth onto the sidewalks, and Dadar's evening gridlock was so hopelessly frozen it looked as though the vehicles had been set in curing concrete.
+Outside Dadar Station, the monsoon had hammered down without pause for 6 straight hours. Two feet of murky, stagnant water flooded the road, swirling with grease, scrap plastic, and vegetable rot. Engine exhausts were submerged, and the endless blare of air-horns from marooned delivery trucks battered the ears like lead pipes.
 
-Neel stood stranded on the narrow sidewalk beneath the shadow of Dadar Bridge.
+Beneath the bridge, plastered against the rusted iron railing of the curb, stood Neel.
 
-With one arm, he clamped his waterlogged college backpack tightly against his ribs; with the other, he gripped the bent handle of a fractured umbrella. Watching the towering wheels of an approaching red BEST double-decker bus, he silently prayed the driver wouldn't send a tidal wave of gutter sludge across his chest.
+His college backpack was clutched against his chest, soggy and heavy with dead weight. In his right hand was the bent frame of a dead umbrella; a snapped rib of wire repeatedly poked into the skin of his wrist.
 
-Mumbai, however, held zero regard for prayers.
-
-The bus slammed through a deep trench in the asphalt at full speed.
+A red municipal BEST bus tore straight through a flooded crater in the asphalt.
 
 *SPLASH!*
 
-A thick wall of greasy runoff surged into the air, cleared the rusted iron guardrail, and smashed squarely into Neel. Hair, face, collar, denim—drenched in a single heartbeat.
+A thick wave of foul, brackish runoff erupted into the air.
 
-For several seconds, he simply stood frozen. Then, slowly, he wiped the muck from his eyelashes with a soggy sleeve.
+Clearing the iron railing, the entire sludge slammed dead across Neel’s face, neck, and soaked cotton shirt.
 
-"Brilliant work, BEST," Neel muttered, glaring at the receding taillights. "Whatever scrap of dignity I had left, you washed straight down the drain."
+Cold, filthy water streamed down his cheek.
 
-The driver didn't even bother checking his mirror.
+Neel stood completely motionless for five seconds. He didn't blink. He didn't wipe it off.
 
-Neel flicked dirty water from his chin. "Classic Mumbai. Rain is free, a bath is free... only reaching home safely requires a premium subscription."
+Then, with his soaked sleeve, he roughly scrubbed his eyes. The foul, bitter taste of sewer water coated his lips.
 
-He couldn't even muster a dry smirk at his own joke. The reality was too bleak.
+His jaw clamped tight as he stared at the red taillights fading into the gridlock.
 
-His cheap street umbrella had surrendered near Parel; a bent, jagged rib of steel hung loose, digging into his wrist with every gust of wind. His sneakers sloshed with icy water, his jeans were heavy and frozen against his shins, and with every step, his right sock emitted an infuriating *squelch-squelch*. For the past 40 minutes, that monotonous rhythm had been grating against his frayed nerves.
+"Brilliant work, BEST. Whatever little dignity I had left, you just flushed straight down the gutter."
 
-"Just what I needed," he mumbled to his boots. "Now my own feet have turned against me."
+The driver never even tapped the brakes. The bus vanished into a thick plume of black exhaust.
 
-It was 7:30 in the evening. Streetlights cast anemic orange pools through the heavy sheets of downpour. Amid the deafening blare of horns and the vibrating rumble of idling diesel engines, commuters fought desperately through the deluge to gain an inch of ground.
+Neel jerked his head, sending dirty drops flying. A freezing trickle snaked down the nape of his neck, straight along his spine, locking his core in a violent shiver.
 
-And through it all, Neel's hollow stomach twisted violently.
+"Ah, Mumbai. The rain is free, the bath is free... but getting home requires a premium subscription."
 
-He hadn't eaten a proper meal since morning. At the corner of the crossroad, a battered cart was frying Vada Pav. The aroma of boiling oil and spiced gram flour cut through the reek of damp exhaust, hitting him right in the nostrils.
+Not even the trace of a smile touched his lips. Reality was far too pathetic.
 
-Cardboard scrawled with grease-pencil read: **Vada Pav — ₹15**.
+His canvas sneakers were sloshing water like two buckets. The damp sock on his right foot ground against his raw heel with every shift of weight.
 
-Neel jammed his fingers into his pocket. He fished out a crumpled 10-rupee note and a single coin—11 rupees total. He pulled out his phone, its cracked screen showing battery at a desperate 8%.
+*Squish. Squish. Squish.*
 
-*15 rupees for a hot snack... or an auto-rickshaw home? I can only afford one, bro. And the way I'm shivering, an auto driver will double the fare just looking at me.*
+For the past 40 minutes, that exact sound had been drilling through his skull.
 
-Neel was 19 years old. It was an age when his college peers daydreamed about careers and placements, but for Neel, life had long been reduced to a simpler equation: survive the day without taking on new debt or inviting fresh disaster. He slipped the coins back into his pocket and turned off the screen to preserve power.
+It was 7:30 in the evening. Sodium-vapor lamps along the bridge cast a sick, amber haze through the sheets of rain, blurring the city into muddy smears.
 
-He needed that phone alive at least until he reached his door.
+A sharp, hollow cramp twisted his gut.
 
-✦ ✦ ✦
+Sour stomach acid surged up his esophagus. Since sitting at the tuition center reception desk in Dadar at 6:00 in the morning, nothing had crossed his throat except tap water and a single cold cup of tea.
 
-He turned to head toward the station when his eye caught a peculiar puddle along the curb.
+Around the corner of the sidewalk stood a tarpaulin food cart. The sizzling aroma of chickpea batter and spiced green chilies frying in bubbling black oil punched through the sewage stench, striking straight into his sinuses.
 
-At first glance, it appeared no different from any other pothole—knee-deep, the width of a scooter tire, brimming with murky rainwater.
+On a battered scrap of cardboard, bold black marker read: **Vada Pav — ₹15**.
 
-Yet something was fundamentally wrong with it.
+Neel reached into his pocket.
 
-Neel halted in his tracks. He narrowed his eyes, studying the black surface.
+His fingertips brushed against cold, wet paper and a single disc of steel.
 
-Every other puddle on the avenue was churned with ripples from passing tires, shimmering with reflected streetlamps. But this particular pool was dead still. No vibration from the rumbling trucks disturbed its surface; the driving raindrops made no splash upon it. Stranger still, the orange glare of the overhead streetlamps vanished the instant it touched the surface, as if an ocean of ink were swallowing the light whole.
+One ten-rupee note, damp and crumpled. One steel rupee coin.
 
-Neel leaned in closer. That wasn't muddy runoff; it was a dense, oily abyss. It ran so unnaturally deep that the concrete roadbed beneath was completely absent, resembling a bottomless well bored straight through the city's crust.
+Total liquid net worth: ₹11.
 
-"What kind of madness is this?" Neel muttered, glancing around.
+Short by exactly 4 rupees.
 
-Beneath that black mirror lay neither asphalt nor mud. There was only a cold, infinite void. And suspended within that darkness... hung something immense. The silhouette was so colossal that Neel's senses failed to measure its scale—half swallowed by shadow, the rest suspended in zero gravity as if Earth's pull had ceased to exist.
+Neel pulled his empty hand out, shoving it deep under his wet armpit.
 
-Neel's heart slammed against his ribs. He blinked hard and looked again—the monolith remained anchored in the dark.
+"No problem," he muttered to himself, his voice lost under the roar of the downpour. "Skipping dinner saves money. If I don't eat tonight, that’s four bus tickets saved for next week. Simple arithmetic."
 
-The downpour was raging behind him, yet an eerie, heavy silence descended over his ears, as though someone had muted the entire city. The blaring horns and engine roars retreated behind an invisible soundproof barrier. The air grew stiflingly dry; dirty water was still dripping from his hem, yet a dry, parching heat brushed his cheeks like the mouth of a furnace.
+He turned away from the food stall, stepping back into the flooded curb.
 
-He stepped back instinctively. "No... this isn't right—"
+He was 19. An orphan since 16, when a reckless container truck had crushed his parents' scooter on the Eastern Express Highway. No inheritance, no relatives offering shelter—only a damp 1-BHK rental in Ghatkopar, pending college fees, and an endless cycle of part-time delivery gigs.
 
-His phone violently vibrated against his thigh.
+He wasn't an anime hero. He wasn't special. He was just another faceless ghost in a city of twenty million, grinding his molars to survive another tomorrow.
 
-*BZZZZT!*
+He took three steps forward along the flooded curb.
 
-Startled, Neel whipped the device out. Jagged blue-and-white static danced across the shattered glass. Circuit-like fractures flared and melted across the interface, followed by creeping black artifacts.
+Beneath the swirling black puddle, an iron municipal manhole cover had been dislodged by the water pressure.
 
-*Click.*
+Neel’s right foot stepped into empty space.
 
-The screen went pitch black. **Battery: 0%**.
+*WHOOSH!*
 
-"Are you serious? Right now?!" Neel jammed his thumb into the power key, but the glass remained dead and cold.
+There was no concrete rim. No brick cylinder. No sewer pipe.
 
-Right then, an air horn from an oncoming truck detonated behind him. Neel recoiled, his heel catching on a fractured paving slab.
+The instant his sole crossed the threshold of the dark water, gravity snapped like a dry twig.
 
-His footing vanished, and he tumbled backward into the slurry.
+The road, the sound of the horns, the smell of diesel, the amber streetlights—everything vanished into a silent, bottomless chasm.
 
-*SPLASH!*
+Neel fell.
 
-He crashed into 6 inches of filthy runoff, his elbow smashing against the curb with a blinding jolt of agony that shot to his collarbone. His backpack slid away across the wet stone, and the phone flew from his grip, skidding toward the edge of the black pit.
+***
 
-"My phone!"
+He did not hit pipes. He did not hit water.
 
-Forgetting the pain, Neel lunged. His fingertips brushed the casing as it slid over the rim into the oily void. Throwing his entire upper body forward, his knuckles clamped around the frame.
+He fell through a terrifying, luminous vortex of milky-white light that spiraled infinitely downward—the cosmic undertow of the Kshira Sagara, the primordial veil separating mortal realms from the higher planes.
 
-"Got you!"
+There was no air, yet his lungs didn't burst. There was no sound, yet a bone-deep hum resonated through his soul.
 
-He tried to exhale, but an iron vice clamped around his wrist.
+In that violent, roaring passage, the sheer pressure of cosmic transit hammered against his mortal vessel.
 
-His hand was still hovering above the surface, yet an unfathomable downward drag was pulling his arm into the dark, as if an invisible claw had locked around his bone.
+*CRACK!*
 
-Neel jammed his free hand against the pavement, fighting with everything he had, but the suction intensified with terrifying violence, straining the ligaments in his fingers.
+Deep within his spiritual anatomy, the 72,000 Nadis—the ancient, dormant energy channels mapped by Vedic sages, calcified by generations of mundane mortal living—shattered open under the deluge of astral pressure. The blockage was blasted away in an instant, purged clean by the sheer cosmic velocity of the fall.
 
-"Let go... damn it, let go!"
+Yet, because he had no training, no mantra, and no cultivation foundation, those 72,000 channels instantly collapsed back into cold dormancy—empty riverbeds waiting for a flood that had not yet arrived.
 
-He tried to release the phone, but his fingers were frozen shut. The black pool was no longer dormant; a vortex was churning violently around his forearm. The moment the liquid touched his skin, numbness spread instantly—no cold, no heat, just the terrifying sensation that his limb was being unmade.
+Only a single, microscopic thread in his right wrist remained hot, vibrating with a stubborn, ember-like friction.
 
-In the next breath, the street beneath him simply ceased to exist.
+Then came the Ledger.
 
-And he plummeted headlong into the abyss.
+***
 
-✦ ✦ ✦
+In the administrative void between realities, an ancient, monolithic presence stirred.
 
-The avenue, the storm, the traffic of Dadar, and the roar of Mumbai vanished all at once.
+The Chitragupta Archive.
 
-Neel tore his throat open to scream, but not a whisper of air escaped his chest.
+Every soul that traverses the dimensional streams is indexed by karmic weight, planetary registry, and predestined lineage. Millions of glowing runes flared across the infinite darkness, attempting to latch onto Neel’s falling spirit.
 
-Around him lay neither earth nor sky. He was hurtling down a colossal, spiraling corridor woven from incandescent white and gold light. The wind was bone-chillingly frigid, yet within the luminance burned the agonizing heat of molten steel.
+`[REGISTRY QUERY: VESSEL IDENTIFIER?]`  
+*No record found.*
 
-The conduit was alive, surging like a tempestuous sea of liquid brilliance.
+`[ANCESTRAL KARMIC INDEX: SOLAR / LUNAR / ASURA / DEVA?]`  
+*Null. Unindexed lineage.*
 
-He wasn't merely falling—his physical form was being compressed beneath an immense hydraulic vise. His ribs groaned under crushing force, his joints screamed in agony, and his bloodstream felt as though it had turned to fire.
+`[DESTINY ASSIGNMENT: PROPHESIED PATHWAY?]`  
+*Blank. No divine patron. No demonic contract. Zero pre-recorded threads.*
 
-Within that blinding light, an incomprehensible authority bore down upon his consciousness.
+A cosmic error flared across the unseen mechanisms of the universe.
 
-There was no face, no machine, no floating status screen—only an ancient, unyielding presence older than time itself.
+By all laws of the High Council, an unindexed anomaly should have been caught in the spiritual drag-nets of Warden Setuvrata and incinerated in the soul-furnaces.
 
-A soundless resonance reverberated through his marrow, its meaning imprinting directly into his mind without language:
+Instead, the sheer velocity of his fall through the Singularity Sieve dragged his vessel past the jurisdictional grid.
 
-**AN UNINDEXED EXISTENCE.**  
-**AN INCOMPATIBLE VESSEL.**
+A cold, metaphysical iron stamp slammed down across the metaphysical fabric of his soul:
 
-This was no ordinary portal. This was the **Singularity Sieve**—the cosmic crucible of consciousness where frail souls shatter like glass under multiversal pressure.
+`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`  
+`[STATUS: RIKTA / UNINDEXED]`  
+`[DESTINY: OPEN GLITCH]`
 
-Neel possessed no divine lineage, no martial cultivation, no magical protection. He was just a nineteen-year-old kid from Mumbai who, minutes before, had been counting eleven rupees for a street snack.
+The milky-white light shattered.
 
-His physical body was tearing at the seams, every breath a death sentence.
+The infinite void collapsed.
 
-Yet deep within him burned the stubborn, hard-bitten grit of a city where giving up was never an option. His fist remained locked around the dead smartphone.
+Air—scalding, foul, and thick with ash—slammed back into Neel’s lungs.
 
-"Not... like this..." his cracked lips moved. "Not today..."
+***
 
-Deep within the core of his skull, a monolithic bronze bell tolled with terrifying finality:
+Neel’s consciousness fractured.
 
-*DHOOOOONNNNN...*
+The last thing he felt before the blackness swallowed him whole was the violent, bone-rattling impact of his body slamming down into a mountain of wet, rotting hay, and the stench of sulfur and burning coal filling his throat.
 
-The sound held neither wrath nor mercy—only absolute cosmic verdict. Neel's mortal frame was destabilizing against foreign multiversal laws, an anomaly that threatened to erase him into cosmic dust.
+The Mumbai rain was gone.
 
-Yet at that exact threshold, from the heart of that white-gold sea, a razor-thin filament of azure fire arced forward.
+Dadar Station was gone.
 
-It did not waver. It struck Neel's right wrist and dissolved straight into his veins.
-
-*SNAP!*
-
-Neel's entire body seized as the azure current cascaded from his wrist into his spine, coursing through all seventy-two thousand nadis like liquid lightning. Static flared across his vision, accompanied by strange glyphs and resonances his human mind could never hope to comprehend.
-
-The sheer sensory overload overwhelmed his neural threshold.
-
-The brilliant white-gold glare began to dim, folding into an impenetrable, absolute blackness.
-
-Neel's consciousness surrendered, and he dissolved completely into the dark.
+The Unindexed boy had crossed the Sieve.
 
 ---
