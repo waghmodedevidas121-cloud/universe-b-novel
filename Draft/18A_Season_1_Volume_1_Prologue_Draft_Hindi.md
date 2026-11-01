@@ -107,25 +107,11 @@ Neel ने अपना हाथ वापस खींचा, Black Card क�
 
 "अगर uncle Kani या वो arrogant Sunny यहाँ होते, तो जिंदगी भर boardroom में taunt मारते।"
 
-Neel... 19 साल का इकलौता वारिस था।
+Neel... 19 साल का इकलौता वारिस।
 
-3 साल पहले एक tragic highway accident में उसके father Aarav और mother Suman की मौत हो गई थी। उनके जाने के बाद अरबों की equity, shipping docks और international tech patents सीधे Neel के नाम transfer हो गए थे।
+3 साल पहले एक tragic highway accident में parents (Aarav और Suman) के गुजरने के बाद, अरबों की equity, shipping docks और international tech patents सीधे Neel के नाम transfer हो गए थे। Uncle Kani और aunt Cheri पूरा business संभालते थे और उसे सिर-आँखों पर रखते थे—ताकि वो अपनी lab में ही मस्त रहे और कभी boardroom में आकर accounts का हिसाब न माँगे। उनका बेटा Sunny खुद को Gadora empire का अगला prince समझता रहे, Neel को उनकी boring corporate politics में रत्ती भर भी interest नही था।
 
-Uncle Kani और aunt Cheri पूरा business संभाल रहे थे। वो Neel को सिर-आँखों पर बिठाकर रखते थे। उसकी हर expensive demand चुटकियों में पूरी कर देते थे... ताकि वो अपनी lab में ही busy रहे और कभी boardroom में आकर accounts की balance sheet देखने की demand न कर दे।
-
-वहीं उनका बेटा Sunny खुद को Gadora empire का अगला prince समझता था।
-
-लेकिन reality ये थी कि Neel को उनकी boring corporate politics में रत्ती भर भी interest नही था।
-
-उसका असली obsession कुछ और ही था।
-
-उसकी private high-tech lab।
-
-दुनिया भर से high-density silicon wafers मँगवाकर उसने अपने दाएँ कान के पीछे temporal bone में एक prototype neural chip खुद surgically implant कर रखी थी।
-
-**GENI (Gemma-4 Neural Interface)।**
-
-उसका अपना 24/7 personal, in-skull AI assistant।
+उसका असली obsession था उसकी private high-tech lab... और temporal bone में surgically implant की गई उसकी वो prototype silicon chip—**GENI (Gemma-4 Neural Interface)**। उसका 24/7 personal, in-skull AI assistant।
 
 Neel stall से मुड़ा और घुटनों तक भरे पानी को चीरते हुए आगे बढ़ने लगा।
 
@@ -153,9 +139,9 @@ Neel सीधा नीचे गिर पड़ा।
 
 ---
 
-वो किसी normal gutter या नाले में नही गिरा था। Scene कुछ और ही level का था।
+वो किसी gutter या नाले में नही गिरा था।
 
-चारों तरफ दूधिया-सफेद light का एक massive, घूमता हुआ cosmic vortex था। एक ऐसा endless, blinding भंवर... जिसका literally न कोई start था, न कोई end।
+चारों तरफ दूधिया-सफेद light का एक massive, घूमता हुआ cosmic vortex था। एक ऐसा endless, blinding भंवर... जिसका न कोई start था, न कोई end।
 
 **The Celestial Cataract...**
 
@@ -182,23 +168,5 @@ Realms के बीच फैले administrative void के dead silence म
 *`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
 *`[STATUS: UNINDEXED / BLANK]`*  
 *`[DESTINY: OPEN GLITCH]`*
-
----
-
-Consciousness कब revive हुई, Neel को घंटा कुछ खबर नही थी।
-
-Endless darkness में डूबे रहने के बाद, जो पहला reality check उसे मिला...
-
-वो था गीली और सड़ती हुई hay के ढेर पर अपनी हड्डियों को rattle कर देने वाला एक brutal crash-landing!
-
-और गले में direct choke करती sulfur, राख और burning coal की toxic smell।
-
-Mumbai का monsoon scene अब permanently cut हो चुका था।
-
-Worli का वो multi-million dollar penthouse हमेशा के लिए पीछे छूट चुका था।
-
-Earth का 19-year-old billionaire tech prodigy... full unconscious state में, एक brutal, alien world के कचरे के ढेर पर dump हो चुका था।
-
-और उसे literally 1% भी idea नही था कि वो यहाँ किस glitch के थ्रू पहुँचा!
 
 ---

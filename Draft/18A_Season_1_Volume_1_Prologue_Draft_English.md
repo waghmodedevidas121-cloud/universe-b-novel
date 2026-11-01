@@ -2,7 +2,7 @@
 **File:** `D:\Web Novel\UNIVERSE B\Draft\18A_Season_1_Volume_1_Prologue_Draft_English.md`  
 **Format:** Official Modern Anime Dub Script (Derived Track)  
 **Track Status:** **DRAFT TRACK FOR REVIEW.** Secondary Track.  
-**Narrative Canon:** Subjective POV Blackout. The Kshira Sagara metaphysical transmutation (72,000 Nadis, Krutya forging) is embargoed to future nightmare/dream sequences; Neel is knocked out cold by the cosmic pressure with zero memory of the transit.  
+**Narrative Canon:** Subjective POV Blackout. The Kshira Sagara metaphysical transmutation is embargoed to future nightmare sequences; Neel is knocked out cold by the cosmic pressure with zero memory of the transit.  
 **Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #deva-vani-rule #english-dub #draft`  
 
 ---
@@ -83,11 +83,9 @@ Neel pulled his empty hand out, slid the Black Card back into his pocket, and le
 
 Neel. Nineteen years old, sole heir.
 
-Three years ago, when a horrific highway collision took the lives of his father Aarav Gadora and mother Suman Gadora, billions in equity, shipping docks, and tech patents transferred directly into Neel’s name. His uncle Kani Gadora and aunt Cheri Gadora ran the sprawling corporate empire. They pampered Neel and catered to his every whim—deliberately keeping him comfortable so he’d stay locked in his lab and never demand an audit of the family books. Their son Sunny strutted around like a corporate crown prince.
+Following his parents' death in an accident three years earlier, billions in equity, shipping docks, and tech patents had transferred directly into his name. Uncle Kani and Aunt Cheri ran the empire and pampered him rotten—anything to keep him busy in his lab and out of their boardrooms. Their son Sunny could play corporate prince all he wanted; Neel had zero interest in their paper politics.
 
-Neel couldn't have cared less about their boardroom posturing.
-
-His true obsession was his private high-tech laboratory. The place where he had spent months importing black-market silicon to self-implant an experimental direct neural chip behind his right temporal bone—**GENI (Gemma-4 Neural Interface)**. His personal, in-skull audio assistant.
+His real obsession was his private coastal lab... and the custom prototype silicon chip self-implanted behind his right temporal bone—**GENI (Gemma-4 Neural Interface)**. His 24/7 personal, in-skull AI assistant.
 
 Neel turned away from the food cart and stepped back into the flooded street.
 
@@ -111,9 +109,9 @@ Neel plummeted.
 
 ---
 
-He didn’t drop into any ordinary sewer drain. This was on a completely different level.
+He didn’t drop into a sewer drain.
 
-All around him was a massive, spiraling cosmic vortex of blinding white light—an endless, blinding chasm with literally no beginning and no end.
+All around him was a massive, churning cosmic vortex of blinding white light. An endless, blinding chasm with no beginning and no end.
 
 **The Celestial Cataract...**
 
@@ -140,23 +138,5 @@ Within the dead silence of the administrative void between realms, a single cold
 *`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
 *`[STATUS: UNINDEXED / BLANK]`*  
 *`[DESTINY: OPEN GLITCH]`*
-
----
-
-When consciousness finally revived, Neel had zero clue how much time had passed.
-
-After drowning in endless darkness, his first brutal reality check...
-
-Was the bone-rattling crash-landing face-down upon a mound of wet, rotting hay!
-
-And the toxic stench of sulfur, ash, and burning coal choking his throat.
-
-The Mumbai monsoon scene was permanently cut.
-
-The multi-million-dollar Worli penthouse was history.
-
-Earth’s 19-year-old billionaire tech prodigy... knocked out cold, had been dumped onto a garbage heap in a brutal, alien world.
-
-And he didn’t have a single percent of a clue how he’d glitched through to get here!
 
 ---
