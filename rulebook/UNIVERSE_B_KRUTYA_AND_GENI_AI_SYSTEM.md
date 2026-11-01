@@ -46,7 +46,7 @@ Neel Gadora, billionaire heir and engineering prodigy, refused to wait decades f
   - Communicated exclusively via direct acoustic micro-pulses into Neel's auditory nerve (whispering in his skull).
   - Tracked biometrics (heart rate, adrenaline, blood oxygen, neural load).
   - Calculated mechanical stress tolerances, trajectory physics, and structural leverage points during engineering builds.
-  - Provided dry, sarcastic, loyal banter—Neel’s private, pocket-sized Tony Stark JARVIS.
+  - Provided dry, sarcastic, loyal banter—Neel’s private, in-skull tactical assistant.
 
 ---
 
@@ -96,7 +96,7 @@ Graphene-Silicon Chip + Gemma-4 Neural Weights + Micro-Electrodes
 - **Why Did the Chip Survive? Neel's Indomitable Willpower:** 
   In the violent cosmic turbulence of the Kshira Sagara, an ordinary piece of micro-silicon would have been incinerated into dust. But Neel’s fierce, unyielding billionaire willpower (*Sankalpa-Shakti*) acted as an impenetrable psychic cocoon, keeping the chip structurally intact!
 - **Neel's Imagination Shapes the Interface (The Retinal AR HUD):**
-  Because Neel is a maverick engineer who spent thousands of hours in his lab designing Tony Stark-style AR HUDs, telemetry graphs, and diagnostic readouts, **his own imagination literally evolved GENI's functionality during the Kshira Sagara transit!**
+  Because Neel is a maverick engineer who spent thousands of hours in his lab designing futuristic AR HUDs, telemetry graphs, and diagnostic readouts, **his own imagination literally evolved GENI's functionality during the Kshira Sagara transit!**
   - GENI is able to project a **Direct Retinal / Optical AR Screen (Visual HUD)** straight into Neel's visual field!
   - **100% Private:** This visual interface is NOT a magical world-system that bystanders can see. It is an internal optical-neural projection visible **ONLY to Neel’s eyes** (like an internal Iron Man helmet display).
 

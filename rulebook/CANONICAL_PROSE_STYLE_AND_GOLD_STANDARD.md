@@ -21,7 +21,7 @@ flowchart TD
 
 कथेतील प्रत्येक सीनची संवेदी खोली, लय आणि भाषा खालील प्रमाणित आधुनिक हिंग्लिश मजकुराशी १००% जुळली पाहिजे:
 
-> *"सड़क के गहरे गड्ढे में सामने से आती लाल BEST bus पूरी रफ्तार में कूद पड़ी। छपाक! काले नाले के खौलते पानी की एक मोटी धार हवा में उछली। Railing के ऊपर से होती हुई, वो सारी गंदगी सीधे Neel के चेहरे, गले और उसके premium ash-grey cashmere hoodie पर आ गिरी। Neel 5 seconds तक बिना हिले-डुले वहीं खड़ा रहा। फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर Tony Stark जैसी एक तीखी, बेपरवाह मुस्कान तैर गई। 'शाबाश, BEST। Worli की safe lab छोड़कर खुद prototype parts लेने निकला था, और Mumbai ने सीधा gutter के पानी से स्वागत किया। Classic civic infrastructure।'"*
+> *"सड़क के गहरे गड्ढे में सामने से आती लाल BEST bus पूरी रफ्तार में कूद पड़ी। छपाक! काले नाले के खौलते पानी की एक मोटी धार हवा में उछली। Railing के ऊपर से होती हुई, वो सारी गंदगी सीधे Neel के चेहरे, गले और उसके premium ash-grey cashmere hoodie पर आ गिरी। Neel 5 seconds तक बिना हिले-डुले वहीं खड़ा रहा। फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर एक तीखी, बेपरवाह और आत्मविश्वासी मुस्कान तैर गई। 'शाबाश, BEST। Worli की safe lab छोड़कर खुद prototype parts लेने निकला था, और Mumbai ने सीधा gutter के पानी से स्वागत किया। Classic civic infrastructure।'"*
 
 ---
 
@@ -31,9 +31,9 @@ flowchart TD
 * ❌ **Telling (निषिद्ध):** *"नील खूप श्रीमंत होता आणि टोनी स्टार्कसारखा हुशार होता."* (हे बायोडेटा वाचल्यासारखे वाटते).
 * ✅ **Showing (अनिवार्य):** *खिशात ₹1,00,000 daily limit चा Centurion Black Card, 3 feet पाण्यात hydro-lock पडलेली customized sports coupe, Germany वरून मागवलेले safe silicon wafers, आणि Dadar मध्ये network गेल्यामुळे ₹15 च्या Vada Pav साठी ₹4 short असणारा हसणारा 19 वर्षीय बिलियनेअर जीनियस दाखवा!*
 
-### नियम १.१: NEEL'S TONY STARK & TECH PRODIGY PERSONA
+### नियम १.१: NEEL'S MAVERICK BILLIONAIRE TECH PRODIGY PERSONA
 * **Neel चा मूळ स्वभाव:** 19 वर्षांचा Gadora Empire चा इकलौता वारिस (अरबोंची equity, shipping docks आणि patents). Worli Sea Face वरील पेंटहाऊसमध्ये स्वतःची private high-tech lab चालवणारा आणि डोक्यात स्वतः implant केलेली open-source Gemma 4 neural chip (GENI) बाळगणारा ब्रिलियंट टेक जीनियस.
-* **कथेतील वापर:** जेव्हा तो संकटात सापडतो, तेव्हा तो लाचार किंवा दीनवाणा होत नाही. तो चेहऱ्यावर बेपरवाह, उपरोधिक हास्य (Tony Stark swagger) आणतो आणि इंजिनिअरिंग प्रिसिजनने परिस्थितीचे विश्लेषण करतो:
+* **कथेतील वापर:** जेव्हा तो संकटात सापडतो, तेव्हा तो लाचार किंवा दीनवाणा होत नाही. तो चेहऱ्यावर बेपरवाह, उपरोधिक हास्य (maverick billionaire swagger) आणतो आणि इंजिनिअरिंग प्रिसिजनने परिस्थितीचे विश्लेषण करतो:
   * *"हजारों करोड़ का empire, pocket में ₹1 Lakh limit वाला Black Card, और मैं एक Vada Pav के लिए ₹4 short हूँ क्योंकि बारिश में इस शहर का server down हो गया। Classic।'"*
 
 ### नियम १.२: THE 3 CINEMATIC CRAFT LAWS (संवाद, लढाई आणि जग दाखवण्याचे ३ नियम)

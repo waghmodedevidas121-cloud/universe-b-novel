@@ -1,6 +1,6 @@
 # NEEL GADORA — THE MAVERICK BILLIONAIRE DRIFTER
 *(Official Canonical Character Dossier & Psychological Architecture for Universe B)*
-**Character Archetype:** The Billionaire Tech Prodigy • The Maverick Engineer • The Tony Stark of the Astral Sieve.
+**Character Archetype:** The Billionaire Tech Prodigy • The Maverick Engineer • The Sovereign of Silicon and Steel.
 
 ---
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Personality, Charisma & Psychological Profile (The Tony Stark Trait Architecture)
+## 2. Personality, Charisma & Psychological Profile (The Maverick Prodigy Architecture)
 
 ### 2.1 Unflinching Confidence & High-Stakes Swagger
 Neel does **NOT** suffer from the generic fantasy protagonist syndrome of feeling poor, helpless, insecure, or self-pitying. 
@@ -35,7 +35,7 @@ Neel does **NOT** suffer from the generic fantasy protagonist syndrome of feelin
 - He possesses a razor-sharp, effortless wit—dry, mocking, charismatic, and always two steps ahead of whoever is trying to intimidate him.
 
 ### 2.2 The Playful Playboy & Magnetic Charm (Harem Appeal)
-Like Tony Stark, Neel possesses natural, effortless magnetism:
+Neel possesses natural, effortless magnetism:
 - He is flirtatious, dangerously charming, quick with double-entendres, and unfazed by powerful, beautiful, or dangerous women (whether corporate bank arbitrators, elven huntresses, or fierce asura warriors).
 - He treats high-born ladies not with timid reverence, but with easy, playful irreverence—a trait that immediately catches them off guard in a feudal, hierarchical world where commoners cower.
 

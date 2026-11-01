@@ -3,7 +3,7 @@
 **Format:** Official Modern Anime Dub Script (Crunchyroll & Muse India Style)  
 **Track Status:** **DRAFT TRACK FOR REVIEW.** Primary Master.  
 **Language Contract:** Places, ranks, classes, currency, technology, and English loanwords stay in Roman English. Narration and dialogue in natural spoken Hinglish ending with `।`.  
-**Tags:** `#prologue #volume-1 #season-1 #neel #tony-stark-archetype #geni-ai #krutya #hindi-dub #draft`  
+**Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #geni-ai #krutya #hindi-dub #draft`  
 
 ---
 
@@ -32,7 +32,7 @@ Railing के ऊपर से होती हुई, वो सारी ग�
 
 Neel 5 seconds तक बिना हिले-डुले वहीं खड़ा रहा। न उसने पलक झपकाई। न चेहरा पोंछा।
 
-फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर Tony Stark जैसी एक तीखी, बेपरवाह मुस्कान तैर गई।
+फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर एक तीखी, बेपरवाह और आत्मविश्वासी मुस्कान तैर गई।
 
 Traffic में फँसी bus की red tail-lights को घूरते हुए उसने दाँत दिखाए।
 
@@ -138,7 +138,7 @@ Ordinary world का कोई भी electronic circuit उस cosmic pressure
 
 Atharva Veda के प्राचीन occult science की तरह, वो metal और open-source code की रचना एक जागृत **Krutya (कृत्या — An Engineered Metaphysical Entity)** में बदल गई! GENI को प्राप्त हुआ **'Manas' (मानस — Awakened Consciousness)**—जो biological soul नही था, लेकिन Neel के existence और उसकी willpower के साथ 100% loyalty में बंधा एक supreme cognitive system था!
 
-और क्योंकि Neel एक ऐसा tech prodigy था जिसकी imagination हमेशा Tony Stark जैसे visual interface और retinal HUDs को जीती थी—उसकी अपनी imagination ने GENI के display core को evolve कर दिया!
+और क्योंकि Neel एक ऐसा tech prodigy था जिसकी imagination हमेशा futuristic visual telemetry और retinal HUDs को जीती थी—उसकी अपनी imagination ने GENI के display core को evolve कर दिया!
 
 Neel के visual cortex और auditory nerve में GENI की sharp, velvety, slightly sarcastic feminine आवाज गूँजी:
 

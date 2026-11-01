@@ -12,7 +12,7 @@ Why do typical Hindi translations and web novel adaptations feel awkward, stiff,
 1. **The "Doordarshan / Textbook" Trap:** Using literary, bookish Sanskritized or Persianized vocabulary (*धँसी, आस्तीन, महफूज, बुदबुदाया, तत्पश्चात, प्राचीर*) that no real 19-year-old in India has spoken in fifty years.
 2. **The "Pretentious Surname" Trap:** Constantly repeating the full name (*Neel Gadora, Neel Gadora*) like a legal affidavit instead of calling him simply **Neel**.
 3. **The "Script Clutter" Trap:** Forcing natural English loanwords into Devanagari transliteration (`स्मार्टफोन, माइक्रोकंट्रोलर्स, सेंचुरियन ब्लैक कार्ड`). Modern Indian youth read English words 10x faster in **Roman script** (`smartphone, micro-controllers, Centurion Black Card`).
-4. **The "Miserable Victim" Trap:** Writing the protagonist as a groveling, tearful beggar instead of an arrogant, brilliant, charismatic billionaire prodigy (**The Tony Stark Archetype**).
+4. **The "Miserable Victim" Trap:** Writing the protagonist as a groveling, tearful beggar instead of an arrogant, brilliant, charismatic billionaire prodigy (**The Maverick Billionaire Prodigy Archetype**).
 
 ### The Golden Rule of Universe B
 > **If an urban, college-going Indian youth watching an anime on Crunchyroll or binge-watching Farzi on Prime Video wouldn't say it in natural conversation, IT DOES NOT BELONG IN THIS NOVEL.**
@@ -72,7 +72,7 @@ All technical terms, transit nouns, modern clothing, financial instruments, and 
 
 ---
 
-## 5. THE TONY STARK PROTAGONIST ARCHETYPE (NEEL)
+## 5. THE MAVERICK BILLIONAIRE PRODIGY ARCHETYPE (NEEL)
 
 1. **Wealth as Baseline, Not Motivation:** Neel does not enter the Astral Realm to "get rich" or "pay off family debt". He was already the richest 19-year-old in Mumbai with thousands of crores in equity.
 2. **Humor in Absurdity:** When his Centurion Black Card (Daily limit: ₹1,00,000) is rejected by a roadside Vada Pav stall because Dadar flooded and cell towers crashed, he doesn't despair—he laughs at the irony.
@@ -117,6 +117,6 @@ All technical terms, transit nouns, modern clothing, financial instruments, and 
 >  
 > *Neel 5 seconds तक बिना हिले-डुले वहीं खड़ा रहा। न उसने पलक झपकाई। न चेहरा पोंछा।*  
 >  
-> *फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर Tony Stark जैसी एक तीखी, बेपरवाह मुस्कान तैर गई।*  
+> *फिर hoodie की sleeve से उसने casual अंदाज में चेहरा साफ किया। चेहरे पर न कोई लाचारी थी, न शर्मिंदगी—बल्कि होंठों के कोने पर एक तीखी, बेपरवाह और आत्मविश्वासी मुस्कान तैर गई।*  
 >  
 > *"शाबाश, BEST। Worli की safe lab छोड़कर खुद prototype parts लेने निकला था, और Mumbai ने सीधा gutter के पानी से स्वागत किया। Classic civic infrastructure।"*

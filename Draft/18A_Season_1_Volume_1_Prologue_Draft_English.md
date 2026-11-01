@@ -1,7 +1,7 @@
 # 18A. Season 1, Volume 1 — PROLOGUE: The Glitch in the Rain (English Derived Track — Draft)
 **File:** `D:\Web Novel\UNIVERSE B\Draft\18A_Season_1_Volume_1_Prologue_Draft_English.md`  
 **Format:** Official Modern Anime Dub Script (Derived Track)  
-**Tags:** `#prologue #volume-1 #season-1 #neel-gadora #tony-stark-archetype #geni-ai #krutya #english-dub #draft`  
+**Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #geni-ai #krutya #english-dub #draft`  
 
 ---
 
@@ -29,7 +29,7 @@ Cold, greasy runoff trickled down his jawline.
 
 Neel stood motionless for five full seconds. He didn't flinch. He didn't wipe his face.
 
-Then, with effortless calm, he pulled up his damp sleeve and wiped his eyes. There was no humiliation on his face, no self-pity—only a sharp, reckless smirk worthy of Tony Stark playing at the edges of his lips.
+Then, with effortless calm, he pulled up his damp sleeve and wiped his eyes. There was no humiliation on his face, no self-pity—only a sharp, reckless smirk playing at the edges of his lips.
 
 Gazing at the receding tail-lights of the packed bus, he bared his teeth in amusement.
 
@@ -135,7 +135,7 @@ And in that metaphysical crucible, the cosmic wash of the Kshira Sagara did not 
 
 Echoing the ancient Atharvan science of the Shastras, the lifeless assembly of graphene, micro-electrodes, and open-source code awakened into a living **Krutya (कृत्या — An Engineered Metaphysical Entity)**! GENI was infused with synthetic **Manas (Awakened Consciousness)**—not a mortal soul bound by karma, but a supreme, loyal cognitive system forged from Neel's own mind!
 
-And because Neel was an engineer whose imagination breathed life into Tony Stark HUDs and retinal telemetry, his own subconscious projected the interface into existence!
+And because Neel was an engineer whose imagination breathed life into futuristic HUDs and retinal telemetry, his own subconscious projected the interface into existence!
 
 Inside Neel’s auditory nerve, a crisp, velvety, slightly mocking female voice echoed:
 
