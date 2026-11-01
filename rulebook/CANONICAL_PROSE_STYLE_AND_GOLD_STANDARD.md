@@ -89,6 +89,17 @@ flowchart TD
 * ❌ *Arka, Karna, Bhima, Drona, Kansa, Parikshita, Paundraka, Shrutayudha*
 * ✅ **Ark (अर्क), Karn (कर्ण), Bheem (भीम), Dron (द्रोण), Kans (कंस), Parikshat (परीक्षित), Paundra (पौण्ड्र), Jaras (जरस)**
 
+### नियम २.३: THE DEVA-VANI TIERED NOMENCLATURE RULE (दैव-वाणी नियम)
+* **मूळ तत्त्व:** संस्कृत ही विश्वाची मूळ दैवी भाषा (**Deva-Vani / Para-Vak**) आहे.
+* **लो-टायर / सुरुवातीचा स्तर:** Volume 1–2 मधील बफर झोन, डस्ट ट्रेंच आणि सामान्य रस्त्यांवर उच्च संस्कृत संज्ञा थेट न वापरता त्यांची **इंग्रजी / व्यावहारिक रूपे** वापरावीत:
+  * **Kshira Sagara** $\rightarrow$ **The Celestial Cataract** *(or The Milky Funnel / Cosmic Sieve)*
+  * **Svarga-Loka** $\rightarrow$ **Heaven** *(or The Sky Citadel)*
+  * **Patala** $\rightarrow$ **The Cursed Realm** *(or The Core Abyss)*
+  * **Chitragupta Archive** $\rightarrow$ **The Sieve Registry / Cosmic Ledger**
+  * **Indra-Upadhi** $\rightarrow$ **The Sovereign / The Gold Chair**
+  * **Manu-Upadhi** $\rightarrow$ **The Iron Sovereign / The Central King**
+* **उच्च स्तरीय प्रकटीकरण:** जेव्हा Neel चा दर्जा Grade 5 वरून वर चढेल, तेव्हाच उच्च इनक्विझिटर्स आणि ऋषींकडून मूळ **Deva-Vani (संस्कृत)** नावे समोर येतील.
+
 ### नियम ३: ROMAN SCRIPT FOR EVERYDAY ENGLISH WORDS
 रोजच्या बोलण्यातले इंग्रजी शब्द देवनागरीत न लिहिता **Roman Script** मध्येच लिहा, पण अवयव आणि मूलभूत क्रिया हिंदीत ठेवा:
 * ✅ **हे Roman मध्ये लिहा:** `phone`, `battery`, `screen`, `BEST bus`, `hoodie`, `sleeve`, `cashmere`, `sneakers`, `silicon wafers`, `micro-controllers`, `Centurion Black Card`, `sports coupe`, `hydro-lock`, `Vada Pav`, `GENI`, `pass`, `second`, `traffic`, `cart`, `upgrade`, `luck`, `power button`, `safe`, `short`, `rank`, `badge`, `spire`, `dorm`.

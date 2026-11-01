@@ -111,7 +111,7 @@ Neel plummeted.
 
 He did not crash into a drain.
 
-He was falling through infinite dimensional depths inside a violent, spiraling vortex of milky-white radiance—**The Kshira Sagara**, the cosmic funnel separating the mortal realm from the higher heavens.
+He was falling through thousands of feet within a colossal, spiraling vortex of milky-white radiance—**The Celestial Cataract**, the cosmic funnel of the Kshira Sagara separating the mortal realm from the higher heavens.
 
 There was no air, yet his lungs did not collapse.
 
@@ -121,7 +121,7 @@ Inside that roaring celestial cataract, the immense tidal drag of cosmic pressur
 
 Within his subtle body, **72,000 Nadis**—the ancient, dormant energy channels mapped by Vedic rishis—snapped open in a single blinding instant. Centuries of calcified mortal blockage were scoured clean by the rushing aether.
 
-Yet, lacking formal sadhana or an anchoring mantra, those seventy-two thousand meridians collapsed back into cold silence—like an empty riverbed after a flash flood. Only a single microscopic thread within his right wrist remained hot, vibrating like a live cinder.
+Yet, lacking formal sadhana or an anchoring mantra, those 72,000 Nadis collapsed back into cold silence—like an empty riverbed after a flash flood. Only a single microscopic thread within his right wrist remained hot, vibrating like a live cinder.
 
 And then, the cosmic tidal force slammed directly against the micro-silicon implant embedded behind his ear!
 

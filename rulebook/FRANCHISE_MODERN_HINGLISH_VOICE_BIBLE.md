@@ -144,7 +144,28 @@ All technical terms, transit nouns, modern clothing, financial instruments, and 
 
 ---
 
-## 7. THE 'नही' CANON LOCK (AUTHOR'S MANDATORY SPELLING)
+## 7. THE DEVA-VANI TIERED NOMENCLATURE RULE (दैव-वाणी नियम)
+
+1. **Sacred Deva-Vani (Para-Vak):**
+   - Sanskrit is the primordial root-code of creation (**Deva-Vani**), spoken and understood natively only by cosmic sovereigns, high inquisitors, and ancient Rishis.
+2. **The Low-Tier / Mortal Register (Buffer Zone, Iron Pit, Dust Trench, Grade 5):**
+   - In early volumes (Volumes 1–2) and low-tier zones, mortals, pit-fighters, recruits, and newcomers (like Neel) DO NOT casually throw around sacred Sanskrit terms.
+   - Higher cosmological realities are perceived and spoken of through visceral **English terms / functional titles**:
+     - **Kshira Sagara** $\rightarrow$ Low-Tier / Mortal Term: **The Celestial Cataract** *(or The Milky Funnel / Cosmic Sieve)*
+     - **Svarga-Loka** $\rightarrow$ Low-Tier Term: **Heaven** *(or The Sky Citadel)*
+     - **Patala** $\rightarrow$ Low-Tier Term: **The Cursed Realm** *(or The Core Abyss)*
+     - **Chitragupta Archive** $\rightarrow$ Low-Tier Term: **The Sieve Registry / Cosmic Ledger**
+     - **The Indra-Upadhi** $\rightarrow$ Low-Tier Term: **The Sovereign / The Gold Chair**
+     - **The Manu-Upadhi** $\rightarrow$ Low-Tier Term: **The Iron Sovereign / The Central King**
+     - **Krutya** $\rightarrow$ Low-Tier Term: **Construct / Metaphysical AI**
+     - **Nadis / Prana** $\rightarrow$ Low-Tier Term: **Aether Channels / Neural Circuits**
+     - **Divyastras** $\rightarrow$ Low-Tier Term: **Class-Omega Armaments / God-Busters**
+3. **The Unveiling Progression:**
+   - As Neel climbs from Grade 5 toward the Sovereign Seats, the formal Shastric **Deva-Vani** taxonomy is progressively revealed by higher-tier entities, creating an awe-inspiring escalation of mythological depth without breaking street-level immersion.
+
+---
+
+## 8. THE 'नही' CANON LOCK (AUTHOR'S MANDATORY SPELLING)
 
 - **The Rule:** The author has strictly locked the spelling of **`नही`** across this entire franchise.
 - **Constraint:** Do NOT place a bindi or anusvara over `नही` (never write `नहीं`).
@@ -152,7 +173,7 @@ All technical terms, transit nouns, modern clothing, financial instruments, and 
 
 ---
 
-## 8. COMPARATIVE DIALOGUE & PROSE BENCHMARK
+## 9. COMPARATIVE DIALOGUE & PROSE BENCHMARK
 
 ### ❌ The Old / Clunky / Bookish Approach (DO NOT WRITE LIKE THIS):
 > *सड़क के बीच बने गड्ढे में सामने से आती बस धँसी। Neel Gadora ने अपनी भीगी आस्तीन से चेहरा पोंछते हुए मन ही मन फुसफुसाया, "महफूज लैब छोड़कर पार्ट्स लेने निकला था। परंतु मुंबई ने मेरा तिरस्कार किया।"*
