@@ -4,6 +4,8 @@
 **Track Status:** **DERIVED DUB.** Derived beat-for-beat from `19_Season_1_Chapter_1_Hindi.md` (the primary authored master).  
 **Setting:** Beast-Cart Caravan outside Central City — Morning, Season 1  
 
+**Canonical Lock:** [STRICT READ-ONLY LOCKED — AUTHOR APPROVED. NO EDITS ALLOWED WITHOUT USER EXPLICIT COMMAND]
+
 ---
 
 ### [SEASON 1 • VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT]

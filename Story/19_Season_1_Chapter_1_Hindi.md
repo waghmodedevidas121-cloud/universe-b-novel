@@ -5,6 +5,8 @@
 **Language Contract:** Places, ranks, classes, currency and names stay Roman English. Narration and dialogue in conversational Hindi ending with `।`. Rules: `rules/hindi_dub_lexicon.md`.  
 **Tags:** `#chapter-1 #season-1 #volume-1 #neel #sheru #boran #one-rupee-hustle #hindi-dub #master-track #canon-lock`  
 
+**Canonical Lock:** [STRICT READ-ONLY LOCKED — AUTHOR APPROVED. NO EDITS ALLOWED WITHOUT USER EXPLICIT COMMAND]
+
 ---
 
 ### [SEASON 1 • VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT]

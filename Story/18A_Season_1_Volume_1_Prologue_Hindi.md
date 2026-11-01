@@ -4,6 +4,8 @@
 **Track Status:** **PRIMARY MASTER.** Authored first; the English file is derived from it.  
 **Tags:** `#prologue #volume-1 #season-1 #neel-origin #bombay #dadar #hindi-dub #master-track #canon-lock`  
 
+**Canonical Lock:** [STRICT READ-ONLY LOCKED — AUTHOR APPROVED. NO EDITS ALLOWED WITHOUT USER EXPLICIT COMMAND]
+
 ---
 
 # SEASON 1 • VOLUME 1: THE MUD, THE BEAST & THE D-TIER BLOOD-PIT
