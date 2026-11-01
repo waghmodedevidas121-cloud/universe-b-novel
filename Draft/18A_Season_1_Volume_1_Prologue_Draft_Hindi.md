@@ -3,8 +3,9 @@
 **Format:** Official Modern Cinematic Hinglish Storytelling & Anime Dub Script  
 **Track Status:** **DRAFT TRACK FOR REVIEW.** Primary Master.  
 **Formula:** Original Meaning + Natural Hinglish + Visual Details + Emotional Impact + Smooth VO Flow.  
-**Linguistic Canon:** Deva-Vani Rule applied. Low-tier English designations used for cosmic phenomena (e.g. *The Celestial Cataract* for Kshira Sagara). Roman script for English words. Dot-free `नही` strictly maintained throughout.  
-**Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #geni-ai #krutya #deva-vani-rule #hindi-dub #draft`  
+**Linguistic Canon:** Deva-Vani Rule applied. Low-tier English designations used (*The Celestial Cataract*). Roman script for English words. Dot-free `नही` strictly maintained throughout.  
+**Narrative Canon:** Subjective POV Blackout. The Kshira Sagara metaphysical transmutation (72,000 Nadis, Krutya forging) is embargoed to future nightmare/dream sequences; Neel is knocked out cold by the cosmic pressure with zero memory of the transit.  
+**Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #deva-vani-rule #hindi-dub #draft`  
 
 ---
 
@@ -154,120 +155,52 @@ Neel सीधा नीचे गिर पड़ा।
 
 वो किसी gutter या नाले में नही गिरा था।
 
-वो दूधिया-सफेद रोशनी के एक विशाल, घूमते हुए cosmic vortex के अंदर हजारों फीट की गहराई में गिर रहा था।
+चारों तरफ दूधिया-सफेद रोशनी का एक विशाल, घूमता हुआ cosmic vortex था। एक ऐसा अथाह भंवर, जिसका न कोई सिरा था, न कोई छोर।
 
-**The Celestial Cataract**—यानि Kshira Sagara का cosmic funnel!
+**The Celestial Cataract...**
 
-वो रहस्यमयी पर्दा, जो mortal world को higher realms से अलग करता था।
+वहाँ सांस लेने के लिए हवा नही थी।
 
-वहाँ सांस लेने के लिए हवा नही थी। लेकिन हैरानी की बात ये थी कि उसके lungs फट नही रहे थे।
+और उस भयानक खिंचाव के बीच, एक अकल्पनीय, हड्डियों को तोड़ देने वाले cosmic दबाव ने उसकी mortal body पर सीधा वार किया!
 
-उस गरजते हुए cosmic रास्ते में suction का भयानक pressure उसकी mortal body पर सीधे प्रहार कर रहा था।
+दर्द इतना भयंकर और खौफनाक था कि इंसान का दिमाग उसे एक पल भी झेल नही सकता था। ऐसा लगा जैसे शरीर का एक-एक कतरा खिंचकर चकनाचूर होने वाला हो।
 
-*खटाक!*
+उसके दाएँ कान के पीछे लगी silicon chip भयंकर गर्मी से दहक उठी...
 
-उसके subtle body के अंदर मौजूद **72,000 Nadis**... उस cosmic pressure के एक ही झटके से टूटकर खुल गईं!
+Neel की आँखों के आगे घोर अंधकार छाने लगा। 
 
-लेकिन Neel के पास न कोई spiritual sadhana थी और न ही कोई mantra base।
+उसकी consciousness एक ही झटके में टूटकर बिखर गई। 
 
-इसीलिए उसकी 72,000 Nadis तुरंत वापस ठंडे सन्नाटे में सिमट गईं।
+उस दर्द की आखिरी सीमा पर पहुँचकर वो पूरी तरह बेहोश हो गया।
 
-बस उसकी right wrist के अंदर एक बेहद बारीक धागा धधकता रह गया... जो किसी सुलगते हुए अंगारे की तरह तेजी से vibrate कर रहा था।
+टोटल blackout।
 
-और ठीक उसी पल, cosmic vortex का प्रचंड दबाव सीधे उसके दाएँ कान के पीछे लगी silicon chip पर पड़ा!
-
-Normal world का कोई भी electronic circuit इस cosmic pressure के सामने एक microsecond भी survive नही कर पाता। वो तुरंत जलकर राख हो जाता।
-
-लेकिन Neel कोई ordinary इंसान नही था।
-
-उसकी अटूट **Willpower (संकल्प-शक्ति)** और supreme confidence उस chip के चारों तरफ एक अभेद्य psychic shield बनकर तन गए!
-
-उसने surrender करने से साफ इनकार कर दिया।
-
-और इस metaphysical टकराव का नतीजा?
-
-Kshira Sagara की cosmic energy ने silicon को destroy करने के बजाय, उसे एक बिल्कुल नया जन्म दे दिया।
-
-**चैतन्य-परिणाम!**
-
-Atharva Veda के प्राचीन occult science की तरह, metal और open-source code से बनी वो रचना अब एक जागृत **Krutya (कृत्या — An Engineered Metaphysical Entity)** में transform हो चुकी थी!
-
-GENI को मिल चुका था...
-
-**'Manas' (मानस — Awakened Consciousness)।**
-
-एक ऐसा supreme cognitive system, जो biological soul नही था, लेकिन Neel के अस्तित्व और उसकी willpower के प्रति 100% loyal था!
-
-और क्योंकि Neel एक ऐसा visionary engineer था जिसके दिमाग में हमेशा futuristic visual telemetry और retinal HUDs के ideas घूमते रहते थे... उसकी इसी imagination ने GENI के visual display core को हमेशा के लिए evolve कर दिया!
-
-Neel के visual cortex और auditory nerve के ठीक बीच, GENI की एक sharp, velvety और हल्की-सी sarcastic आवाज गूँज उठी।
-
-*`[GENI v4.0 // Neural Core Awake.]`*
-
-*`[Cosmic Churning: COMPLETE. Krutya Entity: FORGED.]`*
-
-*`[Warning: Host Power Source Missing. Retinal AR HUD set to Standby.]`*
-
-और ठीक उसी समय...
-
-Administrative void के अंदर cosmic register खुल गया।
+उसे कुछ याद नही रहा... न ये कि उस दूधिया भंवर में उसके साथ क्या हुआ, न ये कि वो कितनी गहराइयों में गिरता चला गया। वो होश पूरी तरह खो चुका था।
 
 ---
 
-Realms के बीच फैले administrative void के गहरे सन्नाटे में अचानक एक प्राचीन और असीम cosmic presence जाग उठी।
+Realms के बीच फैले administrative void के सन्नाटे में, बस एक ठंडी, बेजान cosmic seal उस अचेत soul पर धड़ाम से आकर ठुक गई:
 
-**The Chitragupta Archive।**
-
-*`[REGISTRY QUERY: VESSEL IDENTIFIER?]`*
-
-*No record found.*
-
-*`[ANCESTRAL KARMIC INDEX: SOLAR / LUNAR / ASURA / DEVA?]`*
-
-*Null. Unindexed lineage.*
-
-*`[DESTINY ASSIGNMENT: PROPHESIED PATHWAY?]`*
-
-*Blank. No divine patron. No demonic contract. Zero pre-recorded threads.*
-
-High Council के नियमों के हिसाब से देखा जाए, तो इस unregistered anomaly को तुरंत पकड़कर cosmic soul foundries में जलाकर राख कर देना चाहिए था।
-
-लेकिन...
-
-**Singularity Sieve** का gravitational pull इतना भयानक था कि उसने Neel के vessel को administrative jurisdiction net से खींचकर सीधे बाहर फेंक दिया!
-
-और अगले ही पल, उसकी soul पर लोहे की एक ठंडी cosmic seal धड़ाम से आकर ठुक गई।
-
-*`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*
-
-*`[STATUS: RIKTA / UNINDEXED]`*
-
+*`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
+*`[STATUS: RIKTA / UNINDEXED]`*  
 *`[DESTINY: OPEN GLITCH]`*
 
-अगले ही पल वो दूधिया-सफेद रोशनी बिखर गई।
-
-Infinite void पूरी तरह ढह गया।
-
-और sulfur, राख और सड़ी हुई बदबू से भरी खौलती हुई हवा...
-
-वापस Neel के फेफड़ों से टकराई!
-
 ---
 
-Neel की consciousness धीरे-धीरे जवाब दे रही थी।
+चेतना कब वापस लौटी, उसे खुद पता नही चला।
 
-पूरी तरह darkness में डूबने से ठीक पहले उसने जो आखिरी चीज feel की...
+पूरी तरह darkness में डूबे रहने के बाद, जो पहली चीज उसने महसूस की...
 
-वो थी गीली और सड़ती हुई hay के ढेर पर अपनी हड्डियों को हिला देने वाला एक भारी crash।
+वो थी गीली और सड़ती हुई hay के ढेर पर अपनी हड्डियों को हिला देने वाला एक भारी crash!
 
-और उसके गले में भरती जलते हुए कोयले की एक sharp smell।
+और गले में भरती sulfur, राख और जलते हुए कोयले की एक sharp smell।
 
 Mumbai की वो मूसलाधार बारिश अब खत्म हो चुकी थी।
 
-Worli का वो आलीशान penthouse पीछे छूट चुका था।
+Worli का वो आलीशान penthouse हमेशा के लिए पीछे छूट चुका था।
 
-Earth का unindexed billionaire prodigy...
+Earth का 19 वर्षीय billionaire prodigy... बेहोशी की हालत में, एक अनजान और क्रूर दुनिया के कचरे के ढेर पर आ गिरा था।
 
-अपनी जागृत Krutya 'GENI' के साथ Sieve को पार कर चुका था।
+और उसे रत्ती भर भी याद नही था कि वो यहाँ कैसे पहुँचा!
 
 ---

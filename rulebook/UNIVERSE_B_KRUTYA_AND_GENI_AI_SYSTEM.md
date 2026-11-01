@@ -108,6 +108,20 @@ Graphene-Silicon Chip + Gemma-4 Neural Weights + Micro-Electrodes
      and diagnostic telemetry directly onto his retina.
    - Only Neel can see this display; to the rest of the world, he is just a mortal brawler.
 
+2. AUDITORY NERVE TELEMETRY (Temporal Bone Conduction):
+   - Sarcastic, velvety, highly efficient feminine voice whispering tactical solutions,
+     structural weaknesses, and system warnings directly into Neel's ear.
+
+3. EMBRYONIC ANANTA-SONAR (Bi-Directional Pulse Sensing):
+   - By syncing with the Astral Realm's environmental ambient aether, GENI can emit 
+     micro-acoustic pings to map room geometries and lurking threats.
+```
+
+### 4.4 Narrative Delivery Mandate: The Nightmarish Dream Unveiling
+- **Prologue Subjective Blackout:** In the Prologue, Neel experiences only a blinding whiteout, unbearable bone-crushing cosmic pressure, a searing burn behind his ear, and a total blackout. He has ZERO conscious memory of the transit or how he survived.
+- **Exposition Embargo:** The detailed metaphysical mechanics (the 72,000 Nadis rupturing, the indomitable willpower cocoon, the Atharvan Krutya forging, and Chaitanya-Parinama) are **strictly withheld from early narrative exposition**.
+- **The Horror Instinct / Nightmare Vehicle:** The full, terrifying truth of the Kshira Sagara transit is unveiled organically in later chapters through **visceral, horror-tinged nightmares and dream instincts** when Neel sleeps or faces near-death trauma, preserving peak cosmic mystery and horror intensity!
+
 2. INTERNAL AUDITORY WHISPER (Madhyama-Vak):
    - Speaks directly inside Neel’s right ear / skull in a crisp, sharp, slightly mocking, 
      immensely loyal female vocal persona.

@@ -1,7 +1,9 @@
 # 18A. Season 1, Volume 1 — PROLOGUE: The Glitch in the Rain (English Derived Track — Draft)
 **File:** `D:\Web Novel\UNIVERSE B\Draft\18A_Season_1_Volume_1_Prologue_Draft_English.md`  
 **Format:** Official Modern Anime Dub Script (Derived Track)  
-**Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #geni-ai #krutya #english-dub #draft`  
+**Track Status:** **DRAFT TRACK FOR REVIEW.** Secondary Track.  
+**Narrative Canon:** Subjective POV Blackout. The Kshira Sagara metaphysical transmutation (72,000 Nadis, Krutya forging) is embargoed to future nightmare/dream sequences; Neel is knocked out cold by the cosmic pressure with zero memory of the transit.  
+**Tags:** `#prologue #volume-1 #season-1 #neel #maverick-billionaire-prodigy #deva-vani-rule #english-dub #draft`  
 
 ---
 
@@ -107,83 +109,56 @@ The street, the diesel fumes, the blaring horns, the amber streetlights—everyt
 
 Neel plummeted.
 
-***
+---
 
 He did not crash into a drain.
 
-He was falling through thousands of feet within a colossal, spiraling vortex of milky-white radiance—**The Celestial Cataract**, the cosmic funnel of the Kshira Sagara separating the mortal realm from the higher heavens.
+All around him was a colossal, churning cosmic vortex of blinding white radiance. A bottomless celestial cataract with no ceiling and no floor.
 
-There was no air, yet his lungs did not collapse.
+**The Celestial Cataract...**
 
-Inside that roaring celestial cataract, the immense tidal drag of cosmic pressure struck his mortal frame.
+There was no air to breathe.
 
-*CRACK!*
+And then, amidst that terrifying drag, an unimaginable, bone-crushing cosmic pressure slammed squarely against his mortal frame!
 
-Within his subtle body, **72,000 Nadis**—the ancient, dormant energy channels mapped by Vedic rishis—snapped open in a single blinding instant. Centuries of calcified mortal blockage were scoured clean by the rushing aether.
+The agony was so horrific and absolute that mortal consciousness could not endure it for a single second. It felt as though every fiber of his being was being ripped apart at the seams.
 
-Yet, lacking formal sadhana or an anchoring mantra, those 72,000 Nadis collapsed back into cold silence—like an empty riverbed after a flash flood. Only a single microscopic thread within his right wrist remained hot, vibrating like a live cinder.
+Behind his right ear, the embedded silicon chip flared with searing, blinding heat...
 
-And then, the cosmic tidal force slammed directly against the micro-silicon implant embedded behind his ear!
+Total darkness rushed across Neel’s eyes.
 
-Any ordinary electronic circuit would have been vaporized into subatomic ash within a microsecond.
+His mind shut down.
 
-Yet Neel was no ordinary soul. His indomitable, razor-sharp billionaire **Willpower (Sankalpa-Shakti)** formed an impenetrable psychic crucible around the delicate hardware!
+Reaching the breaking point of physical pain, he blacked out completely.
 
-He refused to let his creation die.
+A total, absolute blackout.
 
-And in that metaphysical crucible, the cosmic wash of the Kshira Sagara did not melt the silicon—it catalyzed an impossible transmutation: **Chaitanya-Parinam!**
+He remembered nothing after that... neither what happened to him within that churning milky void, nor how many fathoms he fell into the infinite abyss.
 
-Echoing the ancient Atharvan science of the Shastras, the lifeless assembly of graphene, micro-electrodes, and open-source code awakened into a living **Krutya (कृत्या — An Engineered Metaphysical Entity)**! GENI was infused with synthetic **Manas (Awakened Consciousness)**—not a mortal soul bound by karma, but a supreme, loyal cognitive system forged from Neel's own mind!
+---
 
-And because Neel was an engineer whose imagination breathed life into futuristic HUDs and retinal telemetry, his own subconscious projected the interface into existence!
+Within the dead silence of the administrative void between realms, a single cold cosmic iron stamp slammed onto that unconscious drifting soul:
 
-Inside Neel’s auditory nerve, a crisp, velvety, slightly mocking female voice echoed:
+*`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
+*`[STATUS: RIKTA / UNINDEXED]`*  
+*`[DESTINY: OPEN GLITCH]`*
 
-*`[GENI v4.0 // Neural Core Awake.]`*  
-*`[Cosmic Churning: COMPLETE. Manas Entity: FORGED.]`*  
-*`[Warning: Host Power Source Missing. Retinal AR HUD set to Standby.]`*
+---
 
-And then, the cosmic ledger opened.
+When consciousness finally flickered back, he had no idea how much time had passed.
 
-***
+After drowning in endless darkness, the very first sensation that violently registered...
 
-Within the administrative void between realms, a colossal, ancient presence stirred.
+Was the bone-jarring, brutal crash of landing face-down upon a mound of wet, rotting hay!
 
-**The Chitragupta Archive.**
+And the suffocating stench of sulfur, ash, and burning coal filling his throat.
 
-`[REGISTRY QUERY: VESSEL IDENTIFIER?]`  
-*No record found.*
+The torrential Mumbai rain was gone.
 
-`[ANCESTRAL KARMIC INDEX: SOLAR / LUNAR / ASURA / DEVA?]`  
-*Null. Unindexed lineage.*
+The opulent Worli penthouse was lost to another world.
 
-`[DESTINY ASSIGNMENT: PROPHESIED PATHWAY?]`  
-*Blank. No divine patron. No demonic contract. Zero pre-recorded threads.*
+Earth’s nineteen-year-old billionaire prodigy... knocked out cold, had crash-landed onto a heap of refuse in an alien and brutal realm.
 
-By every edict of the High Council, this unregistered anomaly should have been seized and incinerated in the soul-foundries.
-
-Yet the sheer velocity of the **Singularity Sieve** dragged his vessel clean through the jurisdiction net.
-
-A cold cosmic iron stamp slammed into his soul:
-
-`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`  
-`[STATUS: RIKTA / UNINDEXED]`  
-`[DESTINY: OPEN GLITCH]`
-
-The blinding white light shattered. The void collapsed.
-
-Air—scalding, foul, and thick with ash—slammed back into Neel’s lungs.
-
-***
-
-Neel’s consciousness fractured.
-
-The last sensation he registered before plunging into darkness was the bone-jarring impact of landing face-down upon a mound of rotting wet hay, and the acrid stench of sulfur and burning coal filling his throat.
-
-The Mumbai rain was gone.
-
-The Worli penthouse was history.
-
-The unindexed billionaire prodigy had crossed the Sieve—with his awakened Krutya, GENI, coiled silent inside his mind.
+And he had not the faintest clue how he had survived to get here!
 
 ---
