@@ -109,7 +109,7 @@ Neel ने अपना हाथ वापस खींचा, Black Card क�
 
 Neel... 19 साल का इकलौता वारिस।
 
-3 साल पहले एक tragic highway accident में parents (Aarav और Suman) के गुजरने के बाद, अरबों की equity, shipping docks और international tech patents सीधे Neel के नाम transfer हो गए थे। Uncle Kani और aunt Cheri पूरा business संभालते थे और उसे सिर-आँखों पर रखते थे—ताकि वो अपनी lab में ही मस्त रहे और कभी boardroom में आकर accounts का हिसाब न माँगे। उनका बेटा Sunny खुद को Gadora empire का अगला prince समझता रहे, Neel को उनकी boring corporate politics में रत्ती भर भी interest नही था।
+3 साल पहले एक tragic highway accident में parents (Aarav और Suman) के गुजरने के बाद, अरबों की equity, shipping docks और international tech patents सीधे Neel के नाम transfer हो गए थे। Uncle Kani और aunt Cheri पूरा business संभालते थे और उसे सिर-आँखों पर रखते थे—ताकि वो अपनी lab में ही मस्त रहे और कभी boardroom में आकर accounts का हिसाब न माँगे। उनका बेटा Sunny खुद को Gadora empire का अगला prince समझता था। लेकिन reality ये थी कि Neel को उनकी boring corporate politics में रत्ती भर भी interest नही था।
 
 उसका असली obsession था उसकी private high-tech lab... और temporal bone में surgically implant की गई उसकी वो prototype silicon chip—**GENI (Gemma-4 Neural Interface)**। उसका 24/7 personal, in-skull AI assistant।
 
