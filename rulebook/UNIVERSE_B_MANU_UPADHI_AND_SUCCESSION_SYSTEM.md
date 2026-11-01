@@ -147,3 +147,7 @@ Triggered by: Natural death, term completion, or voluntary abdication.
    - **Neel is 100% EXCLUDED from the Manu Succession:** Neel is NOT a candidate, contender, or participant in the Manu-Upadhi succession, nor does he ever sit upon the Grey Throne.
    - **Different Character & Different Timeline:** The epic saga of the Manu Succession, the Great Chalni Tournament, and the political/martial clash for Central City's throne belongs to an entirely **DIFFERENT TIMELINE** (e.g., a major historical era transition, prequel, or dedicated timeline) featuring a **COMPLETELY DIFFERENT PROTAGONIST**.
    - **Neel's Independent Odyssey:** Neel's narrative arc remains pure, grounded, and focused on his own survival, the mystery of the Sieve, his dormant 72,000 Nadis and single kinetic wrist thread, his bond with Sheru, and his own unique path that operates completely outside the throne games of the Manu.
+5. **THE UNREVEALED RIVALRY (SUBTLE FORESHADOWING LAW):**
+   - **Zero Premature Reveal:** In early chapters and Volume 1, do NOT reveal the identity, origin, or exact nature of Manu's rival. Keep them shrouded in mystery.
+   - **Atmospheric Whispers Only:** The narrative only drops subtle, spine-chilling rumors—that the sitting Manu has a ferocious, exiled **Rival / Nemesis** who once contested or is preparing to contest the Grey Throne.
+   - **Arrival in Future Volumes:** This legendary rival will make their full entrance and trigger the supreme clash only in **Future Volumes**, creating immense long-term anticipation and political thriller tension!
