@@ -103,6 +103,7 @@ The following words are **STRICTLY PROHIBITED** across all narration and dialogu
 | **औंधा पड़ा था (Aundha pada tha)** | Stiff textbook phrase. | **पेट के बल पड़ा था / मुँह के बल गिरा था** |
 | **मानो (Maano)** | #1 AI cliché. | **[पूर्ण बंदी - Describe physical reality directly]** |
 | **एक अजीब-सी (Ek ajeeb-si)** | Lazy writing filler. | **[पूर्ण बंदी - Name the exact physical sensation]** |
+| **दहकना / दहक उठी (Dahakna)** | Overly poetic/literary Hindi for burning; clashes with modern tech. | **जलने लगी / तपने लगी / खौल उठी** *(e.g., "chip भयंकर overheat होकर जलने लगी")* |
 
 ---
 

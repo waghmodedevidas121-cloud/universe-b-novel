@@ -165,7 +165,7 @@ Neel सीधा नीचे गिर पड़ा।
 
 Pain का level इतना extreme और खौफनाक था कि एक normal इंसान का दिमाग उसे एक second भी sustain नही कर सकता था। ऐसा लगा जैसे body का एक-एक atom खिंचकर rip apart होने वाला हो!
 
-उसके दाएँ कान के पीछे लगी custom silicon chip violently overheat होकर दहक उठी...
+उसके दाएँ कान के पीछे लगी custom silicon chip violently overheat होकर बुरी तरह जलने लगी...
 
 Neel का vision पूरी तरह blur हो गया। Brain ने instant give up कर दिया।
 
