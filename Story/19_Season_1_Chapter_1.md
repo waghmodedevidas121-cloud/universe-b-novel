@@ -285,7 +285,7 @@ The traveler collapsed face-first onto the stones.
 
 "Back off, beggar!" the guard bellowed. "No five Panas, go die in the ditch! Clear the line!"
 
-Several red-turbaned brokers lunged forward from the perimeter, grabbing the fallen man by his arms and dragging him toward waiting transport wagons. Anyone lacking the entry toll was instantly swept up by slave-traffickers for pennies on the copper.
+Several predatory brokers lunged forward from the perimeter, dragging the fallen man away. The rule here was brutal: anyone who couldn't pay the five-Pana toll was thrown straight into slave-wagons bound for the deep iron mines.
 
 Sheru bared his gunmetal teeth, a low, menacing rumble vibrating in his chest.
 
