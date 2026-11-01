@@ -143,5 +143,7 @@ Triggered by: Natural death, term completion, or voluntary abdication.
    - **The Distant Grey Citadel:** The towering palace on the high crags, blamed by commoners for grain taxes and iron quotas.
 3. **The Local League Framing:**
    - The Proving Games (Split-Flap Spire) are explicitly established as an **Astral Realm local civic phenomenon** (meaningless to Swarga and Patala). It is the mortal "Premier League"—colossal entertainment, massive gambling business, but thoroughly grounded in mortal blood, sweat, and money.
-4. **The Long-Term Hook for Neel:**
-   - Neel’s **Rikta (Unindexed) Soul Status** makes him a constitutional ghost. He cannot vote, hold grade rank, or sign bank debt. But when the Manu succession crisis erupts in later volumes, an unindexed variable outside Chitragupta's ledger becomes the one piece neither the Sovereign Seats nor the High Council can predict or control!
+4. **CANON LOCK: TOTAL EXCLUSION OF NEEL FROM THE MANU SUCCESSION & TIMELINE SEPARATION:**
+   - **Neel is 100% EXCLUDED from the Manu Succession:** Neel is NOT a candidate, contender, or participant in the Manu-Upadhi succession, nor does he ever sit upon the Grey Throne.
+   - **Different Character & Different Timeline:** The epic saga of the Manu Succession, the Great Chalni Tournament, and the political/martial clash for Central City's throne belongs to an entirely **DIFFERENT TIMELINE** (e.g., a major historical era transition, prequel, or dedicated timeline) featuring a **COMPLETELY DIFFERENT PROTAGONIST**.
+   - **Neel's Independent Odyssey:** Neel's narrative arc remains pure, grounded, and focused on his own survival, the mystery of the Sieve, his dormant 72,000 Nadis and single kinetic wrist thread, his bond with Sheru, and his own unique path that operates completely outside the throne games of the Manu.
