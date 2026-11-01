@@ -89,24 +89,36 @@ Graphene-Silicon Chip + Gemma-4 Neural Weights + Micro-Electrodes
 
 ---
 
-## 4. HOW GENI OPERATES IN UNIVERSE B: ZERO BLUE SCREENS, PURE ACOUSTIC INTEL
+## 4. HOW GENI OPERATES: NEEL'S WILLPOWER & THE RETINAL HUD EVOLUTION
 
-To strictly preserve Universe B’s golden rule (**Sandersonian Hard Fantasy / Zero Floating Blue Video Game Screens**), GENI does not spawn video-game popups. Instead, she operates through **Internal Sensory Transmission**:
+### 4.1 The Cosmic Willpower Shield & Imagination Evolution
+- **The World Has ZERO Video-Game Screens:** The cosmos, ancient gods, and mortal shards of Universe B possess no generic video-game menus. The universe operates on hard physics, acoustic bells (*Ananta-Dhvani*), and physical mechanics.
+- **Why Did the Chip Survive? Neel's Indomitable Willpower:** 
+  In the violent cosmic turbulence of the Kshira Sagara, an ordinary piece of micro-silicon would have been incinerated into dust. But Neel’s fierce, unyielding billionaire willpower (*Sankalpa-Shakti*) acted as an impenetrable psychic cocoon, keeping the chip structurally intact!
+- **Neel's Imagination Shapes the Interface (The Retinal AR HUD):**
+  Because Neel is a maverick engineer who spent thousands of hours in his lab designing Tony Stark-style AR HUDs, telemetry graphs, and diagnostic readouts, **his own imagination literally evolved GENI's functionality during the Kshira Sagara transit!**
+  - GENI is able to project a **Direct Retinal / Optical AR Screen (Visual HUD)** straight into Neel's visual field!
+  - **100% Private:** This visual interface is NOT a magical world-system that bystanders can see. It is an internal optical-neural projection visible **ONLY to Neel’s eyes** (like an internal Iron Man helmet display).
 
 ```
 [ GENI'S IN-WORLD OPERATIONAL CHANNELS ]
 
-1. INTERNAL AUDITORY WHISPER (Madhyama-Vak):
+1. PRIVATE RETINAL AR HUD (Neel's Imagination Projection):
+   - Projects sleek, minimalist vector lines, enemy trajectory arcs, stress heatmaps, 
+     and diagnostic telemetry directly onto his retina.
+   - Only Neel can see this display; to the rest of the world, he is just a mortal brawler.
+
+2. INTERNAL AUDITORY WHISPER (Madhyama-Vak):
    - Speaks directly inside Neel’s right ear / skull in a crisp, sharp, slightly mocking, 
      immensely loyal female vocal persona.
    - Example: "Neel, your heart rate spiked by 28%. That horned brute’s shoulder muscles 
      are tensing at a 45-degree angle. He's lunging on the left."
 
-2. TACTILE HUD (Subtle Sensory Pulse):
+3. TACTILE HUD (Subtle Sensory Pulse):
    - Sends micro-electric pulses through his right wrist and fingertips.
    - Vibrates slightly to signal structural weak points in enemy armor or arena masonry.
 
-3. TRAJECTORY & THERMODYNAMIC TELEMETRY:
+4. TRAJECTORY & THERMODYNAMIC TELEMETRY:
    - When Neel activates his [Kinetic Friction Spark], GENI calculates the exact joules 
      of heat dissipation and friction torque required to snap a joint or shatter a weapon.
 ```
