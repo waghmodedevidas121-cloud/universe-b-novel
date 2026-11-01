@@ -101,9 +101,11 @@ function New-Chapter {
 $chapters = @(
     (New-Chapter -Id 'chap-pro-hi' -Title 'PROLOGUE: The Glitch in the Rain' -Status 'Edited' -File '18A_Season_1_Volume_1_Prologue_Hindi.md'),
     (New-Chapter -Id 'chap-1-hi'   -Title 'Chapter 1: The Hay, the Horns, and the Dead Glass' -Status 'Edited' -File '19_Season_1_Chapter_1_Hindi.md'),
+    (New-Chapter -Id 'chap-2-hi'   -Title 'Chapter 2: Rank #84 and the Shifting Field (Scene 1 Draft)' -Status 'Draft' -File '20_Season_1_Chapter_2_Hindi.md'),
 
     (New-Chapter -Id 'chap-pro-en' -Title 'PROLOGUE: The Glitch in the Rain' -Status 'Edited' -File '18A_Season_1_Volume_1_Prologue.md'),
-    (New-Chapter -Id 'chap-1-en'   -Title 'Chapter 1: The Hay, the Horns, and the Dead Glass' -Status 'Edited' -File '19_Season_1_Chapter_1.md')
+    (New-Chapter -Id 'chap-1-en'   -Title 'Chapter 1: The Hay, the Horns, and the Dead Glass' -Status 'Edited' -File '19_Season_1_Chapter_1.md'),
+    (New-Chapter -Id 'chap-2-en'   -Title 'Chapter 2: Rank #84 and the Shifting Field (Scene 1 Draft)' -Status 'Draft' -File '20_Season_1_Chapter_2.md')
 )
 
 $codex = @(
