@@ -180,7 +180,7 @@ Total, absolute blackout!
 Realms के बीच फैले administrative void के dead silence में, बस एक cold, ruthless cosmic seal उस unconscious soul पर धड़ाम से आकर punch हुई:
 
 *`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
-*`[STATUS: RIKTA / UNINDEXED]`*  
+*`[STATUS: UNINDEXED / BLANK]`*  
 *`[DESTINY: OPEN GLITCH]`*
 
 ---

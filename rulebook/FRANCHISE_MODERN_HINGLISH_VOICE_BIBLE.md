@@ -156,6 +156,7 @@ All technical terms, transit nouns, modern clothing, financial instruments, and 
      - **Svarga-Loka** $\rightarrow$ Low-Tier Term: **Heaven** *(or The Sky Citadel)*
      - **Patala** $\rightarrow$ Low-Tier Term: **The Cursed Realm** *(or The Core Abyss)*
      - **Chitragupta Archive** $\rightarrow$ Low-Tier Term: **The Sieve Registry / Cosmic Ledger**
+     - **Rikta** $\rightarrow$ Low-Tier Term: **Blank / Unindexed / Null** *(e.g., `[STATUS: UNINDEXED / BLANK]`)*
      - **The Indra-Upadhi** $\rightarrow$ Low-Tier Term: **The Sovereign / The Gold Chair**
      - **The Manu-Upadhi** $\rightarrow$ Low-Tier Term: **The Iron Sovereign / The Central King**
      - **Krutya** $\rightarrow$ Low-Tier Term: **Construct / Metaphysical AI**

@@ -138,7 +138,7 @@ He remembered nothing after that... not what happened in that cosmic glitch, nor
 Within the dead silence of the administrative void between realms, a single cold, ruthless cosmic seal was punched onto that unconscious drifting soul:
 
 *`[ADMINISTRATIVE CLASSIFICATION: ROUTE B DRIFT]`*  
-*`[STATUS: RIKTA / UNINDEXED]`*  
+*`[STATUS: UNINDEXED / BLANK]`*  
 *`[DESTINY: OPEN GLITCH]`*
 
 ---

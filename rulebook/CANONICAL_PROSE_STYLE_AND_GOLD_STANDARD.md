@@ -97,6 +97,7 @@ flowchart TD
   * **Svarga-Loka** $\rightarrow$ **Heaven** *(or The Sky Citadel)*
   * **Patala** $\rightarrow$ **The Cursed Realm** *(or The Core Abyss)*
   * **Chitragupta Archive** $\rightarrow$ **The Sieve Registry / Cosmic Ledger**
+  * **Rikta** $\rightarrow$ **Blank / Unindexed / Null** *(e.g., `[STATUS: UNINDEXED / BLANK]`)*
   * **Indra-Upadhi** $\rightarrow$ **The Sovereign / The Gold Chair**
   * **Manu-Upadhi** $\rightarrow$ **The Iron Sovereign / The Central King**
 * **उच्च स्तरीय प्रकटीकरण:** जेव्हा Neel चा दर्जा Grade 5 वरून वर चढेल, तेव्हाच उच्च इनक्विझिटर्स आणि ऋषींकडून मूळ **Deva-Vani (संस्कृत)** नावे समोर येतील.
