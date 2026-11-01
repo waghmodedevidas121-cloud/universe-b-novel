@@ -61,7 +61,7 @@ function Convert-MdChapters {
         if ($trim -eq '---') {
             if ($buffer.Count -gt 0) { $out.Add((Flush-Para)) }
             if ($listBuffer.Count -gt 0) { $out.Add((Flush-List)) }
-            $out.Add("<div class='scene-break'>✦ ✦ ✦</div>")
+            $out.Add("<div class='scene-break'>&#10022; &#10022; &#10022;</div>")
             continue
         }
 

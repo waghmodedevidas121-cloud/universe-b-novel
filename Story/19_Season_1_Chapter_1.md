@@ -159,7 +159,7 @@ The carter raised his whip again, this time aiming to lash the hound across the 
 
 "Hey, hold up!" Neel lunged forward, his voice cutting sharp and firm. "Why take it out on the dog? The wheel's buried in the muck—how is that his fault?"
 
-The dwarf spun around, glaring at Neel. "You lecturing me, beggar? If you want to keep breathing, crawl into the ditch before I put this whip across your teeth!"
+The dwarf spun around, glaring at Neel. "You lecturing me, beggar? The name is Boran! If you want to keep breathing, crawl into the ditch before I put this whip across your teeth!"
 
 Neel looked down.
 
