@@ -95,7 +95,7 @@ Chitragupta: Records + Soul ID + Timestamps    ──► Cannot order fate or is
 
 - **घटनात्मक कारण:** एकाधिकारशाही आणि पक्षपात रोखण्यासाठी ही सत्ता विभागणी केलेली आहे. कोणतीही एक व्यक्ती एकाच वेळी परवाना देणे, नशीब लिहिणे आणि आयडी देणे अशी तिन्ही कामे करू शकत नाही.
 
-### 1.4 Constitutional Dual-Relationship with Indra-Upādhi (इंद्र-उपाधीशी दुहेरी घटनात्मक संबंध) [CANON LOCK]
+### 1.5 Constitutional Dual-Relationship with Indra-Upādhi (इंद्र-उपाधीशी दुहेरी घटनात्मक संबंध) [CANON LOCK]
 आत्मा-प्रशासन त्रिमूर्ती (Yama, Vidhātā, Chitragupta) आणि Tier 2 Buffer Zone चे प्रशासकीय प्रमुख **Indra-Upādhi** यांच्यातील संबंध खालील दोन लोखंडी घटनात्मक तत्त्वांवर आधारित आहेत:
 1. **Judicial Independence (न्यायिक व कर्म स्वायत्तता — ०% हस्तक्षेप):**
    - Indra-Upādhi कडे आत्म्यांच्या कर्माचे ऑडिट, नरक/स्वर्ग वाटप, नशिबाचे लेखन (Destiny Architecture), किंवा Soul ID निर्मितीमध्ये **कोणताही थेट आदेश देण्याचा किंवा बदल करण्याचा अधिकार शून्य (0%) आहे**.
@@ -240,7 +240,7 @@ Ananta च्या आर्काइव्हमध्ये कायमच�
   1. **Vector 1 — Route A (Official Vidhata Reincarnation):** विधाता स्वतः मूळ विश्वाच्या यमाकडून Release Seal घेऊन आणतो; लिखित नियती (*Lihito*), थेट Pratigraha Official Dock (Stage 5B) मधून कायदेशीर जन्म.
   2. **Vector 2 — Route B1 (Summoning Extraction / आवाहन-अपहरण):** नश्वर/असुरी तांत्रिक विधींनी आत्मा ओढला जातो. हा **Pratigraha बायपास** करून थेट समनरच्या वर्तुळात पडतो; रिक्त नियती (*Rikta*).
   3. **Vector 3 — Route B2 (Glitch Void Drift / कॉस्मिक गळती):** अवकाशीय भेगेतून आत्मा Singularity Apex (क्षीर सागर) मधून सक्तीने पास होतो.
-     - *Singularity Karmic Sieve:* कमजोर कर्म असल्यास सूक्ष्म शरीर विरघळून **पिशाच योनी (Corrupted Soul)** बनते व कचऱ्यासारखे अधोलोकात फेकले जाते.
+     - *Singularity Karmic Sieve:* कमजोर कर्म असल्यास सूक्ष्म शरीर विरघळून **पिशाच योनी (Preta / Vikāra-Jeeva)** बनते व कचऱ्यासारखे अधोलोकात फेकले जाते.
      - *Anomaly Survival:* मजबूत इच्छाशक्ती असल्यास आत्मा सिंग्युलॅरिटी भेदून नश्वर जगात ताज्या मृत शरीरात कोसळतो; चित्रगुप्ताकडे **Red-Ink Interception Alert** वाजतो.
 - **तात्पुरता दर्जा:** Warden Setuvrata किंवा गस्त पथकाने दिलेला दर्जा हा केवळ **क्वारंटाईन/तात्पुरता** असतो.
 - **कायदेशीर दर्जा कसा मिळतो:**
