@@ -1,8 +1,8 @@
 # 08. Master Character Dossier: 121 Verified Canonical Entities (मुख्य पात्र-संग्रह: १२१ प्रमाणित केनन व्यक्ती)
-**File:** `D:\Web Novel\New\characters\roster.md (120 Verified Canonical Entities)`  
+**File:** `D:\Web Novel\New\characters\roster.md (121 Verified Canonical Entities)`  
 **Tags:** `#characters #master-dossier #canonical-ids #100-entities #multi-cultural-names #clan-sociology #organic-agency #psychology #anatomy #grey-morality #trauma #equipment #all-tiers #the-aliens-diaspora #canon-lock`  
 **Status:** [CANON LOCK] चारही टियरांमधील संपूर्ण वैश्विक पात्र-संग्रह (ऑक्टोबर २०२६)  
-**Authority:** Universe B मधील सर्व १२० प्रमाणित व्यक्तींचा सर्वोच्च एकमेव सत्य-स्रोत. प्रत्येक व्यक्तीकडे संदिग्धता नसलेला Canonical ID आहे (उदा. `CHR-HUM-01`, `CHR-ASU-01`, `CHR-SET-01`, `CHR-DIV-01`, `CHR-ALN-01`). एकत्रित नोंदी, कृत्रिम लक्ष्ये व डुप्लिकेट प्रोफाईल काढून टाकते. Protagonist: [CHR-ALN-06] Neel (नील / The Sieve's Edge Protagonist).
+**Authority:** Universe B मधील सर्व १२१ प्रमाणित व्यक्तींचा सर्वोच्च एकमेव सत्य-स्रोत. प्रत्येक व्यक्तीकडे संदिग्धता नसलेला Canonical ID आहे (उदा. `CHR-HUM-01`, `CHR-ASU-01`, `CHR-SET-01`, `CHR-DIV-01`, `CHR-ALN-01`). एकत्रित नोंदी, कृत्रिम लक्ष्ये व डुप्लिकेट प्रोफाईल काढून टाकते. Protagonist: [CHR-ALN-06] Neel (नील / The Sieve's Edge Protagonist).
 
 ---
 
