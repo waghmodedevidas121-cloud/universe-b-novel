@@ -106,7 +106,7 @@ Tier 3 मध्ये चार अधिकृत चलन प्रकार
 - **High Bureaucrat / Foundry Owner:** महिन्याला **५०० ते २,००० Aether-Rupees** (प्रचंड श्रीमंती, खाजगी बग्गी, आयात केलेले सोमरस).
 
 ### 1.4 Central Banking Hegemony: The The Central Reserve Bank (Akash-Kosha) Levers
-High Arbitrator Beatrice Rosso (दॉना बीट्रिस रोसो) यांच्या हाताखालील **The Central Reserve Bank (The Vaults of Truth / The Central Reserve Bank (Akash-Kosha))** कोणत्याही सैन्याशिवाय महासत्तांना गुडघ्यावर आणू शकते:
+High Governor Ambika यांच्या हाताखालील **The Central Reserve Bank (The Vaults of Truth / The Central Reserve Bank (Akash-Kosha))** कोणत्याही सैन्याशिवाय महासत्तांना गुडघ्यावर आणू शकते:
 1. **The Reserve Squeeze:** जर हस्तिनापूरच्या राजाने मध्यवर्ती संसदेचा नियम मोडला, तर सेंट्रल बँक हस्तिनापूरच्या चांदीच्या चलनावर '५% डिस्काउंट पेनल्टी' लावते, ज्यामुळे हस्तिनापूरचे व्यापारी एका दिवसात दिवाळखोर होतात.
 2. **Vajra-Steel Transit Tariffs:** शैल-गाढाच्या वज्र-पोलादाच्या मालावर सेंट्रल सिटी ३ Silver Panas प्रति-टन 'संक्रमण कर' (Transit Duty) आकारते. हा कर वाढवला की मानवी शहरांमधील रथ, गाड्या आणि शस्त्रे महाग होतात.
 3. **The Gold-Vault Audits:** सर्व आंतरराष्ट्रीय बँकांचे ५०% सुवर्ण साठे सेंट्रल सिटीच्या जमिनीखालील शिशाने मढवलेल्या व्हॉल्ट्समध्ये (Vaults of Truth) लॉक असतात.
@@ -345,7 +345,7 @@ High Arbitrator Beatrice Rosso (दॉना बीट्रिस रोसो)
 प्रत्येक उप-लोकाची शासन व्यवस्था वेगळी असून त्यांच्यामध्ये सतत राजकीय संघर्ष चालू असतो:
 
 ```
-[ CENTRAL CITY ] ──► The Manu-Upādhi & 7 Sovereign Seats (High Arbitrator Beatrice Rosso)
+[ CENTRAL CITY ] ──► The Manu-Upādhi & Sovereign Council (High Chancellor Sulabha & Governor Ambika)
                       Presidium of 9 Autonomous Guilds • Zero Standing Army
                                     │
     ┌───────────────────────────────┼───────────────────────────────┐

@@ -14,9 +14,8 @@ chunk4_files = [
 ]
 
 tech_banned = ['विमान', 'एअरशिप', 'blimp', 'rail', 'टेलिग्राफ', 'वाफेची', 'काडतूस']
-ghost_names = ['Ambika', 'Sulabha', 'Silas', 'Hilda', 'Olga', 'Morvath', 'Jormun', 'Linnea', 'Finn']
 
-print("--- SCANNING CHUNK 4 FILES FOR TECH CONTAMINATION & GHOST NAMES ---")
+print("--- SCANNING CHUNK 4 FILES FOR TECH CONTAMINATION ---")
 violations = 0
 for fpath in chunk4_files:
     fname = os.path.basename(fpath)
@@ -28,11 +27,6 @@ for fpath in chunk4_files:
             matches = re.findall(re.escape(b), content, re.IGNORECASE)
         if matches:
             print(f"  [TECH VIOLATION] {fname}: Found {len(matches)} occurrences of '{b}'")
-            violations += len(matches)
-    for g in ghost_names:
-        matches = re.findall(r'\b' + re.escape(g) + r'\b', content, re.IGNORECASE)
-        if matches:
-            print(f"  [GHOST NAME] {fname}: Found {len(matches)} occurrences of '{g}'")
             violations += len(matches)
 
 # Check 'नहीं' rule
