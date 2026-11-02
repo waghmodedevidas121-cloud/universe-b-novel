@@ -1,8 +1,8 @@
-# 08. Master Character Dossier: 120 Verified Canonical Entities (मुख्य पात्र-संग्रह: १२० प्रमाणित केनन व्यक्ती)
+# 08. Master Character Dossier: 121 Verified Canonical Entities (मुख्य पात्र-संग्रह: १२१ प्रमाणित केनन व्यक्ती)
 **File:** `D:\Web Novel\New\characters\roster.md (120 Verified Canonical Entities)`  
 **Tags:** `#characters #master-dossier #canonical-ids #100-entities #multi-cultural-names #clan-sociology #organic-agency #psychology #anatomy #grey-morality #trauma #equipment #all-tiers #the-aliens-diaspora #canon-lock`  
 **Status:** [CANON LOCK] चारही टियरांमधील संपूर्ण वैश्विक पात्र-संग्रह (ऑक्टोबर २०२६)  
-**Authority:** Universe B मधील सर्व १२० प्रमाणित व्यक्तींचा सर्वोच्च एकमेव सत्य-स्रोत. प्रत्येक व्यक्तीकडे संदिग्धता नसलेला Canonical ID आहे (उदा. `CHR-HUM-01`, `CHR-ASU-01`, `CHR-SET-01`, `CHR-DIV-01`, `CHR-ALN-01`). एकत्रित नोंदी, कृत्रिम लक्ष्ये व डुप्लिकेट प्रोफाईल काढून टाकते. Protagonist slot unassigned.
+**Authority:** Universe B मधील सर्व १२० प्रमाणित व्यक्तींचा सर्वोच्च एकमेव सत्य-स्रोत. प्रत्येक व्यक्तीकडे संदिग्धता नसलेला Canonical ID आहे (उदा. `CHR-HUM-01`, `CHR-ASU-01`, `CHR-SET-01`, `CHR-DIV-01`, `CHR-ALN-01`). एकत्रित नोंदी, कृत्रिम लक्ष्ये व डुप्लिकेट प्रोफाईल काढून टाकते. Protagonist: [CHR-ALN-06] Neel (नील / The Sieve's Edge Protagonist).
 
 ---
 
@@ -14,12 +14,12 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **`CHR-ASU-01` ते `CHR-ASU-16` (१६ असुर व्यक्ती):** The Iron Citadel (वज्र-नगर), ज्वालामुखी भट्ट्या, The Obsidian Chasm द्रोणी व Red Crucible कामगार बंधुत्व.
 - **`CHR-DEV-01` ते `CHR-DEV-10` (१० देव व्यक्ती):** अमरावती तरंगते शिखर, Gandharva-Puri अंबर-रेशीम माग-घरे व सौर वेधशाळा.
 - **`CHR-BST-01` ते `CHR-BST-10` (१० श्वापद-सार्वभौम):** The Primeval Canopy, The Sky Spires, The Twilight Marsh व Blood-Ridge सीमांत.
-- **`CHR-CEN-01` ते `CHR-CEN-08` (८ मध्यवर्ती व्यक्ती):** Central City ग्रँड कॉन्कॉर्ड घुमट, मध्यवर्ती रिझर्व्ह बँक, केंद्रीय साहसी गिल्ड व प्रोव्हिंग गेम्स.
+- **`CHR-CEN-01` ते `CHR-CEN-08` (८ मध्यवर्ती व्यक्ती):** Central City मनू-उपाधी (The Iron Sovereign on the Grey Basalt Throne), ७ सार्वभौम आसने, मध्यवर्ती रिझर्व्ह बँक, केंद्रीय साहसी गिल्ड व प्रोव्हिंग गेम्स.
 - **`CHR-SET-01` ते `CHR-SET-17` (१७ Buffer Zone व सेतू-अधिकारी):** The Setu Academy, The Bastion Fortress व्हॅनगार्ड, Grand Aegis भिंत, ऋषी audit व आत्मा-प्रशासन कक्ष.
 - **`CHR-ABY-01` ते `CHR-ABY-13` (१३ अधोलोक व्यक्ती):** नेदरहोम बनावट देव, Dread-Hold दैत्य, The Ash Fortress बहुजातीय निर्वासित व सातवा सील प्रहरी (Living Seventh Horror).
-- **`CHR-DIV-00` ते `CHR-DIV-13` (१४ वैश्विक व घटनात्मक व्यक्ती):** सर्वोच्च त्रिमूर्ती (ब्रह्मा, क्षीरोदकशायी विष्णू, शिव) (३), अनंत कोर (१), सहा घटनात्मक उपाधी (६), तीन दैवी प्रतिनिधी (३).
+- **`CHR-DIV-00` ते `CHR-DIV-14` (१५ वैश्विक व घटनात्मक व्यक्ती):** सर्वोच्च त्रिमूर्ती (३), अनंत कोर (१), इंद्र-उपाधी (१), सहा घटनात्मक उपाधी (६), तीन दैवी प्रतिनिधी (३).
 - **`CHR-ALN-01` ते `CHR-ALN-10` (१० उल्लेखनीय पुनर्जन्मित आत्मे व डायस्पोरा):** हस्तिनापूर साहसी गिल्ड, Central City आकाश-कोश, Asura Red Crucible फाउंड्री, अमरावती सौर अभ्यासक, The Ash Fortress सीमांत ब्रोकर व नव-जागृत साहसी.
-**एकूण प्रमाणित केनन व्यक्ती:** नेमके **१२० व्यक्ती**. *(Protagonist slot unassigned; story not started.)*
+**एकूण प्रमाणित केनन व्यक्ती:** नेमके **१२१ व्यक्ती**. (Protagonist: **[CHR-ALN-06] Neel (नील)** — Season 1 The Sieve's Edge Protagonist).
 
 ---
 
@@ -659,14 +659,14 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 ---
 
 ### [CHR-ASU-16] Rudrakh (रुद्रख / Rudr) — "The Asura Berserker"
-- **Role & Faction (गट व भूमिका):** Red Crucible Union Brawler & Proving Games Contender; Disciple of Marshal Hilda.
+- **Role & Faction (गट व भूमिका):** Red Crucible Union Brawler & Proving Games Contender; Disciple of Marshal Lauhini.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Red Crucible Foundries & Central City
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Vanguard | T2 (Rising Heavy Striker)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Magma-Blood Overdrive & Spiked-Knuckle Brawling (Heats blood to ignition point, unleashing explosive punches).
 - **Bonded Beast & Mount (सहजीवी बंध):** Cinder-Boar (Stage 2 Bonded — Trench-Breaker Line).
 - **Weaponry & Arsenal (शस्त्रागार):** Twin volcanic slag cesti (spiked gauntlets) & heavy iron greaves.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 19 (Caldera Contender).
-- **Moral Stance (नैतिक स्थिती):** Chaotic Good. Hot-headed, fiercely loyal pit-fighter fighting to fund Matron Olga's orphanage.
+- **Moral Stance (नैतिक स्थिती):** Chaotic Good. Hot-headed, fiercely loyal pit-fighter fighting to fund Matron Amba's orphanage.
 - **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Ulka's hot-headed younger cousin. Enters the Proving Games feeder circuit to win bounty gold for orphanages in the smelting slums, quickly forming a brawler rivalry with Karna, Arjun, and Neel.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* B-Rank Vanguard | T2 (Rising Heavy Striker)
@@ -996,7 +996,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Ironwood shortbow & bone skinning knives.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 17 (Canopy Shaman Apprentice).
 - **Moral Stance (नैतिक स्थिती):** Neutral Good. Quiet, observant protector of forest wildlife and core member of Neel's circle.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Shaman Morvath's apprentice whose vocal cords were damaged during an illegal Devil-raid. Speaks through rhythmic hand-taps and beast gestures; teaches Neel how to achieve true Meridian Synchronization.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Shabari's apprentice whose vocal cords were damaged during an illegal Devil-raid. Speaks through rhythmic hand-taps and beast gestures; teaches Neel how to achieve true Meridian Synchronization.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* C-Rank (80–90% Bracket) | T2 (Beast Specialist)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Beast Soul-Bond: Meridian Sync Pulse, Silent Forest Camouflage]
@@ -1013,7 +1013,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Two curved black-jade daggers dipped in ancient *Halahala* derivative.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 310 (Immortal Serpent Warlord).
 - **Moral Stance (नैतिक स्थिती):** Chaotic Evil / Militant Ethnocentric. Despises humanity and seeks the reclamation of all rivers.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Empress Jormun's radical nephew who broke away from the Great Beast Accord, covertly aiding the Hollow Sect to breach river-basin wards.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Naga Empress Kadru's radical nephew who broke away from the Great Beast Accord, covertly aiding the Hollow Sect to breach river-basin wards.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* S-Rank Rogue Apex Beast | T4 (Sovereign Serpent Warlord)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Naga Primordial: Caustic Vapor Torrent, Jade Scale Carapace]
@@ -1024,36 +1024,36 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-01] High Chancellor Sulabha (सुलभा) — Supreme Moderator of the Concord
-- **Role & Faction (गट व भूमिका):** Speaker of the Grand Concord Assembly & Patron of the Proving Games.
-- **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (The Grand Concord Dome)
-- **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Diplomatic Master) | T4 (Grand Assembly Moderator)
-- **Quirk & Magic (सक्रिय कौशल्ये):** Will-Binding (Vashitva) & Sanctuary Ward (Her voice commands calm across a hall of ten thousand roaring warriors).
-- **Bonded Beast & Mount (सहजीवी बंध):** White Steppe Palfrey (Ceremonial steed).
-- **Weaponry & Arsenal (शस्त्रागार):** The Concord Mace (Golden ceremonial gavel).
-- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 68 (Master Diplomat).
-- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Supreme referee maintaining inter-realm peace.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Keeps the five shards from going to open war through razor-sharp diplomacy, managing the Five-Arch Rotunda where the four great Stone Gateways meet.
+### [CHR-CEN-01] The Manu-Upādhi (मनू-उपाधी) — The Iron Sovereign of Central City
+- **Role & Faction (गट व भूमिका):** Presiding Sovereign of Tier 3 Astral Realm on the Grey Basalt Throne; Supreme Lawgiver and Protector of the 5 Continental Shards.
+- **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (The Grey Basalt Throne Room)
+- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank Sovereign Administrator (T5 / S-Rank Fortress-Breaker Scale)
+- **Quirk & Magic (सक्रिय कौशल्ये):** [Sovereign Authority: Basalt Ward Synchronization, Grand Concord Decree, Mass Civic Calm]
+- **Bonded Beast & Mount (सहजीवी बंध):** Four-horned Basalt Mastodon (Stage 3 Sovereign Mount).
+- **Weaponry & Arsenal (शस्त्रागार):** The Central Aegis-Rod & Grey Basalt Sovereign Gavel.
+- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Replaced via the Seven-Shard Conclave (The Chalni-Election).
+- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Supreme civic arbiter preventing inter-shard total war and checking Shard-King expansionism.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Sits upon the uncarved Grey Basalt Throne at the geometric dead center of Central City. Governs in direct coordination with the 7 Sovereign Seats (Coin, Rations, Forge, Caravans, Shadow, Civic Order, Coliseum). Subordinate to the Tier 2 High Council (Indra-Upādhi) in cosmic defense, but holds absolute sovereign authority over mortal civic law across the five shards.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
-  - *साधना-स्तर (Scale Band):* A-Rank (Top 10% Diplomatic Master) | T4 (Grand Assembly Moderator)
-  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Siddhi Authority: Vashitva Voice of Accord, Mass Sanctuary Peace-Dome]
-  - *अधिकृत शस्त्रागार (Arsenal):* The Concord Mace (Golden ceremonial gavel) & Assembly Gavel-Stone
+  - *साधना-स्तर (Scale Band):* S-Rank (Fortress-Breaker Ceiling) | T5 (Astral Sovereign)
+  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Sovereign Law: Grey Basalt Tectonic Anchor Tuning, Five-Shard Civic Pact Binding, Mass Discord Dampening]
+  - *अधिकृत शस्त्रागार (Arsenal):* The Central Aegis-Rod & Basalt Sovereign Decree Seal
 
 ---
 
-### [CHR-CEN-02] High Governor Ambika (अंबिका) — Mistress of the Vaults of Truth
-- **Role & Faction (गट व भूमिका):** Governor of the Central Reserve Bank & Regulator of the Beast-Core Exchange.
-- **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (Akash-Kosha Banking Vaults)
-- **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Elite) | T3 (Central Financial Governor)
-- **Quirk & Magic (सक्रिय कौशल्ये):** Gold-Sense & Blood-Seal Contract (Can detect a single counterfeit coin or fake Beast Core in a chest of ten thousand).
+### [CHR-CEN-02] High Arbitrator Beatrice Rosso (दॉना बीट्रिस रोसो) — Seat #1 of the 7 Sovereign Seats
+- **Role & Faction (गट व भूमिका):** High Arbitrator of the Central Reserve Bank & Regulator of the Beast-Core Exchange (Akash-Kosha Vaults); Seat #1 (Coin & Credit) under the Manu-Upādhi.
+- **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (Akash-Kosha Banking Vaults & Core-Exchange)
+- **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Elite / Master Appraiser | T3 (Sovereign Financial Arbitrator)
+- **Quirk & Magic (सक्रिय कौशल्ये):** [Economic Metaphysics: Absolute Gold-Sense, Prana-Core Density Sight, Counterfeit-Core Detection, Inviolable Blood-Seal Contract].
 - **Bonded Beast & Mount (सहजीवी बंध):** Gilded Mastiff (Stage 2 Vault Guardian).
-- **Weaponry & Arsenal (शस्त्रागार):** Vault Master Ledger & Golden Key-Rod.
-- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 52 (Financial Governor).
-- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Strict regulator of the Aether-Rupee and gateway tariffs.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Controls the Aether-Rupee and the 17% gateway tariff; funds Investigator Devayani’s taskforce to hunt down illegal Shadow Anchors.
+- **Weaponry & Arsenal (शस्त्रागार):** Central Reserve Master Vault Key-Rod & Aether-Rupee Matrix Seal.
+- **Historical Era & Lifespan (ऐतिहासिक युग):** Reincarnated from a Venetian banking lineage in Era 4 | Age 54 (Master Sovereign Banker).
+- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Incorruptible sovereign banker who honors contracts above all factional politics.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Controls the Pan-Astral Aether-Rupee matrix, the 17% customs clearing tariffs between shards, and holds the tie-breaking audit power in the Chalni-Election. Subordinate only to the Manu-Upādhi in civic financial jurisdiction.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
-  - *साधना-स्तर (Scale Band):* B-Rank (Top 10% Elite) | T3 (Central Financial Governor)
-  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Economic Metaphysics: Absolute Gold-Sense, Counterfeit-Core Detection, Inviolable Blood-Seal Contract]
+  - *साधना-स्तर (Scale Band):* B-Rank Elite | T3 (Central Financial Sovereign)
+  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Appraisal & Finance: Prana Core Density Sight, Counterfeit Detection Ward, Inviolable Blood-Seal Contract]
   - *अधिकृत शस्त्रागार (Arsenal):* Central Reserve Master Vault Key-Rod & Aether-Rupee Matrix Seal
 
 ---
@@ -1483,7 +1483,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Basalt siege mace carved from sunken mountain core.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 2 to Present | Age 1,900+ (Ancient Devil Titan).
 - **Moral Stance (नैतिक स्थिती):** Lawful Evil. Relentless frontline general bound by harsh warrior hierarchy.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** A cyclopean titan of calcified bone and hardened basalt. Direct rival to Setu General Vajra, awaiting the day the Aegis weakens to clash thunderbolt against mountain-mace.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** A cyclopean titan of calcified bone and hardened basalt. Direct rival to Marshal-General Vajraketu, awaiting the day the Aegis weakens to clash thunderbolt against mountain-mace.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* Maharathi (T6 Corrupted Warlord)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Tectonic Siege: Seismic Ground Collapse, Unbreakable Bone Carapace]
@@ -1534,7 +1534,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Inscribed palm-leaf treaty scroll & brass defensive bell.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 2 to Present | Age 1,500+ (Daitya Philosopher).
 - **Moral Stance (नैतिक स्थिती):** Lawful Good. Diplomatic peacemaker striving to prevent all-out war with the upper shards.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** King Bali's younger brother. Maintains back-channel communications with Inquisitor Satyak on the Setu and coordinates joint patrols with Ash Fortress exiles.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** King Bali's younger brother. Maintains back-channel communications with Senior Field Auditor Satyaketu on the Setu and coordinates joint patrols with Ash Fortress exiles.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* Atirathi (T5 Noble Devil Scholar)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Sanctuary Arts: Soul-Thread Repair, Miasma Neutralization Field]
@@ -1543,7 +1543,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 ---
 
 ### [CHR-ABY-06] Nila (नीला / Kali-Ka) — "The Shadow-Dancer"
-- **Role & Faction (गट व भूमिका):** Symbiotic Noble Devil Partner & Shade Assassin; Aegis-Light Court to House Noctis.
+- **Role & Faction (गट व भूमिका):** Symbiotic Noble Devil Partner & Shade Assassin; Aegis-Light Court to House Yamuna-Shade (छाया-गृह).
 - **Planetary Shard & Location (स्थान):** Corrupted Realm / Human Shard | Bonded inside Kael's Shadow
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank -> A-Rank Scaling | Symbiotic Contract Companion
 - **Quirk & Magic (सक्रिय कौशल्ये):** Shadow-Cloak, Curse-Eater Parry & Twin Bone-Blades (Travels within bonded partner's shadow; consumes hostile curses).
@@ -1602,7 +1602,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Concealed spring-loaded stiletto & flash-powder capsules.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 180 (Long-Lived Shifter).
 - **Moral Stance (नैतिक स्थिती):** Chaotic Neutral. Opportunistic broker who trades rare ores for mortal salt and gold.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Controls the illegal transit of chasm-mined runic minerals through pre-Partition Rotary Shadow Anchors, maintaining illicit business accounts with Admiral Silas and Renzo Vance.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Controls the illegal transit of chasm-mined runic minerals through pre-Partition Rotary Shadow Anchors, maintaining illicit business accounts with Lord Admiral Suhotra and Renzo Vance.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* A-Rank Illusionist | T3 (Black Market Boss)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Mirage Shifting: Complete Sensory Camouflage, Decoy Mirage Handoff]
@@ -1676,8 +1676,8 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Vedic Resonances: Soul-Calm Chant, Far-Hearing Acoustic Link]
   - *अधिकृत शस्त्रागार (Arsenal):* Petrified stone beak & talons
 
-# PART 8: TIER 1 HIGH COUNCIL & PRIMORDIAL FIGURES (परम-धाम व The High Council Rotunda (सभा-लोक))
-*वैश्विक आधारशिळा, प्रणाली-गाभा व घटनात्मक पदे*
+# PART 8: TIER 1 PARAMA-DHAMA & TIER 2 HIGH COUNCIL CONSTITUTIONAL ENTITIES
+*वैश्विक आधारशिळा, सर्वोच्च त्रिमूर्ती, प्रणाली-गाभा, इंद्र-उपाधी व घटनात्मक पदे*
 
 ---
 
@@ -1922,6 +1922,26 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Warfare: Operational Ansha Combat, Zero-Tolerance Dissolution] [Executive Sovereign]
   - *अधिकृत शस्त्रागार (Arsenal):* [Relic: Ansha-Triśūla] & [Relic: Mahakala Dissolution Staff]
 
+---
+
+### [CHR-DIV-14] The Indra-Upādhi (इंद्र-उपाधी) — Presiding Sovereign of the High Council & Bearer of the Vajra
+- **Role & Faction (गट व भूमिका):** Presiding Sovereign of Tier 2 Swarga (The Buffer Zone / Setu-Loka); Presiding Head of the High Council Rotunda (सभा-लोक); Supreme Military Warden of the 360° Spherical Grand Aegis.
+- **Planetary Shard & Location (स्थान):** Tier 2 Swarga / The Buffer Zone | Golden Vajra Throne (सुवर्ण वज्र-सिंहासन)
+- **Power Bracket & Scale Band (साधना-स्तर):** T7 / T8 (Apex Cosmic Sovereign / High Council Presiding Head)
+- **Vanguard & Soul-Bond (व्हॅनगार्ड व सहजीवी बंध):** Universal Function: Commander-in-Chief of Pan-Astral Defense & Grand Aegis Perimeter | सहजीवी बंध: ऐरावत (Airavata — Primordial Four-Tusked White Mastodon)
+- **Lineage & Culture (संस्कृती व वंश):** इंद्र घटनात्मक पद (Constitutional Indra Upadhi — Achieved through 100 Ashvamedha Tapas or Peerless Merit, verified by System Ananta).
+- **Historical Era & Lifespan (ऐतिहासिक युग व आयुर्मर्यादा):** **Era 1 to Era 4** | घटनात्मक कार्यकाळ (Constitutional Tenure — subject to replacement upon loss of virtue or tapas).
+- **Moral Stance (नैतिक स्थिती):** Lawful Neutral (Vigilant Protector). Commands the Setu Legions and oversees the 7 voting blocks of the High Council. Treats mortal ascendants and Deva lords with identical constitutional equality (Warrior Equality).
+- **Constitutional Dual-Relationship with Soul Trinity:**
+  1. *Metaphysical / Karmic Jurisdiction:* Holds ZERO judicial or veto authority over Yama, Chitragupta, and Vidhātā regarding soul-processing ledgers or Route A destinies (they answer only to Tier 1 Parama-Dhama).
+  2. *Spatial / Physical Security:* Holds supreme command over the territorial perimeter and military security of Tier 2 Swarga, providing unassailable sanctuary to the Soul Administration archives against Patala incursions.
+- **Physical Dossier & Anatomy (शारीरिक संग्रह):** सूर्यप्रभ सुवर्ण चिलखत, शिरावर वज्र-मुकुट, हातात अमोघ वज्र-अस्त्र, नजरेत तिन्ही लोकांचे लष्करी व धोरणात्मक भान.
+- **Psychological Profile & Hook (मानसिक प्रोफाईल):** विश्वाचे बाह्य शत्रूंपासून रक्षण करणे आणि संसदेतील राजकीय गतिरोध मोडून समतोल राखणे.
+- **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
+  - *साधना-स्तर (Scale Band):* T7 / T8 (Apex Cosmic Sovereign)
+  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Cosmic Warfare: Vajra Lightning Discharge, 360° Grand Aegis Command Synchronization, High Council Casting Vote Authority]
+  - *अधिकृत शस्त्रागार (Arsenal):* [Primordial Astra: The True Vajra (अमोघ वज्र)], [Relic: Golden Vajra Seal of the High Council]
+
 
 # PART 9: THE ALIENS DIASPORA (द एलियन्स डायस्पोरा — विस्थापित आधुनिक नश्वर)
 *Notable Reincarnated Souls, Otherworlders & Glitch-Drifters Across Universe B*
@@ -1945,20 +1965,20 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-02] Donna Beatrice Rosso (दॉना बीट्रिस रोसो) — High Arbitrator of the Core-Exchange
-- **Role & Faction (गट व भूमिका):** Chief Financial Arbitrator; Central Reserve Bank & Core-Exchange Vaults.
+### [CHR-ALN-02] Matteo Benvenuti (मात्तेओ बेन्वेनुती) — Grand Appraiser & Deputy of the Beast-Core Bourse
+- **Role & Faction (गट व भूमिका):** Chief Technical Appraiser & Deputy Vaultmaster; Central City Core-Exchange under High Arbitrator Beatrice Rosso.
 - **Planetary Shard & Location (स्थान):** Central Planetary Shard (मध्यवर्ती क्षेत्र) | Central City Core-Exchange
-- **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Reincarnate Bracket) | T2 (Financial Sovereign)
-- **Quirk & Magic (सक्रिय कौशल्ये):** Appraiser's Eye & Karmic Ledger Lock (Instantly gauges the true energy density and purity of any Beast-Core).
+- **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Reincarnate Bracket) | T2 (Technical Appraiser)
+- **Quirk & Magic (सक्रिय कौशल्ये):** Appraiser's Eye & Density Calibration (Gauges the exact elemental purity and Prana density of raw Beast-Cores).
 - **Bonded Beast & Mount (सहजीवी बंध):** Silt-Breaker Boar (Stage 1 Domestic Utility).
-- **Weaponry & Arsenal (शस्त्रागार):** Pearl-handled derringer-shaped Aether-wand & golden balance scale.
-- **Historical Era & Lifespan (ऐतिहासिक युग):** Reincarnated in Era 4 | Age 54 (Former Earth Banker).
-- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Incorruptible banker who honors contracts above all politics.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Reincarnated from a Venetian banking lineage. Structured the 17% customs clearance system between the outer shards and Central City, stabilizing the Aether-Rupee economy.
+- **Weaponry & Arsenal (शस्त्रागार):** Heavy brass calipers & runic appraisal lens.
+- **Historical Era & Lifespan (ऐतिहासिक युग):** Reincarnated in Era 4 | Age 44 (Former Earth Gemologist).
+- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Methodical craftsman dedicated to objective mineralogical and core calibration.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Reincarnated Florentine gemologist serving as the trusted technical deputy to High Arbitrator Beatrice Rosso, ensuring all Beast-Cores entering the Central Reserve Bank meet exact purity indices.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
-  - *साधना-स्तर (Scale Band):* C-Rank | T2 (Financial Sovereign)
-  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Appraisal: Prana Core Density Sight, Counterfeit Detection Ward]
-  - *अधिकृत शस्त्रागार (Arsenal):* Golden balance scales & runic Aether-wand
+  - *साधना-स्तर (Scale Band):* C-Rank | T2 (Technical Appraiser)
+  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Appraisal: Prana Core Density Sight, Counterfeit Flaw Detection]
+  - *अधिकृत शस्त्रागार (Arsenal):* Brass calibration scales & runic focal glass
 
 ---
 
@@ -2005,7 +2025,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Concealed punch daggers & forged frequency-tuning discs.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Reincarnated in Era 4 | Age 39 (Former Earth Underworld Fixer).
 - **Moral Stance (नैतिक स्थिती):** True Neutral. Information merchant who deals with all factions equally.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Operates the clandestine elevator network beneath Hastinapur's Pit #13, trading forbidden chasm ores with Marich and Admiral Silas while keeping tabs on Hollow Sect activity.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Operates the clandestine elevator network beneath Hastinapur's Pit #13, trading forbidden chasm ores with Marich and Lord Admiral Suhotra while keeping tabs on Hollow Sect activity.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* B-Rank Shadow Broker | T2 (Information King)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Stealth Mechanics: 30-ft Acoustic Silence Bubble, Spatial Gear Bypass]
@@ -2013,25 +2033,30 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-06] Neel (नील / The Pulse-Reader) — Primary Glitch-Drifter & Unindexed Hero
-- **Role & Faction (गट व भूमिका):** Season 1 Protagonist; D-to-S Rank Proving Games Contender; Rookie Adventurer; Unindexed Glitch-Drifter from 21st-Century India.
-- **Planetary Shard & Location (स्थान):** Central City Outer Slums -> The Proving Games Coliseum
-- **Power Bracket & Scale Band (साधना-स्तर):** D-Rank (Rookie Feeder) -> C/B-Rank (Awakening Ascendant) | T1 -> T2
-- **Quirk & Magic (सक्रिय कौशल्ये):** [Pulse-Sync & Friction Spark] (Sensory-Instinct & Close-Quarters Striker: Pulse-Sight / Rhythm-Read within 15 paces, Friction Spark / Pulse-Snap onto Marma nerve points, and Dual-Heart Synchronization with companion beast).
+### [CHR-ALN-06] Neel (नील) — Unindexed Glitch-Drifter & Season 1 Protagonist
+- **Role & Faction (गट व भूमिका):** Season 1 Protagonist; D-to-S Rank Proving Games Contender; Rookie Adventurer; Unindexed Glitch-Drifter from 21st-Century South Mumbai.
+- **Planetary Shard & Location (स्थान):** Central City Outer Slums -> The Proving Games Coliseum -> Tier 3 Astral Realm
+- **Power Bracket & Scale Band (साधना-स्तर):** D-Rank (Rookie Feeder) -> C/B-Rank (Awakening Ascendant) | T1 -> T2 (Capped at S-Rank Fortress-Breaker Scale)
+- **Quirk & Magic (Dual-Vector System):**
+  1. *Right Arm (Piṅgalā Conduit):* Atharvan Krutya **GENI** (synthetic Manas from Gemma-4 neural chip) with **Zero-Sing Kinetic Friction Spark** (250–400 Joules contact thermal arc with zero 0.2s acoustic tell; requires instant Apāna thermal flush down into ground).
+  2. *Left Arm (Idā Conduit):* **Cursed-Spirit Glove KALI (कलि)** (weathered dark combat glove + spiked black-iron shackle holding ancient Patala Devil Spirit Kali; symbiotic beast-bond with 0% corruption guarantee; dual-spectrum physical & elemental telekinesis strictly bound to owner's Dhāraṇā/Hold and Newton's Third Law).
 - **Bonded Beast & Mount (सहजीवी बंध):** Dusk-Scrapper Hound ("Sheru" / Official Guild Name: "Kuro" — Stage 1 Feral -> Stage 2 Ironclad Hound -> Stage 3 Abyssal Dread-Hound; one-eared Void/Iron scrap survivor).
-- **Weaponry & Arsenal (शस्त्रागार):** Battered short iron gladius, reinforced leather arm-guard & pocket-full of flint bearings.
-- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 19 (Unindexed Engineering Student).
-- **Moral Stance (नैतिक स्थिती):** Chaotic Good / Pragmatic Rationalist. Street-smart survivor mask, loyal to his circle, skeptical of religious superstition, allergic to pompous grandstanding.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** 100% Original 21st-century human Earth body (not a corpse hijack) wearing wet Bombay college clothes (denim jacket, cotton tee, dark trousers, worn sneakers), college backpack, house keys, and dead smartphone (cracked screen, 0% battery). Orphaned at 16 when parents Aarav & Revati died in a highway collision; zero extended family; lived as a self-reliant ghost in a rented Bombay 1-BHK paying rent through delivery shifts. Crossed the cosmic void via an irregular monsoon spatial glitch, undergoing an emergency Kshira Sagara Metabolic Reboot (72,000 Nadis unsealed). Awoke in the straw-bed of an unhitched Beast-Cart outside Central City outer gates with zero coins, dry throat, and burning Spark-Pulse palms. Holds zero gamer blue screens (`[STATUS: UNINDEXED / BLANK SLATE]`). Mid-IQ in rote magic theory, but 200-IQ in street survival, micro-expression reading, and high-stakes psychological gambles.
+- **Weaponry & Arsenal (शस्त्रागार):**
+  - *Right Wrist:* Atharvan Krutya GENI node (shackle-free weathered fingerless combat glove).
+  - *Left Fore-Wrist:* Cursed Glove KALI (spiked black-iron shackle manacle permanently clamped around wrist).
+  - *Relics from Earth:* Custom titanium flagship prototype (dead battery), Centurion Black Card (useless in fantasy), crumpled ₹10 note + ₹1 coin (₹11 cutting chai change), 0 Panas upon arrival.
+- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 21 (Billionaire Tech Prodigy from Earth).
+- **Moral Stance (नैतिक स्थिती):** Pragmatic Realist / Fierce Loyalist (Grey Alignment). Tony Stark swagger masking deep hyper-protective trauma; street-smart, allergic to religious superstition, honors contracts, fiercely defends his circle.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Sole heir to the Gadora Industrial & Tech Conglomerate (South Mumbai). Born to late tech titans Aarav Gadora & Suman Gadora. Grew up in a Worli Sea Face penthouse with a state-of-the-art coastal robotics/AI lab. Following his parents' death, fended off predatory takeover attempts from his opportunistic Uncle Kani Gadora and Aunt Cheri. Crossed the cosmic void during a freak monsoon electrical storm, undergoing an emergency Kshira Sagara Metabolic Reboot (72,000 Nadis cleared). Awoke in an unhitched beast-cart outside Central City with zero Panas, burning palms, and no gamer screens (`[STATUS: UNINDEXED / BLANK SLATE]`). 200-IQ in leverage, mechanical strain, micro-expression reading, and high-stakes psychological gambles.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* D-Rank -> C/B-Rank | T1 -> T2 (Rising Glitch Contender)
-  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Pulse-Sync & Friction Spark: Pulse-Sight Rhythm-Read (15 paces), Friction Spark / Pulse-Snap, Dual-Heart Synchronization]
-  - *अधिकृत शस्त्रागार (Arsenal):* Short iron gladius, reinforced leather buckler & cracked smartphone relic
+  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Dual-Vector Combat: Zero-Sing Kinetic Friction Spark (Piṅgalā/Right), Cursed Telekinesis & Vector Grasp (Idā/Left via Kali), Apāna Heel-Grounding Flush, Pulse-Sight Rhythm-Read (15 paces), Dual-Heart Synchronization with Sheru]
+  - *अधिकृत शस्त्रागार (Arsenal):* Left Spiked Cursed Glove KALI, Right Krutya GENI glove, dead titanium prototype phone & ₹11 transit coin relic
 
 ---
 
 ### [CHR-ALN-07] Kael (काएल / The Rift-Walker) — Escaped Type-1 Summoned Otherworlder
-- **Role & Faction (गट व भूमिका):** Rogue Summoned Striker & Adventurer; Hastinapur Vanguard Guild & House Noctis.
+- **Role & Faction (गट व भूमिका):** Rogue Summoned Striker & Adventurer; Hastinapur Vanguard Guild & House Yamuna-Shade (छाया-गृह).
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapur Adventurer Guild
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank -> B-Rank | T2 (Escaped Otherworld Striker)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Spatial Swap-Clap (*Boogie-Woogie*) & Shadow-Step (Swaps physical positions with any object or entity imbued with Prana via a handclap; steps through shadows via **Mode-A Symbiotic Contract with Noble Devil Nila [CHR-ABY-06]**).
@@ -2090,7 +2115,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Heavy lightning-tethered whaling harpoon & boarding cutlass.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Reincarnated in Era 4 | Age 28 (Former Earth Naval Officer).
 - **Moral Stance (नैतिक स्थिती):** Chaotic Good. Daring maritime captain who patrols coastal shipping routes against rogue Makaras.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Works closely with Commodore Linnea and deep-sea diver Finn, protecting merchant drakes from deep-trench monsters.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Works closely with Commodore Lavanya and deep-sea diver Malhar, protecting merchant drakes from deep-trench monsters.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* B-Rank Sea Vanguard | T2 (Marine Leviathan Hunter)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Marine Bolt: Conductive Harpoon Arc, Subsea Sonar Mapping]

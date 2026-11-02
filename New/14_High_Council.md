@@ -1,15 +1,15 @@
 # 14. High Council: Parliamentary Architecture, Cycles, Procedural Law & Internal Conflicts
 **File:** `D:\Web Novel\New\14_High_Council.md`  
 **Tags:** `#high-council #sabha-loka #the-eternal-four #divine-delegates #constitutional-upadhis #parliamentary-cycles #voting-mechanics #council-conflicts #rotary-anchors #aliens-status #cosmic-warriors #canon-lock`  
-**Status:** [CANON LOCK] Official Canonical Specification of Tier 1 Governance, Parliamentary Law & Ideological Warfare (October 2026)  
-**Authority:** Universe B च्या सर्वोच्च संसदीय व्यवस्थेची (High Council Realm / The High Council Rotunda (सभा-लोक)), तिच्या कालगणनेची, ६ घटनात्मक उपाधींमधील तात्त्विक संघर्षांची, आणि नवीन कॅनननुसार (५ ग्रह-खंड, अविनाशी चतुष्कोण, चक्र-लंगर, ५% एलियन्स डायस्पोरा) अद्ययावत कार्यप्रणालीची एकमेव अधिकृत संहिता.
+**Status:** [CANON LOCK] Official Canonical Specification of Tier 2 Governance, Parliamentary Law & Ideological Warfare (October 2026)  
+**Authority:** Universe B च्या Tier 2 सर्वोच्च संसदीय व्यवस्थेची (The High Council Rotunda [सभा-लोक] under Indra-Upādhi), तिच्या कालगणनेची, ६ घटनात्मक उपाधींमधील तात्त्विक संघर्षांची, आणि नवीन कॅनननुसार (५ ग्रह-खंड, अविनाशी चतुष्कोण, चक्र-लंगर, ५% एलियन्स डायस्पोरा) अद्ययावत कार्यप्रणालीची एकमेव अधिकृत संहिता.
 
 ---
 
 ## 0. Executive Summary & Metaphysical Chamber Geometry
 *(संसदीय वास्तुशास्त्र, भौतिक नियम व सभा-मंडप रचना) [CANON LOCK]*
 
-Tier 1 मधील **High Council Realm (The High Council Rotunda (सभा-लोक))** ही केवळ ढगांवर बसलेली ऋषींची बैठक नाही; ती संपूर्ण बाल्य विश्वाचे (Child Cosmos) ऊर्जा-संतुलन, कर्म-कायदे, आणि सीमा-स्थैर्य नियंत्रित करणारी **सर्वोच्च वैश्विक महा-संसद** आहे. ही संसद सामान्य नश्वर जगातील छोट्या-मोठ्या स्थानिक वादांत किंवा कर-वसुलीत पडत नाही; तिचे कार्य केवळ विश्वाचे मॅक्रो-धोरण आणि अस्तित्वाचे रक्षण करणे हे आहे.
+Tier 2 Swarga / Setu-Loka मधील **High Council Realm (The High Council Rotunda (सभा-लोक))** ही केवळ ढगांवर बसलेली ऋषींची बैठक नाही; ती संपूर्ण बाल्य विश्वाचे (Child Cosmos) ऊर्जा-संतुलन, कर्म-कायदे, आणि सीमा-स्थैर्य नियंत्रित करणारी **सर्वोच्च वैश्विक महा-संसद** आहे. ही संसद सामान्य नश्वर जगातील छोट्या-मोठ्या स्थानिक वादांत किंवा कर-वसुलीत पडत नाही; तिचे कार्य केवळ विश्वाचे मॅक्रो-धोरण आणि अस्तित्वाचे रक्षण करणे हे आहे.
 
 ```
 ═════════════════════════════════════════════════════════════════════════════════════════════
@@ -17,7 +17,7 @@ Tier 1 मधील **High Council Realm (The High Council Rotunda (सभा-�
 ═════════════════════════════════════════════════════════════════════════════════════════════
 
                                 [ THE UNREACHED APEX ]
-                         The Three Pillars of Transcendent Light
+                         Tier 1: Parama-Dhama (Supreme Trinity)
                        Brahma (White) • Vishnu (Blue) • Shiva (Violet)
                        (Zero Physical Avatar • Absolute Silence • Supreme Will)
                                          │
@@ -29,13 +29,21 @@ Marichi · Atri · Angiras         Sanatkumara · Vashistha             Nandi ·
 Bhrigu · Daksha                  Shuka (The Living Witness)          (Zero Combat in Chamber)
      │                                   │                                   │
      └───────────────────────────────────┼───────────────────────────────────┘
+                                         │
+                                         ▼
+     ═══════════════════════════════════════════════════════════════════════════════════
+                [ TIER 2: THE GOLDEN VAJRA THRONE OF INDRA-UPĀDHI ]
+           Presiding Sovereign of the High Council • Bearer of the Vajra
+            Casting Vote in Deadlocks • Supreme Commander of Pan-Astral Defense
+     ═══════════════════════════════════════════════════════════════════════════════════
+                                         │
                                          ▼
      ═══════════════════════════════════════════════════════════════════════════════════
                       [ THE SIX CONSTITUTIONAL UPADHI STALLS ]
      [ THE PERMANENT SYSTEM PILLARS ]          [ THE ROTATING COSMIC UPADHIS ]
      1. Yama-Dharma   (Soul Adjudication)      4. The Chief Sage  (Anomaly Oversight)
      2. Vidhata       (Prana-Sutra Destiny)    5. Mahā-Pālaka     (Pan-Astral Defense)
-     3. Chitragupta   (The Grand Hall of Ledgers (Maha-Lekha) Ledgers)     6. Prime Seeker    (Dimensional Physics)
+     3. Chitragupta   (Maha-Lekha Ledgers)     6. Prime Seeker    (Dimensional Physics)
      ═══════════════════════════════════════════════════════════════════════════════════
                                          │
                                          ▼
@@ -84,10 +92,21 @@ Bhrigu · Daksha                  Shuka (The Living Witness)          (Zero Comb
 
 ### 1.4 The Soul Triad's Parliamentary Posture: "Boredom to Lightning"
 - **The Mundane Boredom (लौकिक राजकारणाचा कंटाळा):**  
-  जेव्हा कौन्सिलमध्ये असुरांच्या गंधक-धूरावरून, देवांच्या स्फटिक-निर्यात करांवरून किंवा मानवांच्या विमान-मार्गांवरून तास न् तास चर्चा चालते, तेव्हा यम हनुवटीवर हात ठेवून शांत बसलेले असतात, विधाता आपले प्राणाचे धागे गुंफत बसतात, आणि चित्रगुप्त दफ्तर तपासण्यात मग्न असतात. त्यांना या नश्वर राजकारणात **शून्य रस** असतो.
+  जेव्हा कौन्सिलमध्ये असुरांच्या गंधक-धूरावरून, देवांच्या स्फटिक-निर्यात करांवरून किंवा मानवांच्या रथ-मार्गांवरून तास न् तास चर्चा चालते, तेव्हा यम हनुवटीवर हात ठेवून शांत बसलेले असतात, विधाता आपले प्राणाचे धागे गुंफत बसतात, आणि चित्रगुप्त दफ्तर तपासण्यात मग्न असतात. त्यांना या नश्वर राजकारणात **शून्य रस** असतो.
 - **The Instant Shift (जिथे 'आत्मा' आला, तिथे वज्र-शांतता!):**  
   परंतु ज्या क्षणी चर्चेत विषय येतो: *"Tier 4 च्या प्रभावामुळे १०,००० आत्म्यांचे चक्र थांबले आहे"*, किंवा *"Hastinapur मध्ये अर्ध-रिक्त (Ardha-Rikta) बहु-वैश्विक आत्मे आले आहेत"*, किंवा *"Devil Summoning मुळे आत्म्याची काजळी झाली आहे"*...  
   त्याच क्षणी **यमाचे डोळे तीक्ष्णपणे उघडतात**, विधात्याचा धागा थांबतो, आणि चित्रगुप्ताचा सुवर्ण-कलम उचलला जातो. संपूर्ण संसद एका क्षणात शांत होते; कारण प्रत्येकाला ठाऊक आहे की विश्वाचे खरे मालक हे तिघे आहेत, बाकी सर्व केवळ बाह्य पसारा आहे!
+
+### 1.5 The Soul Trinity's Constitutional Dual-Relationship with Indra-Upādhi
+- **Metaphysical / Karmic Jurisdiction (सर्वोच्च स्वातंत्र्य):**  
+  यम, विधाता आणि चित्रगुप्त हे केवळ Tier 1 मधील सर्वोच्च त्रिमूर्ती आणि दैवी प्रतिनिधींना उत्तरदायी आहेत. **इंद्र-उपाधीला यमाच्या न्यायपीठावर, विधात्याच्या प्राण-सूत्रांवर किंवा चित्रगुप्ताच्या खतावणीवर कोणताही हुकूम किंवा व्हेटो (Veto) चालवण्याचा घटनात्मक अधिकार नाही.**
+- **Spatial / Military Jurisdiction (भौतिक संरक्षण):**  
+  परंतु आत्मा-प्रशासनाचे प्रत्यक्ष कार्यालय (Soul Administration Complex) Tier 2 Swarga / Setu-Loka मध्ये स्थित असल्याने, त्यांच्या बाह्य सीमांचे रक्षण, दूत-संरक्षण आणि अधोलोक आक्रमणांपासून सुरक्षा पुरवण्याची **सर्वोच्च लष्करी जबाबदारी इंद्र-उपाधीची आहे.**
+
+### 1.6 The Unbroken Cosmic Bridge: High Council to Astral Realm
+- **The Macro-to-Civic Hierarchy:**  
+  $$\text{Tier 2 Swarga: High Council (Indra-Upādhi)} \gg \text{Tier 3 Astral Realm: The Manu-Upādhi \& 7 Sovereign Seats}$$
+  इंद्र-उपाधी संपूर्ण विश्वाचे लष्करी स्थैर्य व अजगर-कवच सांभाळतात, तर सेंट्रल सिटीमधील **मनू-उपाधी (The Iron Sovereign on the Grey Basalt Throne)** पाचही ग्रह-खंडांमधील नश्वर नागरी कायदे, कर-प्रणाली आणि प्रोव्हिंग गेम्सचे प्रशासन सांभाळतात.
 
 ---
 
@@ -203,7 +222,7 @@ High Council थेट सामान्य नागरिकांच्य�
 │ 1. THE FOUR AETHER-PILLAR CONDUITS (प्रकाश-स्तंभ वाहक):                           │
 │    • Setu वरून खाली चार Shards च्या सीमेवर उतरणारे महाकाय प्रकाश-स्तंभ.          │
 │    • Hastinapur, Vajra-Nagara, Amaravati, आणि Primeval Ridge सीमा चौक्या.         │
-│    • The White Couriers (Levitating Brass Carriages) आणि अधिकृत दिव्य दूत-यान यातूनच प्रवास करतात (Zero Rail).  │
+│    • The White Couriers (Levitating Brass Carriages) आणि अधिकृत दिव्य दूत-यान यातूनच प्रवास करतात (शून्य लोहमार्ग / संपूर्ण तरंगते यान).  │
 ├───────────────────────────────────────────────────────────────────────────────────┤
 │ 2. THE ELITE HARVEST (सर्वोच्च वीरांची निवड / Valhalla Pipeline):                 │
 │    • Setu स्थानिक आखाड्यात हस्तक्षेप करत नाही.                                    │
