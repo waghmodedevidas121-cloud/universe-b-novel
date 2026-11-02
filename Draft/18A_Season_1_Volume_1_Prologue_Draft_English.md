@@ -13,7 +13,7 @@
 
 The rank stench of rotting garbage, burnt diesel exhaust, and overflowing open gutters hit the back of his throat with suffocating force.
 
-Outside Dadar station, the torrential monsoon had raged unbroken for six hours. Two feet of murky, stagnant water flooded the streets, carrying an oily slurry of vehicle grease, plastic refuse, and decaying vegetables. Exhaust pipes were submerged, and the frantic, dissonant blare of truck air-horns slammed against eardrums like iron pipes.
+Outside Dadar station, the torrential monsoon had raged unbroken for six hours. Two feet of murky, stagnant water flooded the streets, carrying an oily slurry of vehicle grease, plastic refuse, and decaying vegetables. Exhaust pipes were submerged, and the frantic, dissonant blare of truck air-horns ricocheted off concrete girders, vibrating deep within his ribcage.
 
 Leaning casually against the rusted pedestrian railing beneath the overpass stood Neel.
 
@@ -25,11 +25,7 @@ A crimson municipal BEST bus plowed through a massive crater in the road at full
 
 A heavy sheet of black gutter sludge surged into the air.
 
-Clearing the railing, the foul spray slammed squarely across Neel’s face, neck, and bespoke ash-grey cashmere hoodie.
-
-Cold, greasy runoff trickled down his jawline.
-
-Neel stood motionless for five full seconds. He didn't flinch. He didn't wipe his face.
+Clearing the railing, the foul spray slammed squarely across Neel’s face, neck, and bespoke ash-grey cashmere hoodie. Murky gutter sludge trickled into his collar, but Neel remained motionless for five full seconds—unblinking, unbothered, processing the civic insult with absolute calm.
 
 Then, with effortless calm, he pulled up his damp sleeve and wiped his eyes. There was no humiliation on his face, no self-pity—only a sharp, reckless smirk playing at the edges of his lips.
 
@@ -95,7 +91,7 @@ Beneath the opaque surface, the heavy cast-iron manhole cover had been dislodged
 
 Neel’s right foot stepped into empty air.
 
-*WHOOSH!*
+*—SILENCE!*
 
 There was no concrete pipe below. No brick walls. No sewer line.
 
@@ -123,9 +119,7 @@ Behind his right ear, the custom silicon chip overheated with searing, unbearabl
 
 Neel’s vision blurred completely. His brain tapped out instantly.
 
-Consciousness shattered in a single split-second, plunging him headfirst into a coma-level blackout.
-
-Total, absolute blackout.
+Consciousness shattered in a split-second. No agony, no light—only a deep, pitch-black void.
 
 He remembered nothing after that... not what happened in that cosmic glitch, nor how many leagues he sank into the abyss. System completely shutdown.
 
