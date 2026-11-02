@@ -1,6 +1,6 @@
-# 05. Tier 2: The Buffer Zone, Geography, Sectors & Operations
+# 05. Tier 2: Swarga / Setu-Loka (The Great Buffer Zone), Geography, Sectors & Operations
 **File:** `D:\Web Novel\New\05_The_Setu.md`  
-**Tags:** `#buffer-zone #tier-2 #the-great-setu #antariksha #four-sectors #setu-academy #setu-mahasena #13-officers #operational-regulations #canon-lock`  
+**Tags:** `#buffer-zone #tier-2 #swarga #indra-upadhi #the-great-setu #antariksha #four-sectors #setu-academy #setu-mahasena #high-council #warrior-equality #canon-lock`  
 **Status:** [CANON LOCK] Official Administrative, Geographic & Military Specification (October 2026)  
 **Authority:** Tier 2 (The Buffer Zone / The Great Setu) ची अधिकृत भौगोलिक, प्रशासकीय आणि लष्करी कार्यप्रणाली. Merges, unifies, and expands `World/22`, `World/23`, `World/24`, and `World/25`.
 
@@ -9,33 +9,40 @@
 ## 1. Macro-Geography & Cosmic Physics of Antariksha
 *(मध्यम-लोक / महा-सेतूची भूरचना व वैश्विक भौतिकशास्त्र) [CANON LOCK]*
 
-Tier 2 (The Buffer Zone / शास्त्रीय *Antariksha*) हा 100% अहिंसक Tier 1 (Divine High Council Realm) आणि खालील Tier 4 (Corrupted Realm) / Tier 3 (Astral Realm) यांच्यामध्ये अधांतरी बांधलेला **एक अजस्त्र, इंजिनिअर्ड सेतू आणि अवकाशीय महामार्ग** आहे. The Setu ची दक्षिण सीमा थेट The Grand Aegis आणि Tier 4 च्या अधो-लोकाशी जोडलेली आहे:
+Tier 2 (The Buffer Zone / शास्त्रीय *Swarga / Setu-Loka*) हा Tier 1 (Parama-Dhama — Transcendent Divine Realm) आणि खालील Tier 4 (Corrupted Realm / Patala) व Tier 3 (Astral Realm) यांच्यामध्ये अधांतरी उभारलेला **एक अजस्त्र, इंजिनिअर्ड वैश्विक सेतू, सैन्य छावणी व महा-प्रशासकीय बफर झोन** आहे. 
+
+> [!IMPORTANT]
+> **The Sovereign of Swarga: Indra-Upādhi (इंद्र-उपाधी):**  
+> Tier 2 Swarga हे कोणत्याही एका वंशाचे (केवळ देवांचे) खाजगी राज्य नसून, **सर्व योद्ध्यांसाठी समान हक्क असलेला आंतरराष्ट्रीय बफर झोन (The Buffer Zone of Warrior Equality)** आहे. येथे Devas, Asuras, Humans, Beasts आणि Outworlders सर्वांना त्यांच्या शौर्यानुसार समान प्रतिष्ठा मिळते. या संपूर्ण क्षेत्राचे आणि **The High Council** चे सर्वोच्च प्रशासकीय प्रमुख **Indra-Upādhi** (सुवर्ण वज्र-सिंहासन) असतात.
+
+The Setu ची बाह्य सीमा थेट The 360° Spherical Grand Aegis आणि Tier 4 च्या अधो-लोकाशी जोडलेली आहे:
 
 ```
-                  [ TIER 1: DIVINE HIGH COUNCIL & DIVINE REALM ]
+                  [ TIER 1: PARAMA-DHAMA / SUPREME DIVINE ASSEMBLY ]
+                  (Brahma · Vishnu · Shiva + Divine Delegates Prajapati/Narada/Rudra)
                                         ▲
                                         │ (Deva Gate / High Ascent)
 ════════════════════════════════════════╪════════════════════════════════════════
-                  [ TIER 2: THE BUFFER ZONE / THE GREAT SETU ]
+        [ TIER 2: SVARGA / THE GREAT SETU (THE BUFFER ZONE) ]
+        (Presided over by INDRA-UPĀDHI • The High Council • Warrior Equality)
   ┌───────────────────────┬──────────────────────────┬────────────────────────┐
   │  WEST: IRON FRONTIER  │    CENTRAL: GRAND HUB    │ EAST: PRATIGRAHA GROUND │
-  │  - The Iron Rampart   │    - Central Hub Ring    │   - Pratigraha Godown   │
-  │  - Vajra Fortress(HQ) │    - Setu Academy        │   - Conduit Dock        │
-  │  - Barrier Outposts   │    - Engineering Labs    │   - Lekhya Bureau       │
-  │  - 5,000-Mile Trenches│    - Court of Inquiry    │   - Surface Rail Gate   │
+  │  - The Iron Rampart   │    - Indra-Upadhi Throne │   - Pratigraha Godown   │
+  │  - Vajra Fortress(HQ) │    - High Council Chamber│   - Soul Trinity Offices│
+  │  - Barrier Outposts   │    - Setu-Mahasena HQ    │   - Conduit Dock        │
+  │  - Quarantine Trenches│    - Setu Academy        │   - Armored Ratha-Gate  │
   └───────────┬───────────┴─────────────┬────────────┴───────────┬────────────┘
               │                         │                        │
-  (Facing Corrupted Realm)      (Main Rail Terminal)     (Route A/B Arrival)
+  (Facing 360° Grand Aegis)     (Central Ratha Plaza)    (Route A/B Arrival)
 ════════════════════════════════════════╪════════════════════════════════════════
                                         ▼
-    [ QUARANTINE THRESHOLD: 360° SPIRITUAL BARRIER (THE GRAND AEGIS) ]
+     [ QUARANTINE THRESHOLD: 360° SPHERICAL BARRIER (THE GRAND AEGIS) ]
                                         ▼
-    [ TIER 4: THE CORRUPTED REALM (अधो-लोक / Devils & 7 Void Seals) ]
-        (Between Buffer Zone & Astral Realm • Pishacha Cannister Drops)
+      [ TIER 4: PATALA / THE CORRUPTED REALM (अधो-लोक / Pretas & 7 Seals) ]
                                         ▼
           [ ADJACENT DIMENSIONAL INTERFACE & KAY-TYAG FILTER ]
                                         ▼
-    [ TIER 3: THE ASTRAL LIVING REALM (५ स्वतंत्र उप-लोक / 70% Living Wheel) ]
+    [ TIER 3: THE ASTRAL REALM (५ स्वतंत्र Shards • Governed by MANU-UPĀDHI) ]
 ```
 
 ### 1.1 Topography & Gravitational Anchors
@@ -80,7 +87,7 @@ Tier 2 (The Buffer Zone / शास्त्रीय *Antariksha*) हा 100% 
    - काळे पाषाण, स्फटिक आणि सागवानी लाकडाने बांधलेला भव्य श्वापद-मंच (Sky-Beast Roost) व महा-द्वार, जिथून संरक्षक आकाशीय गरुड, ड्रेक-स्वार आणि अधिकृत दूत उड्डाण करतात.
 
 ### 2.2 Sector 2: The Western Iron Frontier & The Grand Aegis Trench Network (पश्चिम लौह-सीमा व खंदक युद्धप्रणाली)
-*(५,००० मैल खंदक-जाळे, संवेदी खंदक-जीवन व ३६०° ग्रँड एजिस संरक्षण भिंत) [CANON LOCK]*
+*(३६०° गोलाकार क्वारंटाईन खंदक-जाळे, संवेदी खंदक-जीवन व ३६०° ग्रँड एजिस संरक्षण भिंत) [CANON LOCK]*
 
 पश्चिम लौह-सीमा हा Corrupted Realm (Tier 4 / अधो-लोक) च्या विषारी, आम्लीय उत्तरेकडील सीमेवर उभारलेला संपूर्ण विश्वातील सर्वात मोठा, अभेद्य लष्करी खंदक-पट्टा आहे:
 
@@ -90,7 +97,7 @@ Tier 2 (The Buffer Zone / शास्त्रीय *Antariksha*) हा 100% 
    - The Vajra Vanguard (वज्र दल) कमांडोच्या बॅरक्स आणि ५०,००० सीमांत सैनिकांचे तळ येथे सज्ज असतात.
 
 2. **The Iron Rampart & The 5,000-Mile Trench Network (लौह प्राकार व खंदक जाळे):**
-   - **खंदकांचे वास्तव (Sensory Trench Warfare):** जमिनीखाली २५ फूट खोल खणलेले, ओक लाकूड आणि खाचदार बेसाल्ट लादीने मजबूत केलेले ५,००० मैल लांब खंदक.
+   - **खंदकांचे वास्तव (Sensory Trench Warfare):** जमिनीखाली २५ फूट खोल खणलेले, ओक लाकूड आणि खाचदार बेसाल्ट लादीने मजबूत केलेले गोलाकार क्वारंटाईन खंदक.
    - **हवेतील गंध व आवाज:** हवेत कायम आम्लीय शून्य-धुके (Corrosive Void Mist), तप्त स्लॅगची वाफ, ओझोन आणि गंधकाचा तीव्र वास असतो. खंदकात उभे राहिलेल्या सैनिकांना सतत महा-अजगराच्या (Grand Aegis) कंपनाचा **४३२ Hz सुवर्ण-अनुनाद (Golden Resonance Hum)** ऐकू येतो.
    - **तांत्रिक संरक्षण:** स्फटिक दूर-दर्शक (Crystal Scrying Lenses), रुनिक पाश-जाळे, जमिनीत गाडलेल्या उच्च-वारंवारता प्राण-माइन्स (Prana-Mines), अजस्त्र सौर-स्फटिक सर्चलाइट्स आणि अवाढव्य रुनिक प्राण-शूल प्रक्षेपक (Prāṇa-Harpoon Ballistas).
    - **गंज-प्रतिरोध (Sacrificial Runic Plating):** अधोलोकातून येणारे विषारी धुके साध्या लोखंडाला ४८ तासांत खाऊन टाकते; त्यामुळे खंदकातील बंकर्स आणि शस्त्रांना विशिष्ट बेसाल्ट स्लॅग व रनिक तांब्याचे संरक्षक अस्तर दिले जाते.
@@ -121,8 +128,8 @@ Tier 2 (The Buffer Zone / शास्त्रीय *Antariksha*) हा 100% 
    - **Floor D (Ledger Floor):** Red-Ink / unindexed प्रकरणांसाठी स्वतंत्र सीलबंद मजला; audit प्रलंबित धरून ठेवले जाते.
 2. **Conduit Dock (वाहन तळ — Vehicle Depot):**
    - Dootan च्या *The White Couriers (Levitating Brass Carriages / White Doot-Yānas)* साठी वार्ड-सीलबंद divine conduit bay; रूळ, वाफ, धूर — काहीही नाही. Dvāra Gate ते Pratigraha हा थेट divine teleport मार्ग आहे.
-3. **Pratigraha Surface Rail Gate:**
-   - Buffer Zone चा aether-pneumatic viaduct rail spur **फक्त परिमंडळापर्यंत** येतो; तिथून personnel/cargo escorted walkway किंवा divine conduit ने आत जाते. **Rail गोदामात प्रवेश करत नाही** आणि High Council पर्यंत जात नाही.
+3. **Pratigraha Armored Ratha-Gate:**
+   - Buffer Zone चा aether-pneumatic viaduct ratha conduit **फक्त परिमंडळापर्यंत** येतो; तिथून personnel/cargo escorted walkway किंवा divine conduit ने आत जाते. **Rail गोदामात प्रवेश करत नाही** आणि High Council पर्यंत जात नाही.
 4. **Lekhya’s Karmic Verification Bureau:**
    - लाल विटांची मोठी प्रशासकीय लायब्ररी, जिथे **Lekhya** आत्म्यांची ऊर्जा चित्रगुप्ताच्या मूळ डेटाबेसशी जुळवून पाहतो; जुळले तर पुढील प्रक्रिया, विसंगती असल्यास Red-Ink.
 5. **Yama (B) Entry Court:**
@@ -133,7 +140,7 @@ Tier 1 कडे जाण्याचा पवित्र मार्ग:
 1. **The Northern Gatehouse (Deva Gate):**
    - 100 फूट उंच पांढऱ्या पितळी महाद्वार, जे रुनिक लॉक्सनी बंद असते; इथे फक्त **Tier 1 Clearance** असलेल्या चौघांनाच (Satyaketu, Vajraketu, Yuktinath, Niyam) किंवा Trinity च्या अधिकृत बोलावण्यावरच प्रवेश मिळतो.
 2. **The Celestial Ascender:**
-   - ढगांमधून थेट वर High Council कडे चढणारी महाकाय हायड्रॉलिक-प्राण लिफ्ट आणि **aetheric conduit**; उभे रूळ किंवा cog-rail नाही. हा Divine Realm चा प्रवेशमार्ग आहे, Buffer Zone rail नाही.
+   - ढगांमधून थेट वर Tier 1 Parama-Dhama कडे चढणारी महाकाय हायड्रॉलिक-प्राण लिफ्ट आणि **aetheric conduit**; उभे रूळ किंवा cog-rail नाही. हा Divine Realm चा प्रवेशमार्ग आहे, Buffer Zone aether-conduit नाही.
 
 ---
 
@@ -147,7 +154,7 @@ Tier 1 कडे जाण्याचा पवित्र मार्ग:
 | **Grade 1** | **Chief Field Auditor / Grand Master / Transit Overseer** | **Marshal-General of the Great Setu** | **Satyaketu, Yuktinath, Niyam, Vajraketu** | **Tier 1 Clearance** (दैवी प्रतिनिधींची खरी ओळख माहिती आहे) |
 | **Grade 2** | **Senior Ledger Examiner / Chief Yantra Engineer** | **Barrier Outpost Commander / Sector Chief** | **Medhavi, Yantrika, Setuvrata, Dhritika** | **Tier 2 Clearance** (केवळ प्रशासकीय पदवी माहिती आहे) |
 | **Grade 3** | **Anomaly Tracking Officer / Karmic Inspector / Ledger Courier** | **Field Operations Captain / Strike Leader** | **Anvesh, Lekhya, Dootan, Ranvay** | **Tier 2 Clearance** |
-| **Grade 4** | **Junior Auditor / Lab Fellow / Transit Scribe** | **Platoon Commander / Fortress Sentinel / Archer-Spearman** | चौकी रक्षक, लॅब असिस्टंट्स, विमान चालक | **Tier 2 Clearance** |
+| **Grade 4** | **Junior Auditor / Lab Fellow / Transit Scribe** | **Platoon Commander / Fortress Sentinel / Archer-Spearman** | चौकी रक्षक, लॅब असिस्टंट्स, गगन-सारथी (Sky-Beast Charioteer) | **Tier 2 Clearance** |
 | **Grade 5** | **Apprentice Clerk / Research Assistant** | **Cadet / Recruit (प्रशिक्षार्थी)** | विद्यापीठातील शिकाऊ विद्यार्थी | **Tier 2 Clearance** |
 
 ---
@@ -248,7 +255,7 @@ Satyaketu रेड-इंक सील लावून सर्व खात�
         │
         ▼
 [ STAGE 3: LEDGER CROSS-EXAMINATION ]
-Medhavi चित्रगुप्ताच्या नोंदी, वेळेचे शिक्के आणि विमान-वाहतुकीचे बिल तपासून पाहतो.
+Medhavi चित्रगुप्ताच्या नोंदी, वेळेचे शिक्के आणि आकाशीय वाहतूक महसूल (Aerial Transit Toll) तपासून पाहतो.
         │
         ▼
 [ STAGE 4: FORMAL VERDICT & SANCTION ]
@@ -277,7 +284,7 @@ Satyaketu त्रि-विभागीय लवाद किंवा High C
 
 | Offense Tier | Violation Type | Penalty Imposed | Adjudicating Authority |
 | :--- | :--- | :--- | :--- |
-| **Minor** | कर्तव्यात निष्काळजीपणा, ट्रेनला उशीर. | प्राण-भत्त्यात कपात; १ महिना जादा सीमा गस्त. | Department Head |
+| **Minor** | कर्तव्यात निष्काळजीपणा, रक्षक-दूत किंवा आकाशीय रथास अकारण उशीर. | प्राण-भत्त्यात कपात; १ महिना जादा सीमा गस्त. | Department Head |
 | **Moderate** | दप्तरात खोटी नोंद करणे, आज्ञा न पाळणे. | एका श्रेणीने डिमोशन; ६ महिने निलंबन. | Tri-Departmental Tribunal |
 | **Severe** | भ्रष्टाचार, अवकाशीय भेगांशी बेकायदेशीर छेडछाड. | नोकरीतून हकालपट्टी; सामान्य नागरिक म्हणून डिमोशन. | Chief Sage / High Council |
 | **Treason** | Tier 4 शी काळाबाजार; सात महा-बंधांशी छेडछाड. | **Corrupted Realm मध्ये कायमची हद्दपारी** किंवा आत्मा विसर्जन. | Supreme High Council Bench |

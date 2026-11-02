@@ -1,6 +1,6 @@
-# 07. Corrupted Realm: Devils, The Grand Aegis & Underworld Soul Mechanics
+# 07. Tier 4: Adho-Loka / Patala, Pretas, The Spherical Grand Aegis & Underworld Soul Mechanics
 **File:** `D:\Web Novel\New\07_The_Corrupted_Realm.md`  
-**Tags:** `#corrupted-realm #tier-4 #devils #the-grand-aegis #kay-tyag #soul-filter #netherholme #dread-hold #scrap-crawlers #fake-gods #canon-lock`  
+**Tags:** `#patala #tier-4 #adho-loka #pretas #seven-strata #the-grand-aegis #spherical-containment #kay-tyag #soul-filter #fake-gods #canon-lock`  
 **Status:** [CANON LOCK] Official Underworld Ecology & Devil Metaphysics (October 2026)  
 **Authority:** Tier 4 चा अधिकृत single-source-of-truth. Merges, unifies, and expands `World/29`, `World/35`, and `World/33`. Overrides generic Rakshasa terminology with the definitive Devil ecology; establishes the authentic Vedic Corrupted Realm lore and runic scrap-behemoths.
 
@@ -9,11 +9,11 @@
 ## 0. Executive Canon Redesign: The Devil Ecology
 *(अधो-दैत्यांचे मूळ स्वरूप, ३०% खंडित भूभाग व परिसंस्था) [CANON LOCK]*
 
-**The Corrupted Realm (Tier 4 / Tamo Loka)** चे मूळ रहिवासी **कोणतेही साधे जैविक प्राणी, नश्वर मानव किंवा लोककथांमधील राक्षस नाहीत**. 
+**Adho-Loka / Patala (Tier 4 / The Corrupted Realm)** चे मूळ रहिवासी **कोणतेही साधे जैविक प्राणी, नश्वर मानव किंवा लोककथांमधील राक्षस नाहीत**. 
 
 हा लोक मूळचा **Astral Realm चाच ३०% भाग होता**, जो Era 2 मधील **Void Cataclysm आणि Soul Sorting विघटनामुळे** तुटून वेगळा झाला. आज हा लोक कॉस्मिक फनेलच्या रचनेनुसार **Tier 2 (The Buffer Zone / The Grand Setu) आणि Tier 3 (The Astral Living Realm) च्या थेट मधोमध** स्थित आहे. Buffer Zone ची दक्षिण सीमा (Outpost 9, The Bastion Fortress (The Vajra Fortress)) थेट या क्षेत्रावर नजर ठेवते; तर दुसऱ्या बाजूला हा Astral Realm च्या अगदी लगतच्या आयामी स्तरावर (Adjacent Dimensional Sub-Layer) स्थित असून चारही बाजूंनी **३६०° Spiritual Barrier (The Grand Aegis)** ने वेढलेला आहे.
 
-इथले रहिवासी अधिकृतपणे **Devils (अधो-दैत्य / Corrupted Soul-Lifeforms)** म्हणून वर्गीकृत आहेत—Era 2 मध्ये पुनर्जन्म चक्र तुटल्यामुळे तयार झालेले आध्यात्मिक जीव:
+इथले रहिवासी अधिकृतपणे **Preta (अधो-जीव / विकृत-जीव; street slang: Devils / Fiends)** म्हणून वर्गीकृत आहेत—Era 2 मध्ये पुनर्जन्म चक्र तुटल्यामुळे तयार झालेले आध्यात्मिक जीव:
 
 ```
        [ ERA 2 VOID CATACLYSM: SEVERED 30% ASTRAL DIMENSION ]
@@ -28,7 +28,7 @@
  (Pure souls condense toxic Aether → Grotesque Physical Bodies in Tier 4)
                               │
                               ▼
-     [ BOUND BY THE 360° GRAND AEGIS (5,000-MILE SPIRITUAL SHIELD) ]
+     [ BOUND BY THE 360° SPHERICAL GRAND AEGIS (COSMIC ENERGY SPHERE) ]
 (Ambient crossing strictly impossible • Disintegrates unauthorized physical bodies)
                               │
                               ▼
@@ -66,21 +66,31 @@ Corrupted Realm मध्ये **एकही शहर, सुरक्षि�
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       CORRUPTED REALM (THE CORRUPTED ABYSS / TAMO-LOKA)                           │
+│             ADHO-LOKA / PATALA: THE SEVEN SUBTERRANEAN STRATA               │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│ 1. THE SOVEREIGN ABYSS (Native Devils / The Fake Gods)                      │
-│    - Netherholme: Obsidian metropolis; seat of Paundraka the Fake God.      │
-│    - Dread-Hold: Brutal chthonic fortress ruled by Fiend General Shataghati.│
-│    - Shadow-Hollow: Perpetual mist basin ruled by Alchemist Trishira.       │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ 2. THE ASH FORTRESS (Multi-Racial Exiles, Convicts & Scavengers)            │
-│    - The Ash Fortress: Rugged border citadel near the Grand Aegis.          │
+│ 1. ATALA (The Quarantine Trench & Border Breach Zone)                       │
+│    - The Ash Fortress: Border citadel near the 360° Spherical Grand Aegis.   │
 │    - The Trench Exchange: Clandestine black market for contraband ores.     │
 │    - Wardens: Hamsa & Dimbaka (Exiled Wardens), Maricha (Broker).           │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│ 3. THE ABYSSAL DEAD ZONE (Impenetrable Cosmic Seals)                        │
-│    - The Dead Chasm (Seal 7 Pit / Niraya-Kshetra): Lightless tectonic chasm holding the 7th Cosmic Seal.  │
-│    - The Eternal Sentinel: Shrutayudha & Kagabhushundi, The Stone-Eyed Crow (The Stone-Eyed Raven). │
+│ 2. VITALA (Bloodstone Caverns & Heavy Mineral Sinks)                        │
+│    - Subterranean veins of corrosive sulfur and boiling mineral blood.      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 3. SUTALA (Ancient Titan Ruins & Asura Sieve Dungeons)                      │
+│    - Niraya-Durga: Obsidian stronghold; seat of Paundraka the Fake God.     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 4. TALATALA (Abyssal Illusion & Acidic Miasma Swamps)                       │
+│    - Rasātala Mist Sinks: Perpetual toxic mist basin ruled by Trishira.     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 5. MAHATALA (Serpentine Bone Chasms & Scrap-Behemoth Yards)                 │
+│    - Kālakūṭa Basin: Brutal chthonic fortress ruled by Shataghati.          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 6. RASATALA (Molten Lead & Corrosive Slag Trenches)                         │
+│    - Subterranean lava channels and heavy armor-melting acid sinks.         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 7. PATALA PROPER (The Primeval Void Rift & The 7 Seals Anchor)              │
+│    - The Dead Chasm (Seal 7 Pit / Niraya-Kshetra): Lightless rift anchor.   │
+│    - The Eternal Sentinel: Shrutayudha & Kagabhushundi, The Stone-Eyed Crow. │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -89,15 +99,15 @@ Corrupted Realm मध्ये **एकही शहर, सुरक्षि�
 
 स्वतःला विश्वाचे "मूळ आदिम देव" म्हणवणाऱ्या आणि वरच्या High Council ला लुटारू ठरवणाऱ्या प्राचीन डेव्हिल्सचे राज्य:
 
-- **Netherholme (Capital of the Sovereign Abyss — बनावट देवांचे महानगर):**
+- **Niraya-Durga (Capital of the Sovereign Abyss — बनावट देवांचे महानगर):**
   - **दृश्य व संवेदी वातावरण:** काळ्या ऑब्सिडियन खडकात आणि आदिम जीवाश्मांच्या महाकाय सांगाड्यांमध्ये कोरलेले अथांग महानगर. हवेत कुजणाऱ्या आत्म्यांचा, सडणाऱ्या मांसाचा आणि तीव्र आम्लाचा (Caustic Acid) दर्प असतो. शहराच्या रस्त्यांवरून निळसर-हिरव्या नेक्रोटिक फॉस्फरसचा मंद प्रकाश पाझरतो.
   - **The Counterfeit Sovereign Paundraka (अधो-सम्राट पौंड्रक):** स्वतःच्या कुजणाऱ्या, अळ्या पडलेल्या शरीराला गंजलेल्या काटेरी लोखंडी पट्ट्यांनी बांधून ठेवतो; तो स्वतःभोवती भुरळ पाडणारे सुवर्ण प्रकाशाचे आभास निर्माण करतो आणि स्वतःला "सच्चा जगत्पिता" म्हणवतो. त्याच्या हातात प्राण-शोषक The Black-Glass Greatsword आणि फिरणारे The Spinning Bone-Chakra असते, जे हवेत फिरताना हाडे चिरडणारा भयानक कर्कश आवाज काढते.
 
-- **Dread-Hold (लोह-दैत्यांचा युद्धागार):**
+- **Kālakūṭa Basin (लोह-दैत्यांचा युद्धागार):**
   - **दृश्य व स्थापत्य:** खदखदणाऱ्या गंधकाच्या लाव्हा-दरीवर नजर ठेवणारा काळ्या स्लेट पाषाणाचा अभेद्य किल्ला. येथे सतत वितळलेल्या शिशाचे तलाव उकळत असतात आणि हातोड्यांचे अक्राळविक्राळ नाद घुमतात.
   - **Fiend General Shataghati (शतघाती):** १० फूट उंच, आदिम टायटन्सच्या हाडांनी आणि काळ्या वज्र-पोलादी पत्र्यांनी स्वतःचे चिलखत बांधलेला महाकाय दैत्य. त्याच्या हातात १,२०० पाउंड वजनाची काटेरी लोखंडी गदा (*The 1,200-lb Ironclad Maul*) असते. त्याच्या सैन्यात लाखो पिशाच-सैनिक आहेत, ज्यांना तो युद्धाच्या खाईत निष्काळजीपणे पुढे ढकलतो.
 
-- **Shadow-Hollow (सावली-द्रोणी व मांस-रसायन शाळा):**
+- **Rasātala Mist Sinks (सावली-द्रोणी व मांस-रसायन शाळा):**
   - **दृश्य व भयानक शास्त्र:** कायम जाड, श्वास गुदमरणाऱ्या राखाडी धुक्यात बुडालेली खोल दरी.
   - **Alchemist Trishira (त्रि-मन रसायनज्ञ त्रिशिरा):** तीन शीरे असलेला डेव्हिल अल्कमिस्ट. अधोलोकातील डेव्हिल्सची भौतिक शरीरे सतत सडत असल्याने, त्रिशिरा त्यांना टिकवून ठेवण्यासाठी न्यूरोटॉक्सिन्स, ॲसिडिक सीरम आणि पिशाचांचे वितळलेले अवयव एकत्र सांधतो (Flesh-Welding).
 
@@ -127,21 +137,21 @@ Corrupted Realm च्या सर्वात दक्षिणेकडी�
 
 ---
 
-## 3. The Grand Aegis: Reverse-Engineered Miniature Kshira-Core & 5,000-Mile Spiritual Barrier
+## 3. The Grand Aegis: Reverse-Engineered Miniature Kshira-Core & 360° Spherical Cosmic Barrier
 *(महा-चैतन्य प्राकार — क्षीर-गाभा पोषण व अभेद्य ३६०° ऊर्जा-कवच) [CANON LOCK]*
 
 Corrupted Realm ला उर्वरित विश्वापासून वेगळे करणारी भिंत केवळ साधी दगडी भिंत किंवा निर्दयी तुरुंग नाही, तर **The Grand Aegis (महा-चैतन्य प्राकार — Reverse-Engineered Miniature Kshira-Core)** आहे:
 
 1. **Reverse-Engineered Miniature Kshira-Core (पोषक अमृत-गाभा व कॉस्मिक न्याय):**
-   - Era 3 च्या महा-ऋषींनी आणि विश्वकर्माने पवित्र क्षीर सागराच्या जीवनदायी तत्त्वाचा अभ्यास करून हे अभेद्य ५,००० मैलांचे सुवर्ण-कवच निर्माण केले.
-   - हे केवळ तुरुंग नसून, Era 2 मधील प्रलयात अडकलेल्या आणि रूपांतरित झालेल्या जीवांवर (Devils) कॉस्मिक न्याय व करुणेचा पुरावा आहे. ही भिंत Tier 4 च्या अधोलोकात मंद, निरंतर पोषक प्राण-अमृत (prāṇic nectar) पाझरवत राहते, ज्यामुळे तिथल्या आत्म्यांना भुकेने तडफडावे लागत नाही किंवा अकारण छळ सहन करावा लागत नाही.
+   - Era 3 च्या महा-ऋषींनी आणि विश्वकर्माने पवित्र क्षीर सागराच्या जीवनदायी तत्त्वाचा अभ्यास करून हे अभेद्य **३६०° Spherical Cosmic Barrier (The Grand Aegis)** चे ऊर्जा-कवच निर्माण केले.
+   - हे केवळ तुरुंग नसून, Era 2 मधील प्रलयात अडकलेल्या आणि रूपांतरित झालेल्या जीवांवर (Pretas / street slang: Devils) कॉस्मिक न्याय व करुणेचा पुरावा आहे. हे गोलाकार ऊर्जा-कवच Tier 4 च्या अधोलोकात मंद, निरंतर पोषक प्राण-अमृत (prāṇic nectar) पाझरवत राहते, ज्यामुळे तिथल्या आत्म्यांना भुकेने तडफडावे लागत नाही किंवा अकारण छळ सहन करावा लागत नाही.
 2. **The Absolute Physical Crossing Ban (भौतिक ओलांडणीवर १००% बंदी):**
-   - **Base Physical Wall:** ३०० फूट उंच रुनिक बेसॉल्ट भिंत.
-   - **The High-Frequency Spiritual Shield:** High Council च्या ग्रीडशी जोडलेला ३६०° आभासी सोनेरी ऊर्जा-पडदा.
+   - **The Spherical Containment Geometry:** ही कोणतीही सपाट भिंत किंवा ठरावीक मैलांचे सपाट मोजमाप नसून, संपूर्ण Tier 4 क्षेत्राला चहूबाजूंनी वेढणारा एक विशाल ३६०° ऊर्जा-गोल (Cosmic Energy Sphere) आहे.
+   - **The High-Frequency Spiritual Shield:** High Council च्या ग्रीडशी जोडलेला ३६०° आभासी सोनेरी ४३२ Hz ऊर्जा-पडदा.
    - **The Absolute Disintegration Rule:** जर एखाद्या डेव्हिलने ही भिंत शारीरिक रूपाने चालून, उडून किंवा जमिनीखालून पार करण्याचा प्रयत्न केला, तर ४३२ Hz च्या उच्च फ्रिक्वेन्सीच्या लहरी **एका सेकंदात त्याचे सूक्ष्म शरीर फाडून त्याचे विषारी अस्तित्व वाफ करून टाकतात**. त्यामुळे सैन्याची थेट भौतिक घुसखोरी १००% अशक्य आहे (केवळ नश्वर जगातील मानवांनी निषिद्ध काय-त्याग विधीद्वारे summon केल्यासच सूक्ष्म आत्मा वर जाऊ शकतो).
 3. **The Welded Rotary Anchors: The Sealed Sixth "Black Notch":**
    - Era 2 च्या अश्वत्थ भ्रंशानंतर महा-शिल्पी मय याने टेक्टॉनिक स्थैर्यासाठी तयार केलेल्या सर्व Multi-Realm Rotary Anchors (चक्र-लंगर) चा सहावा खाचा (**The Black Notch**) १० फूट जाड शिशाने (lead) व आकाशीय रुन्सने वेल्ड करून कायमचा सील केला.
-   - यामुळे पाताळातील कोणतेही भौतिक पिशाच्च किंवा Netherholme चे सैन्य या लंगरांना फिरवून जिवंत जगात पाऊल ठेवू शकत नाही.
+   - यामुळे पाताळातील कोणतेही भौतिक पिशाच्च किंवा Niraya-Durga चे सैन्य या लंगरांना फिरवून जिवंत जगात पाऊल ठेवू शकत नाही.
    - कोणत्याही भ्रष्ट तस्कराने किंवा पाखंडी संप्रदायाने हा Black Notch तोडण्याचा किंवा खाचण्याचा प्रयत्न केल्यास त्याला थेट **Class-Omega Existential Threat** मानले जाते, ज्यावर तात्काळ मृत्युदंड व सेतू सैन्याचा लष्करी स्ट्राईक होतो.
 
 ---
