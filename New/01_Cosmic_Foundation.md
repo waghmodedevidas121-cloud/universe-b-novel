@@ -93,7 +93,7 @@ Universe B मध्ये कोणतेही थेट दैवी अव�
 - **Position & Funnel Geometry:** हा लोक कॉस्मिक फनेलच्या रचनेनुसार **Tier 2 (The Buffer Zone / The Grand Setu) आणि Tier 3 (The Astral Living Realm) यांच्या थेट मधोमध** स्थित आहे:
   - *उत्तर सीमा (Buffer Zone Interface):* The Setu ची दक्षिण सीमा आणि क्वारंटाइन आऊटपोस्ट्स (उदा. Outpost 9, The Bastion Fortress (The Vajra Fortress)) थेट या क्षेत्रावर नजर ठेवतात. सेतूवर पकडलेले पिशाच आणि दूषित घटक शिशाच्या डब्यांतून अबीसल च्यूट्सद्वारे थेट खाली Tier 4 च्या दरीत फेकले जातात.
   - *दक्षिण/लगतची सीमा (Astral Interface):* Astral Realm च्या डायमेंशनल फ्रिक्वेन्सीच्या अगदी लगत (Adjacent Dimensional Sub-Layer) हा लोक वसलेला आहे.
-- **The Grand Aegis Barrier (Reverse-Engineered Miniature Kshira-Core):** या संपूर्ण क्षेत्राभोवती **३६०° Spiritual Barrier (The Grand Aegis)** चे ५,००० मैलांचे अजस्त्र सुवर्ण-कवच उभारले आहे. हे केवळ साधे तुरुंग-कवच नसून, Era 3 च्या ऋषींनी क्षीर सागराचा अभ्यास करून reverse-engineer केलेले एक **Miniature Kshira-Core** आहे. Era 2 मधील रूपांतरित, अडकलेल्या जिवांना (Devils) भुकेने किंवा त्रासाने तडफडावे लागू नये म्हणून ही भिंत Tier 4 मध्ये मंद, पोषक प्राण-अमृत (prāṇic nectar) पाझरवत राहते—त्याच वेळी तिच्यावर **Absolute Physical Crossing Ban** लागू असून कोणताही डेव्हिल स्वतःहून वर येऊ शकत नाही (फक्त नश्वर जगातून बेकायदेशीर summon केल्यासच त्याचा सूक्ष्म आत्मा वर खेचला जाऊ शकतो).
+- **The Grand Aegis Barrier (Reverse-Engineered Miniature Kshira-Core):** या संपूर्ण क्षेत्राभोवती **३६०° Spherical Cosmic Barrier (The Grand Aegis)** चे अजस्त्र सुवर्ण-कवच (Cosmic Energy Sphere) उभारले आहे. ही कोणतीही सपाट भिंत नसून संपूर्ण क्षेत्राला चहूबाजूंनी वेढणारा एक विशाल ऊर्जा-गोल (Spherical Containment Field) आहे, ज्यामुळे इथे कोणत्याही मैलांचे सपाट मोजमाप लागू होत नाही. हे केवळ साधे तुरुंग-कवच नसून, Era 3 च्या ऋषींनी क्षीर सागराचा अभ्यास करून reverse-engineer केलेले एक **Miniature Kshira-Core** आहे. Era 2 मधील रूपांतरित, अडकलेल्या जिवांना (Pretas / low-tier slang: Devils) भुकेने किंवा त्रासाने तडफडावे लागू नये म्हणून हे गोलाकार ऊर्जा-कवच Tier 4 मध्ये मंद, पोषक प्राण-अमृत (prāṇic nectar) पाझरवत राहते—त्याच वेळी तिच्यावर **Absolute Physical Crossing Ban** लागू असून कोणताही प्रेत स्वतःहून वर येऊ शकत नाही (फक्त नश्वर जगातून बेकायदेशीर summon केल्यासच त्याचा सूक्ष्म आत्मा वर खेचला जाऊ शकतो).
 - **Summoning Logic (Kay-Tyag Law):** लगतची डायमेंशन असल्यामुळेच Astral मधील दुष्ट साधक सीमेपलीकडे सूक्ष्म धागा टाकून **Devils चा आत्मा summon करू शकतात**; पण ग्रँड एजिसचे कवच डेव्हिल्सच्या १० टनी विषारी शरीराला नश्वर जगात प्रवेश करू देत नाही (Kay-Tyag Law).
 
 ### 3.3 Kshira Sagara: The Singularity Starting Point, Garbhodakashayi Vishnu & Soul Energy [CANON LOCK]
@@ -105,14 +105,28 @@ Universe B मध्ये कोणतेही थेट दैवी अव�
 
 ---
 
-## 4. Tier 1: Divine High Council & The Six Constitutional Upadhis
-*(The High Council Rotunda (सभा-लोक) व षड्-दैवी संविधानात्मक पदे)*
+## 4. The High Council of the Buffer Zone (Tier 2 / सभा-लोक) & The Indra-Upadhi
+*(The High Council Rotunda, इंद्र-उपाधी व षड्-संविधानात्मक पदे) [CANON LOCK]*
 
-### 4.1 Divine Realm (परम-धाम) vs. High Council Realm (The High Council Rotunda (सभा-लोक)) [CANON LOCK]
-- **Divine Realm (परम-धाम):** High Council च्या पलीकडचे ते अलौकिक धाम जिथे Supreme Trinity आणि त्यांचे व्यक्तिगत प्रतिनिधी राहतात. सामान्य आत्मे किंवा कनिष्ठ देवदूतांना इथे प्रवेश नसतो.
-- **High Council Realm (The High Council Rotunda (सभा-लोक)):** ही ती मध्यवर्ती संसद आहे जिथे वैश्विक कायदे, कर्माच्या नोंदी आणि सिस्टीमचे संतुलन सांभाळण्यासाठी **Six Divine Constitutional Offices** एकत्र येतात.
-- **Relationship:** हे दोन **Independent Linked Realms** आहेत. यामुळे Trinity चे पावित्र्य आणि High Council ची प्रशासकीय स्वायत्तता दोन्ही सुरक्षित राहतात.
-- **Absolute Combat Ban (Inviolable Invariant):** High Council Realm मध्ये कोणत्याही प्रकारची शारीरिक हिंसा, शस्त्रे काढणे किंवा लढाई करणे **100% निषिद्ध** आहे. हा नियम कोणत्याही अपवादाशिवाय सर्वांना लागू होतो—Devas, Asuras, Sages, Palaks, अगदी Divine Delegates ना सुद्धा. तीव्र वाद झाला तरी कौन्सिल चेंबरमध्ये शस्त्र बाहेर काढण्याची कोणालाही परवानगी नाही.
+### 4.1 Governance Architecture: The High Council under Indra-Upadhi
+- **The Seat of the High Council:** The High Council (सभा-लोक) ही **Tier 2 (The Buffer Zone / Swarga)** मधील सर्वोच्च वैधानिक संसद आहे. बफर झोनमध्ये सर्व योद्ध्यांना (Devas, Asuras, Humans, Beasts, Outworlders) **पूर्ण समानता (Equality for All)** आहे.
+- **The Indra-Upadhi (बफर झोनचे प्रशासकीय प्रमुख):** इंद्र ही कोणतीही अमर व्यक्ती नसून एक गुणवत्तेवर आधारित **घटनात्मक पदवी (Administrative Upadhi)** आहे. बफर झोनचा मुख्य प्रशासक म्हणून इंद्र या हाय कौन्सिलचे अध्यक्षपद भूषवतो. इंद्र हुकूमशहा नाही; तो कौन्सिलमधील सर्व स्थायी सदस्यांशी सखोल विचारविनिमय आणि चर्चा करूनच वैश्विक धोरणात्मक निर्णय घेतो.
+- **Absolute Combat Ban (Inviolable Invariant):** High Council Rotunda मध्ये कोणत्याही प्रकारची शारीरिक हिंसा, शस्त्रे काढणे किंवा लढाई करणे **100% निषिद्ध** आहे. हा नियम कोणालाही डावलता येत नाही.
+
+### 4.2 The Sacred Soul Trinity vs. Executive Offices
+कौन्सिलच्या रचनेमध्ये दोन स्पष्ट प्रशासकीय स्तर आहेत:
+1. **The Sacred Soul Trinity (Yama, Chitragupta, Vidhata):**
+   - हे थेट **Divine Delegates** (Prajapati, Narada, Rudra-Ansha) आणि **Supreme Trinity** च्या अखत्यारीत येतात.
+   - **इंद्र यम, चित्रगुप्त किंवा विधात्याला थेट आदेश देऊ शकत नाही.** आत्म्यांचे ऑडिट, कर्माच्या नोंदी आणि पुनर्जन्माचे कायदे पूर्णपणे स्वतंत्र आहेत.
+   - परंतु या सर्व कार्यालयांचे भौतिक अस्तित्व बफर झोनमध्ये असल्याने, **Soul Officers चे संरक्षण, सुरक्षा आणि सैन्य-कवच पूर्णपणे इंद्राच्या अखत्यारीत येते.** म्हणूनच ते कौन्सिलचे सर्वोच्च स्थायी सदस्य आहेत.
+2. **Offices under Indra's Direct Command:**
+   - **Mahā-Pālaka (महा-पालक-पद):** सेतूचे संरक्षण आणि सीमा सुरक्षा दल.
+   - **Chief Sage (महर्षि-पद):** सिस्टीम त्रुटींचे ऑडिट आणि संशोधन.
+   - **Prime Seeker (जिज्ञासु-पति-पद):** उत्क्रांतीच्या नव्या सीमांची चाचणी.
+
+### 4.3 Hierarchy over Tier 3 (The Astral Realm & Manu-Upadhi)
+- **High Council ची सर्वोच्चता:** The High Council (बफर झोन / इंद्र) ही खालच्या **Tier 3 (Astral Realm)** मधील सर्व मानवी राज्ये आणि कारभाराच्या वर सर्वोच्च स्थानी आहे.
+- **Tier 3 चे प्रशासन (Manu-Upadhi & 7 Sovereign Seats):** ॲस्ट्रल विश्वातील पाच ग्रहांचे नश्वर कायदे आणि नागरिक प्रशासन **Manu-Upadhi** (सेंट्रल हब) यांच्याकडे असून, त्यांच्या हाताखाली **7 Sovereign Seats** (उदा. सेंट्रल सिटी बँक, पाच ग्रहांचे राजे) कार्य करतात.
 
 ### 4.2 The Six Voting Constitutional Offices (सहा घटनात्मक पदे)
 ही पदे लाखो वर्षांच्या निष्काम तपस्येने (*Nishkāma Tapasyā*) आणि Trinity च्या मंजुरीने उच्च पदावर पोहोचलेल्या निष्पक्ष आत्म्यांकडे आहेत. त्यांच्यात **कोणताही भ्रष्टाचार किंवा स्वार्थ नसतो**:
