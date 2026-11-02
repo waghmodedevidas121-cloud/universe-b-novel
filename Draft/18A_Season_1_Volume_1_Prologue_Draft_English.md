@@ -13,7 +13,7 @@
 
 The rank stench of rotting garbage, burnt diesel exhaust, and overflowing open gutters hit the back of his throat with suffocating force.
 
-Outside Dadar station, the torrential monsoon had raged unbroken for six hours. Two feet of murky, stagnant water flooded the streets, carrying an oily slurry of vehicle grease, plastic refuse, and decaying vegetables. Exhaust pipes were submerged, and the frantic, dissonant blare of truck air-horns ricocheted off concrete girders, vibrating deep within his ribcage.
+Outside Dadar station, the torrential monsoon had raged unbroken for six hours. Two feet of murky, stagnant water flooded the streets, carrying an oily slurry of vehicle grease, plastic refuse, and decaying vegetables. Exhaust pipes were submerged, and the incessant blare of truck air-horns trapped in the gridlock rattled skull bones—like a drill bit grinding straight into his head.
 
 Leaning casually against the rusted pedestrian railing beneath the overpass stood Neel.
 
@@ -25,7 +25,11 @@ A crimson municipal BEST bus plowed through a massive crater in the road at full
 
 A heavy sheet of black gutter sludge surged into the air.
 
-Clearing the railing, the foul spray slammed squarely across Neel’s face, neck, and bespoke ash-grey cashmere hoodie. Murky gutter sludge trickled into his collar, but Neel remained motionless for five full seconds—unblinking, unbothered, processing the civic insult with absolute calm.
+Clearing the railing, the foul spray slammed squarely across Neel’s face, neck, and bespoke ash-grey cashmere hoodie.
+
+Cold, greasy runoff trickled slowly down his jawline.
+
+Neel stood motionless for five full seconds. He didn't flinch. He didn't wipe his face.
 
 Then, with effortless calm, he pulled up his damp sleeve and wiped his eyes. There was no humiliation on his face, no self-pity—only a sharp, reckless smirk playing at the edges of his lips.
 
