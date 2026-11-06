@@ -35,7 +35,7 @@ The golden rule of prose in Universe B is: **The reader must never feel like the
 1. **Ban "As You Know" Info-Dumps:** Characters never explain world history to each other in normal conversation.
 2. **The Physical Prop & Micro-Action Rule:** Every dialogue exchange must be anchored to a physical task or object that reveals the speaker's psychology:
    - *Shakuni (शकुनि):* Never raises his voice; rolls two yellowed bone-dice carved from his father's femur across a stone rail—the *clack-clack* of the dice punctuates his threats.
-   - *Beatrice Rosso:* Adjusts her gold-rimmed spectacles and signs foreclosure ledgers while discussing human lives as mere interest percentages.
+   - *Donna Beatrice Vanezza:* Adjusts her gold-rimmed spectacles and signs foreclosure ledgers while discussing human lives as mere interest percentages.
    - *Kira:* Speaks with an iron rivet clenched between her teeth while hammering hot steel, cutting off anyone who wastes her time.
    - *Ark (अर्क):* Speaks in clipped 3-to-4-word sentences because long speeches disrupt his *Breath Reset* and make his charred right arm throb.
    - *Neel (नील):* Uses fast, observant Mumbai street irony to mask his racing pulse and bait opponents into making mistakes.
@@ -126,7 +126,7 @@ All official ranks, promotions, and #1 Division Crowns are governed by **The Sov
 1. **Grand Marshal Satyabhama (सत्यभामा):** Chief Martial Arbiter (Evaluates pure combat lethality and *Hold* control).
 2. **Guildmaster Agastya (अगस्त्य):** Pan-Astral Adventurer Guild Head (Evaluates real-world dungeon/crisis survival feats outside the ring!).
 3. **Seer Chandra (चन्द्रा):** Grand Clairvoyant of the Astral Mirror (Reviews 360-degree replay projections of every match to detect flukes, match-fixing, or illegal Devil-doping).
-4. **High Arbitrator Beatrice Rosso:** Central Bank Comptroller (Evaluates economic value, sponsorship tier, and contract integrity).
+4. **High Arbitrator Donna Beatrice Vanezza:** Central Bank Comptroller (Evaluates economic value, sponsorship tier, and contract integrity).
 5. **The Unseen Seat (Secretly Monitored by Setu Inquisitor Satyaketu [सत्यकेतु]):** Evaluates whether a fighter has heard **The Bell in the Skull** and is worthy of the Setu Draft.
 
 ### 4.2 The 4 Mandatory Criteria to Be Certified S-Rank or Division #1
@@ -144,7 +144,7 @@ The politics of Universe B is an interconnected ecosystem where **Humans, Asuras
 
 ### 5.1 The Mortal & Immortal Controllers (The Middle Web)
 1. **The Financial Stranglehold (House Rosso & The Reserve Bank — *Tensura / Log Horizon Style*):**
-   - Led by **Beatrice Rosso** and **Governor Ambika (अम्बिका)**. They control the Aether-Rupee, the 17% gateway tariffs, and the Guild escrow. They lend millions of Silver Panas to desperate kings (**Parikshat [परीक्षित]**) and fighters (**Ark [अर्क]**), using debt-clauses to dictate which kingdom gets grain and which fighter throws a match.
+   - Led by **Donna Beatrice Vanezza** and **Governor Ambika (अम्बिका)**. They control the Aether-Rupee, the 17% gateway tariffs, and the Guild escrow. They lend millions of Silver Panas to desperate kings (**Parikshat [परीक्षित]**) and fighters (**Ark [अर्क]**), using debt-clauses to dictate which kingdom gets grain and which fighter throws a match.
 2. **The Double-Cross Syndicate (Shakuni [शकुनि] & The Eclipse Underground — *Code Geass / Overlord Style*):**
    - **Shakuni (शकुनि)** limps through the VIP boxes rolling his dead father's bone-dice. He secretly funds rogue summoners (**Lord Kans [कंस]** and **Jaras [जरस]**) to release Devil-possessed beasts near border towns—and then sells the "protection contracts" and black-market weapons to the panicking towns!
 3. **The Deva-Asura Proxy Cold War:**

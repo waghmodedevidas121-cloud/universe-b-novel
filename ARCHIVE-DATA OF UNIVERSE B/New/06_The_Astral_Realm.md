@@ -86,17 +86,17 @@ Era 1 आणि 2 मधील अखंड महाद्वीप दोन �
   - *Apex Elite (~१०% / ५०,०००–८०,०००):* उच्च देव, असुर कुलप्रमुख, मानवी मुत्सद्दी ऋषी, पशूंचे दूत, महा-बँकर्स आणि १.२% परदेशी एलियन्स फायनान्शियल ऑलिगार्क्स.
   - *Hereditary Service Clans (~९०% / ४.५ लाख–७.२ लाख):* नाद-शलाका एक्सचेंज, मध्यवर्ती बँका, जल-शुद्धीकरण आणि **Aether-Way** चालवणारे पिढ्यानपिढ्यांचे तटस्थ नागरिक — ज्यांचा कोणत्याही बाह्य वंशाच्या युद्धांशी संबंध नसतो.
 - **Sovereign Status:** १००% Demilitarized Zone (संपूर्ण निःशस्त्रीकरण क्षेत्र).
-- **सर्वोच्च प्रशासकीय नेतृत्व व सप्त-पीठे (The Manu-Upādhi & The 7 Sovereign Seats) [CANON LOCK]:**
-  - **The Supreme Executive: THE MANU-UPĀDHI (मनू-उपाधी — The Grey Basalt Throne):** Central City आणि ५ नश्वर Astral Shards चा सर्वोच्च वैधानिक व प्रशासकीय प्रमुख.
+- **सर्वोच्च प्रशासकीय नेतृत्व व विकेंद्रित सत्ता (The Central Emperor & Decentralized Tensura-Style Geopolitics) [CANON LOCK]:**
+  - **The Supreme Executive of Central City: THE CENTRAL EMPEROR (सम्राट — The Grey Basalt Throne):** Central City चा सार्वभौम सम्राट व ग्रँड कॉन्कॉर्ड संसदेचा प्रमुख. इतर चारही उप-लोकांवर (Human, Asura, Beast, Deva) याचे थेट कायदेशीर किंवा लष्करी नियंत्रण नाही; प्रत्येकाचे स्वतःचे स्वतंत्र राजे, कायदे व शासनव्यवस्था आहे (जसे Tensura मधील Eastern Empire, Dwargon, Jura Forest, Sarion). मात्र मध्यवर्ती बँक (Akash-Kosha), महा-तीर्थ द्वारे (Monolithic Gateways) आणि प्रूव्हिंग गेम्समुळे याचे संपूर्ण विश्वावर प्रचंड **अप्रत्यक्ष वर्चस्व (Indirect Hegemony)** आहे. ही गादी कोणासाठीही खुली आहे—निवडणूक, वारसाहक्क, किंवा युद्धात पराभूत करून (Martial Usurpation) कोणीही हा मुकुट हस्तगत करू शकतो!
+  - **Higher Tier Non-Intervention Rule:** Buffer Zone (Tier 2 Swarga & Great Setu) आणि Tier 1 celestial प्रशासन नश्वर जगाच्या अंतर्गत राजकारणात किंवा राष्ट्रपतींच्या गादीच्या संघर्षात कधीही हस्तक्षेप करत नाही. केवळ जर **रावणासारखा किंवा कंसासारखा महा-खलनायक** जन्माला येऊन आत्म्यांचे चक्र किंवा सात सील्स नष्ट करण्याचा प्रयत्न करेल, किंवा **महाभारतासारखे संपूर्ण ब्रह्मांड फाडणारे महायुद्ध** भडकेल, तरच उच्च देवता व सेतू सैन्य थेट हस्तक्षेप करतील.
   - **The Seven Sovereign Seats (सप्त-सार्वभौम पीठे):**
-    1. *Seat of Coin & Credit:* **Beatrice Rosso** (High Arbitrator of the Central Reserve Bank / मध्यवर्ती आकाश-कोश महा-बँक).
-    2. *Seat of the Sun (Deva):* Solar Primus.
-    3. *Seat of the Anvil (Asura):* High Artificer of Asura-Nagara.
-    4. *Seat of the Blade (Human):* Chief Justice of Hastinapura.
+    1. *Seat of Coin & Credit:* **Donna Beatrice Vanezza** (Private Bank Head) व **Governor Ambika** (Central Bank).
+    2. *Seat of the Sun (Deva):* Solar Primus (Aryaman's Envoy).
+    3. *Seat of the Anvil (Asura):* High Artificer of Asura-Nagara (Mayasur's Envoy).
+    4. *Seat of the Blade (Human):* Chief Justice of Hastinapura (Parikshit's Envoy).
     5. *Seat of the Fang (Beast):* Grand Chieftain of the Beast Shard.
-    6. *Seat of the Vanguard:* Grand Marshal of the Proving Games.
+    6. *Seat of the Vanguard:* Commander of the Proving Games (Satyabhama).
     7. *The Shadow Seat:* Arbiter of Outworlder / Jīvātma Diaspora.
-  - **Constitutional Subordination:** Tier 2 Buffer Zone मधील **The High Council (Indra-Upādhi)** हे Tier 3 मधील **Manu-Upādhi आणि 7 Sovereign Seats** च्या घटनात्मकदृष्ट्या वरिष्ठ (Superior Authority) आहे.
 
 ### 2.1 The Four Faction Quarters & The Grand Concord Dome
 Central City ची रचना मध्यवर्ती विधानसभेभोवती चार स्वतंत्र राजनैतिक विभागांमध्ये केलेली आहे:
@@ -110,21 +110,21 @@ Central City ची रचना मध्यवर्ती विधानस�
 मध्यवर्ती सरकारकडे स्वतःची कोणतीही आक्रमक परकीय फौज नाही. तरीही, चार बिनतोड आर्थिक आणि प्रशासकीय साधनांमुळे त्याचे चारही उप-लोकांवर **संपूर्ण अप्रत्यक्ष वर्चस्व (Absolute Indirect Hegemony)** आहे:
 
 ```
-                      [ THE MANU-UPĀDHI · GREY BASALT THRONE ]
-                      (Supreme Administrator of Central City & 5 Astral Shards)
+                  [ THE CENTRAL EMPEROR · GREY BASALT THRONE ]
+                  (Sovereign of Central City & Grand Concord Presidium)
                                         │
         ┌──────────────────────────────┼──────────────────────────────┐
         ▼                              ▼                              ▼
-[ CENTRAL RESERVE BANK ]        [ THE GRAND EXCHANGE ]         [ CENTRAL MANTRA-STONE GRID ]
-Beatrice Rosso (High Arbitrator) Resource & Ammunition Quotas   Master Uttanka
-- Issues Central Aether-Rupee   - Manages Mineral Embargoes    - Monopolizes Inter-Realm
-- Freezes Foreign Gold Bullion  - Sets Slag-Ore & Grain Tariffs   Acoustic Communications
+[ CENTRAL RESERVE BANK ]        [ THE 4 MONOLITHIC GATEWAYS ]   [ CENTRAL MANTRA-STONE GRID ]
+Ambika & Beatrice Vanezza        85-90% Bulk Cargo Chokehold    Guildmaster Agastya
+- Issues Central Aether-Rupee   - 17% Central Bank Tariff      - Monopolizes Inter-Realm
+- Freezes Foreign Bank Vaults   - Freezes Rogue Trade Caravans    Acoustic Communications
 ```
 
-1. **Monetary Monopoly (Akash Kosha Central Bank):** **Beatrice Rosso** (High Arbitrator) च्या नियंत्रणाखाली. मध्यवर्ती बँक अधिकृत चलन जारी करते: *The Central Aether-Rupee*. एखाद्या राजाने युद्धाची धमकी दिल्यास, Beatrice Rosso त्याचे परदेशी तिजोरीतील सोने गोठवते आणि ४८ तासांत त्याचे बँक ड्राफ्ट्स रद्द करून त्याला दिवाळखोर बनवते.
+1. **Monetary Monopoly (Akash Kosha Central Bank):** **Donna Beatrice Vanezza** (High Arbitrator) च्या नियंत्रणाखाली. मध्यवर्ती बँक अधिकृत चलन जारी करते: *The Central Aether-Rupee*. एखाद्या राजाने युद्धाची धमकी दिल्यास, Donna Beatrice Vanezza त्याचे परदेशी तिजोरीतील सोने गोठवते आणि ४८ तासांत त्याचे बँक ड्राफ्ट्स रद्द करून त्याला दिवाळखोर बनवते.
 2. **Resource Cartels & Embargoes (The Grand Exchange):** आंतर-लोकीय व्यापार (असुरांचे उच्च दर्जाचे पोलाद, मानवांचे अन्नधान्य व औषधी, देवांचे रेशीम, पशूंची दुर्मीळ औषधे) या महा-बाजारातूनच क्लिअर व्हावा लागतो. एका आर्थिक निर्बंधामुळे बंडखोर राज्याचा रनिक धातू, लाव्हा-खनिज आणि स्फटिक अस्त्रांचा पुरवठा एका आठवड्यात ठप्प होतो.
 3. **Spatial Transit Licensing:** अवकाशातून मालवाहतूक केवळ पर्वत-माथ्यांवरील Monolithic Stone Gateways (महा-तीर्थ द्वारे) मधून मुहूर्ताच्या कॅराव्हॅन्सद्वारे होते, ज्याचे पारपत्र-मुद्रा (Transit Mudras) फक्त मध्यवर्ती सरकारच्या परवानाधारक गिल्ड्सच्या मालकीचे आहेत. परवाना रद्द झाल्यास त्या देशाचा आंतरराष्ट्रीय व्यापार कायमचा बंद होतो.
-4. **Information Monopoly (Acoustic Mantra-Stone Grid):** गिल्डमास्टर **Uttanka** आणि वरिष्ठ ऑपरेटर **Chandra Lekha** यांच्या अखत्यारीत. प्रत्येक राजनैतिक संदेश, व्यापारी दर, आणि लष्करी हालचालींचे संदेश Central City च्या भूमिगत नाद-शलाका कक्षातूनच जातात.
+4. **Information Monopoly (Acoustic Mantra-Stone Grid):** गिल्डमास्टर **Agastya** आणि वरिष्ठ ऑपरेटर **Chandra** यांच्या अखत्यारीत. प्रत्येक राजनैतिक संदेश, व्यापारी दर, आणि लष्करी हालचालींचे संदेश Central City च्या भूमिगत नाद-शलाका कक्षातूनच जातात.
 
 ### 2.3 The Grand Proving Grounds & The Master Vanguard & Beast League
 *(महा-चाचणी मैदाने, सार्वजनिक वीर फलक व प्राण-श्वापद क्रीडा) [CANON LOCK]*
@@ -491,7 +491,7 @@ Era 2 च्या महा-विभाजनानंतर महा-शि�
 
 4. **The Gray Pigeons (धूसर कबूतर — Resonance Tappers & Intelligence Brokers):**
    - *कार्यक्षेत्र:* सेंट्रल सिटी नाद-शलाका कॉरिडोर्स व आंतर-क्षेत्रीय अ‍ॅरे बोर्ड्स.
-   - *प्रमुख व्यक्ती:* **Guildmaster Uttanka** (शलाका-जाळे संचालक), **Investigator Devayani** (छापेमारी पथक प्रमुख — शत्रू), मध्यवर्ती व्यापारी दलाल.
+   - *प्रमुख व्यक्ती:* **Guildmaster Agastya** (शलाका-जाळे संचालक), **Investigator Devayani** (छापेमारी पथक प्रमुख — शत्रू), मध्यवर्ती व्यापारी दलाल.
    - *भूमिका:* नाद-शलाका ग्रिडवरून जाणाऱ्या कॉन्कॉर्ड स्फटिक फ्रिक्वेन्सी लहरींना सूक्ष्म रेझोनन्स क्लिप्स लावून व्यापारी मार्गांचे संदेश, जप्ती वॉरंट्स आणि चलन दर चोरणे; खोट्या शिपिंग मॅनिफेस्ट्स तयार करणे.
 
 #### G. Acoustic Masking Mechanics & Operational Transit Protocols

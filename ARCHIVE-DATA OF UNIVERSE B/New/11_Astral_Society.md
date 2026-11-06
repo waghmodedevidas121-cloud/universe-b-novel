@@ -345,7 +345,7 @@ High Governor Ambika यांच्या हाताखालील **The Cen
 प्रत्येक उप-लोकाची शासन व्यवस्था वेगळी असून त्यांच्यामध्ये सतत राजकीय संघर्ष चालू असतो:
 
 ```
-[ CENTRAL CITY ] ──► The Manu-Upādhi & Sovereign Council (High Chancellor Sulabha & Governor Ambika)
+[ CENTRAL CITY ] ──► The Sovereign-President & Grand Concord Presidium (High Chancellor Sulabha & Governor Ambika)
                       Presidium of 9 Autonomous Guilds • Zero Standing Army
                                     │
     ┌───────────────────────────────┼───────────────────────────────┐

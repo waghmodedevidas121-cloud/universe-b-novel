@@ -129,9 +129,9 @@ Universe B मध्ये कोणतेही थेट दैवी अव�
    - **Chief Sage (महर्षि-पद):** सिस्टीम त्रुटींचे ऑडिट आणि संशोधन.
    - **Prime Seeker (जिज्ञासु-पति-पद):** उत्क्रांतीच्या नव्या सीमांची चाचणी.
 
-### 4.3 Hierarchy over Tier 3 (The Astral Realm & Manu-Upadhi)
+### 4.3 Hierarchy over Tier 3 (The Astral Realm & The Central Sovereign / President of Central City)
 - **High Council ची सर्वोच्चता:** The High Council (बफर झोन / इंद्र) ही खालच्या **Tier 3 (Astral Realm)** मधील सर्व मानवी राज्ये आणि कारभाराच्या वर सर्वोच्च स्थानी आहे.
-- **Tier 3 चे प्रशासन (Manu-Upadhi & 7 Sovereign Seats):** ॲस्ट्रल विश्वातील पाच ग्रहांचे नश्वर कायदे आणि नागरिक प्रशासन **Manu-Upadhi** (सेंट्रल हब) यांच्याकडे असून, त्यांच्या हाताखाली **7 Sovereign Seats** (उदा. सेंट्रल सिटी बँक, पाच ग्रहांचे राजे) कार्य करतात.
+- **Tier 3 चे प्रशासन (The Central Sovereign / President of Central City & 7 Sovereign Seats):** ॲस्ट्रल विश्वातील पाच ग्रहांचे नश्वर कायदे आणि नागरिक प्रशासन **The Central Sovereign / President of Central City** (सेंट्रल हब) यांच्याकडे असून, त्यांच्या हाताखाली **7 Sovereign Seats** (उदा. सेंट्रल सिटी बँक, पाच ग्रहांचे राजे) कार्य करतात.
 
 ### 4.2 The Six Voting Constitutional Offices (सहा घटनात्मक पदे)
 ही पदे लाखो वर्षांच्या निष्काम तपस्येने (*Nishkāma Tapasyā*) आणि Trinity च्या मंजुरीने उच्च पदावर पोहोचलेल्या निष्पक्ष आत्म्यांकडे आहेत. त्यांच्यात **कोणताही भ्रष्टाचार किंवा स्वार्थ नसतो**:

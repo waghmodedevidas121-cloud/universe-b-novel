@@ -1,6 +1,6 @@
 # UNIVERSE B: THE VERTICAL COSMIC AXIS & THE INDRA-UPADHI ENGINE
 **Document Classification:** `[MASTER ARCHITECTURAL PLAYBOOK & CANONICAL GOVERNANCE BLUEPRINT]`  
-**Cosmic Framework:** Vertical Meru Spindle, The High Council (Buffer Zone / Indra-Upadhi), The Astral Realm (Manu-Upadhi & 7 Sovereign Seats), Spherical Grand Aegis & Dual-Track Nomenclature.
+**Cosmic Framework:** Vertical Meru Spindle, The High Council (Buffer Zone / Indra-Upadhi), The Astral Realm (Central City Presidency & 7 Sovereign Seats), Spherical Grand Aegis & Dual-Track Nomenclature.
 
 ---
 
@@ -42,8 +42,8 @@ Universe B is a structured **Vertical Pressure Spindle** balanced on the Prime T
 │                      4. Deva Shard (Amaravati sky terraces — a peer shard, NOT the Buffer Zone!)
 │                      5. Central Sub-realm (Central City — The Controlling Hub of the Shards)
 │   • Executive Seat : THE MANU-UPADHI (Supreme Administrator of Mortal Law & Civilization).
-│   • Governance Body: THE 7 SOVEREIGN SEATS (Astral Assembly under Manu):
-│                      Includes Central City Banking Arbitrator (Beatrice Rosso), Shard Kings, High Artificers.
+│   • Governance Body: THE GRAND CONCORD PRESIDIUM (Decentralized Shards under Central Sovereign):
+│                      Includes Central City Banking Arbitrator (Donna Beatrice Vanezza), Shard Kings, High Artificers.
 │   • Acoustic Field : The Central Coliseum over the Rotary Shadow Anchor generates an Acoustic
 │                      Dampening Field from 100,000 spectators' kinetic Prana, preventing Seal 6 micro-rifts!
 │
@@ -77,7 +77,7 @@ To preserve fast-paced, visceral cinematic dub flow in early volumes while unvei
 | **The Buffer Zone (Tier 2)** | **"Heaven"** *(Cynical slang for Buffer Zone)* | **Svarga / Setu-Loka** *(The Great Buffer Realm — Equality for All)* |
 | **The Subterranean Abyss (Tier 4)**| **"The Cursed Realm"** *(The toxic underworld ditch)* | **Patala** *(The Seven Subterranean Strata)* |
 | **Buffer Zone Supreme Commander** | **"The Sovereign"** *(or "High Arbiter", "The Gold Chair")*| **The Indra-Upadhi** *(Presiding Head of the High Council)* |
-| **Astral Realm Supreme Governor** | **"The Central King"** *(or "The Grand Lawgiver")* | **The Manu-Upadhi** *(Presiding Head of the 7 Sovereign Seats)* |
+| **Astral Realm Supreme Governor** | **"The Central King"** *(or "The Grand Lawgiver")* | **The Central Emperor** *(Presiding Head of the 7 Sovereign Seats)* |
 | **Tainted Energy Cores** | **"Devil-Cores"** *(or "Black Grit", "Hot Stones")* | **Preta-Bijikas** *(Patala Runoff)* |
 | **Enforced Debt Contracts** | **"The Leash"** *(or "Blood-Tab")* | **Apurva-Bandha** *(Mimamsa Karmic Bond)* |
 
@@ -100,12 +100,12 @@ To preserve fast-paced, visceral cinematic dub flow in early volumes while unvei
   3. **Chief Sage (Inquisitor of Truth):** Directly under Indra's command.
   4. **Prime Seeker (Expeditions & Boundary Pioneer):** Directly under Indra's command.
 
-### 3.2 The 7 Sovereign Seats of the Astral Realm (Tier 3 — Headed by Manu-Upadhi)
-- **The Manu as the Supreme Mortal Lawgiver (`Manu-Upadhi`):**
+### 3.2 The Grand Concord & Sovereign-President of Central City (Tier 3 Decentralized Hub)
+- **The Central Emperor (`CHR-CEN-00`):**
   - Governs the living civilizations across the Five Shards from the **Central Controlling Hub (Central City)**.
   - Sits hierarchically **underneath the higher jurisdiction of the High Council**.
 - **The 7 Sovereign Seats:**
-  1. **High Arbitrator of the Central Reserve Bank (Beatrice Rosso — Debt & Currency Enforcement)**
+  1. **High Arbitrator of the Central Reserve Bank (Donna Beatrice Vanezza — Debt & Currency Enforcement)**
   2. **Solar Primus (Deva Shard Representative)**
   3. **High Artificer of Asura-Nagara (Runic Metallurgy & Magma Foundries)**
   4. **Grand Marshal of the Shard Legions (Territorial Defense)**
@@ -143,5 +143,5 @@ To preserve fast-paced, visceral cinematic dub flow in early volumes while unvei
    - In Volumes 1 & 2, Neel translates "Heaven" (Buffer Zone) and "The Cursed Realm" (Patala) through his cynical Mumbai upbringing:
      > *"Great. Different universe, same garbage. The oligarchs in the clouds call their luxury high-rise 'Heaven', while the rest of us eat coal dust and fight over three copper coins so we don't get thrown into the 'Cursed Realm'. Just like Nariman Point looking down on the slums."*
 2. **Strict YAGNI Law:**
-   - No lectures on the *Indra-Upadhi*, *Manu-Upadhi*, or *Patala* in Chapters 2–4.
+   - No lectures on the *Indra-Upadhi*, *Central Presidency*, or *Patala* in Chapters 2–4.
    - Neel’s immediate stakes remain razor-sharp: **0 Panas, empty stomach, split barley bread with Sheru, and earning enough copper in the muddy Sand-Pits to buy a meal and register for the Vanguard Exam!**

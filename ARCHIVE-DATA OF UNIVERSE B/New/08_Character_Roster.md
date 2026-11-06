@@ -2,7 +2,7 @@
 **File:** `D:\Web Novel\New\characters\roster.md (121 Verified Canonical Entities)`  
 **Tags:** `#characters #master-dossier #canonical-ids #100-entities #multi-cultural-names #clan-sociology #organic-agency #psychology #anatomy #grey-morality #trauma #equipment #all-tiers #the-aliens-diaspora #canon-lock`  
 **Status:** [CANON LOCK] चारही टियरांमधील संपूर्ण वैश्विक पात्र-संग्रह (ऑक्टोबर २०२६)  
-**Authority:** Universe B मधील सर्व १२१ प्रमाणित व्यक्तींचा सर्वोच्च एकमेव सत्य-स्रोत. प्रत्येक व्यक्तीकडे संदिग्धता नसलेला Canonical ID आहे (उदा. `CHR-HUM-01`, `CHR-ASU-01`, `CHR-SET-01`, `CHR-DIV-01`, `CHR-ALN-01`). एकत्रित नोंदी, कृत्रिम लक्ष्ये व डुप्लिकेट प्रोफाईल काढून टाकते. Protagonist: [CHR-ALN-06] Neel (नील / The Sieve's Edge Protagonist).
+**Authority:** Universe B मधील सर्व १२१ प्रमाणित व्यक्तींचा सर्वोच्च एकमेव सत्य-स्रोत. प्रत्येक व्यक्तीकडे संदिग्धता नसलेला Canonical ID आहे (उदा. `CHR-HUM-01`, `CHR-ASU-01`, `CHR-SET-01`, `CHR-DIV-01`, `CHR-ALN-01`). एकत्रित नोंदी, कृत्रिम लक्ष्ये व डुप्लिकेट प्रोफाईल काढून टाकते. Protagonist: [CHR-ALN-06] Neel (नील).
 
 ---
 
@@ -14,7 +14,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **`CHR-ASU-01` ते `CHR-ASU-16` (१६ असुर व्यक्ती):** The Iron Citadel (वज्र-नगर), ज्वालामुखी भट्ट्या, The Obsidian Chasm द्रोणी व Red Crucible कामगार बंधुत्व.
 - **`CHR-DEV-01` ते `CHR-DEV-10` (१० देव व्यक्ती):** अमरावती तरंगते शिखर, Gandharva-Puri अंबर-रेशीम माग-घरे व सौर वेधशाळा.
 - **`CHR-BST-01` ते `CHR-BST-10` (१० श्वापद-सार्वभौम):** The Primeval Canopy, The Sky Spires, The Twilight Marsh व Blood-Ridge सीमांत.
-- **`CHR-CEN-01` ते `CHR-CEN-08` (८ मध्यवर्ती व्यक्ती):** Central City मनू-उपाधी (The Iron Sovereign on the Grey Basalt Throne), ७ सार्वभौम आसने, मध्यवर्ती रिझर्व्ह बँक, केंद्रीय साहसी गिल्ड व प्रोव्हिंग गेम्स.
+- **`CHR-CEN-00` ते `CHR-CEN-08` (९ मध्यवर्ती व्यक्ती):** Central City सम्राट (Central Emperor on the Grey Basalt Throne), ७ सार्वभौम आसने, मध्यवर्ती रिझर्व्ह बँक, केंद्रीय साहसी गिल्ड व प्रोव्हिंग गेम्स.
 - **`CHR-SET-01` ते `CHR-SET-17` (१७ Buffer Zone व सेतू-अधिकारी):** The Setu Academy, The Bastion Fortress व्हॅनगार्ड, Grand Aegis भिंत, ऋषी audit व आत्मा-प्रशासन कक्ष.
 - **`CHR-ABY-01` ते `CHR-ABY-13` (१३ अधोलोक व्यक्ती):** नेदरहोम बनावट देव, Dread-Hold दैत्य, The Ash Fortress बहुजातीय निर्वासित व सातवा सील प्रहरी (Living Seventh Horror).
 - **`CHR-DIV-00` ते `CHR-DIV-14` (१५ वैश्विक व घटनात्मक व्यक्ती):** सर्वोच्च त्रिमूर्ती (३), अनंत कोर (१), इंद्र-उपाधी (१), सहा घटनात्मक उपाधी (६), तीन दैवी प्रतिनिधी (३).
@@ -62,7 +62,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-03] General Ugrasena (सेनापती उग्रसेन) — "The Iron Line"
+### [CHR-HUM-03] Army General Ugrasen (सेनापती उग्रसेन) — "The Iron Line"
 - **Role & Faction (गट व भूमिका):** Supreme Commander of the Hastinapur Royal Army & Border Beast-Cavalry.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Northern Border Frontiers
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex Vanguard) | T4 (Trained Expert Vanguard)
@@ -79,7 +79,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-04] Captain Bhima (भीमा) — "The Trench Bull"
+### [CHR-HUM-04] Captain Bheem (भीम) — Heavy Cavalry Captain
 - **Role & Faction (गट व भूमिका):** Commander of the Heavy Beast-Cavalry & Cursed-Forest Suppression Squad.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Frontier Trench Outposts
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T3 (Elite Vanguard)
@@ -96,7 +96,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-05] Chancellor Sharadvat (महामंत्री शारद्वत) — The King's Conscience
+### [CHR-HUM-05] Sharadvat (शारद्वत) — Prime Minister of Hastinapur
 - **Role & Faction (गट व भूमिका):** Prime Minister of Hastinapur & Keeper of Royal Treaties.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapura Imperial Ministry
 - **Power Bracket & Scale Band (साधना-स्तर):** D-Rank (60–80% Bracket) | T1 (Civil Statesman)
@@ -130,7 +130,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-07] Alistair Vance (अॅलिस्टेर व्हॅन्स) — "Clockwork Vance", High Caravan-Master
+### [CHR-HUM-07] Alistair (अॅलिस्टेर व्हॅन्स) — Caravan Guild Master
 - **Role & Faction (गट व भूमिका):** Grand Warden of the Hastinapur Beast-Stables & Inter-Shard Caravan Roads.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapura Grand Union Depot
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Bracket — Reincarnated Soul, 2nd Gen) | T2 (Logistics Warden)
@@ -147,8 +147,8 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-08] Lord Admiral Silas (महा-नाविक सायलास / Silas Suhotra) — "The Silver Shark"
-- **Role & Faction (गट व भूमिका):** High Admiral of The Sea Citadel Fleet & Secret Boss of The Obsidian Ring Syndicate.
+### [CHR-HUM-08] Silas (सायलास) — Fleet Commander of Sea Citadel
+- **Role & Faction (गट व भूमिका):** Navy Commander of The Sea Citadel Fleet & Secret Boss of The Obsidian Ring Syndicate.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | The Sea Citadel (Naval Bastion)
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T3 (Naval Juggernaut)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Tide Torrent & Iron Imbuement (Commands crushing ocean waves and coats his cutlass in high-pressure water blades).
@@ -215,7 +215,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-12] Captain Romesh (कॅप्टन रोमेश) — "The Fog-Runner"
+### [CHR-HUM-12] Raiden (रायडेन) — Waterway Smuggler Captain
 - **Role & Faction (गट व भूमिका):** Smuggler Captain & River-Drake Boatman on the Ganges-Samudra Waterways.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Ganges-Samudra River Delta
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Bracket) | T2 (River Smuggler)
@@ -232,7 +232,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-13] Sage Shamika (ऋषी शमीक) — The Silent Master of Tapovana
+### [CHR-HUM-13] Shamik (ऋषी शमीक) — Grandmaster of Tapovana
 - **Role & Faction (गट व भूमिका):** Grandmaster of the Northern Tapovana Gurukul & Guardian of the Sacred Herb Sanctuaries.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Tapovana Forest Hermitage
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Ancient Ascetic — Age 310+) | T5 (Ascetic Master)
@@ -249,7 +249,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-14] Envoy Astika (आचार्य आस्तीक) — The Peacemaker of the Three Realms
+### [CHR-HUM-14] Astik (आचार्य आस्तीक) — Realm Peace Envoy
 - **Role & Faction (गट व भूमिका):** Traveling Sage-Diplomat between Humans, Nagas (Beasts), and Asuras.
 - **Planetary Shard & Location (स्थान):** Inter-Shard Neutral Zones & Border Canopies
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite — Age 220+) | T4 (Mystic Diplomat)
@@ -266,7 +266,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-15] Ila (इला) — The Wandering Herbalist
+### [CHR-HUM-15] Evelyn (इव्हलिन) — Wandering Guild Healer
 - **Role & Faction (गट व भूमिका):** Apothecary & Field Healer for the Hastinapur Adventurer Guild (Silver-Tag).
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Frontier Cursed Forests & Guild Camps
 - **Power Bracket & Scale Band (साधना-स्तर):** D-Rank (60–80% Bracket) | T1 (Field Apothecary)
@@ -275,7 +275,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Herb-sickle, brass mortar, & Sanjeevani poultice satchel.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 24 (Guild Field Medic).
 - **Moral Stance (नैतिक स्थिती):** Neutral Good. Compassionate frontline medic.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Trained in Tapovana under Sage Shamika, she now travels in Beast-Carts with adventurer parties into cursed forests to treat their wounds on the spot.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Trained in Tapovana under Sage Shamik, she now travels in Beast-Carts with adventurer parties into cursed forests to treat their wounds on the spot.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* D-Rank (60–80% Bracket) | T1 (Field Apothecary)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Botanical Healing: Rapid Herb-Bloom, Devil-Miasma & Poison Sensing]
@@ -384,7 +384,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-HUM-22] Kamsa (कंस) — "The Slave-Summoner"
+### [CHR-HUM-22] Kans (कंस) — Slave-Summoner
 - **Role & Faction (गट व भूमिका):** Provincial Warlord of Yamuna-Ghat & Illegal Type-1 Summoner; Bhoja Dynasty.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Yamuna-Ghat River Fortresses
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Warlord | T2 (Provincial Tyrant)
@@ -404,7 +404,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-01] Grand Architect Maya (महा-शिल्पी मय) — The Obsidian Titan
+### [CHR-ASU-01] Mayasur (महा-शिल्पी मयासुर) — Patriarch of the Iron Citadel
 - **Role & Faction (गट व भूमिका):** Patriarch & Master Builder of the Iron Citadel (Asura Shard).
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | The Iron Citadel (Vajra-Nagara Caldera)
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Ancient Master — Age 410) | T5 (Master Titan Architect)
@@ -421,7 +421,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-02] Queen Mandor (राणी मंदोदरी / मंदोर) — Mistress of the Forge-Laws
+### [CHR-ASU-02] Mandor (मन्दोर) — Queen Mother of Iron Citadel
 - **Role & Faction (गट व भूमिका):** Co-Ruler of the Iron Citadel; Overseer of Clan Laws & Metal Quality.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | The Iron Citadel
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite — Age 380) | T4 (Forge Sovereign)
@@ -438,7 +438,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-03] Marshal Hilda (मार्शल हिल्डा) — "The Siege-Breaker"
+### [CHR-ASU-03] Hilda (हिल्डा) — Siege Commander
 - **Role & Faction (गट व भूमिका):** Supreme Commander of the Asura Heavy War-Host & S-Rank Proving Games Champion.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | High Volcanic Redoubts
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex Juggernaut) | T5 (Apex War-Marshal)
@@ -455,7 +455,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-04] General Prahasa (सेनापती प्रहास) — Commander of the Armored War-Wagons
+### [CHR-ASU-04] Prahas (प्रहस) — War-Wagon Cavalry General
 - **Role & Faction (गट व भूमिका):** Leader of the Asura Rhino-Cart Shock Cavalry.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Volcanic Badlands & Border Trails
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T4 (Armored Cavalry Commander)
@@ -489,7 +489,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-06] Baron Ilvala (बॅरन इल्वल) — Lord of the Western Smelting Pits
+### [CHR-ASU-06] Ilval (इल्वल) — Smelting Pit Baron
 - **Role & Faction (गट व भूमिका):** Senior Mine Oligarch & Weapon Merchant.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Western Smelting Calderas
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Elite) | T3 (Smelting Baron)
@@ -507,7 +507,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 ---
 
 ### [CHR-ASU-07] Overseer Vatapi (वातापी) — The Blood-Smelter
-- **Role & Faction (गट व भूमिका):** Secret Alchemist & Dungeon Warden for Baron Ilvala.
+- **Role & Faction (गट व भूमिका):** Secret Alchemist & Dungeon Warden for Baron Ilval.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Abandoned Deep Mine Shafts
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Elite) | T3 (Toxic Metallurgist)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Acid-Fume Alchemy & Bone-rot (Uses volcanic sulfur and forbidden beast-blood to forge poisoned blades).
@@ -515,7 +515,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Serrated sulfur-bone knives.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 165 (Rogue Alchemist).
 - **Moral Stance (नैतिक स्थिती):** Chaotic Evil. Unscrupulous experimenter courting dark summonings.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Ilvala’s cruel younger brother; secretly experiments with illegal Devil-summoning rituals in abandoned mine shafts to create stronger living weapons.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Ilval’s cruel younger brother; secretly experiments with illegal Devil-summoning rituals in abandoned mine shafts to create stronger living weapons.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* B-Rank (Top 10% Elite) | T3 (Toxic Metallurgist)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Corrosive Alchemy: Acid-Fume Synthesis, Necrotic Bone-Rot Inoculation]
@@ -523,7 +523,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-08] Ira (इरा) — Master Volcanic Alchemist
+### [CHR-ASU-08] Erika (एरिका) — Chief Volcanic Alchemist
 - **Role & Faction (गट व भूमिका):** Chief Alchemist of the Iron Citadel Sanctum.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | High Citadel Alchemical Ateliers
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Bracket — Reincarnated Soul) | T2 (Master Alchemist)
@@ -557,7 +557,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-10] Commander Nikumbha (कमांडर निकुंभ) — The Reformist Shield
+### [CHR-ASU-10] Nikumbh (निकुम्भ) — Border Bastion Commander
 - **Role & Faction (गट व भूमिका):** Garrison Commander of the Asura-Beast Border Cliffs (Blood-Ridge).
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Blood-Ridge Border Pass
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T3 (Border Warden)
@@ -574,7 +574,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-11] Ashani (अशनी) — Master Rune-Smith
+### [CHR-ASU-11] Astrid (ॲस्ट्रिड) — Master Weapon Engraver
 - **Role & Faction (गट व भूमिका):** Lead Weapon-Engraver of the Iron Citadel & Frequency-Disc Cutter.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Royal Lapidary & Runic Atelier
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Bracket) | T2 (Master Rune-Cutter)
@@ -591,7 +591,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-12] Kshema (क्षेमा) — The Flesh-and-Iron Healer
+### [CHR-ASU-12] Kshem (क्षेम) — Flesh-and-Iron Healer
 - **Role & Faction (गट व भूमिका):** Master Prosthetic Artificer & Secret Shadow-Anchor Tuner.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Under-Caldera Healing Clinic
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Bracket — Reincarnated Soul) | T2 (Meridian Surgeon)
@@ -642,7 +642,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ASU-15] Kinkara (किंकर) — The Basalt Sentinel
+### [CHR-ASU-15] Kinkar (किंकर) — Basalt Sentinel
 - **Role & Faction (गट व भूमिका):** Living Era-2 Runic Stone Golem guarding the Deep Mantle Gates.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Seal 1 Entrance Gates
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Construct | T3 (Runic Automaton)
@@ -658,8 +658,8 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
   - *अधिकृत शस्त्रागार (Arsenal):* Monolithic stone fists & meteoric iron shackles
 ---
 
-### [CHR-ASU-16] Rudrakh (रुद्रख / Rudr) — "The Asura Berserker"
-- **Role & Faction (गट व भूमिका):** Red Crucible Union Brawler & Proving Games Contender; Disciple of Marshal Hilda.
+### [CHR-ASU-16] Rudrakh (रुद्रख) — The Asura Berserker
+- **Role & Faction (गट व भूमिका):** Red Crucible Union Brawler & Proving Games Contender; Disciple of Siege Commander Hilda.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Red Crucible Foundries & Central City
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Vanguard | T2 (Rising Heavy Striker)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Magma-Blood Overdrive & Spiked-Knuckle Brawling (Heats blood to ignition point, unleashing explosive punches).
@@ -678,7 +678,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-01] Bhanu (भानु) — The Solar Sovereign
+### [CHR-DEV-01] Aryaman (अर्यमन्) — Solar Emperor of Amaravati
 - **Role & Faction (गट व भूमिका):** Emperor of Amaravati & Head of the Aditya Solar Dynasty.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Amaravati (The Golden Floating Spire)
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank+ (T6 Ascendant Skylord — Age 620) | T6 (Ascendant Solar Sovereign)
@@ -695,7 +695,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-02] Queen Savitri (राणी सावित्री) — Keeper of the Solar Purse
+### [CHR-DEV-02] Saranya (सरन्यू) — Empress of Amaravati
 - **Role & Faction (गट व भूमिका):** High Queen of Amaravati & Director of Foreign Treaties.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Amaravati Solar Exchequer
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite — Age 590) | T4 (Solar Matriarch & Comptroller)
@@ -712,10 +712,10 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-03] Vaijayanti (वैजयंती) — Sky-Marshal of the Golden Wings
+### [CHR-DEV-03] Marisha (मारिषा) — Sky-Wing Commander
 - **Role & Faction (गट व भूमिका):** Supreme Commander of Amaravati’s Aerial Vanguard.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Amaravati Sky-Bastion
-- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex — Age 340) | T5 (Apex Sky-Marshal)
+- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex — Age 340) | T5 (Apex Logistics Warden)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Wind-Gale Mastery (Peak: Vāyavyāstra) & Four Wings of Light.
 - **Bonded Beast & Mount (सहजीवी बंध):** None (Deva Caste Law forbids beast bonding; flies via Light Wings).
 - **Weaponry & Arsenal (शस्त्रागार):** Candrahāsa (Legendary moon-white curved blade).
@@ -723,13 +723,13 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Moral Stance (नैतिक स्थिती):** Lawful Good. Noble warrior who rejects corrupt court vanity.
 - **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Noble warrior who despises the arrogance of lazy Deva nobles. Though Deva caste law forbids her from fighting in the Proving Games or bonding with beasts, she respects strong human and beast warriors who fight rogue Devils.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
-  - *साधना-स्तर (Scale Band):* S-Rank (Top 10% Apex — Age 340) | T5 (Apex Sky-Marshal)
+  - *साधना-स्तर (Scale Band):* S-Rank (Top 10% Apex — Age 340) | T5 (Apex Logistics Warden)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Aerial Mastery: Vāyavyāstra Gale Command, Four Wings of Manifest Starlight]
   - *अधिकृत शस्त्रागार (Arsenal):* Candrahāsa (Legendary moon-white curved blade)
 
 ---
 
-### [CHR-DEV-04] Anshuman (अंशुमन) — Captain of the Sun-Lances
+### [CHR-DEV-04] Kiran (किरण) — Border Sky-Fleet Captain
 - **Role & Faction (गट व भूमिका):** Border Marshal of the Deva Sky-Rim.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Outer Sky-Rim Border Cliffs
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T3 (Border Patrol Marshal)
@@ -746,7 +746,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-05] Justice Dharma (न्यायाधीश धर्म) — The Blind Arbiter
+### [CHR-DEV-05] Ritam (ऋतम्) — The Blind Arbiter
 - **Role & Faction (गट व भूमिका):** Chief Justice of the Celestial High Court.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Amaravati High Judicial Chamber
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T4 (Celestial Jurist)
@@ -763,7 +763,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-06] Revati (रेवती) — Seer of the Star-Tides
+### [CHR-DEV-06] Saumya (सौम्या) — Astral Seer
 - **Role & Faction (गट व भूमिका):** High Priestess of the Amaravati Astral Observatory.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Stellar Zenith Observatory
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Mystic) | T3 (Stellar Seer)
@@ -780,7 +780,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-07] Lady Chitralekha (चित्रलेखा) — Mistress of Gandharva-Puri
+### [CHR-DEV-07] Chitralekha (चित्रलेखा) — Silk Queen of Gandharva-Puri
 - **Role & Faction (गट व भूमिका):** Sovereign Patron of the Sacred Arts & Aether-Silk Looms.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Gandharva-Puri Silk Spire
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Elite) | T3 (Aether-Weaver Patron)
@@ -797,7 +797,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-08] Kavi (कवि) — Master of the Silk-Looms
+### [CHR-DEV-08] Kaleyan (कालेयन्) — Master Silk-Weaver
 - **Role & Faction (गट व भूमिका):** Chief Weaver-Artificer of Gandharva-Puri.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Lower Loom Vaults
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Artisan-Warrior) | T3 (Razor-Thread Combatant)
@@ -814,7 +814,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-09] Chitraratha (चित्ररथ) — Navigator of the Void-Rim
+### [CHR-DEV-09] Taran (तारण) — Chief Void Cartographer
 - **Role & Faction (गट व भूमिका):** Chief Cartographer of the Floating Islands & Setu Liaison.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Void-Rim Observation Bastion
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Elite) | T3 (Void Cartographer)
@@ -831,7 +831,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DEV-10] Marut (मरुत) — The Wind-Runner
+### [CHR-DEV-10] Javan (जवन) — Supersonic Royal Courier
 - **Role & Faction (गट व भूमिका):** Royal Envoy & High-Speed Sky Courier between Amaravati and Central City.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव उप-लोक) | Sky-Current Airways
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Speedster) | T3 (Supersonic Courier)
@@ -852,7 +852,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-01] Ursus (उर्सुस) — "Old Four-Horns"
+### [CHR-BST-01] Rikshan (ऋक्षन्) — "Old Four-Horns"
 - **Role & Faction (गट व भूमिका):** Sovereign Earth-Titan of the Primeval Canopy (Heartwood Sanctum).
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | Primeval Canopy (Heartwood Sanctum)
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank+ (T6 Apex Sovereign Beast — Age 800+) | T6 (Apex Sovereign Beast-Titan)
@@ -869,7 +869,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-02] Jormun (जोर्मुन) — "The Jade Coil"
+### [CHR-BST-02] Kadrin (काद्रिन्) — Empress of Serpents
 - **Role & Faction (गट व भूमिका):** Naga Empress of the Sunken Waterways & World-Tree Roots.
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | Sunken Subterranean Roots
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank+ (T6 Apex Sovereign Serpent — Age 1,200+) | T6 (Apex Sovereign Serpent Empress)
@@ -886,7 +886,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-03] Vinata (विनता) — "The Golden Maw"
+### [CHR-BST-03] Suparni (सुपर्णी) — "The Golden Maw"
 - **Role & Faction (गट व भूमिका):** Garuda Sky-Empress of the 20,000-ft Granite Sky Spires.
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | Granite Sky Spires (20,000 ft Apex)
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank+ (T6 Apex Sovereign Garuda — Age 450) | T6 (Apex Sovereign Aerial Empress)
@@ -903,7 +903,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-04] Sampati (संपाती) — "Iron-Talon"
+### [CHR-BST-04] Shyen (श्येन) — "Iron-Talon"
 - **Role & Faction (गट व भूमिका):** War-Leader of the Raptor Clans & Vanguard Emissary to the Proving Games.
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | Sky Spires & Proving Coliseum Skies
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex Aerial Warrior — Age 180) | T5 (Apex Raptor War-Leader)
@@ -920,7 +920,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-05] Shyama (श्यामा) — "The Shadow-Cat"
+### [CHR-BST-05] Nishi (निशि) — "The Shadow-Cat"
 - **Role & Faction (गट व भूमिका):** Matriarch of the Twilight Marsh & Cursed-Swamp Guardian.
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | The Twilight Marsh
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Apex Stealth Beast — Age 220) | T4 (Apex Shadow Stalker)
@@ -937,7 +937,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-06] Sarama (सरमा) — "Queen of Blood-Ridge"
+### [CHR-BST-06] Sarami (सारमी) — "Queen of Blood-Ridge"
 - **Role & Faction (गट व भूमिका):** Pack-Queen of the Obsidian-Fanged Sabertooths & Hounds on the Asura Border.
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | Blood-Ridge Cliffs (Asura Border)
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Apex Huntress — Age 140) | T4 (Border Pack Matriarch)
@@ -954,7 +954,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-07] Morvath (मोर्व्हाथ) — "The Bone-Speaker"
+### [CHR-BST-07] Murva (मूर्वा) — "The Bone-Speaker"
 - **Role & Faction (गट व भूमिका):** Chief Shaman-Ambassador between the Beast Lords and the Adventurer Guilds (Hollow Ironwood Grove).
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद उप-लोक) | Hollow Ironwood Trading Post
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Beast-Shaman — Age 58) | T3 (Master Beast-Shaman)
@@ -971,7 +971,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-BST-08] Sage Matanga (ऋषी मतंग) — Keeper of the Silent Glade
+### [CHR-BST-08] Matang (मतंग) — Sanctuary Sage
 - **Role & Faction (गट व भूमिका):** Guardian of the Border Sanctuary between the Human and Beast Shards.
 - **Planetary Shard & Location (स्थान):** Beast-Human Shard Border | The Silent Glade Sanctuary
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Ascetic Sage — Age 112) | T4 (Ahimsa Ascetic Master)
@@ -987,7 +987,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
   - *अधिकृत शस्त्रागार (Arsenal):* Teakwood walking staff & Sanjeevani water-urn
 ---
 
-### [CHR-BST-09] Tara (तारा / Maya-Ri) — "The Silent Whisperer"
+### [CHR-BST-09] Tara (तारा) — Forest Scout
 - **Role & Faction (गट व भूमिका):** Shamanic Beast-Whisperer & Scout; Hollow-Grove Shamans & Pan-Astral Adventurer Guild.
 - **Planetary Shard & Location (स्थान):** Beast Planetary Shard (श्वापद ग्रह-खंड) | Hollow Ironwood Grove & Central City
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Bracket) | T2 (Beast Specialist)
@@ -1013,7 +1013,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Two curved black-jade daggers dipped in ancient *Halahala* derivative.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 310 (Immortal Serpent Warlord).
 - **Moral Stance (नैतिक स्थिती):** Chaotic Evil / Militant Ethnocentric. Despises humanity and seeks the reclamation of all rivers.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Naga Empress Jormun's radical nephew who broke away from the Great Beast Accord, covertly aiding the Hollow Sect to breach river-basin wards.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Naga Empress Kadrin's radical nephew who broke away from the Great Beast Accord, covertly aiding the Hollow Sect to breach river-basin wards.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* S-Rank Rogue Apex Beast | T4 (Sovereign Serpent Warlord)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Naga Primordial: Caustic Vapor Torrent, Jade Scale Carapace]
@@ -1024,25 +1024,25 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-00] The Manu-Upādhi (मनू-उपाधी) — The Iron Sovereign of Central City
-- **Role & Faction (गट व भूमिका):** Presiding Sovereign of Tier 3 Astral Realm on the Grey Basalt Throne; Supreme Lawgiver and Protector of the 5 Continental Shards.
-- **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (The Grey Basalt Throne Room)
-- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank Sovereign Administrator (T5 / S-Rank Fortress-Breaker Scale)
-- **Quirk & Magic (सक्रिय कौशल्ये):** [Sovereign Authority: Basalt Ward Synchronization, Grand Concord Decree, Mass Civic Calm]
+### [CHR-CEN-00] Central Emperor (सम्राट) — Sovereign Emperor of Central City
+- **Role & Faction (गट व भूमिका):** Sovereign Emperor of Central City (सम्राट) and presiding head of the Grand Concord Assembly; wields immense indirect economic, trade, and cultural hegemony over the decentralized shards without direct legislative command.
+- **Planetary Shard & Location (स्थान):** Central Subrealm (मध्य-क्षेत्र) | Central City (The Grey Basalt Throne Room)
+- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank Sovereign Politician (T5 / S-Rank Fortress-Breaker Scale)
+- **Quirk & Magic (सक्रिय कौशल्ये):** [Sovereign Authority: Basalt Ward Synchronization, Grand Concord Decrees, Mass Civic Resonance]
 - **Bonded Beast & Mount (सहजीवी बंध):** Four-horned Basalt Mastodon (Stage 3 Sovereign Mount).
 - **Weaponry & Arsenal (शस्त्रागार):** The Central Aegis-Rod & Grey Basalt Sovereign Gavel.
-- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Replaced via the Seven-Shard Conclave (The Chalni-Election).
-- **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Supreme civic arbiter preventing inter-shard total war and checking Shard-King expansionism.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Sits upon the uncarved Grey Basalt Throne at the geometric dead center of Central City. Governs in direct coordination with the 7 Sovereign Seats (Coin, Rations, Forge, Caravans, Shadow, Civic Order, Coliseum). Subordinate to the Tier 2 High Council (Indra-Upādhi) in cosmic defense, but holds absolute sovereign authority over mortal civic law across the five shards.
+- **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Contestable political office: acquired via presidential election, succession, or martial challenge/usurpation by anyone regardless of background.
+- **Moral Stance (नैतिक स्थिती):** Pragmatic Neutral (Machiavellian). Balances international trade, gateway tariffs, and banking interests among sovereign Shard-Kings.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Sits upon the Grey Basalt Throne of Central City. Holds zero direct command over the independent kings of Hastinapur, the Asuras, Devas, or Beasts (Tensura-style decentralization). His dominance stems from indirect leverage: controlling the Aether-Rupee currency, the 4 Monolithic Stone Gateways, and the Proving Games. Higher Tiers (Swarga & Setu) never interfere in his presidency unless an existential Ravana/Kansa-scale cosmic threat or Mahabharata-scale total dimensional war erupts.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
-  - *साधना-स्तर (Scale Band):* S-Rank (Fortress-Breaker Ceiling) | T5 (Astral Sovereign)
-  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Sovereign Law: Grey Basalt Tectonic Anchor Tuning, Five-Shard Civic Pact Binding, Mass Discord Dampening]
+  - *साधना-स्तर (Scale Band):* S-Rank (Fortress-Breaker Ceiling) | T5 (Central Sovereign)
+  - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Sovereign Statecraft: Grey Basalt Civic Tuning, Concord Treaty Enforcement, Monetary Embargoes]
   - *अधिकृत शस्त्रागार (Arsenal):* The Central Aegis-Rod & Basalt Sovereign Decree Seal
 
 ---
 
-### [CHR-CEN-01] High Chancellor Sulabha (सुलभा) — Supreme Moderator of the Concord
-- **Role & Faction (गट व भूमिका):** Speaker of the Grand Concord Assembly & Patron of the Proving Games; reporting to the Manu-Upādhi.
+### [CHR-CEN-01] Sulabha (सुलभा) — Speaker of the Grand Concord
+- **Role & Faction (गट व भूमिका):** Speaker of the Grand Concord Assembly & Patron of the Proving Games; coordinating with the Sovereign-President of Central City.
 - **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (The Grand Concord Dome)
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Diplomatic Master) | T4 (Grand Assembly Moderator)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Will-Binding (Vashitva) & Sanctuary Ward (Her voice commands calm across a hall of ten thousand roaring warriors).
@@ -1050,7 +1050,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** The Concord Mace (Golden ceremonial gavel).
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 68 (Master Diplomat).
 - **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Supreme referee maintaining inter-realm peace.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Keeps the five shards from going to open war through razor-sharp diplomacy, managing the Five-Arch Rotunda where the four great Stone Gateways meet under the Manu-Upādhi's charter.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Keeps the five shards from going to open war through razor-sharp diplomacy, managing the Five-Arch Rotunda where the four great Stone Gateways meet under the Grand Concord's charter.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* A-Rank (Top 10% Diplomatic Master) | T4 (Grand Assembly Moderator)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Siddhi Authority: Vashitva Voice of Accord, Mass Sanctuary Peace-Dome]
@@ -1058,8 +1058,8 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-02] High Governor Ambika (अंबिका) — Mistress of the Vaults of Truth
-- **Role & Faction (गट व भूमिका):** Governor of the Central Reserve Bank & Regulator of the Beast-Core Exchange (Akash-Kosha Banking Vaults); Seat #1 (Coin & Credit) under the Manu-Upādhi.
+### [CHR-CEN-02] Ambika (अम्बिका) — Governor, Central Reserve Bank
+- **Role & Faction (गट व भूमिका):** Governor of the Central Reserve Bank & Regulator of the Beast-Core Exchange (Akash-Kosha Banking Vaults); Seat #1 (Coin & Credit) in the Central Presidium.
 - **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Central City (Akash-Kosha Banking Vaults)
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Elite) | T3 (Central Financial Governor)
 - **Quirk & Magic (सक्रिय कौशल्ये):** Gold-Sense & Blood-Seal Contract (Can detect a single counterfeit coin or fake Beast Core in a chest of ten thousand).
@@ -1067,7 +1067,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Vault Master Ledger & Golden Key-Rod.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 4: Kali Yuga | Age 52 (Financial Governor).
 - **Moral Stance (नैतिक स्थिती):** Lawful Neutral. Strict regulator of the Aether-Rupee and gateway tariffs.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Controls the Aether-Rupee and the 17% gateway tariff; coordinates with High Arbitrator Beatrice Rosso at the Core-Exchange and funds Investigator Devayani’s taskforce to hunt down illegal Shadow Anchors.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Controls the Aether-Rupee and the 17% gateway tariff; coordinates with Private Bank Head Donna Beatrice Vanezza at the Core-Exchange and funds Investigator Devayani’s taskforce to hunt down illegal Shadow Anchors.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* B-Rank (Top 10% Elite) | T3 (Central Financial Governor)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Economic Metaphysics: Absolute Gold-Sense, Counterfeit-Core Detection, Inviolable Blood-Seal Contract]
@@ -1075,7 +1075,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-03] Grand Marshal Satyabhama (सत्यभामा) — Commander of the Peacekeepers & Coliseum
+### [CHR-CEN-03] Satyabhama (सत्यभामा) — Commander of Peacekeepers
 - **Role & Faction (गट व भूमिका):** Chief Enforcer of Central City’s Demilitarized Zone & Chief Referee of the Proving Games.
 - **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Grand Coliseum & Central Garrison
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex Martial Artist) | T5 (Supreme Peacekeeper Commander)
@@ -1092,7 +1092,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-04] Chief Magistrate Sudeva (सुदेव) — The Incorruptible Scale
+### [CHR-CEN-04] Sudev (सुदेव) — Chief Magistrate of Central City
 - **Role & Faction (गट व भूमिका):** Supreme Judge of Inter-Realm Guild Disputes & Devil-Summoning Trials.
 - **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | High Tribunal of Concord
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Jurist) | T3 (Chief Tribunal Magistrate)
@@ -1126,7 +1126,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-06] Guildmaster Uttanka (उत्तंक) — Grandmaster of the Central Adventurer Guild & Echo-Grid
+### [CHR-CEN-06] Agastya (अगस्त्य) — Adventurer Guild Grandmaster
 - **Role & Faction (गट व भूमिका):** Supreme Director of the Pan-Astral Adventurer Guild HQ & the Echo-Shell Communication Network.
 - **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Grand Adventurer Guild HQ
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Veteran Adventurer) | T4 (Grandmaster Adventurer)
@@ -1143,7 +1143,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-CEN-07] Chandra-Lekha (चंद्रलेखा) — Grand Clairvoyant of the Astral Mirror
+### [CHR-CEN-07] Chandra (चन्द्रा) — Grand Clairvoyant of the Astral Mirror
 - **Role & Faction (गट व भूमिका):** Chief Seer of the Central Guild Mirror-Hall & Live Broadcaster of the Proving Games.
 - **Planetary Shard & Location (स्थान):** Central Astral Realm (मध्य-क्षेत्र) | Mirror-Hall Broadcast Tower
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank (Top 10% Seer — Reincarnated Soul) | T3 (Clairvoyant Mirror-Mistress)
@@ -1181,7 +1181,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-01] Acharya Shrutasena (आचार्य श्रुतसेन) — सेतु विद्या-पीठाचा मुख्य प्राचार्य
+### [CHR-SET-01] Shrutasen (श्रुतसेन) — Rector of Setu Academy
 - **Role & Faction (गट व भूमिका):** सेतु विद्या-पीठाचा मुख्य शैक्षणिक कुलगुरू (Chancellor of the Setu Academy).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | The Setu Academy (सेतु विद्या-पीठ) — ५०,००० मैल तरंगता पाषाण-सेतू
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Ancient Academician) | T6 (Ascendent Vidyapeeth Acharya)
@@ -1198,7 +1198,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-02] Sky-Marshal Susharma (सुशर्मा) — सेतु श्वापद-मंच व महा-द्वाराचा मुख्य वाहतूक-नियंत्रक
+### [CHR-SET-02] Susharma (सुशर्मा) — Viaduct Logistics Warden
 - **Role & Faction (गट व भूमिका):** महा-सेतु श्वापद-मंच व वाहतुकीचा मुख्य नियंत्रक (Grand Transit Roost Master).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Setu Grand Transit Roost
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Logistics Marshal) | T5 (Awakened Transit Master)
@@ -1215,7 +1215,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-03] Akampana (अकंपन) — मुख्य सॅपर व वेढा-शिल्पकार
+### [CHR-SET-03] Akampan (अकम्पन) — Chief Fortification Architect
 - **Role & Faction (गट व भूमिका):** पश्चिम लौह-प्राकार किल्ल्यांचा मुख्य अभियंता (Chief Sapper of Western Bastions).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Void Wall Fortress & Western Watchtower
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Sapper) | T5 (Awakened Chief Sapper)
@@ -1232,7 +1232,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-04] Senior Field Auditor Satyaketu (सत्यकेतु) — लाल सीलधारक
+### [CHR-SET-04] Satyaketu (सत्यकेतु) — Chief Field Auditor
 - **Role & Faction (गट व भूमिका):** ऋषी सभेचा मुख्य क्षेत्र-audit अधिकारी (Chief Field Auditor of the Rishi Council).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Buffer Zone Mobile Audit Unit
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Ascendent Auditor) | T6 (Ascendent Chief Field Auditor)
@@ -1249,10 +1249,10 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-05] Marshal-General Vajraketu (वज्रकेतु) — सेतु व्हॅनगार्डचा सेनानी
+### [CHR-SET-05] Vajraketu (वज्रकेतु) — Setu Army Commander
 - **Role & Faction (गट व भूमिका):** सेतु महा-सेना चा सर्वोच्च लष्करी सेनानी (Supreme Commander of the Setu Standing Army & Grand Aegis Vanguard).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | The Setu Standing Army Grand Command & The Grand Aegis Vanguard
-- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex Marshal) | T6 (Ascendent Marshal-General)
+- **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Apex Marshal) | T6 (Ascendent Setu Army Commander)
 - **Vanguard & Soul-Bond (व्हॅनगार्ड व सहजीवी बंध):** Supreme Commander of The Setu Standing Army & Grand Aegis Vanguard | सहजीवी बंध: इंद्राचे अस्त्र-अनुष्ठान
 - **Lineage & Culture (संस्कृती व वंश):** कुरु-पांचाल महारथी क्षत्रिय वंश (Vanguard Marshal Lineage).
 - **Historical Era & Lifespan (ऐतिहासिक युग व आयुर्मर्यादा):** **Era 4: Kali Yuga (वर्तमान कलि युग)** | वय ४८ (महारथी क्षत्रिय).
@@ -1260,13 +1260,13 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Physical Dossier & Anatomy (शारीरिक संग्रह):** वय ४८ | उंची ६'३" | २३० पाउंड | वज्र-कवचाने मढवलेला धिप्पाड योद्धा, छातीवर महा-सेतूचा सुवर्ण सूर्य-बिल्ला.
 - **Psychological Profile & Hook (मानसिक प्रोफाईल):** कोणत्याही किमतीवर सीमारेषा अभेद्य ठेवणे आणि पातळातून येणाऱ्या अंधकारमय आक्रमणांना रोखणे.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
-  - *साधना-स्तर (Scale Band):* S-Rank (Top 10% Apex Marshal) | T6 (Ascendent Marshal-General)
+  - *साधना-स्तर (Scale Band):* S-Rank (Top 10% Apex Marshal) | T6 (Ascendent Setu Army Commander)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Body: Vajra Marrow, Strategy: Chakravyūha Tactical Formation, Impact: Kinetic Rupture]
   - *अधिकृत शस्त्रागार (Arsenal):* [Divine Relic: Vajra (Lightning Javelin)] & [Relic: The Bastion Great-Mace]
 
 ---
 
-### [CHR-SET-06] Grand Master Yuktinath (युक्तिनाथ) — शोधक गिल्डचा संचालक
+### [CHR-SET-06] Yuktinath (युक्तिनाथ) — Director of Dimensional Research
 - **Role & Faction (गट व भूमिका):** सेतु विद्या-पीठातील अनुभवजन्य संशोधनाचा प्रमुख (Discovery Guild Director & Ruin Crypt Examiner).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Setu Discovery Guild & Ruin Examination Bureau
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Scholar) | T6 (Ascendent Grand Master of Discovery)
@@ -1317,7 +1317,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-09] Anvesh (अन्वेष) — विसंगती-मागोवा अधिकारी
+### [CHR-SET-09] Vayun (वयुन) — Rift & Summoning Tracker
 - **Role & Faction (गट व भूमिका):** ऋषी सभेचा क्षेत्र-पूर्वतपास शोधक (Rift Telemetry Officer & Void Wave Tracker).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Sub-Dimensional Rift Monitoring Post
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Scout) | T5 (Awakened Intelligence Scout)
@@ -1334,7 +1334,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-10] Dhritika (धृतिका) — अडथळा चौकी सेनानी
+### [CHR-SET-10] Dhriti (धृति) — Outpost 9 Commander
 - **Role & Faction (गट व भूमिका):** क्षेत्र ४ चौकी सेनानी, पालक संघ (Fortress Bastion Sentinel & Heavy Defense Warden).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Setu Citadel Central Bastion
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Defender) | T5 (Awakened Barrier Outpost Commander)
@@ -1368,7 +1368,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-12] Yantrika (यांत्रिका) — मुख्य यंत्र अभियंता
+### [CHR-SET-12] Yantri (यन्त्री) — Chief Relic Artificer
 - **Role & Faction (गट व भूमिका):** मुख्य यांत्रिक व ताईत अभियंता, शोधक गिल्ड (Setu Master Clockmaker & Runic Gauge Inspector).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Setu Runic Gauge Maintenance Foundry
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Artificer) | T5 (Awakened Master Artificer)
@@ -1402,7 +1402,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-14] Niyam (नियम) — उच्च संक्रमण पर्यवेक्षक
+### [CHR-SET-14] Nachiket (नचिकेत) — Soul-Transit Overseer
 - **Role & Faction (गट व भूमिका):** वरिष्ठ लॉजिस्टिक्स समन्वयक, आत्मा-प्रशासन क्षेत्र विभाग (Setu Military Police Provost Marshal).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Buffer Zone Law Enforcement Directorate
 - **Power Bracket & Scale Band (साधना-स्तर):** S-Rank (Top 10% Marshal) | T6 (Ascendent Transit Overseer)
@@ -1419,7 +1419,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-15] Warden Setuvrata (सेतुव्रता / वॉर्डन सेतू) — Pratigraha Warden
+### [CHR-SET-15] Setuvrat (सेतुव्रत) — Quarantine Reception Warden
 - **Role & Faction (गट व भूमिका):** Pratigraha गोदाम-वॉर्डन (Pratigraha Chief Warehouse Warden & Quarantine Overseer).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Pratigraha Warehouse & Quarantine Yard
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Warden) | T5 (Awakened Quarantine Director)
@@ -1436,7 +1436,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-SET-16] Lekhya (लेख्या) — कार्मिक बंध तपासनीस
+### [CHR-SET-16] Lekha (लेखा) — Karmic Bond Inspector
 - **Role & Faction (गट व भूमिका):** मुख्य पडताळणी अधिकारी, कार्मिक पडताळणी ब्युरो (Chief Archival Scribe & Treaty Protocol Recorder).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Vidyapeeth Scribe Office
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Scribe) | T5 (Awakened Soul Ledger Clerk)
@@ -1449,11 +1449,11 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* A-Rank (Top 10% Scribe) | T5 (Awakened Soul Ledger Clerk)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Database: Chitragupta Register Synchronizer, Astral: Soul-Sight]
-  - *अधिकृत शस्त्रागार (Arsenal):* [Seal: Lekhya Bureau Official Seal, Copper Tablets] & [Optics: Prismatic Verification Lens]
+  - *अधिकृत शस्त्रागार (Arsenal):* [Seal: Lekha Bureau Official Seal, Copper Tablets] & [Optics: Prismatic Verification Lens]
 
 ---
 
-### [CHR-SET-17] Dootan (दूतान) — वरिष्ठ खतावणी दूत
+### [CHR-SET-17] Matali (मातलि) — Charioteer Commander
 - **Role & Faction (गट व भूमिका):** उच्च-प्राथमिकता प्रेषण दूत, आत्मा-प्रशासन क्षेत्र विभाग (Buffer Zone High-Priority Courier Officer).
 - **Planetary Shard & Location (स्थान):** Tier 2 Buffer Zone (द ग्रेट सेतू) | Inter-Tier Courier Post
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank (Top 10% Courier) | T5 (Awakened High Priority Courier)
@@ -1474,7 +1474,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-01] Paundra (पौंड्रक / Paundraka) — "The Counterfeit Sovereign"
+### [CHR-ABY-01] Paundrak (पौंड्रक) — The Counterfeit Sovereign
 - **Role & Faction (गट व भूमिका):** Overlord of Netherholme Throne & Sovereign Patriarch of the Hunger Devils.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | Netherholme Obsidian Citadel
 - **Power Bracket & Scale Band (साधना-स्तर):** Ati-Maharathi (T6 Corrupted Sovereign) | Equivalent to S-Rank+
@@ -1491,7 +1491,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-02] General Vritra (वृत्र / Shataghati) — "The Bone Behemoth"
+### [CHR-ABY-02] Shataghati (शतघाती) — The Bone Behemoth
 - **Role & Faction (गट व भूमिका):** Supreme Warlord of the Dread-Hold Legion; Hunger Faction Vanguard.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | Dread-Hold Bastion
 - **Power Bracket & Scale Band (साधना-स्तर):** Maharathi (T6 Corrupted Warlord) | 100-ft Tectonic Behemoth
@@ -1500,7 +1500,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Basalt siege mace carved from sunken mountain core.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 2 to Present | Age 1,900+ (Ancient Devil Titan).
 - **Moral Stance (नैतिक स्थिती):** Lawful Evil. Relentless frontline general bound by harsh warrior hierarchy.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** A cyclopean titan of calcified bone and hardened basalt. Direct rival to Marshal-General Vajraketu, awaiting the day the Aegis weakens to clash thunderbolt against mountain-mace.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** A cyclopean titan of calcified bone and hardened basalt. Direct rival to Setu Army Commander Vajraketu, awaiting the day the Aegis weakens to clash thunderbolt against mountain-mace.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* Maharathi (T6 Corrupted Warlord)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Tectonic Siege: Seismic Ground Collapse, Unbreakable Bone Carapace]
@@ -1508,7 +1508,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-03] Trishir (त्रिशिरा / Trishira) — "The Three-Minded Weaver"
+### [CHR-ABY-03] Trishir (त्रिशिर) — The Three-Minded Weaver
 - **Role & Faction (गट व भूमिका):** Chief Alchemist & Devil Ritualist; Shadow-Hollow Coven.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | The Rotting Fens
 - **Power Bracket & Scale Band (साधना-स्तर):** Atirathi (T5 Corrupted Sorcerer) | Master Ritualist
@@ -1525,7 +1525,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-04] King Bali (महाबली / Bali) — "The Golden-Bound Sovereign"
+### [CHR-ABY-04] Bali (बलि) — The Golden-Bound Sovereign
 - **Role & Faction (गट व भूमिका):** Sovereign Monarch of the Aegis-Light Enclaves & Patriarch of the Noble Devils.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | Aegis-Light Enclave (Inner Rim)
 - **Power Bracket & Scale Band (साधना-स्तर):** Ati-Maharathi (T6 Noble Devil Sovereign) | High Noble Tier
@@ -1542,7 +1542,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-05] Vibhishan (विभीषण / Vibhi) — "The Exile Arbiter"
+### [CHR-ABY-05] Vibhishan (विभीषण) — The Exile Arbiter
 - **Role & Faction (गट व भूमिका):** Chief Scholar & Diplomatic Envoy of the Noble Devils; Aegis-Light Enclaves.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | Border Outpost & Aegis Line
 - **Power Bracket & Scale Band (साधना-स्तर):** Atirathi (T5 Noble Devil Scholar) | Grand Diplomat
@@ -1559,7 +1559,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-06] Nila (नीला / Kali-Ka) — "The Shadow-Dancer"
+### [CHR-ABY-06] Nila (नीला) — The Shadow-Dancer
 - **Role & Faction (गट व भूमिका):** Symbiotic Noble Devil Partner & Shade Assassin; Aegis-Light Court to House Yamuna-Shade (छाया-गृह).
 - **Planetary Shard & Location (स्थान):** Corrupted Realm / Human Shard | Bonded inside Kael's Shadow
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank -> A-Rank Scaling | Symbiotic Contract Companion
@@ -1576,7 +1576,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-07] Hamsa (हंस) — Senior Warden of The Ash Fortress
+### [CHR-ABY-07] Hans (हंस) — Senior Warden of The Ash Fortress
 - **Role & Faction (गट व भूमिका):** Senior Border Warden; The Ash Fortress Multi-Racial Military Command.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | The Ash Fortress
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank Exile Vanguard | T3 (Border Veteran)
@@ -1593,7 +1593,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-08] Dambha (दंभ / Dimbaka) — Tactical Warden of The Ash Fortress
+### [CHR-ABY-08] Dimbak (डिम्बक) — Tactical Warden of The Ash Fortress
 - **Role & Faction (गट व भूमिका):** Tactical Scout & Trap-Master; The Ash Fortress Multi-Racial Military Command.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | The Ash Fortress
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank Tactical Vanguard | T3 (Trap & Ambush Specialist)
@@ -1610,7 +1610,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-09] Marich (मारीच / Maricha) — "The Golden Deer"
+### [CHR-ABY-09] Marich (मारीच) — The Golden Deer
 - **Role & Faction (गट व भूमिका):** Underworld Smuggling Kingpin & Master Illusionist; Boss of *The Abyss Shufflers*.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | Ash-Roads & Clandestine Micro-Cracks
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank Illusionist & Smuggler | T3 (Black Market Boss)
@@ -1627,7 +1627,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-10] Kalmash (कल्माष / Kabandh) — "The Flesh-Collector"
+### [CHR-ABY-10] Kabandh (कबन्ध) — The Flesh-Collector
 - **Role & Faction (गट व भूमिका):** Rogue Mode-B Hijacked Vessel; Hunger Faction Striker & Body Snatcher.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm / Human Frontier | Khandava Perimeter
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank Abomination | T3 (Hijacked Vessel Monstrosity)
@@ -1644,7 +1644,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-11] Jaras (जरासंध / Jaras) — "The Split-Body Tyrant"
+### [CHR-ABY-11] Jarasandhandh (जरासन्ध) — The Split-Body Tyrant
 - **Role & Faction (गट व भूमिका):** Badlands Cult Warlord & Slavemaster; Magadha Blood Cult.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | Western Slag Waste Fortress
 - **Power Bracket & Scale Band (साधना-स्तर):** A-Rank Half-Asura Outlaw | T3 (Immortal Flesh Boss)
@@ -1661,12 +1661,12 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-12] Emperor Shrutayudha (सम्राट श्रुतायुध) — The Living Seventh Horror (Seal 7)
+### [CHR-ABY-12] Emperor Shrutayudh (सम्राट श्रुतायुध) — Living Seventh Horror (Seal 7)
 - **Role & Faction (गट व भूमिका):** Primordial Guardian & Tragic Living Seal of the Seventh Horror; Dead Chasm (Seal 7).
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | The Dead Chasm (Seal 7 Pit)
 - **Power Bracket & Scale Band (साधना-स्तर):** Ati-Maharathi++ (T7 Cosmic Entity) | Transcendent Horror Vessel
 - **Quirk & Magic (सक्रिय कौशल्ये):** Rudra-Bound Immortal Flesh, Primordial Void Aura & Sovereign Dread (Absorbs anti-existence to prevent universe collapse).
-- **Bonded Beast & Mount (सहजीवी बंध):** Kagabhushundi (CHR-ABY-13 — The Stone-Eyed Crow).
+- **Bonded Beast & Mount (सहजीवी बंध):** Kagbhushundi (CHR-ABY-13 — The Stone-Eyed Crow).
 - **Weaponry & Arsenal (शस्त्रागार):** 108 meteoric iron anchor-chains bolted into his skeleton & dead bedrock.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Era 2 to Present | Age 3,200+ (Chained Immortal Emperor).
 - **Moral Stance (नैतिक स्थिती):** Tragic Absolute Neutral / Cosmic Martyr. Sacrificed humanity to keep reality intact.
@@ -1678,7 +1678,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ABY-13] Kaga (काग / Kagabhushundi) — The Stone-Eyed Crow of the Chasm
+### [CHR-ABY-13] Kag (कागभुशुण्डि) — The Stone-Eyed Crow of the Chasm
 - **Role & Faction (गट व भूमिका):** Immortal Avian Chronicler & Sentinel of Seal 7; The Dead Chasm.
 - **Planetary Shard & Location (स्थान):** Corrupted Realm (अधोलोक — Tier 4) | The Dead Chasm (Seal 7 Rim)
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Lithic Avian | T2 (Immortal Watcher)
@@ -1698,7 +1698,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DIV-00] Maha-Vishnu (महाविष्णु / Karanodakashayi Vishnu) — Lord of the Causal Ocean
+### [CHR-DIV-00] Maha-Vishnu (महाविष्णु) — Lord of the Causal Ocean
 - **Role & Faction (गट व भूमिका):** Primordial Multiversal Source & Supreme Observer; Reclining upon the Causal Ocean (Karana Sagara).
 - **Planetary Shard & Location (स्थान):** Beyond Space & Time | Karana Sagara (The Causal Ocean)
 - **Power Bracket & Scale Band (साधना-स्तर):** Transcendent Multiversal Source | Incomputable
@@ -1732,7 +1732,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DIV-02] Lord Vishnu (श्री विष्णू / क्षीरोदकशायी विष्णू) — सर्वोच्च पालक (Preserver of Universe B)
+### [CHR-DIV-02] Lord Vishnu (श्री विष्णू) — सर्वोच्च पालक (Preserver of Universe B)
 - **Role & Faction (गट व भूमिका):** Universe B चा सर्वोच्च पालक; वैश्विक समतोलाचा (सनातन-ऋत) रक्षक (Supreme Preserver within Universe B).
 - **Planetary Shard & Location (स्थान):** Tier 1 Primordial Apex (परम-धाम) | Singularity Apex — क्षीर सागर (Kshira Sagara) व अनंत-शेष शय्या
 - **Power Bracket & Scale Band (साधना-स्तर):** T0 / T9 (Supreme Preserver)
@@ -1750,7 +1750,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-DIV-03] Rudra / Shiva (रूद्र / सदा-शिव) — सर्वोच्च विलयकर्ता (Supreme Destroyer & Regenerator)
+### [CHR-DIV-03] Rudra-Shiva (रूद्र-शिव) — सर्वोच्च विलयकर्ता (Supreme Destroyer & Regenerator)
 - **Role & Faction (गट व भूमिका):** अटळ विलयाचा (महा-संहार), एन्ट्रॉपी व अंतिम पुनरुज्जीवनाचा सार्वभौम (Supreme Cosmic Dissolver).
 - **Planetary Shard & Location (स्थान):** Tier 1 Primordial Apex (परम-धाम) | Singularity Apex — महा-संहार व पुनरुज्जीवन गाभा
 - **Power Bracket & Scale Band (साधना-स्तर):** T0 / T9 (Supreme Destroyer)
@@ -1965,7 +1965,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-01] Marcus (मार्कस / Marcus Ward) — Grand Chronicler of the Adventurer Guild
+### [CHR-ALN-01] Marcus (मार्कस) — Guild Chronicler
 - **Role & Faction (गट व भूमिका):** Chief Historian & Archivist; Hastinapur Adventurer Guild & Ward Family Enclave.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapur Guild Archives
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Reincarnate Bracket) | T2 (Academic Chronicler)
@@ -1982,7 +1982,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-02] Donna Beatrice Rosso (दॉना बीट्रिस रोसो) — High Arbitrator of the Core-Exchange
+### [CHR-ALN-02] Donna Beatrice Vanezza (दॉना बीट्रिस व्हेनेझ्झा) — Private Bank Head of the Core-Exchange
 - **Role & Faction (गट व भूमिका):** Chief Financial Arbitrator; Central Reserve Bank & Core-Exchange Vaults.
 - **Planetary Shard & Location (स्थान):** Central Planetary Shard (मध्यवर्ती क्षेत्र) | Central City Core-Exchange
 - **Power Bracket & Scale Band (साधना-स्तर):** C/B-Rank (80–90% Reincarnate Bracket) | T2/T3 (Financial Sovereign)
@@ -1999,7 +1999,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-03] Wolfgang Adler (वोल्फगांग अॅडलर) — Master of Runic Ballistas & Siege-Bows
+### [CHR-ALN-03] Wolfgang (वोल्फगांग) — Runic Ballista Artificer
 - **Role & Faction (गट व भूमिका):** Master Artificer & Mechanical Engineer; Asura Shard Adler Workshop & Agni-Kunda.
 - **Planetary Shard & Location (स्थान):** Asura Planetary Shard (असुर ग्रह-खंड) | Agni-Kunda Smelting Works
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Vanguard Artificer | T2 (Master Weapon Engineer)
@@ -2016,7 +2016,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-04] Lucian Valois (ल्युसियन वालुआ) — Master of Prismatic Sun-Wards
+### [CHR-ALN-04] Lucian (ल्युसियन) — Prism Scholar
 - **Role & Faction (गट व भूमिका):** Solar Optical Artificer & Barrier Master; Deva Shard Astral Observatory & House Valois.
 - **Planetary Shard & Location (स्थान):** Deva Planetary Shard (देव ग्रह-खंड) | Amaravati Astral Observatory
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank (80–90% Reincarnate Bracket) | T2 (Solar Lens Master)
@@ -2033,7 +2033,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-05] Renzo Vance (रेन्झो व्हॅन्स / "Kite") — Shadow-Broker of Pit #13
+### [CHR-ALN-05] Renzo (रेन्झो व्हॅन्स) — Underground Freight Broker
 - **Role & Faction (गट व भूमिका):** Clandestine Broker & Shadow-Grid Smuggler; Pit #13 & Vance Family Underworld.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapur Pit #13
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Shadow Broker | T2 (Underworld Information King)
@@ -2072,7 +2072,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-07] Kael (काएल / The Rift-Walker) — Escaped Type-1 Summoned Otherworlder
+### [CHR-ALN-07] Kael (काएल) — Rift Striker
 - **Role & Faction (गट व भूमिका):** Rogue Summoned Striker & Adventurer; Hastinapur Vanguard Guild & House Yamuna-Shade (छाया-गृह).
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapur Adventurer Guild
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank -> B-Rank | T2 (Escaped Otherworld Striker)
@@ -2081,7 +2081,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 - **Weaponry & Arsenal (शस्त्रागार):** Twin black-iron shortswords & concealed throwing spikes.
 - **Historical Era & Lifespan (ऐतिहासिक युग):** Summoned in Era 4 | Age 20 (Escaped Summoned Otherworlder).
 - **Moral Stance (नैतिक स्थिती):** Chaotic Good. Fiercely independent survivor who refused to be collared.
-- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Summoned by corrupt Lord Kamsa in Yamuna-Ghat to be an enslaved pit assassin. During the crossing, awakened Spatial Swap-Clap, swapped himself with the high priest, broke the altar, and escaped. Now partners with Neel and Dhruv in the Proving Games.
+- **Character, Psychology & Hook (वैशिष्ट्ये व पार्श्वभूमी):** Summoned by corrupt Lord Kans in Yamuna-Ghat to be an enslaved pit assassin. During the crossing, awakened Spatial Swap-Clap, swapped himself with the high priest, broke the altar, and escaped. Now partners with Neel and Dhruv in the Proving Games.
 - **Powers, Scale Band & Arsenal (शक्ती, साधना व शस्त्रास्त्रे):**
   - *साधना-स्तर (Scale Band):* C-Rank -> B-Rank | T2 (Otherworld Striker)
   - *सक्रिय कौशल्ये व विद्या (Active Arts):* [Spatial Shift: Handclap Position Swap, Shadow-Step Infiltration]
@@ -2089,7 +2089,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-08] Jin (जिन / The Gale-Fist) — Reincarnated Martial Brawler
+### [CHR-ALN-08] Jin (जिन) — Martial Arts Brawler
 - **Role & Faction (गट व भूमिका):** Unarmed Martial Arts Specialist; Central City & Hastinapur Iron-Akharas; Tempest Clan.
 - **Planetary Shard & Location (स्थान):** Central City & Hastinapur Akharas
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank -> B-Rank | T2 (Martial Artist)
@@ -2106,7 +2106,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-09] Elena (एलेना / The Rune-Sniper) — Reincarnated Crossbow Sniper
+### [CHR-ALN-09] Elena (एलेना) — Crossbow Marksman
 - **Role & Faction (गट व भूमिका):** Long-Range Reconnaissance Sniper; Hastinapur Adventurer Guild; Rostova Family.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | Hastinapur Adventurer Guild
 - **Power Bracket & Scale Band (साधना-स्तर):** C-Rank | T2 (Guild Sniper)
@@ -2123,7 +2123,7 @@ Universe B सर्व जिवंत, आरोहित व आदिम ज
 
 ---
 
-### [CHR-ALN-10] Soren (सोरेन / The Mist-Corsair) — Reincarnated Sea-Hunter
+### [CHR-ALN-10] Soren (सोरेन) — Sea-Monster Hunter
 - **Role & Faction (गट व भूमिका):** Maritime Monster Hunter; The Sea Citadel Fleet & Lindqvist Clan.
 - **Planetary Shard & Location (स्थान):** Human Planetary Shard (मानव ग्रह-खंड) | The Sea Citadel Harbor
 - **Power Bracket & Scale Band (साधना-स्तर):** B-Rank Sea Vanguard | T2 (Marine Leviathan Hunter)

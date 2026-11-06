@@ -101,7 +101,7 @@ Universe B मध्ये पशू आणि हिंस्त्र प्�
 
 ```
               [ 1. THE MANU-UPĀDHI & 7 SOVEREIGN SEATS ]
-                (Central City Grey Basalt Throne / Beatrice Rosso / Currency Core)
+                (Central City Grey Basalt Throne / Donna Beatrice Vanezza / Currency Core)
                                       ▲
                                      ╱ ╲
                                     ╱   ╲
@@ -113,11 +113,11 @@ Universe B मध्ये पशू आणि हिंस्त्र प्�
             (Solar Quartz & Light)              (Titan Amber, Herbs & Beasts)
 ```
 
-1. **The Manu-Upādhi & 7 Sovereign Seats (Central City & Akash-Kosha Bank):**
-   - *सर्वोच्च सत्ता:* **मनू-उपाधी (The Iron Sovereign on the Grey Basalt Throne)** आणि ७ सार्वभौम आसने (ज्यात Seat #1 High Arbitrator Beatrice Rosso चलन, कर्ज व १७% सीमा-शुल्क नियंत्रित करतात).
-   - *घटनात्मक दुवा:* $\text{Tier 2 High Council (Indra-Upādhi)} \gg \text{Tier 3 Central City (Manu-Upādhi)}$.
-   - *शक्ती:* चलनावरील मक्तेदारी (Aether-Rupee), आंतर-क्षेत्रीय महा-द्वार व व्यापारी परवाने, मंत्र-शिला नियंत्रण आणि Concord Audit Bureau चे सशस्त्र छापे.
-   - *कमकुवत बाजू:* स्वतःचे कोणतेही मोठे अन्न-उत्पादन किंवा लोह-खाणी नाहीत; ते नश्वर मानवांचे धान्य आणि असुरांच्या पोलादी वीट (Foundry Iron Bars) वर १००% अवलंबून आहेत.
+1. **The Sovereign-President & Grand Concord (Central City & Akash-Kosha Bank) [Tensura-Style Ingracia Hub]:**
+   - *सर्वोच्च सत्ता:* **The Sovereign-President (केंद्रीय नगराध्यक्ष — The Grey Basalt Throne)** आणि ७ सार्वभौम आसने (ज्यात Donna Beatrice Vanezza व Governor Ambika चलन, कर्ज व १७% सीमा-शुल्क नियंत्रित करतात).
+   - *स्वायत्तता व अप्रत्यक्ष वर्चस्व:* इतर चारही उप-लोकांवर (हस्तिनापूर, असुर खंड, अरण्य, देव-लोक) याचे थेट कायदेशीर नियंत्रण नाही; प्रत्येकाची स्वतंत्र राजसत्ता आहे. मात्र चलन (Aether-Rupee), चार महा-तीर्थ द्वारे (85-90% व्यापार) आणि प्रूव्हिंग गेम्समुळे सेंट्रल सिटीचा प्रचंड अप्रत्यक्ष दबदबा आहे.
+   - *Higher Tier Non-Intervention:* Tier 2 Swarga व Setu या नश्वर राजकारणात हस्तक्षेप करत नाहीत, जोपर्यंत रावणासारखा/कंसासारखा कॉस्मिक धोका किंवा महाभारतासारखे महायुद्ध उद्भवत नाही.
+   - *कमकुवत बाजू:* स्वतःचे अन्न-उत्पादन किंवा लोह-खाणी नाहीत; ते हस्तिनापूरचे धान्य आणि असुरांच्या पोलादावर १००% अवलंबून आहेत.
 2. **Hastinapur Royal Forges & Kuru Merchant Guild:**
    - *शक्ती:* विश्वाचे अन्न-भांडार (धान्य, गहू, कापूस), चिलखती महा-रथ (Armored Rathas), आणि धनुर्वेद व रनिक अस्त्रांचे प्रचंड उत्पादन.
    - *कमकुवत बाजू:* कच्च्या असुरी टंगस्टन आणि वज्र-पोलादी पत्र्यांशिवाय त्यांचे कोणतेही रथ-चिलखत किंवा अस्त्र-पाते बनू शकत नाही.

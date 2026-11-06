@@ -105,8 +105,8 @@ Bhrigu · Daksha                  Shuka (The Living Witness)          (Zero Comb
 
 ### 1.6 The Unbroken Cosmic Bridge: High Council to Astral Realm
 - **The Macro-to-Civic Hierarchy:**  
-  $$\text{Tier 2 Swarga: High Council (Indra-Upādhi)} \gg \text{Tier 3 Astral Realm: The Manu-Upādhi \& 7 Sovereign Seats}$$
-  इंद्र-उपाधी संपूर्ण विश्वाचे लष्करी स्थैर्य व अजगर-कवच सांभाळतात, तर सेंट्रल सिटीमधील **मनू-उपाधी (The Iron Sovereign on the Grey Basalt Throne)** पाचही ग्रह-खंडांमधील नश्वर नागरी कायदे, कर-प्रणाली आणि प्रोव्हिंग गेम्सचे प्रशासन सांभाळतात.
+  $$\text{Tier 2 Swarga: High Council (Indra-Upādhi)} \gg \text{Tier 3 Central City: The Sovereign-President \& 7 Sovereign Seats}$$
+  इंद्र-उपाधी संपूर्ण विश्वाचे लष्करी स्थैर्य व अजगर-कवच सांभाळतात, तर सेंट्रल सिटीमधील **सम्राट (The Central Emperor on the Grey Basalt Throne)** सेंट्रल सिटीचे नागरी कायदे, चलन-प्रणाली आणि प्रूव्हिंग गेम्सचे प्रशासन सांभाळतात, ज्याचा इतर स्वायत्त उप-लोकांवर अप्रत्यक्ष प्रभाव राहतो.
 
 ---
 

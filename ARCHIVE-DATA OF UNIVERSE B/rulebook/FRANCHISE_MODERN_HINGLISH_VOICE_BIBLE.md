@@ -158,7 +158,7 @@ All technical terms, transit nouns, modern clothing, financial instruments, and 
      - **Chitragupta Archive** $\rightarrow$ Low-Tier Term: **The Sieve Registry / Cosmic Ledger**
      - **Rikta** $\rightarrow$ Low-Tier Term: **Blank / Unindexed / Null** *(e.g., `[STATUS: UNINDEXED / BLANK]`)*
      - **The Indra-Upadhi** $\rightarrow$ Low-Tier Term: **The Sovereign / The Gold Chair**
-     - **The Manu-Upadhi** $\rightarrow$ Low-Tier Term: **The Iron Sovereign / The Central King**
+     - **Central Emperor (सम्राट)** $\rightarrow$ Low-Tier Term: **The Central King / Grey Basalt Throne**
      - **Krutya** $\rightarrow$ Low-Tier Term: **Construct / Metaphysical AI**
      - **Nadis / Prana** $\rightarrow$ Low-Tier Term: **Aether Channels / Neural Circuits**
      - **Divyastras** $\rightarrow$ Low-Tier Term: **Class-Omega Armaments / God-Busters**

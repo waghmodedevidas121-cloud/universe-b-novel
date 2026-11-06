@@ -125,7 +125,7 @@ A beast evolves from Stage 1 -> Stage 2 -> Stage 3 through three concrete biolog
   * **Talons & Arsenal:** Four-foot curved obsidian talons capable of crushing an iron war-wagon in a single grasp.
 
 ### 02. The Maha-Naga / Uraga Clan (Sovereigns of the Sunken Waterways)
-- **Hindu Mythic Root:** Lineage of Kadru, Vasuki, & Takshaka (Bhogavati Kingdom).
+- **Hindu Mythic Root:** Lineage of Kadru, Vasuki, & Takshak (Bhogavati Kingdom).
 - **Rulers:** Empress Jormun (Kadru-Line) & Rebel Warlord Takshak.
 - **Civilization & Culture:** Ancient, scholarly, and deadly subterranean royalty dwelling in bioluminescent crystal-and-root palaces beneath the Twilight Marsh. Masters of *Rasāyana* (venom and elixir alchemy), water-wards, and sensory illusions.
 - **Visual Anatomy (ते नेमके कसे दिसतात):**
@@ -211,6 +211,7 @@ A beast evolves from Stage 1 -> Stage 2 -> Stage 3 through three concrete biolog
 
 **01. [Dusk-Hound Line] (Void / Iron)**
 *Progression:* Dusk Scrapper -> Ironclad Hound -> Abyssal Dread-Hound  
+*Canonical Companion Cross-Reference:* **Sheru (Official Central Registry: Kuro)**, companion beast to Season 1 Catalyst Neel (CHR-ALN-06), is an anomalous Stage-1 Dusk Scrapper with an injured left ear tip, possessing dense iron-bone jaw resistance and Void-scavenger instincts.
 *Visual Appearance:* Begins as a lean, waist-high ash-grey hound with serrated gunmetal teeth. At Stage 2, dark iron bone-plates fuse across its skull, spine, and ribs, with shadow-vapor trailing from its paws. At Stage 3 (10 ft long), it transforms into a massive war-wolf encased in interlocking spiked black-iron plates, boasting a secondary split jaw and glowing violet ocular slits.
 
 **02. [Shadow-Panther Line] (Void / Sonic)**

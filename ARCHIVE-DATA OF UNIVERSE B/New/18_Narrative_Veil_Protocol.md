@@ -12,20 +12,22 @@ To preserve the earth-shattering narrative impact of the **Volume 3 Climax Revea
 
 ### The Master Veil Dictionary (Vol 1–3 Cover Terms vs. Vol 3 Twist)
 
-| True Cosmic Concept (Revealed at Vol 3 End!) | 🎭 WHAT IT IS CALLED IN VOLUMES 1–3 (The Disguise) | How the Reader Experiences It in Vol 1–3 |
+| True Reality (Classified until Vol 3 Climax) | 🎭 Street Register (Volumes 1–3 Cover Terms) | Reader & Character Experience in Vol 1–3 |
 | :--- | :--- | :--- |
-| **Devas (Amaravati)** | **The Solarians / The Highborn of the North Spire** | Readers perceive an arrogant aristocracy of light-wielding, winged sky-nobles observing from high marble balconies. |
-| **Asuras (Iron Citadel)** | **The Calderans / The Forge-Kin of the West** | Readers perceive high-gravity volcanic titans, siege engineers, and master metallurgists. |
-| **Beasts & Vahanas** | **The Canopy-Kin & Bonded Beasts** | Readers experience a deep, grounded 3-stage physical beast-bonding ecosystem (Zero Pokéballs). |
-| **Prana & 72,000 Nadis** | **Aether-Breath & The Vessel Channels** | Fighters strictly use tactical terminology: *"The Hold"*, *"The Blowout"*, *"Going Dry"*, and *"Breath Reset"*. |
-| **The 3 Granthis (Knots)** | **The Three Locks (1st, 2nd, & 3rd Seal of the Spine)** | Cultivators know that unlocking the 1st Lock yields C-Rank, and the 2nd Lock unlocks S-Rank mastery. |
-| **Ananta's World Chime** | **"The Bell in the Skull" / The Arena Chime** | Understood as an internal biological resonance during near-death survival breakthroughs; the entity ringing the chime remains unknown. |
-| **Sanskrit Bija-Mantras** | **"Dead-Tongue Syllables" / Primeval Ignition Words** | High-rank fighters loose monosyllabic ignition vocalizations (*"Ram!", "Krom!"*), regarded by commoners as ancient acoustic triggers. |
-| **Yama, Vidhata & Setu** | **"The Upper Citadel" / The Draft** | Central City citizens believe S-Rank victors who receive "The Draft" ascend to an idyllic celestial citadel. |
-| **Gudhi Padwa & Diwali** | **The Festival of New Dawn & The 7-Night Lamp Carnival** | Described purely through sensory atmosphere: glowing clay oil-lamps, fried sweets, and youth awakening rites. |
-| **Hastinapur Realm** | **The Eastern Crownlands** | Known as the vast agrarian and cavalry kingdom beyond the eastern mist gates. |
-| **Amaravati Spire** | **The Northern Solar Spire** | Regarded as the floating sun-citadel above the cloud barrier. |
-| **Vajra-Nagara** | **The Western Caldera** | Regarded as the volcanic fortress of basalt foundries and weapon-forges. |
+| **Devas (देव)** | **Skyborn / Solarians** | Arrogant aristocracy of winged sky-nobles observing from high marble balconies. |
+| **Asuras (असुर)** | **Forge-Kin / Calderans** | Volcanic titans, siege engineers, and master metallurgists of the western bastions. |
+| **Beast-Folk & Vahanas** | **Canopy-Kin & Bonded Beasts** | Grounded 3-stage physical beast-bonding ecosystem (Zero Pokéballs). |
+| **Pretas (प्रेत / अधो-दैत्य)** | **Devils / Underworld Fiends** | Mythical boogeymen of the abyss; public belief is they are extinct outside of bedtime ghost stories. |
+| **Patala (पाताळ - Tier 4)** | **The Cursed Realm / The Pit** | Sealed zone behind the Grand Aegis; Class-Omega taboo strictly forbids speaking its true name. |
+| **Prāṇa (प्राण) & 72,000 Nadis** | **Aether-Breath & Vessel Channels** | Fighters strictly speak in tactical terms: *"The Hold"*, *"The Blowout"*, *"Going Dry"*, *"Breath Reset"*. |
+| **The 3 Granthis (Knots)** | **The Three Locks (1st, 2nd, 3rd Lock)** | Spiritual bottlenecks: 1st Lock unlocks C-Rank, 2nd Lock unlocks S-Rank mastery. |
+| **Ananta's World Chime** | **The Bell in the Skull** | Internal acoustic resonance during near-death survival breakthroughs under the Crisis Law. |
+| **Sanskrit Bīja-Mantras** | **Dead-Tongue Ignition Syllables** | Monosyllabic acoustic triggers (*"Ram!"*, *"Krom!"*) loosed by high-tier warriors. |
+| **The Indra-Upādhi (इंद्र-उपाधी)** | **The Sovereign / The Golden Chair** | Unseen celestial ruler of Swarga and warden of the 360° Spherical Grand Aegis. |
+| **The Central Emperor (सम्राट)** | **The Central King / Grey Basalt Throne** | Sovereign Emperor of Central City wielding indirect trade hegemony over the decentralized shards. |
+| **The Great Setu & Swarga** | **The Upper Citadel / The Draft** | Arena champions believe S-Rank victors receive "The Draft" into an idyllic heavenly garrison. |
+| **Gudhi Padwa (गुढीपाडवा)** | **The Festival of New Dawn** | Spring celebration of cosmic genesis and age-12 youth awakening resonance testing. |
+| **Deepavali (दिवाळी)** | **The 7-Night Lamp Carnival** | 7-day pan-astral truce of glowing clay lamps, sweets, and complete cessation of coliseum violence. |
 
 ---
 
@@ -50,7 +52,7 @@ To preserve the earth-shattering narrative impact of the **Volume 3 Climax Revea
 - **Setting:** The Grand Central Coliseum (Five Rotating Arenas), The Core-Exchange Bank & The Sunken Aqueducts.
 - **Narrative Arc:**
   * High-stakes C-Tier and B-Tier combat across 120-ton hydraulically shifting biomes (Lava Caldera, Iron Canopy, Glacial Needles).
-  * Neel navigates syndicate betting rings (Donna Beatrice Rosso's Vaults), black-market weapon artificers, and the mysterious acoustic vibrations beneath the arena floor.
+  * Neel navigates syndicate betting rings (Donna Beatrice Vanezza's Vaults), black-market weapon artificers, and the mysterious acoustic vibrations beneath the arena floor.
   * **Foreshadowing:** An opposing gladiator undergoes demonic possession mid-match, venting black corrosive smoke—the first glimpse of an illegal Tier-4 Devil soul-incursion.
   * **Volume 2 Climax:** Inquisitor Devi raids the coliseum subterranean vaults; Neel uncovers evidence of an ancient dimensional barrier holding back an unthinkable abyss.
 
@@ -61,173 +63,107 @@ To preserve the earth-shattering narrative impact of the **Volume 3 Climax Revea
   * The Hollow Sect mastermind (Shakuni archetype) attempts to reverse the Five-Arch Rotunda mechanisms to breach the lower seals and summon abyssal horrors into Central City.
   * **THE REVEAL (The Mind-Shattering Twist):**
     * As the city's S-Rank champions falter before the catastrophic breach, the sky fractures above the cloud line.
-    * Two figures descend from "The Upper Citadel": **Inquisitor Satyak** and **General Vajran**!
-    * General Vajran effortlessly swats aside the cataclysmic entity with a single hand, barking: *"Still unweaned babes in a cradle (Ardha-Rathi)!"*
+    * Two figures descend from "The Upper Citadel": **Setu Inquisitor Satyaketu** and **Setu Commander Vajraketu**!
+    * Setu Commander Vajraketu effortlessly swats aside the cataclysmic entity with a single hand, barking: *"Still unweaned babes in a cradle (Ardha-Rathi)!"*
     * Gripping his thunderbolt lance, Vajran roars authentic Sanskrit: **"Om Krom Vajrahastāya Surapataye... Indrāstram Muñcāmi!"**
     * The cosmic veil shatters: The "Upper Citadel" is **The Great Setu**; beyond lies the cosmic wall of **Kshīra Sāgara**; above sit **Yama and Chitragupta**; and this entire reality is **Universe B of the Vedic Multiverse and Mahabharata Canon**!
 
 ---
 
-## SECTION 3: SEASON 1 PROTAGONIST PROFILE — "NEEL"
+## SECTION 3: SEASON 1 CATALYST & PROTAGONIST PROFILE — NEEL
+
+> [!IMPORTANT]
+> **FRANCHISE ARCHITECTURE MANDATE:**
+> Neel's chapter-by-chapter story, tournament match play-by-plays, and micro-progression belong strictly in the narrative chapter scene drafts, NOT in this macro-worldbuilding bible! In the macro architecture, Neel functions as the **Season 1 Catalyst ("The Tony Stark of Chaturmukh Brahma")** whose role is to introduce the reader to the living world, bridge modern 21st-century tech-rationalism with authentic Vedic metaphysics, and shatter the Narrative Veil at the Volume 3 climax.
 
 ```text
 ================================================================================
-CANONICAL PROTAGONIST PROFILE: NEEL (SEASON 1 STAR)
+CANONICAL PROTAGONIST DOSSIER: NEEL (SEASON 1 ANCHORING STAR)
 ================================================================================
 • Full Name       : Neel
-• Apparent Age    : 19 years old (Born: 21st-Century Mumbai / Bombay, India)
-• Physical State  : 100% Original Earth Body (Not a corpse hijack!).
-                    Wearing his rain-soaked Bombay college clothes (faded denim jacket,
-                    cotton tee, dark trousers, worn sneakers). Carrying his college
-                    backpack with notebooks, an offline dead smartphone (screen cracked),
-                    house keys, and an empty water bottle.
-• Parents (Dead)  : Father (Aarav) & Mother (Revati) — Died in a tragic highway
-                    collision when Neel was 16.
-• Family Status   : Absolute Zero Extended Family. Aarav and Revati had eloped against
-                    family wishes, cut off all ties, and relocated to Bombay. Neel grew
-                    up knowing zero relatives, zero cousins, and zero ancestral roots.
-• Cosmic Status   : [STATUS: UNINDEXED / ANOMALOUS PHYSICAL DRIFT]
-                    Universe B's first-ever direct physical glitch-cross across the
-                    outer cosmic membrane! Zero gamer blue-menus, zero floating text,
-                    zero pre-written fate in Chitragupta's standard ledger.
-• Demeanor        : Pragmatic rationalist, sarcastic, self-reliant survivor mask,
-                    fast-talking street charm, deeply skeptical of religious claims.
+• Apparent Age    : 19 years old (Born: Mumbai, India)
+• Physical State  : 100% Original 21st-century human body (Anomalous Physical Glitch).
+• Lineage & Origin:
+  - 19-year-old Worli coastal tech-lab prodigy, sole surviving heir to Gadora
+    Industrial & Tech Conglomerate (hardware, ceramics, spatial resonance prototypes).
+  - Parents: Late Aarav Gadora & Suman Gadora (lost when Neel was 14 in an unexplained
+    R&D spatial catastrophe).
+  - Extended Family: Uncle Kani (corporate shark attempting hostile takeover), Aunt Cheri,
+    and cousin Sunny Gadora.
+• Starting Gear / Inventory:
+  - Bespoke charcoal-grey cashmere-cotton hoodie and tailored joggers.
+  - Dead, unhackable prototype titanium smartphone (holding circuit schematics,
+    proprietary firmware, and the last saved audio memo from his mother).
+  - High-limit Centurion Black Card (worthless in an aether-coin economy).
+  - Exactly ₹11 in loose cutting chai change in his pocket!
+• Psychological Core:
+  - Hyper-observant, cynical-yet-protective, sharp deadpan wit.
+  - Tech-rationalist mindset: analyzes mystical phenomena through thermodynamics,
+    kinetic resistance, and circuit logic.
+  - Zero religious superstition initially: rationalizes Vedic/astral phenomena as
+    "alien biology" or "sci-fi physics", which preserves the Narrative Veil for 3 volumes!
+• Asymmetric Combat Arsenal (Zero Magic Spells / Grounded Mechanics):
+  1. RIGHT ARM (Atharvan Krutya GENI):
+     - Transmuted biological interface channeling Zero-Sing Kinetic Friction Sparks (250–400 Joules).
+     - Sub-perceptual friction ignition with zero acoustic whine, bypassing the 0.2-second
+       "Sing" broadcast tell of standard fighters.
+  2. LEFT ARM (Cursed Glove KALI):
+     - Shrouded in a spiked black-iron shackle holding an imprisoned Tier 4 Patala Devil Spirit.
+     - Provides brutal, physical, heavy-gravity telekinesis (snapping bones, crushing weapons,
+       yanking opponents, launching rubble).
+     - Bounded strictly by Neel's mental Dhāraṇā (Hold / Concentration) capacity; severe
+       recoil/backlash if the Hold slips!
+  3. COMPANION BEAST (Sheru / official registration: Kuro):
+     - One-eared feral Stage-1 Dusk-Scrapper hound (Void/Iron type).
+     - Loyal street brawler providing tandem trips, ankle snaps, and distraction feints.
 ================================================================================
 ```
-
-### A. The Psychological Deep Dive (Why He Thinks & Acts This Way)
-Character writing research shows that an orphan living alone in a mega-city like Bombay does not think or act like a generic fantasy hero. Neel's psychology is forged by Three Core Psychological Realities:
-
-1. **Reality 1: The Self-Reliant Survivor Mask (The Bombay Apartment Ghost)**
-   - **The Trauma:** Living alone in a rented 1-BHK flat in suburban Bombay since age 16 after losing both parents (Aarav and Revati) in one devastating evening taught him the ultimate street law: nobody is coming to save him.
-   - **The Mask:** Because he had no relatives to support or shelter him, he developed an armored skin of humor, fast-talking street charm, and selective emotional walls. He acts cheerful, banter-heavy, and unbothered because being visibly vulnerable or miserable in a predatory mega-city gets you chewed up and discarded.
-   - **Why He Avoids Closeness (The Fear of Abandonment):** Deep down, Neel lost the only two human beings who loved him unconditionally. Consequently, when people (especially women like Reva, Tara, or Kira) attempt to get emotionally close to him, his instinctive reflex is a defensive mixture of awkward deflection, self-deprecating jokes, and guarded distance—he is terrified of loving someone and losing them all over again.
-
-2. **Reality 2: Hardcore 21st-Century Skepticism (Zero Faith in Mythology)**
-   - **Why He Rejects Superstition:** Growing up in modern Bombay college circles, Neel viewed religion and ancient mythology as archaic folk tales or viral WhatsApp forwards. When his parents died, no god descended to pay his monthly 1-BHK maintenance, unpaid electricity bills, or college semester fees; grueling double shifts in delivery gigs and retail counters did.
-   - **The Narrative Impact on the Veil:** When Neel witnesses Central City gladiators unleashing elemental sparks or pontificating about cosmic laws, his brain instantly classifies everything as *"Sci-Fi / Anime / Extra-Planetary Biology"*. He stubbornly rationalizes every Sanskrit or Vedic clue as an alien linguistic coincidence (*"Sounds like another generic fantasy trope; probably means fireball in their dialect"*). This psychological firewall keeps both Neel and the reader completely blind to the Vedic truth until the explosive Volume 3 climax physically shatters his worldview!
-
-3. **Reality 3: The "Mid-IQ vs. Street-Smart Survival" Engine**
-   - **Mid-IQ in Academic Theory (Backbencher Reality):** Neel struggled with advanced engineering formulas, rote memorization, and abstract theory. He cannot memorize fifty-step spell chants, decipher ancient liturgical scrolls, or untangle diplomatic treaties. Complex geometric magic circles give him an instant headache (*"Speak plain language: am I hitting them, or are they hitting me?"*).
-   - **200-IQ in Reading Rooms & Desperate Gambles:** Place him in a dark alley with two hostile brawlers, or on an arena negotiation stage where he must deduce what a corrupt syndicate boss truly wants, and his survival radar sparks at 200%. He reads subtle voice tremors, eye shifts, breathing changes, and micro-expressions like an open ledger. When outmatched in raw Prana, he wins through ruthless psychological destabilization, feigned vulnerabilities, and rapid environmental exploitation (*Kazuma + Joseph Joestar + Rudeus balance*).
-
-### B. The Multiversal Reboot & Beast-Cart Arrival (Landing in Universe B)
-
-1. **The Glitch & The Multiversal Crossing:**
-   - On a torrential monsoon evening in suburban Bombay, Neel was walking back from his engineering college toward his rented 1-BHK under a dripping umbrella.
-   - Without warning, a sharp, dry electrical ozone odor cut through the monsoon rain. A blinding spatial fissure cracked across the asphalt, accompanied by a deafening spatial hum that ripped his physical body clean out of modern Earth.
-
-2. **The Kshira Sagara Proximity & Emergency Metabolic Reboot (The Coma):**
-   - As an anomalous physical entity slipping through the outer cosmic funnel without a divine envoy or Yama-Vidhata contract, Neel's 21st-century human body was exposed to the immense spiritual gravity of Universe B's cosmic descent.
-   - To keep his mortal flesh and nervous system from disintegrating under raw atmospheric Aether pressure, his biology underwent an emergency **Metabolic Reboot (Sthula-Sukshma Synchronization)**:
-     * His dormant subtle energy channels (the **72,000 Nadis**) were forcefully blasted open by the ambient Prana of Universe B.
-     * The universal language of Central City (Common Concord), basic sensory equilibrium, and subconscious physical intuition of elements were hardwired into his neural pathways.
-   - **The Biological Cost:** The sheer metabolic shock pitched him into a deep, feverish unconsciousness for several hours.
-
-3. **The Awakening Location: The Straw-Bed in the Beast-Cart:**
-   - Neel does not awaken in an imperial throne room, a wizard's tower, or an interrogation dungeon. He drops silently out of a dying spatial static flare right onto a mountain of dry hay in the back of an unhitched, four-wheeled **Beast-Cart (Caravan Wagon)** parked outside the colossal outer gates of Central City!
-   - **First Physical Sensations:**
-     * The coarse scratch of dry golden hay against his soaked Bombay denim jacket.
-     * The warm, rhythmic, furnace-like breathing of a giant horned **Lava-Bull** tied to a wooden fence post five feet away.
-     * His dead smartphone sitting in his coat pocket—screen cracked, battery at absolute zero, yet clutched as his last tangible piece of home.
-     * An intense, electrical burning itch tingling across the palms of his hands: his newly awakened **[Spark-Pulse / Heartbeat Sync]** settling into his skin!
-
-### C. Why This Origin Makes the Novel Unforgettable
-
-1. **The Solitary Living Mystery in the Realm:**
-   - Every other Otherworlder arrived either as an infant via the official *Yama-Vidhata Contract* (scrubbed of Earth memories) or as an adult soul bound into an executed local corpse via royal ritual summoning.
-   - **Neel is the solitary anomaly** who crossed the cosmic barrier in his authentic 21st-century human flesh, clothes, and memories intact. When High Council inquisitors and divine watchers eventually detect this, it stands as an unprecedented cosmic enigma!
-
-2. **Pure Grounded Humanity (Zero Free Handouts):**
-   - No floating game screens, no starter coins, no cheat-code system shop giving free bread.
-   - When Neel rolls off that hay-cart, he has **zero copper coins**, a parched throat, and a hollow, aching stomach.
-   - His journey begins at absolute rock-bottom: finding clean drinking water, figuring out what language he is speaking, and realizing that in Central City, if he does not earn wages before the sunset muhurta bell, he sleeps in the freezing mud.
-
-### D. Neel's Powers, Combat Discipline & Companion Beast ("Sheru" / "Kuro")
-
-```text
-================================================================================
-NEEL'S COMBAT PROFILE
-================================================================================
-• Quirk / Ability Name : [Pulse-Sync & Friction Spark]
-• Natural Class        : Sensory-Instinct / Close-Quarters Striker
-• Current Power Rank   : Ember / D-Rank Threshold (Climbing through Pure Wit!)
-• Combat Style         : Street-Brawler + Rhythm-Counter + Tandem Beast Tactics
-• Lethal Weakness      : Zero long-range attacks; low Prana Hold (straining past
-                         40 seconds causes severe heart-arrhythmia and nosebleeds!).
-================================================================================
-```
-
-#### 1. Active Abilities (Neel's Three Core Disciplines):
-1. **Pulse-Sight / Rhythm-Read (Sensory & Combat Intuition):**
-   - *Mechanic:* Incapable of deciphering geometric spell circles, Neel intuitively perceives the **Heartbeat Cadence, Respiratory Rhythm, and Muscle-Tension Micro-Tells** of any opponent within 15 paces.
-   - *Combat Advantage:* Predicts weapon trajectories and footwork shifts a micro-second before execution, allowing him to parry, sidestep, and outmaneuver D/C-Rank combatants thrice his physical size.
-   - *The Sing Mastery:* Possesses hypersensitive auditory acuity for the 0.2-second pre-ignition whistle (*The Sing / Gūñja*) preceding runic discharges or heavy arrow releases.
-2. **Friction Spark / Pulse-Snap (Offensive Kinetic-Flame):**
-   - *Mechanic:* Emits concentrated, electric-blue kinetic sparks from his fingertips and knuckles rather than projectile fireballs.
-   - *Combat Application:* Discharged in point-blank melee directly into vulnerable **Marma-Points (Nerve Junctions)**, solar plexus, or weapon joints, causing catastrophic neuro-muscular paralysis and structural failure.
-3. **Dual-Heart Synchronization (Soul-Bond Passive with Beast):**
-   - *Mechanic:* When in physical contact or within 5 paces of his bonded beast, their cardiovascular and meridian pulses lock into a resonant harmonic loop.
-   - *Synergistic Benefit:* Neel's human Nadis funnel refined Prana into the beast, while the beast's greater biological mass doubles Neel's *Hold* capacity, shielding him from *The Blowout*.
-
-#### 2. Companion Beast Dossier: "Sheru" (The Dusk-Scrapper)
-
-```text
-================================================================================
-COMPANION BEAST DOSSIER
-================================================================================
-• In-World Species     : Dusk-Scrapper (Family: Dusk-Hound Line)
-• Dual Typing          : Void / Iron
-• Current Stage        : Stage-1 Feral (D-Rank Starter Beast)
-• Evolution Path       : Dusk-Scrapper -> Ironclad Hound -> Abyssal Dread-Hound
-• Nickname by Neel     : "Sheru" (Registered in official Guild papers as "Kuro")
-• Height & Weight      : 2.2 feet tall at shoulder | 45 lbs (Lean, fast, muscular)
-================================================================================
-```
-
-- **Visual Appearance:** Waist-high, rugged ash-black hound with coat resembling coal dust that absorbs ambient light. Left ear half-severed and flopping from an old pit brawl; prominent cross-cut scar across his snout; piercing amber-gold eyes; paw pads exuding faint soot particles; teeth possessing a dark metallic (Iron-Bone) sheen capable of splintering wood and biting through chains.
-- **Personality & Bond:** Shameless and food-motivated (craves roasted meat and fresh bread); cynical and street-smart with encyclopedic knowledge of slum alleys and ambushes; unconditionally loyal to Neel for saving his life from the cull-mallet and splitting his last meal.
-- **Combat Progression Across Stages:**
-  * **Stage 1 (D-Rank Current):**
-    - `[Iron-Snap]`: 500-lb compressive bite fracturing boots, weapon hafts, and joint chains.
-    - `[Shadow-Dart]`: Supersonic 5-pace lunge bursting from shadows or Neel's blind spot.
-    - `[Ankle-Tackle]`: Low-angle trip targeting enemy heels while Neel controls high guard.
-    - `[Distraction Bark]`: Micro-second sonic feint opening windows for Neel's *Friction Spark*.
-  * **Stage 2 Evolution (C-Rank Threshold — Ironclad Hound):**
-    - Transforms into a 6-foot, 200-lb direwolf armored in gunmetal runic bone-plates across skull and spine that deflect bladed strikes. Unlocks `[Void-Step]` shadow-teleportation.
-  * **Stage 3 Apex Evolution (S-Rank Climax — Abyssal Dread-Hound):**
-    - 10-foot black titan projecting a **30-Foot Acoustic Silence Field** that extinguishes enemy vocal mantras and acoustic triggers. Unlocks **Stage-4 Weapon Fusion (*Astra-Sāyujya*)** with Neel.
-
-### E. The Central City Harem Circle (Four Shards Represented)
-
-1. **Reva (The Cold Half-Solarian / Ice Duelist — C-Rank):** Exiled noble swordswoman from the northern celestial spires; guarded, formal, and lethal. Deeply moved when Neel absorbs a painful Blowout to salvage her honor in the sand-pits.
-2. **Tara (The Canopy Beast-Whisperer — C-Rank):** Soft-spoken forest scout from the southern primeval canopy; communicates intuitively with beasts and teaches Neel the sacred art of meridian synchronization.
-3. **Kira (The Fiery Forge-Smith — C-Rank Artificer):** High-energy Asura forge apprentice running an underground repair den; outfits Neel's party with reinforced gear on credit while testing experimental runic prototypes on him.
-4. **Inquisitor Devi ("The Concord Hound" — A-Rank):** High-ranking judicial investigator tracking dimensional anomalies; relentlessly pursues Neel's glitch energy signature, only to be repeatedly outmaneuvered by his unorthodox street tactics.
 
 ---
 
-## SECTION 4: THE MULTI-SEASON ANTHOLOGY & 70/30 DUAL-STAR MODEL
+## SECTION 4: THE "TONY STARK / LOTM" MULTI-SEASON ANTHOLOGY ENGINE
 
-To maintain continuous character attachment while exploring the vast expanse of Universe B, the series adopts the **70/30 Seasonal Dual-Star Architecture**:
+Universe B (in-world canonical name: **Chaturmukh Brahma — The 4-Headed Cosmos / चतुर्मुख ब्रह्मांड**) is engineered with a **World-First Franchise Philosophy**, drawing direct inspiration from the Marvel Cinematic Universe (MCU) and *Lord of the Mysteries* (LOTM):
 
-```text
-=======================================================================================
-         THE 70/30 SEASONAL DUAL-STAR TIMELINE ARCHITECTURE (VOL 1–9)
-=======================================================================================
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│      THE CHATURMUKH BRAHMA (चतुर्मुख ब्रह्मांड) FRANCHISE ENGINE       │
+├────────────────────────────────────────────────────────────────────────┤
+│ • THE UNIVERSE: "Chaturmukh Brahma — The 4-Headed Cosmos"              │
+│                 (चतुर्मुख ब्रह्मांड / Universe B is the working codename) │
+│                                                                        │
+│ • THE CATALYST (Season 1): NEEL                                        │
+│   - Functions exactly like Tony Stark in Phase 1 of the MCU!           │
+│   - Neel's mission: Hook the reader through fast-talking street charm, │
+│     cynical tech-rationalism, grounded D-Tier arena struggles, and     │
+│     shatter the Narrative Veil at the Volume 3 climax.                 │
+│                                                                        │
+│ • THE TRUE STAR (The Franchise): THE 4-HEADED COSMOS ITSELF            │
+│   - Designed like Lord of the Mysteries (LOTM): Klein Moretti hooked   │
+│     readers in Book 1, but readers passionately followed the world     │
+│     into Book 2 because the 22 Pathways, the Outer Deities, and the    │
+│     cosmology are the true magnetic attraction!                        │
+│   - When Neel's personal catalyst arc concludes or branches, the       │
+│     audience will follow other terrestrial and celestial protagonists  │
+│     (Karna in Hastinapur, Dhruv in Ekachakra, Asura rebels in the      │
+│     Calderas, outcasts on the Great Setu) because they love the world! │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1. Season 1 (Volumes 1–3): 100% Neel's Perspective
-- **Focus:** Grounded Central City survival, Proving Games climb from D-to-S Rank, Harem party consolidation, culminating in the **Grand Setu / Vedic Reveal**.
+### The 70/30 Seasonal Dual-Star Architecture (Volumes 1 to 9)
 
-### 2. Season 2 (Volumes 4–6): "The Shard Wars & The Buffer Zone" (Dual-Star Track)
-- **Track A (Neel on the Great Setu):** Drafted into the 50,000-mile Buffer Zone as an entry-level *Ardha-Rathi*, Neel undergoes grueling training under Inquisitor Satyak to master authentic Sanskrit Bīja-Mantras and Divyastra handling.
-- **Track B (New Terrestrial Protagonist):** Down in the planetary shards, the story introduces a fresh point-of-view hero (e.g., the outcast archer **Karna** in Hastinapur or the Seal-7 scion **Dhruv**), showing terrestrial conflicts from within.
-- **Climax:** Tracks A and B converge during a massive perimeter breach on the Setu viaducts, where an upgraded Neel arrives with veteran authority to assist the new hero.
+1. **Season 1 (Volumes 1–3): 100% Neel's Perspective (The Grounding Phase)**
+   - **Role:** Grounded survival in Central City, Proving Games climb from D-to-S Rank, navigating Donna Beatrice Vanezza's debt-traps and the subterranean Veiled Grid.
+   - **Climax:** The Catastrophic Coliseum Breach -> The Descent of Setu Commander Vajraketu -> The Great Vedic Veil Shatters!
 
-### 3. Season 3 (Volumes 7–9): "The Ancient Flashback & The Abyssal Crusade"
-- Incorporates a dedicated historical arc delving into Era 2 (The Cataclysm), revealing the tragic fall of **Emperor Shrutayudha** into Seal 7.
-- Re-unites Neel, the allied seasonal protagonists, and the sovereign beast clans for the final campaign across the Grand Aegis.
+2. **Season 2 (Volumes 4–6): "The Shard Wars & The Buffer Zone" (Dual-Star Expansion)**
+   - **Track A (Neel on the Great Setu):** Drafted into the Setu Standing Army under the Vajra-Adesh, learning true Sanskrit Bīja-Mantras and Divyastra handling under Setu Academy Head Shrutasen.
+   - **Track B (New Terrestrial Protagonists):** Down in the planetary shards, the lens shifts to fresh point-of-view heroes (e.g. outcast archer **Karna** in Hastinapur or Seal-7 bloodline scion **Dhruv** in Ekachakra), demonstrating that the world thrives beyond any single individual.
+   - **Climax:** Convergence during a massive perimeter breach on the Setu viaducts.
+
+3. **Season 3 (Volumes 7–9): "The Ancient Cataclysm & The Abyssal Crusade"**
+   - Expands into Era 2 historical flashbacks, revealing the fall of **Emperor Shrutayudh** into Seal 7.
+   - Unites all seasonal protagonists across shards for the final campaign across the Grand Aegis.
 
 ---
 

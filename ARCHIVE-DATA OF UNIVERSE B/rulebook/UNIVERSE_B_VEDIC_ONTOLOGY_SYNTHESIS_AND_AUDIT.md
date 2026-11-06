@@ -102,7 +102,7 @@ Space is composed of standing acoustic waves (*Nada-Brahma*). Syllables have phy
 2. **Vaisheshika (Atomic Artifice) ➔ Seekers & Relic Smiths (*Yuktinath, Rohini, Kira*):** Striking meteoric ore to align *Paramanu* lattices into Stage-3 living weapons.
 3. **Samkhya (Dualism & Gunas) ➔ Astral Seers & Strategists (*Kapil, Chandra, Medhavi*):** Calculating the ratio of *Sattva, Rajas, and Tamas* in monster cores, potions, and battlefields.
 4. **Yoga (Patanjali) ➔ Martial Gurukuls & Setu Vanguard (*Shamik, Dron, Vajraketu*):** Unifying Dharana (Hold) + Dhyana (Flow) + Samadhi (Zero-Lag) into **Samyama**, unlocking the 8 Classical Siddhis.
-5. **Mimamsa (Contractual Law) ➔ Central Reserve Bank & Summoners (*Beatrice Rosso, Shakuni, Trishir*):** Enforcing blood-contracts through **Apurva** (unseen self-executing causal force that ignites the heart if breached).
+5. **Mimamsa (Contractual Law) ➔ Central Reserve Bank & Summoners (*Donna Beatrice Vanezza, Shakuni, Trishir*):** Enforcing blood-contracts through **Apurva** (unseen self-executing causal force that ignites the heart if breached).
 6. **Vedanta (Non-Dualism) ➔ High Council Apex & Secret 6th Pillar:** The realization that the individual Atman shares root with the cosmic Brahman.
 
 ---
@@ -168,7 +168,7 @@ To qualify for high-tier Proving Games circuits, contenders must earn at least *
 | **Neel's Energy Flow** | 100% Harmonic. In Prologue, 72,000 Nadis shattered open and went dormant. | Neel's *Pranamaya* sheath is an empty riverbed; his street-smart *Pulse-Sync* operates via *Manomaya-Kosha*, focusing his single wrist filament. |
 | **Boran & South Gate** | Seamless continuity with Chapter 1. | The morning gate rush was the closing of the *Brahma-Muhurta* window; Boran paid the 5-Pana toll under Ghati-Yantra timekeeping. |
 | **Dual Boards vs Feeder Pits**| Elevates Chapter 2 & 3. | Neel is currently an unregistered 19-year-old with 0 Panas. He must fight in the **Feeder Sand-Pits** (D-Tier rookie feeder) to earn coin to take the **18+ Vanguard License Exam**! |
-| **Mimamsa Banking** | Beatrice Rosso is already established as Bank Arbitrator. | Her contracts utilize *Apurva* karmic binding, explaining why debt in Central City is impossible to default on. |
+| **Mimamsa Banking** | Donna Beatrice Vanezza is already established as Bank Arbitrator. | Her contracts utilize *Apurva* karmic binding, explaining why debt in Central City is impossible to default on. |
 | **Leaderboard Spire vs Vanguard Billboard** | Reconciles the Split-Flap Spire with long-term hero politics. | Spire = Instant Coliseum arena ranks (Ark vs Korvus). Billboard = Bi-Annual civic hero rankings updated on Gudhi Padwa & Diwali. |
 
 

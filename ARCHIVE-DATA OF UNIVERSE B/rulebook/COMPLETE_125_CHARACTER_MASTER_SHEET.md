@@ -1,203 +1,206 @@
-# UNIVERSE B: COMPLETE MASTER CHARACTER NAME SHEET (ALL 125 ENTITIES)
-*(Single Source of Truth for Character Registry, Pure Names, Ranks, and Roles)*
+# UNIVERSE B: COMPLETE MASTER CHARACTER ROSTER (CANON LOCK)
+**Standard:** Clean Functional Format — Zero Artificial Titles, Zero Slashes (`/`), Schwa-Deletion Law Applied (`Parikshit, Ugrasen, Bheem, Mayasur, Paundrak, Shrutayudh`).  
+**Columns:** Canonical ID | Locked Name | Devanagari Root | Clan / Origin | Rank | Work / Role (Function & Duty)
 
 ---
 
-## PART 0: SEASON 1 CORE PROTAGONIST, COMPANION & HAREM CIRCLE (QUICK REFERENCE)
+## PART 0: SEASON 1 CORE PROTAGONIST, COMPANION & FAMILY
 
-| ID | Locked Name | Clan / Origin | Gen / Age | Rank | Role, Title & Signature Power / Beast |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-MC-01` | **Neel** | Mumbai (Earth Glitch) | M / 19 | Ember -> S | **Season 1 Star** — *The Unindexed Drifter*. Quirk: Pulse-Sync, Friction Spark & Weak-Point Sight. |
-| `CHR-MC-02` | **Sheru** | Dusk-Hound Line | M / 2 | Stage 1 -> 3 | **Neel's Bonded Beast** — *The One-Eared Dusk-Scrapper*. Void/Iron Type; green leg-wraps, 3 shoulder scars. |
-| `CHR-MC-03` | **Aarav** | Mumbai (Earth) | M / Dec. | Mortal | **Neel's Late Father** — Eloped with Revati; died in the Eastern Express Highway truck crash 3 years ago. |
-| `CHR-MC-04` | **Revati** | Mumbai (Earth) | F / Dec. | Mortal | **Neel's Late Mother** — Eloped with Aarav; severed ancestral ties, leaving Neel with zero known relatives. |
-| `CHR-HUM-20`| **Reva** | Himavan Clan | F / 18 | C-Rank | **Heroine 1 (Ice Duelist)** — *The Frost-Blade*. Half-Deva outcast; Permafrost Bite & Ice-Mirror Step. |
-| `CHR-BST-09`| **Tara** | Hollow-Grove Shamans | F / 17 | C-Rank | **Heroine 2 (Beast-Whisperer)** — *The Silent Whisperer*. Shy canopy girl; bonded to Ghost-Panther & Rime-Viper. |
-| `CHR-CEN-09`| **Kira** | Solaris Forge-Guild | F / 19 | C-Rank | **Heroine 3 (Coliseum Weapon-Smith)** — *The Spark-Tuner*. Fiery outer-ring armorer who repairs Neel's gear. |
-| `CHR-CEN-05`| **Devayani** | Shukra-Niti Lineage | F / 29 | A-Rank | **Heroine 4 / Pursuer (Call: Devi)** — *The Concord Hound*. Special Inquisitor tracking Neel's glitch aura. |
+| `CHR-MC-01` | **Neel** | नील | Mumbai (Earth Glitch) | Ember ➔ S | **Season 1 Protagonist** — Worli tech prodigy & sole heir to Gadora Conglomerate; Right Arm: Atharvan Krutya GENI (Zero-Sing Kinetic Friction Spark), Left Arm: Cursed Glove KALI (Telekinesis). |
+| `CHR-MC-02` | **Sheru** | शेरू | Dusk-Hound Line | Stage 1 ➔ 3 | **Neel's Bonded Beast** — Feral one-eared Dusk-Scrapper hound (official ring registration: Kuro). |
+| `CHR-MC-03` | **Aarav Gadora** | आरव गाडोरा | Mumbai (Earth) | Mortal (Dec.) | **Neel's Late Father** — Founder & Chief Engineer of Gadora Industrial & Tech Conglomerate; died in R&D spatial catastrophe. |
+| `CHR-MC-04` | **Suman Gadora** | सुमन गाडोरा | Mumbai (Earth) | Mortal (Dec.) | **Neel's Late Mother** — Co-director of Gadora Conglomerate; died alongside Aarav when Neel was 14. |
+| `CHR-HUM-20` | **Reva** | रेवा | Himavan Clan | C-Rank | **Guild Duelist** — Half-Deva frost-swordswoman; duels in the Central feeder pits; Heroine #1. |
+| `CHR-BST-09` | **Tara** | तारा | Hollow-Grove Shamans | C-Rank | **Forest Scout & Apprentice** — Communicates with wild beasts; pupil of Murva; Heroine #2. |
+| `CHR-CEN-09` | **Kira** | किरा | Solaris Forge-Guild | C-Rank | **Coliseum Pit Weapon-Smith** — Repairs weapons and crafts runic gear in the outer ring; Heroine #3. |
+| `CHR-CEN-05` | **Devayani** | देवयानी | Shukra-Niti Lineage | A-Rank | **Special Inquisitor** — Lead investigator for Concord Special Audit Bureau tracking illicit anchors & glitches; Heroine #4. |
 
 ---
 
 ## PART 1: THE HUMAN SHARD (22 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-HUM-01` | **Parikshat** | Kuru Royal House | M / 52 | B-Rank | King of Hastinapur — *The Burdened Monarch*. Earth-Ward & Royal Will. |
-| `CHR-HUM-02` | **Madravati** | Kuru Royal House | F / 49 | D-Rank | Queen of Hastinapur — *The Sanctuary Matriarch*. Gentle Vitality & Healer Patron. |
-| `CHR-HUM-03` | **Ugrasen** | Kuru Royal House | M / 46 | S-Rank | Supreme Army General — *The Iron Line*. Gale Blade; Stage-3 Gale Stallion. |
-| `CHR-HUM-04` | **Bhima** | Kuru Vanguard Clan | F / 36 | A-Rank | Heavy Boar-Cavalry Captain — *The Trench Bull*. Iron Skin; Stage-2 Ironclad Boar. |
-| `CHR-HUM-05` | **Sharadvat** | Gautama Lineage | M / 65 | D-Rank | Prime Minister of Hastinapur — *The King's Conscience*. Memory Seal & Lawkeeper. |
-| `CHR-HUM-06` | **Rohini** | Vishvakarma Guild | F / 34 | C-Rank | Royal Relic & Chariot Artificer — *The Flame-Smith*. Kira's senior master in Hastinapur. |
-| `CHR-HUM-07` | **Alistair** | Vance Family | M / 54 | C-Rank | High Caravan-Master — *The Clockwork Warden*. Spatial Compass; father of Coraline. |
-| `CHR-HUM-08` | **Silas** | Suhotra Naval House | M / 58 | A-Rank | High Admiral of the Sea Citadel — *The Silver Shark*. Secret boss of The Obsidian Ring. |
-| `CHR-HUM-09` | **Linnea** | Brandt Family | F / 36 | B-Rank | Free Patrol Fleet Commodore — *The Sea Wolf*. Water-Walk & Kinetic Rupture. |
-| `CHR-HUM-10` | **Coraline** | Vance Family | F / 27 | C-Rank | Flagship Helmswoman (Call: Cora) — *The Storm-Reader*. Current-Sense navigator. |
-| `CHR-HUM-11` | **Finn** | Abyssal Salvage Guild | M / 31 | C-Rank | Deep-Sea Relic Salvager — *The Trench Diver*. Gill-Breath; salvages Sunken Anchors. |
-| `CHR-HUM-12` | **Raiden** | Mist-Runner Syndicate| M / 39 | C-Rank | River-Drake Smuggler Captain — *The Fog-Runner*. Mist-Weaving; Stage-2 River-Drake. |
-| `CHR-HUM-13` | **Shamika** | Bhrigu Hermitage | M / 312 | S-Rank | Grandmaster of Tapovana Gurukul — *The Silent Sage*. Vitality Rebirth & Peace-Ward. |
-| `CHR-HUM-14` | **Astika** | Jaratkaru Lineage | M / 224 | A-Rank | Half-Naga Peace Envoy — *The Realm Mediator*. Venom Immunity & Voice of Harmony. |
-| `CHR-HUM-15` | **Evelyn** | Tapovana Herbal Order| F / 20 | D-Rank | Wandering Guild Healer — *The Herb-Maiden*. Herb-Bloom & Miasma-Sense; Moss-Hare. |
-| `CHR-HUM-16` | **Karna** | Suta Bloodline | M / 19 | C/B-Rank | Outcast Archer Prodigy — *The Sunless Arrow*. Solar-Ash Ignition & Blind-Ear Archery. |
-| `CHR-HUM-17` | **Arjun** | Kuru Royal House | M / 18 | B-Rank | Royal Academy #1 Prodigy — *The Gale Scion*. Bolt-Gale Convergence; Storm-Falcon. |
-| `CHR-HUM-18` | **Dhruv** | Shrutayudha Lineage | M / 18 | D/C-Rank | Young Seal-7 Bloodline Scion — *The Chain-Bearer*. Cold-Iron & Void-Chain Spark. |
-| `CHR-HUM-19` | **Pritha** | Shrutayudha Lineage | F / 42 | Ex-B-Rank| Crippled Former Vanguard — *The Iron-Chain Matron*. Dhruv's aunt in Ekachakra. |
-| `CHR-HUM-20` | **Reva** | Himavan Clan | F / 18 | C-Rank | Half-Deva Guild Duelist — *The Frost-Blade*. Permafrost Bite (Part of Neel's circle). |
-| `CHR-HUM-21` | **Shakuni** | Gandhara House | M / 47 | A-Rank | Hollow Sect Mastermind — *The Dice-Master*. Cursed Bone-Dice & Rogue Summoner. |
-| `CHR-HUM-22` | **Kamsa** | Bhoja Dynasty | M / 44 | B-Rank | River-Province Tyrant — *The Slave-Summoner*. Abuses Type-1 Oath-Collar rituals. |
+| `CHR-HUM-01` | **Parikshit** | परीक्षित | Kuru Royal House | B-Rank | **King of Hastinapur** — Sovereign monarch of the Human Shard; dying slowly of Takshak's old venom scar. |
+| `CHR-HUM-02` | **Madravati** | माद्रवती | Kuru Royal House | D-Rank | **Queen of Hastinapur** — Royal patron of free herbal clinics, orphanages, and the annual Awakening rites. |
+| `CHR-HUM-03` | **Ugrasen** | उग्रसेन | Kuru Royal House | S-Rank | **Supreme Army General** — Commander of Hastinapur's standing royal army & border cavalry. |
+| `CHR-HUM-04` | **Bheem** | भीम | Kuru Vanguard Clan | A-Rank | **Heavy Cavalry Captain** — Female frontline commander of armored boar-cavalry & gym instructor. |
+| `CHR-HUM-05` | **Sharadvat** | शरद्वत | Gautama Lineage | D-Rank | **Prime Minister of Hastinapur** — Keeper of constitutional treaties, state records, and royal judiciary. |
+| `CHR-HUM-06` | **Rohini** | रोहिणी | Vishvakarma Guild | C-Rank | **Master Relic & Chariot Artificer** — Head weapon-craftswoman at the Hastinapur Royal Forges. |
+| `CHR-HUM-07` | **Alistair** | — | Vance Family | C-Rank | **Caravan Guild Master** — Directs long-distance beast-cart merchant convoys across the Human Shard. |
+| `CHR-HUM-08` | **Silas** | — | Suhotra Naval House | A-Rank | **Navy Commander of Sea Citadel** — Commands coastal navy; secretly the godfather boss of The Obsidian Ring smuggling syndicate. |
+| `CHR-HUM-09` | **Linnea** | — | Brandt Family | B-Rank | **Patrol Fleet Commodore** — Naval commodore guarding river estuaries and Yamuna mist-ports. |
+| `CHR-HUM-10` | **Coraline** | — | Vance Family | C-Rank | **Flagship Helmswoman** — Elite current-reading navigator of the Sea Citadel merchant flagship. |
+| `CHR-HUM-11` | **Finn** | — | Abyssal Salvage Guild | C-Rank | **Deep-Sea Relic Salvager** — Diver who salvages sunken pre-Era frequency discs and lost cargo from coastal trenches. |
+| `CHR-HUM-12` | **Raiden** | — | Mist-Runner Syndicate | C-Rank | **Waterway Smuggler Captain** — Directs illicit river-drake barge convoys carrying contraband along river networks. |
+| `CHR-HUM-13` | **Shamik** | शमीक | Bhrigu Hermitage | S-Rank | **Grandmaster of Tapovana** — 312-year-old ascetic scholar & keeper of ancient medicinal seed vaults. |
+| `CHR-HUM-14` | **Astik** | आस्तीक | Jaratkaru Lineage | A-Rank | **Realm Peace Envoy** — Half-Naga diplomat negotiating border truces between humans and serpent clans. |
+| `CHR-HUM-15` | **Evelyn** | — | Tapovana Herbal Order | D-Rank | **Wandering Guild Healer** — Adventurer guild field medic traveling between rural outposts with her moss-hare. |
+| `CHR-HUM-16` | **Karna** | कर्ण | Suta Bloodline | C/B-Rank | **Frontier Archer Prodigy** — Outcast solar-ash archer fighting under guild contracts on northern borders. |
+| `CHR-HUM-17` | **Arjun** | अर्जुन | Kuru Royal House | B-Rank | **Royal Academy Duelist** — Top-ranked apprentice archer of Drona-Vana Academy; bonded to storm-falcon. |
+| `CHR-HUM-18` | **Dhruv** | ध्रुव | Shrutayudh Lineage | D/C-Rank | **Rural Forge Apprentice** — Last living bloodline descendant of Seal-7 Emperor Shrutayudh in Ekachakra. |
+| `CHR-HUM-19` | **Pritha** | प्रथा | Shrutayudh Lineage | Ex-B-Rank | **Village Matron** — Dhruv's crippled aunt who guards the ancestral iron-chain scroll. |
+| `CHR-HUM-20` | **Reva** | रेवा | Himavan Clan | C-Rank | **Guild Duelist** — Half-Deva swordswoman fighting in the arena circuit (Neel's party member). |
+| `CHR-HUM-21` | **Shakuni** | शकुनि | Gandhara House | A-Rank | **Hollow Sect Mastermind** — Occult conspirator plotting illegal Tier 4 summonings to destroy royal houses. |
+| `CHR-HUM-22` | **Kans** | कंस | Bhoja Dynasty | B-Rank | **River-Province Warlord** — Tyrant ruler of Yamuna-Ghat conducting illegal Otherworlder slave-contracts. |
 
 ---
 
 ## PART 2: THE ASURA SHARD (16 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-ASU-01` | **Mayasura** | Danava Royal House | M / 410 | S-Rank | Patriarch of the Iron Citadel — *The Obsidian Titan*. Built the 4 Stone Gateways. |
-| `CHR-ASU-02` | **Mandor** | Danava Royal House | F / 380 | A-Rank | High Queen of the Iron Citadel — *Mistress of Forge-Laws*. Acoustic Resonance Sight. |
-| `CHR-ASU-03` | **Hilda** | Ignis Forge-Clan | F / 290 | S-Rank | Supreme Siege Marshal — *The Siege-Breaker*. Diamond Marrow; Stage-3 Magma Tiger. |
-| `CHR-ASU-04` | **Prahas** | Caldera War-Host | M / 210 | A-Rank | War-Wagon Cavalry General — *The Molten Charge*. Commands Lava-Bull war-wagons. |
-| `CHR-ASU-05` | **Simhika** | Chaya-Mine House | F / 265 | A-Rank | Chasm Mining Syndicate Boss — *The Pit Tyrant*. 10x Gravity Bind; enemy of Ulka. |
-| `CHR-ASU-06` | **Ilval** | Eisen Clan | M / 240 | B-Rank | Senior Smelting Pit Baron — *The Iron-Fist*. Simhika's enforcer & arms dealer. |
-| `CHR-ASU-07` | **Vatap** | Eisen Clan | M / 215 | B-Rank | Dungeon & Blood-Smelter Overseer — *The Acid-Weaver*. Secretly tests Devil vessels. |
-| `CHR-ASU-08` | **Erika** | Ignis Forge-Clan | F / 33 | C-Rank | Chief Volcanic Alchemist — *The Flame-Distiller*. Reincarnated potion master. |
-| `CHR-ASU-09` | **Ulka** | Red Crucible Union | M / 35 | A-Rank | Rebel Leader — *The Red Hammer*. Self-made A-Rank; runs Shaft #47 Shadow Anchor. |
-| `CHR-ASU-10` | **Nikumbh** | Danava Royal House | M / 195 | A-Rank | Border Bastion Commander — *The Reformist Shield*. Keeps peace with Beast Shard. |
-| `CHR-ASU-11` | **Astrid** | Vajra Smith-Guild | F / 140 | C-Rank | Master Weapon Engraver — *The Rune-Smith*. Etches Bija-channels & Frequency Discs. |
-| `CHR-ASU-12` | **Kshema** | Shilpi Healer Guild | M / 38 | C-Rank | Prosthetic & Anchor Healer — *The Nerve-Linker*. Crafts meridian-linked limbs. |
-| `CHR-ASU-13` | **Olga** | Red Crucible Union | F / 310 | D-Rank | Underground Orphanage Matron — *Mother of the Pits*. Protects miner children. |
-| `CHR-ASU-14` | **Muchukund**| First-Era Guardians | M / 3200+ | S-Rank+ | Immortal Sentinel of Seal 1 — *The Ancient Sleeper*. Incinerating gaze upon waking. |
-| `CHR-ASU-15` | **Kinkar** | Mayasura Constructs | Golem | B-Rank | Living Basalt Sentinel — *The Mantle Golem*. Guards Seal 1 valves with Muchukund. |
-| `CHR-ASU-16` | **Rudrakh** | Red Crucible Union | M / 19 | B-Rank | Young Caldera Arena Contender — *The Magma Berserker*. Ulka's cousin; Cinder-Boar. |
+| `CHR-ASU-01` | **Mayasur** | मयासुर | Danava Royal House | S-Rank | **Patriarch of the Iron Citadel** — Grand architect who built the 4 Stone Gateways & 108 Rotary Anchors. |
+| `CHR-ASU-02` | **Mandor** | मन्दोर | Danava Royal House | A-Rank | **Queen Mother of Iron Citadel** — Oversees foundry guild laws, acoustic testing, and mineral allocation. |
+| `CHR-ASU-03` | **Hilda** | — | Ignis Forge-Clan | S-Rank | **Siege Commander** — Supreme general of Asura siege war-hosts; rides a Stage-3 Magma Tiger. |
+| `CHR-ASU-04` | **Prahas** | प्रहस | Caldera War-Host | A-Rank | **War-Wagon Cavalry General** — Commands the heavy Lava-Bull war-wagons on the western plateaus. |
+| `CHR-ASU-05` | **Simhika** | सिंहिका | Chaya-Mine House | A-Rank | **Mining Syndicate Baroness** — Controls 70% of the Obsidian Chasm crystal mines; enforces heavy mining quotas. |
+| `CHR-ASU-06` | **Ilval** | इल्वल | Eisen Clan | B-Rank | **Smelting Pit Baron** — Arms dealer and foundry boss supplying heavy basalt plating to the Coliseum. |
+| `CHR-ASU-07` | **Vatapi** | वातापि | Eisen Clan | B-Rank | **Dungeon Overseer** — Ilval's brother; manages prison mines and tests chemical reagents. |
+| `CHR-ASU-08` | **Erika** | — | Ignis Forge-Clan | C-Rank | **Chief Volcanic Alchemist** — Reincarnated potion master refining volcanic minerals into healing salves. |
+| `CHR-ASU-09` | **Ulka** | उल्का | Red Crucible Union | A-Rank | **Labor Union Leader** — Self-made rebel commander organizing miners against Baroness Simhika's quotas. |
+| `CHR-ASU-10` | **Nikumbh** | निकुम्भ | Danava Royal House | A-Rank | **Border Bastion Commander** — Fortress commander maintaining peace treaties with the Beast Shard. |
+| `CHR-ASU-11` | **Astrid** | — | Vajra Smith-Guild | C-Rank | **Master Weapon Engraver** — Crafts frequency discs and carves runic channels on heavy blades. |
+| `CHR-ASU-12` | **Kshem** | क्षेम | Shilpi Healer Guild | C-Rank | **Prosthetic Artificer** — Reincarnated artificer crafting artificial meridian-linked limbs for wounded miners. |
+| `CHR-ASU-13` | **Olga** | — | Red Crucible Union | D-Rank | **Underground Clinic Matron** — Runs the miners' refuge and orphanage in the lower caldera tunnels. |
+| `CHR-ASU-14` | **Muchukund** | मुचुकुन्द | First-Era Guardians | S-Rank+ | **Immortal Sentinel of Seal 1** — Sleeping guardian in the deep magma vault; incinerates threats upon waking. |
+| `CHR-ASU-15` | **Kinkar** | किंकर | Mayasur Constructs | B-Rank | **Basalt Golem Warden** — 10-foot runic sentinel maintaining the tectonic pressure valves of Seal 1. |
+| `CHR-ASU-16` | **Rudrakh** | रुद्राक्ष | Red Crucible Union | B-Rank | **Caldera Arena Brawler** — Ulka's young cousin fighting in the regional foundry pit leagues. |
 
 ---
 
 ## PART 3: THE DEVA SHARD (10 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-DEV-01` | **Aurelius** | Aditya Imperial House| M / 620 | S-Rank+ | Emperor of Amaravati — *The Solar Sovereign*. Wields The Sun-Scepter. |
-| `CHR-DEV-02` | **Seraphina**| Aditya Imperial House| F / 590 | A-Rank | High Empress of Amaravati — *Keeper of the Solar Purse*. Controls Awakening Stones. |
-| `CHR-DEV-03` | **Lysandra** | Marut Sky-House | F / 340 | S-Rank | Supreme Aerial Commander — *The Sky-Marshal*. 4 wings of light; *Candrahasa* blade. |
-| `CHR-DEV-04` | **Cassian** | Aditya Imperial House| M / 280 | A-Rank | Border Sky-Fleet Marshal — *Captain of the Sun-Lances*. Guards Sun-Cliff Arch. |
-| `CHR-DEV-05` | **Themis** | Order of Rta | M / 510 | A-Rank | Chief Justice of Amaravati — *The Blind Arbiter*. Silver blindfold; Karmic Scales. |
-| `CHR-DEV-06` | **Selene** | Soma Lunar House | F / 400 | B-Rank | High Priestess of the Observatory — *The Astral Seer*. Tracks star-tides & seals. |
-| `CHR-DEV-07` | **Chitralekha**| Gandharva High House| F / 360 | A-Rank | Ruler of Gandharva-Puri — *The Silk Sovereign*. Oversees blade-proof Aether-Silk. |
-| `CHR-DEV-08` | **Julian** | Gandharva High House | M / 230 | B-Rank | Master Weaver & Assassin — *The Razor-Weaver*. Fights with invisible silk threads. |
-| `CHR-DEV-09` | **Theron** | Akasha Guild | M / 290 | B-Rank | Chief Void Cartographer — *The Void-Navigator*. Maps ghost-islands in the Void. |
-| `CHR-DEV-10` | **Zephyr** | Marut Sky-House | M / 175 | B-Rank | High-Speed Royal Envoy — *The Wind-Runner*. Supersonic cloud-glider. |
+| `CHR-DEV-01` | **Aryaman** | अर्यमन् | Aditya Imperial House | S-Rank+ | **Solar Emperor of Amaravati** — Presiding ruler of the Deva Shard; wields the Sun-Scepter. |
+| `CHR-DEV-02` | **Saranya** | सरन्यू | Aditya Imperial House | A-Rank | **Empress of Amaravati** — Controls global distribution of solar prisms and Awakening Stones. |
+| `CHR-DEV-03` | **Marisha** | मारिषा | Marut Sky-House | S-Rank | **Sky-Wing Commander** — Head of the Deva aerial border vanguard; wields the light-blade Candrahasa. |
+| `CHR-DEV-04` | **Kiran** | किरण | Aditya Imperial House | A-Rank | **Border Sky-Fleet Captain** — Patrols the Sun-Cliff Gateway Arch against void rift beasts. |
+| `CHR-DEV-05` | **Ritam** | ऋतम् | Order of Rta | A-Rank | **Chief Justice of Amaravati** — Blindfolded arbiter of celestial civil law and treaties. |
+| `CHR-DEV-06` | **Saumya** | सौम्या | Soma Lunar House | B-Rank | **Astral Seer** — Reads cosmic nakshatras, eclipse cycles, and barrier stability. |
+| `CHR-DEV-07` | **Chitralekha** | चित्रलेखा | Gandharva High House | A-Rank | **Silk Queen of Gandharva-Puri** — Directs the harmonic looms that weave blade-proof Aether-Silk. |
+| `CHR-DEV-08` | **Kaleyan** | कालेयन् | Gandharva High House | B-Rank | **Master Silk-Weaver** — Crafts lethal monomolecular razor-silk threads for defense. |
+| `CHR-DEV-09` | **Taran** | तारण | Akasha Guild | B-Rank | **Chief Void Cartographer** — Maps drifting spatial islands and magnetic anomalies across the void. |
+| `CHR-DEV-10` | **Javan** | जवन | Marut Sky-House | B-Rank | **Supersonic Royal Courier** — High-speed dispatch runner traveling along upper jetstream cloudbanks. |
 
 ---
 
 ## PART 4: THE BEAST SHARD (10 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-BST-01` | **Ursus** | Vajra-Bhalluka Brood | M / 820 | S-Rank+ | 4-Horned Bear Sovereign — *Old Four-Horns*. 25-ft, 40-ton guardian of World-Tree. |
-| `CHR-BST-02` | **Jormun** | Maha-Naga Brood | F / 1200+ | S-Rank+ | 180-ft Naga Serpent Empress — *The Jade Coil*. Left fang acid, right fang Sanjeevani. |
-| `CHR-BST-03` | **Valkyrie** | Suparna Sky-House | F / 450 | S-Rank+ | 80-ft Golden Garuda Empress — *The Golden Maw*. Rules the 20,000-ft Sky Spires. |
-| `CHR-BST-04` | **Aquila** | Suparna Sky-House | M / 180 | S-Rank | Raptor War-Prince — *Iron-Talon*. Tests warriors seeking Flying Beast bonds. |
-| `CHR-BST-05` | **Nyx** | Chaya-Marjari Pack | F / 220 | A-Rank | 16-ft Shadow-Panther Matriarch — *The Shadow-Cat*. Instant shadow-slip stealth. |
-| `CHR-BST-06` | **Freya** | Rakta-Shardul Pack | F / 140 | A-Rank | Sabertooth Pack Queen — *Queen of Blood-Ridge*. Defends salt-cliffs vs Simhika. |
-| `CHR-BST-07` | **Morvath** | Hollow-Grove Shamans | F / 58 | B-Rank | Human-Beast Ambassador — *The Bone-Speaker*. Runs Hollow Ironwood Barter Post. |
-| `CHR-BST-08` | **Matanga** | Ahimsa-Vana Order | M / 112 | A-Rank | Border Sanctuary Sage — *Keeper of the Silent Glade*. No-violence healing refuge. |
-| `CHR-BST-09` | **Tara** | Hollow-Grove Shamans | F / 17 | C-Rank | Young Mute Beast-Tamer — *The Silent Whisperer*. Morvath's pupil (Neel's circle). |
-| `CHR-BST-10` | **Takshak** | Rebel Naga Brood | M / 310 | S-Rank | Rogue Serpent Warlord — *The Venom-Lord*. Jormun's nephew; enemy of humanity. |
+| `CHR-BST-01` | **Rikshan** | ऋक्षन् | Riksha Clan | S-Rank+ | **Bear Sovereign** — 25-ft ancient titan guardian of the Heartwood Sanctum & World-Tree roots. |
+| `CHR-BST-02` | **Kadrin** | काद्रिन् | Maha-Naga Clan | S-Rank+ | **Empress of Serpents** — 180-ft serpent matriarch of sunken waterways; left fang acid, right fang healing. |
+| `CHR-BST-03` | **Suparni** | सुपर्णी | Suparna Clan | S-Rank+ | **Garuda Empress** — 80-ft wingspan metallic-gold raptor sovereign of the 20,000-ft Sky Spires. |
+| `CHR-BST-04` | **Shyen** | श्येन | Suparna Clan | S-Rank | **Garuda War-Prince** — Aerial commander who tests mortal seekers climbing the spires for beast bonds. |
+| `CHR-BST-05` | **Nishi** | निशि | Chaya-Marjari Clan | A-Rank | **Panther Matriarch** — 16-ft shadow-panther ruler of the Twilight Marsh; master of stealth. |
+| `CHR-BST-06` | **Sarami** | सारमी | Shardula Clan | A-Rank | **Sabertooth Pack Queen** — Pack matriarch defending the eastern salt cliffs against miners. |
+| `CHR-BST-07` | **Murva** | मूर्वा | Hollow-Grove Shamans | B-Rank | **Forest Hermit & Shaman** — Human diplomat running the Hollow Ironwood barter trading post. |
+| `CHR-BST-08` | **Matang** | मतंग | Dig-Gaja Sanctuary | A-Rank | **Sanctuary Sage** — Ascetic elder guarding the non-violence healing refuge with his white elephant. |
+| `CHR-BST-09` | **Tara** | तारा | Hollow-Grove Shamans | C-Rank | **Forest Scout** — Murva's mute apprentice; communicates intuitively with beasts (Neel's circle). |
+| `CHR-BST-10` | **Takshak** | तक्षक | Rebel Naga Brood | S-Rank | **Rebel Serpent Warlord** — Radical serpent warlord who poisoned King Parikshit 30 years ago. |
 
 ---
 
-## PART 5: THE CENTRAL SHARD — CENTRAL CITY (11 Characters — Includes Ch.1 Supporting Cast)
+## PART 5: THE CENTRAL SHARD — CENTRAL CITY (11 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-CEN-01` | **Sulabha** | Concord Presidium | F / 56 | A-Rank | Speaker of the Grand Concord — *The Supreme Moderator*. Vashitva Will-Binding. |
-| `CHR-CEN-02` | **Ambika** | Akash-Kosha House | F / 48 | B-Rank | Governor of the Reserve Bank — *Mistress of the Vaults*. Controls Aether-Rupee. |
-| `CHR-CEN-03` | **Satyabhama**| Vanguard Peace-Corps| F / 42 | S-Rank | Commander of Peacekeepers & Coliseum — *The Iron Referee*. Enforces city truce. |
-| `CHR-CEN-04` | **Sudeva** | Dharma High Bench | M / 61 | B-Rank | Chief Justice of the Concord — *The Incorruptible Scale*. Truth-Sight judge. |
-| `CHR-CEN-05` | **Devayani** | Shukra-Niti Lineage | F / 29 | A-Rank | Special Audit Inquisitor (Call: Devi) — *The Concord Hound*. Hunts rogue anchors. |
-| `CHR-CEN-06` | **Agastya** | Pan-Astral Guild HQ | M / 59 | A-Rank | Grandmaster of the Adventurer Guild — *The One-Legged Lion*. Runs quest-boards. |
-| `CHR-CEN-07` | **Chandra** | Divya-Mirror Order | F / 31 | B-Rank | Grand Clairvoyant of the Mirror — *The All-Seeing Eye*. Broadcasts live bouts. |
-| `CHR-CEN-08` | **Maitreyi** | Concord Archive Order| F / 26 | C-Rank | Keeper of the Forbidden Archives — *The Lore-Guardian*. Guards Era-2 maps. |
-| `CHR-CEN-09` | **Kira** | Solaris Forge-Guild | F / 19 | C-Rank | Coliseum Pit Weapon-Smith — *The Spark-Tuner*. Repairs Neel's gear in Central City. |
-| `CHR-CEN-10` | **Boran** | Outer-Ring Teamsters | M / 45 | Ember | **Ch.1 Dwarf Wagoner** — Pockmarked Lava-Bull cart driver who paid Neel 3 Panas. |
-| `CHR-CEN-11` | **Garrat** | South-Gate Customs | M / 51 | Ember | **Ch.1 Greedy Toll Clerk** — Bribed by Neel with the ₹1 Stainless-Steel Ashoka coin! |
+| `CHR-CEN-01` | **Sulabha** | सुलभा | Concord Presidium | A-Rank | **Speaker of the Grand Concord** — Presides over the multinational assembly in Central City. |
+| `CHR-CEN-02` | **Ambika** | अम्बिका | Akash-Kosha House | B-Rank | **Governor, Central Reserve Bank** — Manages currency minting and legal 17% gateway tariffs. |
+| `CHR-CEN-03` | **Satyabhama** | सत्यभामा | Vanguard Peace-Corps | S-Rank | **Commander of Peacekeepers** — Enforces neutrality and chairs the Sovereign Coliseum Ranking Board. |
+| `CHR-CEN-04` | **Sudev** | सुदेव | Dharma High Bench | B-Rank | **Chief Magistrate of Central City** — Presides over judicial disputes using truth-sight forensics. |
+| `CHR-CEN-05` | **Devayani** | देवयानी | Shukra-Niti Lineage | A-Rank | **Special Inquisitor** — Lead investigator for Concord Audit Bureau tracking illegal anchors & glitches. |
+| `CHR-CEN-06` | **Agastya** | अगस्त्य | Pan-Astral Guild HQ | A-Rank | **Adventurer Guild Grandmaster** — Directs quest-boards, rank promotions, and monster bounties. |
+| `CHR-CEN-07` | **Chandra** | चन्द्रा | Divya-Mirror Order | B-Rank | **Grand Clairvoyant** — Reincarnated scryer broadcasting live arena matches via water-mirrors. |
+| `CHR-CEN-08` | **Maitreyi** | मैत्रेयी | Concord Archive Order | C-Rank | **Chief Archivist** — Oversees the Forbidden Library holding historical Era-2 and Ashen Eclipse records. |
+| `CHR-CEN-09` | **Kira** | किरा | Solaris Forge-Guild | C-Rank | **Outer-Ring Armorer** — Runs an underground weapon forge; repairs Neel's gear in Central City. |
+| `CHR-CEN-10` | **Boran** | — | Outer-Ring Teamsters | Ember | **Cargo Cart Driver** — Pockmarked Lava-Bull wagon driver transporting goods outside the outer walls. |
+| `CHR-CEN-11` | **Garrat** | — | South-Gate Customs | Ember | **Gate Toll Clerk** — Customs clerk collecting transit taxes at Central City's South Gate. |
 
 ---
 
 ## PART 6: TIER 2 BUFFER ZONE — THE GREAT SETU (17 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-SET-01` | **Shrutan** | Setu Vidyapeeth | M / 185 | Maharathi | Rector of the Setu Academy — *The Grand Instructor*. Trains S-Rank "newbies". |
-| `CHR-SET-02` | **Sushar** | Viaduct Logistics | M / 110 | Atirathi | Warden of the Stone Viaducts — *The Mammoth Master*. War-Mammoth convoys. |
-| `CHR-SET-03` | **Akampa** | Danava Sapper Corps | M / 160 | Atirathi | Chief Sapper of the Bastion Wall — *The Wall-Builder*. Maintains Aegis pillars. |
-| `CHR-SET-04` | **Satyak** | Assembly of Sages | M / 78 | Maharathi | Chief Field Inquisitor — *Bearer of the Red-Ink Seal*. 24-hour cosmic freeze. |
-| `CHR-SET-05` | **Vajran** | Order of Palaks | M / 240 | Ati-Maharathi| Supreme Commander of Setu Army — *The Thunderbolt General*. *Indrastra* Varadan. |
-| `CHR-SET-06` | **Yukti** | Guild of Seekers | M / 190 | Maharathi | Director of the Guild of Seekers — *The Rift-Master*. Calibrates Kshira-Aegis. |
-| `CHR-SET-07` | **Aruni** | Setu Medical Sanctum | M / 145 | Atirathi | Chief Medical Sage — *Master of Meridian Rebirth*. Heals channel Blowouts. |
-| `CHR-SET-08` | **Medha** | Assembly of Sages | F / 95 | Atirathi | Senior Karmic Ledger Examiner — *The Time-Auditor*. Satyak's forensic deputy. |
-| `CHR-SET-09` | **Vayun** | Assembly of Sages | M / 44 | Atirathi | Chief Rift & Summoning Tracker — *The Void-Hound*. Tracks illegal summonings. |
-| `CHR-SET-10` | **Dhriti** | Order of Palaks | F / 52 | Atirathi | Commander of Outpost 9 — *The Bastion Shield*. Frontline trench warden. |
-| `CHR-SET-11` | **Ranvay** | Order of Palaks | M / 120 | Atirathi | Captain of the Vajra Vanguard — *The Strike-Leader*. Twin Dharma-Hounds. |
-| `CHR-SET-12` | **Yantri** | Guild of Seekers | F / 39 | Atirathi | Chief Relic & Barrier Artificer — *The Matrix-Weaver*. Crafts Soul Cylinders. |
-| `CHR-SET-13` | **Kshitij** | Guild of Seekers | M / 48 | Atirathi | Void-Island Expedition Commander — *The Horizon-Walker*. Garuda explorer. |
-| `CHR-SET-14` | **Nachiket** | Soul Admin Dept | M / 300+ | Maharathi | High Soul-Transit Overseer — *The Gate-Arbiter*. Coordinates Yama-Vidhata transfers. |
-| `CHR-SET-15` | **Setu** | Pratigraha Wardens | M / 130 | Atirathi | Warden of the Soul Depository — *The Quarantine Keeper*. Stamps `[STATUS: RIKTA]`. |
-| `CHR-SET-16` | **Lekha** | Floor-D Ledger Bureau| F / 88 | Atirathi | Karmic Bond Inspector — *The Cord-Verifier*. Matches souls to Chitragupta's archive. |
-| `CHR-SET-17` | **Matali** | White Courier Corps | M / 105 | Atirathi | Commander of the White Couriers — *The Ghost-Rider*. 4 Celestial Wind-Steeds. |
+| `CHR-SET-01` | **Shrutasen** | श्रुतसेन | Setu Vidyapeeth | Maharathi | **Rector of the Setu Academy** — Trains newly drafted S-Rank warriors in Sanskrit mantras and Astras. |
+| `CHR-SET-02` | **Susharma** | सुशर्मा | Viaduct Logistics | Atirathi | **Viaduct Logistics Warden** — Directs armored war-mammoth supply convoys along the 50,000-mile bridges. |
+| `CHR-SET-03` | **Akampan** | अकम्पन | Danava Sapper Corps | Atirathi | **Chief Fortification Architect** — Maintains the basalt ramparts along the Grand Aegis wall. |
+| `CHR-SET-04` | **Satyaketu** | सत्यकेतु | Assembly of Sages | Maharathi | **Chief Field Auditor** — Supreme field investigator empowered to freeze operations during cosmic crises. |
+| `CHR-SET-05` | **Vajraketu** | वज्रकेतु | Order of Palaks | Ati-Maharathi | **Setu Army Commander** — Commands the 100,000 Setu troops guarding the Grand Aegis wall. |
+| `CHR-SET-06` | **Yuktinath** | युक्तिनाथ | Guild of Seekers | Maharathi | **Director of Dimensional Research** — Monitors barrier frequencies and calibrates the Miniature Kshira-Core. |
+| `CHR-SET-07` | **Aruni** | आरुणि | Setu Medical Sanctum | Atirathi | **Chief Medical Sage** — Heals severe meridian blowouts and miasma poisonings. |
+| `CHR-SET-08` | **Medhavi** | मेधावी | Assembly of Sages | Atirathi | **Senior Karmic Examiner** — Cross-checks field timestamps against Chitragupta's central ledger. |
+| `CHR-SET-09` | **Vayun** | वयुन | Assembly of Sages | Atirathi | **Rift & Summoning Tracker** — Tracks underground shadow anchor vibrations and spatial shearing. |
+| `CHR-SET-10` | **Dhriti** | धृति | Order of Palaks | Atirathi | **Outpost 9 Commander** — Commands the frontline trench redoubt facing the Ash Fortress. |
+| `CHR-SET-11` | **Ranvay** | रणवय | Order of Palaks | Atirathi | **Strike-Leader** — Captain of elite commando squads hunting escaped rift beasts with Dharma-hounds. |
+| `CHR-SET-12` | **Yantri** | यन्त्री | Guild of Seekers | Atirathi | **Chief Relic Artificer** — Crafts lead-lined soul cylinders and barrier stabilizers. |
+| `CHR-SET-13` | **Kshitij** | क्षितिज | Guild of Seekers | Atirathi | **Expedition Commander** — Leads Garuda-mounted reconnaissance flights across uncharted void rifts. |
+| `CHR-SET-14` | **Nachiket** | नचिकेत | Soul Admin Dept | Maharathi | **Soul-Transit Overseer** — Manages lawful soul transfers between Yama's court and the mortal world. |
+| `CHR-SET-15` | **Setuvrat** | सेतुव्रत | Pratigraha Wardens | Atirathi | **Quarantine Reception Warden** — Inspects incoming drift souls and stamps intake classifications. |
+| `CHR-SET-16` | **Lekha** | लेखा | Floor-D Ledger Bureau | Atirathi | **Karmic Bond Inspector** — Matches arriving souls against the grand ledger records. |
+| `CHR-SET-17` | **Matali** | मातलि | White Courier Corps | Atirathi | **Charioteer Commander** — Commands the celestial courier teams operating between Swarga and the Setu. |
 
 ---
 
-## PART 7: TIER 4 CORRUPTED REALM — DEVILS, EXILES & SEAL 7 (13 Characters)
+## PART 7: TIER 4 CORRUPTED REALM — PATALA (13 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-ABY-01` | **Paundra** | Netherholme Throne | M / 1800+ | Ati-Maharathi| Overlord of the Hunger Devils — *The Counterfeit God*. False Solar Halo & Rot. |
-| `CHR-ABY-02` | **Vritra** | Dread-Hold Legion | M / 1900+ | Maharathi | Warlord of Dread-Hold — *The Bone-Behemoth*. 1,200-lb Obsidian War-Maul. |
-| `CHR-ABY-03` | **Trishir** | Shadow-Hollow Coven | M / 1600+ | Atirathi | Chief Devil Ritualist — *The Three-Minded Weaver*. Designs Mode-B hijack rituals. |
-| `CHR-ABY-04` | **Bali** | Aegis-Light Enclave | M / 2400+ | Ati-Maharathi| King of the Noble Devils — *The Golden-Bound Sovereign*. Honorable Aegis-fed king. |
-| `CHR-ABY-05` | **Vibhishan**| Aegis-Light Enclave | M / 1500+ | Atirathi | Noble Devil Diplomat — *The Exile Arbiter*. Bali's brother; ally of Ash Fortress. |
-| `CHR-ABY-06` | **Nila** | House Noctis | F / 400 | B/A-Rank | Contracted Shadow-Devil Partner — *The Shadow-Dancer*. Mode-A partner of Kael. |
-| `CHR-ABY-07` | **Hamsa** | Ash-Fortress Vanguard| M / 39 | A-Rank | Senior Warden of The Ash Fortress — *The Exile Blade*. Leads multi-racial exiles. |
-| `CHR-ABY-08` | **Dambha** | Ash-Fortress Vanguard| M / 39 | A-Rank | Tactical Warden of The Ash Fortress — *The Trap-Master*. Hamsa's twin brother. |
-| `CHR-ABY-09` | **Marich** | Abyss Shufflers | M / 180 | A-Rank | Underworld Smuggler Kingpin — *The Golden Deer*. Flesh-shifting mirage broker. |
-| `CHR-ABY-10` | **Kalmash** | Hunger Faction | M / 900 | A-Rank | Hijacked-Vessel Devil Monster — *The Flesh-Collector*. Hunts C-Rank Reincarnates. |
-| `CHR-ABY-11` | **Jaras** | Magadha Cult | M / 85 | A-Rank | Badlands Cult Warlord — *The Split-Body Tyrant*. Stitches dead beasts & Devils. |
-| `CHR-ABY-12` | **Shrutayudha**| Suryavanshi Seal-7 | M / 3200+ | T7 Horror | The Chained Emperor Merged w/ Seal 7 — *The Living 7th Horror*. Dhruv's ancestor. |
-| `CHR-ABY-13` | **Kaga** | Seal-7 Sentinels | M / 3200+ | B-Rank | Immortal Watcher on the Chains — *The Stone-Eyed Crow*. Alerts Rudra of tremors. |
+| `CHR-ABY-01` | **Paundrak** | पौण्ड्रक | Netherholme Throne | Ati-Maharathi | **Overlord of Hunger Devils** — Ruler of Netherholme; projects a false golden halo over corrupted hordes. |
+| `CHR-ABY-02` | **Shataghati** | शतघाती | Dread-Hold Legion | Maharathi | **Warlord of Dread-Hold** — Armored devil warlord wielding a 1,200-lb basalt maul. |
+| `CHR-ABY-03` | **Trishir** | त्रिशिर | Shadow-Hollow Coven | Atirathi | **Chief Devil Ritualist** — Devises forbidden soul-hijacking arrays across the mortal barrier. |
+| `CHR-ABY-04` | **Bali** | बलि | Aegis-Light Enclave | Ati-Maharathi | **King of the Noble Devils** — Honorable sovereign of uncorrupted souls nourished by the Miniature Kshira-Core. |
+| `CHR-ABY-05` | **Vibhishan** | विभीषण | Aegis-Light Enclave | Atirathi | **Noble Devil Diplomat** — Bali's brother; coordinates mutual defense pacts with the Ash Fortress. |
+| `CHR-ABY-06` | **Nila** | नीला | House Noctis | B/A-Rank | **Shadow-Devil Partner** — Contracted noble devil spirit partnered under Mode-A with Otherworlder Kael. |
+| `CHR-ABY-07` | **Hans** | हंस | Ash-Fortress Vanguard | A-Rank | **Warden of the Ash Fortress** — Senior commander protecting 200,000 multi-racial exiles. |
+| `CHR-ABY-08` | **Dimbak** | डिम्बक | Ash-Fortress Vanguard | A-Rank | **Tactical Bastion Warden** — Hans's twin brother; commands armored chitin-scorpion defensive patrols. |
+| `CHR-ABY-09` | **Marich** | मारीच | Abyss Shufflers | A-Rank | **Underworld Smuggler Kingpin** — Flesh-shifting broker trading minerals through Aegis micro-fissures. |
+| `CHR-ABY-10` | **Kabandh** | कबन्ध | Hunger Faction | A-Rank | **Rogue Devil Hijacker** — Possessed adventurer vessel hunting C-Rank reincarnates for soul nourishment. |
+| `CHR-ABY-11` | **Jarasandh** | जरासन्ध | Magadha Cult | A-Rank | **Badlands Cult Warlord** — Occult warlord stitched together with necrotic sutures; allied with Kans. |
+| `CHR-ABY-12` | **Shrutayudh** | श्रुतायुध | Suryavanshi Seal-7 | T7 Horror | **Living Lock of Seal 7** — Era-2 hero-emperor chained to a meteoric iron pillar, merged with the 7th Horror. |
+| `CHR-ABY-13` | **Kag** | कागभुशुण्डि | Seal-7 Sentinels | B-Rank | **Immortal Avian Watcher** — Stone-eyed crow perched on Shrutayudh's chains; alerts Rudra to seismic rifts. |
 
 ---
 
-## PART 8: TIER 1 SUPREME GODS & HIGH COUNCIL (14 Entities)
+## PART 8: TIER 1 SUPREME COSMOLOGY & HIGH COUNCIL (15 Entities)
 
-| ID | Locked Name | Domain / Order | Status | Cosmic Office & Role |
+| Canonical ID | Locked Name | Devanagari | Cosmic Domain | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- |
-| `CHR-DIV-00` | **Maha-Vishnu** | Karana Sagara | Transcendent| Primordial Multiversal Source — Breathes out the parallel universe cluster. |
-| `CHR-DIV-01` | **Brahma** | Supreme Trinity | Transcendent| Supreme Creator — Four-headed architect of Universe B. |
-| `CHR-DIV-02` | **Vishnu** | Supreme Trinity | Transcendent| Supreme Preserver — Reclines on Ananta-Shesha in the unbreakable Kshira Sagara. |
-| `CHR-DIV-03` | **Shiva** | Supreme Trinity | Transcendent| Supreme Destroyer — Transcendent beyond time; reserves His hand for Maha-Samhara. |
-| `CHR-DIV-04` | **Ananta** | The Eternal Four| System Core | Non-Living System Bedrock — Read-only archive; rings The World Chime in the skull. |
-| `CHR-DIV-05` | **Yama** | The Eternal Four| Eternal | Sovereign Judge of Soul Circulation — Holds the Inter-Universal Soul Pact. |
-| `CHR-DIV-06` | **Vidhata** | The Eternal Four| Eternal | Weaver of Destiny & Silver Cords — Yama's best friend; binds reincarnating souls. |
-| `CHR-DIV-07` | **Chitragupta** | The Eternal Four| Eternal | Grand Scribe of the Root Ledger — Yama's right hand; issues all Soul IDs. |
-| `CHR-DIV-08` | **Indra** | High Council | Upadhi #4 | **Maha-Palaka** — Supreme Guardian of Pan-Astral Defense & the Grand Aegis. |
-| `CHR-DIV-09` | **Brihaspati** | High Council | Upadhi #5 | **Chief Sage** — Supreme Inquisitor of Truth; issues 24-Hour Red-Ink Warrants. |
-| `CHR-DIV-10` | **Shukra** | High Council | Upadhi #6 | **Prime Seeker** — Master of Dimensional Physics & evolutionary stress-testing. |
-| `CHR-DIV-11` | **Prajapati** | Trinity Envoy | Envoy #1 | Plenipotentiary Envoy of Brahma — Inspector of Cosmic Structural Integrity. |
-| `CHR-DIV-12` | **Narada** | Trinity Envoy | Envoy #2 | Plenipotentiary Envoy of Vishnu — High Commissioner of Equilibrium (30-Day Hold). |
-| `CHR-DIV-13` | **Rudra** | Trinity Envoy | Envoy #3 | Operational Ansha of Shiva — Chief Adjudicator of Quarantine & Seal 7 Watcher. |
+| `CHR-DIV-00` | **Maha-Vishnu** | महाविष्णु | Karana Sagara | **Primordial Multiversal Source** — Breathes out universes; author of the Zero-Avatar Mandate. |
+| `CHR-DIV-01` | **Brahma** | ब्रह्मा | Tier 1 Supreme Sanctum | **Supreme Creator** — Four-headed architect of Universe B's baseline laws. |
+| `CHR-DIV-02` | **Vishnu** | विष्णु | Tier 1 Kshira Sagara | **Supreme Preserver** — Reclines on Ananta-Shesha; source of pure cosmic Caitanya. |
+| `CHR-DIV-03` | **Shiva** | शिव | Tier 1 Kailasa Apex | **Supreme Destroyer** — Transcendent deity reserving His direct intervention for Maha-Samhara. |
+| `CHR-DIV-04` | **Ananta** | अनन्त | Singularity Bedrock | **System Core & Cosmic Ledger** — Non-living read-only archive; rings the World Chime inside the skull. |
+| `CHR-DIV-05` | **Yama** | यम | High Council Upadhi #1 | **Sovereign Judge of Souls** — Eternal administrator of death, karmic audits, and the Inter-Universal Soul Pact. |
+| `CHR-DIV-06` | **Vidhata** | विधाता | High Council Upadhi #2 | **Weaver of Destiny** — Yama's closest friend; spins the Prana-Sutra binding souls to mortal flesh. |
+| `CHR-DIV-07` | **Chitragupta** | चित्रगुप्त | High Council Upadhi #3 | **Universal Grand Scribe** — Yama's right hand; indexes thoughts, breaths, and ancestral debts into Soul IDs. |
+| `CHR-DIV-08` | **Maha-Palaka** | महा-पालक | High Council Upadhi #4 | **Supreme Guardian of Defense** — Coordinates planetary containment barriers and pan-astral garrison forces. |
+| `CHR-DIV-09` | **Chief Sage** | प्रमुख ऋषी | High Council Upadhi #5 | **Chief Inquisitor of Truth** — Supreme inquisitor, constitutional auditor, and keeper of Dharmic jurisprudence. |
+| `CHR-DIV-10` | **Prime Seeker** | मुख्य शोधक | High Council Upadhi #6 | **Master of Dimensional Physics** — Master of dimensional stress testing, spatial anchors, and boundary stabilization. |
+| `CHR-DIV-11` | **Prajapati** | प्रजापति | Brahma Plenipotentiary | **Chief Inspector of Integrity** — Special envoy auditing tectonic anchors and evolutionary matrices. |
+| `CHR-DIV-12` | **Narada** | नारद | Vishnu Plenipotentiary | **Commissioner of Equilibrium** — High commissioner holding constitutional 30-day emergency holds. |
+| `CHR-DIV-13` | **Rudra** | रुद्र | Shiva Operational Ansha | **Chief Adjudicator of Dissolution** — Sole active ansha of Shiva; enforces quarantine at Seal 7. |
+| `CHR-DIV-14` | **The Indra-Upādhi** | इंद्र-उपाधी | Golden Throne of Swarga | **Presiding Sovereign of Swarga & Grand Aegis** — Bearer of the Vajra, commanding 33 Koti celestials and Setu defense forces. |
+| `CHR-CEN-00` | **Central Emperor** | सम्राट | The Grey Basalt Throne | **Emperor of Central City (The Central Emperor)** — Sovereign monarch of Central City; exercises indirect financial and gateway hegemony over the Astral Shards without direct administrative command; position is mortal and contestable by duel, coup, or succession. |
 
 ---
 
 ## PART 9: NOTABLE REINCARNATED SOULS & OTHERWORLDERS (10 Characters)
 
-| ID | Locked Name | Clan / Family Name | Gen / Age | Rank | Role, Proper Title & Key Trait |
+| Canonical ID | Locked Name | Devanagari | Clan / Origin | Rank | Work / Role (Function & Duty) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `CHR-ALN-01` | **Marcus** | Ward Family | M / 48 | C-Rank | Grand Chronicler of the Adventurer Guild — Publishes *Vanguard Bounty Scrolls*. |
-| `CHR-ALN-02` | **Beatrice** | Rosso Dynasty | F / 54 | C-Rank | High Arbitrator of the Core-Exchange — Appraisal Eye & Oath-Lock banker. |
-| `CHR-ALN-03` | **Wolfgang** | Adler Workshop | M / 61 | B-Rank | Master of Runic Ballistas & Siege-Bows — Crafts crystal-charged heavy crossbows. |
-| `CHR-ALN-04` | **Lucian** | House Valois | M / 42 | C-Rank | Master of Prismatic Sun-Wards — Works in Amaravati; sells anti-Devil lanterns. |
-| `CHR-ALN-05` | **Renzo** | Vance Family | M / 39 | B-Rank | Shadow-Broker of Pit #13 — *The Kite*. Alistair's brother; runs smuggling anchor. |
-| `CHR-ALN-06` | **Neel** | Mumbai (Earth) | M / 19 | D/C-Rank | **Primary Glitch-Drifter (Season 1 Star)** — *The Pulse-Reader*. Bonded w/ Sheru. |
-| `CHR-ALN-07` | **Kael** | House Noctis | M / 20 | C/B-Rank | Escaped Summoned Striker — *The Rift-Walker*. Swap-Clap; contracted w/ Devil Nila. |
-| `CHR-ALN-08` | **Jin** | Tempest Clan | M / 21 | C/B-Rank | Reincarnated Martial Brawler — *The Gale-Fist*. Vacuum Palm & 108-Point Marma. |
-| `CHR-ALN-09` | **Elena** | Rostova Family | F / 19 | C-Rank | Reincarnated Crossbow Sniper — *The Rune-Hawk*. Adler's pupil; Wind-Curve shots. |
-| `CHR-ALN-10` | **Soren** | Lindqvist Clan | M / 28 | B-Rank | Reincarnated Sea-Monster Hunter — *The Mist-Corsair*. Glacial Shark partner. |
+| `CHR-ALN-01` | **Marcus** | — | Ward Family | C-Rank | **Guild Chronicler** — Reincarnated publisher of the Vanguard Bounty Scrolls & public arena ladders. |
+| `CHR-ALN-02` | **Donna Beatrice Vanezza** | — | Vanezza Dynasty | C-Rank | **Senior Comptroller** — Private Bank Head of the Core-Exchange Bank; introduced promissory notes & loans. |
+| `CHR-ALN-03` | **Wolfgang** | — | Adler Workshop | B-Rank | **Runic Ballista Artificer** — Reincarnated siege engineer crafting repeating runic ballistas in Agni-Kund. |
+| `CHR-ALN-04` | **Lucian** | — | House Valois | C-Rank | **Prism Scholar** — Optical ward master in Amaravati selling anti-Devil resonance lanterns to guilds. |
+| `CHR-ALN-05` | **Renzo** | — | Vance Family | B-Rank | **Underground Freight Broker** — Alistair's brother; manages illicit freight through Pit #13's Shadow Anchor. |
+| `CHR-ALN-06` | **Neel** | नील | Mumbai (Earth Glitch) | D/C-Rank | **Primary Glitch-Drifter** — Season 1 protagonist; bonded with Sheru; climbs the Proving Games circuit. |
+| `CHR-ALN-07` | **Kael** | — | House Noctis | B-Rank | **Rift Striker** — Escaped summoned fighter contracted with Noble Devil Nila. |
+| `CHR-ALN-08` | **Jin** | — | Tempest Clan | B-Rank | **Martial Arts Brawler** — Reincarnated martial artist wielding vacuum palms and 108-point marma strikes. |
+| `CHR-ALN-09` | **Elena** | — | Rostova Family | C-Rank | **Crossbow Marksman** — Reincarnated sharpshooter and pupil of Wolfgang Adler in the Asura Shard. |
+| `CHR-ALN-10` | **Soren** | — | Lindqvist Clan | B-Rank | **Sea-Monster Hunter** — Reincarnated maritime scout at Sea Citadel; bonded with a glacial shark. |

@@ -43,7 +43,7 @@
 - Understands thermodynamics, torque, fulcrums, material stress, resonance frequencies, and electrical conductance at an instinctual level.
 
 ### 2.3 The Magnetic Irreverence (Harem & Noble Dynamic)
-- Flirtatious, dangerously charming, quick with double-entendres, and utterly unfazed by powerful, beautiful, or terrifying women (whether Beatrice Rosso of the Central Reserve Bank, elven huntresses, or fierce asura gladiators).
+- Flirtatious, dangerously charming, quick with double-entendres, and utterly unfazed by powerful, beautiful, or terrifying women (whether Donna Beatrice Vanezza of the Central Reserve Bank, elven huntresses, or fierce asura gladiators).
 - Treats high-born nobles and arrogant shard kings not with timid reverence, but with easy, playful irreverence—a trait that disarms and intrigues them in a rigid feudal society where mortals cower.
 
 ### 2.4 Deep Emotional Core & Loyalty to Equals

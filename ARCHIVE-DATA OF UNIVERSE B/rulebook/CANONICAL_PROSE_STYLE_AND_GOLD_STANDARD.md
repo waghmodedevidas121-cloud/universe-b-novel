@@ -99,7 +99,7 @@ flowchart TD
   * **Chitragupta Archive** $\rightarrow$ **The Sieve Registry / Cosmic Ledger**
   * **Rikta** $\rightarrow$ **Blank / Unindexed / Null** *(e.g., `[STATUS: UNINDEXED / BLANK]`)*
   * **Indra-Upadhi** $\rightarrow$ **The Sovereign / The Gold Chair**
-  * **Manu-Upadhi** $\rightarrow$ **The Iron Sovereign / The Central King**
+  * **Central Emperor (सम्राट)** $\rightarrow$ **The Central King / Grey Basalt Throne**
 * **उच्च स्तरीय प्रकटीकरण:** जेव्हा Neel चा दर्जा Grade 5 वरून वर चढेल, तेव्हाच उच्च इनक्विझिटर्स आणि ऋषींकडून मूळ **Deva-Vani (संस्कृत)** नावे समोर येतील.
 
 ### नियम ३: ROMAN SCRIPT FOR EVERYDAY ENGLISH WORDS

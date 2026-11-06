@@ -52,11 +52,38 @@ The Supreme Trinity—Brahmā, Viṣṇu, and Śiva—are 100% authentic, omnipo
 
 ---
 
-### III. The Singularity Apex and the Eternal Four
+### III. The Singularity Apex & The Four Tiers of Reality
 
-At the highest dimensional point of Universe B—the Singularity Apex—lies the Kṣīra Sāgara, the Ocean of Milk.
+At the highest dimensional point of Universe B—the Singularity Apex—lies the **Kṣīra Sāgara**, the Ocean of Milk.
 
-It is not an ocean of salt and water, nor does it possess a sandy shore, a harbor, or a single wooden ship. It is a blinding, living singularity of pure spiritual energy (Caitanya) and primordial Amṛta. Any mortal flesh or steel vessel that touches its core dissolves instantly into pure light. Here, Garbhodakaśāyī Viṣṇu reclines upon Ananta-Śeṣa, the infinite serpentine foundation of reality, and from this fountainhead flows the vital life-force (Prāṇa) that animates every soul in the four tiers of existence.
+It is not an ocean of salt and water, nor does it possess a sandy shore, a harbor, or a single wooden ship. It is a blinding, living singularity of pure spiritual energy (Caitanya) and primordial Amṛta. Any mortal flesh or steel vessel that touches its core dissolves instantly into pure light. Here, Garbhodakaśāyī Viṣṇu reclines upon Ananta-Śeṣa, the infinite serpentine foundation of reality, and from this fountainhead flows the vital life-force (Prāṇa) that animates every soul across the four tiers of cosmic reality:
+
+```
+┌────────────────────────────────────────────────────────────────────────────┐
+│                    THE FOUR TIERS OF COSMIC REALITY                        │
+├────────────────────────────────────────────────────────────────────────────┤
+│ • TIER 1: PARAMA-DHĀMA (THE SINGULARITY APEX & DIVINE HUB)                │
+│   Kṣīra Sāgara, Ananta (System Bedrock), Yama (Judge of Circulation),      │
+│   Vidhātā (Fate Weaver), Chitragupta (Grand Scribe), Prajāpati, Nārada,    │
+│   and Rudra (Śiva's Containment Wrath). Weaponless, read-only administration.│
+│                                                                            │
+│ • TIER 2: SWARGA & THE GREAT SETU (COSMIC BUFFER ZONE)                     │
+│   Enclosed within the 360° Spherical Grand Aegis. Governed by the rotating  │
+│   Indra-Upādhi (CHR-DIV-14 / Golden Throne of Heaven) commanding 33 Koti   │
+│   celestials and the elite Pan-Astral Setu Standing Army under Setu         │
+│   Commander Vajraketu.                                                     │
+│                                                                            │
+│ • TIER 3: THE ASTRAL REALM (THE FIVE DECENTRALIZED PLANETARY SHARDS)        │
+│   The mortal reality: Deva, Asura, Beast, Human, and Central City Shards.   │
+│   Decentralized Tensura-style sovereign nations, each ruled by its own King.│
+│   Central City is governed by the Central Emperor on the Grey Basalt        │
+│   Throne, wielding immense indirect economic leverage (Gateways, Currency). │
+│                                                                            │
+│ • TIER 4: THE CORRUPTED ABYSS / PATALA (THE 30% QUARANTINE ZONE)            │
+│   The subterranean horror realm sealed beneath the Grand Aegis, housing    │
+│   unindexed Pretas (Devils), mutated beasts, and the Seven Cosmic Seals.   │
+└────────────────────────────────────────────────────────────────────────────┘
+```
 
 Because the Supreme Trinity vowed never to micro-manage the daily affairs of the world, they established The Eternal Four within the weaponless sanctuary of the High Council Rotunda (Tier 1):
 
@@ -89,7 +116,7 @@ Annihilation was impossible. Containment was the only salvation.
 
 Through millions of sacrifices, the first six Horrors were driven into subterranean tectonic vaults and bound beneath Six Cosmic Seals.
 
-The Seventh Horror—the Primordial Void—was too vast for stone to hold. In an act of eternal penance, the immortal Emperor Shrutayudha offered his own body as the living lock. Dragging the entity into the deepest volcanic pit of the Dead Chasm, Shrutayudha was bound to a meteoric iron pillar in divine chains, his eyes sealed with molten lead, watched forever by The Stone-Eyed Crow and the unblinking gaze of Rudra.
+The Seventh Horror—the Primordial Void—was too vast for stone to hold. In an act of eternal penance, the immortal Emperor Shrutayudh offered his own body as the living lock. Dragging the entity into the deepest volcanic pit of the Dead Chasm, Shrutayudh was bound to a meteoric iron pillar in divine chains, his eyes sealed with molten lead, watched forever by The Stone-Eyed Crow and the unblinking gaze of Rudra.
 
 To quarantine the poisoned southern continent, the engineers of the Great Setu (Tier 2 Buffer Zone) erected The Grand Aegis—an emergency 360-degree spherical containment barrier (Cosmic Energy Sphere) around the abyssal rift.
 
@@ -221,11 +248,11 @@ At the highest apex of existence, the Kṣīra Sāgara shines in eternal, untouc
 
 Yet down in the lower tiers, the mortal world is straining against its own chains.
 
-In Hastinapur, the dawn temple bells call millions of students and cultivators to morning prāṇāyāma, where a bowl of hot dal and two coarse bhakris costs two copper mashas. In the Obsidian Chasm, Ulka ("The Red Hammer") rallies mine-guild fighters seeking fair distribution of runic ores. In Central City, Investigator Devayani ("The Concord Hound") signs midnight warrants against rogue shadow anchor cartels.
+In Hastinapur, the dawn temple bells call millions of students and cultivators to morning prāṇāyāma, where a bowl of hot dal and two coarse bhakris costs two copper mashas. In the Obsidian Chasm, Ulka (Mine-Workers' Union Leader) rallies mine-guild fighters seeking fair distribution of runic ores. In Central City, Devayani (Concord Audit Investigator) signs midnight warrants against rogue shadow anchor cartels.
 
 And it is there—in the subterranean foundations of the mortal shards—that the fabric of space is being recklessly strained.
 
-Every time underworld cartels force a pre-Era Rotary Shadow Anchor to spin against ancient tectonic dials, the dimensional boundary between the shards frays a little further. In the deep mantle, the basalt pressure valves of Seal 1 (The Thermal Venom) are thinning from centuries of excavation. Along the misty ramparts of the Grand Aegis, Marshal-General Vajraketu watches the 432 Hz golden barrier flicker as Paundraka, the Counterfeit God, gathers his legion of Corrupted Fiends in the dark.
+Every time underworld cartels force a pre-Era Rotary Shadow Anchor to spin against ancient tectonic dials, the dimensional boundary between the shards frays a little further. In the deep mantle, the basalt pressure valves of Seal 1 (The Thermal Venom) are thinning from centuries of excavation. Along the misty ramparts of the Grand Aegis, Setu Commander Vajraketu watches the 432 Hz golden barrier flicker as Paundrak, the Counterfeit God, gathers his legion of Corrupted Fiends in the dark.
 
 And where the outer mortal membrane of the five shards has been worn paper-thin by illegal spatial shearing and forbidden blood-wards, microscopic rifts have begun to bleed into the surrounding multiverse—occasionally dragging unindexed, Blank Slate souls straight into the mud and iron of the lower world, bypassing Yama’s courts entirely.
 

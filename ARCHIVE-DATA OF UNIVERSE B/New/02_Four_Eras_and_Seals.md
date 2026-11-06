@@ -1,6 +1,6 @@
 # 02. Cosmic History, The Four Eras & The Seven Void Seals
 **File:** `D:\Web Novel\New\02_Four_Eras_and_Seals.md`  
-**Tags:** `#history #four-eras #primordial-genesis #void-cataclysm #the-great-partition #ashen-eclipse #steam-aether-age #seven-void-seals #shrutayudha #canon-lock`  
+**Tags:** `#history #four-eras #primordial-genesis #void-cataclysm #the-great-partition #ashen-eclipse #runic-steel-age #seven-void-seals #shrutayudha #canon-lock`  
 **Status:** [CANON LOCK] Official Historical Timeline & Macro-Chronology of Universe B (October 2026)  
 **Authority:** Universe B ची अधिकृत, शब्दन्-शब्द कॅनॉनिकल हिस्टरी. Merges, refines, and expands `World/33`, `World/02`, `World/29`, and `World/35`.
 
@@ -71,10 +71,10 @@ Central City मध्ये शांतता करार · महासत�
 - **The Immortal Nature of the Horrors:** या काळ्या अस्तित्वांना नष्ट करणे अशक्य होते, कारण त्यांची पाळेमुळे विश्वाच्या मूळ भूगर्भीय रचनेशी घट्ट जोडली गेली होती. त्यांना पूर्ण मारल्यास संपूर्ण विश्वच कोसळले असते.
 - **The Sealing Campaign:** अतोनात त्याग करून महाआघाडीने सहा काळ्या अस्तित्वांना जमिनीखाली प्रचंड टेक्टोनिक सील (*Maha-Bandhas*) लावून कायमचे बंदिस्त केले.
 
-### 2.3 The Seventh Void Seal & Shrutayudha's Eternal Penance
+### 2.3 The Seventh Void Seal & Shrutayudh's Eternal Penance
 - **सातवे काळे अस्तित्व (Mahā-Tamas)** इतके प्रचंड आणि अनियंत्रित होते की कोणताही जिवंत लोक त्याचे गुरुत्वाकर्षण पेलू शकत नव्हता.
-- अमर योद्धा राजा **Shrutayudha** याने स्वतःचे सर्वस्व अर्पण केले. त्या भयानक अस्तित्वाला दक्षिणेकडील सर्वात खोल ज्वालामुखीच्या गर्तेत (**The Dead Chasm (Seal 7 Pit / Niraya-Kshetra)**) खेचून नेण्यात आले.
-- Shrutayudha ला उल्कापिंडाच्या थंड पोलादी खांबाला दैवी साखळ्यांनी बांधण्यात आले, डोळ्यांवर शिसाचे सील लावले गेले, आणि तो त्याचा पाषाणी कावळा **Kagabhushundi, The Stone-Eyed Crow (The Stone-Eyed Raven)** याच्यासह सातव्या सीलचा अमर रक्षक बनला.
+- अमर योद्धा राजा **Shrutayudh** याने स्वतःचे सर्वस्व अर्पण केले. त्या भयानक अस्तित्वाला दक्षिणेकडील सर्वात खोल ज्वालामुखीच्या गर्तेत (**The Dead Chasm (Seal 7 Pit / Niraya-Kshetra)**) खेचून नेण्यात आले.
+- Shrutayudh ला उल्कापिंडाच्या थंड पोलादी खांबाला दैवी साखळ्यांनी बांधण्यात आले, डोळ्यांवर शिसाचे सील लावले गेले, आणि तो त्याचा पाषाणी कावळा **Kagabhushundi, The Stone-Eyed Crow (The Stone-Eyed Raven)** याच्यासह सातव्या सीलचा अमर रक्षक बनला.
 
 ### 2.4 Construction of The Grand Aegis (महा-चैतन्य प्राकार — Spherical Cosmic Energy Sphere)
 - दक्षिणेकडील विषारी धूळ आणि किरणोत्सर्ग रोखण्यासाठी **The Grand Aegis** चे ३६०° गोलाकार ऊर्जा-कवच (Cosmic Energy Sphere) उभारले गेले. ही कोणतीही सपाट भिंत नसून संपूर्ण क्षेत्राला चहूबाजूंनी वेढणारा एक अभेद्य ऊर्जा-गोल (Spherical Containment Field) आहे, ज्यामुळे मैलांचे मोजमाप लागू होत नाही:
@@ -210,7 +210,7 @@ Universe B ची संस्कृती व जीवनचक्र दो�
   - हे संपूर्ण विश्वात केवळ **५% अल्पसंख्यक** आहेत, परंतु त्यांनी आपापल्या ज्ञानाने संपूर्ण जग व्यापले आहे.
 - **Five Fractured Ideological Factions (विभक्त विचारसरणी — Tensura Otherworlders मॉडेल):**
   1. *Human Shard (The Alien Borough / The Alien Enclave — ~३%):* हस्तिनापूर आणि समुद्र-पत्तनममध्ये यांची स्वतंत्र दगडी दुमजली वसाहत आहे. कडक कायदा, ग्रिड रस्ते, भूमिगत गटारे (Sanitation), कॅफे-संस्कृती, आणि आधुनिक अकादमिक ग्रंथालये चालवली आहेत (Hinata शिस्तबद्ध सुधारक मॉडेल).
-  2. *Central City (The Financial Oligarchs — ~१.२%):* आकाश-कोश मध्यवर्ती बँकेत बसून दुहेरी-नोंद वही (Double-Entry Bookkeeping), शेअर्स आणि प्रॉमिसरी नोट्सद्वारे संपूर्ण विश्वाला कर्जाच्या जाळ्यात अडकवणारे सावकार (Rosso Family मॉडेल).
+  2. *Central City (The Financial Oligarchs — ~१.२%):* आकाश-कोश मध्यवर्ती बँकेत बसून दुहेरी-नोंद वही (Double-Entry Bookkeeping), शेअर्स आणि प्रॉमिसरी नोट्सद्वारे संपूर्ण विश्वाला कर्जाच्या जाळ्यात अडकवणारे सावकार (Vanezza Dynasty मॉडेल).
   3. *Asura Shard (The Metallurgical Runic Architects — ~०.५%):* पाताळ फाउंड्रीजमध्ये बसून असुरांना उच्च धातुशास्त्र, अस्त्र-साचे आणि चिलखती मिश्रधातू डिझाइन करून देणारे शस्त्र-वैज्ञानिक (Gadra मॉडेल).
   4. *Deva Shard (The Cynical Immortals — ~०.२%):* देवांना उच्च-ऑप्टिक्स आणि स्फटिक प्रिझम्स शिकवून बदल्यात ४०० वर्षांचे सौर-अमृत लाटणारे स्वार्थी कुलीन.
   5. *Rust Haven / Outlaws (The Shadow Syndicates — ~०.१%):* बेकायदेशीर चक्र-लंगर चालवणारे आणि बंदी घातलेल्या फ्रिक्वेन्सी डिस्क्सची तस्करी करणारे भूमिगत टोळीप्रमुख (Yuuki मॉडेल).
@@ -220,7 +220,7 @@ Universe B ची संस्कृती व जीवनचक्र दो�
 पोकळीमुळे आणि The Central च्या तटस्थतेमुळे थेट लष्करी आक्रमण अशक्य झाल्याने महासत्तांमध्ये **Five-Point Codependency Cold War** सुरू आहे:
 - **Human Shard (अन्न-भांडार):** विश्वाचे धान्य, कापूस आणि समुद्र-व्यापार सांभाळते; असुरी पोलादाशिवाय असुरक्षित.
 - **Asura Shard (अवजड धातू व रनिक चिलखत):** वज्र-पोलाद आणि अस्त्र-कवचे बनवते; मानवी अन्नाशिवाय एका महिन्यात भुकेने मरेल.
-- **Deva Shard (सौर स्फटिक व ऑप्टिक्स):** विमाने व बॅरियर्ससाठी स्फटिक पुरवते; Solar Decay रोखण्यासाठी पशूंच्या शीत-औषधांवर अवलंबून.
+- **Deva Shard (सौर स्फटिक व ऑप्टिक्स):** संरक्षक ऊर्जा-कवचे (Aether Barriers), स्फटिक-दीप आणि प्रकाशीय उपकरणांसाठी स्फटिक पुरवते; Solar Decay रोखण्यासाठी पशूंच्या शीत-औषधांवर अवलंबून.
 - **Beast Shard (आदिम अरण्य व डिंक):** औषधी वनस्पती, संजीवनी बुरशी आणि टायटन अंबर पुरवते; मानवी मिठासाठी विनिमय करते.
 - **Central City (चलन व क्लिअरिंग):** एथर-रुपया, महा-द्वार जकात आणि आंतर-लोकीय करारांचे नियंत्रण.
 
@@ -255,7 +255,7 @@ Tier 4 बंद असताना या वीरांना गुण क�
 ### 4.8 The Modern Clandestine Rotary Anchor Cold War: Crown Law vs. Anchor Cartels
 *(वर्तमान लंगर-युद्ध: साम्राज्य, सेंट्रल बँक आणि भूमिगत व्यापारी सिंडिकेट्स)*
 - टेक्टॉनिक चक्र-लंगरांना (Rotary Anchors) ट्यूनिंग डिस्क्स आणि ध्वनी-अनुनादाने फिरवून भूमिगत आयामी मालवाहतूक चालवली जाते.
-- **७०% मालवाहतूक आता भूमिगत लंगरांद्वारे होते**, ज्यामुळे सेंट्रल बँकेचा 'एथर-रुपया' टॅरिफ आणि सीमाशुल्क निष्प्रभ ठरत आहेत.
+- **८५–९०% अधिकृत अवजड व्यापार** महा-तीर्थ द्वारांमधून (Monolithic Stone Gateways) व श्वापद-तांड्यांतून (Beast Caravans) सेंट्रल बँकेचा १७% जकात भरून चालतो; तर **१०–१५%** अति-मूल्यवान व धोकादायक काळा बाजार (काळी मुद्रा, सुप्त लंगर-चकत्या, अनोंदणीकृत आत्मे) भूमिगत चक्र-लंगरांद्वारे (Rotary Shadow Anchors) चालवला जातो, ज्यामुळे सेंट्रल बँक व संसदेची झोप उडाली आहे.
 - याला उत्तर म्हणून सेंट्रल बँकेने इन्स्पेक्टर देवयानीच्या हाताखाली **Concord Special Audit Bureau** स्थापन करून गोदामांवर सशस्त्र छापे टाकणे सुरू केले आहे.
 - आता संपूर्ण विश्व एका **त्रिकोणी शीतयुद्धात (Triangular Cold War)** अडकले आहे: **सरकारी राजसत्ता व मध्यवर्ती बँक (अधिकृत मक्तेदारी) विरुद्ध खाजगी व्यापारी महाजन व श्रमिक संघटना (भूमिगत चक्र-लंगर जाळे) विरुद्ध सामान्य नश्वर जनता (कष्टकरी सर्वहारा वर्ग).**
 
@@ -274,11 +274,11 @@ Tier 4 बंद असताना या वीरांना गुण क�
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Seal 1** | Deep Crust Subterranean Mantle (Tier 4 Deep Floor) | **The Thermal Venom (Seal 1 / Kāla-Kūṭa)** | Chthonic Basalt Pressure Valves; supervised by Muchukunda & stone-sentinels. | Guild of Seekers (Thermal Audit) | दक्षिणेकडील भूगर्भाची लाव्हा राख होणे; संपूर्ण खंडाचा पाया कोसळणे. |
 | **Seal 2** | Sunken Trench of Netherholme | **The Light-Devourer (Seal 2 / Vṛtra-Chāyā)** | Automated Aetheric Light-Siphons; guarded by Obsidian Basalt Runes. | Assembly of Sages (Forensic Audit) | दक्षिणेकडील आकाशातून कायमचा सूर्यप्रकाश नष्ट होणे; कायमचे अंधत्व. |
-| **Seal 3** | Abyssal Iron Mines (The Obsidian Chasm Border) | **The Rust Colossus (Seal 3 / Lauha-Bhakshaka)** | The Eisen Clan Wardens; four-inch cold-iron anchors. | Order of Palaks (Border Inspectorate) | हवेतून गंज पसरून 1,000 मैलांतील सर्व धातू, रनिक शस्त्रे, चिलखते आणि विमाने गंजून नष्ट होणे. |
+| **Seal 3** | Abyssal Iron Mines (The Obsidian Chasm Border) | **The Rust Colossus (Seal 3 / Lauha-Bhakshaka)** | The Eisen Clan Wardens; four-inch cold-iron anchors. | Order of Palaks (Border Inspectorate) | हवेतून गंज पसरून 1,000 मैलांतील सर्व धातू, रनिक शस्त्रे, चिलखते आणि पाषाण-यंत्रे गंजून नष्ट होणे. |
 | **Seal 4** | Western Acid Marsh Basin | **The Cold Void-Flame (Seal 4 / Shūnya-Jvala)** | Chemical Neutralization Reservoirs; high-density lime vaults. | Order of Palaks & Naga Toxicologists | उणे तापमानाची रासायनिक आग पसरून हवेतील ऑक्सिजन गोठणे. |
 | **Seal 5** | Northern Permafrost Rifts | **The Frost Sovereign (Seal 5 / Hima-Rākshasa)** | Glacial Cryo-Runic Pressure Chambers; monitored by Setu Sapper Corps. | Tri-Departmental Field Taskforce | संपूर्ण उष्णता नष्ट होऊन जिवंत आत्म्यांना काचेसारखे गोठवून टाकणे. |
-| **Seal 6** | Central Abyssal Rift Floor | **The Soul-Vacuum (Seal 6 / Prāṇa-Shūnyatā)** | High Council Dharmic Barrier Seals; four-layer starlight lattice. | Chief Sage (Annual Constitutional Audit) | मोठी भेग पडून लाखो जिवंत माणसांचे आत्मे थेट अवकाशात खेचले जाणे. |
-| **Seal 7** | Abyssal Dead Zone (The Dead Chasm (Seal 7 Pit / Niraya-Kshetra)) | **The Seventh Darkness / Primordial Void (Seal 7 / Mahā-Tamas)** | **Shrutayudha (The Chained King) & Kagabhushundi, The Stone-Eyed Crow (Stone-Eyed Raven)**; meteoric cold-iron chains. | **Rudra's Department (Direct Trinity Mandate)** | वैश्विक महाप्रलय (*Maha-Samhara*); Universe B चे सर्व नियम आणि अस्तित्व कायमचे विसर्जित होणे. |
+| **Seal 6** | Central City Subterranean Floor (Beneath Central Coliseum Rotary Shadow Anchor) | **The Soul-Vacuum (Seal 6 / Prāṇa-Shūnyatā)** | High Council Dharmic Barrier Seals; four-layer starlight lattice. | Chief Sage (Annual Constitutional Audit) | मोठी भेग पडून लाखो जिवंत माणसांचे आत्मे थेट अवकाशात खेचले जाणे. |
+| **Seal 7** | Abyssal Dead Zone (The Dead Chasm (Seal 7 Pit / Niraya-Kshetra)) | **The Seventh Darkness / Primordial Void (Seal 7 / Mahā-Tamas)** | **Shrutayudh (The Chained King) & Kagabhushundi, The Stone-Eyed Crow (Stone-Eyed Raven)**; meteoric cold-iron chains. | **Rudra's Department (Direct Trinity Mandate)** | वैश्विक महाप्रलय (*Maha-Samhara*); Universe B चे सर्व नियम आणि अस्तित्व कायमचे विसर्जित होणे. |
 
 ---
 
@@ -288,7 +288,7 @@ Universe B मधील सर्व १०० पात्रांचे ऐ�
 
 | ऐतिहासिक युग (Era) | पात्रांचे वर्ग | प्रमुख पात्रे (Key Characters) | जगण्याचा / अस्तित्वाचा आधार (Lifespan Anchor) |
 |---|---|---|---|
-| **Era 1: Satya Yuga (सत्य युग — Primordial Genesis)** | Cosmic Trinity & Constitutional Offices | ब्रह्मा, विष्णू, शिव, अनंत, यम, विधाता, चित्रगुप्त (`CHR-DIV-01` ते `CHR-DIV-13`) | **नित्य व शाश्वत (Eternal / Constitutional Upadhis):** भौतिक जैविक शरीर नाही; वैश्विक कार्यप्रणालीचे मूळ कायदे. |
+| **Era 1: Satya Yuga (सत्य युग — Primordial Genesis)** | Cosmic Trinity & Constitutional Offices | ब्रह्मा, विष्णू, शिव, अनंत, यम, विधाता, चित्रगुप्त, इंद्र-उपाधी (`CHR-DIV-01` ते `CHR-DIV-14`) | **नित्य व शाश्वत (Eternal / Constitutional Upadhis):** भौतिक जैविक शरीर नाही; वैश्विक कार्यप्रणालीचे मूळ कायदे. |
 | **Era 2: Tretā Yuga (त्रेता युग — Void Cataclysm)** | सील-संरक्षक व प्राचीन अथांग अस्तित्वे | राजा श्रुतायुध (`CHR-ABY-07`), मुचुकुंद (`CHR-ASU-14`), किंकर (`CHR-ASU-15`), ७ महा-अंधारी अस्तित्वे (काल-कूट, महा-तमस) | **दैवी वरदान किंवा कॉस्मिक शाप:**<br>• श्रुतायुध: अमरत्वाचा शाप + उल्कापिंडी लोखंडी साखळ्यांनी ७ व्या सीलला बांधलेला.<br>• मुचुकुंद: मॅग्मा-व्हॉल्टमधील दैवी निद्रा-वरदान.<br>• किंकर: आदिम रुनिक बेसॉल्ट कंस्ट्रक्ट. |
-| **Era 3: Dvāpara Yuga (द्वापर युग — The Great Partition)** | प्राचीन स्थापत्यकार, राजमाता, उच्च ऋषी व आदिम डेव्हिल्स | मयासुर (`CHR-ASU-01`, वय ४१०), राजमाता मंदोर (`CHR-ASU-02`, वय ३८०), महर्षि शमीक (`CHR-HUM-13`, वय ३१०+), आचार्य आस्तीक (`CHR-HUM-14`, वय २२०+), पौंड्रक (`CHR-ABY-01`), शतघाती (`CHR-ABY-02`), त्रिशिरा (`CHR-ABY-03`) | **असुरी जैविक घनता व तपोबल:**<br>• असुरांचे सल्फर-मेटाबॉलिझम व हाडांची घनता ३५०-५०० वर्षे आयुष्य देते.<br>• शमीक ऋषींचे केवल-कुंभक श्वास-नियंत्रण पेशींची झीज मंदावते.<br>• पौंड्रक/शतघाती: विषारी Aether द्वारे जड जीवाश्म शरीराचे उत्परिवर्तन. |
-| **Era 4: Kali Yuga (वर्तमान कलि युग — Present Era of Shards & Dimensional Commerce)** | आधुनिक नश्वर, कनिष्ठ साधक, अधिकारी, लढाऊ योद्धे, पुनर्जनित आत्मे व उच्च अस्त्र-साधक (८५%+ Roster) | महाराज परीक्षित (वय ५२), राणी माद्रवती (वय ४६), सेनापती उग्रसेन, अधीक्षक व्हॅन्स, कोरालीन, रोहिणी, उल्का (श्रमिक संघटक), एरिका, तपासनीस देवयानी, चंद्र-लेखा, मैत्रेयी, न्यायाधीश सुदेव, सुलभा, मार्क्स वॉर्ड, डोना बीट्राइस रोसो, वुल्फगँग ॲडलर, लुशियन, काइट रेन्झो, लिओ ब्रॅडली (`CHR-ALN-01` ते `CHR-ALN-06`) | **४-स्तरीय लोकसंख्या रचना (True 4-Bracket Magic Pyramid: प्रत्येकाकडे जादू आहे!):**<br>• Bracket 1 (०–६०% जनता): सुप्त तत्त्व-शक्ती (Dormant Quirks) व प्राथमिक Tier-0 Ember Magic (७५–९५ वर्षे आयुष्य).<br>• Bracket 2 (६०–८०% जनता): D-Rank सक्रिय जादू वापरकर्ते (नगर-रक्षक, लढाऊ सैनिक, रनिक लोहार).<br>• Bracket 3 (८०–९०% जनता): C-Rank पुनर्जनित आत्मे (Reincarnated Souls) व बहु-तत्त्व लढाऊ.<br>• Bracket 4 (९०–१००% टॉप १०% वर्ग): B, A व S-Rank उच्च एलिट्स, १५०–२५०+ वर्षे आयुष्य, काया-कोश उत्क्रांती व वन्य श्वापदांशी सहजीवी बंध (Soul-Bond). |
+| **Era 3: Dvāpara Yuga (द्वापर युग — The Great Partition)** | प्राचीन स्थापत्यकार, राजमाता, उच्च ऋषी व आदिम डेव्हिल्स | मयासुर (`CHR-ASU-01`, वय ४१०), राजमाता मंदोर (`CHR-ASU-02`, वय ३८०), महर्षि शमीक (`CHR-HUM-13`, वय ३१०+), आचार्य आस्तीक (`CHR-HUM-14`, वय २२०+), पौंड्रक (`CHR-ABY-01`), शतघाती (`CHR-ABY-02`), त्रिशिर (`CHR-ABY-03`) | **असुरी जैविक घनता व तपोबल:**<br>• असुरांचे सल्फर-मेटाबॉलिझम व हाडांची घनता ३५०-५०० वर्षे आयुष्य देते.<br>• शमीक ऋषींचे केवल-कुंभक श्वास-नियंत्रण पेशींची झीज मंदावते.<br>• पौंड्रक/शतघाती: विषारी Aether द्वारे जड जीवाश्म शरीराचे उत्परिवर्तन. |
+| **Era 4: Kali Yuga (वर्तमान कलि युग — Present Era of Shards & Dimensional Commerce)** | आधुनिक नश्वर, कनिष्ठ साधक, अधिकारी, लढाऊ योद्धे, पुनर्जनित आत्मे व उच्च अस्त्र-साधक (८५%+ Roster) | महाराज परीक्षित (वय ५२), राणी माद्रवती (वय ४६), सेनापती उग्रसेन, अधीक्षक व्हॅन्स, कोरालीन, रोहिणी, उल्का (श्रमिक संघटक), एरिका, तपासनीस देवयानी, चंद्र-लेखा, मैत्रेयी, न्यायाधीश सुदेव, सुलभा, मार्क्स वॉर्ड, डोना बीट्रिस व्हेनेझ्झा, वुल्फगँग ॲडलर, लुशियन, काइट रेन्झो, नील (`CHR-ALN-01` ते `CHR-ALN-06`) | **४-स्तरीय लोकसंख्या रचना (True 4-Bracket Magic Pyramid: प्रत्येकाकडे जादू आहे!):**<br>• Bracket 1 (०–६०% जनता): सुप्त तत्त्व-शक्ती (Dormant Quirks) व प्राथमिक Tier-0 Ember Magic (७५–९५ वर्षे आयुष्य).<br>• Bracket 2 (६०–८०% जनता): D-Rank सक्रिय जादू वापरकर्ते (नगर-रक्षक, लढाऊ सैनिक, रनिक लोहार).<br>• Bracket 3 (८०–९०% जनता): C-Rank पुनर्जनित आत्मे (Reincarnated Souls) व बहु-तत्त्व लढाऊ.<br>• Bracket 4 (९०–१००% टॉप १०% वर्ग): B, A व S-Rank उच्च एलिट्स, १५०–२५०+ वर्षे आयुष्य, काया-कोश उत्क्रांती व वन्य श्वापदांशी सहजीवी बंध (Soul-Bond). |
