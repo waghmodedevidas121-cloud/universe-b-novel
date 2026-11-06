@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brahmand — The 3-Headed Cosmos: 3D Macro-Architecture (4 Tiers & 70:30 Fracture Ratio)</title>
+  <style>
+    :root {
+      --bg-void: #030509;
+      --panel-bg: rgba(10, 15, 26, 0.92);
+      --gold: #f4c430;
+      --gold-border: rgba(244, 196, 48, 0.5);
+      --cyan: #00e5ff;
+      --crimson: #ff3366;
+      --emerald: #00e676;
+      --purple: #b388ff;
+      --solar: #ff9900;
+      --lunar: #b3e5fc;
+      --abyss: #9c27b0;
+      --setu: #e0f7fa;
+      --text-light: #eef2f9;
+      --text-dim: #9aa6bc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--bg-void);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text-light);
+    }
+    #canvas-container {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    #labels-container {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    /* Top HUD Header */
+    .top-hud {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      right: 14px;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 10px 18px;
+      box-shadow: 0 8px 36px rgba(0,0,0,0.85);
+    }
+    .brand-title h1 {
+      font-size: 1.12rem;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    .brand-title p {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+    .brand-title .ratio-pill {
+      display: inline-block;
+      background: rgba(244, 196, 48, 0.15);
+      border: 1px solid var(--gold);
+      color: #ffe082;
+      padding: 1px 7px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+    .camera-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      max-width: 900px;
+    }
+    .cam-btn {
+      background: rgba(20, 28, 48, 0.9);
+      color: var(--text-light);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cam-btn:hover, .cam-btn.active {
+      background: var(--gold);
+      color: #000;
+      box-shadow: 0 0 14px rgba(244, 196, 48, 0.7);
+      border-color: var(--gold);
+    }
+    .cam-btn.zenith-btn { border-color: #ff9900; color: #ffd54f; }
+    .cam-btn.tier4-btn { border-color: #ba68c8; color: #ea80fc; background: rgba(50, 15, 60, 0.85); }
+    .cam-btn.tier2-btn { border-color: #80deea; color: #e0f7fa; background: rgba(10, 45, 55, 0.85); }
+
+    /* Left Layer Filter Panel */
+    .left-filters {
+      position: absolute;
+      top: 92px;
+      left: 14px;
+      z-index: 10;
+      background: var(--panel-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 10px;
+      padding: 12px 14px;
+      width: 275px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+    }
+    .left-filters h4 {
+      color: var(--gold);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      padding-bottom: 4px;
+    }
+    .filter-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.76rem;
+      margin-bottom: 7px;
+      cursor: pointer;
+    }
+    .filter-item input { cursor: pointer; }
+    .legend-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .orbit-control-box {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .orbit-btn {
+      width: 100%;
+      background: rgba(255, 153, 0, 0.2);
+      color: #ffd54f;
+      border: 1px solid #ff9900;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .orbit-btn:hover { background: #ff9900; color: #000; }
+
+    /* Right Lore Inspector Panel */
+    .right-inspector {
+      position: absolute;
+      top: 92px;
+      right: 14px;
+      z-index: 10;
+      background: var(--panel-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 16px;
+      width: 360px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      box-shadow: 0 8px 36px rgba(0,0,0,0.9);
+    }
+    .right-inspector h3 {
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+    .tag-badges {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .t-badge {
+      font-size: 0.68rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .b-cat { background: #1e293b; color: #38bdf8; border: 1px solid #0284c7; }
+    .b-shard { background: rgba(244, 196, 48, 0.15); color: var(--gold); border: 1px solid var(--gold-border); }
+    .b-tier4 { background: rgba(156, 39, 176, 0.25); color: #e1bee7; border: 1px solid #ab47bc; }
+    .b-tier2 { background: rgba(0, 229, 255, 0.2); color: #80deea; border: 1px solid #26c6da; }
+    .lore-block {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+    .lore-block strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    /* Bottom Controls Hint */
+    .bottom-hint {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      background: rgba(10, 14, 23, 0.88);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    /* 3D Floating Name Tags */
+    .map-tag {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      pointer-events: auto;
+      cursor: pointer;
+      white-space: nowrap;
+      padding: 3px 7px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      background: rgba(8, 12, 22, 0.9);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.85);
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .map-tag:hover {
+      transform: translate(-50%, -110%) scale(1.15);
+      z-index: 999 !important;
+      background: #1e293b;
+    }
+    .map-tag::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px 4px 0;
+      border-style: solid;
+      border-color: rgba(255,255,255,0.4) transparent;
+    }
+    .tag-celestial {
+      border: 1.5px solid #ff9900;
+      color: #fff3c4;
+      font-size: 12px;
+      background: rgba(45, 22, 0, 0.95);
+      box-shadow: 0 0 16px rgba(255, 153, 0, 0.75);
+    }
+    .tag-capital {
+      border-color: #f4c430;
+      color: #ffe066;
+      font-size: 12px;
+      background: rgba(25, 20, 5, 0.92);
+      box-shadow: 0 0 12px rgba(244, 196, 48, 0.45);
+    }
+    .tag-tier4 {
+      border: 1.5px solid #ab47bc;
+      color: #f3e5f5;
+      font-size: 12px;
+      background: rgba(42, 10, 52, 0.95);
+      box-shadow: 0 0 14px rgba(171, 71, 188, 0.7);
+    }
+    .tag-seal7 {
+      border: 2px solid #ff1744;
+      color: #ffcdd2;
+      font-size: 12.5px;
+      background: rgba(50, 0, 10, 0.96);
+      box-shadow: 0 0 18px rgba(255, 23, 68, 0.85);
+    }
+    .tag-tier2 {
+      border: 1.5px solid #00e5ff;
+      color: #e0f7fa;
+      font-size: 12px;
+      background: rgba(0, 35, 55, 0.95);
+      box-shadow: 0 0 14px rgba(0, 229, 255, 0.6);
+    }
+    .tag-aegis {
+      border: 1.5px solid #f4c430;
+      color: #fff9c4;
+      font-size: 11.5px;
+      background: rgba(45, 38, 5, 0.92);
+      box-shadow: 0 0 12px rgba(244, 196, 48, 0.6);
+    }
+    .tag-town { border-color: #00e676; color: #69f0ae; }
+    .tag-village { border-color: #81c784; color: #c8e6c9; font-size: 10px; opacity: 0.9; }
+    .tag-structure { border-color: #00e5ff; color: #84ffff; }
+    .tag-gateway {
+      border: 1.5px solid #ffffff;
+      background: rgba(0, 110, 150, 0.92);
+      color: #ffffff;
+      box-shadow: 0 0 12px #00e5ff;
+    }
+    .tag-anchor {
+      border-color: #ff3366;
+      color: #ff80ab;
+      background: rgba(45, 5, 20, 0.92);
+      box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+    }
+    .tag-danger { border-color: #b388ff; color: #ea80fc; background: rgba(30, 10, 45, 0.9); }
+  </style>
+</head>
+<body>
+
+  <div id="canvas-container"></div>
+  <div id="labels-container"></div>
+
+  <!-- Top Navigation HUD -->
+  <div class="top-hud">
+    <div class="brand-title">
+      <h1>BRAHMAND — 3D COSMOLOGY ARCHITECTURE</h1>
+      <p>
+        4 Tiers: Tier 2 (Setu Buffer) ──► 432 Hz Aegis ──► Tier 4 (30% Corrupted Abyss) ──► Tier 3 (70% Living Wheel)
+        <span class="ratio-pill">70% Living : 30% Severed</span>
+      </p>
+    </div>
+    <div class="camera-btns">
+      <button class="cam-btn active" onclick="flyToShard('fullCosmos', this)">🌌 Full Cosmos (All 4 Tiers)</button>
+      <button class="cam-btn" onclick="flyToShard('overview', this)">🪐 70% Living Astral Wheel</button>
+      <button class="cam-btn zenith-btn" onclick="flyToShard('zenith', this)">☀️🌙 Upper Zenith (Sun &amp; Moon)</button>
+      <button class="cam-btn tier4-btn" onclick="flyToShard('corruptedAbyss', this)">💀 30% Corrupted Abyss (Tier 4)</button>
+      <button class="cam-btn tier4-btn" onclick="flyToShard('netherholme', this)">👑 Netherholme (Bali)</button>
+      <button class="cam-btn tier4-btn" onclick="flyToShard('dreadhold', this)">⚡ Dread-Hold (Paundraka)</button>
+      <button class="cam-btn tier4-btn" onclick="flyToShard('ashfortress', this)">🏰 Ash Fortress (Exiles)</button>
+      <button class="cam-btn tier4-btn" onclick="flyToShard('deadchasm', this)">⛓️ Seal 7 Dead Chasm</button>
+      <button class="cam-btn tier2-btn" onclick="flyToShard('setuBridge', this)">⚔️ Tier 2: Antariksha-Setu</button>
+      <button class="cam-btn" onclick="flyToShard('central', this)">Central City</button>
+      <button class="cam-btn" onclick="flyToShard('human', this)">Human Shard</button>
+      <button class="cam-btn" onclick="flyToShard('asura', this)">Asura Shard</button>
+      <button class="cam-btn" onclick="flyToShard('deva', this)">Deva Shard</button>
+      <button class="cam-btn" onclick="flyToShard('beast', this)">Beast Shard</button>
+    </div>
+  </div>
+
+  <!-- Left Filter Checkboxes -->
+  <div class="left-filters">
+    <h4>Cosmic Layer Filters</h4>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('tier2', this.checked)"><span class="legend-dot" style="background:#00e5ff;box-shadow:0 0 8px #00e5ff"></span> Tier 2: Antariksha-Setu (3)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('aegis', this.checked)"><span class="legend-dot" style="background:#f4c430;box-shadow:0 0 8px #f4c430"></span> 432 Hz Grand Aegis Dome (2)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('tier4', this.checked)"><span class="legend-dot" style="background:#ab47bc;box-shadow:0 0 8px #ab47bc"></span> Tier 4: 30% Corrupted Abyss (5)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('seal7', this.checked)"><span class="legend-dot" style="background:#ff1744;box-shadow:0 0 8px #ff1744"></span> Seal 7: Dead Chasm &amp; Crow (2)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('celestial', this.checked)"><span class="legend-dot" style="background:#ff9900;box-shadow:0 0 8px #ff9900"></span> Zenith Sun, Moon &amp; Stars (3)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('capital', this.checked)"><span class="legend-dot" style="background:#f4c430;box-shadow:0 0 6px #f4c430"></span> Tier 3: Capital Cities (8)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('gateway', this.checked)"><span class="legend-dot" style="background:#fff;border:2px solid #00e5ff"></span> Stone Gateways (5)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('structure', this.checked)"><span class="legend-dot" style="background:#00e5ff"></span> Guilds &amp; Academies (7)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('town', this.checked)"><span class="legend-dot" style="background:#00e676"></span> Major Towns (7)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('village', this.checked)"><span class="legend-dot" style="background:#81c784"></span> Frontier Villages (5)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('anchor', this.checked)"><span class="legend-dot" style="background:#ff3366;box-shadow:0 0 6px #ff3366"></span> Shadow Anchors (6)</label>
+    <label class="filter-item"><input type="checkbox" checked onchange="toggleTagCategory('danger', this.checked)"><span class="legend-dot" style="background:#b388ff"></span> Cursed Forests &amp; Seals (5)</label>
+
+    <div class="orbit-control-box">
+      <button class="orbit-btn" id="orbit-toggle-btn" onclick="toggleSunMoonOrbit()">⏸ Pause Sun &amp; Moon Orbit</button>
+    </div>
+  </div>
+
+  <!-- Right Lore Inspector -->
+  <div class="right-inspector">
+    <h3 id="ins-title">The 4-Tier Cosmic Architecture</h3>
+    <div class="tag-badges">
+      <span class="t-badge b-cat" id="ins-cat">Cosmic Ratio</span>
+      <span class="t-badge b-shard" id="ins-shard">70% Living : 30% Severed</span>
+    </div>
+    <div class="lore-block">
+      <strong>3D Coordinates &amp; Cosmological Tier</strong>
+      <p id="ins-geo">Brahmand spans vertically and horizontally: Tier 2 (Y = +380) ──► Grand Aegis Dome (Y = +245) ──► Tier 4 Abyss (Y = +245) ──► Upper Zenith (Y = +120) ──► Tier 3 Wheel (Y = 0).</p>
+    </div>
+    <div class="lore-block">
+      <strong>Physical &amp; Atmospheric Laws</strong>
+      <p id="ins-desc">During the Era 2 Cataclysm, 30% of the primordial realm broke off into Śūnya-Garta (Tier 4). The 432 Hz Grand Aegis acts as a cosmic ozone layer: it blocks void rot from Tier 3, and lets gentle Pranic warmth inward so Bali's subterranean kingdom survives in perpetual twilight without direct sun incineration.</p>
+    </div>
+    <div class="lore-block">
+      <strong>Tactical &amp; Narrative Impact</strong>
+      <p id="ins-impact">Tier 2 Setu Army guards the Grand Aegis from above with Divyāstras. Tier 3's 5 Shards are safely sealed off from the abyss, illuminated directly by Surya and Chandra in the Upper Zenith.</p>
+    </div>
+  </div>
+
+  <div class="bottom-hint">
+    Left-Click + Drag: Rotate 3D Camera | Right-Click + Drag: Pan | Scroll: Zoom | Click Any Marker / Tag: Inspect Lore
+  </div>
+
+  <!-- Three.js & OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <script>
+    // =========================================================================
+    // 1. SCENE, CAMERA & RENDERER SETUP
+    // =========================================================================
+    const container = document.getElementById('canvas-container');
+    const labelsContainer = document.getElementById('labels-container');
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x030509);
+    scene.fog = new THREE.FogExp2(0x030509, 0.00065);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 4500);
+    camera.position.set(0, 480, 720);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    container.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.06;
+    controls.maxDistance = 1800;
+    controls.minDistance = 30;
+
+    // Ambient Lighting
+    const ambientLight = new THREE.AmbientLight(0x5a7090, 0.7);
+    scene.add(ambientLight);
+
+    // Dynamic Sunlight (Lord Surya in Upper Zenith at Y = 120)
+    const sunLight = new THREE.DirectionalLight(0xffdf80, 1.5);
+    sunLight.position.set(175, 120, 0);
+    sunLight.castShadow = true;
+    scene.add(sunLight);
+
+    // Dynamic Moonlight (Lord Chandra in Upper Zenith at Y = 120)
+    const moonLight = new THREE.PointLight(0x80d8ff, 0.9, 600);
+    moonLight.position.set(-175, 120, 0);
+    scene.add(moonLight);
+
+    // Tier 4 Abyssal Violet Light (Quarantined Core)
+    const abyssCoreLight = new THREE.PointLight(0x9c27b0, 1.2, 350);
+    abyssCoreLight.position.set(0, 245, 0);
+    scene.add(abyssCoreLight);
+
+    // Tier 2 Setu Bastion White-Cyan Light
+    const setuLight = new THREE.PointLight(0x80deea, 1.1, 400);
+    setuLight.position.set(0, 390, 0);
+    scene.add(setuLight);
+
+    // =========================================================================
+    // 2. PROCEDURAL HIGH-RES TEXTURE GENERATOR
+    // =========================================================================
+    function createBiomeTexture(type) {
+      const canvas = document.createElement('canvas');
+      canvas.width = 512;
+      canvas.height = 512;
+      const ctx = canvas.getContext('2d');
+
+      if (type === 'central') {
+        const grad = ctx.createRadialGradient(256, 256, 10, 256, 256, 256);
+        grad.addColorStop(0, '#fff9e6');
+        grad.addColorStop(0.5, '#d8e0ec');
+        grad.addColorStop(1, '#7a8a9e');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        ctx.strokeStyle = 'rgba(244, 196, 48, 0.65)';
+        ctx.lineWidth = 4;
+        for (let r = 45; r <= 230; r += 45) {
+          ctx.beginPath(); ctx.arc(256, 256, r, 0, Math.PI * 2); ctx.stroke();
+        }
+      } else if (type === 'human') {
+        const grad = ctx.createLinearGradient(0, 0, 512, 512);
+        grad.addColorStop(0, '#dcedc8');
+        grad.addColorStop(0.35, '#2e5c23');
+        grad.addColorStop(0.72, '#6d5c28');
+        grad.addColorStop(0.88, '#103b66');
+        grad.addColorStop(1, '#07223d');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        for (let i = 0; i < 4000; i++) {
+          ctx.fillStyle = i % 2 === 0 ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)';
+          ctx.fillRect(Math.random() * 512, Math.random() * 512, 4, 4);
+        }
+        ctx.strokeStyle = '#00d8ff';
+        ctx.lineWidth = 9;
+        ctx.beginPath(); ctx.moveTo(80, 60); ctx.quadraticCurveTo(250, 230, 470, 390); ctx.stroke();
+      } else if (type === 'asura') {
+        ctx.fillStyle = '#1c1215';
+        ctx.fillRect(0, 0, 512, 512);
+        for (let i = 0; i < 5000; i++) {
+          ctx.fillStyle = i % 3 === 0 ? '#2e1c21' : '#110a0c';
+          ctx.fillRect(Math.random() * 512, Math.random() * 512, 6, 6);
+        }
+        ctx.strokeStyle = '#ff5500';
+        ctx.shadowColor = '#ff2200';
+        ctx.shadowBlur = 12;
+        ctx.lineWidth = 6;
+        for (let j = 0; j < 7; j++) {
+          ctx.beginPath();
+          ctx.moveTo(Math.random() * 100, Math.random() * 512);
+          ctx.bezierCurveTo(200, Math.random() * 512, 320, Math.random() * 512, 490, Math.random() * 512);
+          ctx.stroke();
+        }
+      } else if (type === 'deva') {
+        const grad = ctx.createRadialGradient(256, 256, 20, 256, 256, 260);
+        grad.addColorStop(0, '#fffdf2');
+        grad.addColorStop(0.55, '#a7d8ff');
+        grad.addColorStop(1, '#3b6998');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        ctx.strokeStyle = 'rgba(255, 215, 0, 0.5)';
+        ctx.lineWidth = 3;
+        for (let a = 0; a < Math.PI * 2; a += Math.PI / 8) {
+          ctx.beginPath(); ctx.moveTo(256, 256); ctx.lineTo(256 + Math.cos(a) * 250, 256 + Math.sin(a) * 250); ctx.stroke();
+        }
+      } else if (type === 'beast') {
+        const grad = ctx.createLinearGradient(0, 0, 512, 512);
+        grad.addColorStop(0, '#5a1919');
+        grad.addColorStop(0.25, '#0c3b20');
+        grad.addColorStop(0.7, '#194d29');
+        grad.addColorStop(1, '#1c1836');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 512);
+        for (let i = 0; i < 6000; i++) {
+          ctx.fillStyle = i % 5 === 0 ? 'rgba(0, 230, 118, 0.14)' : 'rgba(5, 25, 12, 0.25)';
+          ctx.beginPath();
+          ctx.arc(Math.random() * 512, Math.random() * 512, Math.random() * 6 + 1, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      } else if (type === 'corrupted') {
+        // TIER 4: 30% FRACTURED VOID BIOME TEXTURE
+        ctx.fillStyle = '#0a0510';
+        ctx.fillRect(0, 0, 512, 512);
+        // Ash plains & jagged charcoal
+        for (let i = 0; i < 7000; i++) {
+          ctx.fillStyle = i % 4 === 0 ? 'rgba(156, 39, 176, 0.15)' : (i % 2 === 0 ? '#1f132b' : '#0d0714');
+          ctx.fillRect(Math.random() * 512, Math.random() * 512, 5, 5);
+        }
+        // Glowing void fissures (purple/magenta)
+        ctx.strokeStyle = '#d500f9';
+        ctx.shadowColor = '#aa00ff';
+        ctx.shadowBlur = 10;
+        ctx.lineWidth = 5;
+        for (let k = 0; k < 6; k++) {
+          ctx.beginPath();
+          ctx.moveTo(Math.random() * 512, Math.random() * 100);
+          ctx.bezierCurveTo(256, 256, Math.random() * 400, Math.random() * 400, Math.random() * 512, 500);
+          ctx.stroke();
+        }
+        // Pale golden Aegis light reflection on eastern quadrant (Netherholme)
+        const aegisGlow = ctx.createRadialGradient(400, 380, 10, 400, 380, 140);
+        aegisGlow.addColorStop(0, 'rgba(244, 196, 48, 0.35)');
+        aegisGlow.addColorStop(1, 'rgba(244, 196, 48, 0)');
+        ctx.fillStyle = aegisGlow;
+        ctx.fillRect(0, 0, 512, 512);
+      } else if (type === 'setu') {
+        // TIER 2: WHITE MARBLE & VAJRA RUNES
+        ctx.fillStyle = '#e8f5e9';
+        ctx.fillRect(0, 0, 512, 512);
+        ctx.strokeStyle = '#00e5ff';
+        ctx.lineWidth = 4;
+        for (let x = 32; x < 512; x += 64) {
+          ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, 512); ctx.stroke();
+        }
+      }
+
+      const tex = new THREE.CanvasTexture(canvas);
+      tex.wrapS = THREE.ClampToEdgeWrapping;
+      tex.wrapT = THREE.ClampToEdgeWrapping;
+      return tex;
+    }
+
+    // =========================================================================
+    // 3. INFINITE VOID STARFIELD & WHEEL BOUNDARY
+    // =========================================================================
+    const starGeo = new THREE.BufferGeometry();
+    const starCount = 4500;
+    const starPos = new Float32Array(starCount * 3);
+    for (let i = 0; i < starCount * 3; i += 3) {
+      starPos[i] = (Math.random() - 0.5) * 2600;
+      starPos[i + 1] = (Math.random() - 0.5) * 1600;
+      starPos[i + 2] = (Math.random() - 0.5) * 2600;
+    }
+    starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+    const starMat = new THREE.PointsMaterial({ color: 0xaaccff, size: 1.8, transparent: true, opacity: 0.75 });
+    scene.add(new THREE.Points(starGeo, starMat));
+
+    // Outer Astral Wheel Rim (Y = 0)
+    const wheelRingGeo = new THREE.RingGeometry(248, 252, 128);
+    wheelRingGeo.rotateX(-Math.PI / 2);
+    const wheelRingMat = new THREE.MeshBasicMaterial({ color: 0x00e5ff, side: THREE.DoubleSide, transparent: true, opacity: 0.35 });
+    scene.add(new THREE.Mesh(wheelRingGeo, wheelRingMat));
+
+    // 4 Radial Sector Divider Lines in the Void
+    for (let angle of [Math.PI / 4, (3 * Math.PI) / 4, (5 * Math.PI) / 4, (7 * Math.PI) / 4]) {
+      const pts = [
+        new THREE.Vector3(Math.cos(angle) * 52, 0, Math.sin(angle) * 52),
+        new THREE.Vector3(Math.cos(angle) * 250, 0, Math.sin(angle) * 250)
+      ];
+      const lineGeo = new THREE.BufferGeometry().setFromPoints(pts);
+      const lineMat = new THREE.LineBasicMaterial({ color: 0xff3355, transparent: true, opacity: 0.45 });
+      scene.add(new THREE.Line(lineGeo, lineMat));
+    }
+
+    // =========================================================================
+    // 4. UPPER ZENITH ORBIT (अंतराळ शिखर at Y = +120) & 27 NAKSHATRAS
+    // =========================================================================
+    const ZENITH_Y = 120;
+    const ZENITH_RADIUS = 175;
+
+    // Golden Solar-Lunar Orbit Track
+    const zenithTrackGeo = new THREE.RingGeometry(ZENITH_RADIUS - 1.2, ZENITH_RADIUS + 1.2, 128);
+    zenithTrackGeo.rotateX(-Math.PI / 2);
+    const zenithTrackMat = new THREE.MeshBasicMaterial({ color: 0xffd54f, side: THREE.DoubleSide, transparent: true, opacity: 0.55 });
+    const zenithTrackMesh = new THREE.Mesh(zenithTrackGeo, zenithTrackMat);
+    zenithTrackMesh.position.y = ZENITH_Y;
+    scene.add(zenithTrackMesh);
+
+    // 27 Nakshatra Star Nodes along the Upper Zenith Ring
+    const nakshatraGroup = new THREE.Group();
+    nakshatraGroup.position.y = ZENITH_Y;
+    for (let n = 0; n < 27; n++) {
+      const ang = (n / 27) * Math.PI * 2;
+      const nDot = new THREE.Mesh(new THREE.SphereGeometry(1.3, 8, 8), new THREE.MeshBasicMaterial({ color: 0xb3e5fc }));
+      nDot.position.set(Math.cos(ang) * (ZENITH_RADIUS + 12), 0, Math.sin(ang) * (ZENITH_RADIUS + 12));
+      nakshatraGroup.add(nDot);
+    }
+    scene.add(nakshatraGroup);
+
+    // ☀️ LORD SURYA 3D Celestial Group
+    const suryaGroup = new THREE.Group();
+    const sunCore = new THREE.Mesh(new THREE.SphereGeometry(11, 32, 32), new THREE.MeshBasicMaterial({ color: 0xfff3a1 }));
+    const sunCorona = new THREE.Mesh(new THREE.SphereGeometry(16, 32, 32), new THREE.MeshBasicMaterial({ color: 0xff8800, transparent: true, opacity: 0.42 }));
+    const sunChariotRing = new THREE.Mesh(new THREE.TorusGeometry(20, 0.9, 12, 48), new THREE.MeshBasicMaterial({ color: 0xffd700 }));
+    sunChariotRing.rotation.x = Math.PI / 2;
+    const sunRayCone = new THREE.Mesh(
+      new THREE.ConeGeometry(55, ZENITH_Y, 32, 1, true),
+      new THREE.MeshBasicMaterial({ color: 0xffcc33, transparent: true, opacity: 0.08, side: THREE.DoubleSide })
+    );
+    sunRayCone.position.y = -ZENITH_Y / 2;
+    suryaGroup.add(sunCore, sunCorona, sunChariotRing, sunRayCone);
+    suryaGroup.position.set(ZENITH_RADIUS, ZENITH_Y, 0);
+    scene.add(suryaGroup);
+
+    // 🌙 LORD CHANDRA 3D Celestial Group
+    const chandraGroup = new THREE.Group();
+    const moonCore = new THREE.Mesh(new THREE.SphereGeometry(8.5, 32, 32), new THREE.MeshBasicMaterial({ color: 0xe1f5fe }));
+    const moonAura = new THREE.Mesh(new THREE.SphereGeometry(13, 32, 32), new THREE.MeshBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.32 }));
+    const moonChariotRing = new THREE.Mesh(new THREE.TorusGeometry(16, 0.7, 12, 48), new THREE.MeshBasicMaterial({ color: 0x80d8ff }));
+    moonChariotRing.rotation.x = Math.PI / 2;
+    const moonRayCone = new THREE.Mesh(
+      new THREE.ConeGeometry(45, ZENITH_Y, 32, 1, true),
+      new THREE.MeshBasicMaterial({ color: 0x80d8ff, transparent: true, opacity: 0.06, side: THREE.DoubleSide })
+    );
+    moonRayCone.position.y = -ZENITH_Y / 2;
+    chandraGroup.add(moonCore, moonAura, moonChariotRing, moonRayCone);
+    chandraGroup.position.set(-ZENITH_RADIUS, ZENITH_Y, 0);
+    scene.add(chandraGroup);
+
+    // =========================================================================
+    // 5. TIER 4: THE 30% SEVERED VOID ABYSS (ŚŪNYA-GARTA at Y = +245)
+    // =========================================================================
+    // Lore Fact: The Corrupted Realm was 30% of the primordial pre-fracture continent!
+    // Dimensioned to match that exact 30% landmass scale (R_X = 96, R_Z = 74).
+    const corruptedGroup = new THREE.Group();
+    corruptedGroup.position.set(0, 245, 0);
+
+    const abyssGeo = new THREE.CylinderGeometry(96, 88, 12, 64, 24);
+    const abyssPos = abyssGeo.attributes.position;
+    for (let i = 0; i < abyssPos.count; i++) {
+      const vx = abyssPos.getX(i);
+      const vy = abyssPos.getY(i);
+      const vz = abyssPos.getZ(i);
+      const scaledZ = vz * (74 / 96);
+      abyssPos.setZ(i, scaledZ);
+      const dist = Math.sqrt(vx * vx + scaledZ * scaledZ) / 96;
+
+      if (vy > 0) {
+        // Jagged topography: deep center sinkhole (Dead Chasm), high jagged crags
+        if (dist < 0.22) {
+          abyssPos.setY(i, vy - 9); // Sunken Dead Chasm
+        } else if (vx < -25 && scaledZ < 10) {
+          abyssPos.setY(i, vy + 7); // Ash Fortress plateau
+        } else if (vx > 20 && scaledZ < -15) {
+          abyssPos.setY(i, vy + 9 * Math.sin(vx * 0.2)); // Dread-Hold crags
+        } else {
+          abyssPos.setY(i, vy + Math.sin(vx * 0.15) * 3);
+        }
+      } else {
+        // Deep hanging abyssal roots
+        abyssPos.setY(i, -32 * (1 - dist * 0.5) - Math.abs(Math.sin(vx * 0.3) * 6));
+      }
+    }
+    abyssGeo.computeVertexNormals();
+
+    const abyssMat = new THREE.MeshStandardMaterial({
+      map: createBiomeTexture('corrupted'),
+      roughness: 0.85,
+      metalness: 0.2
+    });
+    const abyssMesh = new THREE.Mesh(abyssGeo, abyssMat);
+    abyssMesh.castShadow = true;
+    abyssMesh.receiveShadow = true;
+    corruptedGroup.add(abyssMesh);
+
+    // --- Sub-Structures of Tier 4 ---
+    // 1. Netherholme (Bila-Svarga / Emperor Bali) - Opulent Obsidian & Cyan Fungi Towers
+    const netherTowers = new THREE.Group();
+    for (let t = 0; t < 5; t++) {
+      const twr = new THREE.Mesh(
+        new THREE.CylinderGeometry(1.8, 3.2, 16 + t * 3, 8),
+        new THREE.MeshStandardMaterial({ color: 0x1a233a, emissive: 0x00e5ff, emissiveIntensity: 0.5 })
+      );
+      twr.position.set(38 + (t % 3) * 9, 14 + t, 28 + Math.floor(t / 3) * 12);
+      netherTowers.add(twr);
+    }
+    corruptedGroup.add(netherTowers);
+
+    // 2. Dread-Hold (Paundraka Vasudeva) - Jagged Basalt Spire & Crimson Pit
+    const dreadSpire = new THREE.Mesh(
+      new THREE.ConeGeometry(5, 26, 6),
+      new THREE.MeshStandardMaterial({ color: 0x210c28, emissive: 0xd500f9, emissiveIntensity: 0.7 })
+    );
+    dreadSpire.position.set(35, 20, -32);
+    corruptedGroup.add(dreadSpire);
+
+    // 3. The Ash Fortress (Hamsa & Dimbhaka) - Massive Square Iron-Walled Bastion
+    const ashFort = new THREE.Mesh(
+      new THREE.BoxGeometry(22, 14, 22),
+      new THREE.MeshStandardMaterial({ color: 0x424242, roughness: 0.7, metalness: 0.6 })
+    );
+    ashFort.position.set(-45, 14, -8);
+    corruptedGroup.add(ashFort);
+
+    // 4. Seal 7: The Dead Chasm (Sunken Pit, Mahā-Tamas Orb, Chains & Stone-Eyed Crow Perch)
+    const deadChasmGroup = new THREE.Group();
+    // Sunken Void Singularity Orb (Mahā-Tamas & Emperor Śrutāyudha)
+    const voidOrb = new THREE.Mesh(
+      new THREE.SphereGeometry(5.5, 24, 24),
+      new THREE.MeshBasicMaterial({ color: 0x05000a })
+    );
+    voidOrb.position.set(0, -1, 0);
+    // Pulsing Red/Purple Miasma Corona
+    const miasmaCorona = new THREE.Mesh(
+      new THREE.SphereGeometry(8, 24, 24),
+      new THREE.MeshBasicMaterial({ color: 0xd50000, transparent: true, opacity: 0.35 })
+    );
+    miasmaCorona.position.set(0, -1, 0);
+    // 4 Runic Anchor Chains locking the Horror
+    for (let c = 0; c < 4; c++) {
+      const a = (c * Math.PI) / 2;
+      const chainPts = [
+        new THREE.Vector3(0, -1, 0),
+        new THREE.Vector3(Math.cos(a) * 22, 6, Math.sin(a) * 22)
+      ];
+      const chainGeo = new THREE.BufferGeometry().setFromPoints(chainPts);
+      const chainLine = new THREE.Line(chainGeo, new THREE.LineBasicMaterial({ color: 0xff1744, linewidth: 2 }));
+      deadChasmGroup.add(chainLine);
+    }
+    // High Jagged Perch of the Stone-Eyed Crow (पाषाण-नेत्री कावळा)
+    const crowPerch = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.8, 2.2, 22, 6),
+      new THREE.MeshStandardMaterial({ color: 0x263238, roughness: 0.9 })
+    );
+    crowPerch.position.set(-10, 11, -10);
+    const crowEye = new THREE.Mesh(
+      new THREE.SphereGeometry(0.9, 8, 8),
+      new THREE.MeshBasicMaterial({ color: 0xb0bec5 }) // Stone-gray blind eye
+    );
+    crowEye.position.set(-10, 22.5, -10);
+    deadChasmGroup.add(voidOrb, miasmaCorona, crowPerch, crowEye);
+    corruptedGroup.add(deadChasmGroup);
+
+    // Floating Fractured Void Asteroids orbiting Tier 4
+    for (let f = 0; f < 10; f++) {
+      const fa = (f / 10) * Math.PI * 2;
+      const fAst = new THREE.Mesh(
+        new THREE.DodecahedronGeometry(3 + Math.random() * 2.5),
+        new THREE.MeshStandardMaterial({ color: 0x150b1f, roughness: 0.9 })
+      );
+      fAst.position.set(Math.cos(fa) * (115 + Math.random() * 20), (Math.random() - 0.5) * 25, Math.sin(fa) * (95 + Math.random() * 20));
+      corruptedGroup.add(fAst);
+    }
+    scene.add(corruptedGroup);
+
+    // =========================================================================
+    // 6. THE 360° SPHERICAL GRAND AEGIS (432 Hz OZONE MEMBRANE at Y = +245)
+    // =========================================================================
+    // Lore Fact: Encloses Tier 4 in a 360-degree spiritual ozone membrane radiating 432 Hz.
+    const aegisSphereGeo = new THREE.SphereGeometry(135, 48, 32);
+    aegisSphereGeo.scale(1.15, 0.72, 1.05);
+    const aegisSphereMat = new THREE.MeshStandardMaterial({
+      color: 0xf4c430,
+      emissive: 0xff9900,
+      emissiveIntensity: 0.25,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.18
+    });
+    const aegisDomeMesh = new THREE.Mesh(aegisSphereGeo, aegisSphereMat);
+    aegisDomeMesh.position.set(0, 245, 0);
+    scene.add(aegisDomeMesh);
+
+    // 432 Hz Equatorial Cyan Harmonic Wave Ring
+    const aegisRingGeo = new THREE.RingGeometry(145, 149, 96);
+    aegisRingGeo.rotateX(-Math.PI / 2);
+    const aegisRingMat = new THREE.MeshBasicMaterial({ color: 0x00e5ff, side: THREE.DoubleSide, transparent: true, opacity: 0.45 });
+    const aegisRingMesh = new THREE.Mesh(aegisRingGeo, aegisRingMat);
+    aegisRingMesh.position.set(0, 245, 0);
+    scene.add(aegisRingMesh);
+
+    // =========================================================================
+    // 7. TIER 2: SWARGA & ANTARIKSHA-SETU (THE GREAT BUFFER BRIDGE at Y = +385)
+    // =========================================================================
+    // Lore Fact: 50,000-mile suspended viaduct bridge guarded by Commander Vajraketu & 100,000 army!
+    const setuGroup = new THREE.Group();
+    setuGroup.position.set(0, 385, 0);
+
+    // The Sweeping Viaduct Bridge (Spanning across cosmic space)
+    const bridgeGeo = new THREE.BoxGeometry(320, 5, 18);
+    const bridgeMat = new THREE.MeshStandardMaterial({
+      map: createBiomeTexture('setu'),
+      roughness: 0.35,
+      metalness: 0.2
+    });
+    const bridgeMesh = new THREE.Mesh(bridgeGeo, bridgeMat);
+    setuGroup.add(bridgeMesh);
+
+    // Bridge Guard Rails & Golden Pillars
+    for (let bx = -150; bx <= 150; bx += 30) {
+      const p1 = new THREE.Mesh(new THREE.CylinderGeometry(0.7, 0.7, 8, 8), new THREE.MeshStandardMaterial({ color: 0xf4c430 }));
+      p1.position.set(bx, 5.5, 8.5);
+      const p2 = p1.clone();
+      p2.position.set(bx, 5.5, -8.5);
+      setuGroup.add(p1, p2);
+    }
+
+    // Vajra Bastion HQ (Commander Vajraketu's Citadel at X = 0)
+    const bastionBase = new THREE.Mesh(new THREE.CylinderGeometry(14, 16, 12, 16), new THREE.MeshStandardMaterial({ color: 0xd8e0ec, roughness: 0.4 }));
+    bastionBase.position.set(0, 8, 0);
+    const bastionDome = new THREE.Mesh(new THREE.SphereGeometry(10, 16, 12, 0, Math.PI * 2, 0, Math.PI / 2), new THREE.MeshStandardMaterial({ color: 0xf4c430, metalness: 0.8 }));
+    bastionDome.position.set(0, 14, 0);
+    setuGroup.add(bastionBase, bastionDome);
+
+    // Pratigraha Soul Depository (Era-3 Soul Storage at X = -75)
+    const soulDepot = new THREE.Mesh(new THREE.CylinderGeometry(8, 10, 10, 12), new THREE.MeshStandardMaterial({ color: 0xb0bec5, emissive: 0x00e5ff, emissiveIntensity: 0.3 }));
+    soulDepot.position.set(-75, 7, 0);
+    setuGroup.add(soulDepot);
+
+    // Outpost 9 / Ballista Battery (Aimed down at Tier 4 at X = +75)
+    const outpost9 = new THREE.Mesh(new THREE.BoxGeometry(14, 9, 14), new THREE.MeshStandardMaterial({ color: 0x78909c }));
+    outpost9.position.set(75, 6.5, 0);
+    setuGroup.add(outpost9);
+
+    // Setu Downward Vigil Beams (Scanning Grand Aegis)
+    const vigilBeam1 = new THREE.Mesh(
+      new THREE.ConeGeometry(35, 140, 16, 1, true),
+      new THREE.MeshBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.06, side: THREE.DoubleSide })
+    );
+    vigilBeam1.position.set(0, -70, 0);
+    setuGroup.add(vigilBeam1);
+
+    scene.add(setuGroup);
+
+    // =========================================================================
+    // 8. TIER 3: THE 5 PLANETARY SHARDS (THE 70% LIVING REALM at Y = 0)
+    // =========================================================================
+    function createShardIsland(cx, cy, cz, radiusX, radiusZ, biome, heightFn) {
+      const group = new THREE.Group();
+      group.position.set(cx, cy, cz);
+
+      const topGeo = new THREE.CylinderGeometry(radiusX, radiusX * 0.92, 6, 64, 24);
+      const pos = topGeo.attributes.position;
+      for (let i = 0; i < pos.count; i++) {
+        const vx = pos.getX(i);
+        const vy = pos.getY(i);
+        const vz = pos.getZ(i);
+        const scaledZ = vz * (radiusZ / radiusX);
+        pos.setZ(i, scaledZ);
+        if (vy > 0) {
+          const elev = heightFn(vx, scaledZ);
+          pos.setY(i, vy + elev);
+        } else {
+          const dist = Math.sqrt(vx * vx + scaledZ * scaledZ) / radiusX;
+          pos.setY(i, -18 * (1 - dist * 0.65) - Math.abs(Math.sin(vx * 0.2) * 4));
+        }
+      }
+      topGeo.computeVertexNormals();
+
+      const topMat = new THREE.MeshStandardMaterial({
+        map: createBiomeTexture(biome),
+        roughness: biome === 'deva' ? 0.3 : 0.78,
+        metalness: biome === 'asura' ? 0.35 : 0.1
+      });
+      const mesh = new THREE.Mesh(topGeo, topMat);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      group.add(mesh);
+
+      const keelGeo = new THREE.ConeGeometry(radiusX * 0.28, 26, 8);
+      keelGeo.rotateX(Math.PI);
+      const keelMat = new THREE.MeshStandardMaterial({
+        color: 0x1a2436,
+        emissive: biome === 'asura' ? 0xff3300 : 0x0088aa,
+        emissiveIntensity: 0.35,
+        roughness: 0.4
+      });
+      const keel = new THREE.Mesh(keelGeo, keelMat);
+      keel.position.y = -24;
+      group.add(keel);
+
+      scene.add(group);
+      return group;
+    }
+
+    // 1. CENTRAL SHARD (Hub at 0, 0, 0)
+    const centralGroup = createShardIsland(0, 0, 0, 44, 44, 'central', (x, z) => {
+      const r = Math.sqrt(x * x + z * z);
+      return r < 14 ? 4 : 1.5;
+    });
+    const domeMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(7, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2),
+      new THREE.MeshStandardMaterial({ color: 0xf4c430, metalness: 0.7, roughness: 0.2 })
+    );
+    domeMesh.position.set(0, 6.5, 0);
+    centralGroup.add(domeMesh);
+
+    const coliseumMesh = new THREE.Mesh(
+      new THREE.TorusGeometry(6.5, 2.2, 12, 32),
+      new THREE.MeshStandardMaterial({ color: 0xd8dee9, roughness: 0.5 })
+    );
+    coliseumMesh.rotation.x = Math.PI / 2;
+    coliseumMesh.position.set(-14, 5.5, 14);
+    centralGroup.add(coliseumMesh);
+
+    // 2. HUMAN SHARD (East at +155, 0, 0)
+    const humanGroup = createShardIsland(155, 0, 0, 68, 56, 'human', (x, z) => {
+      if (z < -18) return Math.abs(Math.sin(x * 0.15) * Math.cos(z * 0.15)) * 18 + 6;
+      if (x > 25) return -1.5;
+      return Math.sin(x * 0.08) * 2 + 1.5;
+    });
+
+    // 3. ASURA SHARD (West at -155, 0, 0)
+    const asuraGroup = createShardIsland(-155, 0, 0, 66, 54, 'asura', (x, z) => {
+      const d = Math.sqrt((x + 10) * (x + 10) + (z + 5) * (z + 5));
+      if (d < 16) return d < 7 ? -2 : 15;
+      if (x > 8 && z > 5) return -6;
+      return Math.abs(Math.cos(x * 0.14) * 9) + 2;
+    });
+
+    // 4. DEVA SHARD (North at 0, +18, -155)
+    const devaGroup = createShardIsland(0, 18, -155, 62, 48, 'deva', (x, z) => {
+      const r = Math.sqrt(x * x + z * z);
+      return r < 20 ? 8 : 3;
+    });
+    const spireMesh = new THREE.Mesh(
+      new THREE.ConeGeometry(5, 22, 8),
+      new THREE.MeshStandardMaterial({ color: 0x80d8ff, emissive: 0x0088ff, emissiveIntensity: 0.4, transparent: true, opacity: 0.9 })
+    );
+    spireMesh.position.set(-8, 19, 0);
+    devaGroup.add(spireMesh);
+
+    // 5. BEAST SHARD (South at 0, 0, +155)
+    const beastGroup = createShardIsland(0, 0, 155, 68, 54, 'beast', (x, z) => {
+      if (x > 18 && z < -10) return 26 * Math.abs(Math.sin(x * 0.3));
+      return Math.sin(x * 0.12) * Math.cos(z * 0.12) * 6 + 3;
+    });
+    const trunkMesh = new THREE.Mesh(
+      new THREE.CylinderGeometry(3, 5.5, 22, 12),
+      new THREE.MeshStandardMaterial({ color: 0x4e342e })
+    );
+    trunkMesh.position.set(0, 14, 0);
+    const canopyMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(14, 16, 12),
+      new THREE.MeshStandardMaterial({ color: 0x00c853, roughness: 0.8 })
+    );
+    canopyMesh.scale.set(1.2, 0.55, 1.2);
+    canopyMesh.position.set(0, 25, 0);
+    beastGroup.add(trunkMesh, canopyMesh);
+
+    // =========================================================================
+    // 9. STONE GATEWAY ARCHES, CORRIDORS & ANCHOR TUNNELS
+    // =========================================================================
+    function createGatewayArch(x, y, z, rotY) {
+      const arch = new THREE.Mesh(
+        new THREE.TorusGeometry(5.5, 1.1, 8, 24, Math.PI),
+        new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0x00e5ff, emissiveIntensity: 0.8 })
+      );
+      arch.position.set(x, y, z);
+      arch.rotation.y = rotY;
+      scene.add(arch);
+    }
+    createGatewayArch(0, 7, 0, 0);
+    createGatewayArch(115, 11, -24, Math.PI/2);
+    createGatewayArch(-112, 9, -15, Math.PI/2);
+    createGatewayArch(0, 24, -112, 0);
+    createGatewayArch(0, 7, 112, 0);
+
+    function createCorridorCurve(p1, p2, color, isDashed, arcHeight) {
+      const mid = new THREE.Vector3().addVectors(p1, p2).multiplyScalar(0.5);
+      mid.y += arcHeight;
+      const curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
+      const pts = curve.getPoints(50);
+      const geo = new THREE.BufferGeometry().setFromPoints(pts);
+      const mat = isDashed
+        ? new THREE.LineDashedMaterial({ color: color, dashSize: 4, gapSize: 3, linewidth: 2 })
+        : new THREE.LineBasicMaterial({ color: color, linewidth: 3 });
+      const line = new THREE.Line(geo, mat);
+      if (isDashed) line.computeLineDistances();
+      scene.add(line);
+      return line;
+    }
+
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(115, 11, -24), 0x00e5ff, false, 18);
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(-112, 9, -15), 0x00e5ff, false, 18);
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(0, 24, -112), 0x00e5ff, false, 22);
+    createCorridorCurve(new THREE.Vector3(0, 8, 0), new THREE.Vector3(0, 7, 112), 0x00e5ff, false, 18);
+
+    createCorridorCurve(new THREE.Vector3(148, -6, 6), new THREE.Vector3(-140, -8, 18), 0xff3366, true, -48);
+    createCorridorCurve(new THREE.Vector3(148, -6, 6), new THREE.Vector3(35, 12, -145), 0xff3366, true, -32);
+    createCorridorCurve(new THREE.Vector3(198, -4, 18), new THREE.Vector3(18, -5, 165), 0xff3366, true, -35);
+
+    // =========================================================================
+    // 10. COMPLETE 4-TIER LOCATION PINS (54 CANONICAL NODES)
+    // =========================================================================
+    const COSMIC_LOCATIONS = [
+      // --- TIER 2: SWARGA & ANTARIKSHA-SETU ---
+      { id: 't2_1', name: '⚔️ Vajra Bastion HQ (Commander Vajraketu)', cat: 'tier2', shard: 'Tier 2: Antariksha-Setu', pos: [0, 404, 0],
+        geo: 'Tier 2 Viaduct Apex (Y = +404) | 50,000-Mile Suspended White Granite Viaduct',
+        desc: 'Supreme Headquarters of Commander Vajraketu and the 100,000 Pan-Astral Setu Army. Mounted with Divyāstra batteries pointed downward at the Grand Aegis.',
+        impact: 'Maintains 24-hour military quarantine over Tier 4; intercepts any void rot or escaped Devils attempting to breach upward.' },
+      { id: 't2_2', name: '🏛️ Pratigraha Soul Depository', cat: 'tier2', shard: 'Tier 2: Antariksha-Setu', pos: [-75, 396, 0],
+        geo: 'Western Wing of Antariksha-Setu (Y = +396)',
+        desc: 'Cosmic vault housing the unindexed residual souls from Era 3, overseen by Setu Wardens under Chitragupta’s secondary ledger authority.',
+        impact: 'Ensures dormant souls are shielded from Tier 4 void corruption until their Karmic clearance arrives.' },
+      { id: 't2_3', name: '🏹 Setu Outpost 9 & Ballista Battery', cat: 'tier2', shard: 'Tier 2: Antariksha-Setu', pos: [75, 395, 0],
+        geo: 'Eastern Wing of Antariksha-Setu (Y = +395)',
+        desc: 'Heavy artillery bastion featuring runic ballistas and Agneyāstra cannons calibrated to fire downward into Tier 4 breaches.',
+        impact: 'Frontline rapid-response watchtower guarding the eastern sector above the Grand Aegis.' },
+
+      // --- THE GRAND AEGIS (432 HZ DOME) ---
+      { id: 'ag_1', name: '🛡️ Grand Aegis 432 Hz Membrane Dome', cat: 'aegis', shard: 'Tier 4 Containment Barrier', pos: [0, 345, 0],
+        geo: '360° Spherical Resonant Shield (Y = +345 Apex) | Encloses 30% Corrupted Abyss',
+        desc: 'Atmospheric spiritual ozone membrane vibrating at 432 Hz (miniature Kṣīra-Sāgara resonance). NOT a stone wall, but an energetic frequency barrier.',
+        impact: 'Selectively filters solar heat into pale golden warmth so Emperor Bali’s realm survives in perpetual twilight without dying of hunger or burning in raw sunlight.' },
+      { id: 'ag_2', name: '⚡ Aegis Equatorial Harmonic Ring', cat: 'aegis', shard: 'Tier 4 / Tier 3 Separation Boundary', pos: [0, 245, 146],
+        geo: 'Equatorial Harmonic Perimeter (Y = +245, Radius = 146)',
+        desc: 'Pulsing cyan energy node maintaining the 432 Hz frequency balance against void rot pressure.',
+        impact: 'Alerts Setu Sentinels if dark cultists perform forbidden Type-2 Devil Summonings from below.' },
+
+      // --- TIER 4: THE 30% CORRUPTED ABYSS (ŚŪNYA-GARTA) ---
+      { id: 't4_1', name: '👑 Netherholme (Bila-Svarga / Emperor Bali)', cat: 'tier4', shard: 'Tier 4: South-East Abyss', pos: [45, 266, 32],
+        geo: 'Southeastern Terrace of Tier 4 (Y = +266) | 30% Quarantined Abyss',
+        desc: 'Opulent subterranean kingdom of Emperor Mahābali and the Noble Devils. Bathed in the soft golden twilight radiating from the Grand Aegis.',
+        impact: 'Cultivates bioluminescent crops and preserves ancient Asura craftsmanship in dignified peace; strictly rejects blood sacrifice.' },
+      { id: 't4_2', name: '💀 Dread-Hold (Hunger Devils / Paundraka)', cat: 'tier4', shard: 'Tier 4: North-East Abyss', pos: [35, 268, -32],
+        geo: 'Northeastern Jagged Crags of Tier 4 (Y = +268)',
+        desc: 'Nightmarish volcanic crags ruled by Warlord Paundraka Vāsudeva, General Shataghātī, and Trishirā. Swarming with ravenous Pretas and Void Fiends.',
+        impact: 'Constant aggressor faction seeking to tear holes in the Grand Aegis to feed on the living souls of Tier 3.' },
+      { id: 't4_3', name: '🏰 The Ash Fortress (Exile Bastion / Hamsa & Dimbhaka)', cat: 'tier4', shard: 'Tier 4: West Abyss', pos: [-45, 262, -8],
+        geo: 'Western Ash Plains of Tier 4 (Y = +262)',
+        desc: 'Heavily fortified multi-racial citadel commanded by Wardens Hamsa and Dimbhaka. Shelters exiles, outcasts, and deserters from all four mortal races.',
+        impact: 'Maintains armed neutrality between Emperor Bali and Paundraka; trades smuggled scrap metal for medicinal fungi.' },
+      { id: 't4_4', name: '⛓️ Seal 7: The Dead Chasm (Emperor Śrutāyudha & Mahā-Tamas)', cat: 'seal7', shard: 'Tier 4: Epicenter Abyss', pos: [0, 246, 0],
+        geo: 'Sunken Vortex Epicenter of Tier 4 (Y = +246)',
+        desc: 'The deepest, pitch-black chasm of the cosmos where the ancient savior Emperor Śrutāyudha lies chained for 3,000 years, tragically merged into the Seventh Cosmic Horror (Mahā-Tamas).',
+        impact: 'Held by four divine runic chains. If this seal fails, Tier 4 collapses and cosmic darkness swallows the 5 Shards.' },
+      { id: 't4_5', name: '🦅 Perch of the Stone-Eyed Crow', cat: 'seal7', shard: 'Tier 4: Dead Chasm Spire', pos: [-10, 270, -10],
+        geo: 'Jagged Granite Needle above Seal 7 (Y = +270)',
+        desc: 'The lonely, eternal perch of the blind, stone-eyed crow who silently watches the chains of Emperor Śrutāyudha.',
+        impact: 'Its single harsh croak reverberates across Tier 4 whenever the dark bonds of Mahā-Tamas experience tectonic micro-fractures.' },
+
+      // --- UPPER ZENITH (SUN, MOON & NAKSHATRAS) ---
+      { id: 'z1', name: '☀️ Lord Surya (Saptāśva-Ratha — Zenith)', cat: 'celestial', shard: 'Upper Zenith (अंतराळ शिखर)', pos: [175, ZENITH_Y, 0], isDynamicSun: true,
+        geo: 'Upper Zenith Orbit (Y = +120, Radius = 175) | Directly Above Tier 3 Living Wheel',
+        desc: 'Bhagavān Sūrya Deva riding the 7-Horse Golden Chariot (Saptāśva-Ratha). Emits life-giving Prāṇa-rays and governs the 24-hour day-night cycle across all 5 Planetary Shards.',
+        impact: 'Direct solar Tejas illuminates Tier 3, but is completely blocked from entering Tier 4 (Śūnya-Garta) by the 432 Hz Grand Aegis so subtle Preta bodies are not incinerated.' },
+      { id: 'z2', name: '🌙 Lord Chandra (Soma-Ratha — Zenith)', cat: 'celestial', shard: 'Upper Zenith (अंतराळ शिखर)', pos: [-175, ZENITH_Y, 0], isDynamicMoon: true,
+        geo: 'Upper Zenith Orbit (180° Counter-Phase to Surya) | Traverses 27 Nakṣatras',
+        desc: 'Bhagavān Chandra Deva riding the Silver Soma-Ratha through the 27 Lunar Mansions (Nakṣatras). Showers Amṛta-coolness that nourishes medicinal herbs like Sanjīvanī and Soma-lotuses.',
+        impact: 'Controls tidal rhythms of the Mortal Sea, nocturnal Prāṇa recovery, and the Muhūrta alignments of the Stone Gateways.' },
+      { id: 'z3', name: '✨ 27 Nakṣatra Star-Ring (Zenith)', cat: 'celestial', shard: 'Upper Zenith (अंतराळ शिखर)', pos: [0, ZENITH_Y, -187],
+        geo: 'Outer Rim of the Upper Zenith Orbit (Y = +120)',
+        desc: 'The 27 luminous stellar shrines (Aśvinī to Revatī) encircling the Upper Zenith above the 5 Shards.',
+        impact: 'Used by Seer Revatī in Amarāvatī to calculate auspicious Muhūrtas and track cosmic seal stability.' },
+
+      // --- TIER 3: CENTRAL SHARD (HUB) ---
+      { id: 'c1', name: 'Central City (Grand Concord)', cat: 'capital', shard: 'Central Shard', pos: [0, 14, 0],
+        geo: 'Center of the Astral Wheel (0, 0, 0) | 50,000 Sq. Miles',
+        desc: 'Neutral demilitarized white-marble metropolis governed by High Chancellor Sulabha and Grand Marshal Satyabhama.',
+        impact: 'Zero-violence diplomatic sanctuary; controls the Aether-Rupee and all legal inter-shard transit.' },
+      { id: 'c2', name: 'Five-Arch Rotunda (Hub Gate)', cat: 'gateway', shard: 'Central Shard', pos: [0, 9, -12],
+        geo: 'Northern Plaza of Central City',
+        desc: 'The central hub where all 4 outer Monolithic Stone Gateways open during the 4 daily temple-bell Muhurtas.',
+        impact: 'Collects the 17% customs tariff on all Beast-Cart caravans.' },
+      { id: 'c3', name: 'Central Coliseum (Proving Games)', cat: 'structure', shard: 'Central Shard', pos: [-14, 9, 14],
+        geo: 'Southern Arena District, Central City',
+        desc: '100,000-seat stadium with 5 shifting elemental battlegrounds. Devas watch from high marble balconies.',
+        impact: 'Hosts the 5-Tier Proving Games (D to S-Rank) and scouts champions for the Great Setu.' },
+      { id: 'c4', name: 'Pan-Astral Adventurer Guild HQ', cat: 'structure', shard: 'Central Shard', pos: [16, 9, 12],
+        geo: 'Eastern Quarter, Central City',
+        desc: 'Commanded by Guildmaster Uttanka and Clairvoyant Chandra-Lekha (Astral Mirror Hall).',
+        impact: 'Issues high-rank quests against rampaging forest beasts, cursed ruins, and rogue summoned Devils.' },
+      { id: 'c5', name: 'Sunken Aqueduct Anchor (Grade 1)', cat: 'anchor', shard: 'Central Shard', pos: [4, -10, 8],
+        geo: '200 ft beneath the Central Reserve Bank Vaults',
+        desc: 'The sole surviving Grade-1 Omnidial Shadow Anchor, secretly tapped by the Gray Pigeons syndicate.',
+        impact: 'Can dial any shard in the wheel, but triggers 5-mile tremors if overdriven.' },
+
+      // --- TIER 3: HUMAN SHARD (EAST) ---
+      { id: 'h1', name: 'Hastinapur (Royal Capital)', cat: 'capital', shard: 'Human Shard (East)', pos: [152, 9, 2],
+        geo: 'Central Ganges-Yamuna Plains (+152, 0, +2)',
+        desc: 'Seat of King Parikshit, Queen Madravati, General Ugrasena, and Master Artificer Rohini. Illuminated by Surya’s eastern dawn rays.',
+        impact: 'Main agricultural & political heart of humanity; hosts the annual Gudhi Padwa Awakening Ceremony.' },
+      { id: 'h2', name: 'The Sea Citadel (Port Metropolis)', cat: 'capital', shard: 'Human Shard (East Coast)', pos: [204, 6, 18],
+        geo: 'Eastern Delta on the Mortal Sea',
+        desc: 'Ruled by Lord Admiral Suhotra ("The Silver Shark") and Commodore Lavanya. Sailing fleets pulled by harnessed River-Drakes (Makaras).',
+        impact: 'Controls maritime trade and the vital sea-salt exports to the Beast Shard.' },
+      { id: 'h3', name: 'Hastinapur High Arch (Human Gate)', cat: 'gateway', shard: 'Human Shard', pos: [115, 15, -24],
+        geo: 'High Himalayan Ridge at the Ganges Source',
+        desc: '100-foot black basalt stone arch guarded by Royal Beast-Cavalry and Caravan-Master Alistair Vance.',
+        impact: 'Only legal land gateway connecting the Human Shard to Central City.' },
+      { id: 'h4', name: 'Tapovana Gurukul (Sage Shamika)', cat: 'structure', shard: 'Human Shard (North)', pos: [158, 19, -34],
+        geo: 'Northern Snow-Cedar Mountains',
+        desc: 'Sacred ashram of 310-year-old S-Rank Sage Shamika and Herbalist Ila. Bathed in Chandra’s Amṛta moonlight.',
+        impact: 'Trains disciples in vessel channel breath mastery and grows life-saving Sanjeevani herbs.' },
+      { id: 'h5', name: 'Drona-Vana Royal War Academy', cat: 'structure', shard: 'Human Shard', pos: [138, 8, -5],
+        geo: 'Western Outskirts of Hastinapur',
+        desc: 'Elite martial gurukul where royal scions, D-Ranks, and C-Rank Reincarnates train in Dhanurveda bows and Bija-Mantras.',
+        impact: 'Crucible of rivalry between native noble bloodlines and Reincarnated prodigies.' },
+      { id: 'h6', name: 'Hastinapur Adventurer Guild & Akhara', cat: 'structure', shard: 'Human Shard', pos: [164, 8, 9],
+        geo: 'Outer Ring Market of Hastinapur',
+        desc: 'Main bounty hall and sister-tournament arena where fighters earn their points for Central City.',
+        impact: 'Home base of Chronicler Marcus Ward and rookie adventurer parties.' },
+      { id: 'h7', name: 'Indraprastha Crossroads (Town)', cat: 'town', shard: 'Human Shard', pos: [135, 7, 16],
+        geo: 'Southern Royal Highway',
+        desc: 'Major caravan staging town where hundreds of Horse- and Bull-Carts rest and swap draft-beasts.',
+        impact: 'Hub for merchant quests and escort missions.' },
+      { id: 'h8', name: 'Yamuna-Ghat Caravan Town', cat: 'town', shard: 'Human Shard', pos: [175, 7, 15],
+        geo: 'River Confluence East of Hastinapur',
+        desc: 'Lively river-port town where Captain Romesh’s Makara-barges load grain and festival lamps.',
+        impact: 'Famous for its 7-Day Grand Diwali river-light celebrations.' },
+      { id: 'h9', name: 'Khandava Watch-Town', cat: 'town', shard: 'Human Shard', pos: [122, 7, 28],
+        geo: 'Northern Perimeter of the Khandava Cursed Forest',
+        desc: 'Fortified adventurer town commanded by Captain Bhima ("The Trench Bull") and her Ironclad Boar cavalry.',
+        impact: 'Frontline launchpad for parties hunting uncontrolled beasts and rogue Devils.' },
+      { id: 'h10', name: 'Ekachakra Border Village', cat: 'village', shard: 'Human Shard', pos: [105, 6, 12],
+        geo: 'Western Badlands Border',
+        desc: 'Rustic farming village surrounded by ancient Era-2 stone pillars; frequently menaced by feral beasts.',
+        impact: 'Starting D-Rank Adventurer quest village hiding an ancient underground shrine.' },
+      { id: 'h11', name: 'Varanavata Foothill Village', cat: 'village', shard: 'Human Shard', pos: [142, 12, -22],
+        geo: 'Pine Foothills below Tapovana',
+        desc: 'Produces pine-resin, wax, and alchemical fire-oil used by adventurers.',
+        impact: 'Key supply stop on the mountain road to the High Arch Gateway.' },
+      { id: 'h12', name: 'Lavan-Pura Salt Village', cat: 'village', shard: 'Human Shard', pos: [192, 5, 36],
+        geo: 'Southern Mangrove Coast on the Mortal Sea',
+        desc: 'Coastal village where workers evaporate sea-water into giant rock-salt blocks using Surya’s heat.',
+        impact: 'Supplies the salt blocks traded at Shabari’s post in the Beast Shard.' },
+      { id: 'h13', name: 'Khandava Cursed Forest', cat: 'danger', shard: 'Human Shard', pos: [118, 7, 40],
+        geo: 'Southwestern Wilderness of the Human Shard',
+        desc: 'Dense, mist-choked forest where rogue cultists perform illegal Type-2 Devil Summonings from Tier 4.',
+        impact: 'High-mortality B-Rank and A-Rank Adventurer quest zone.' },
+      { id: 'h14', name: 'Panchala White-Ash Ruins', cat: 'danger', shard: 'Human Shard', pos: [182, 8, -14],
+        geo: 'Northeastern Crater-Basin',
+        desc: 'The glassed white-ash ruins of Panchala, purged in Era 3 during the Ashen Eclipse Devil outbreak.',
+        impact: 'Haunted by cursed remnants; strictly quarantined by Concord Inquisitors.' },
+      { id: 'h15', name: 'Pit #13 Shadow Anchor (Grade 2)', cat: 'anchor', shard: 'Human Shard', pos: [148, -5, 6],
+        geo: 'Subterranean Cavern beneath Hastinapur Forge Quarter',
+        desc: '20-foot basalt rotary anchor run by "Kite" Renzo Vance. Masked by the thud of giant forge-hammers.',
+        impact: 'Smuggles Hastinapur wheat directly to Ulka’s Shaft #47 in the Asura Shard.' },
+      { id: 'h16', name: 'Sunken Temple Anchor (Grade 3)', cat: 'anchor', shard: 'Human Shard', pos: [215, -6, 28],
+        geo: 'Blind Trench on the Mortal Sea Floor',
+        desc: 'Submerged Era-2 temple anchor salvaged by Diver Malhar under Admiral Suhotra’s protection.',
+        impact: 'Receives contraband Abyssal ores and relics from Maricha.' },
+
+      // --- TIER 3: ASURA SHARD (WEST) ---
+      { id: 'a1', name: 'The Iron Citadel (Vajra-Nagara)', cat: 'capital', shard: 'Asura Shard (West)', pos: [-165, 16, -6],
+        geo: 'Black Caldera Volcanic Rim (-165, +16, -6)',
+        desc: 'Ruled by 410-year-old Grand Architect Maya and Queen Mandodari. Built over a living magma lake where runic weapons are forged.',
+        impact: 'Supreme weapon-smithing capital of the cosmos.' },
+      { id: 'a2', name: 'The Obsidian Chasm (Shaila-Gadha)', cat: 'capital', shard: 'Asura Shard', pos: [-138, 4, 22],
+        geo: '2-Mile-Deep Southeastern Rift Valley',
+        desc: 'Controlled by ruthless Baroness Simhika and Baron Ilvala. Yields 70% of all Prana-Crystals and meteoric iron.',
+        impact: 'Epicenter of the underground rebellion led by A-Rank warlord Ulka ("The Red Hammer").' },
+      { id: 'a3', name: 'Caldera Basalt Arch (Asura Gate)', cat: 'gateway', shard: 'Asura Shard', pos: [-112, 12, -15],
+        geo: 'Eastern Basalt Cliff-Edge',
+        desc: '100-foot volcanic stone arch guarded by General Prahasa’s Armored Rhino War-Wagons.',
+        impact: 'Connects the Asura Shard to Central City’s Five-Arch Rotunda.' },
+      { id: 'a4', name: 'Obsidian Crucible Dojo & Arena', cat: 'structure', shard: 'Asura Shard', pos: [-182, 12, 5],
+        geo: 'Western Rim of the Iron Citadel',
+        desc: 'Commanded by S-Rank Marshal Lauhini ("The Siege-Breaker") and her Magma Tiger.',
+        impact: 'Hosts the Caldera Foundry Brawls and trains warriors in Marrow Smelting.' },
+      { id: 'a5', name: 'Agni-Kunda Smelting Town', cat: 'town', shard: 'Asura Shard', pos: [-152, 8, 8],
+        geo: 'Midway Lava-River Crossing',
+        desc: 'Home to Alchemist Ira’s volcanic potion sanctum and runic ballista workshops.',
+        impact: 'Main trading town for fire-elixirs and siege weaponry.' },
+      { id: 'a6', name: 'Nikumbha Border Bastion (Town)', cat: 'town', shard: 'Asura Shard', pos: [-125, 8, 38],
+        geo: 'Southern Cliff facing the Beast Shard',
+        desc: 'Fortified town commanded by honorable reformist Commander Nikumbha and his Iron Bison cavalry.',
+        impact: 'Maintains peace with the Beast Shard and shelters runaway miners.' },
+      { id: 'a7', name: 'Bhasma-Grama Miner Village', cat: 'village', shard: 'Asura Shard', pos: [-148, 6, 32],
+        geo: 'Upper Rim of the Obsidian Chasm',
+        desc: 'Working-class village where Matron Amba ("Mother of the Pits") runs her orphanage and clinic.',
+        impact: 'Protected in secret by Ulka’s Red Crucible brotherhood.' },
+      { id: 'a8', name: 'Seal 1 Mantle Vault (Muchukunda)', cat: 'danger', shard: 'Asura Shard', pos: [-195, -4, 28],
+        geo: 'Deepest Subterranean Magma Chamber',
+        desc: 'Holds the First Cosmic Seal (Kālakeya / The Architect of Scarcity), guarded by Muchukunda.',
+        impact: 'Temporary cosmic lock showing dangerous thermal thinning.' },
+      { id: 'a9', name: 'Shaft #47 Rebel Anchor (Grade 2)', cat: 'anchor', shard: 'Asura Shard', pos: [-140, -7, 18],
+        geo: '2 Miles Underground behind a Lava Waterfall',
+        desc: 'Tuned by prosthetic-master Kshema and guarded by Ulka.',
+        impact: 'Receives smuggled Hastinapur grain from Pit #13 to save starving miner families.' },
+
+      // --- TIER 3: DEVA SHARD (NORTH) ---
+      { id: 'd1', name: 'Amaravati (Emperor Aryaman)', cat: 'capital', shard: 'Deva Shard (North)', pos: [-8, 30, -155],
+        geo: 'Central Floating Marble Plateau (0, +30, -155)',
+        desc: 'Ruled by Solar Emperor Aryaman, Queen Savitri, and Sky-Marshal Vaijayanti. Closest plateau to Surya Deva’s northern Zenith arc.',
+        impact: 'Monopoly source of Awakening Stones and high-purity Solar-Quartz lenses.' },
+      { id: 'd2', name: 'Gandharva-Puri (Silk Sanctuary)', cat: 'capital', shard: 'Deva Shard', pos: [38, 26, -148],
+        geo: 'Eastern Floating Cloud-Island',
+        desc: 'Ruled by Lady Chitralekha and Master Weaver Kavi. Home of the harmonic looms that spin blade-proof Aether-Silk.',
+        impact: 'Supplies defensive silk tunics to royal courts and top adventurers.' },
+      { id: 'd3', name: 'Sun-Cliff Arch (Deva Gateway)', cat: 'gateway', shard: 'Deva Shard', pos: [0, 26, -112],
+        geo: 'Southern Marble Promontory of Amaravati',
+        desc: '100-foot white-gold arch guarded by Captain Anshuman’s Sun-Lances.',
+        impact: 'Connects Amaravati to Central City.' },
+      { id: 'd4', name: 'Astral Observatory (Seer Revati)', cat: 'structure', shard: 'Deva Shard', pos: [-32, 28, -168],
+        geo: 'Highest Northern Peak of Amaravati',
+        desc: 'Sanctum of blind Seer Revati, aligned directly with the 27 Nakṣatras in the Upper Zenith.',
+        impact: 'Tracks constellations, cosmic seals, and incoming reincarnated souls.' },
+      { id: 'd5', name: 'Soma-Vana Crystal Town', cat: 'town', shard: 'Deva Shard', pos: [16, 25, -165],
+        geo: 'Central Garden Valley of the Deva Shard',
+        desc: 'Serene town where Deva artisans cultivate cooling Soma-lotuses under Lord Chandra’s rays.',
+        impact: 'Depends heavily on Frost-herbs imported from the Beast Shard.' },
+      { id: 'd6', name: 'Marut-Terrace Cloud Village', cat: 'village', shard: 'Deva Shard', pos: [-28, 24, -135],
+        geo: 'Western Wind-Swept Cliff Edge',
+        desc: 'Home of Courier Marut and the Wind-Runner clans who glide on high-altitude jetstreams.',
+        impact: 'Training ground for Laghima (Weightlessness) speed arts.' },
+      { id: 'd7', name: 'Whispering Grotto Anchor (Grade 2)', cat: 'anchor', shard: 'Deva Shard', pos: [45, 14, -142],
+        geo: 'Hidden Cavern under Gandharva-Puri’s Cloud Waterfall',
+        desc: 'Operated with acoustic wind-flutes by corrupt Deva patricians.',
+        impact: 'Smuggles mortal elixirs and dyes in exchange for untaxed Aether-Silk and Solar-Quartz.' },
+
+      // --- TIER 3: BEAST SHARD (SOUTH) ---
+      { id: 'b1', name: 'Heartwood Sanctum (World-Tree)', cat: 'capital', shard: 'Beast Shard (South)', pos: [0, 18, 155],
+        geo: 'Exact Center of the 1,500-ft Primeval Canopy',
+        desc: 'Guarded by 40-ton S-Rank+ Titan Ursus ("Old Four-Horns"). Grows around a living branch of the Ashvattha World-Tree.',
+        impact: 'Sacred heart of the Beast Shard; hosts the Canopy Spirit-Sanctum where warriors earn Soul-Bonds.' },
+      { id: 'b2', name: 'The Sky Spires (20,000-ft Garuda Roost)', cat: 'capital', shard: 'Beast Shard (Northeast)', pos: [36, 30, 138],
+        geo: 'Northeastern Granite Needles piercing the Clouds',
+        desc: 'Ruled by Garuda Empress Vinata ("The Golden Maw") and Prince Sampati ("Iron-Talon").',
+        impact: 'Where worthy warriors climb to form Soul-Bonds with Flying Beasts (Garudas & Firehawks).' },
+      { id: 'b3', name: 'Root-Carved Arch (Beast Gateway)', cat: 'gateway', shard: 'Beast Shard', pos: [0, 10, 112],
+        geo: 'Northern Edge of the Primeval Canopy',
+        desc: '100-foot living stone-and-root arch connecting the Beast Shard to Central City.',
+        impact: 'Guarded by conscious Vanara and Garuda sentinels.' },
+      { id: 'b4', name: 'Hollow Ironwood Trading Post & Anchor', cat: 'anchor', shard: 'Beast Shard', pos: [18, 6, 165],
+        geo: 'Inside a 300-ft Hollow Ironwood Tree',
+        desc: 'Run by Shaman Shabari ("The Bone-Speaker"). Houses both the legal barter post and a hidden Grade-3 Shadow Anchor.',
+        impact: 'Where Adventurers trade human sea-salt for Beast-Cores, Titan-Amber, and Sanjeevani dew.' },
+      { id: 'b5', name: 'Silent Glade Sanctuary (Town)', cat: 'town', shard: 'Beast Shard', pos: [32, 8, 175],
+        geo: 'Southeastern Valley',
+        desc: 'Maintained by 112-year-old Sage Matanga and his White Forest-Elephant.',
+        impact: 'Absolute no-violence refuge where wounded beasts and adventurers heal together.' },
+      { id: 'b6', name: 'Twilight Marsh & Naga Waterway', cat: 'danger', shard: 'Beast Shard (Southwest)', pos: [-32, 5, 172],
+        geo: 'Sunless Bioluminescent Swamp under World-Tree Taproots',
+        desc: 'Ruled by 180-foot Naga Empress Kadru ("The Jade Coil") and stealth matriarch Shyama ("The Shadow-Cat").',
+        impact: 'Source of deadly Kalakuta venom and miracle nectar; infested with cursed spores.' },
+      { id: 'b7', name: 'The Blood-Ridge (Salt-Cliffs)', cat: 'danger', shard: 'Beast Shard (Northwest)', pos: [-38, 11, 138],
+        geo: 'Mineral Salt-Cliffs bordering the Asura Shard',
+        desc: 'Patrolled by Sabertooth Queen Sarama and her obsidian-fanged packs.',
+        impact: 'Flashpoint of constant skirmishes against Baroness Simhika’s crystal poachers.' }
+    ];
+
+    const markerMeshes = [];
+    const labelElements = [];
+    const categoryState = {
+      tier2: true, aegis: true, tier4: true, seal7: true, celestial: true,
+      capital: true, gateway: true, structure: true, town: true, village: true, anchor: true, danger: true
+    };
+
+    const CAT_COLORS = {
+      tier2: 0x00e5ff,
+      aegis: 0xf4c430,
+      tier4: 0xab47bc,
+      seal7: 0xff1744,
+      celestial: 0xff9900,
+      capital: 0xf4c430,
+      gateway: 0xffffff,
+      structure: 0x00e5ff,
+      town: 0x00e676,
+      village: 0x81c784,
+      anchor: 0xff3366,
+      danger: 0xb388ff
+    };
+
+    let sunPinItem = null;
+    let moonPinItem = null;
+
+    COSMIC_LOCATIONS.forEach(loc => {
+      const isLargePin = ['tier2', 'tier4', 'seal7', 'celestial', 'capital', 'aegis'].includes(loc.cat);
+      const pinGeo = new THREE.SphereGeometry(isLargePin ? 3.0 : 1.8, 16, 16);
+      const pinMat = new THREE.MeshBasicMaterial({ color: CAT_COLORS[loc.cat] || 0xffffff });
+      const pinMesh = new THREE.Mesh(pinGeo, pinMat);
+      pinMesh.position.set(loc.pos[0], loc.pos[1], loc.pos[2]);
+      pinMesh.userData = loc;
+      scene.add(pinMesh);
+      markerMeshes.push(pinMesh);
+
+      const stemLength = isLargePin ? 10 : 5;
+      const stemPts = [
+        new THREE.Vector3(loc.pos[0], loc.pos[1], loc.pos[2]),
+        new THREE.Vector3(loc.pos[0], loc.pos[1] - stemLength, loc.pos[2])
+      ];
+      const stemMat = new THREE.LineBasicMaterial({ color: CAT_COLORS[loc.cat] || 0xffffff, transparent: true, opacity: 0.6 });
+      const stemLine = new THREE.Line(new THREE.BufferGeometry().setFromPoints(stemPts), stemMat);
+      scene.add(stemLine);
+      pinMesh.userData.stem = stemLine;
+
+      const tag = document.createElement('div');
+      tag.className = `map-tag tag-${loc.cat}`;
+      tag.textContent = loc.name;
+      tag.onclick = () => selectLocation(loc, pinMesh);
+      labelsContainer.appendChild(tag);
+
+      const itemObj = { loc, pinMesh, stemLine, tag };
+      labelElements.push(itemObj);
+      if (loc.isDynamicSun) sunPinItem = itemObj;
+      if (loc.isDynamicMoon) moonPinItem = itemObj;
+    });
+
+    // =========================================================================
+    // 11. CAMERA ANIMATION & PRESET VIEWS
+    // =========================================================================
+    let camAnim = null;
+    let isOrbiting = true;
+    let zenithAngle = 0.35;
+
+    function toggleSunMoonOrbit() {
+      isOrbiting = !isOrbiting;
+      const btn = document.getElementById('orbit-toggle-btn');
+      btn.textContent = isOrbiting ? '⏸ Pause Sun & Moon Orbit' : '▶ Resume Sun & Moon Orbit';
+    }
+
+    function animateCameraTo(targetPos, targetLookAt) {
+      camAnim = {
+        startPos: camera.position.clone(),
+        endPos: new THREE.Vector3(...targetPos),
+        startLook: controls.target.clone(),
+        endLook: new THREE.Vector3(...targetLookAt),
+        progress: 0
+      };
+    }
+
+    function selectLocation(loc, pinMesh) {
+      document.getElementById('ins-title').textContent = loc.name;
+      document.getElementById('ins-cat').textContent = loc.cat.toUpperCase();
+      document.getElementById('ins-shard').textContent = loc.shard;
+      document.getElementById('ins-geo').textContent = loc.geo;
+      document.getElementById('ins-desc').textContent = loc.desc;
+      document.getElementById('ins-impact').textContent = loc.impact;
+
+      const targetPos = pinMesh ? pinMesh.position : new THREE.Vector3(...loc.pos);
+      animateCameraTo([targetPos.x + 35, targetPos.y + 40, targetPos.z + 65], [targetPos.x, targetPos.y, targetPos.z]);
+    }
+
+    function flyToShard(preset, btn) {
+      document.querySelectorAll('.cam-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const views = {
+        fullCosmos:     { pos: [0, 520, 780],   look: [0, 180, 0] },
+        overview:       { pos: [0, 310, 440],   look: [0, 15, 0] },
+        zenith:         { pos: [0, 230, 350],   look: [0, ZENITH_Y, 0] },
+        corruptedAbyss: { pos: [0, 360, 260],   look: [0, 245, 0] },
+        netherholme:    { pos: [75, 295, 80],   look: [45, 266, 32] },
+        dreadhold:      { pos: [65, 300, -80],  look: [35, 268, -32] },
+        ashfortress:    { pos: [-85, 290, -40], look: [-45, 262, -8] },
+        deadchasm:      { pos: [0, 275, 35],    look: [0, 246, 0] },
+        setuBridge:     { pos: [0, 440, 260],   look: [0, 385, 0] },
+        central:        { pos: [0, 68, 105],    look: [0, 5, 0] },
+        human:          { pos: [155, 85, 125],  look: [155, 5, 5] },
+        asura:          { pos: [-155, 85, 125], look: [-155, 5, 5] },
+        deva:           { pos: [0, 105, -45],   look: [0, 22, -155] },
+        beast:          { pos: [0, 90, 275],    look: [0, 10, 155] }
+      };
+      const v = views[preset] || views.fullCosmos;
+      animateCameraTo(v.pos, v.look);
+    }
+
+    function toggleTagCategory(cat, visible) {
+      categoryState[cat] = visible;
+      if (cat === 'tier2') setuGroup.visible = visible;
+      if (cat === 'aegis') { aegisDomeMesh.visible = visible; aegisRingMesh.visible = visible; }
+      if (cat === 'tier4' || cat === 'seal7') corruptedGroup.visible = (categoryState.tier4 || categoryState.seal7);
+      if (cat === 'celestial') {
+        suryaGroup.visible = visible;
+        chandraGroup.visible = visible;
+        zenithTrackMesh.visible = visible;
+        nakshatraGroup.visible = visible;
+      }
+      labelElements.forEach(item => {
+        if (item.loc.cat === cat) {
+          item.pinMesh.visible = visible;
+          item.stemLine.visible = visible;
+          item.tag.style.display = visible ? 'block' : 'none';
+        }
+      });
+    }
+
+    // =========================================================================
+    // 12. RENDER LOOP & DYNAMIC SUN/MOON ROTATION
+    // =========================================================================
+    const tempV = new THREE.Vector3();
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Rotate Sun and Moon in Upper Zenith
+      if (isOrbiting) {
+        zenithAngle += 0.0025;
+        const sx = Math.cos(zenithAngle) * ZENITH_RADIUS;
+        const sz = Math.sin(zenithAngle) * ZENITH_RADIUS;
+        suryaGroup.position.set(sx, ZENITH_Y, sz);
+        sunLight.position.set(sx, ZENITH_Y, sz);
+
+        if (sunPinItem) {
+          sunPinItem.pinMesh.position.set(sx, ZENITH_Y + 14, sz);
+          sunPinItem.stemLine.visible = false;
+        }
+
+        const mx = Math.cos(zenithAngle + Math.PI) * ZENITH_RADIUS;
+        const mz = Math.sin(zenithAngle + Math.PI) * ZENITH_RADIUS;
+        chandraGroup.position.set(mx, ZENITH_Y, mz);
+        moonLight.position.set(mx, ZENITH_Y, mz);
+
+        if (moonPinItem) {
+          moonPinItem.pinMesh.position.set(mx, ZENITH_Y + 12, mz);
+          moonPinItem.stemLine.visible = false;
+        }
+      }
+
+      // Smooth camera interpolation
+      if (camAnim) {
+        camAnim.progress += 0.035;
+        if (camAnim.progress >= 1) {
+          camera.position.copy(camAnim.endPos);
+          controls.target.copy(camAnim.endLook);
+          camAnim = null;
+        } else {
+          const t = 1 - Math.pow(1 - camAnim.progress, 3);
+          camera.position.lerpVectors(camAnim.startPos, camAnim.endPos, t);
+          controls.target.lerpVectors(camAnim.startLook, camAnim.endLook, t);
+        }
+      }
+
+      controls.update();
+      renderer.render(scene, camera);
+
+      // Project 3D positions to 2D screen tags
+      const halfW = window.innerWidth / 2;
+      const halfH = window.innerHeight / 2;
+
+      labelElements.forEach(item => {
+        if (!categoryState[item.loc.cat]) return;
+        tempV.copy(item.pinMesh.position);
+        tempV.y += 3.2;
+        tempV.project(camera);
+
+        if (tempV.z > 1) {
+          item.tag.style.display = 'none';
+          return;
+        }
+        const x = (tempV.x * halfW) + halfW;
+        const y = -(tempV.y * halfH) + halfH;
+        item.tag.style.display = 'block';
+        item.tag.style.left = `${x}px`;
+        item.tag.style.top = `${y}px`;
+        item.tag.style.zIndex = Math.floor((1 - tempV.z) * 500);
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    animate();
+  </script>
+</body>
+</html>
