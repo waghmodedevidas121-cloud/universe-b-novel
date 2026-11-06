@@ -1,17 +1,8 @@
-# Temporary / Large Concatenation dumps
-UNIVERSE_B_COMBINED.txt
-*.zip
-*.rar
-*.tar.gz
-
-# Python cache & temp
+# Gitignore for ChaturMukh Bramha
+node_modules/
+*.tmp
+*.temp
 __pycache__/
 *.pyc
-
-# IDE & Editor settings
-.vscode/
-.idea/
 .DS_Store
 Thumbs.db
-
-
