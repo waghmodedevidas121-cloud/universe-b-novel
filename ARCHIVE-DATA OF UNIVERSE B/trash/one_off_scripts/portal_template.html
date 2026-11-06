@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universe B — Master Canon Codex & Interactive Encyclopedia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void: #050811;
+  --bg-primary: #090d1a;
+  --bg-secondary: rgba(15, 23, 42, 0.78);
+  --bg-card: rgba(22, 32, 58, 0.65);
+  --bg-card-solid: #131c31;
+  --bg-card-hover: rgba(30, 45, 78, 0.85);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent-gold: #f59e0b;
+  --accent-gold-light: #fbbf24;
+  --accent-cyan: #06b6d4;
+  --accent-cyan-light: #38bdf8;
+  --accent-emerald: #10b981;
+  --accent-rose: #f43f5e;
+  --accent-purple: #a855f7;
+  --border-color: rgba(148, 163, 184, 0.16);
+  --border-gold: rgba(245, 158, 11, 0.4);
+  --border-cyan: rgba(6, 182, 212, 0.4);
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-void);
+  background-image: 
+    radial-gradient(circle at 12% 15%, rgba(245, 158, 11, 0.08) 0%, transparent 38%),
+    radial-gradient(circle at 88% 82%, rgba(6, 182, 212, 0.08) 0%, transparent 42%),
+    radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.04) 0%, transparent 60%);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.68;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Upgrade */
+#sidebar {
+  width: 330px;
+  background: var(--bg-secondary);
+  backdrop-filter: blur(20px);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 20;
+  box-shadow: 10px 0 35px rgba(0, 0, 0, 0.45);
+}
+
+.brand-header {
+  padding: 24px 22px;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.14) 0%, rgba(6, 182, 212, 0.04) 100%);
+  position: relative;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #fff 0%, var(--accent-gold-light) 50%, var(--accent-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-subtitle {
+  font-size: 0.72rem;
+  color: var(--accent-cyan-light);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.search-box {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-input {
+  width: 100%;
+  padding: 11px 16px;
+  background: rgba(5, 8, 17, 0.75);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.search-input:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+}
+
+.nav-menu {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  transform: translateX(4px);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.18) 0%, rgba(6, 182, 212, 0.06) 100%);
+  color: var(--accent-gold-light);
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35), inset 3px 0 0 var(--accent-gold);
+}
+
+.nav-item-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-muted);
+}
+
+.nav-item.active .file-count {
+  background: var(--accent-gold);
+  color: #050811;
+  font-weight: 700;
+  border-color: transparent;
+}
+
+/* Main Area & Top Bar */
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-bar {
+  height: 64px;
+  background: rgba(9, 13, 26, 0.82);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  z-index: 10;
+}
+
+.breadcrumbs {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumbs span.current {
+  color: var(--accent-gold-light);
+  font-weight: 700;
+  background: rgba(245, 158, 11, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.status-badges { display: flex; gap: 10px; align-items: center; }
+
+.status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.content-viewport {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 44px 80px;
+  scroll-behavior: smooth;
+}
+
+/* Sopya Bhashet Hero Card */
+.sopya-bhashet-box {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 23, 42, 0.85) 55%, rgba(6, 182, 212, 0.1) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 26px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.sopya-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.sopya-title {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--accent-gold-light);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sopya-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--accent-gold-light);
+  border: 1px solid var(--border-gold);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.sopya-summary {
+  font-size: 0.98rem;
+  color: #f1f5f9;
+  margin-bottom: 18px;
+  line-height: 1.72;
+}
+
+.sopya-bullets {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.sopya-bullets li {
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  background: rgba(5, 8, 17, 0.6);
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  border-left: 3px solid var(--accent-cyan);
+}
+
+/* File Pill Tabs */
+.doc-tabs-bar {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 14px;
+  margin-bottom: 26px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.doc-tab-btn {
+  padding: 10px 18px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.doc-tab-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.doc-tab-btn.active {
+  background: linear-gradient(135deg, var(--accent-gold) 0%, #d97706 100%);
+  color: #050811;
+  border-color: var(--accent-gold-light);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+}
+
+/* Document Container */
+.doc-article {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 42px 48px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.doc-article h1 {
+  font-family: var(--font-display);
+  font-size: 1.95rem;
+  color: var(--accent-gold-light);
+  border-bottom: 1px solid var(--border-gold);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.doc-article h2 {
+  font-family: var(--font-display);
+  font-size: 1.38rem;
+  color: var(--accent-cyan-light);
+  margin-top: 38px;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, rgba(6, 182, 212, 0.12) 0%, transparent 100%);
+  border-left: 4px solid var(--accent-cyan);
+  border-radius: 0 8px 8px 0;
+}
+
+.doc-article h3 {
+  font-size: 1.12rem;
+  color: #f8fafc;
+  margin-top: 26px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.doc-article h4 {
+  font-size: 0.98rem;
+  color: var(--accent-gold-light);
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.doc-article p { margin-bottom: 14px; color: #cbd5e1; font-size: 0.95rem; }
+.doc-article ul, .doc-article ol { margin-left: 24px; margin-bottom: 18px; color: #cbd5e1; }
+.doc-article li { margin-bottom: 7px; }
+
+.doc-article code {
+  background: rgba(5, 8, 17, 0.65);
+  color: var(--accent-gold-light);
+  padding: 3px 7px;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+}
+
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 24px 0;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: rgba(5, 8, 17, 0.5);
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left; }
+th {
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--accent-gold-light);
+  padding: 14px 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.8px;
+  border-bottom: 1px solid var(--border-gold);
+}
+td { padding: 13px 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #cbd5e1; }
+tr:hover td { background: rgba(245, 158, 11, 0.04); }
+
+blockquote {
+  border-left: 4px solid var(--accent-gold);
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%);
+  padding: 16px 22px;
+  margin: 20px 0;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: #f1f5f9;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: 34px 0;
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: rgba(6, 182, 212, 0.14);
+  color: var(--accent-cyan-light);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  margin: 2px 4px 2px 0;
+  font-weight: 600;
+}
+
+/* =========================================================
+   NEW INTERACTIVE DIAGRAM ENGINE UI (FOR ALL 114 BLOCKS)
+   ========================================================= */
+.ui-diagram {
+  margin: 28px 0;
+  background: linear-gradient(165deg, rgba(15, 23, 42, 0.92) 0%, rgba(7, 11, 22, 0.96) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.32);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.ui-diag-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.ui-diag-header-left { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+.ui-diag-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--accent-gold-light);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.ui-diag-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ui-raw-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ui-raw-toggle:hover { background: rgba(245, 158, 11, 0.2); color: var(--accent-gold-light); border-color: var(--border-gold); }
+
+.ui-raw-ascii {
+  display: none;
+  margin-top: 16px;
+  background: #04060c;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: #a5f3fc;
+  line-height: 1.45;
+  white-space: pre;
+}
+
+/* 1. Cosmic Funnel & Singularity Horn */
+.ui-funnel-wrap, .ui-pyramid-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; }
+.ui-funnel-tier, .ui-pyr-tier {
+  border-radius: 14px;
+  padding: 18px 24px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+.ui-funnel-tier:hover, .ui-pyr-tier:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5); }
+.funnel-apex {
+  width: 60%;
+  background: radial-gradient(circle at center, rgba(245, 158, 11, 0.35) 0%, rgba(30, 27, 75, 0.95) 75%), #0f172a;
+  border: 2px solid var(--accent-gold-light);
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.3), inset 0 0 20px rgba(245, 158, 11, 0.15);
+}
+.pyr-t1 { width: 68%; background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(15, 23, 42, 0.9)); border: 1px solid rgba(245, 158, 11, 0.55); }
+.funnel-space {
+  width: 78%;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(15, 23, 42, 0.95));
+  border: 1px dashed rgba(165, 180, 252, 0.6);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+}
+.pyr-t2 { width: 86%; background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(15, 23, 42, 0.9)); border: 1px solid rgba(6, 182, 212, 0.5); }
+.pyr-t4 { width: 93%; background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(15, 23, 42, 0.95)); border: 1px solid rgba(244, 63, 94, 0.5); }
+.pyr-t3 { width: 100%; background: linear-gradient(135deg, rgba(16, 185, 129, 0.18), rgba(15, 23, 42, 0.9)); border: 1px solid rgba(16, 185, 129, 0.45); }
+@media (max-width: 900px) { .funnel-apex, .pyr-t1, .funnel-space, .pyr-t2, .pyr-t3, .pyr-t4 { width: 100%; } }
+
+.pyr-meta { display: flex; justify-content: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.pyr-chip { font-family: var(--font-mono); font-size: 0.68rem; padding: 2px 9px; border-radius: 12px; background: rgba(0,0,0,0.45); color: #e2e8f0; font-weight: 600; }
+.pyr-chip.gold { color: var(--accent-gold-light); border: 1px solid rgba(245,158,11,0.4); }
+.pyr-chip.gold-solid { background: var(--accent-gold); color: #000; font-weight: 700; border: none; }
+.pyr-chip.cyan { color: var(--accent-cyan-light); border: 1px solid rgba(6,182,212,0.4); }
+.pyr-chip.emerald { color: #34d399; border: 1px solid rgba(16,185,129,0.4); }
+.pyr-chip.rose { color: #fb7185; border: 1px solid rgba(244,63,94,0.4); }
+.pyr-chip.purple { color: #c084fc; border: 1px solid rgba(192,132,252,0.4); }
+.pyr-chip.red { color: #f87171; border: 1px solid rgba(239,68,68,0.5); font-weight: 700; }
+.funnel-title { font-family: var(--font-display); font-size: 1.15rem; margin: 4px 0 2px; }
+.funnel-sub { font-size: 0.8rem; color: #fef08a; font-family: var(--font-mono); margin-bottom: 6px; }
+.space-title { font-family: var(--font-display); font-size: 1.05rem; color: #c7d2fe; margin-bottom: 6px; }
+.gold-text { color: var(--accent-gold-light); }
+.ui-funnel-tier h4, .ui-pyr-tier h4 { font-family: var(--font-display); font-size: 1.05rem; color: #fff; margin-bottom: 6px; }
+.ui-funnel-tier p, .ui-pyr-tier p { font-size: 0.84rem; color: #cbd5e1; margin: 0; line-height: 1.5; }
+
+.ui-aegis-divider {
+  width: 94%;
+  padding: 10px 18px;
+  margin: 6px 0;
+  border-radius: 10px;
+  background: repeating-linear-gradient(45deg, rgba(245, 158, 11, 0.18), rgba(245, 158, 11, 0.18) 12px, rgba(0, 0, 0, 0.4) 12px, rgba(0, 0, 0, 0.4) 24px);
+  border: 1px dashed var(--accent-gold-light);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-gold-light);
+}
+
+/* 2. Org Trees & Multi-Column Branches */
+.ui-org-tree { display: flex; flex-direction: column; align-items: center; }
+.ui-org-root {
+  padding: 16px 28px;
+  border-radius: 14px;
+  text-align: center;
+  max-width: 680px;
+  width: 100%;
+}
+.gold-glow { background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(15, 23, 42, 0.92)); border: 1px solid var(--accent-gold); box-shadow: 0 0 25px rgba(245, 158, 11, 0.15); }
+.cyan-glow { background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(15, 23, 42, 0.92)); border: 1px solid var(--accent-cyan); box-shadow: 0 0 25px rgba(6, 182, 212, 0.15); }
+.org-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-gold-light); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+.org-title { font-family: var(--font-display); font-size: 1.12rem; font-weight: 800; color: #fff; }
+.org-sub { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+
+.ui-tree-stem { width: 2px; height: 22px; background: linear-gradient(180deg, var(--accent-gold), var(--accent-cyan)); }
+.ui-flow-arrow {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+.ui-flow-arrow span {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--accent-gold-light);
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  padding: 3px 12px;
+  border-radius: 20px;
+}
+
+.ui-org-branches { display: grid; gap: 16px; width: 100%; }
+.ui-org-branches.cols-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.ui-org-branches.cols-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.ui-org-branches.cols-4 { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+
+.ui-org-card {
+  background: rgba(9, 14, 28, 0.82);
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, border-color 0.2s;
+}
+.ui-org-card:hover { transform: translateY(-3px); }
+.border-gold { border-top: 3px solid var(--accent-gold); }
+.border-cyan { border-top: 3px solid var(--accent-cyan); }
+.border-emerald { border-top: 3px solid var(--accent-emerald); }
+.border-rose { border-top: 3px solid var(--accent-rose); }
+.border-purple { border-top: 3px solid var(--accent-purple); }
+
+.org-card-head { margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.org-pill { display: inline-block; font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; text-transform: uppercase; padding: 2px 8px; border-radius: 6px; margin-bottom: 6px; }
+.org-pill.gold { background: rgba(245,158,11,0.18); color: var(--accent-gold-light); }
+.org-pill.cyan { background: rgba(6,182,212,0.18); color: var(--accent-cyan-light); }
+.org-pill.emerald { background: rgba(16,185,129,0.18); color: #34d399; }
+.org-pill.rose { background: rgba(244,63,94,0.18); color: #fb7185; }
+
+.org-card-head h5 { font-family: var(--font-display); font-size: 0.98rem; color: #fff; margin: 2px 0; }
+.org-role { font-size: 0.8rem; color: var(--accent-cyan-light); font-weight: 600; }
+.org-cover { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-top: 3px; }
+.officer-lead { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); padding: 8px 10px; border-radius: 8px; margin-bottom: 10px; font-size: 0.84rem; display: flex; justify-content: space-between; align-items: center; }
+.officer-lead span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold-light); }
+.org-list { list-style: none; margin: 0; padding: 0; font-size: 0.83rem; color: #cbd5e1; }
+.org-list li { padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.06); }
+.org-list li:last-child { border-bottom: none; }
+
+/* 3. Cards Grid & Pillars Showcase */
+.ui-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+.ui-grid-card {
+  background: rgba(9, 14, 28, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: all 0.2s;
+}
+.ui-grid-card:hover { background: rgba(22, 32, 58, 0.9); border-left-color: var(--accent-cyan); transform: translateY(-2px); }
+.gc-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-cyan-light); font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.gc-title { font-weight: 700; color: var(--accent-gold-light); font-size: 0.92rem; margin-bottom: 5px; }
+.gc-body { font-size: 0.83rem; color: #cbd5e1; line-height: 1.5; }
+
+.ui-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+.ui-pillar-box {
+  background: rgba(9, 14, 28, 0.85);
+  border-radius: 12px;
+  padding: 16px 14px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s;
+}
+.ui-pillar-box:hover { transform: translateY(-4px); }
+.p-gold { border-top: 3px solid var(--accent-gold); }
+.p-cyan { border-top: 3px solid var(--accent-cyan); }
+.p-purple { border-top: 3px solid var(--accent-purple); }
+.p-emerald { border-top: 3px solid var(--accent-emerald); }
+.p-rose { border-top: 3px solid var(--accent-rose); }
+.pb-num { font-family: var(--font-mono); font-size: 0.66rem; color: var(--text-muted); letter-spacing: 1px; }
+.pb-name { font-family: var(--font-display); font-size: 1rem; font-weight: 800; color: #fff; margin: 4px 0 2px; }
+.pb-sanskrit { font-size: 0.78rem; color: var(--accent-gold-light); margin-bottom: 6px; font-weight: 600; }
+.pb-desc { font-size: 0.78rem; color: #cbd5e1; line-height: 1.45; }
+
+.ui-secret-pillar {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(168, 85, 247, 0.2) 0%, rgba(245, 158, 11, 0.2) 50%, rgba(168, 85, 247, 0.2) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.55);
+  border-radius: 14px;
+  padding: 18px 24px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+.sp-badge { font-family: var(--font-mono); font-size: 0.72rem; color: #e9d5ff; font-weight: 700; letter-spacing: 1px; }
+.sp-title { font-family: var(--font-display); font-size: 1.08rem; font-weight: 800; color: #fff; margin: 4px 0; }
+.sp-desc { font-size: 0.84rem; color: #e2e8f0; }
+
+/* 4. Vertical & Horizontal Flowcharts */
+.ui-vflow { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+.uvf-node {
+  background: rgba(9, 14, 28, 0.85);
+  border: 1px solid var(--border-color);
+  border-left-width: 4px;
+  border-radius: 12px;
+  padding: 14px 20px;
+  transition: transform 0.2s;
+}
+.uvf-node:hover { transform: translateX(4px); }
+.uvf-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-cyan-light); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+.uvf-node h5 { font-family: var(--font-display); font-size: 0.98rem; color: var(--accent-gold-light); margin-bottom: 4px; }
+.uvf-node p { font-size: 0.85rem; color: #cbd5e1; margin: 0; }
+
+.ui-horiz-flow { display: flex; align-items: stretch; gap: 12px; flex-wrap: wrap; }
+.uhf-step { flex: 1; min-width: 200px; background: rgba(9, 14, 28, 0.85); border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; }
+.uhf-tag { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-gold-light); font-weight: 700; margin-bottom: 4px; }
+.uhf-step h5 { font-family: var(--font-display); font-size: 0.95rem; color: #fff; margin-bottom: 6px; }
+.uhf-step p { font-size: 0.82rem; color: #cbd5e1; margin: 0; }
+.uhf-arrow { display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); color: var(--accent-gold-light); font-weight: 700; padding: 0 4px; }
+
+/* 5. Dossier Cards */
+.ui-dossier-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.ui-dossier-stat {
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 8px;
+  padding: 8px 14px;
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  flex: 1;
+}
+.ds-label { font-family: var(--font-mono); font-size: 0.66rem; color: var(--accent-cyan-light); text-transform: uppercase; font-weight: 700; }
+.ds-val { font-size: 0.88rem; color: #fff; font-weight: 600; margin-top: 2px; }
+.ui-dossier-item {
+  width: 100%;
+  background: rgba(9, 14, 28, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.di-key { font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent-gold-light); font-weight: 700; text-transform: uppercase; margin-bottom: 3px; }
+.di-val { font-size: 0.86rem; color: #e2e8f0; }
+
+/* 6. Telemetry Matrix & SVG Chart */
+.ui-telemetry-table { display: flex; flex-direction: column; gap: 6px; overflow-x: auto; }
+.tel-row { display: grid; grid-template-columns: 200px repeat(8, minmax(54px, 1fr)); gap: 6px; align-items: center; }
+.tel-head { font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; color: var(--accent-gold-light); text-align: center; padding-bottom: 6px; border-bottom: 1px solid var(--border-color); }
+.tel-label { font-size: 0.82rem; color: #fff; text-align: left; }
+.tel-label span { display: block; font-size: 0.7rem; color: var(--text-muted); }
+.tel-cell { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; padding: 8px 4px; border-radius: 6px; text-align: center; }
+.tel-cell.dom { background: rgba(244, 63, 94, 0.28); color: #fda4af; border: 1px solid rgba(244, 63, 94, 0.5); }
+.tel-cell.dom-cyan { background: rgba(6, 182, 212, 0.28); color: #67e8f9; border: 1px solid rgba(6, 182, 212, 0.5); }
+.tel-cell.dom-gold { background: rgba(245, 158, 11, 0.3); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.55); }
+.tel-cell.cond { background: rgba(245, 158, 11, 0.14); color: var(--accent-gold-light); border: 1px dashed rgba(245, 158, 11, 0.4); }
+.tel-cell.neg, .tel-cell.zero { background: rgba(255, 255, 255, 0.03); color: var(--text-dim); }
+.tel-legend { display: flex; gap: 18px; margin-top: 14px; font-size: 0.76rem; color: var(--text-muted); flex-wrap: wrap; }
+.ui-svg-chart-wrap { width: 100%; overflow-x: auto; background: rgba(5, 8, 17, 0.65); border-radius: 12px; padding: 14px; border: 1px solid var(--border-color); }
+.ui-crossover-svg { width: 100%; min-width: 580px; height: auto; display: block; }
+
+/* 7. Compass Grid & 2x2 Matrix */
+.ui-compass-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.ucg-cell { background: rgba(9, 14, 28, 0.85); border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; text-align: center; }
+.ucg-north { grid-column: 2; }
+.ucg-west { grid-column: 1; grid-row: 2; }
+.ucg-center { grid-column: 2; grid-row: 2; }
+.ucg-east { grid-column: 3; grid-row: 2; }
+.ucg-south { grid-column: 2; grid-row: 3; }
+@media (max-width: 850px) {
+  .ui-compass-grid { grid-template-columns: 1fr; }
+  .ucg-north, .ucg-west, .ucg-center, .ucg-east, .ucg-south { grid-column: 1; grid-row: auto; }
+}
+.ucg-cell h5 { font-family: var(--font-display); font-size: 0.96rem; color: #fff; margin: 6px 0; }
+.ucg-cell p { font-size: 0.8rem; color: #cbd5e1; margin: 0; }
+
+.ui-matrix-2x2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.um-cell { background: rgba(9, 14, 28, 0.85); border: 1px solid var(--border-color); border-radius: 12px; padding: 18px; }
+.um-axes { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.um-cell h5 { font-family: var(--font-display); font-size: 0.98rem; color: #fff; margin-bottom: 6px; }
+.um-cell p { font-size: 0.83rem; color: #cbd5e1; margin: 0; }
+
+.ui-separation-grid { display: flex; flex-direction: column; gap: 10px; }
+.usg-row { display: flex; align-items: center; gap: 12px; background: rgba(9, 14, 28, 0.8); padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border-color); flex-wrap: wrap; }
+.usg-office { flex: 1; min-width: 200px; }
+.usg-office strong { display: block; color: var(--accent-gold-light); font-size: 0.9rem; }
+.usg-office span { font-size: 0.8rem; color: var(--text-muted); }
+.usg-arrow { font-family: var(--font-mono); color: var(--accent-cyan-light); font-weight: 700; }
+.usg-ban { flex: 1.2; min-width: 220px; background: rgba(244, 63, 94, 0.12); border: 1px solid rgba(244, 63, 94, 0.35); color: #fda4af; padding: 8px 12px; border-radius: 8px; font-size: 0.83rem; font-weight: 600; }
+
+.ui-code-display { background: rgba(5, 8, 17, 0.8); border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; }
+.ucd-schema { margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px dashed var(--border-color); font-size: 0.95rem; }
+.ucd-examples { display: flex; flex-direction: column; gap: 8px; }
+.ucd-item { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ucd-tag { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+.ucd-tag.emerald { background: rgba(16,185,129,0.2); color: #34d399; }
+.ucd-tag.gold { background: rgba(245,158,11,0.2); color: var(--accent-gold-light); }
+
+/* Highlighted Search Text */
+mark.search-highlight {
+  background-color: #f59e0b;
+  color: #0b0f19;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 700;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.5);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-void); }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.25); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
+
+/* =========================================================================
+   STORY CHRONICLE & IMMERSIVE NOVEL-GRADE PORTAL STYLES
+   ========================================================================= */
+.story-chronicle-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 10px 60px 10px;
+  animation: chronicleFadeIn 0.35s ease-out;
+}
+
+@keyframes chronicleFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.story-hero-banner {
+  background: radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.2) 0%, transparent 45%),
+              radial-gradient(circle at 85% 80%, rgba(6, 182, 212, 0.16) 0%, transparent 50%),
+              linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(5, 8, 17, 0.98) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 38px 34px;
+  margin-bottom: 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-hero-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 2.5px;
+  color: var(--accent-gold-light);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.story-hero-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.28;
+  background: linear-gradient(120deg, #ffffff 0%, var(--accent-gold-light) 60%, var(--accent-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+.story-hero-lead {
+  font-size: 1.05rem;
+  color: #e2e8f0;
+  line-height: 1.8;
+  max-width: 900px;
+  margin-bottom: 22px;
+}
+
+.story-hero-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.story-act-card {
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 30px 28px;
+  margin-bottom: 26px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.story-act-card:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.story-act-card.featured-gold {
+  border-color: rgba(245, 158, 11, 0.35);
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.85) 60%);
+}
+
+.story-act-card.featured-cyan {
+  border-color: rgba(6, 182, 212, 0.35);
+  background: linear-gradient(145deg, rgba(6, 182, 212, 0.08) 0%, rgba(15, 23, 42, 0.85) 60%);
+}
+
+.story-act-card.featured-rose {
+  border-color: rgba(244, 63, 94, 0.35);
+  background: linear-gradient(145deg, rgba(244, 63, 94, 0.08) 0%, rgba(15, 23, 42, 0.85) 60%);
+}
+
+.story-act-card.featured-emerald {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.08) 0%, rgba(15, 23, 42, 0.85) 60%);
+}
+
+.story-act-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.story-act-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--accent-gold-light);
+  border: 1px solid var(--border-gold);
+}
+
+.story-act-badge.cyan {
+  background: rgba(6, 182, 212, 0.18);
+  color: var(--accent-cyan-light);
+  border-color: var(--border-cyan);
+}
+
+.story-act-badge.rose {
+  background: rgba(244, 63, 94, 0.18);
+  color: #fda4af;
+  border-color: rgba(244, 63, 94, 0.4);
+}
+
+.story-act-badge.emerald {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.story-act-title {
+  font-family: var(--font-display);
+  font-size: 1.48rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+  line-height: 1.35;
+}
+
+.story-prose {
+  font-size: 1.02rem;
+  line-height: 1.82;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+.story-prose p {
+  margin-bottom: 14px;
+}
+
+.story-prose strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.story-callout {
+  border-left: 3px solid var(--accent-gold);
+  background: rgba(245, 158, 11, 0.08);
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin: 18px 0;
+  font-style: italic;
+  color: #f1f5f9;
+  line-height: 1.7;
+}
+
+.story-callout strong {
+  font-style: normal;
+  color: var(--accent-gold-light);
+}
+
+/* Shard Showcase Grid */
+.shard-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.shard-card {
+  background: rgba(9, 14, 28, 0.92);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px 20px;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.shard-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-gold);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5);
+}
+
+.shard-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.shard-card-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shard-pop-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 3px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+.shard-stat-list {
+  list-style: none;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0;
+  flex-grow: 1;
+}
+
+.shard-stat-list li strong {
+  color: var(--accent-cyan-light);
+}
+
+.shard-secret-box {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px dashed var(--border-gold);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  color: #fef08a;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Threat Cards Grid */
+.threat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.threat-card {
+  background: rgba(9, 14, 28, 0.85);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent-rose);
+}
+
+.threat-card h5 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.threat-card p {
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Loops Flow */
+.loop-step-card {
+  background: rgba(9, 14, 28, 0.85);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  border-left: 3px solid var(--accent-cyan);
+}
+
+.loop-step-card h5 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loop-step-card p {
+  font-size: 0.86rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Story Nav Switchers */
+.story-nav-section {
+  padding: 12px 14px 6px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 8px;
+}
+
+.nav-section-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding-left: 4px;
+  font-weight: 700;
+}
+
+.story-mode-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, var(--accent-gold) 0%, #d97706 100%);
+  color: #050811;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+}
+
+.story-mode-switch-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.45);
+}
+
+</style>
+</head>
+<body>
+
+<aside id="sidebar">
+  <div class="brand-header">
+    <div class="brand-title">
+      <span>🌌</span> UNIVERSE B CODEX
+    </div>
+    <div class="brand-subtitle">The Evolving Child Cosmos</div>
+  </div>
+  
+  <div class="search-box">
+    <div class="search-input-wrapper" style="position: relative; display: flex; align-items: center;">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search modules, characters, laws..." oninput="handleSearch(this.value)">
+      <button id="searchClearBtn" class="search-clear-btn" style="position: absolute; right: 10px; background: transparent; border: none; color: var(--text-dim); cursor: pointer; font-size: 1.1rem; display: none;" onclick="clearSearch()">&times;</button>
+    </div>
+  </div>
+  
+  <div class="story-nav-section">
+    <div class="nav-section-label">CHRONICLE MODES</div>
+    <div class="nav-item active" id="btnStoryChronicle" onclick="showStoryChronicle()">
+      <div class="nav-item-title">
+        <span>📖</span>
+        <span>Living Story Chronicle</span>
+      </div>
+      <span class="file-count" style="background: rgba(245, 158, 11, 0.25); color: var(--accent-gold-light); font-weight: bold;">EPIC</span>
+    </div>
+  </div>
+
+  <div class="nav-section-label" style="padding: 10px 18px 4px; font-size: 0.68rem; font-family: var(--font-mono); color: var(--text-dim); letter-spacing: 1.5px; text-transform: uppercase;">
+    CANONICAL DEEP ARCHIVE
+  </div>
+  <nav class="nav-menu" id="navMenu">
+    <!-- Populated by JS -->
+  </nav>
+</aside>
+
+<main id="main">
+  <div class="top-bar">
+    <div class="breadcrumbs">
+      <span>Codex</span> &gt; <span id="bcFolder">Overview</span> &gt; <span class="current" id="bcFile">Index</span>
+    </div>
+    <div class="status-badges">
+      <div class="status-badge">Child Cosmos</div>
+      <div class="status-badge" style="color: var(--accent-gold); border-color: rgba(245,158,11,0.25); background: rgba(245,158,11,0.12)">Route B Drift</div>
+      <div class="status-badge" style="color: var(--accent-cyan); border-color: rgba(6,182,212,0.25); background: rgba(6,182,212,0.12)">Status: RIKTA</div>
+      <a href="ability_codex.html" class="status-badge" style="color: var(--accent-purple); border-color: rgba(168,85,247,0.3); background: rgba(168,85,247,0.15); text-decoration: none; cursor: pointer; font-weight: 600;">⚡ Ability Codex UI (83)</a>
+      <a href="character_codex.html" class="status-badge" style="color: var(--accent-gold); border-color: rgba(245,158,11,0.3); background: rgba(245,158,11,0.15); text-decoration: none; cursor: pointer; font-weight: 600;">👥 Character Dossier UI (120)</a>
+      <a href="world_atlas.html" class="status-badge" style="color: var(--accent-emerald, #10b981); border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.15); text-decoration: none; cursor: pointer; font-weight: 600;">🗺️ World Atlas UI</a>
+      <a href="astral_map_3d.html" class="status-badge" style="color: var(--accent-cyan, #06b6d4); border-color: rgba(6,182,212,0.3); background: rgba(6,182,212,0.15); text-decoration: none; cursor: pointer; font-weight: 600;">🌐 3D Astral Map UI</a>
+    </div>
+  </div>
+  
+  <div class="content-viewport" id="contentViewport">
+    <!-- 1. The Living Story Chronicle (Default View) -->
+    <div id="storyChronicleView">
+
+<div class="story-chronicle-container">
+  
+  <!-- HERO BANNER: THE CHILD COSMOS -->
+  <div class="story-hero-banner">
+    <div class="story-hero-tagline">
+      <span>🌌</span> UNIVERSE B • THE LIVING COSMIC TAPESTRY • [CANON LOCK]
+    </div>
+    <h1 class="story-hero-title">The Grand Chronicle of Universe B</h1>
+    <p class="story-hero-lead">
+      हे कोणत्याही पुस्तकासारखे कोरडे नियम किंवा व्हिडिओ-गेमचे निर्जीव मेनू नाही. हे अवकाशाच्या अथांग गर्भात 
+      धडधडणारे एक जिवंत, श्वास घेणारे <strong>Child Cosmos</strong> आहे — जिथे क्षीर सागराच्या आदिम ठिणगीपासून 
+      सुरू झालेला प्रवास आज वाफेच्या अजस्त्र इंजिनांच्या धुराड्यात, १५% जास्त गुरुत्वाकर्षणाच्या लाव्हा-भट्ट्यांमध्ये, 
+      आणि रक्ताने माखलेल्या ५,००० मैल लांब खंदक-युद्धात येऊन ठेपला आहे.
+    </p>
+    <div class="story-hero-chips">
+      <span class="pyr-chip gold">✨ Hiranyagarbha Genesis</span>
+      <span class="pyr-chip cyan">🪐 Five Planetary Shards</span>
+      <span class="pyr-chip emerald">🦅 The Great Beast Accord</span>
+      <span class="pyr-chip rose">🏆 Central Vanguard League</span>
+      <span class="pyr-chip purple">🛡️ The Great Setu Military</span>
+    </div>
+  </div>
+
+  <!-- ACT I: THE COSMIC TAPESTRY -->
+  <div class="story-act-card featured-gold">
+    <div class="story-act-header">
+      <span class="story-act-badge">ACT I • SATYA YUGA (सत्य युग)</span>
+      <span class="pyr-chip gold-solid">Primordial Singularity</span>
+    </div>
+    <h2 class="story-act-title">अनादी क्षीर सागर आणि वैश्विक नरसाळ्याची निर्मिती</h2>
+    <div class="story-prose">
+      <p>
+        सुरुवातीला काहीही नव्हते — ना सीमा, ना मरण, ना संघर्ष. केवळ अवकाशाच्या केंद्रस्थानी <strong>Cosmic Singularity (हिरण्यगर्भ उगमबिंदू)</strong> होता, 
+        जिथे अनादी काळ शांत पहुडलेल्या <strong>Ananta-Shesha</strong> च्या सहस्र फणांवर <strong>Garbhodakashayi Vishnu</strong> च्या सार्वभौम उपस्थितीखाली 
+        <strong>Kshira Sagara (क्षीर सागर)</strong> विसावले होते. हे विश्वातील सर्व आत्म्यांना चैतन्य पुरवणारे शुद्ध आध्यात्मिक प्राण-ऊर्जेचे 
+        (Pure Spiritual Energy) अमर उगमस्थान होते.
+      </p>
+      <p>
+        <strong>Supreme Trinity (ब्रह्मा, विष्णू, महेश)</strong> ने या चैतन्याला एका महाकाय <strong>Cosmic Funnel (वैश्विक नरसाळे)</strong> भूमितीत सामावले. 
+        सर्वोच्च स्तरावर <strong>Tier 1 (Divine Realm)</strong> — जिथे केवळ सुसंवाद आणि शंभर टक्के अहिंसा आहे. 
+        त्याखाली <strong>Tier 2 (The Buffer Zone / The Great Setu)</strong> — अवकाशात तरंगणारा ५०,००० मैलांचा अभेद्य पाषाण-सेतू. 
+        आणि सर्वांत खाली पसरले जिवंत जीवांचे <strong>Tier 3 (Astral Living Realm)</strong>.
+      </p>
+    </div>
+    <div class="story-callout">
+      "विश्व जेव्हा जन्माला आले, तेव्हा ते परिपूर्ण होते. पण जेव्हा जीवांच्या संख्येत वाढ झाली आणि कर्माचे ताणेबाणे गुंतले, तेव्हा स्वर्गाच्या छताला पहिल्या भेगा पडल्या..."
+    </div>
+  </div>
+
+  <!-- ACT II: THE RUPTURE & THE SEVEN SEALS -->
+  <div class="story-act-card featured-rose">
+    <div class="story-act-header">
+      <span class="story-act-badge rose">ACT II • TRETĀ YUGA (त्रेता युग)</span>
+      <span class="pyr-chip rose">The Shattered World-Tree</span>
+    </div>
+    <h2 class="story-act-title">अश्वत्थाचा प्रलय आणि पाताळातील ३०% अंधार</h2>
+    <div class="story-prose">
+      <p>
+        Era 2 मध्ये महा-संकट कोसळले. विश्वाचा आधारस्तंभ असलेला <strong>Ashvattha World-Tree</strong> दुभंगला, आणि अवकाशातून काळे शून्य पाझरू लागले. 
+        त्या भयावह पोकळीला रोखण्यासाठी महर्षींनी आणि देवांनी स्वतःच्या तपश्चर्येचे बलिदान देऊन <strong>Seven Void Seals (सात वैश्विक शून्य-सील)</strong> लावले. 
+        परंतु या धक्क्याने संपूर्ण अस्तित्वाला हादरा बसला.
+      </p>
+      <p>
+        विश्वाचा <strong>३०% भूभाग तुटून थेट अधोलोकाच्या आम्लीय दलदलीत कोसळला</strong> — ज्याला आज <strong>Tier 4 (The Corrupted Realm)</strong> म्हणतात. 
+        तिथे पडलेले आत्मे विरघळू लागले, भुकेने तडफडू लागले, आणि त्यातूनच जन्म झाला भयानक <strong>Devils आणि Pishacha Yoni</strong> चा. 
+        त्यांच्या विनाशापासून वरच्या जगाला वाचवण्यासाठी ५,००० मैल लांब <strong>The Grand Aegis (३६०° सुवर्ण-भिंत)</strong> उभारून पाताळाला कायमचे बंदिस्त करण्यात आले.
+      </p>
+    </div>
+  </div>
+
+  <!-- ACT III: THE FIVE PLANETARY SHARDS -->
+  <div class="story-act-card featured-cyan">
+    <div class="story-act-header">
+      <span class="story-act-badge cyan">ACT III • DVĀPARA YUGA (द्वापर युग)</span>
+      <span class="pyr-chip cyan">Era 3 Sundering</span>
+    </div>
+    <h2 class="story-act-title">पाच तरंगते ग्रह-तुकडे: जगण्याची खरी विभागणी</h2>
+    <div class="story-prose">
+      <p>
+        महाप्रलयानंतर एकाच जमिनीवर एकत्र राहणे अशक्य झाले. एखाद्या देवाने पाऊल टाकल्यास त्याच्या प्रकाशाने माणसांचे डोळे जळत; 
+        असुराने हातोडा आदळल्यास होणाऱ्या भूकंपाने मानवी गावे उद्ध्वस्त होत. 
+        म्हणून Era 3 मध्ये अखंड जमिनीचे <strong>पाच स्वतंत्र ग्रह-तुकड्यांमध्ये (Five Floating Planetary Shards)</strong> विच्छेदन झाले. 
+        प्रत्येकाचे स्वतःचे स्वतंत्र गुरुत्वाकर्षण, क्षितिज आणि हवामान आहे, आणि त्यांच्या मधे पसरली आहे प्राणघातक <strong>Aetheric Spatial Void</strong>.
+      </p>
+    </div>
+
+    <!-- SHARD CARDS SHOWCASE -->
+    <div class="shard-cards-grid">
+      
+      <!-- HUMAN SHARD -->
+      <div class="shard-card border-cyan">
+        <div class="shard-card-header">
+          <div class="shard-card-title"><span>🚂</span> Human Planetary Shard</div>
+          <span class="shard-pop-badge" style="color:var(--accent-cyan-light);">Mortal Cradle</span>
+        </div>
+        <ul class="shard-stat-list">
+          <li><strong>९४–९५% सुप्त क्षमता (Slept):</strong> कारखाने, कोळसा खाणी आणि बंदरांवर घाम गाळणारे सामान्य नश्वर. यांना बाहेरील विश्वाचा व सीलचा शून्य पत्ता.</li>
+          <li><strong>५–६% Awoken Elite:</strong> जागृत नाडी असलेले ऋषी, सेनापती व मुत्सद्दी; जे नैसर्गिक असममित समतोलाने (Organic Balance) समाज चालवतात.</li>
+          <li><strong>तंत्रज्ञान:</strong> १८वे-१९वे शतक: वाफेची इंजिने, दगडी कोळशाची धुराडी, मॅन्युअल टेलिग्राफ, .४४ कॅलिबर बोल्ट-ॲक्शन तोफा.</li>
+        </ul>
+        <div class="shard-secret-box">
+          ⚡ <em>"येथील माणसांचे आयुष्य मुलांच्या हिवाळ्यातील अन्नासाठी आणि सावकारांचे कर्ज फेडण्यासाठी चाललेले असते."</em>
+        </div>
+      </div>
+
+      <!-- ASURA SHARD -->
+      <div class="shard-card border-rose">
+        <div class="shard-card-header">
+          <div class="shard-card-title"><span>🌋</span> Asura Planetary Shard</div>
+          <span class="shard-pop-badge" style="color:#fda4af;">Chthonic Foundries</span>
+        </div>
+        <ul class="shard-stat-list">
+          <li><strong>१५% जास्त गुरुत्वाकर्षण:</strong> दाट हाडांचे, अजस्त्र स्नायूंचे असुर. लाव्हा नद्या आणि बेसाल्ट पर्वतांचे साम्राज्य.</li>
+          <li><strong>५०–६०% साधी उपयुक्तता:</strong> घरातील दिवे पेटवणे, साधे अवजार तापवणे, भट्टीची प्राथमिक उष्णता सांभाळणे.</li>
+          <li><strong>३०–४०% लढाऊ तंत्रज्ञ:</strong> उच्च-दाब ५०० psi वाफ-यंत्रे, टंगस्टन पोलाद आणि युद्धाचे उस्ताद.</li>
+        </ul>
+        <div class="shard-secret-box">
+          ⚡ <em>"जमिनीत १ दाणाही उगवत नाही; मानवांनी धान्य रोखल्यास एका महिन्यात लाखो कामगार उपाशी मरतील!"</em>
+        </div>
+      </div>
+
+      <!-- DEVA SHARD -->
+      <div class="shard-card border-gold">
+        <div class="shard-card-header">
+          <div class="shard-card-title"><span>☀️</span> Deva Planetary Shard</div>
+          <span class="shard-pop-badge" style="color:var(--accent-gold-light);">Celestial Heights</span>
+        </div>
+        <ul class="shard-stat-list">
+          <li><strong>शाश्वत सौर प्रकाश:</strong> संगमरवरी तरंगते पठार. कोणत्याही यांत्रिक धुराड्यावर १००% कायद्याने बंदी.</li>
+          <li><strong>५०–६०% सेवा वर्ग:</strong> एथर-रेशीम विणणारे, स्फटिक बागांची निगा राखणारे सेवक.</li>
+          <li><strong>३०–४०% सौर योद्धे:</strong> प्लाझ्मा भाले, उच्च-फ्रिक्वेन्सी ऑप्टिक्स आणि आकाशीय ग्लायडर्सचे संरक्षक.</li>
+        </ul>
+        <div class="shard-secret-box">
+          ⚡ <em>"भीतीदायक सौर-ऱ्हास (Solar Decay) रोखण्यासाठी यांना Beast Sub-Realm मधील शीत-औषधे लागतातच."</em>
+        </div>
+      </div>
+
+      <!-- BEAST SHARD -->
+      <div class="shard-card border-emerald">
+        <div class="shard-card-header">
+          <div class="shard-card-title"><span>🌲</span> Beast Planetary Shard</div>
+          <span class="shard-pop-badge" style="color:#34d399;">Primeval Wilderness</span>
+        </div>
+        <ul class="shard-stat-list">
+          <li><strong>सचेतन नागरिक (Beast-Folk):</strong> वानर, नाग, गरुड. हे सार्वभौम, बोलणारे नागरिक व शामन आहेत; कोणाचेही पाळीव प्राणी नव्हेत!</li>
+          <li><strong>Wild Aether-Beasts:</strong> अरण्यातील हिंस्त्र वन्य श्वापदे, जी साधकांशी स्वेच्छेने <em>Soul-Bond (सहजीवी आत्म-बंध)</em> करतात.</li>
+          <li><strong>Kāyā-Kośa Evolution:</strong> साधकाच्या नाड्या विषारी उष्णता शोषून श्वापदाची कात टाकण्याची (Molting) प्रक्रिया १० पट वेगाने पूर्ण करतात.</li>
+        </ul>
+        <div class="shard-secret-box">
+          ⚡ <em>"हाडांच्या मजबुतीसाठी यांना समुद्राचे मीठ लागते; बदल्यात ते जलरोधक राळ आणि संजीवनी औषधे देतात."</em>
+        </div>
+      </div>
+
+      <!-- CENTRAL SHARD -->
+      <div class="shard-card gold-glow" style="grid-column: 1 / -1;">
+        <div class="shard-card-header">
+          <div class="shard-card-title"><span>🏛️</span> The Central Sub-Realm &amp; Central City</div>
+          <span class="shard-pop-badge" style="color:var(--accent-gold);">Apex Diplomatic Core</span>
+        </div>
+        <p style="font-size:0.9rem; color:#cbd5e1; margin-bottom:10px;">
+          ५०,००० चौरस मैलांचा संपूर्ण तटस्थ ग्रह-तुकडा. <strong>Central City</strong> ही या उप-लोकाची राजधानी आहे. 
+          येथे १००% निःशस्त्रीकरण शांतता करार असून, The Central Reserve Bank (Akash-Kosha) मध्यवर्ती बँक सर्व चलनांचे नियंत्रण करते. 
+          शहराबाहेरील विस्तीर्ण पठारावर <strong>The Grand Proving Grounds</strong> पसरले आहेत, जिथे विश्वातील सर्वात मोठे सामने रंगतात.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ACT IV: VANGUARD LEAGUE & THE EVERYDAY THREATS -->
+  <div class="story-act-card featured-emerald">
+    <div class="story-act-header">
+      <span class="story-act-badge emerald">ACT IV • THE VANGUARD LEAGUE</span>
+      <span class="pyr-chip emerald">Cold War Pressure Valve</span>
+    </div>
+    <h2 class="story-act-title">वीर फलक, प्राण-श्वापद क्रीडा आणि पाच दैनंदिन संकटे</h2>
+    <div class="story-prose">
+      <p>
+        पाचही ग्रह-तुकड्यांमध्ये थेट महायुद्ध पेटू नये म्हणून Central City मध्ये <strong>The Master Vanguard &amp; Beast League</strong> ची स्थापना झाली. 
+        येथे सर्व उप-लोकांतील ३०–४०% लढाऊ योद्धे आणि मानवी ५–६% Awoken साधक आपल्या सहजीवी वन्य श्वापदांसह (Drakes, Panthers, Boars) रिंगणात उतरतात.
+      </p>
+      <p>
+        रोटरी प्रेस वर्तमानपत्रे आणि मॅन्युअल टेलिग्राफद्वारे सामन्यांचे स्कोअर, वीर-रँकिंग आणि चित्रे घराघरांत पोहोचतात. 
+        मुलांमध्ये पितळी वीर-पदके (Brass Medals) आणि पोस्टर्सची प्रचंड क्रेझ निर्माण झाली आहे. 
+        पण हे योद्धे केवळ आखाड्यात लढत नाहीत; ते खालील <strong>पाच खऱ्या संकटांशी</strong> मुकाबला करून जनतेचे रक्षण करतात:
+      </p>
+    </div>
+
+    <!-- 5 THREAT VECTORS -->
+    <div class="threat-grid">
+      <div class="threat-card">
+        <h5><span>🌌</span> 1. Void Rift Beasts</h5>
+        <p>ग्रह-तुकड्यांच्या मधल्या अवकाशीय पोकळीतून सीमावर्ती खाणींवर किंवा रेल्वे कॉरिडॉर्सवर धडकणारी महाकाय अंतराळ-श्वापदे.</p>
+      </div>
+      <div class="threat-card">
+        <h5><span>🩸</span> 2. Rogue Occult Cults</h5>
+        <p><em>The Hollow Sect</em> सारख्या भूमिगत संघटना ज्या बेकायदेशीरपणे Tier 4 मधील पिशाचांचे विषारी संसर्ग पसरवतात.</p>
+      </div>
+      <div class="threat-card">
+        <h5><span>🏴‍☠️</span> 3. Void Pirates &amp; Outlaws</h5>
+        <p>व्यापारी जहाजे लुटणाऱ्या बंडखोर असुरी, मानवी व पशू टोळ्या; ज्यांच्यावर सेंट्रल बोर्डकडून मोठी बक्षीस पत्रे (Bounties) निघतात.</p>
+      </div>
+      <div class="threat-card">
+        <h5><span>⚙️</span> 4. Ancient Crypt Golems</h5>
+        <p>Era 2 च्या प्रलयात जमिनीखाली गाडलेली २००० वर्षे जुनी भयंकर युद्ध-यंत्रे, जी खाणी खोदताना अचानक जागी होतात.</p>
+      </div>
+      <div class="threat-card" style="border-left-color: var(--accent-gold);">
+        <h5><span>⚔️</span> 5. Sanctioned Coliseums</h5>
+        <p>जनतेच्या मनोरंजनासाठी आणि रँकिंग गुणांसाठी होणारे आंतर-प्रजातीय औपचारिक द्वंद्वयुद्ध.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACT V: THE SUPREME SECRET PIPELINE -->
+  <div class="story-act-card featured-gold">
+    <div class="story-act-header">
+      <span class="story-act-badge">ACT V • THE FINAL REVEAL</span>
+      <span class="pyr-chip gold-solid">The Buffer Zone Pipeline</span>
+    </div>
+    <h2 class="story-act-title">वीर-फलकावरून थेट महा-सेतू सैन्यात भरती</h2>
+    <div class="story-prose">
+      <p>
+        सेंट्रल बोर्डवर लढणाऱ्या ९०% सामान्य वीरांना वाटते की ते केवळ स्वतःच्या प्रसिद्धीसाठी आणि बक्षिसांसाठी लढत आहेत. 
+        परंतु प्रत्यक्षात हा बोर्ड <strong>The Great Setu (Buffer Zone) महा-सेनेसाठी सर्वोच्च निवड चाळणी</strong> आहे!
+      </p>
+      <p>
+        जेव्हा एखादा वीर सर्व अडथळे पार करून <strong>Apex S-Rank</strong> वर पोहोचतो, तेव्हा त्याला महा-सेतूवर सन्मानाने आमंत्रित केले जाते. 
+        तिथे त्याला विश्वाचे खरे, भीषण वास्तव उलगडून दाखवले जाते:
+      </p>
+    </div>
+    <div class="story-callout" style="border-left-color: var(--accent-rose); background: rgba(244, 63, 94, 0.08);">
+      <strong style="color:#fda4af;">Marshal-General Vajraketu ची साक्ष:</strong><br>
+      "तुम्ही खाली ज्यांना मारले ते तर केवळ भुरटे चाचे आणि रानटी जनावरे होती... विश्वाचा खरा विनाशकारी प्रलय या Grand Aegis भिंतीपलीकडे Tier 4 मध्ये उसळत आहे, जिथे तुम्हाला संपूर्ण ब्रह्मांडाचे अंतिम रक्षक बनून उभे राहायचे आहे!"
+    </div>
+    <div class="story-prose">
+      <p>
+        सर्व उप-लोकांमधून (Human, Asura, Deva, Beast) निवडलेले हेच सर्वोच्च योद्धे मिळून The Great Setu चे अभेद्य 
+        <strong>Pan-Astral Standing Military Force</strong> बनतात, जे Grand Aegis च्या खंदकात खांद्याला खांदा लावून विश्वाचे रक्षण करतात.
+      </p>
+    </div>
+  </div>
+
+  <!-- ACT VI: THE UNBROKEN LIVING LOOPS -->
+  <div class="story-act-card">
+    <div class="story-act-header">
+      <span class="story-act-badge cyan">ACT VI • ECOLOGICAL REALISM</span>
+      <span class="pyr-chip cyan">Interlocking Survival Loops</span>
+    </div>
+    <h2 class="story-act-title">अखंड आंतर-लोकीय जीवन-साखळी: कोणीही स्वतंत्र नाही</h2>
+    <div class="story-prose">
+      <p>
+        विश्वातील वास्तववाद यातून येतो की कोणताही लोक स्वयंपूर्ण नाही. प्रत्येकाची मान शेजारच्या संसाधनांशी घट्ट बांधलेली आहे:
+      </p>
+    </div>
+
+    <div class="loop-step-card">
+      <h5><span>🍞 ⇄ ⚙️</span> 1. The Bread-for-Steel Loop (Human ⇄ Asura)</h5>
+      <p>मानवांचे धान्य असुरांचे प्राण वाचवते; असुरांचे टंगस्टन-पोलाद मानवांची रेल्वे आणि नांगर चालवते. एकानेही पुरवठा रोखल्यास दोन्ही साम्राज्ये कोसळतील.</p>
+    </div>
+
+    <div class="loop-step-card">
+      <h5><span>☀️ ⇄ 🌿</span> 2. The Optics-and-Herbs Loop (Deva ⇄ Beast &amp; Asura)</h5>
+      <p>असुरांच्या भट्ट्यांना देवांची Solar Lenses लागतात; तर देवांच्या मेंदूचा दाह थांबवायला Beast Sub-Realm ची शीत-बुरशी लागते.</p>
+    </div>
+
+    <div class="loop-step-card">
+      <h5><span>🧂 ⇄ 🪵</span> 3. The Salt-and-Plow Loop (Beast ⇄ Human &amp; Asura)</h5>
+      <p>पशूंच्या हाडांच्या मजबुतीसाठी समुद्राचे मीठ लागते; बदल्यात पशू जलरोधक राळ, कातडी आणि संजीवनी औषधी वनस्पती पुरवतात.</p>
+    </div>
+
+    <div class="loop-step-card">
+      <h5><span>🏦 ⇄ 🌐</span> 4. The Central Clearinghouse Loop (Central City ⇄ All Shards)</h5>
+      <p>The Central Reserve Bank (The Central Reserve Bank (Akash-Kosha)) ५% ट्रान्झिट शुल्कावर आंतरराष्ट्रीय चलन (Aether-Rupee) नियंत्रित करते; टेलिग्राफ बंद झाल्यास व्यापार ४८ तासांत ठप्प होतो.</p>
+    </div>
+
+    <div class="loop-step-card" style="border-left-color: var(--accent-rose);">
+      <h5><span>🗑️ ⇄ ☣️</span> 5. The Abyssal Waste &amp; Miasma Rebound Loop (Surface ⇄ Tier 4)</h5>
+      <p>वरच्या जगाचा कचरा खाली पडतो, ज्यावर पिशाच चिलखते बनवतात; पण खालील विषारी Miasma भिंतीच्या भेगांतून वर पाझरून सीमावर्ती नद्या दूषित करतो!</p>
+    </div>
+
+    <div class="loop-step-card" style="border-left-color: var(--accent-gold);">
+      <h5><span>🤫 ⇄ ⚓</span> 6. The Veiled Grid (गुप्त चक्र-लंगर व काळा बाजार)</h5>
+      <p>अधिकृत १७% शुल्काला टाळण्यासाठी ५००-टन स्टीम हॅमर्सच्या गडगडाटाखाली Rotary Shadow Anchors आणि Frequency Discs द्वारे चालणारा अब्जावधींचा गुप्त व्यापार.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER INVARIANT NOTE -->
+  <div style="text-align: center; padding: 24px 0 10px; border-top: 1px solid var(--border-color); color: var(--text-dim); font-size: 0.82rem; font-family: var(--font-mono);">
+    UNIVERSE B CANON BIBLE • ZERO GAMER MENUS • INDEPENDENT LIVING WORLD • 100% CANON LOCK
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- 2. Master Canonical Document Archive -->
+    <div id="docArchiveView" style="display: none;">
+      <div style="margin-bottom: 18px;">
+        <button class="story-mode-switch-btn" onclick="showStoryChronicle()">
+          <span>📖</span> Return to The Living Story Chronicle
+        </button>
+      </div>
+      <div id="categoryHeader"></div>
+      <div id="sopyaBox"></div>
+      <div class="doc-tabs-bar" id="docTabsBar"></div>
+      <div class="doc-article" id="docArticle"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+const DATA = ###DATA_PLACEHOLDER###;
+
+let currentCategoryIndex = 0;
+let currentFileIndex = 0;
+let currentSearchQuery = "";
+
+function escapeHtml(str) {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function toggleRawDiagram(btn) {
+  const container = btn.closest('.ui-diagram');
+  const rawBox = container.querySelector('.ui-raw-ascii');
+  if (rawBox.style.display === 'block') {
+    rawBox.style.display = 'none';
+    btn.innerText = '⌨️ View Raw ASCII';
+  } else {
+    rawBox.style.display = 'block';
+    btn.innerText = '🎨 Hide Raw ASCII';
+  }
+}
+
+function wrapDiagram(tag, title, bodyHtml, rawText) {
+  return `
+  <div class="ui-diagram">
+    <div class="ui-diag-header">
+      <div class="ui-diag-header-left">
+        <span class="ui-diag-tag">${tag}</span>
+        <span class="ui-diag-title">${title}</span>
+      </div>
+      <button class="ui-raw-toggle" onclick="toggleRawDiagram(this)">⌨️ View Raw ASCII</button>
+    </div>
+    ${bodyHtml}
+    <pre class="ui-raw-ascii">${escapeHtml(rawText)}</pre>
+  </div>`;
+}
+
+function convertAsciiBlockToUI(rawText, cIdx, fIdx) {
+  const text = rawText.trim();
+  const lines = text.split('\n').map(l => l.replace(/\r$/, ''));
+  const firstLine = lines[0].trim();
+
+  // 1. Cosmic Funnel & Singularity Horn Architecture
+  if ((firstLine === '▲' || text.includes('SINGULARITY') || text.includes('KSHIRA SAGARA')) && (text.includes('TIER 1:') || text.includes('TIER 2:') || text.includes('TIER 3:') || text.includes('DIVINE REALM'))) {
+    return wrapDiagram("COSMIC ARCHITECTURE", "The Cosmic Funnel & Singularity Horn (कॉस्मिक फनेल व आयामी विश्व रचना)", `
+      <div class="ui-funnel-wrap">
+        <!-- APEX SINGULARITY & KSHIRA SAGARA -->
+        <div class="ui-funnel-tier funnel-apex">
+          <div class="pyr-meta">
+            <span class="pyr-chip gold">SINGULARITY APEX • विश्वाचा एकदम Starting Point (3–4%)</span>
+            <span class="pyr-chip gold-solid">Pure Spiritual Energy Source</span>
+          </div>
+          <h3 class="funnel-title gold-text">🌌 KSHIRA SAGARA (क्षीर सागर — Primordial Singularity Apex)</h3>
+          <div class="funnel-sub">Garbhodakashayi Vishnu resting upon Ananta-Shesha · Universal Genesis Point</div>
+          <p>संपूर्ण विश्वाचा मूळ उगमस्थान जिथून हे संपूर्ण Universe B निर्माण झाले. क्षीर सागर हे <strong>Pure Spiritual Energy</strong> चे अखंड स्त्रोत असून विश्वातील सर्व आत्म्यांना (Souls) मूळ चैतन्य व आध्यात्मिक प्राण-ऊर्जा इथूनच मिळते.</p>
+        </div>
+
+        <div class="ui-flow-arrow"><span>▼ Primordial Spiritual Energy Cascade (शुद्ध चैतन्य प्रवाह) ▼</span></div>
+
+        <!-- TIER 1 -->
+        <div class="ui-funnel-tier pyr-t1">
+          <div class="pyr-meta">
+            <span class="pyr-chip gold">TIER 1 • परम-धाम व The High Council Rotunda (सभा-लोक)</span>
+            <span class="pyr-chip red">100% Combat Ban (Inviolable Invariant)</span>
+          </div>
+          <h4>DIVINE REALM &amp; HIGH COUNCIL</h4>
+          <p>Supreme Trinity (Brahma · Vishnu · Shiva) &amp; Ananta Core (Read-Only). Pure Primordial Sanskrit (देव-भाषा), Nāda-Brahma, Sanātana-Rta. Six Constitutional Offices (Yama, Vidhata, Chitragupta, Mahā-Pālaka, Chief Sage, Prime Seeker) + Three Delegates (Prajapati, Narada, Rudra as Operational Ansha).</p>
+        </div>
+
+        <div class="ui-flow-arrow"><span>▼ Expanding Cosmic Horizon &amp; Dimensional Phase-Shift ▼</span></div>
+
+        <!-- SPACE WITH STARS & EXPANDING FRONTIER -->
+        <div class="ui-funnel-tier funnel-space">
+          <div class="pyr-meta">
+            <span class="pyr-chip purple">EXPANDING FRONTIER • 60–70% Open Space</span>
+            <span class="pyr-chip cyan">Growing Child Cosmos</span>
+          </div>
+          <h4 class="space-title">✨ OPEN COSMIC EXPANSE (Galaxies, Stars &amp; Nebulae)</h4>
+          <p>आकाशगंगा, निहारिका आणि सौरमालांनी भरलेली अथांग मोकळी स्पेस. <strong>Dimensional Phase-Shift Law:</strong> चारही Tiers एकाच अंतराळात असूनही वेगवेगळ्या आयामी फ्रिक्वेन्सीवर असल्याने साध्या डोळ्यांना व दुर्बिणींना <strong>100% अदृश्य</strong> आहेत. सामान्य माणसाला फक्त तारे आणि गॅलॅक्सीज दिसतात.</p>
+        </div>
+
+        <div class="ui-flow-arrow"><span>▼ Administrative Viaduct &amp; Transit Grid ▼</span></div>
+
+        <!-- TIER 2 -->
+        <div class="ui-funnel-tier pyr-t2">
+          <div class="pyr-meta">
+            <span class="pyr-chip cyan">TIER 2 • मध्यम-लोक / अंतरिक्ष सेतू</span>
+            <span class="pyr-chip">High Council Statutory Writs (High Council Statutory Writs (Vidhana-Patra) Law)</span>
+            <span class="pyr-chip">4 Sectors</span>
+          </div>
+          <h4>THE BUFFER ZONE / THE GRAND SETU</h4>
+          <p>Antariksha Viaduct &amp; 4 Sectors (The Bastion Fortress (Vajra-Durga), Central Ring, Pratigraha Ground, Deva-Setu). Classical Sanskrit Administrative Jurisprudence, Acharyas, Sages, 5-Tier Civil/Martial Ranks, 13 Officers. The Setu Standing Army (Setu Maha-Sena) 7 Arms, 24-Hour Red Seal Protocol. Route B quarantine intake checkpoints.</p>
+        </div>
+
+        <div class="ui-flow-arrow"><span>▼ Quarantine Threshold &amp; The Grand Aegis (क्वारंटाइन सीमा व महा-चैतन्य प्राकार) ▼</span></div>
+
+        <!-- THE GRAND AEGIS DIVIDER -->
+        <div class="ui-aegis-divider">🛡️ 360° SPIRITUAL BARRIER (THE GRAND AEGIS) • 5,000-Mile Shield (Kay-Tyag Law Enforced) 🛡️</div>
+
+        <!-- TIER 4 (SITUATED BETWEEN BUFFER ZONE & ASTRAL REALM) -->
+        <div class="ui-funnel-tier pyr-t4">
+          <div class="pyr-meta">
+            <span class="pyr-chip rose">TIER 4 • अधो-लोक / तमो-लोक</span>
+            <span class="pyr-chip gold-solid">Between Buffer Zone &amp; Astral Realm</span>
+            <span class="pyr-chip rose">7 Void Seals</span>
+          </div>
+          <h4>THE CORRUPTED REALM (Devils &amp; Chthonic Wasteland)</h4>
+          <p><strong>The Buffer Zone (Setu) आणि Astral Realm च्या मधोमध स्थित</strong>, Era 2 मधील प्रलयात तुटलेला Astral चा ३०% भाग. Buffer Zone च्या क्वारंटाइन सीमा-चौक्यांवरून (उदा. Outpost 9) पिशाच बंदिस्त करून शिशाच्या डब्यांतून खाली फेकले जातात; ३६०° Grand Aegis च्या आत पूर्णपणे कैद. <strong>Zero Railways — फक्त चिलखती Scrap-Crawlers</strong>. Soul-Sorting विघटनातून जन्मलेले <strong>Devils (अधो-दैत्य) व पिशाच योनी</strong>. <strong>Kay-Tyag Law:</strong> लगतच्या Astral सीमेपलीकडे धागा टाकून केवळ सूक्ष्म आत्माच summon करता येतो; १० टनी विषारी शरीर पाताळातच राहते. सातव्या सीलचे रक्षण करणारा Shrutayudha व Andha-Kāka.</p>
+        </div>
+
+        <div class="ui-flow-arrow"><span>▼ Adjacent Dimensional Membrane • 5 Isolated Living Pocket-Dimensions (लगतचा आयामी पडदा) ▼</span></div>
+
+        <!-- TIER 3 -->
+        <div class="ui-funnel-tier pyr-t3">
+          <div class="pyr-meta">
+            <span class="pyr-chip emerald">TIER 3 • नश्वर विश्व: ५ स्वतंत्र उप-लोक</span>
+            <span class="pyr-chip">60–70% Population</span>
+            <span class="pyr-chip emerald">18th–19th C. Human Tech &amp; Mythic</span>
+          </div>
+          <h4>THE ASTRAL LIVING REALM (5 DIMENSIONAL POCKET-PLANES)</h4>
+          <p><strong>पाच स्वतंत्र Pocket-Dimensions:</strong> Human (Mortal Cradle / 18th–19th C. local rail), Asura (Magma-Forged Foundries), Deva (Floating Spires), Beast (Primeval Wilderness), आणि The Central Hub (Madhya-Nagara Apex Core — magic/aether-tech). यांच्या दरम्यान घातक <strong>Infinite Aetheric Void</strong>. Human Sub-realm मध्ये ९३–९५% powerless आणि फक्त ५–७% Awoken; इतर उप-लोकांत rail नाही. शक्तिशाली साधक <strong>Interdimensional Magic</strong> ने थेट फेज-शिफ्ट / टेलिपोर्ट होतात; सामान्य प्रवासासाठी पर्वत-माथ्यांवरील <strong>Monolithic Stone Gateways (महा-तीर्थ द्वारे)</strong> निश्चित प्रहरांच्या मुहूर्ताला सेंट्रल सिटीच्या पंचम-महा-घाट कडे उघडतात; तर भूमिगत पातळीवर तस्करांचे प्राणघातक Rotary Shadow Anchors कार्यरत आहेत. मध्यवर्ती Central Hub 100% निःशस्त्रीकरण शांतता केंद्र आहे.</p>
+        </div>
+      </div>`, text);
+  }
+
+  // 2. Divine Delegates Tree
+  if (text.includes('PRAJAPATI') && text.includes('NARADA') && text.includes('RUDRA')) {
+    return wrapDiagram("COMMAND HIERARCHY", "The Three Divine Delegates & Departmental Retinues (दैवी प्रतिनिधी मंडळ)", `
+      <div class="ui-org-tree">
+        <div class="ui-org-root gold-glow">
+          <div class="org-badge">SUPREME SOURCE • PARAM-DHAM</div>
+          <div class="org-title">THE SUPREME TRINITY (Brahma · Vishnu · Shiva)</div>
+          <div class="org-sub">Fundamental Cosmic Authority • Beyond System Tiers</div>
+        </div>
+        <div class="ui-tree-stem"></div>
+        <div class="ui-org-branches cols-3">
+          <div class="ui-org-card border-gold">
+            <div class="org-card-head"><span class="org-pill gold">Brahma Mandate</span><h5>PRAJAPATI (प्रजापती)</h5><div class="org-role">Structure &amp; Creation Integrity</div><div class="org-cover">Cover: Chief Inspector</div></div>
+            <ul class="org-list">
+              <li><strong>Marichi:</strong> Lineage Architecture</li>
+              <li><strong>Atri:</strong> Cosmic Anomaly Analyst</li>
+              <li><strong>Angiras:</strong> Vedic Tech &amp; Mantras</li>
+              <li><strong>Bhrigu:</strong> Technical Examiner</li>
+              <li><strong>Daksha:</strong> Institutional Order</li>
+            </ul>
+          </div>
+          <div class="ui-org-card border-cyan">
+            <div class="org-card-head"><span class="org-pill cyan">Vishnu Mandate</span><h5>DEVA-RISHI NARADA (नारद)</h5><div class="org-role">Equilibrium, Diplomacy &amp; Intel</div><div class="org-cover">Cover: High Commissioner</div></div>
+            <ul class="org-list">
+              <li><strong>Sanatkumara:</strong> Philosophical Ethics</li>
+              <li><strong>Vashistha:</strong> Counsel on Governance</li>
+              <li><strong>Shuka:</strong> Incorruptible Witness</li>
+              <li><em>Mobilizes Sage, Palak &amp; Seeker Networks</em></li>
+            </ul>
+          </div>
+          <div class="ui-org-card border-rose">
+            <div class="org-card-head"><span class="org-pill rose">Shiva Mandate</span><h5>RUDRA (रूद्र)</h5><div class="org-role">Containment &amp; Dissolution</div><div class="org-cover">Cover: Chief Adjudicator</div></div>
+            <ul class="org-list">
+              <li><strong>Nandi:</strong> Senior Rift Gatekeeper</li>
+              <li><strong>Bhringi:</strong> Dead-Zone Field Scout</li>
+              <li><em>Mobilizes Order of Palaks &amp; Shock Garrisons</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>`, text);
+  }
+
+  // 3. Boxed ASCII Tables (┌─────...┐)
+  if (firstLine.startsWith('┌─')) {
+    const boxTitle = lines[1] ? lines[1].replace(/│/g, '').trim() : "System Matrix";
+    const contentLines = lines.slice(2, -1);
+    let rows = [], curr = [];
+    contentLines.forEach(cl => {
+      if (cl.startsWith('├')) { if (curr.length) { rows.push(curr); curr = []; } }
+      else if (cl.startsWith('│')) { curr.push(cl.replace(/^│|│$/g, '').split('│').map(s => s.trim())); }
+    });
+    if (curr.length) rows.push(curr);
+
+    let cardsHtml = "";
+    rows.forEach(r => {
+      const numCols = Math.max(...r.map(x => x.length));
+      if (numCols === 1) {
+        r.forEach(lp => {
+          const txt = lp[0];
+          if (!txt) return;
+          if (txt.includes('—')) {
+            const [k, v] = txt.split(/—(.+)/);
+            cardsHtml += `<div class="ui-grid-card"><div class="gc-title">${escapeHtml(k.trim())}</div><div class="gc-body">${escapeHtml((v||'').trim())}</div></div>`;
+          } else {
+            cardsHtml += `<div class="ui-grid-card"><div class="gc-body">${escapeHtml(txt)}</div></div>`;
+          }
+        });
+      } else {
+        let merged = new Array(numCols).fill("");
+        r.forEach(lp => lp.forEach((val, ci) => { if (val) merged[ci] = (merged[ci] + " " + val).trim(); }));
+        if (numCols === 2) {
+          cardsHtml += `<div class="ui-grid-card"><div class="gc-title">${escapeHtml(merged[0])}</div><div class="gc-body">${escapeHtml(merged[1])}</div></div>`;
+        } else {
+          cardsHtml += `<div class="ui-grid-card"><div class="gc-badge">${escapeHtml(merged[0])}</div><div class="gc-title">${escapeHtml(merged[1])}</div><div class="gc-body">${escapeHtml(merged[2])}</div></div>`;
+        }
+      }
+    });
+    return wrapDiagram("SYSTEM REGISTRY", escapeHtml(boxTitle), `<div class="ui-cards-grid">${cardsHtml}</div>`, text);
+  }
+
+  // 4. Physical Dossiers & Structured Profiles
+  if (['[ PHYSICAL DOSSIER ]', '[ PROTAGONIST MASTER DOSSIER ]', '[ CHAPTER 1 STRUCTURE OVERVIEW ]', '[ THE CENTRAL SUB-REALM DEMOGRAPHIC PROFILE ]', '[ THE FIVE PILLARS FOUNDATION ]', '[ Sealing Protocol ]'].includes(firstLine)) {
+    const title = firstLine.replace(/^\[\vert{}\]$/g, '').trim();
+    const tag = title.includes('DOSSIER') ? "CHARACTER BIOMETRICS" : "SYSTEM SPECIFICATION";
+    let itemsHtml = "";
+    lines.slice(1).forEach(l => {
+      const s = l.trim().replace(/^[-•]\s*/, '');
+      if (!s) return;
+      if (s.includes('|') && s.includes(':')) {
+        s.split('|').forEach(seg => {
+          const [k, v] = seg.split(/:(.+)/);
+          if (v) itemsHtml += `<div class="ui-dossier-stat"><span class="ds-label">${escapeHtml(k.trim())}</span><span class="ds-val">${escapeHtml(v.trim())}</span></div>`;
+          else itemsHtml += `<div class="ui-dossier-stat"><span class="ds-val">${escapeHtml(seg.trim())}</span></div>`;
+        });
+      } else if (s.includes(':')) {
+        const [k, v] = s.split(/:(.+)/);
+        itemsHtml += `<div class="ui-dossier-item"><div class="di-key">${escapeHtml(k.trim())}</div><div class="di-val">${escapeHtml((v||'').trim())}</div></div>`;
+      } else {
+        itemsHtml += `<div class="ui-dossier-item"><div class="di-val">${escapeHtml(s)}</div></div>`;
+      }
+    });
+    return wrapDiagram(tag, escapeHtml(title), `<div class="ui-dossier-grid">${itemsHtml}</div>`, text);
+  }
+
+  // 5. Combat Telemetry Matrix (ENVELOPE T1..T7+)
+  if (firstLine.startsWith('ENVELOPE')) {
+    return wrapDiagram("COMBAT TELEMETRY", "Combat Envelope & Weapon Effectiveness Across Tiers (T1 – T7+)", `
+      <div class="ui-telemetry-table">
+        <div class="tel-row tel-head"><div class="tel-label">System / Armament</div><div>T1</div><div>T2</div><div>T3</div><div>T4</div><div>T4+</div><div>T5</div><div>T6</div><div>T7+</div></div>
+        <div class="tel-row"><div class="tel-label"><strong>Bolt-Action Rifle</strong><span>Single Shot</span></div><div class="tel-cell dom">100%</div><div class="tel-cell dom">100%</div><div class="tel-cell dom">100%</div><div class="tel-cell dom">90%</div><div class="tel-cell cond">40%</div><div class="tel-cell neg">~5%</div><div class="tel-cell zero">0%</div><div class="tel-cell zero">0%</div></div>
+        <div class="tel-row"><div class="tel-label"><strong>Resonance Artillery</strong><span>Heavy Battery</span></div><div class="tel-cell dom">100%</div><div class="tel-cell dom">100%</div><div class="tel-cell dom">100%</div><div class="tel-cell dom">95%</div><div class="tel-cell cond">70%</div><div class="tel-cell cond">30%</div><div class="tel-cell zero">~0%</div><div class="tel-cell zero">0%</div></div>
+        <div class="tel-row"><div class="tel-label"><strong>Kinetic Lamina</strong><span>Mantra Shield</span></div><div class="tel-cell zero">0%</div><div class="tel-cell zero">0%</div><div class="tel-cell zero">0%</div><div class="tel-cell cond">30%</div><div class="tel-cell dom-cyan">75%</div><div class="tel-cell dom-cyan">95%</div><div class="tel-cell dom-cyan">99%</div><div class="tel-cell dom-cyan">99%</div></div>
+        <div class="tel-row"><div class="tel-label"><strong>Divine Astra</strong><span>Tier 2 / Tier 1</span></div><div class="tel-cell zero">0%</div><div class="tel-cell zero">0%</div><div class="tel-cell zero">0%</div><div class="tel-cell zero">0%</div><div class="tel-cell cond">30%</div><div class="tel-cell cond">40%</div><div class="tel-cell dom-gold">90%</div><div class="tel-cell dom-gold">100%</div></div>
+      </div>`, text);
+  }
+
+  // 6. Crossover Curve SVG Graph (EFFECTIVENESS)
+  if (firstLine.startsWith('EFFECTIVENESS')) {
+    return wrapDiagram("CROSSOVER ANALYTICS", "Mechanical Firepower vs. Cultivation Envelope (The T4+ → T5 Crossover Curve)", `
+      <div class="ui-svg-chart-wrap">
+        <svg viewBox="0 0 700 265" class="ui-crossover-svg">
+          <defs>
+            <linearGradient id="gTech" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f43f5e" stop-opacity="0.35"/><stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/></linearGradient>
+            <linearGradient id="gCult" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/><stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/></linearGradient>
+          </defs>
+          <line x1="60" y1="30" x2="660" y2="30" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4"/>
+          <line x1="60" y1="130" x2="660" y2="130" stroke="rgba(245,158,11,0.4)" stroke-dasharray="6"/>
+          <line x1="60" y1="230" x2="660" y2="230" stroke="rgba(255,255,255,0.2)"/>
+          <rect x="330" y="20" width="95" height="210" fill="rgba(245,158,11,0.09)" stroke="rgba(245,158,11,0.35)" rx="6"/>
+          <text x="377" y="40" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">CROSSOVER BAND</text>
+          <text x="50" y="34" fill="#94a3b8" font-size="11" text-anchor="end">100%</text>
+          <text x="50" y="134" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="end">50%</text>
+          <text x="50" y="234" fill="#94a3b8" font-size="11" text-anchor="end">0%</text>
+          <text x="80" y="252" fill="#e2e8f0" font-size="12" font-weight="700" text-anchor="middle">T1</text>
+          <text x="160" y="252" fill="#e2e8f0" font-size="12" font-weight="700" text-anchor="middle">T2</text>
+          <text x="240" y="252" fill="#e2e8f0" font-size="12" font-weight="700" text-anchor="middle">T3</text>
+          <text x="315" y="252" fill="#e2e8f0" font-size="12" font-weight="700" text-anchor="middle">T4</text>
+          <text x="380" y="252" fill="#fbbf24" font-size="12" font-weight="800" text-anchor="middle">T4+</text>
+          <text x="455" y="252" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">T5</text>
+          <text x="545" y="252" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">T6</text>
+          <text x="635" y="252" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">T7+</text>
+          <path d="M80,30 L160,30 L240,32 L315,45 L380,130 L455,205 L545,228 L635,230 L80,230 Z" fill="url(#gTech)"/>
+          <path d="M80,30 L160,30 L240,32 L315,45 L380,130 L455,205 L545,228 L635,230" fill="none" stroke="#f43f5e" stroke-width="3.5"/>
+          <path d="M80,230 L160,230 L240,228 L315,185 L380,115 L455,45 L545,32 L635,30 L80,230 Z" fill="url(#gCult)"/>
+          <path d="M80,230 L160,230 L240,228 L315,185 L380,115 L455,45 L545,32 L635,30" fill="none" stroke="#06b6d4" stroke-width="3.5"/>
+          <circle cx="376" cy="123" r="6" fill="#fbbf24" stroke="#050811" stroke-width="2"/>
+          <text x="180" y="65" fill="#fda4af" font-size="11" font-weight="700">⚙️ Mechanical Firepower (Rifles, Artillery)</text>
+          <text x="475" y="75" fill="#67e8f9" font-size="11" font-weight="700">⚡ Cultivation Envelope (Lamina, Astras)</text>
+        </svg>
+      </div>`, text);
+  }
+
+  // 7. Five Pillars + Secret Sixth Pillar
+  if (text.includes('THE SIX COSMIC PILLARS') || (text.includes('THE SUPREME TRINITY') && text.includes('SECRET SIXTH PILLAR'))) {
+    return wrapDiagram("METAPHYSICAL ARCHITECTURE", "The Five Foundational Pillars & Secret Sixth Principle (शक्तीचे स्तंभ)", `
+      <div class="ui-org-tree">
+        <div class="ui-org-root gold-glow"><div class="org-badge">TRANSCENDENT SOURCE</div><div class="org-title">THE SUPREME TRINITY (Brahma · Vishnu · Shiva)</div></div>
+        <div class="ui-flow-arrow"><span>▼ Establishes Universal Operating Pillars ▼</span></div>
+        <div class="ui-pillars-grid">
+          <div class="ui-pillar-box p-gold"><div class="pb-num">PILLAR I</div><div class="pb-name">AUTHORITY</div><div class="pb-sanskrit">अधिकार व नियंत्रण</div><div class="pb-desc">Lawful cosmic jurisdiction &amp; administrative dominion</div></div>
+          <div class="ui-pillar-box p-cyan"><div class="pb-num">PILLAR II</div><div class="pb-name">ENERGY</div><div class="pb-sanskrit">प्राण-ऊर्जा / तेजस</div><div class="pb-desc">Vital metaphysical fuel, throughput &amp; circulation</div></div>
+          <div class="ui-pillar-box p-purple"><div class="pb-num">PILLAR III</div><div class="pb-name">KARMA</div><div class="pb-sanskrit">कर्म व परिणाम</div><div class="pb-desc">Causal momentum, debt ledgers &amp; destiny threads</div></div>
+          <div class="ui-pillar-box p-emerald"><div class="pb-num">PILLAR IV</div><div class="pb-name">TAPASYA</div><div class="pb-sanskrit">तपस्या व साधना</div><div class="pb-desc">Ascetic friction, discipline &amp; cellular hardening</div></div>
+          <div class="ui-pillar-box p-rose"><div class="pb-num">PILLAR V</div><div class="pb-name">BOONS</div><div class="pb-sanskrit">वरदान व प्रतिज्ञा</div><div class="pb-desc">Granted smart-contracts &amp; conditional immunities</div></div>
+        </div>
+        <div class="ui-flow-arrow"><span>▼ Beyond Ordinary Calculation ▼</span></div>
+        <div class="ui-secret-pillar">
+          <div class="sp-badge">🔒 SECRET SIXTH PILLAR • गुप्त अस्तित्व स्तंभ</div>
+          <div class="sp-title">ĀTMA-TATTVA (आत्मतत्त्व — The Indestructible Primordial Soul Core)</div>
+          <div class="sp-desc">Cannot be manufactured, duplicated, or annihilated by any Astra or system law.</div>
+        </div>
+      </div>`, text);
+  }
+
+  // 8. Soul Administration Triad (Trinity -> Ananta -> Yama/Vidhata/Chitragupta)
+  if (text.includes('SUPREME TRINITY · ROOT CODE')) {
+    return wrapDiagram("SOUL ADMINISTRATION TRIAD", "Constitutional Mandate Map: Trinity, Ananta & The Three Soul Offices", `
+      <div class="ui-org-tree">
+        <div class="ui-org-root gold-glow"><div class="org-badge">ROOT CODE AUTHORITY</div><div class="org-title">SUPREME TRINITY (Brahma · Vishnu · Shiva)</div></div>
+        <div class="ui-flow-arrow"><span>▼ Anchors &amp; Commands ▼</span></div>
+        <div class="ui-org-root cyan-glow" style="margin-bottom:16px;"><div class="org-badge">THE SYSTEM CORE</div><div class="org-title">ANANTA (अनंत — Soulless Rule Executor &amp; Append-Only Archive)</div></div>
+        <div class="ui-org-branches cols-3">
+          <div class="ui-org-card border-rose"><div class="org-card-head"><span class="org-pill rose">Justice &amp; Transit</span><h5>OFFICE OF YAMA (यम-पद)</h5><div class="org-role">Chief Soul Administrator</div></div><ul class="org-list"><li>Justice &amp; Karmic Audit</li><li>Transit Clearance Seal</li><li>Final Dissolution Order</li></ul></div>
+          <div class="ui-org-card border-gold"><div class="org-card-head"><span class="org-pill gold">Fate &amp; Binding</span><h5>OFFICE OF VIDHATA (विधाता-पद)</h5><div class="org-role">Destiny Architect</div></div><ul class="org-list"><li>Linear Destiny Architecture</li><li>Prāṇa-Sūtra Allocation</li><li>Physical Vessel Binding</li></ul></div>
+          <div class="ui-org-card border-cyan"><div class="org-card-head"><span class="org-pill cyan">Records &amp; Identity</span><h5>CHITRAGUPTA (चित्रगुप्त-पद)</h5><div class="org-role">Universal Ledger Keeper</div></div><ul class="org-list"><li>Soul ID Generation</li><li>Past-Life Indexation</li><li>Timestamp &amp; Seal Registry</li></ul></div>
+        </div>
+      </div>`, text);
+  }
+
+  // 9. Buffer Zone 4 Departments & 13 Named Officers
+  if (text.includes('Satyaketu') && text.includes('Vajraketu') && text.includes('Yuktinath')) {
+    return wrapDiagram("SETU COMMAND ROSTER", "Buffer Zone Departments & Named Field Officers (Tier 1 & Tier 2 Clearance)", `
+      <div class="ui-org-branches cols-4">
+        <div class="ui-org-card border-cyan"><div class="org-card-head"><span class="org-pill cyan">Chief Sage Office</span><h5>ASSEMBLY OF SAGES</h5></div><div class="officer-lead"><strong>⭐ Satyaketu</strong><span>[Tier 1]</span></div><ul class="org-list"><li><strong>Medhavi:</strong> Ledger Examiner [T2]</li><li><strong>Anvesh:</strong> Anomaly Tracker [T2]</li></ul></div>
+        <div class="ui-org-card border-rose"><div class="org-card-head"><span class="org-pill rose">Mahā-Pālaka Office</span><h5>ORDER OF PALAKS</h5></div><div class="officer-lead"><strong>⭐ Vajraketu</strong><span>[Tier 1]</span></div><ul class="org-list"><li><strong>Dhritika:</strong> Outpost Cmdr [T2]</li><li><strong>Ranvay:</strong> Field Ops Capt [T2]</li></ul></div>
+        <div class="ui-org-card border-gold"><div class="org-card-head"><span class="org-pill gold">Prime Seeker Office</span><h5>GUILD OF SEEKERS</h5></div><div class="officer-lead"><strong>⭐ Yuktinath</strong><span>[Tier 1]</span></div><ul class="org-list"><li><strong>Yantrika:</strong> Chief Engineer [T2]</li><li><strong>Kshitij:</strong> Rift Commander [T2]</li></ul></div>
+        <div class="ui-org-card border-emerald"><div class="org-card-head"><span class="org-pill emerald">Yama / Vidhata / CG</span><h5>SOUL ADMIN FIELD</h5></div><div class="officer-lead"><strong>⭐ Niyam</strong><span>[Tier 1]</span></div><ul class="org-list"><li><strong>Setuvrata:</strong> Pratigraha Warden [T2]</li><li><strong>Lekhya:</strong> Bond Inspector [T2]</li><li><strong>Dootan:</strong> White Couriers [T2]</li></ul></div>
+      </div>`, text);
+  }
+
+  // 10. Five Sub-Realms Compass Grid
+  if (text.includes('1. DEVA SUB-REALM') && (text.includes('2. ASURA SUB-REALM') || text.includes('3. BEAST SUB-REALM'))) {
+    return wrapDiagram("ASTRAL REALM CARTOGRAPHY", "The Five Spatially Isolated Sub-Realms & The Aetheric Void", `
+      <div class="ui-compass-grid">
+        <div class="ucg-cell ucg-north border-gold"><span class="org-pill gold">NORTH • CELESTIAL</span><h5>1. DEVA SUB-REALM</h5><p>Floating Crystal Plateaus • Zero-Machinery • Amaravati</p></div>
+        <div class="ucg-cell ucg-west border-rose"><span class="org-pill rose">WEST • CHTHONIC</span><h5>2. ASURA SUB-REALM</h5><p>Volcanic Basalt Foundries • Magma Foundries • Vajra-Nagara</p></div>
+        <div class="ucg-cell ucg-center gold-glow"><span class="org-pill emerald">CENTER • 100% DMZ</span><h5>5. THE CENTRAL SUB-REALM</h5><p>Madhya-Nagara • Grand Concord Dome • Non-Violence Pact</p></div>
+        <div class="ucg-cell ucg-east border-cyan"><span class="org-pill cyan">EAST • MORTAL</span><h5>4. HUMAN SUB-REALM</h5><p>60–70% Baseline • ~25% Anchor-Tuners • Top 5% Awoken • 5% Aliens • Lattice-Rails</p></div>
+        <div class="ucg-cell ucg-south border-emerald"><span class="org-pill emerald">SOUTH • WILDERNESS</span><h5>3. BEAST SUB-REALM</h5><p>100,000-Mile Untamed Canopy • Apex Sovereign Titans</p></div>
+      </div>
+      <div class="ui-aegis-divider" style="margin-top:14px;">🌌 SURROUNDING INFINITE AETHERIC VOID: Crossing without high dimensional magic or official Monolithic Stone Gateways causes instant cellular vaporization! (Underground Rotary Anchors are lethal to common mortals).</div>`, text);
+  }
+
+  // 11. 2x2 Ideological Matrix (PRESERVE <-> ACCELERATE)
+  if (text.includes('PRESERVE') && text.includes('ACCELERATE') && text.includes('CENTRALIZE')) {
+    return wrapDiagram("IDEOLOGICAL COMPASS", "Two-Axis Factional Alignment Matrix", `
+      <div class="ui-matrix-2x2">
+        <div class="um-cell border-gold"><div class="um-axes"><span class="org-pill gold">CENTRALIZE (Setu)</span><span class="org-pill cyan">PRESERVE</span></div><h5>TRADITIONALIST SETU LOYALISTS</h5><p>Order of Palaks + Assembly of Sages Audit • Strict boundary enforcement &amp; Shastric orthodoxy.</p></div>
+        <div class="um-cell border-cyan"><div class="um-axes"><span class="org-pill gold">CENTRALIZE (Setu)</span><span class="org-pill rose">ACCELERATE</span></div><h5>INDUSTRIAL STEAM-FOUNDRY FACTIONS</h5><p>Guild of Seekers + Foundry Syndicates • 18th–19th C. mechanical steam, metallurgy &amp; rail expansion (strictly zero digital electronics/AI).</p></div>
+        <div class="um-cell border-emerald"><div class="um-axes"><span class="org-pill emerald">DECENTRALIZE (Outer)</span><span class="org-pill cyan">PRESERVE</span></div><h5>ASTRAL REGIONAL AUTONOMISTS</h5><p>The Provincial Assemblies (The Provincial Assembly (Kshetra-Sabha)s), Royal Courts &amp; Ashrams • Local sovereignty &amp; ancestral bloodline traditions.</p></div>
+        <div class="um-cell border-purple"><div class="um-axes"><span class="org-pill emerald">DECENTRALIZE (Outer)</span><span class="org-pill rose">ACCELERATE</span></div><h5>FREE INNOVATOR ENCLAVES</h5><p>Independent Pioneers, Smugglers &amp; Frontier Guilds • Unregulated experimentation &amp; free trade.</p></div>
+      </div>`, text);
+  }
+
+  // 12. Universal Vertical Flowchart / Hierarchy Ladder Parser for all remaining sequential diagrams
+  let steps = [], currTitle = null, currBody = [], currArrow = null;
+  lines.forEach(l => {
+    const s = l.trim();
+    if (!s) return;
+    if (/^[│|▼▲◄►═─\s]+$/.test(s) || (s.startsWith('(') && s.endsWith(')') && s.length < 58)) {
+      if (s.includes('(') && s.includes(')')) currArrow = s.replace(/[│|▼▲]/g, '').trim();
+      return;
+    }
+    const mBr = s.match(/^\[(.*?)\](.*)$/);
+    if (mBr) {
+      if (currTitle) { steps.push({ title: currTitle, body: currBody.join(' '), arrow: currArrow }); currBody = []; currArrow = null; }
+      currTitle = mBr[1].trim();
+      const rem = mBr[2].replace(/^[\s─►◄\-•]+/, '').trim();
+      if (rem) currBody.push(rem);
+    } else {
+      if (!currTitle) currTitle = s;
+      else currBody.push(s.replace(/^[-•]\s*/, ''));
+    }
+  });
+  if (currTitle) steps.push({ title: currTitle, body: currBody.join(' '), arrow: currArrow });
+
+  const colors = ['border-gold', 'border-cyan', 'border-emerald', 'border-purple', 'border-rose'];
+  let nodesHtml = "";
+  steps.forEach((st, i) => {
+    nodesHtml += `
+      <div class="uvf-node ${colors[i % colors.length]}">
+        <div class="uvf-badge">NODE ${String(i + 1).padStart(2, '0')}</div>
+        <h5>${escapeHtml(st.title)}</h5>
+        ${st.body ? `<p>${escapeHtml(st.body)}</p>` : ''}
+      </div>`;
+    if (i < steps.length - 1) {
+      nodesHtml += `<div class="ui-flow-arrow"><span>${escapeHtml(st.arrow || '▼')}</span></div>`;
+    }
+  });
+
+  return wrapDiagram("SYSTEM FLOW & HIERARCHY", escapeHtml(steps[0] ? steps[0].title.slice(0, 65) : "Architecture Flow"), `<div class="ui-vflow">${nodesHtml}</div>`, text);
+}
+
+function upgradeArticleDiagrams(container, cIdx, fIdx) {
+  const preBlocks = container.querySelectorAll('pre');
+  preBlocks.forEach((pre) => {
+    const rawText = pre.innerText || pre.textContent;
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = convertAsciiBlockToUI(rawText, cIdx, fIdx);
+    pre.replaceWith(wrapper.firstElementChild);
+  });
+}
+
+function init() {
+  renderSidebar();
+  showStoryChronicle();
+}
+
+function renderSidebar() {
+  const nav = document.getElementById("navMenu");
+  nav.innerHTML = "";
+  DATA.forEach((cat, idx) => {
+    const item = document.createElement("div");
+    item.className = `nav-item ${idx === currentCategoryIndex ? "active" : ""}`;
+    item.onclick = () => selectCategory(idx, 0);
+    item.innerHTML = `
+      <div class="nav-item-title">
+        <span>${cat.icon}</span>
+        <span>${cat.title}</span>
+      </div>
+      <span class="file-count">${cat.files.length}</span>
+    `;
+    nav.appendChild(item);
+  });
+}
+
+
+function showStoryChronicle() {
+  document.getElementById("storyChronicleView").style.display = "block";
+  document.getElementById("docArchiveView").style.display = "none";
+  
+  document.getElementById("btnStoryChronicle").classList.add("active");
+  document.querySelectorAll("#navMenu .nav-item").forEach(item => item.classList.remove("active"));
+  
+  document.getElementById("bcFolder").innerText = "Epic Chronicle";
+  document.getElementById("bcFile").innerText = "The Story of Universe B";
+  document.getElementById("contentViewport").scrollTop = 0;
+}
+
+function selectCategory(catIdx, fileIdx) {
+  document.getElementById('storyChronicleView').style.display = 'none';
+  document.getElementById('docArchiveView').style.display = 'block';
+  const btnStory = document.getElementById('btnStoryChronicle');
+  if (btnStory) btnStory.classList.remove('active');
+
+  currentCategoryIndex = catIdx;
+  currentFileIndex = fileIdx || 0;
+  
+  if (!currentSearchQuery) {
+    renderSidebar();
+  }
+
+  const cat = DATA[catIdx];
+  document.getElementById("bcFolder").innerText = cat.title;
+
+  const sopya = document.getElementById("sopyaBox");
+  sopya.innerHTML = `
+    <div class="sopya-bhashet-box">
+      <div class="sopya-header">
+        <div class="sopya-title"><span>✨</span> Sopya Bhashet (सुलभ सारांश)</div>
+        <span class="sopya-tag">CANON SUMMARY</span>
+      </div>
+      <div class="sopya-summary">${cat.marathi_summary}</div>
+      <ul class="sopya-bullets">
+        ${cat.key_points.map(pt => `<li>${pt}</li>`).join("")}
+      </ul>
+    </div>
+  `;
+
+  const tabsBar = document.getElementById("docTabsBar");
+  tabsBar.innerHTML = "";
+  cat.files.forEach((file, fIdx) => {
+    const btn = document.createElement("button");
+    btn.className = `doc-tab-btn ${fIdx === currentFileIndex ? "active" : ""}`;
+    btn.innerText = `${file.title} (${file.size_kb} KB)`;
+    btn.onclick = () => selectFile(fIdx);
+    tabsBar.appendChild(btn);
+  });
+
+  renderCurrentFile();
+}
+
+function selectFile(fIdx) {
+  currentFileIndex = fIdx;
+  document.querySelectorAll(".doc-tab-btn").forEach((b, idx) => {
+    b.className = `doc-tab-btn ${idx === fIdx ? "active" : ""}`;
+  });
+  renderCurrentFile();
+}
+
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function highlightSearchTerm(htmlString, term) {
+  if (!term || term.length < 2) return htmlString;
+  try {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, 'text/html');
+    const walk = (node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const val = node.nodeValue;
+        const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+        if (regex.test(val)) {
+          const span = document.createElement('span');
+          span.innerHTML = val.replace(regex, '<mark class="search-highlight">$1</mark>');
+          node.parentNode.replaceChild(span, node);
+        }
+      } else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
+        Array.from(node.childNodes).forEach(walk);
+      }
+    };
+    walk(doc.body);
+    return doc.body.innerHTML;
+  } catch (e) {
+    return htmlString;
+  }
+}
+
+function renderCurrentFile() {
+  const cat = DATA[currentCategoryIndex];
+  const article = document.getElementById("docArticle");
+  if (!cat.files || cat.files.length === 0) {
+    article.innerHTML = "<p>No documents found in this module.</p>";
+    return;
+  }
+  const file = cat.files[currentFileIndex];
+  document.getElementById("bcFile").innerText = file.title;
+  
+  let content = file.html_body;
+  if (currentSearchQuery && currentSearchQuery.length >= 2) {
+    content = highlightSearchTerm(content, currentSearchQuery);
+  }
+  
+  article.innerHTML = content;
+  upgradeArticleDiagrams(article, currentCategoryIndex, currentFileIndex);
+  document.getElementById("contentViewport").scrollTop = 0;
+}
+
+function handleSearch(query) {
+  currentSearchQuery = query.trim();
+  const q = currentSearchQuery.toLowerCase();
+  const clearBtn = document.getElementById("searchClearBtn");
+  if (clearBtn) {
+    clearBtn.style.display = currentSearchQuery ? "block" : "none";
+  }
+
+  if (!q) { 
+    renderSidebar(); 
+    renderCurrentFile();
+    return; 
+  }
+  
+  const nav = document.getElementById("navMenu");
+  nav.innerHTML = "";
+  let totalMatches = 0;
+
+  DATA.forEach((cat, cIdx) => {
+    const matchingFiles = [];
+    cat.files.forEach((f, fIdx) => {
+      if (f.title.toLowerCase().includes(q) || f.html_body.toLowerCase().includes(q)) {
+        matchingFiles.push({ file: f, fIdx: fIdx });
+      }
+    });
+
+    if (matchingFiles.length > 0) {
+      totalMatches += matchingFiles.length;
+      const group = document.createElement("div");
+      group.className = "search-group";
+      group.innerHTML = `
+        <div class="search-cat-header">
+          <span>${cat.icon} ${cat.title}</span>
+          <span class="file-count" style="background: var(--accent-gold); color: #000; font-weight:700;">${matchingFiles.length} match</span>
+        </div>
+      `;
+
+      matchingFiles.forEach(({ file, fIdx }) => {
+        const item = document.createElement("div");
+        item.className = `search-result-item ${cIdx === currentCategoryIndex && fIdx === currentFileIndex ? "active" : ""}`;
+        item.innerHTML = `
+          <div class="search-doc-title">📄 ${file.title}</div>
+          <div class="search-doc-meta">${file.size_kb} KB</div>
+        `;
+        item.onclick = () => {
+          selectCategory(cIdx, fIdx);
+          document.querySelectorAll(".search-result-item").forEach(i => i.classList.remove("active"));
+          item.classList.add("active");
+        };
+        group.appendChild(item);
+      });
+
+      nav.appendChild(group);
+    }
+  });
+
+  if (totalMatches === 0) {
+    nav.innerHTML = `<div style="padding: 24px 16px; color: var(--text-dim); text-align: center; font-size: 0.85rem;">कोणताही दस्तऐवज सापडला नाही<br><small style="color: var(--text-muted); display: block; margin-top: 6px;">No matches found for "${query}"</small></div>`;
+  }
+
+  renderCurrentFile();
+}
+
+function clearSearch() {
+  const input = document.getElementById("searchInput");
+  if (input) {
+    input.value = "";
+    handleSearch("");
+  }
+}
+
+window.onload = init;
+
+</script>
+</body>
+</html>

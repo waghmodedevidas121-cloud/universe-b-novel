@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNIVERSE B — Master Canon Codex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-base: #09090b;
+  --bg-surface: #0f0f12;
+  --bg-elevated: #141418;
+  --bg-hover: #1c1c22;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border-subtle: #222227;
+  --border-focus: #3f3f46;
+  --accent-gold: #f59e0b;
+  --accent-gold-soft: rgba(245, 158, 11, 0.12);
+  --accent-cyan: #38bdf8;
+  --accent-cyan-soft: rgba(56, 189, 248, 0.12);
+  --accent-emerald: #10b981;
+  --accent-rose: #f43f5e;
+  --accent-purple: #a855f7;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle Matte Micro-Texture */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.022'/%3E%3C/svg%3E");
+}
+
+/* Reading Progress Bar */
+#progressBar {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--accent-gold);
+  z-index: 30;
+  transition: width 0.1s ease;
+}
+
+/* ================= SIDEBAR (MINIMALIST & EXECUTIVE) ================= */
+#sidebar {
+  width: 290px;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 20;
+}
+
+.brand-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-version {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent-gold);
+  background: var(--accent-gold-soft);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.search-box {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 28px 8px 12px;
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-input:focus { border-color: var(--accent-gold); }
+.search-clear-btn {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+  display: none;
+}
+
+.nav-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding: 14px 18px 6px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 10px 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  margin-bottom: 2px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.83rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.nav-item:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+.nav-item.active {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-left: 2px solid var(--accent-gold);
+  border-radius: 0 6px 6px 0;
+}
+
+.nav-item-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-count {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  background: var(--bg-base);
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+.nav-item.active .file-count {
+  color: var(--accent-gold);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Search Results in Sidebar */
+.search-group { margin-bottom: 12px; border: 1px solid var(--border-subtle); border-radius: 6px; overflow: hidden; }
+.search-cat-header { padding: 6px 10px; background: var(--bg-elevated); font-size: 0.72rem; font-weight: 600; color: var(--text-secondary); display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); }
+.search-result-item { padding: 7px 10px; font-size: 0.8rem; color: var(--text-secondary); cursor: pointer; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.search-result-item:hover, .search-result-item.active { background: var(--bg-hover); color: var(--accent-gold); }
+.search-doc-meta { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); }
+
+/* ================= MAIN VIEWPORT & HEADER ================= */
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-bar {
+  height: 56px;
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.breadcrumbs {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.breadcrumbs span.current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.top-actions { display: flex; gap: 8px; align-items: center; }
+
+.top-pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.top-pill:hover {
+  border-color: var(--border-focus);
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+.top-pill.gold {
+  color: var(--accent-gold);
+  border-color: rgba(245, 158, 11, 0.3);
+  background: var(--accent-gold-soft);
+}
+
+.content-viewport {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 40px 80px;
+  scroll-behavior: smooth;
+}
+
+/* ================= LIVING STORY CHRONICLE (MINIMALIST & SYSTEMATIC) ================= */
+.chronicle-wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* Sticky Section Index Bar */
+.section-index-bar {
+  position: sticky;
+  top: -20px;
+  z-index: 15;
+  background: rgba(15, 15, 18, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.idx-link {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.idx-link:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+/* Executive Hero Card */
+.exec-hero {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 36px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.exec-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+.exec-hero-title {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+.exec-hero-desc {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 880px;
+  margin-bottom: 20px;
+}
+.meta-tags-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.meta-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+/* 4-Pillar Manifesto Grid */
+.pillars-bento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.bento-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 18px;
+  transition: border-color 0.15s;
+}
+.bento-box:hover { border-color: var(--border-focus); }
+.bento-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.bento-box h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+.bento-box p {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Systematic Act Sections */
+.act-section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 30px 32px;
+  margin-bottom: 24px;
+  scroll-margin-top: 60px;
+}
+.act-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.act-id {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.act-era-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+
+.act-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  letter-spacing: -0.2px;
+}
+
+.act-prose {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.act-prose p { margin-bottom: 12px; }
+.act-prose strong { color: var(--text-primary); font-weight: 600; }
+
+.callout-block {
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--accent-gold);
+  padding: 14px 18px;
+  border-radius: 0 6px 6px 0;
+  margin: 18px 0;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+.callout-block span {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* Systematic Sub-Grids inside Acts */
+.sys-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 18px 0; }
+.sys-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 18px 0; }
+
+.sys-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+.sys-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.sys-card-title { font-weight: 700; font-size: 0.92rem; color: var(--text-primary); }
+.sys-card-badge { font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-cyan); }
+.sys-card ul { list-style: none; font-size: 0.83rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px; }
+.sys-card ul li strong { color: var(--text-primary); }
+.sys-card p { font-size: 0.83rem; color: var(--text-secondary); line-height: 1.6; }
+
+.act-footer {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.doc-jump-btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.doc-jump-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* ================= ARCHIVE VIEW & RIGHT TOC ================= */
+.archive-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 860px) 240px;
+  gap: 32px;
+  justify-content: center;
+  align-items: start;
+}
+@media (max-width: 1200px) {
+  .archive-grid { grid-template-columns: 1fr; }
+  .toc-panel { display: none; }
+}
+
+.toc-panel {
+  position: sticky;
+  top: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 16px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+.toc-header {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.toc-link {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.15s;
+  line-height: 1.4;
+}
+.toc-link:hover { color: var(--accent-gold); }
+.toc-link.sub { padding-left: 12px; font-size: 0.72rem; color: var(--text-muted); }
+
+/* Sopya Box & Doc Tabs */
+.sopya-bhashet-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+.sopya-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.sopya-title { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+.sopya-tag { font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-gold); }
+.sopya-summary { font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px; }
+.sopya-bullets { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px; }
+.sopya-bullets li { font-size: 0.8rem; color: var(--text-secondary); background: var(--bg-elevated); padding: 8px 12px; border-radius: 5px; border: 1px solid var(--border-subtle); }
+
+.doc-tabs-bar { display: flex; gap: 6px; padding-bottom: 12px; margin-bottom: 20px; overflow-x: auto; border-bottom: 1px solid var(--border-subtle); }
+.doc-tab-btn { padding: 7px 14px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 6px; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.75rem; cursor: pointer; white-space: nowrap; transition: all 0.15s; }
+.doc-tab-btn:hover { color: var(--text-primary); border-color: var(--border-focus); }
+.doc-tab-btn.active { background: var(--text-primary); color: var(--bg-base); border-color: var(--text-primary); font-weight: 600; }
+
+.doc-article {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 36px 40px;
+}
+.doc-article h1 { font-size: 1.65rem; font-weight: 700; color: var(--text-primary); border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px; margin-bottom: 20px; }
+.doc-article h2 { font-size: 1.22rem; font-weight: 700; color: var(--text-primary); margin-top: 32px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border-subtle); scroll-margin-top: 20px; }
+.doc-article h3 { font-size: 1.02rem; font-weight: 600; color: var(--accent-gold); margin-top: 22px; margin-bottom: 8px; scroll-margin-top: 20px; }
+.doc-article p { margin-bottom: 12px; color: var(--text-secondary); font-size: 0.92rem; }
+.doc-article ul, .doc-article ol { margin-left: 20px; margin-bottom: 16px; color: var(--text-secondary); font-size: 0.92rem; }
+.doc-article li { margin-bottom: 5px; }
+.doc-article strong { color: var(--text-primary); }
+.doc-article code { font-family: var(--font-mono); font-size: 0.8rem; background: var(--bg-elevated); color: var(--accent-gold); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border-subtle); }
+
+.table-container { overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid var(--border-subtle); }
+table { width: 100%; border-collapse: collapse; font-size: 0.84rem; text-align: left; }
+th { background: var(--bg-elevated); color: var(--text-primary); padding: 10px 14px; font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; border-bottom: 1px solid var(--border-subtle); }
+td { padding: 10px 14px; border-bottom: 1px solid var(--border-subtle); color: var(--text-secondary); }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(255,255,255,0.02); }
+
+blockquote { border-left: 3px solid var(--border-focus); background: var(--bg-elevated); padding: 12px 16px; margin: 16px 0; border-radius: 0 6px 6px 0; color: var(--text-secondary); font-style: italic; }
+hr { border: none; height: 1px; background: var(--border-subtle); margin: 28px 0; }
+.badge { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; padding: 2px 7px; border-radius: 4px; background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border-subtle); margin: 2px; }
+
+/* Minimalist UI Diagram Engine */
+.ui-diagram { margin: 24px 0; background: var(--bg-base); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 20px; }
+.ui-diag-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; margin-bottom: 16px; border-bottom: 1px solid var(--border-subtle); }
+.ui-diag-header-left { display: flex; align-items: center; gap: 10px; }
+.ui-diag-tag { font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-gold); background: var(--accent-gold-soft); padding: 2px 8px; border-radius: 4px; }
+.ui-diag-title { font-size: 0.92rem; font-weight: 700; color: var(--text-primary); }
+.ui-raw-toggle { font-family: var(--font-mono); font-size: 0.68rem; padding: 4px 8px; border-radius: 4px; background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border-subtle); cursor: pointer; }
+.ui-raw-ascii { display: none; margin-top: 12px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 14px; overflow-x: auto; font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary); white-space: pre; }
+.ui-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.ui-grid-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 12px 14px; }
+.gc-badge { font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-cyan); margin-bottom: 3px; }
+.gc-title { font-weight: 600; color: var(--text-primary); font-size: 0.86rem; margin-bottom: 4px; }
+.gc-body { font-size: 0.8rem; color: var(--text-secondary); }
+.ui-vflow { display: flex; flex-direction: column; gap: 6px; }
+.uvf-node { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-left: 3px solid var(--accent-gold); border-radius: 6px; padding: 12px 16px; }
+.uvf-badge { font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted); }
+.uvf-node h5 { font-size: 0.9rem; color: var(--text-primary); margin: 2px 0; }
+.uvf-node p { font-size: 0.82rem; color: var(--text-secondary); margin: 0; }
+.ui-flow-arrow { text-align: center; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); padding: 2px 0; }
+
+mark.search-highlight { background: var(--accent-gold); color: #000; padding: 0 3px; border-radius: 2px; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+</style>
+</head>
+<body>
+
+<aside id="sidebar">
+  <div class="brand-header">
+    <div class="brand-title"><span>◈</span> UNIVERSE B</div>
+    <span class="brand-version">CANON v2.0</span>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search canon, astras, laws..." oninput="handleSearch(this.value)">
+    <button id="searchClearBtn" class="search-clear-btn" onclick="clearSearch()">&times;</button>
+  </div>
+
+  <div class="nav-section-title">01 // Overview</div>
+  <div style="padding: 0 10px;">
+    <div class="nav-item active" id="btnStoryChronicle" onclick="showStoryChronicle()">
+      <div class="nav-item-title"><span>📖</span><span>Executive Story Chronicle</span></div>
+      <span class="file-count">7 ACTS</span>
+    </div>
+  </div>
+
+  <div class="nav-section-title">02 // Canon Modules</div>
+  <nav class="nav-menu" id="navMenu"></nav>
+</aside>
+
+<main id="main">
+  <header class="top-bar">
+    <div class="breadcrumbs">
+      <span>CODEX</span> <span>/</span> <span id="bcFolder">Overview</span> <span>/</span> <span class="current" id="bcFile">Executive Story Chronicle</span>
+    </div>
+    <div class="top-actions">
+      <input type="file" id="oldHtmlInput" accept=".html" style="display:none" onchange="importDataFromOldHtml(this)">
+      <button class="top-pill gold" id="btnSyncData" onclick="document.getElementById('oldHtmlInput').click()" title="Load 350KB DATA from your old index.html">⚡ Import DATA</button>
+      <button class="top-pill" id="btnDownloadMerged" style="display:none;" onclick="downloadMergedHtml()">💾 Save Merged HTML</button>
+      <a href="ability_codex.html" class="top-pill">Abilities (83)</a>
+      <a href="character_codex.html" class="top-pill">Roster (100)</a>
+    </div>
+  </header>
+  <div id="progressBar"></div>
+
+  <div class="content-viewport" id="contentViewport" onscroll="updateProgress()">
+    
+    <!-- ================= VIEW 1: EXECUTIVE STORY CHRONICLE ================= -->
+    <div id="storyChronicleView">
+      <div class="chronicle-wrap">
+
+        <!-- Sticky Quick-Jump Index -->
+        <nav class="section-index-bar">
+          <a href="#act-1" class="idx-link">I. Genesis &amp; Funnel</a>
+          <a href="#act-2" class="idx-link">II. 7 Seals &amp; Tier 4</a>
+          <a href="#act-3" class="idx-link">III. 5 Planetary Shards</a>
+          <a href="#act-4" class="idx-link">IV. Power &amp; Pure Steel</a>
+          <a href="#act-5" class="idx-link">V. Proving Games</a>
+          <a href="#act-6" class="idx-link">VI. Setu &amp; Route B</a>
+          <a href="#act-7" class="idx-link">VII. 6 Loops &amp; 150-Ch Arc</a>
+        </nav>
+
+        <!-- Hero Dossier -->
+        <section class="exec-hero">
+          <div class="exec-hero-eyebrow">MASTER WORLDBUILDING CODEX • [CANON LOCK]</div>
+          <h1 class="exec-hero-title">The Grand Chronicle of Universe B</h1>
+          <p class="exec-hero-desc">
+            हे कोणत्याही सामान्य Isekai सारखे हवेत तरंगणाऱ्या निळ्या स्क्रीनचे (Floating Game HUD), मोफत लेव्हल-अपचे किंवा चीट-स्किल्सचे जग नाही. हे अवकाशाच्या गर्भात विकसित होणारे एक जिवंत, रक्तामांसाचे <strong>Child Cosmos (बाल्य-विश्व)</strong> आहे — जिथे अनादी <strong>क्षीर सागराच्या (Singularity Apex)</strong> आध्यात्मिक उगमापासून सुरू झालेला प्रवास आज १५% जास्त गुरुत्वाकर्षणाच्या धगधगत्या लाव्हा-भट्ट्यांमध्ये, ७२,००० नाड्यांच्या <em>Pure Steel</em> युद्धात, आणि ५,००० मैल लांब <strong>Grand Aegis</strong> च्या रक्ताळलेल्या खंदकात येऊन ठेपला आहे.
+          </p>
+          <div class="meta-tags-row">
+            <span class="meta-tag">Zero Gamer HUD</span>
+            <span class="meta-tag">4 Dimensional Tiers</span>
+            <span class="meta-tag">5 Planetary Shards</span>
+            <span class="meta-tag">7 Pure Steel Axioms</span>
+            <span class="meta-tag">Protagonist Status: RIKTA</span>
+          </div>
+        </section>
+
+        <!-- 4 Core Design Pillars (Why It Hits Different for Anime & Web Novel Fans) -->
+        <section class="pillars-bento">
+          <div class="bento-box">
+            <div class="bento-kicker">01 // BIOLOGICAL FRICTION</div>
+            <h4>शून्य गेम मेनू, १००% शारीरिक किंमत</h4>
+            <p>येथे HP/MP बार्स नाहीत. स्वतःच्या धारणेपलीकडे (<em>The Hold</em>) ऊर्जा खेचल्यास <strong>The Blowout (नाडी-दाह)</strong> होऊन हात कोळशासारखा जळतो, आणि प्राण संपल्यास योद्धा <strong>Dry (Śūnya)</strong> पडून कोसळतो.</p>
+          </div>
+          <div class="bento-box">
+            <div class="bento-kicker">02 // TACTICAL PUZZLE COMBAT</div>
+            <h4>पॉवर-लेव्हल नव्हे, बौद्धिक युद्ध</h4>
+            <p><em>Hunter x Hunter</em> आणि <em>LOTM</em> प्रमाणे प्रत्येक लढाई हे एक कोडे आहे. शत्रूच्या चेंबरमधील ०.२ सेकंदाचा <strong>'The Sing' (गूंज)</strong> ऐकून तलवारीने सोनिक गोळी वळवणे ही येथील खरी युद्धकला आहे.</p>
+          </div>
+          <div class="bento-box">
+            <div class="bento-kicker">03 // SOCIO-ECONOMIC REALISM</div>
+            <h4>२ तांब्याचे माषे आणि शीतयुद्ध</h4>
+            <p>१ वाटी डाळ-भाकरीसाठी २ Copper Mashas मोजावे लागतात. मानवांचे धान्य आणि असुरांचे टंगस्टन-पोलाद एकमेकांच्या नरडीला बांधलेले आहेत; कोणताही लोक स्वयंपूर्ण नाही.</p>
+          </div>
+          <div class="bento-box">
+            <div class="bento-kicker">04 // UNINDEXED ANOMALY</div>
+            <h4>Route B: [STATUS: RIKTA]</h4>
+            <p>विधात्याच्या लिखित नशिबाच्या (<em>Lihito</em>) पलीकडे, क्षीर सागराची जीवघेणी चाळणी पार करून आलेला आत्मा — ज्याच्याकडे कोणतीही चीट नाही, फक्त १००% कोरे भविष्य आणि पाठीमागे लागलेले <em>Red-Ink Warrant</em> आहे.</p>
+          </div>
+        </section>
+
+        <!-- ACT I: SATYA YUGA -->
+        <section id="act-1" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT I // COSMOLOGY &amp; GENESIS</span>
+            <span class="act-era-tag">ERA 1: SATYA YUGA (सत्य युग)</span>
+          </div>
+          <h2 class="act-title">अनादी क्षीर सागर, अनंत-शेष आणि चतुर्स्तरीय कॉस्मिक नरसाळे (The Cosmic Funnel)</h2>
+          <div class="act-prose">
+            <p>
+              विश्वाच्या सर्वोच्च उगमबिंदूवर — <strong>Cosmic Singularity (हिरण्यगर्भ / Apex 3–4%)</strong> वर — <strong>Kshira Sagara (क्षीर सागर)</strong> स्थित आहे. हा पाण्याचा समुद्र नसून शुद्ध आध्यात्मिक प्राण-ऊर्जेचा (Pure Spiritual Energy) महा-स्त्रोत आहे, जिथे पाऊल टाकणारे कोणतेही नश्वर शरीर विलीन होते. येथे <strong>Ananta-Shesha</strong> वर <strong>Garbhodakashayi Vishnu</strong> विश्राम करतात, जिथून विश्वातील सर्व आत्म्यांना मूळ चैतन्य मिळते.
+            </p>
+            <p>
+              <strong>Supreme Trinity (ब्रह्मा, विष्णू, महेश)</strong> प्रत्यक्ष अवतार घेत नाहीत (<em>Zero-Avatar Mandate</em>). त्यांनी स्पेस-टाइमचे संतुलन राखण्यासाठी <strong>Ananta (The System Core)</strong> ची निर्मिती केली — जो निर्जीव, भावनाहीन आणि १००% <em>Append-Only Read-Only</em> डेटाबेस आहे. संपूर्ण विश्व एका महाकाय नरसाळ्याप्रमाणे (Cosmic Funnel) चार आयामी स्तरांत विभागलेले आहे:
+            </p>
+          </div>
+          <div class="sys-grid-2">
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">Tier 1: Divine Realm &amp; Sabha-Loka</span><span class="sys-card-badge">100% COMBAT BAN</span></div>
+              <p>सर्वोच्च संसद जिथे <strong>Six Constitutional Offices</strong> (Yama, Vidhata, Chitragupta, Mahā-Pālaka, Chief Sage, Prime Seeker) आणि ३ दैवी दूत (Prajapati, Narada, Rudra) कार्य करतात. येथे शस्त्र उगारणे १००% अशक्य आहे.</p>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">Tier 2: The Buffer Zone (The Great Setu)</span><span class="sys-card-badge">50,000-MILE BRIDGE</span></div>
+              <p>अंतराळात तरंगणारा ५०,००० मैलांचा पाषाण-पोलादी महा-सेतू. येथे <em>Setu Academy</em>, <em>Pratigraha</em> आत्म-गोदाम, आणि १,००,००० सैनिकांची <strong>Setu Mahā-Senā</strong> तैनात आहे.</p>
+            </div>
+          </div>
+          <div class="callout-block">
+            <span>DIMENSIONAL PHASE-SHIFT LAW</span>
+            हे चारही Tiers एकाच अंतराळात असूनही वेगवेगळ्या Dimensional Frequencies वर आहेत. साध्या डोळ्यांनी किंवा दुर्बिणीने पाहिल्यास दुसरा लोक ०% दिसतो; सामान्य माणसाला आकाशात केवळ तारे आणि ६०–७०% विस्तारणारी <em>Growing Cosmic Edge</em> दिसते.
+          </div>
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'cosmology.md')">Open Cosmology (cosmology.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'high_council.md')">Open High Council (high_council.md) →</button>
+          </div>
+        </section>
+
+        <!-- ACT II: TRETA YUGA -->
+        <section id="act-2" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT II // THE RUPTURE &amp; CONTAINMENT</span>
+            <span class="act-era-tag">ERA 2: TRETĀ YUGA (त्रेता युग)</span>
+          </div>
+          <h2 class="act-title">अश्वत्थाचा महा-भ्रंश, सात शून्य-सील आणि Tier 4 (Corrupted Realm) चा जन्म</h2>
+          <div class="act-prose">
+            <p>
+              दुसऱ्या युगात विश्वाचा आधारस्तंभ <strong>Ashvattha World-Tree</strong> दुभंगला आणि बाह्य शून्यातून <strong>Seven Primeval Dark Entities (Kāla-Kūṭa ते Mahā-Tamas)</strong> आत घुसले. त्यांना मारल्यास संपूर्ण विश्वच कोसळले असते; म्हणून ऋषी, देव आणि असुरांनी त्यांना भूगर्भात <strong>Seven Cosmic Void Seals (सात महा-बंध)</strong> लावून गाडले. अमर राजा <strong>Shrutayudha</strong> आजही सातव्या सीलवर उल्कापिंडी साखळ्यांनी बांधलेला पहारेकरी आहे.
+            </p>
+            <p>
+              या प्रलयात यमाची <em>Soul-Sorting</em> यंत्रणा तुटली. कोट्यवधी अनिर्देशित आत्मे विषारी Aether शोषून विकृत <strong>Devils (अधो-दैत्य) आणि Pishacha Yoni</strong> बनले. Astral Realm चा हा ३०% दूषित भूभाग कापून <strong>Tier 2 आणि Tier 3 च्या मधोमध</strong> बंदिस्त केला गेला आणि त्याभोवती ५,००० मैल लांब ३६०° सुवर्ण-कवच — <strong>The Grand Aegis</strong> — उभारण्यात आले.
+            </p>
+          </div>
+          <div class="callout-block" style="border-left-color: var(--accent-rose);">
+            <span style="color: var(--accent-rose);">KAY-TYAG LAW (THE SOUL-ONLY SUMMONING FILTER)</span>
+            कोणताही डेव्हिल Grand Aegis भिंत प्रत्यक्ष ओलांडू शकत नाही (स्पर्श होताच शरीर भस्म होते). जर नश्वर तांत्रिकाने लगतच्या आयामी सीमेपलीकडून डेव्हिलला Summon केलेच, तर त्याचे १०-टनी विषारी शरीर पाताळातच राहते; तो जिवंत जगात केवळ एक <strong>अदृश्य आत्मा (50–70% Weakened Spirit)</strong> म्हणूनच येऊ शकतो!
+          </div>
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'corrupted_realm.md')">Open Corrupted Realm (corrupted_realm.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'history.md')">Open 7 Void Seals Register (history.md) →</button>
+          </div>
+        </section>
+
+        <!-- ACT III: DVAPARA YUGA & 5 SHARDS -->
+        <section id="act-3" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT III // THE FIVE PLANETARY SHARDS</span>
+            <span class="act-era-tag">ERA 3: DVĀPARA YUGA (द्वापर युग)</span>
+          </div>
+          <h2 class="act-title">महा-विभाजन: पाच तरंगते ग्रह-तुकडे आणि ५% एलियन्स वसाहत</h2>
+          <div class="act-prose">
+            <p>
+              प्रजातींमधील अवाढव्य जैविक तफावत आणि खनिज युद्धांमुळे अखंड जमिनीचे <strong>पाच स्वतंत्र तरंगत्या ग्रह-तुकड्यांमध्ये (Five Floating Planetary Shards)</strong> विभाजन झाले. प्रत्येकाचे स्वतंत्र गुरुत्वाकर्षण व क्षितिज असून त्यांच्या दरम्यान प्राणघातक <strong>Aetheric Spatial Void</strong> आहे. याच युगात पांचाल शहरात डेव्हिल समनिंगमुळे ५०,००० आत्मे जळून खाक झाले (<em>The Ashen Eclipse</em>), ज्यानंतर High Council ने <strong>Class-Omega Taboo</strong> लावून पाताळाचा इतिहास सामान्य जनतेपासून १००% पुसून टाकला.
+            </p>
+          </div>
+
+          <div class="sys-grid-2">
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">1. Human Shard (पूर्व — नश्वर पाळणा)</span><span class="sys-card-badge">~12 CRORE POP</span></div>
+              <ul>
+                <li><strong>६०–७०% Baseline Mortals:</strong> २००–३०० किलो उचलणारे कणखर शरीर, पण शून्य कॉस्मिक ज्ञान.</li>
+                <li><strong>~२५% Anchor-Tuners:</strong> चक्र-लंगर, Lattice-Rails व नाद-शलाका ग्रिड चालक.</li>
+                <li><strong>Top ५% Awoken High-Humans:</strong> ७२,००० नाड्यांची साधना करून <em>The Purge</em> साध्य केलेले १५०–२५० वर्षे जगणारे वीर.</li>
+                <li><strong>केंद्रे:</strong> हस्तिनापूर (राजधानी), समुद्र-पत्तनम (बंदर), तपोवन (यंत्र-मुक्त ऋषी खोरे).</li>
+              </ul>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">2. Asura Shard (पश्चिम — पाताळ-भट्ट्या)</span><span class="sys-card-badge">+15% GRAVITY</span></div>
+              <ul>
+                <li><strong>भूगोल:</strong> लाव्हा नद्या, बेसाल्ट डोंगर, गंधकाची हवा; शेती ०%.</li>
+                <li><strong>लोकसंख्या (~८ कोटी):</strong> ५०–६०% साधी भट्टी उपयुक्तता; ३०–४०% लढाऊ तंत्रज्ञ (३५०–५०० वर्षे आयुष्य).</li>
+                <li><strong>वैशिष्ट्य:</strong> वज्र-नगर येथे जन्माने नाही तर <em>The Forge Trials (यंत्र परीक्षा)</em> ने पद मिळते.</li>
+                <li><strong>संघर्ष:</strong> Baroness Simhika ची खाण-मक्तेदारी वि. Ulka ची <em>Red Crucible Union</em>.</li>
+              </ul>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">3. Deva Shard (उत्तर — स्फटिक पठार)</span><span class="sys-card-badge">ZERO-SMOG LAW</span></div>
+              <ul>
+                <li><strong>भूगोल:</strong> तरंगते संगमरवरी बेट (अमरावती व गंधर्व-पुरी); यंत्रे व धुरावर मृत्युदंडाची बंदी.</li>
+                <li><strong>लोकसंख्या (~४ कोटी):</strong> ५०–६०% एथर-रेशीम विणकर; ३०–४०% सौर-योद्धे (६००+ वर्षे आयुष्य).</li>
+                <li><strong>मर्यादा:</strong> कोळशाच्या धुराची तीव्र ॲलर्जी आणि वयाच्या ३०० व्या वर्षानंतर होणारा <em>Solar Brain Fever</em>.</li>
+              </ul>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">4. Beast Shard (दक्षिण — आदिम अरण्य)</span><span class="sys-card-badge">1,500-FT CANOPY</span></div>
+              <ul>
+                <li><strong>सचेतन पशू-नागरिक (Beast-Folk):</strong> वानर, नाग, गरुड — हे बोलणारे सार्वभौम नागरिक आहेत (गुलामगिरीवर मृत्युदंड).</li>
+                <li><strong>वन्य श्वापदे (Wild Beasts):</strong> <em>Kāyā-Kośa Molting</em> २०० वर्षांऐवजी ६ महिन्यांत पूर्ण करण्यासाठी मानवी साधकांशी स्वेच्छेने <strong>Soul-Bond</strong> करतात.</li>
+              </ul>
+            </div>
+            <div class="sys-card" style="grid-column: 1 / -1;">
+              <div class="sys-card-head"><span class="sys-card-title">5. Central Shard (मध्य — Central City) &amp; The 5% Aliens Diaspora</span><span class="sys-card-badge">100% DEMILITARIZED</span></div>
+              <p>५०,००० चौ. मैलांचा तटस्थ ग्रह-तुकडा. <strong>Akash-Kosha Central Bank</strong> (Aether-Rupee चलन), आंतरराष्ट्रीय नाद-शलाका ग्रिड आणि <em>The Grand Proving Grounds</em> चे केंद्र. याशिवाय महा-विष्णूंच्या उच्छ्वासातून निर्माण झालेल्या समांतर विश्वांतून विचलित होऊन आलेली <strong>५% 'The Aliens' वसाहत</strong> (`Ardha-Rikta` दर्जा) हस्तिनापूर आणि सेंट्रल सिटीमध्ये छापखाने, बँकिंग लेजर्स, गटारे व बॅलिस्टिक डिझाइन चालवते.</p>
+            </div>
+          </div>
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'astral_realm.md')">Open Astral Geography (astral_realm.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('characters', 'races.md')">Open Racial Perspectives (races.md) →</button>
+          </div>
+        </section>
+
+        <!-- ACT IV: POWER SYSTEM & PURE STEEL AXIOMS -->
+        <section id="act-4" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT IV // METAPHYSICS &amp; COMBAT RULES</span>
+            <span class="act-era-tag">5+1 PILLARS &amp; 7 PURE STEEL AXIOMS</span>
+          </div>
+          <h2 class="act-title">शक्तीचे स्थापत्य: ४-स्तरीय उत्क्रांती आणि ७ लोखंडी लढाऊ नियम (Pure Steel Axioms)</h2>
+          <div class="act-prose">
+            <p>
+              Universe B ची शक्ती प्रणाली <strong>Five Cosmic Pillars (Authority, Energy, Karma, Tapasya, Boons)</strong> आणि कधीही नष्ट न होणाऱ्या गुप्त सहाव्या स्तंभावर — <strong>Ātma-Tattva (The Soul Core)</strong> — उभी आहे. प्रत्येक क्षमता साधनेनुसार ४ टप्प्यांत विकसित होते: <strong>Tier 1: Prāthamika (Common) ➔ Tier 2: Pravīṇa (Extra / Shape-Forged) ➔ Tier 3: Advitīya (Unique / Rule-Bending) ➔ Tier 4: Parama-Śakti (Divine Astra)</strong>. रणांगणातील लढाई खालील ७ लोखंडी नियमांवर चालते:
+            </p>
+          </div>
+          <div class="sys-grid-3">
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">1. The Hold &amp; The Blowout</span><span class="sys-card-badge">Dhāraṇā / Nāḍī-Dāha</span></div>
+              <p>७२,००० नाड्यांची ऊर्जा वाहण्याची मर्यादा म्हणजे <em>The Hold</em>. नवशिक्याने त्यापलीकडचे अस्त्र किंवा काडतूस चालवल्यास <strong>The Blowout</strong> होऊन हात कोळशासारखा जळून निकामी होतो.</p>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">2. Dry / Burnout &amp; Reset</span><span class="sys-card-badge">Śūnya / Prāṇāyāma</span></div>
+              <p>येथे काल्पनिक कूलडाऊन टाइमर्स नाहीत. सलग प्रहारांनी आज्ञा-चक्रातील प्राण संपल्यावर योद्धा <strong>Dry</strong> पडतो (Hypoxia व स्नायू लॉक). दर ४ वारांनंतर <em>Breath Reset</em> अनिवार्य आहे.</p>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">3. Zero Gunpowder Rule</span><span class="sys-card-badge">Thermal Chamber Warp</span></div>
+              <p>अवकाशीय किरणोत्सर्गात रासायनिक दारूगोळा आपोआप फुटतो. त्यामुळे सर्व बंदुका <strong>Aether-Pneumatic</strong> आहेत; सलग १२ गोळ्यांनंतर पितळी बॅरल वितळते.</p>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">4. The Sing &amp; Deflection</span><span class="sys-card-badge">Gūñja (0.2s Tell)</span></div>
+              <p>एथर-गोळी सुटण्याच्या ०.२ सेकंद आधी स्फटिकातून तीव्र शिट्टी (<strong>The Sing</strong>) वाजते. अनुभवी खड्गवीर हा नाद ऐकून सोनिक गोळी तलवारीने वळवतात (<em>Blade Deflection</em>).</p>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">5. Neural Feedback Shock</span><span class="sys-card-badge">Prāṇa-Bandhana Risk</span></div>
+              <p>सहजीवी श्वापदाला गंभीर जखम झाल्यास नाडी-धक्क्याने मानवी जोडीदाराचा मेंदू <strong>२.० सेकंद पूर्णपणे सुन्न (Stunned)</strong> होतो.</p>
+            </div>
+            <div class="sys-card">
+              <div class="sys-card-head"><span class="sys-card-title">6. The Molt, Purge &amp; Chime</span><span class="sys-card-badge">Kruti Breakthrough</span></div>
+              <p>मृत्यूच्या उंबरठ्यावर लढताना (<em>Kruti</em>) अंतर्मनात पितळी घंटा (<strong>The Chime</strong>) वाजते, शरीरातून निळी वाफ (<strong>The Purge</strong>) फुटते आणि श्वापद वज्र-कात (<strong>The Molt</strong>) टाकते!</p>
+            </div>
+          </div>
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('powers', 'system.md')">Open Power System (system.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('powers', 'abilities.md')">Open 100 Moves &amp; Bestiary (abilities.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('powers', 'astras.md')">Open Divine Astras (astras.md) →</button>
+          </div>
+        </section>
+
+        <!-- ACT V: THE PROVING GAMES -->
+        <section id="act-5" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT V // THE PROVING GAMES &amp; VANGUARD LEAGUE</span>
+            <span class="act-era-tag">ERA 4: PAN-ASTRAL TOURNAMENT</span>
+          </div>
+          <h2 class="act-title">वीर-फलक, १,००,००० प्रेक्षकांचा महा-आखाडा आणि पाच दैनंदिन संकटे</h2>
+          <div class="act-prose">
+            <p>
+              पाचही ग्रह-तुकड्यांमध्ये थेट महायुद्ध भडकू नये म्हणून Central City मध्ये <strong>The Proving Games (The Master Vanguard &amp; Beast League)</strong> हे बहु-अब्ज मुद्रिकांचे क्रीडा साम्राज्य उभे राहिले. चार प्रांतिक फीडर सर्किट्समधून (<em>Hastinapur Iron-Akharas, Caldera Foundry Brawls, Solar Elysian Jousts, Primeval Canopy Trials</em>) विजयी झालेले वीर सेंट्रल कोलोसियमच्या हलणाऱ्या दगडी आखाड्यात उतरतात. रिंगणात उत्क्रांती झाल्यास <strong>Continuous Fight Rule</strong> नुसार सामना थांबत नाही! आखाड्याबाहेर हे योद्धे खालील ५ वास्तविक संकटांशी लढून रँकिंग मिळवतात:
+            </p>
+          </div>
+          <div class="sys-grid-3">
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">1. Void Rift Beasts</span></div><p>अवकाशीय पोकळीतून सीमावर्ती खाणींवर व रेल्वे रुळांवर धडकणारी महाकाय अंतराळ-श्वापदे.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">2. Rogue Occult Cults</span></div><p><em>The Hollow Sect</em> सारख्या भूमिगत टोळ्या ज्या बेकायदेशीरपणे पिशाचांचे विषारी मियाझ्मा संसर्ग पसरवतात.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">3. Void Pirates &amp; Outlaws</span></div><p>व्यापारी जहाजे व स्फटिक गाड्या लुटणाऱ्या बंडखोर टोळ्या (High Bounty Warrants).</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">4. Ancient Crypt Golems</span></div><p>Era 2 च्या प्रलयात जमिनीखाली गाडलेली २००० वर्षे जुनी रुनिक युद्ध-यंत्रे.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">5. Coliseum Duels</span></div><p>६ युद्ध-शाखांचे (Urumi/Pata, Vajra-Gada, Aether-Guns, Dhanurveda, Beast Duos, Marma) औपचारिक द्वंद्व.</p></div>
+          </div>
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('tournaments', 'proving_games.md')">Open Proving Games (proving_games.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('tournaments', 'leaderboard.md')">Open Leaderboard &amp; Referee Law (leaderboard.md) →</button>
+          </div>
+        </section>
+
+        <!-- ACT VI: SETU PIPELINE & ROUTE B -->
+        <section id="act-6" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT VI // THE BUFFER ZONE &amp; SOUL ADMINISTRATION</span>
+            <span class="act-era-tag">ROUTE A (LIHITO) VS. ROUTE B (RIKTA)</span>
+          </div>
+          <h2 class="act-title">वीर-फलकामागचे सर्वोच्च गुपित आणि 'Route B: [STATUS: RIKTA]'</h2>
+          <div class="act-prose">
+            <p>
+              <strong>The Elite Harvest:</strong> जेव्हा एखादा वीर Vanguard Board वर <strong>Apex S-Rank</strong> गाठतो, तेव्हा ८५–९०% योद्धे सेंट्रल सिटीमध्ये <em>Arena Tycoons</em> म्हणून ऐशोआरामात राहतात; पण १०–१५% निडर वीरांना <strong>Marshal-General Vajraketu</strong> मध्यरात्री महा-सेतूवर बोलावून सत्य दाखवतात की खरा प्रलय Grand Aegis च्या पलीकडे Tier 4 मध्ये उभा आहे!
+            </p>
+            <p>
+              <strong>Soul Administration &amp; Route B Drift:</strong> प्रत्येक अधिकृत आत्मा (<em>Route A</em>) मूळ विश्वाच्या यमाचा <em>Release Seal</em> घेऊन, विधात्याच्या लिखित नशिबाने (<em>Lihito</em>) आणि चित्रगुप्ताच्या <em>Soul ID</em> ने जन्म घेतो. परंतु अवकाशीय भेगांतून किंवा समनिंगमुळे जो अनधिकृत आत्मा (<strong>Route B</strong>) थेट क्षीर सागराच्या गुरुत्वीय दाबातून (<em>Singularity Sieve</em>) वाचून बाहेर पडतो, त्याच्यावर Warden Setuvrata कडून <strong><code>[STATUS: RIKTA / UNINDEXED]</code></strong> चा शिक्का पडतो — १००% कोरे नशीब, शून्य चीट स्किल्स, आणि पाठीमागे लागलेले चित्रगुप्ताचे <em>Red-Ink Interception Warrant</em>!
+            </p>
+          </div>
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'soul_admin.md')">Open Soul Administration (soul_admin.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'the_setu.md')">Open The Great Setu (the_setu.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('characters', 'protagonist.md')">Open Route B &amp; 150-Ch Blueprint (protagonist.md) →</button>
+          </div>
+        </section>
+
+        <!-- ACT VII: 6 RESOURCE LOOPS & 5-ARC ROADMAP -->
+        <section id="act-7" class="act-section">
+          <div class="act-header">
+            <span class="act-id">ACT VII // ECOLOGICAL LOOPS &amp; 150-CHAPTER BLUEPRINT</span>
+            <span class="act-era-tag">MACRO STORY ENGINE</span>
+          </div>
+          <h2 class="act-title">सहा अभेद्य आंतर-लोकीय जीवन-साखळ्या आणि ५-अंकी कथानक आराखडा</h2>
+          <div class="sys-grid-2">
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">1. Bread-for-Steel (Human ⇄ Asura)</span></div><p>मानवांचे धान्य असुरांचे प्राण वाचवते; असुरांचे टंगस्टन-पोलाद मानवांची रेल्वे व नांगर चालवते.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">2. Optics-and-Herbs (Deva ⇄ Beast/Asura)</span></div><p>असुरांच्या भट्ट्यांना देवांची Solar Lenses लागतात; देवांचा मेंदू-दाह थांबवायला पशूंची शीत-बुरशी लागते.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">3. Salt-and-Plow (Beast ⇄ Human/Asura)</span></div><p>पशूंच्या हाडांसाठी समुद्राचे मीठ लागते; बदल्यात पशू टायटन अंबर राळ व संजीवनी औषधे देतात.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">4. Central Clearinghouse (Akash-Kosha)</span></div><p>सेंट्रल बँक ५% शुल्कावर सर्व व्यवहार Aether-Rupee मध्ये क्लिअर करते.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">5. Abyssal Waste Rebound (Surface ⇄ Tier 4)</span></div><p>वरचा कचरा खाली फेकला जातो; त्यातून तयार होणारा विषारी Miasma पुन्हा वर पाझरून सीमा दूषित करतो.</p></div>
+            <div class="sys-card"><div class="sys-card-head"><span class="sys-card-title">6. The Veiled Grid (4.2s Hammer Window)</span></div><p>१७% कर चुकवण्यासाठी ५००-टन ड्रॉप-हॅमरच्या आवाजाखाली ३.५% शुल्कात चालणारी गुप्त चक्र-लंगर तस्करी.</p></div>
+          </div>
+
+          <div class="table-container" style="margin-top: 22px;">
+            <table>
+              <thead>
+                <tr><th>Arc</th><th>Chapters</th><th>Title &amp; Core Focus</th><th>Climax Payoff</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Arc 1</strong></td><td>Ch. 1–30</td><td><strong>The Spark:</strong> हस्तिनापूर Foundry #4 संप, २ माषांचे दारिद्र्य, Red-Ink वॉरंट व देवयानीचा पाठलाग.</td><td>चालत्या ट्रेनच्या छतावर विकार-जीवाचा वध व सीमेकडे पलायन.</td></tr>
+                <tr><td><strong>Arc 2</strong></td><td>Ch. 31–60</td><td><strong>Iron Arteries:</strong> शैल-गाढा खाणीतील तस्करी, Proving Grounds प्रादेशिक पात्रता व मॅग्मा युद्ध.</td><td>सिंहिकाच्या कटाचा पर्दाफाश व Pan-Astral वॉरंट.</td></tr>
+                <tr><td><strong>Arc 3</strong></td><td>Ch. 61–90</td><td><strong>The High Wall:</strong> ५०,००० मैल महा-सेतू, सील ३ मधून गळती व १०,००० पिशाचांचा वेढा.</td><td>दुसरा अनंत-नाद (Second Chime) व वज्रकेतुची मूक मान्यता.</td></tr>
+                <tr><td><strong>Arc 4</strong></td><td>Ch. 91–120</td><td><strong>The Ashen Pit:</strong> Grand Aegis पलीकडे Tier 4 मध्ये प्रवेश, राजा श्रुतायुधची भेट व पौंड्रक युद्ध.</td><td>सातवे सील (Mahā-Tamas) तुटण्यापासून रोखण्याचा सर्वोच्च त्याग.</td></tr>
+                <tr><td><strong>Arc 5</strong></td><td>Ch. 121–150</td><td><strong>Sound of the World:</strong> सभा-लोकात यम, विधाता व चित्रगुप्तासमोर महा-खटला.</td><td>क्षीर सागर अनुनाद व Unbound युगाची पहाट.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="act-footer">
+            <button class="doc-jump-btn" onclick="openDocByPath('world', 'society.md')">Open Society &amp; Price Index (society.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('rules', 'novel_craft.md')">Open Novel Craft Rules (novel_craft.md) →</button>
+            <button class="doc-jump-btn" onclick="openDocByPath('characters', 'roster.md')">Open 100 Characters Roster (roster.md) →</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ================= VIEW 2: CANONICAL DEEP ARCHIVE ================= -->
+    <div id="docArchiveView" style="display: none;">
+      <div style="max-width: 1132px; margin: 0 auto 18px;">
+        <button class="top-pill gold" onclick="showStoryChronicle()">← Back to Executive Story Chronicle</button>
+      </div>
+      <div class="archive-grid">
+        <div class="archive-main">
+          <div id="sopyaBox"></div>
+          <div class="doc-tabs-bar" id="docTabsBar"></div>
+          <article class="doc-article" id="docArticle"></article>
+        </div>
+        <aside class="toc-panel" id="tocPanel">
+          <div class="toc-header">On This Page</div>
+          <div id="tocList"></div>
+        </aside>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+// === PASTE YOUR const DATA = [...]; LINE HERE OR USE THE 1-CLICK IMPORT BUTTON ===
+let DATA = [];
+
+let currentCategoryIndex = 0;
+let currentFileIndex = 0;
+let currentSearchQuery = "";
+
+function escapeHtml(str) {
+  return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function updateProgress() {
+  const vp = document.getElementById("contentViewport");
+  const max = vp.scrollHeight - vp.clientHeight;
+  const pct = max > 0 ? (vp.scrollTop / max) * 100 : 0;
+  document.getElementById("progressBar").style.width = pct + "%";
+}
+
+function toggleRawDiagram(btn) {
+  const raw = btn.closest('.ui-diagram').querySelector('.ui-raw-ascii');
+  const open = raw.style.display === 'block';
+  raw.style.display = open ? 'none' : 'block';
+  btn.innerText = open ? 'Raw ASCII' : 'Hide ASCII';
+}
+
+function wrapDiagram(tag, title, bodyHtml, rawText) {
+  return `<div class="ui-diagram">
+    <div class="ui-diag-header">
+      <div class="ui-diag-header-left"><span class="ui-diag-tag">${tag}</span><span class="ui-diag-title">${title}</span></div>
+      <button class="ui-raw-toggle" onclick="toggleRawDiagram(this)">Raw ASCII</button>
+    </div>
+    ${bodyHtml}
+    <pre class="ui-raw-ascii">${escapeHtml(rawText)}</pre>
+  </div>`;
+}
+
+function convertAsciiBlockToUI(rawText) {
+  const text = rawText.trim();
+  const lines = text.split('\n').map(l => l.replace(/\r$/, ''));
+  const firstLine = lines[0].trim();
+
+  if (firstLine.startsWith('┌─')) {
+    const boxTitle = lines[1] ? lines[1].replace(/│/g, '').trim() : "System Matrix";
+    const contentLines = lines.slice(2, -1);
+    let rows = [], curr = [];
+    contentLines.forEach(cl => {
+      if (cl.startsWith('├')) { if (curr.length) { rows.push(curr); curr = []; } }
+      else if (cl.startsWith('│')) { curr.push(cl.replace(/^│|│$/g, '').split('│').map(s => s.trim())); }
+    });
+    if (curr.length) rows.push(curr);
+    let cardsHtml = "";
+    rows.forEach(r => {
+      const numCols = Math.max(...r.map(x => x.length));
+      if (numCols === 1) {
+        r.forEach(lp => {
+          const txt = lp[0];
+          if (!txt) return;
+          if (txt.includes('—')) {
+            const [k, v] = txt.split(/—(.+)/);
+            cardsHtml += `<div class="ui-grid-card"><div class="gc-title">${escapeHtml(k.trim())}</div><div class="gc-body">${escapeHtml((v||'').trim())}</div></div>`;
+          } else {
+            cardsHtml += `<div class="ui-grid-card"><div class="gc-body">${escapeHtml(txt)}</div></div>`;
+          }
+        });
+      } else {
+        let merged = new Array(numCols).fill("");
+        r.forEach(lp => lp.forEach((val, ci) => { if (val) merged[ci] = (merged[ci] + " " + val).trim(); }));
+        cardsHtml += `<div class="ui-grid-card">${numCols > 2 ? `<div class="gc-badge">${escapeHtml(merged[0])}</div>` : ''}<div class="gc-title">${escapeHtml(merged[numCols > 2 ? 1 : 0])}</div><div class="gc-body">${escapeHtml(merged[numCols > 2 ? 2 : 1])}</div></div>`;
+      }
+    });
+    return wrapDiagram("MATRIX", escapeHtml(boxTitle), `<div class="ui-cards-grid">${cardsHtml}</div>`, text);
+  }
+
+  let steps = [], currTitle = null, currBody = [];
+  lines.forEach(l => {
+    const s = l.trim();
+    if (!s || /^[│|▼▲◄►═─\s]+$/.test(s)) return;
+    const mBr = s.match(/^\[(.*?)\](.*)$/);
+    if (mBr) {
+      if (currTitle) { steps.push({ title: currTitle, body: currBody.join(' ') }); currBody = []; }
+      currTitle = mBr[1].trim();
+      const rem = mBr[2].replace(/^[\s─►◄\-•]+/, '').trim();
+      if (rem) currBody.push(rem);
+    } else {
+      if (!currTitle) currTitle = s;
+      else currBody.push(s.replace(/^[-•]\s*/, ''));
+    }
+  });
+  if (currTitle) steps.push({ title: currTitle, body: currBody.join(' ') });
+
+  let nodesHtml = "";
+  steps.forEach((st, i) => {
+    nodesHtml += `<div class="uvf-node"><div class="uvf-badge">STEP ${String(i + 1).padStart(2, '0')}</div><h5>${escapeHtml(st.title)}</h5>${st.body ? `<p>${escapeHtml(st.body)}</p>` : ''}</div>`;
+    if (i < steps.length - 1) nodesHtml += `<div class="ui-flow-arrow">↓</div>`;
+  });
+  return wrapDiagram("ARCHITECTURE FLOW", escapeHtml(steps[0] ? steps[0].title.slice(0, 60) : "System Flow"), `<div class="ui-vflow">${nodesHtml}</div>`, text);
+}
+
+function upgradeArticleDiagrams(container) {
+  container.querySelectorAll('pre').forEach(pre => {
+    const rawText = pre.innerText || pre.textContent;
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = convertAsciiBlockToUI(rawText);
+    pre.replaceWith(wrapper.firstElementChild);
+  });
+}
+
+function buildTOC(container) {
+  const tocList = document.getElementById("tocList");
+  tocList.innerHTML = "";
+  const headings = container.querySelectorAll("h2, h3");
+  if (headings.length === 0) {
+    tocList.innerHTML = `<span style="font-size:0.75rem; color:var(--text-muted);">No subsections</span>`;
+    return;
+  }
+  headings.forEach((h, i) => {
+    if (!h.id) h.id = "sec-heading-" + i;
+    const a = document.createElement("a");
+    a.href = "#" + h.id;
+    a.className = "toc-link " + (h.tagName === "H3" ? "sub" : "");
+    a.innerText = h.innerText;
+    tocList.appendChild(a);
+  });
+}
+
+function renderSidebar() {
+  const nav = document.getElementById("navMenu");
+  nav.innerHTML = "";
+  if (!DATA || DATA.length === 0) {
+    nav.innerHTML = `<div style="padding:14px 12px; font-size:0.78rem; color:var(--text-muted); border:1px dashed var(--border-subtle); border-radius:6px;">Click <strong>⚡ Import DATA</strong> in the top bar to load your 16 Canon Markdown files.</div>`;
+    return;
+  }
+  document.getElementById("btnSyncData").style.display = "none";
+  DATA.forEach((cat, idx) => {
+    const item = document.createElement("div");
+    const isStory = document.getElementById("storyChronicleView").style.display !== "none";
+    item.className = `nav-item ${!isStory && idx === currentCategoryIndex ? "active" : ""}`;
+    item.onclick = () => selectCategory(idx, 0);
+    item.innerHTML = `<div class="nav-item-title"><span>${cat.icon}</span><span>${cat.title}</span></div><span class="file-count">${cat.files.length}</span>`;
+    nav.appendChild(item);
+  });
+}
+
+function showStoryChronicle() {
+  document.getElementById("storyChronicleView").style.display = "block";
+  document.getElementById("docArchiveView").style.display = "none";
+  document.getElementById("btnStoryChronicle").classList.add("active");
+  document.querySelectorAll("#navMenu .nav-item").forEach(el => el.classList.remove("active"));
+  document.getElementById("bcFolder").innerText = "Overview";
+  document.getElementById("bcFile").innerText = "Executive Story Chronicle";
+  document.getElementById("contentViewport").scrollTop = 0;
+}
+
+function openDocByPath(folderName, fileName) {
+  if (!DATA || DATA.length === 0) {
+    alert("कृपया आधी वरच्या पट्टीतील '⚡ Import DATA' बटणावर क्लिक करून तुझी जुनी index.html फाईल सिलेक्ट कर!");
+    return;
+  }
+  const cIdx = DATA.findIndex(c => c.folder === folderName);
+  if (cIdx === -1) return;
+  const fIdx = DATA[cIdx].files.findIndex(f => f.filename === fileName);
+  selectCategory(cIdx, fIdx !== -1 ? fIdx : 0);
+}
+
+function selectCategory(catIdx, fileIdx) {
+  if (!DATA || !DATA[catIdx]) return;
+  document.getElementById("storyChronicleView").style.display = "none";
+  document.getElementById("docArchiveView").style.display = "block";
+  document.getElementById("btnStoryChronicle").classList.remove("active");
+
+  currentCategoryIndex = catIdx;
+  currentFileIndex = fileIdx || 0;
+  if (!currentSearchQuery) renderSidebar();
+
+  const cat = DATA[catIdx];
+  document.getElementById("bcFolder").innerText = cat.title;
+
+  document.getElementById("sopyaBox").innerHTML = `
+    <div class="sopya-bhashet-box">
+      <div class="sopya-header"><div class="sopya-title">${cat.icon} ${cat.title} — कार्यकारी सारांश</div><span class="sopya-tag">CANON SUMMARY</span></div>
+      <div class="sopya-summary">${cat.marathi_summary}</div>
+      <ul class="sopya-bullets">${cat.key_points.map(pt => `<li>${pt}</li>`).join("")}</ul>
+    </div>`;
+
+  const tabsBar = document.getElementById("docTabsBar");
+  tabsBar.innerHTML = "";
+  cat.files.forEach((file, fIdx) => {
+    const btn = document.createElement("button");
+    btn.className = `doc-tab-btn ${fIdx === currentFileIndex ? "active" : ""}`;
+    btn.innerText = `${file.title} (${file.size_kb} KB)`;
+    btn.onclick = () => selectFile(fIdx);
+    tabsBar.appendChild(btn);
+  });
+
+  renderCurrentFile();
+}
+
+function selectFile(fIdx) {
+  currentFileIndex = fIdx;
+  document.querySelectorAll(".doc-tab-btn").forEach((b, idx) => b.classList.toggle("active", idx === fIdx));
+  renderCurrentFile();
+}
+
+function highlightSearchTerm(htmlString, term) {
+  if (!term || term.length < 2) return htmlString;
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlString, 'text/html');
+  const walk = node => {
+    if (node.nodeType === 3) {
+      const regex = new RegExp(`(${escaped})`, 'gi');
+      if (regex.test(node.nodeValue)) {
+        const span = document.createElement('span');
+        span.innerHTML = node.nodeValue.replace(regex, '<mark class="search-highlight">$1</mark>');
+        node.parentNode.replaceChild(span, node);
+      }
+    } else if (node.nodeType === 1 && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
+      Array.from(node.childNodes).forEach(walk);
+    }
+  };
+  walk(doc.body);
+  return doc.body.innerHTML;
+}
+
+function renderCurrentFile() {
+  const cat = DATA[currentCategoryIndex];
+  const article = document.getElementById("docArticle");
+  if (!cat || !cat.files || !cat.files[currentFileIndex]) return;
+  const file = cat.files[currentFileIndex];
+  document.getElementById("bcFile").innerText = file.filename;
+
+  let content = file.html_body;
+  if (currentSearchQuery.length >= 2) content = highlightSearchTerm(content, currentSearchQuery);
+  article.innerHTML = content;
+  upgradeArticleDiagrams(article);
+  buildTOC(article);
+  document.getElementById("contentViewport").scrollTop = 0;
+}
+
+function handleSearch(query) {
+  currentSearchQuery = query.trim();
+  const q = currentSearchQuery.toLowerCase();
+  document.getElementById("searchClearBtn").style.display = q ? "block" : "none";
+  if (!q) { renderSidebar(); if (DATA.length) renderCurrentFile(); return; }
+
+  const nav = document.getElementById("navMenu");
+  nav.innerHTML = "";
+  let total = 0;
+  DATA.forEach((cat, cIdx) => {
+    const matches = [];
+    cat.files.forEach((f, fIdx) => {
+      if (f.title.toLowerCase().includes(q) || f.html_body.toLowerCase().includes(q)) matches.push({ file: f, fIdx });
+    });
+    if (matches.length) {
+      total += matches.length;
+      const group = document.createElement("div");
+      group.className = "search-group";
+      group.innerHTML = `<div class="search-cat-header"><span>${cat.icon} ${cat.title}</span><span>${matches.length}</span></div>`;
+      matches.forEach(({ file, fIdx }) => {
+        const item = document.createElement("div");
+        item.className = "search-result-item";
+        item.innerHTML = `<span>${file.title}</span><span class="search-doc-meta">${file.size_kb} KB</span>`;
+        item.onclick = () => selectCategory(cIdx, fIdx);
+        group.appendChild(item);
+      });
+      nav.appendChild(group);
+    }
+  });
+  if (!total) nav.innerHTML = `<div style="padding:16px; color:var(--text-muted); font-size:0.8rem; text-align:center;">No matches for "${escapeHtml(query)}"</div>`;
+  if (document.getElementById("docArchiveView").style.display !== "none") renderCurrentFile();
+}
+
+function clearSearch() {
+  document.getElementById("searchInput").value = "";
+  handleSearch("");
+}
+
+// === 1-CLICK DATA IMPORTER & PERSISTENT CACHE ===
+function importDataFromOldHtml(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const text = e.target.result;
+    const match = text.match(/const\s+DATA\s*=\s*(\[\{[\s\S]*?\}\]);/);
+    if (!match) {
+      alert("त्या फाईलमध्ये const DATA सापडला नाही! कृपया तुझी मूळ index.html सिलेक्ट कर.");
+      return;
+    }
+    try {
+      DATA = JSON.parse(match[1]);
+      window._rawDataJson = match[1];
+      renderSidebar();
+      document.getElementById("btnDownloadMerged").style.display = "inline-block";
+      try {
+        const req = indexedDB.open("UniverseBCodexDB", 1);
+        req.onupgradeneeded = ev => ev.target.result.createObjectStore("store");
+        req.onsuccess = ev => {
+          const tx = ev.target.result.transaction("store", "readwrite");
+          tx.objectStore("store").put(DATA, "canonData");
+        };
+      } catch (err) {}
+      alert("✅ सर्व १६ कॅनन फाईल्स (350 KB) यशस्वीरित्या लोड झाल्या! आता '💾 Save Merged HTML' वर क्लिक करून एकत्रित index.html सेव्ह करून घे.");
+    } catch (err) {
+      alert("JSON Parse Error: " + err.message);
+    }
+  };
+  reader.readAsText(file);
+}
+
+function downloadMergedHtml() {
+  const jsonStr = window._rawDataJson || JSON.stringify(DATA);
+  const currentHtml = document.documentElement.outerHTML;
+  const merged = "<!DOCTYPE html>\n" + currentHtml.replace(/let\s+DATA\s*=\s*\[\];/, "const DATA = " + jsonStr + ";");
+  const blob = new Blob([merged], { type: "text/html;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "index.html";
+  a.click();
+}
+
+window.onload = () => {
+  if (DATA && DATA.length > 0) {
+    renderSidebar();
+  } else {
+    try {
+      const req = indexedDB.open("UniverseBCodexDB", 1);
+      req.onupgradeneeded = ev => ev.target.result.createObjectStore("store");
+      req.onsuccess = ev => {
+        const tx = ev.target.result.transaction("store", "readonly");
+        const getReq = tx.objectStore("store").get("canonData");
+        getReq.onsuccess = () => {
+          if (getReq.result && getReq.result.length) {
+            DATA = getReq.result;
+            document.getElementById("btnDownloadMerged").style.display = "inline-block";
+          }
+          renderSidebar();
+        };
+      };
+    } catch (e) { renderSidebar(); }
+  }
+  showStoryChronicle();
+};
+</script>
+</body>
+</html>

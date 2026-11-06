@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNIVERSE B // Master Canon Codex & Living Story Chronicle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-void: #04060d;
+  --bg-primary: #070b16;
+  --bg-secondary: rgba(11, 17, 32, 0.86);
+  --bg-card: rgba(16, 24, 45, 0.72);
+  --bg-card-solid: #0f172a;
+  --bg-card-hover: rgba(24, 36, 66, 0.9);
+  --text-main: #f8fafc;
+  --text-Prose: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent-gold: #f59e0b;
+  --accent-gold-light: #fbbf24;
+  --accent-gold-glow: rgba(245, 158, 11, 0.25);
+  --accent-cyan: #06b6d4;
+  --accent-cyan-light: #38bdf8;
+  --accent-emerald: #10b981;
+  --accent-rose: #f43f5e;
+  --accent-purple: #a855f7;
+  --border-color: rgba(148, 163, 184, 0.14);
+  --border-gold: rgba(245, 158, 11, 0.42);
+  --border-cyan: rgba(6, 182, 212, 0.42);
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-void);
+  background-image: 
+    radial-gradient(circle at 10% 12%, rgba(245, 158, 11, 0.09) 0%, transparent 35%),
+    radial-gradient(circle at 90% 85%, rgba(6, 182, 212, 0.09) 0%, transparent 40%),
+    radial-gradient(circle at 50% 45%, rgba(168, 85, 247, 0.04) 0%, transparent 55%),
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.72;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* High-End Matte Grain Texture Overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Reading Progress Bar */
+#readingProgress {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan-light), var(--accent-purple));
+  z-index: 30;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 12px var(--accent-gold);
+}
+
+/* Sidebar Upgrade */
+#sidebar {
+  width: 340px;
+  background: var(--bg-secondary);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 20;
+  box-shadow: 12px 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.brand-header {
+  padding: 22px 22px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(6, 182, 212, 0.05) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), var(--accent-cyan), transparent);
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.24rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #fff 0%, var(--accent-gold-light) 55%, var(--accent-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-cyan-light);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.search-box {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(4, 6, 13, 0.4);
+}
+
+.search-input {
+  width: 100%;
+  padding: 11px 34px 11px 14px;
+  background: rgba(4, 6, 13, 0.85);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  outline: none;
+  transition: all 0.22s ease;
+}
+
+.search-input:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
+}
+
+.nav-menu {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 12px 24px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 14px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  transform: translateX(3px);
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.2) 0%, rgba(6, 182, 212, 0.06) 100%);
+  color: var(--accent-gold-light);
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), inset 3px 0 0 var(--accent-gold);
+}
+
+.nav-item-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-count {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-muted);
+}
+
+.nav-item.active .file-count {
+  background: var(--accent-gold);
+  color: #050811;
+  font-weight: 700;
+  border-color: transparent;
+}
+
+/* Search Group Styles (Fixed from original) */
+.search-group {
+  margin-bottom: 14px;
+  background: rgba(9, 13, 26, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.search-cat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-gold-light);
+}
+.search-result-item {
+  padding: 9px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.15s;
+}
+.search-result-item:last-child { border-bottom: none; }
+.search-result-item:hover { background: rgba(6, 182, 212, 0.1); }
+.search-result-item.active { background: rgba(245, 158, 11, 0.18); border-left: 3px solid var(--accent-gold); }
+.search-doc-title { font-size: 0.82rem; color: var(--text-main); font-weight: 600; }
+.search-doc-meta { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-dim); }
+
+/* Main Area & Top Bar */
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-bar {
+  height: 64px;
+  background: rgba(7, 11, 22, 0.88);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.breadcrumbs {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+}
+
+.breadcrumbs span.current {
+  color: var(--accent-gold-light);
+  font-weight: 700;
+  background: rgba(245, 158, 11, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.status-badges { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+.status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.status-badge:hover { transform: translateY(-1px); }
+
+.content-viewport {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 38px 90px;
+  scroll-behavior: smooth;
+}
+
+/* Data Merger Banner (When DATA is not yet injected) */
+.data-sync-banner {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.18) 0%, rgba(15, 23, 42, 0.95) 60%, rgba(6, 182, 212, 0.15) 100%);
+  border: 1px solid var(--accent-gold);
+  border-radius: 14px;
+  padding: 16px 22px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+.data-sync-info h4 {
+  font-family: var(--font-display);
+  color: var(--accent-gold-light);
+  font-size: 0.98rem;
+  margin-bottom: 3px;
+}
+.data-sync-info p {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+.data-sync-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.sync-btn {
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--accent-gold-light);
+  background: linear-gradient(135deg, var(--accent-gold) 0%, #d97706 100%);
+  color: #050811;
+  transition: all 0.2s;
+}
+.sync-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(245, 158, 11, 0.4); }
+.sync-btn.secondary {
+  background: rgba(6, 182, 212, 0.16);
+  color: var(--accent-cyan-light);
+  border-color: var(--border-cyan);
+}
+
+/* =========================================================================
+   STORY CHRONICLE & IMMERSIVE NOVEL-GRADE PORTAL STYLES (UPGRADED)
+   ========================================================================= */
+.story-chronicle-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4px 4px 60px 4px;
+  animation: chronicleFadeIn 0.35s ease-out;
+}
+
+@keyframes chronicleFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sticky Quick-Jump Bar for Story Chronicle */
+.chronicle-jump-bar {
+  position: sticky;
+  top: -18px;
+  z-index: 25;
+  background: rgba(7, 11, 22, 0.9);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-gold);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.jump-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.jump-pill:hover {
+  color: var(--accent-gold-light);
+  border-color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.story-hero-banner {
+  background: 
+    radial-gradient(circle at 12% 18%, rgba(245, 158, 11, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(6, 182, 212, 0.18) 0%, transparent 50%),
+    linear-gradient(145deg, rgba(15, 23, 42, 0.96) 0%, rgba(4, 6, 13, 0.98) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: 22px;
+  padding: 42px 40px;
+  margin-bottom: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ornate Corner Accents */
+.story-hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 12px; left: 12px;
+  width: 28px; height: 28px;
+  border-top: 2px solid var(--accent-gold);
+  border-left: 2px solid var(--accent-gold);
+  opacity: 0.7;
+}
+.story-hero-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 12px; right: 12px;
+  width: 28px; height: 28px;
+  border-bottom: 2px solid var(--accent-cyan);
+  border-right: 2px solid var(--accent-cyan);
+  opacity: 0.7;
+}
+
+.story-hero-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 2.5px;
+  color: var(--accent-gold-light);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.story-hero-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.22;
+  background: linear-gradient(120deg, #ffffff 0%, #fef08a 45%, var(--accent-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+.story-hero-lead {
+  font-size: 1.06rem;
+  color: var(--text-Prose);
+  line-height: 1.85;
+  max-width: 960px;
+  margin-bottom: 24px;
+}
+
+.story-hero-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Manifesto Bento Grid (Why This Universe Slaps) */
+.manifesto-bento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.manifesto-card {
+  background: linear-gradient(160deg, rgba(19, 28, 49, 0.85) 0%, rgba(8, 12, 24, 0.92) 100%);
+  border: 1px solid var(--border-color);
+  border-top: 2px solid var(--accent-gold);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+.manifesto-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-gold);
+}
+.manifesto-card.cyan-top { border-top-color: var(--accent-cyan); }
+.manifesto-card.rose-top { border-top-color: var(--accent-rose); }
+.manifesto-card.emerald-top { border-top-color: var(--accent-emerald); }
+
+.mc-tag {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-gold-light);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.manifesto-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.manifesto-card p {
+  font-size: 0.86rem;
+  color: #cbd5e1;
+  line-height: 1.62;
+}
+
+/* Act Cards */
+.story-act-card {
+  background: rgba(13, 20, 38, 0.78);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 34px 32px;
+  margin-bottom: 28px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.story-act-card:hover {
+  border-color: rgba(245, 158, 11, 0.42);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
+}
+
+.story-act-card.featured-gold {
+  border-color: rgba(245, 158, 11, 0.38);
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.08) 0%, rgba(11, 17, 32, 0.9) 55%);
+}
+.story-act-card.featured-cyan {
+  border-color: rgba(6, 182, 212, 0.38);
+  background: linear-gradient(145deg, rgba(6, 182, 212, 0.08) 0%, rgba(11, 17, 32, 0.9) 55%);
+}
+.story-act-card.featured-rose {
+  border-color: rgba(244, 63, 94, 0.38);
+  background: linear-gradient(145deg, rgba(244, 63, 94, 0.08) 0%, rgba(11, 17, 32, 0.9) 55%);
+}
+.story-act-card.featured-emerald {
+  border-color: rgba(16, 185, 129, 0.38);
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.08) 0%, rgba(11, 17, 32, 0.9) 55%);
+}
+.story-act-card.featured-purple {
+  border-color: rgba(168, 85, 247, 0.38);
+  background: linear-gradient(145deg, rgba(168, 85, 247, 0.08) 0%, rgba(11, 17, 32, 0.9) 55%);
+}
+
+.story-act-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.story-act-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--accent-gold-light);
+  border: 1px solid var(--border-gold);
+}
+.story-act-badge.cyan { background: rgba(6, 182, 212, 0.18); color: var(--accent-cyan-light); border-color: var(--border-cyan); }
+.story-act-badge.rose { background: rgba(244, 63, 94, 0.18); color: #fda4af; border-color: rgba(244, 63, 94, 0.4); }
+.story-act-badge.emerald { background: rgba(16, 185, 129, 0.18); color: #34d399; border-color: rgba(16, 185, 129, 0.4); }
+.story-act-badge.purple { background: rgba(168, 85, 247, 0.18); color: #d8b4fe; border-color: rgba(168, 85, 247, 0.4); }
+
+.story-act-title {
+  font-family: var(--font-display);
+  font-size: 1.56rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.35;
+}
+
+.story-prose {
+  font-size: 1.01rem;
+  line-height: 1.85;
+  color: var(--text-Prose);
+  margin-bottom: 16px;
+}
+.story-prose p { margin-bottom: 14px; }
+.story-prose strong { color: #ffffff; font-weight: 700; }
+.story-prose em { color: var(--accent-gold-light); font-style: normal; font-weight: 600; }
+
+.story-callout {
+  border-left: 4px solid var(--accent-gold);
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 23, 42, 0.5) 100%);
+  padding: 18px 22px;
+  border-radius: 0 12px 12px 0;
+  margin: 20px 0;
+  font-style: italic;
+  color: #f8fafc;
+  line-height: 1.75;
+}
+.story-callout strong { font-style: normal; color: var(--accent-gold-light); }
+
+/* Deep-Link Action Footer inside Act Cards */
+.act-deep-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(148, 163, 184, 0.2);
+}
+.deep-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--accent-gold-light);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.deep-link-btn:hover {
+  background: var(--accent-gold);
+  color: #050811;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.3);
+}
+
+/* Shard Showcase Grid */
+.shard-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.shard-card {
+  background: rgba(8, 13, 26, 0.92);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px 20px;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.shard-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-gold);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
+}
+
+.shard-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.shard-card-title {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shard-pop-badge {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 3px 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.shard-stat-list {
+  list-style: none;
+  font-size: 0.86rem;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 12px 0;
+  flex-grow: 1;
+}
+.shard-stat-list li {
+  padding-left: 12px;
+  border-left: 2px solid rgba(148, 163, 184, 0.25);
+}
+.shard-stat-list li strong { color: var(--accent-cyan-light); }
+
+.shard-secret-box {
+  background: rgba(245, 158, 11, 0.09);
+  border: 1px dashed var(--border-gold);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  color: #fef08a;
+  line-height: 1.55;
+  margin-top: 10px;
+}
+
+/* Combat Axioms Grid in Chronicle */
+.axioms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.axiom-card {
+  background: rgba(7, 11, 22, 0.88);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.axiom-card .ax-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.axiom-card .ax-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--accent-gold-light);
+  font-size: 0.98rem;
+}
+.axiom-card .ax-sanskrit {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-cyan-light);
+  background: rgba(6, 182, 212, 0.12);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+.axiom-card p {
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  line-height: 1.58;
+  margin: 0;
+}
+
+/* Threat Cards Grid */
+.threat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.threat-card {
+  background: rgba(9, 14, 28, 0.88);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent-rose);
+  transition: transform 0.2s;
+}
+.threat-card:hover { transform: translateY(-2px); }
+.threat-card h5 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.threat-card p { font-size: 0.84rem; color: #cbd5e1; margin: 0; line-height: 1.58; }
+
+/* Loops Flow */
+.loop-step-card {
+  background: rgba(9, 14, 28, 0.88);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  border-left: 3px solid var(--accent-cyan);
+  transition: transform 0.2s;
+}
+.loop-step-card:hover { transform: translateX(4px); }
+.loop-step-card h5 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.loop-step-card p { font-size: 0.86rem; color: #cbd5e1; margin: 0; line-height: 1.62; }
+
+/* =========================================================================
+   ARCHIVE VIEW & RIGHT-SIDE TABLE OF CONTENTS (SYSTEMATIC LAYOUT)
+   ========================================================================= */
+.archive-layout-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 1280px) {
+  .archive-layout-grid { grid-template-columns: 1fr; }
+  .toc-sidebar { display: none; }
+}
+
+.toc-sidebar {
+  position: sticky;
+  top: 0;
+  background: rgba(11, 17, 32, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 18px 16px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.toc-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-gold-light);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 700;
+}
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.toc-link {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  transition: all 0.18s;
+  line-height: 1.4;
+}
+.toc-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: var(--accent-cyan);
+}
+.toc-link.toc-h3 {
+  padding-left: 18px;
+  font-size: 0.73rem;
+  color: var(--text-dim);
+}
+
+/* Sopya Bhashet Hero Card */
+.sopya-bhashet-box {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 23, 42, 0.88) 55%, rgba(6, 182, 212, 0.1) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 26px 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.sopya-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.sopya-title { font-family: var(--font-display); font-size: 1.12rem; font-weight: 700; color: var(--accent-gold-light); display: flex; align-items: center; gap: 10px; }
+.sopya-tag { font-family: var(--font-mono); font-size: 0.7rem; background: rgba(245, 158, 11, 0.2); color: var(--accent-gold-light); border: 1px solid var(--border-gold); padding: 4px 10px; border-radius: 20px; font-weight: 600; }
+.sopya-summary { font-size: 0.98rem; color: #f1f5f9; margin-bottom: 18px; line-height: 1.75; }
+.sopya-bullets { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 0; }
+.sopya-bullets li { font-size: 0.84rem; color: #cbd5e1; background: rgba(5, 8, 17, 0.65); padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(6, 182, 212, 0.25); border-left: 3px solid var(--accent-cyan); }
+
+/* File Pill Tabs */
+.doc-tabs-bar { display: flex; gap: 10px; padding-bottom: 14px; margin-bottom: 24px; overflow-x: auto; border-bottom: 1px solid var(--border-color); }
+.doc-tab-btn { padding: 10px 18px; background: rgba(15, 23, 42, 0.75); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-muted); font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; white-space: nowrap; }
+.doc-tab-btn:hover { background: var(--bg-card-hover); color: var(--text-main); border-color: rgba(255, 255, 255, 0.2); }
+.doc-tab-btn.active { background: linear-gradient(135deg, var(--accent-gold) 0%, #d97706 100%); color: #050811; border-color: var(--accent-gold-light); font-weight: 700; box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35); }
+
+/* Document Container */
+.doc-article {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 40px 44px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+.doc-article h1 { font-family: var(--font-display); font-size: 1.9rem; color: var(--accent-gold-light); border-bottom: 1px solid var(--border-gold); padding-bottom: 16px; margin-bottom: 24px; letter-spacing: 0.5px; }
+.doc-article h2 { font-family: var(--font-display); font-size: 1.35rem; color: var(--accent-cyan-light); margin-top: 38px; margin-bottom: 16px; padding: 8px 14px; background: linear-gradient(90deg, rgba(6, 182, 212, 0.12) 0%, transparent 100%); border-left: 4px solid var(--accent-cyan); border-radius: 0 8px 8px 0; scroll-margin-top: 20px; }
+.doc-article h3 { font-size: 1.12rem; color: #f8fafc; margin-top: 26px; margin-bottom: 12px; font-weight: 700; scroll-margin-top: 20px; }
+.doc-article h4 { font-size: 0.98rem; color: var(--accent-gold-light); margin-top: 18px; margin-bottom: 8px; }
+.doc-article p { margin-bottom: 14px; color: #cbd5e1; font-size: 0.95rem; }
+.doc-article ul, .doc-article ol { margin-left: 24px; margin-bottom: 18px; color: #cbd5e1; }
+.doc-article li { margin-bottom: 7px; }
+.doc-article code { background: rgba(5, 8, 17, 0.65); color: var(--accent-gold-light); padding: 3px 7px; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.2); font-family: var(--font-mono); font-size: 0.84em; }
+
+.table-container { overflow-x: auto; margin: 24px 0; border-radius: 12px; border: 1px solid var(--border-color); background: rgba(5, 8, 17, 0.5); }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left; }
+th { background: rgba(15, 23, 42, 0.9); color: var(--accent-gold-light); padding: 14px 18px; font-weight: 700; text-transform: uppercase; font-size: 0.76rem; letter-spacing: 0.8px; border-bottom: 1px solid var(--border-gold); }
+td { padding: 13px 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #cbd5e1; }
+tr:hover td { background: rgba(245, 158, 11, 0.04); }
+
+blockquote { border-left: 4px solid var(--accent-gold); background: linear-gradient(90deg, rgba(245, 158, 11, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%); padding: 16px 22px; margin: 20px 0; border-radius: 0 12px 12px 0; font-style: italic; color: #f1f5f9; }
+hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, var(--border-color), transparent); margin: 34px 0; }
+.badge { display: inline-block; font-family: var(--font-mono); font-size: 0.72rem; padding: 3px 9px; border-radius: 6px; background: rgba(6, 182, 212, 0.14); color: var(--accent-cyan-light); border: 1px solid rgba(6, 182, 212, 0.3); margin: 2px 4px 2px 0; font-weight: 600; }
+
+/* Interactive Diagram Engine Styles */
+.ui-diagram { margin: 28px 0; background: linear-gradient(165deg, rgba(15, 23, 42, 0.92) 0%, rgba(7, 11, 22, 0.96) 100%); border: 1px solid rgba(245, 158, 11, 0.32); border-radius: 16px; padding: 24px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08); position: relative; }
+.ui-diag-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-bottom: 16px; margin-bottom: 20px; border-bottom: 1px solid rgba(148, 163, 184, 0.15); }
+.ui-diag-header-left { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ui-diag-tag { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; padding: 4px 10px; border-radius: 6px; background: rgba(245, 158, 11, 0.18); color: var(--accent-gold-light); border: 1px solid rgba(245, 158, 11, 0.4); }
+.ui-diag-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: #ffffff; }
+.ui-raw-toggle { font-family: var(--font-mono); font-size: 0.7rem; padding: 5px 10px; border-radius: 6px; background: rgba(255, 255, 255, 0.06); color: var(--text-muted); border: 1px solid var(--border-color); cursor: pointer; transition: all 0.2s; }
+.ui-raw-toggle:hover { background: rgba(245, 158, 11, 0.2); color: var(--accent-gold-light); border-color: var(--border-gold); }
+.ui-raw-ascii { display: none; margin-top: 16px; background: #04060c; border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; overflow-x: auto; font-family: var(--font-mono); font-size: 0.82rem; color: #a5f3fc; line-height: 1.45; white-space: pre; }
+
+.ui-funnel-wrap, .ui-pyramid-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; }
+.ui-funnel-tier, .ui-pyr-tier { border-radius: 14px; padding: 18px 24px; text-align: center; transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative; }
+.ui-funnel-tier:hover, .ui-pyr-tier:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5); }
+.funnel-apex { width: 60%; background: radial-gradient(circle at center, rgba(245, 158, 11, 0.35) 0%, rgba(30, 27, 75, 0.95) 75%), #0f172a; border: 2px solid var(--accent-gold-light); box-shadow: 0 0 35px rgba(245, 158, 11, 0.3), inset 0 0 20px rgba(245, 158, 11, 0.15); }
+.pyr-t1 { width: 68%; background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(15, 23, 42, 0.9)); border: 1px solid rgba(245, 158, 11, 0.55); }
+.funnel-space { width: 78%; background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(15, 23, 42, 0.95)); border: 1px dashed rgba(165, 180, 252, 0.6); box-shadow: 0 0 20px rgba(99, 102, 241, 0.15); }
+.pyr-t2 { width: 86%; background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(15, 23, 42, 0.9)); border: 1px solid rgba(6, 182, 212, 0.5); }
+.pyr-t4 { width: 93%; background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(15, 23, 42, 0.95)); border: 1px solid rgba(244, 63, 94, 0.5); }
+.pyr-t3 { width: 100%; background: linear-gradient(135deg, rgba(16, 185, 129, 0.18), rgba(15, 23, 42, 0.9)); border: 1px solid rgba(16, 185, 129, 0.45); }
+@media (max-width: 900px) { .funnel-apex, .pyr-t1, .funnel-space, .pyr-t2, .pyr-t3, .pyr-t4 { width: 100%; } }
+
+.pyr-meta { display: flex; justify-content: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.pyr-chip { font-family: var(--font-mono); font-size: 0.68rem; padding: 3px 10px; border-radius: 12px; background: rgba(0,0,0,0.45); color: #e2e8f0; font-weight: 600; }
+.pyr-chip.gold { color: var(--accent-gold-light); border: 1px solid rgba(245,158,11,0.4); }
+.pyr-chip.gold-solid { background: var(--accent-gold); color: #000; font-weight: 700; border: none; }
+.pyr-chip.cyan { color: var(--accent-cyan-light); border: 1px solid rgba(6,182,212,0.4); }
+.pyr-chip.emerald { color: #34d399; border: 1px solid rgba(16,185,129,0.4); }
+.pyr-chip.rose { color: #fb7185; border: 1px solid rgba(244,63,94,0.4); }
+.pyr-chip.purple { color: #c084fc; border: 1px solid rgba(192,132,252,0.4); }
+.pyr-chip.red { color: #f87171; border: 1px solid rgba(239,68,68,0.5); font-weight: 700; }
+.funnel-title { font-family: var(--font-display); font-size: 1.15rem; margin: 4px 0 2px; }
+.funnel-sub { font-size: 0.8rem; color: #fef08a; font-family: var(--font-mono); margin-bottom: 6px; }
+.space-title { font-family: var(--font-display); font-size: 1.05rem; color: #c7d2fe; margin-bottom: 6px; }
+.gold-text { color: var(--accent-gold-light); }
+.ui-funnel-tier h4, .ui-pyr-tier h4 { font-family: var(--font-display); font-size: 1.05rem; color: #fff; margin-bottom: 6px; }
+.ui-funnel-tier p, .ui-pyr-tier p { font-size: 0.84rem; color: #cbd5e1; margin: 0; line-height: 1.5; }
+
+.ui-aegis-divider { width: 94%; padding: 10px 18px; margin: 6px 0; border-radius: 10px; background: repeating-linear-gradient(45deg, rgba(245, 158, 11, 0.18), rgba(245, 158, 11, 0.18) 12px, rgba(0, 0, 0, 0.4) 12px, rgba(0, 0, 0, 0.4) 24px); border: 1px dashed var(--accent-gold-light); text-align: center; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700; color: var(--accent-gold-light); }
+
+.ui-org-tree { display: flex; flex-direction: column; align-items: center; }
+.ui-org-root { padding: 16px 28px; border-radius: 14px; text-align: center; max-width: 680px; width: 100%; }
+.gold-glow { background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(15, 23, 42, 0.92)); border: 1px solid var(--accent-gold); box-shadow: 0 0 25px rgba(245, 158, 11, 0.15); }
+.cyan-glow { background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(15, 23, 42, 0.92)); border: 1px solid var(--accent-cyan); box-shadow: 0 0 25px rgba(6, 182, 212, 0.15); }
+.org-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-gold-light); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+.org-title { font-family: var(--font-display); font-size: 1.12rem; font-weight: 800; color: #fff; }
+.org-sub { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+.ui-tree-stem { width: 2px; height: 22px; background: linear-gradient(180deg, var(--accent-gold), var(--accent-cyan)); }
+.ui-flow-arrow { display: flex; justify-content: center; margin: 8px 0; }
+.ui-flow-arrow span { font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent-gold-light); background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.28); padding: 3px 12px; border-radius: 20px; }
+
+.ui-org-branches { display: grid; gap: 16px; width: 100%; }
+.ui-org-branches.cols-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.ui-org-branches.cols-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.ui-org-branches.cols-4 { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.ui-org-card { background: rgba(9, 14, 28, 0.82); border-radius: 12px; padding: 18px; border: 1px solid var(--border-color); transition: transform 0.2s, border-color 0.2s; }
+.ui-org-card:hover { transform: translateY(-3px); }
+.border-gold { border-top: 3px solid var(--accent-gold); }
+.border-cyan { border-top: 3px solid var(--accent-cyan); }
+.border-emerald { border-top: 3px solid var(--accent-emerald); }
+.border-rose { border-top: 3px solid var(--accent-rose); }
+.border-purple { border-top: 3px solid var(--accent-purple); }
+
+.org-card-head { margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.org-pill { display: inline-block; font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; text-transform: uppercase; padding: 2px 8px; border-radius: 6px; margin-bottom: 6px; }
+.org-pill.gold { background: rgba(245,158,11,0.18); color: var(--accent-gold-light); }
+.org-pill.cyan { background: rgba(6,182,212,0.18); color: var(--accent-cyan-light); }
+.org-pill.emerald { background: rgba(16,185,129,0.18); color: #34d399; }
+.org-pill.rose { background: rgba(244,63,94,0.18); color: #fb7185; }
+.org-card-head h5 { font-family: var(--font-display); font-size: 0.98rem; color: #fff; margin: 2px 0; }
+.org-role { font-size: 0.8rem; color: var(--accent-cyan-light); font-weight: 600; }
+.org-cover { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-top: 3px; }
+.officer-lead { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); padding: 8px 10px; border-radius: 8px; margin-bottom: 10px; font-size: 0.84rem; display: flex; justify-content: space-between; align-items: center; }
+.officer-lead span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-gold-light); }
+.org-list { list-style: none; margin: 0; padding: 0; font-size: 0.83rem; color: #cbd5e1; }
+.org-list li { padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.06); }
+.org-list li:last-child { border-bottom: none; }
+
+.ui-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.ui-grid-card { background: rgba(9, 14, 28, 0.8); border: 1px solid rgba(148, 163, 184, 0.2); border-left: 3px solid var(--accent-gold); border-radius: 10px; padding: 14px 16px; transition: all 0.2s; }
+.ui-grid-card:hover { background: rgba(22, 32, 58, 0.9); border-left-color: var(--accent-cyan); transform: translateY(-2px); }
+.gc-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-cyan-light); font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.gc-title { font-weight: 700; color: var(--accent-gold-light); font-size: 0.92rem; margin-bottom: 5px; }
+.gc-body { font-size: 0.83rem; color: #cbd5e1; line-height: 1.5; }
+
+.ui-pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 12px; width: 100%; }
+.ui-pillar-box { background: rgba(9, 14, 28, 0.85); border-radius: 12px; padding: 16px 14px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.2s; }
+.ui-pillar-box:hover { transform: translateY(-4px); }
+.p-gold { border-top: 3px solid var(--accent-gold); }
+.p-cyan { border-top: 3px solid var(--accent-cyan); }
+.p-purple { border-top: 3px solid var(--accent-purple); }
+.p-emerald { border-top: 3px solid var(--accent-emerald); }
+.p-rose { border-top: 3px solid var(--accent-rose); }
+.pb-num { font-family: var(--font-mono); font-size: 0.66rem; color: var(--text-muted); letter-spacing: 1px; }
+.pb-name { font-family: var(--font-display); font-size: 1rem; font-weight: 800; color: #fff; margin: 4px 0 2px; }
+.pb-sanskrit { font-size: 0.78rem; color: var(--accent-gold-light); margin-bottom: 6px; font-weight: 600; }
+.pb-desc { font-size: 0.78rem; color: #cbd5e1; line-height: 1.45; }
+
+.ui-secret-pillar { width: 100%; background: linear-gradient(90deg, rgba(168, 85, 247, 0.2) 0%, rgba(245, 158, 11, 0.2) 50%, rgba(168, 85, 247, 0.2) 100%); border: 1px solid rgba(168, 85, 247, 0.55); border-radius: 14px; padding: 18px 24px; text-align: center; box-shadow: 0 0 30px rgba(168, 85, 247, 0.2); }
+.sp-badge { font-family: var(--font-mono); font-size: 0.72rem; color: #e9d5ff; font-weight: 700; letter-spacing: 1px; }
+.sp-title { font-family: var(--font-display); font-size: 1.08rem; font-weight: 800; color: #fff; margin: 4px 0; }
+.sp-desc { font-size: 0.84rem; color: #e2e8f0; }
+
+.ui-vflow { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+.uvf-node { background: rgba(9, 14, 28, 0.85); border: 1px solid var(--border-color); border-left-width: 4px; border-radius: 12px; padding: 14px 20px; transition: transform 0.2s; }
+.uvf-node:hover { transform: translateX(4px); }
+.uvf-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-cyan-light); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+.uvf-node h5 { font-family: var(--font-display); font-size: 0.98rem; color: var(--accent-gold-light); margin-bottom: 4px; }
+.uvf-node p { font-size: 0.85rem; color: #cbd5e1; margin: 0; }
+
+.ui-dossier-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.ui-dossier-stat { background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 8px; padding: 8px 14px; display: flex; flex-direction: column; min-width: 130px; flex: 1; }
+.ds-label { font-family: var(--font-mono); font-size: 0.66rem; color: var(--accent-cyan-light); text-transform: uppercase; font-weight: 700; }
+.ds-val { font-size: 0.88rem; color: #fff; font-weight: 600; margin-top: 2px; }
+.ui-dossier-item { width: 100%; background: rgba(9, 14, 28, 0.75); border: 1px solid rgba(148, 163, 184, 0.16); border-left: 3px solid var(--accent-gold); border-radius: 8px; padding: 10px 14px; }
+.di-key { font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent-gold-light); font-weight: 700; text-transform: uppercase; margin-bottom: 3px; }
+.di-val { font-size: 0.86rem; color: #e2e8f0; }
+
+.ui-telemetry-table { display: flex; flex-direction: column; gap: 6px; overflow-x: auto; }
+.tel-row { display: grid; grid-template-columns: 200px repeat(8, minmax(54px, 1fr)); gap: 6px; align-items: center; }
+.tel-head { font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; color: var(--accent-gold-light); text-align: center; padding-bottom: 6px; border-bottom: 1px solid var(--border-color); }
+.tel-label { font-size: 0.82rem; color: #fff; text-align: left; }
+.tel-label span { display: block; font-size: 0.7rem; color: var(--text-muted); }
+.tel-cell { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; padding: 8px 4px; border-radius: 6px; text-align: center; }
+.tel-cell.dom { background: rgba(244, 63, 94, 0.28); color: #fda4af; border: 1px solid rgba(244, 63, 94, 0.5); }
+.tel-cell.dom-cyan { background: rgba(6, 182, 212, 0.28); color: #67e8f9; border: 1px solid rgba(6, 182, 212, 0.5); }
+.tel-cell.dom-gold { background: rgba(245, 158, 11, 0.3); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.55); }
+.tel-cell.cond { background: rgba(245, 158, 11, 0.14); color: var(--accent-gold-light); border: 1px dashed rgba(245, 158, 11, 0.4); }
+.tel-cell.neg, .tel-cell.zero { background: rgba(255, 255, 255, 0.03); color: var(--text-dim); }
+.ui-svg-chart-wrap { width: 100%; overflow-x: auto; background: rgba(5, 8, 17, 0.65); border-radius: 12px; padding: 14px; border: 1px solid var(--border-color); }
+.ui-crossover-svg { width: 100%; min-width: 580px; height: auto; display: block; }
+
+.ui-compass-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.ucg-cell { background: rgba(9, 14, 28, 0.85); border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; text-align: center; }
+.ucg-north { grid-column: 2; }
+.ucg-west { grid-column: 1; grid-row: 2; }
+.ucg-center { grid-column: 2; grid-row: 2; }
+.ucg-east { grid-column: 3; grid-row: 2; }
+.ucg-south { grid-column: 2; grid-row: 3; }
+@media (max-width: 850px) {
+  .ui-compass-grid { grid-template-columns: 1fr; }
+  .ucg-north, .ucg-west, .ucg-center, .ucg-east, .ucg-south { grid-column: 1; grid-row: auto; }
+}
+.ucg-cell h5 { font-family: var(--font-display); font-size: 0.96rem; color: #fff; margin: 6px 0; }
+.ucg-cell p { font-size: 0.8rem; color: #cbd5e1; margin: 0; }
+
+.ui-matrix-2x2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.um-cell { background: rgba(9, 14, 28, 0.85); border: 1px solid var(--border-color); border-radius: 12px; padding: 18px; }
+.um-axes { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.um-cell h5 { font-family: var(--font-display); font-size: 0.98rem; color: #fff; margin-bottom: 6px; }
+.um-cell p { font-size: 0.83rem; color: #cbd5e1; margin: 0; }
+
+mark.search-highlight {
+  background-color: #f59e0b;
+  color: #0b0f19;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 700;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.5);
+}
+
+.story-nav-section { padding: 12px 14px 6px; border-bottom: 1px solid var(--border-color); margin-bottom: 8px; }
+.nav-section-label { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-dim); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; padding-left: 4px; font-weight: 700; }
+.story-mode-switch-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; background: linear-gradient(135deg, var(--accent-gold) 0%, #d97706 100%); color: #050811; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 700; border-radius: 8px; border: none; cursor: pointer; text-decoration: none; transition: all 0.2s; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3); }
+.story-mode-switch-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(245, 158, 11, 0.45); }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-void); }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.25); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
+</style>
+</head>
+<body>
+
+<aside id="sidebar">
+  <div class="brand-header">
+    <div class="brand-title">
+      <span>🌌</span> UNIVERSE B CODEX
+    </div>
+    <div class="brand-subtitle">Master Canon &amp; Otaku Lore Bible</div>
+  </div>
+  
+  <div class="search-box">
+    <div class="search-input-wrapper" style="position: relative; display: flex; align-items: center;">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search Astras, Characters, Laws..." oninput="handleSearch(this.value)">
+      <button id="searchClearBtn" class="search-clear-btn" style="position: absolute; right: 10px; background: transparent; border: none; color: var(--text-dim); cursor: pointer; font-size: 1.1rem; display: none;" onclick="clearSearch()">&times;</button>
+    </div>
+  </div>
+  
+  <div class="story-nav-section">
+    <div class="nav-section-label">IMMERSIVE PORTAL</div>
+    <div class="nav-item active" id="btnStoryChronicle" onclick="showStoryChronicle()">
+      <div class="nav-item-title">
+        <span>🔥</span>
+        <span>Living Story Chronicle</span>
+      </div>
+      <span class="file-count" style="background: rgba(245, 158, 11, 0.25); color: var(--accent-gold-light); font-weight: bold;">PEAK</span>
+    </div>
+  </div>
+
+  <div class="nav-section-label" style="padding: 10px 18px 4px;">
+    CANONICAL DEEP ARCHIVE (16 DOCS)
+  </div>
+  <nav class="nav-menu" id="navMenu">
+    <!-- Populated by JS -->
+  </nav>
+</aside>
+
+<main id="main">
+  <div class="top-bar">
+    <div class="breadcrumbs">
+      <span>UNIVERSE_B</span> &gt; <span id="bcFolder">Chronicle</span> &gt; <span class="current" id="bcFile">Master Lore Tapestry</span>
+    </div>
+    <div class="status-badges">
+      <div class="status-badge">Zero Gamer HUD</div>
+      <div class="status-badge" style="color: var(--accent-gold); border-color: rgba(245,158,11,0.3); background: rgba(245,158,11,0.12)">Pure Steel Combat</div>
+      <div class="status-badge" style="color: var(--accent-cyan); border-color: rgba(6,182,212,0.3); background: rgba(6,182,212,0.12)">Status: RIKTA</div>
+      <a href="ability_codex.html" class="status-badge" style="color: var(--accent-purple); border-color: rgba(168,85,247,0.35); background: rgba(168,85,247,0.15); text-decoration: none; cursor: pointer; font-weight: 700;">⚡ Ability Codex (83)</a>
+      <a href="character_codex.html" class="status-badge" style="color: var(--accent-gold); border-color: rgba(245,158,11,0.35); background: rgba(245,158,11,0.15); text-decoration: none; cursor: pointer; font-weight: 700;">👥 Character Dossier (100)</a>
+    </div>
+  </div>
+  <div id="readingProgress"></div>
+  
+  <div class="content-viewport" id="contentViewport" onscroll="updateReadingProgress()">
+    
+    <!-- 1-CLICK DATA SYNC BANNER (Auto-hides once DATA is loaded) -->
+    <div id="dataSyncBanner" class="data-sync-banner" style="display: none;">
+      <div class="data-sync-info">
+        <h4>⚡ 1-Click Canon Archive Merger (350 KB Deep Lore)</h4>
+        <p>तुझ्या जुन्या <code>index.html</code> मधील सर्व १६ कॅनन फाईल्स (Abilities, Astras, 100 Characters, World) या नवीन UI मध्ये जोडण्यासाठी खालील बटणावर क्लिक करून जुनी <code>index.html</code> सिलेक्ट कर!</p>
+      </div>
+      <div class="data-sync-actions">
+        <input type="file" id="oldHtmlFileInput" accept=".html" style="display:none" onchange="importDataFromOldHtml(this)">
+        <button class="sync-btn" onclick="document.getElementById('oldHtmlFileInput').click()">📂 Select Old index.html &amp; Auto-Merge</button>
+        <button class="sync-btn secondary" id="btnDownloadMerged" style="display:none;" onclick="downloadMergedHtml()">💾 Download Complete index.html</button>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         1. THE LIVING STORY CHRONICLE (DEFAULT OTAKU / WEB NOVEL PORTAL)
+         =================================================================== -->
+    <div id="storyChronicleView">
+      <div class="story-chronicle-container">
+
+        <!-- STICKY QUICK-JUMP NAVIGATION BAR -->
+        <div class="chronicle-jump-bar">
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--accent-gold-light); font-weight:700; padding-right:4px;">⚡ JUMP TO:</span>
+          <a href="#sec-manifesto" class="jump-pill">00. Peak Fiction Manifesto</a>
+          <a href="#sec-act1" class="jump-pill">I. Satya Yuga (Genesis)</a>
+          <a href="#sec-act2" class="jump-pill">II. Tretā Yuga (7 Seals)</a>
+          <a href="#sec-act3" class="jump-pill">III. 5 Planetary Shards</a>
+          <a href="#sec-act4" class="jump-pill">IV. Power &amp; Pure Steel</a>
+          <a href="#sec-act5" class="jump-pill">V. Proving Games</a>
+          <a href="#sec-act6" class="jump-pill">VI. Setu &amp; Route B [RIKTA]</a>
+          <a href="#sec-act7" class="jump-pill">VII. 6 Loops &amp; 150-Ch Arc</a>
+        </div>
+        
+        <!-- HERO BANNER: THE CHILD COSMOS -->
+        <div class="story-hero-banner">
+          <div class="story-hero-tagline">
+            <span>🌌</span> UNIVERSE B • THE LIVING COSMIC TAPESTRY • [100% CANON LOCK]
+          </div>
+          <h1 class="story-hero-title">The Grand Chronicle of Universe B</h1>
+          <p class="story-hero-lead">
+            हे कोणत्याही स्वस्त Isekai सारखे हवेत तरंगणाऱ्या निळ्या स्क्रीनचे (Floating Game HUD), मोफत लेव्हल-अपचे किंवा 'चीट स्किल्स'चे जग नाही! हे अवकाशाच्या अथांग गर्भात धडधडणारे एक जिवंत, रक्तामांसाचे <strong>Child Cosmos (बाल्य-विश्व)</strong> आहे — जिथे अनादी <strong>क्षीर सागराच्या (Singularity Apex)</strong> आध्यात्मिक ठिणगीपासून सुरू झालेला प्रवास आज १५% जास्त गुरुत्वाकर्षणाच्या धगधगत्या लाव्हा-भट्ट्यांमध्ये, ७२,००० नाड्यांमधून फुटणाऱ्या निळ्या वाफेच्या (<em>The Purge</em>) रणसंग्रामात, आणि <strong>The Grand Aegis</strong> च्या ५,००० मैल लांब रक्ताळलेल्या खंदक-युद्धात येऊन ठेपला आहे!
+          </p>
+          <div class="story-hero-chips">
+            <span class="pyr-chip gold-solid">🔥 Zero System Menus</span>
+            <span class="pyr-chip gold">✨ Hiranyagarbha Singularity</span>
+            <span class="pyr-chip cyan">🪐 5 Floating Planetary Shards</span>
+            <span class="pyr-chip emerald">🐺 Symbiotic Beast Molting</span>
+            <span class="pyr-chip rose">⚔️ 7 Pure Steel Combat Axioms</span>
+            <span class="pyr-chip purple">🩸 Blank Destiny [STATUS: RIKTA]</span>
+          </div>
+        </div>
+
+        <!-- 00. THE OTAKU & WEB NOVEL MANIFESTO BENTO -->
+        <div id="sec-manifesto" class="manifesto-bento">
+          <div class="manifesto-card">
+            <div class="mc-tag">RULE 01 // NO GAMER HUD</div>
+            <h4>🚫 शून्य गेम स्क्रीन्स, १००% जैविक घर्षण</h4>
+            <p>येथे HP/MP बार्स किंवा System Shop नाही. क्षमतेपेक्षा जास्त ताकद खेचल्यास <strong>The Blowout (नाडी-दाह)</strong> होऊन हात कोळशासारखा जळतो, आणि प्राण संपल्यास योद्धा <strong>Dry (Śūnya)</strong> पडून रिंगणात कोसळतो.</p>
+          </div>
+          <div class="manifesto-card cyan-top">
+            <div class="mc-tag" style="color:var(--accent-cyan-light);">RULE 02 // TACTICAL PUZZLE FIGHTS</div>
+            <h4>🧠 पॉवर-लेव्हल नव्हे, बौद्धिक युद्ध!</h4>
+            <p><em>Hunter x Hunter</em>, <em>JoJo</em> आणि <em>Lord of the Mysteries</em> प्रमाणे येथील प्रत्येक लढाई एक कोडे आहे. शत्रूच्या चेंबरमधील ०.२ सेकंदाचा <strong>'The Sing' (गूंज)</strong> ऐकून तलवारीने सोनिक गोळी कापणे ही येथील खरी युद्धकला आहे.</p>
+          </div>
+          <div class="manifesto-card emerald-top">
+            <div class="mc-tag" style="color:#34d399;">RULE 03 // BREAD &amp; PENNY REALISM</div>
+            <h4>🪙 २ तांब्याच्या माषा आणि शीतयुद्ध</h4>
+            <p><em>Fullmetal Alchemist</em> सारखे कडक भू-राजकारण! १ वाटी डाळ-भाकरीसाठी २ Copper Mashas मोजावे लागतात. मानवांचे धान्य आणि असुरांचे टंगस्टन-पोलाद एकमेकांच्या नरडीला बांधलेले आहेत.</p>
+          </div>
+          <div class="manifesto-card rose-top">
+            <div class="mc-tag" style="color:#fda4af;">RULE 04 // THE UNBOUND ANOMALY</div>
+            <h4>⚡ Route B: [STATUS: RIKTA]</h4>
+            <p>विधात्याच्या लिखित नशिबाच्या (<em>Lihito</em>) पलीकडे, क्षीर सागराची जीवघेणी चाळणी पार करून आलेला अनधिकृत आत्मा — ज्याच्याकडे कोणतीही चीट नाही, फक्त १००% कोरे भविष्य आणि पाठीमागे लागलेले <em>Red-Ink Warrant</em> आहे!</p>
+          </div>
+        </div>
+
+        <!-- ACT I: THE COSMIC TAPESTRY -->
+        <div id="sec-act1" class="story-act-card featured-gold">
+          <div class="story-act-header">
+            <span class="story-act-badge">ACT I • SATYA YUGA (सत्य युग — PRIMORDIAL GENESIS)</span>
+            <span class="pyr-chip gold-solid">Singularity Apex (3–4%)</span>
+          </div>
+          <h2 class="story-act-title">अनादी क्षीर सागर, अनंत-शेष आणि वैश्विक नरसाळ्याची (Cosmic Funnel) निर्मिती</h2>
+          <div class="story-prose">
+            <p>
+              सुरुवातीला ना सीमा होत्या, ना मृत्यूचा हिशोब, ना खंडित आकाश. अस्तित्वाच्या सर्वोच्च उगमबिंदूवर — <strong>Cosmic Singularity (हिरण्यगर्भ / Apex)</strong> वर — <strong>Kshira Sagara (क्षीर सागर)</strong> धडधडत होता. हा कोणताही पाण्याचा समुद्र किंवा जहाजे थांबणारे बंदर नाही; तिथे पाऊल टाकणारे कोणतेही नश्वर शरीर एका क्षणात विलीन होते! या अनादी चैतन्य-सागरावर <strong>Ananta-Shesha (अनंत-शेष)</strong> च्या सहस्र फणांवर <strong>Garbhodakashayi Vishnu</strong> योगनिद्रेत विसावले होते, जिथून विश्वातील प्रत्येक आत्म्याला (Jiva) त्याचे मूळ चैतन्य आणि शुद्ध आध्यात्मिक प्राण-ऊर्जा (Pure Spiritual Energy) मिळते.
+            </p>
+            <p>
+              <strong>Supreme Trinity (ब्रह्मा, विष्णू, महेश)</strong> स्वतः सर्व नियमांच्या पलीकडे राहिले (<em>Zero-Avatar Mandate</em> — विश्वात कोणताही थेट अवतार जन्म घेत नाही) आणि त्यांनी संपूर्ण विश्वाला स्थिर करण्यासाठी <strong>Ananta (The System Core)</strong> ची स्थापना केली. अनंत हा निर्जीव, भावनाहीन आणि १००% अभ्रष्ट <em>Read-Only / Append-Only Archive</em> आहे, ज्याला कोणताही देव किंवा असुर हॅक करू शकत नाही किंवा लाच देऊ शकत नाही.
+            </p>
+            <p>
+              हे विश्व एका महाकाय <strong>Cosmic Funnel (वैश्विक नरसाळे)</strong> च्या भूमितीत खाली विस्तारले: सर्वोच्च स्तरावर <strong>Tier 1 (Divine Realm &amp; Sabha-Loka High Council)</strong> — जिथे ६ घटनात्मक पदे (Yama, Vidhata, Chitragupta, Mahā-Pālaka, Chief Sage, Prime Seeker) बसतात आणि जिथे <strong>१००% Absolute Combat Ban</strong> आहे. त्याखाली <strong>Tier 2 (The Buffer Zone / ५०,००० मैलांचा महा-सेतू)</strong>, आणि त्याखाली जिवंत नश्वर व दैवी प्रजातींचे <strong>Tier 3 (Astral Living Realm)</strong>!
+            </p>
+          </div>
+          <div class="story-callout">
+            <strong>वैश्विक नियम (The Phase-Shift Law):</strong> "हे चारही Tiers एकाच अंतराळात असूनही वेगवेगळ्या Dimensional Frequencies वर आहेत. साध्या डोळ्यांनी किंवा दुर्बिणीने पाहिल्यास दुसरा लोक ०% दिसतो — सामान्य माणसाला आकाशात केवळ तारे आणि ६०-७०% पसरत जाणारी <em>Growing Cosmic Edge</em> दिसते!"
+          </div>
+          <div class="act-deep-links">
+            <button class="deep-link-btn" onclick="openDocByPath('world', 'cosmology.md')">🌌 Read Cosmology &amp; 4 Tiers (cosmology.md)</button>
+            <button class="deep-link-btn" onclick="openDocByPath('world', 'high_council.md')">🏛️ Explore High Council &amp; Sabha-Loka (high_council.md)</button>
+          </div>
+        </div>
+
+        <!-- ACT II: THE RUPTURE & THE SEVEN SEALS -->
+        <div id="sec-act2" class="story-act-card featured-rose">
+          <div class="story-act-header">
+            <span class="story-act-badge rose">ACT II • TRETĀ YUGA (त्रेता युग — THE VOID CATACLYSM)</span>
+            <span class="pyr-chip rose">7 Primeval Horrors &amp; Tier 4 Birth</span>
+          </div>
+          <h2 class="story-act-title">अश्वत्थाचा महा-भ्रंश, सात शून्य-सील आणि पाताळातील ३०% अंधार</h2>
+          <div class="story-prose">
+            <p>
+              निर्मितीनंतर दोन हजार वर्षांनी <strong>Era 2 (त्रेता युग)</strong> मध्ये महा-प्रलय कोसळला. विश्वाचा आधारस्तंभ असलेला <strong>Ashvattha World-Tree (अश्वत्थ महा-वृक्ष)</strong> दुभंगला आणि बाह्य शून्यातून <strong>Seven Primeval Dark Entities (सप्त काळे अस्तित्व — Kāla-Kūṭa ते Mahā-Tamas)</strong> विश्वात घुसले! त्यांना पूर्ण मारल्यास संपूर्ण ब्रह्मांडाचाच पाया कोसळला असता; म्हणून देवांनी, ऋषींनी आणि आदिम असुर वीरांनी स्वतःच्या प्राणांची आहुती देऊन त्यांना जमिनीच्या गाभ्यात <strong>Seven Cosmic Void Seals (सात महा-बंध)</strong> लावून कायमचे गाडले.
+            </p>
+            <p>
+              या युद्धाचा सर्वात भयानक परिणाम झाला <strong>आत्मा-प्रशासन (Soul-Sorting) यंत्रणेवर!</strong> अवकाशीय किरणोत्सर्गामुळे कोट्यवधी मरणाऱ्या आत्म्यांचे <em>Chitragupta Ledger</em> मधील धागे तुटले. यमाच्या न्यायालयाचे दरवाजे बंद झाले. Astral Realm चा <strong>३०% भूभाग सडलेल्या आत्म्यांनी इतका विषारी झाला की तो मूळ विश्वातून कापून वेगळा करावा लागला</strong> — ज्याला आज <strong>Tier 4 (The Corrupted Realm / तमो-लोक)</strong> म्हणतात!
+            </p>
+            <p>
+              तिथे अडकलेल्या आत्म्यांचा मूळ गाभा (<em>Ātma-tattva</em>) मेला नाही, पण विषारी Aether शोषून त्यांचे रूपांतर विकृत, नश्वर आत्म्यांची भूक असलेल्या <strong>Devils (अधो-दैत्य) आणि Pishacha Yoni</strong> मध्ये झाले. त्यांना रोखण्यासाठी महा-सेतूच्या इंजिनिअर्सनी ५,००० मैल लांब, ३०० फूट उंच बेसाल्ट आणि ४३२ Hz सुवर्ण-ऊर्जेची <strong>The Grand Aegis (३६०° महा-चैतन्य प्राकार)</strong> भिंत उभारली.
+            </p>
+          </div>
+          <div class="story-callout" style="border-left-color: var(--accent-rose); background: rgba(244, 63, 94, 0.09);">
+            <strong style="color:#fda4af;">काय-त्याग नियम (The Kay-Tyag Summoning Filter):</strong><br>
+            "कोणताही डेव्हिल Grand Aegis भिंत ओलांडून जिवंत जगात येऊ शकत नाही — भिंतीचा स्पर्श होताच त्याचे शरीर वाफ होऊन उडते! जर एखाद्या भ्रष्ट मानवी तांत्रिकाने लगतच्या आयामी सीमेपलीकडे धागा टाकून Devil ला बोलावलेच, तर डेव्हिलचे १०-टनी विषारी शरीर पाताळातच राहते; तो नश्वर जगात केवळ एक <em>अदृश्य आत्मा (50–70% Weakened Spirit)</em> म्हणूनच येऊ शकतो!"
+          </div>
+          <div class="act-deep-links">
+            <button class="deep-link-btn" onclick="openDocByPath('world', 'corrupted_realm.md')">🩸 Explore Tier 4 &amp; Devils (corrupted_realm.md)</button>
+            <button class="deep-link-btn" onclick="openDocByPath('world', 'history.md')">📜 Read 7 Void Seals Register (history.md)</button>
+            <button class="deep-link-btn" onclick="openDocByPath('world', 'annals.md')">⏳ 4-Era Historical Annals (annals.md)</button>
+          </div>
+        </div>
+
+        <!-- ACT III: THE FIVE PLANETARY SHARDS -->
+        <div id="sec-act3" class="story-act-card featured-cyan">
+          <div class="story-act-header">
+            <span class="story-act-badge cyan">ACT III • DVĀPARA YUGA (द्वापर युग — THE GREAT SUNDERING)</span>
+            <span class="pyr-chip cyan">5 Isolated Pocket-Dimensions</span>
+          </div>
+          <h2 class="story-act-title">पाच तरंगते ग्रह-तुकडे आणि 'राखेचे ग्रहण' (The Ashen Eclipse)</h2>
+          <div class="story-prose">
+            <p>
+              महाप्रलयानंतर एकाच जमिनीवर एकत्र राहणे अशक्य झाले. ४०-टनी महाकाय पशू आणि लाव्हा ओकणाऱ्या असुरांच्या भट्ट्यांशेजारी सामान्य माणसांची गावे तग धरू शकत नव्हती. त्यातच खनिजांवरून <em>Mineral Kin Wars</em> भडकले. म्हणून <strong>Era 3</strong> मध्ये अखंड जमिनीचे <strong>पाच स्वतंत्र तरंगत्या ग्रह-तुकड्यांमध्ये (Five Floating Planetary Shards)</strong> विच्छेदन करण्यात आले. प्रत्येकाचे स्वतःचे गुरुत्वाकर्षण आणि क्षितिज आहे, आणि त्यांच्या मधे पसरली आहे जीवघेणी <strong>Aetheric Spatial Void</strong>!
+            </p>
+            <p>
+              Era 3 च्या शेवटी <em>The Hollow Sect</em> या पाखंडी पंथाने पाताळातील एका उच्च डेव्हिलला मानवांच्या पांचाल शहरात बोलावले. नियंत्रण सुटले आणि ७२ तासांत <strong>५०,००० नागरिकांचे आत्मे खाऊन राख झाले (The Ashen Eclipse)</strong>! त्यानंतर High Council ने <strong>Class-Omega Taboo</strong> जारी करून Devil Summoning चा संपूर्ण इतिहास जगातून पुसून टाकला.
+            </p>
+          </div>
+
+          <!-- SHARD CARDS SHOWCASE -->
+          <div class="shard-cards-grid">
+            
+            <!-- HUMAN SHARD -->
+            <div class="shard-card border-cyan">
+              <div class="shard-card-header">
+                <div class="shard-card-title"><span>🚄</span> 1. Human Planetary Shard</div>
+                <span class="shard-pop-badge" style="color:var(--accent-cyan-light);">The Mortal Cradle (~12 Cr)</span>
+              </div>
+              <ul class="shard-stat-list">
+                <li><strong>६०–७०% Baseline Resilient Mortals:</strong> शेतकरी, कारागीर व कामगार. Ambient Aether मुळे २००-३०० किलो वजन उचलणारे कणखर शरीर, पण शून्य कॉस्मिक ज्ञान.</li>
+                <li><strong>~२५% Anchor-Tuners &amp; Navigators:</strong> चक्र-लंगर, जाळीदार लोहमार्ग (Lattice-Rails) आणि नाद-शलाका ग्रिड चालवणारे तंत्रज्ञ.</li>
+                <li><strong>Top ५% Awoken High-Humans:</strong> ७२,००० नाड्यांची साधना करून पहिली कात (<em>The Purge</em>) टाकलेले १५०–२५० वर्षे जगणारे चॅम्पियन्स!</li>
+                <li><strong>Tapasya + Yantrika Fusion:</strong> केवळ मानवी नाड्याच श्वास-नियंत्रणाला एथर-रायफलच्या ट्रिगरशी जोडून देव-असुरांचे कवच भेदू शकतात!</li>
+              </ul>
+              <div class="shard-secret-box">
+                ⚡ <em>प्रमुख केंद्रे: हस्तिनापूर (Lattice Metropolis), समुद्र-पत्तनम (The Sea Citadel), आणि तपोवन (१००% यंत्र-बंदी असलेले ऋषी खोरे).</em>
+              </div>
+            </div>
+
+            <!-- ASURA SHARD -->
+            <div class="shard-card border-rose">
+              <div class="shard-card-header">
+                <div class="shard-card-title"><span>🌋</span> 2. Asura Planetary Shard</div>
+                <span class="shard-pop-badge" style="color:#fda4af;">Chthonic Foundries (~8 Cr)</span>
+              </div>
+              <ul class="shard-stat-list">
+                <li><strong>१५% जास्त गुरुत्वाकर्षण:</strong> गंधकाची हवा, लाव्हा नद्या, बेसाल्ट दगडांसारखे स्नायू आणि ३५०–५०० वर्षांचे आयुष्य (<em>Dhātu-Dhāraṇa</em>).</li>
+                <li><strong>५०–६०% साधी उपयुक्तता:</strong> घरगुती भट्टी, प्राथमिक औजारे तापवणे व खाणकाम करणारे कामगार.</li>
+                <li><strong>३०–४०% लढाऊ तंत्रज्ञ:</strong> ५०० psi स्टीम-हॅमर्स, टंगस्टन-पोलाद आणि <em>The Forge Trials (यंत्र परीक्षा)</em> उत्तीर्ण केलेले मेरिटोक्रॅट्स.</li>
+                <li><strong>अंतर्गत संघर्ष:</strong> Baroness Simhika ची खाण-मक्तेदारी विरूद्ध कामगार नेते <strong>Ulka</strong> ची <em>Red Crucible Union</em>!</li>
+              </ul>
+              <div class="shard-secret-box">
+                ⚡ <em>"येथील लाव्हाच्या जमिनीत १ दाणाही उगवत नाही; मानवांनी गहू रोखल्यास एका महिन्यात लाखो असुर कामगार उपाशी मरतील!"</em>
+              
