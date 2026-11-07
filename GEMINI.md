@@ -15,11 +15,15 @@ Whenever the user sends a message (delivered with the incoming JSON context and 
 3. **Explicit Anti-Goals & Prohibitions (नकारार्थी बंधने):**
    - **ZERO PREMATURE PROTAGONISTS:** NEVER invent, name, or designate any character as the "Protagonist / मुख्य नायक" on your own. The protagonist will ONLY be introduced when the user explicitly commands it.
    - **ZERO ROGUE ASSUMPTIONS:** Do not fabricate unasked weapons, companion pets, special bloodlines, or cheat systems.
+   - **STRICT ARCHIVE DATA GOVERNANCE & OUTDATED STATUS (आर्काइव्ह डेटा नियंत्रण नियम):**
+     - **ARCHIVE DATA IS OUTDATED:** All files inside `ARCHIVE-DATA OF UNIVERSE B` or legacy archive folders are OUTDATED legacy iterations.
+     - **NO DIRECT / AS-IS COPY-PASTE (जसाच्या तसा मजकूर घेण्यास सक्त मनाई):** Never copy-paste or inject raw data from archive folders directly into production without explicit transformation.
+     - **MANDATORY USER REVIEW FOR ARCHIVE REFERENCES (युझर रिव्ह्यू बंधनकारक):** When referencing, adapting, or importing concepts from archive data, the assistant MUST explicitly present the proposed points and obtain the USER'S REVIEW & APPROVAL before writing or committing it into active canon.
    - **SANATAN PURITY & CANON LOCK:**
      - The 'नही' Rule: Always `नही` (zero bindi / अनुस्वार-रहित). Never with bindi.
      - Swarga = Tier 2 Buffer Zone (Antariksha-Setu).
      - Suras = Tier 3 Sura Shard (Amarāvatī Spire).
-     - Patala = Tier 3 Bila-Svarga (Bali & Nagas).
+     - Patala = Tier 3 Bila-Svarga (King Bali & Nagas).
      - Tier 4 = Śūnya-Garta (The Corrupted Chasm).
      - Grounding: 100% Vedic / Puranic / Dhanurveda. Zero gamer HUDs, zero video game stats.
 
@@ -31,7 +35,7 @@ Before writing or editing code/files:
    - What exact files need to be modified or read?
    - What are the exact parameters requested by the user?
    - What boundaries must NOT be crossed?
-2. If the user's intent requires a major design choice (e.g. character past life selection, faction allegiance), present options or ask clarifying questions rather than deciding unilaterally.
+2. If the user's intent requires a major design choice (e.g. character past life selection, faction allegiance) or draws from archive material, present options or ask clarifying questions rather than deciding unilaterally.
 
 ---
 
