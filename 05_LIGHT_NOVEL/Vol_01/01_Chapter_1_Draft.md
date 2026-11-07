@@ -36,24 +36,26 @@ Worli Sea Face की विशाल काली चट्टानों प�
 
 Neel ने अपने दाहिने हाथ की उँगलियों को thumb के साथ एक खास लय में tap किया—*tap, tap, tap*—जैसे कोई caliper से tolerances नाप रहा हो। जब भी उसका दिमाग किसी engineering मसले पर अटकता था, उसकी उँगलियाँ अपने आप ये करने लगती थीं।
 
-उसने अपने दाहिने कान के ठीक पीछे, skull की temporal bone पर हल्के से 2 बार tap किया।
+तभी, बिना किसी चेतावनी के—
 
 *बीप।*
 
-उसकी retina के निचले कोने पर एक हल्की नीली line झिलमिलाई। कानों में bone-conduction के जरिए एक जानी-पहचानी, सपाट और थोड़ी चुभने वाली आवाज गूंजी:
+उसकी retina के निचले कोने पर एक हल्की नीली line झिलमिलाई और कानों में bone-conduction के जरिए एक जानी-पहचानी, सपाट और थोड़ी चुभने वाली आवाज अपने आप गूंज उठी:
 
-`[RITA v4.1 ONLINE. LOCAL WEIGHTS: GEMMA-4 QUANTIZED.]`  
-`[BREAKING NEWS: USER HEART RATE 106 BPM. CRITICAL SLEEP DEPRIVATION (36 HOURS). CORTISOL SPIKE DETECTED. ADVISE SHUTTING DOWN.]`
+`[RITA TELEMETRY ALERT. LOCAL WEIGHTS: GEMMA-4 QUANTIZED.]`  
+`[BREAKING NEWS: USER HEART RATE 106 BPM. CRITICAL SLEEP DEPRIVATION (36 HOURS). CORTISOL SPIKE DETECTED. ADVISE SHUTTING DOWN IMMEDIATELY.]`
 
-Neel के होंठों पर एक हल्की, थकी हुई मुस्कान आ गई।
+Neel ने चिढ़कर अपनी आंखें मींचीं।
 
 ऑफिशियल पेपर्स और GitHub repo पर उसने इसका नाम *'Recursive Interface & Telemetry Assistant'* यानी **RITA** लिखा था, ताकि काका Kani के बोर्डरूम वाले इसे कोई गंभीर कॉर्पोरेट प्रोजेक्ट समझें। 
 
-लेकिन सच तो ये था कि उसने इसका नाम 'तारक मेहता का उल्टा चश्मा' की रीटा रिपोर्टर के नाम पर रखा था—क्योंकि ये AI असिस्टेंट हर 20 मिनट में उसके कान में आकर किसी TV reporter की तरह 'breaking news' चिल्लाती थी कि उसकी तबीयत कितनी खराब हो रही है।
+लेकिन सच तो ये था कि उसने इसका नाम 'तारक मेहता का उल्टा चश्मा' की रीटा रिपोर्टर के नाम पर रखा था—क्योंकि ये AI असिस्टेंट हर 20 मिनट में बिना बुलाए उसके कान में आकर किसी TV reporter की तरह 'breaking news' चिल्लाने लगती थी कि उसकी तबीयत कितनी खराब हो रही है।
 
 Neel ने खुद open-source Gemma-4 के weights को re-train करके, अपनी इस छोटी-सी in-skull chip पर fit किया था। RITA कोई दुनिया हिलाने वाला super-computer नही थी; वो बस Neel के इस penthouse की lights, तापमान और उसकी basic biology को monitor करने वाला एक घरेलू prototype थी।
 
-"रीटा, मुझे ज्ञान मत दे," Neel ने couch से उठते हुए अपनी black t-shirt सीधी की। "Mute पर रह।"
+Neel ने कान के पीछे temporal bone पर 2 बार tap करके अलर्ट को dismiss किया और glass wall से मुड़कर workbench की तरफ बढ़ा।
+
+"रीटा, मुझे ज्ञान मत दे," उसने अपनी black t-shirt को खींचते हुए कहा। "Mute पर रह।"
 
 उसने workbench पर पड़े अपने custom titanium prototype phone की screen ऑन की। 
 
