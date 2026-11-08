@@ -18,7 +18,7 @@
 ## CHAPTER 1: GLITCH IN THE RAIN
 ### (बारिश में एक दरार)
 
-### दृश्य 1: Worli Sea Face की सुबह और RITA की breaking news (The Lab & The Errand)
+### दृश्य 1: Worli Sea Face की सुबह और RITA का टेलीमेट्री अलर्ट (The Lab & The Errand)
 
 गले की खुश्की मिटाने के लिए Neel ने workbench पर रखी तांबे की बोतल उठाई और पानी का एक लंबा घूंट भरा।
 
@@ -43,15 +43,15 @@ Neel ने अपने दाहिने हाथ की उँगलिय�
 उसकी retina के निचले कोने पर एक हल्की नीली line झिलमिलाई और कानों में bone-conduction के जरिए एक जानी-पहचानी, सपाट और थोड़ी चुभने वाली आवाज अपने आप गूंज उठी:
 
 `[RITA TELEMETRY ALERT. LOCAL WEIGHTS: GEMMA-4 QUANTIZED.]`  
-`[BREAKING NEWS: USER HEART RATE 106 BPM. CRITICAL SLEEP DEPRIVATION (36 HOURS). CORTISOL SPIKE DETECTED. ADVISE SHUTTING DOWN IMMEDIATELY.]`
+`[DIAGNOSTIC: LAB AIR QUALITY DEGRADED. SOLDERING FLUX PPM: ELEVATED. CORE TEMP: 37.1°C. USER HEART RATE: 106 BPM. CONTINUOUS WAKEFULNESS: 36 HOURS. ADVISE WORKSPACE VENTILATION AND IMMEDIATE SLEEP CYCLE.]`
 
 Neel ने चिढ़कर अपनी आंखें मींचीं।
 
 ऑफिशियल पेपर्स और GitHub repo पर उसने इसका नाम *'Recursive Interface & Telemetry Assistant'* यानी **RITA** लिखा था, ताकि काका Kani के बोर्डरूम वाले इसे कोई गंभीर कॉर्पोरेट प्रोजेक्ट समझें। 
 
-लेकिन सच तो ये था कि उसने इसका नाम 'तारक मेहता का उल्टा चश्मा' की रीटा रिपोर्टर के नाम पर रखा था—क्योंकि ये AI असिस्टेंट हर 20 मिनट में बिना बुलाए उसके कान में आकर किसी TV reporter की तरह 'breaking news' चिल्लाने लगती थी कि उसकी तबीयत कितनी खराब हो रही है।
+लेकिन सच तो ये था कि उसने इसका नाम 'तारक मेहता का उल्टा चश्मा' की रीटा रिपोर्टर के नाम पर रखा था—क्योंकि ये AI असिस्टेंट भी उसी रिपोर्टर की तरह बिना बुलाए हर छोटी-बड़ी बात का हिसाब देने पहुँच जाती थी। चाहे वर्कशॉप का तापमान बदलना हो, एयर-फिल्टर का ओवरलोड होना हो, या फिर उसकी 36 घंटे की नींद का हिसाब—रीटा को हर चीज पर अपनी नाक अड़ाकर रिपोर्ट पेश करने की आदत थी।
 
-Neel ने खुद open-source Gemma-4 के weights को re-train करके, अपनी इस छोटी-सी in-skull chip पर fit किया था। RITA कोई दुनिया हिलाने वाला super-computer नही थी; वो बस Neel के इस penthouse की lights, तापमान और उसकी basic biology को monitor करने वाला एक घरेलू prototype थी।
+Neel ने खुद open-source Gemma-4 के weights को re-train और quantize करके, अपनी इस छोटी-सी in-skull chip पर fit किया था। RITA कोई दुनिया हिलाने वाला super-computer नही थी; वो बस Neel के इस penthouse की lights, air-conditioning, सर्वर लोड और उसकी बुनियादी biology को monitor करने वाला एक घरेलू prototype थी।
 
 Neel ने कान के पीछे temporal bone पर 2 बार tap करके अलर्ट को dismiss किया और glass wall से मुड़कर workbench की तरफ बढ़ा।
 
