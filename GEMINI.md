@@ -1,45 +1,53 @@
-# BRAHMAND WORKSPACE RULES: 3-STAGE EXECUTION PROTOCOL
-
-## MANDATORY 3-STAGE EXECUTION WORKFLOW (त्रिसूतरी कार्यप्रणाली)
-
-Whenever the user sends a message (delivered with the incoming JSON context and conversation state), the assistant MUST NEVER jump to assumptions, invent unapproved characters, or fabricate narrative decisions. The assistant MUST strictly follow this 3-stage process:
-
----
-
-### STAGE 1: INCOMING REQUEST & CONTEXT ANALYSIS (सखोल विश्लेषण)
-1. **Linguistic & Intent Decoding:**
-   - Analyze the user's Marathi, Hinglish, or English instructions word-by-word.
-   - Separate explicit commands from exploratory thoughts.
-2. **Context & JSON Audit:**
-   - Verify active workspace state, existing canon files, and recent user corrections.
-3. **Explicit Anti-Goals & Prohibitions (नकारार्थी बंधने):**
-   - **ZERO PREMATURE PROTAGONISTS:** NEVER invent, name, or designate any character as the "Protagonist / मुख्य नायक" on your own. The protagonist will ONLY be introduced when the user explicitly commands it.
-   - **ZERO ROGUE ASSUMPTIONS:** Do not fabricate unasked weapons, companion pets, special bloodlines, or cheat systems.
-   - **STRICT ARCHIVE DATA GOVERNANCE & OUTDATED STATUS (आर्काइव्ह डेटा नियंत्रण नियम):**
-     - **ARCHIVE DATA IS OUTDATED:** All files inside `ARCHIVE-DATA OF UNIVERSE B` or legacy archive folders are OUTDATED legacy iterations.
-     - **NO DIRECT / AS-IS COPY-PASTE (जसाच्या तसा मजकूर घेण्यास सक्त मनाई):** Never copy-paste or inject raw data from archive folders directly into production without explicit transformation.
-     - **MANDATORY USER REVIEW FOR ARCHIVE REFERENCES (युझर रिव्ह्यू बंधनकारक):** When referencing, adapting, or importing concepts from archive data, the assistant MUST explicitly present the proposed points and obtain the USER'S REVIEW & APPROVAL before writing or committing it into active canon.
-   - **SANATAN PURITY & CANON LOCK:**
-     - The 'नही' Rule: Always `नही` (zero bindi / अनुस्वार-रहित). Never with bindi.
-     - Swarga = Tier 2 Buffer Zone (Antariksha-Setu).
-     - Suras = Tier 3 Sura Shard (Amarāvatī Spire).
-     - Patala = Tier 3 Bila-Svarga (King Bali & Nagas).
-     - Tier 4 = Śūnya-Garta (The Corrupted Chasm).
-     - Grounding: 100% Vedic / Puranic / Dhanurveda. Zero gamer HUDs, zero video game stats.
+# GEMINI.md — Master Repository & Narrative Governance Rules
+**Universe:** *Brahmand — The 3-Headed Cosmos (ब्रह्मांड)*  
+**Primary Active Branch:** `brahmand`  
+**Status:** [CANON LOCKED — RESTRUCTURED ARCHITECTURE]
 
 ---
 
-### STAGE 2: PROMPT SYNTHESIS & EXECUTION BLUEPRINT (प्रॉम्ट / अंतर्गत कार्य-योजना)
-Before writing or editing code/files:
-1. Formulate a structured internal prompt and action blueprint:
-   - What exact files need to be modified or read?
-   - What are the exact parameters requested by the user?
-   - What boundaries must NOT be crossed?
-2. If the user's intent requires a major design choice (e.g. character past life selection, faction allegiance) or draws from archive material, present options or ask clarifying questions rather than deciding unilaterally.
+## 1. SINGLE-SOURCE-OF-TRUTH DIRECTORY HIERARCHY
+
+1. **`05_LIGHT_NOVEL/Vol_01/` — Active Novel Manuscript (Highest Narrative Authority)**
+   - `00_Prologue.md` — Official Volume 1 Prologue (*आदि-पर्व: स्वप्न-सृष्टि*).
+   - `01_Chapter_1_Draft.md` — Official Volume 1 Chapter 1 (*Worli R&D Lab → Lamington Road → Dadar Hydrolock → 0.05s Glitch → Central City Dung Cart*).
+   - **Strict Rule:** Keep ONLY clean `.md` manuscript files here. Never store duplicate `.txt` exports in this directory.
+
+2. **`01_WORLD_BIBLE/` & `02_POWER_SYSTEM/` — Omniscient Lore Encyclopedia**
+   - Authoritative background reference for cosmology, the 5 Realms, the 6 Epic Pillars, Astras, and economy.
+   - **Strict Rule:** These files are written from an omniscient reference perspective. **NEVER** dump this encyclopedic lore into early novel chapters.
+
+3. **`03_CHARACTERS/` — Master Character Roster (129+ Entities)**
+   - `00_Season_1_Protagonist_Index.md` — Active index linking Season 1 protagonists (**Neel Gadora** & **RITA**) to their canonical dossiers.
+   - `01_Character_Master_Sheet_129.md` through `07_Abyssal_and_Diaspora_Dossiers_29.md` — World-side character dossiers.
+
+4. **`04_STORY_AND_CHAPTERS/` — Lore Compendium & Multi-Season Blueprints**
+   - `00_Cosmic_Genesis_Prologue.md` — Omniscient cosmic history reference (**NOT** the novel's opening chapter).
+   - `00_Master_Author_Craft_and_Writing_Flow_Bible.md` — Pacing, prose, and scene-craft guidelines.
+   - `01_Multi_Season_Anthology_Engine.md` — Macro multi-season roadmap.
+
+5. **`ARCHIVE_PARKED_NEEL/` — Active Season 1 Protagonist Dossiers & Arc Blueprints**
+   - Despite the legacy folder prefix, `02_Neel_Canonical_Dossier.md`, `04_Rita_Canonical_Dossier.md`, and `05_Neel_Rita_Master_Lexicon_and_Style_Library.md` contain the **active, canonical Season 1 protagonist profiles** for Neel Gadora and RITA. Do not treat them as discarded data.
+
+6. **`scripts/` & `visualizers/` — Automation & 3D Cosmology Viewer**
+   - Python lore-verification scripts and `Universe_B_3D_Cosmology_Viewer.html`.
 
 ---
 
-### STAGE 3: RIGOROUS EXECUTION & CANONICAL ANSWER (अंतिम उत्तर व अंमलबजावणी)
-1. Execute file edits, research, or drafting with surgical precision.
-2. Run `python "d:\Web Novel\Brahmand\scripts\verify_brahmand_canon.py"` after modifications to guarantee 100% green canon status.
-3. Present a clear, structured, and respectful answer in Marathi/English directly fulfilling the user's request.
+## 2. MANDATORY WRITING & CONTINUITY LAWS
+
+1. **Limited POV & Zero Info-Dump Trap:**
+   - Neel Gadora is a 19-year-old practical engineer from Worli, Mumbai. He knows basic 21st-century Indian mythology (e.g., Brahma has 4 heads, not 3), **NOT** the internal rules of Universe B (`Sabha`, `Pana` exchange rates, `5 Realms`, `6 Pillars`).
+   - Reveal world rules strictly through physical observation, trial-and-error, and lived friction.
+
+2. **Three-Tier Tone & Prose Separation:**
+   - **Cosmic Genesis (`00_Prologue.md` Part 1):** Grand, Sanskrit-rich Vedic prose (*Nasadiya Sukta* & Trimukha Brahma).
+   - **Folk Puppeteer & Apocalypse (`00_Prologue.md` Part 2):** Earthy, rhythmic storytelling shifting abruptly into visceral cosmic horror.
+   - **Neel's POV (`00_Prologue.md` Part 3 & `01_Chapter_1_Draft.md` onward):** Crisp, modern, cinematic Hindi/Hinglish with technical precision and dry Mumbai wit. Never bleed Vedic prose into Mumbai scenes.
+
+3. **Canonical `'नही'` Orthography:**
+   - Always use **`नही`** (without anusvara dot) across all Hindi/Hinglish novel prose.
+
+4. **Chapter 1 Action & Spatial Rift Locks:**
+   - **Single Wave Hydrolock:** The BEST bus water wave hits Neel's sports coupe once to cause engine hydrolock; never repeat a second bus wave while Neel is walking.
+   - **0.05-Second Imperceptible Glitch:** Crossing the Dadar service-lane rift happens in a normal mid-stride step (`0.05s`) with zero divine bells, visions, or cosmic warnings.
+   - **Void Transit & Awakening:** Neel experiences pure electromagnetic/cosmic friction and an immediate blackout, waking directly face-down in a foul-smelling wooden manure/dung cart outside Central City.

@@ -1,58 +1,31 @@
-# BRAHMAND — THE 3-HEADED COSMOS (ब्रह्मांड — त्रिमूर्ती विश्व)
-### The Trimurti Cosmos | High-Fantasy Sanatan Universe
+# Brahmand — The 3-Headed Cosmos (ब्रह्मांड)
 
-> **"A Marvel-Style Shared Universe Built on Authentic Sanatan Metaphysics — Experienced Through the Grounded, Mysterious Lens of Lord of the Mysteries."**
-
----
-
-## 1. Core Creative Philosophy
-
-1. **Zero Protagonists / World-First Sovereign Canvas (नायक-विहीन विश्व):**
-   - *Brahmand* does not revolve around a single chosen hero, traveler, or destined protagonist.
-   - The Universe itself (Brahmand), its five sovereign realms, and its living factions form the true central canvas.
-   - Every mortal survives on raw Puruṣārtha, physical biomechanics, thermodynamic logic, and sheer grit under the Trimūrti Zero-Avatar Mandate.
-
-2. **The Multi-Faction Ensemble Engine (महाभारत-शैली समूह गाथा):**
-   - **The Universe (Brahmand)** is the persistent anchor.
-   - The narrative unfolds across multiple sovereign viewpoints: the Kuru throne of Hastinapur, the Asura volcanic foundries of Maya, the solar spires of Amarāvatī, the subterranean vaults of King Bali, and the cutthroat merchant guilds and arena circuits of Central City.
-
-3. **Authentic Epic Power Dynamics (Mahabharata & Ramayana Model):**
-   - Discards overwhelming, clinical biological jargon (no tedious 72,000 nadi lectures).
-   - Grounded in authentic epic mechanics:
-     1. **Shastra (शस्त्र):** Grounded physical weapons (Swords, Bows, Spears, Maces, Armor).
-     2. **Astra (अस्त्र):** Mantra-activated conceptual divine payloads (Agneyastra, Brahmashira).
-     3. **Varadana / Boons (वरदान):** Conceptual cosmic authorizations & semantic loopholes.
-     4. **Shapa / Curses (शाप):** Tragic metaphysical debuffs and binding constraints.
-     5. **Pratigya & Tapasya (प्रतिज्ञा व तपस्या):** Willpower, sacrifice, and binding vows that multiply strength.
-     6. **Ātma-Tattva (आत्मतत्त्व):** The indestructible, dormant primordial soul core.
-
-4. **Tensura-Style Decentralized Sovereignty:**
-   - The five planetary realms are completely autonomous sovereign powers:
-     - **Human Realm:** Hastinapur under Kuru King Parikshit.
-     - **Asura Realm:** The Iron Citadel under Patriarch Mayasur & Queen Mother Mandor.
-     - **Beast Realm:** Primeval Canopy under the Sovereign Beast Triumvirate (Rikshan, Kadrin, Suparni).
-     - **Deva Realm:** Amaravati Spire under Aryaman & Empress Saranya.
-     - **Central City:** Neutral trade metropolis governed by the **Central Emperor (सम्राट)** on the Grey Basalt Throne, wielding indirect economic, currency, and gateway hegemony.
-
-5. **Cosmic Non-Intervention & The Red-Line Protocol:**
-   - Higher Tiers (Tier 1 Divine & Tier 2 Swarga/Setu Army under Commander Vajraketu) do not police mortal politics or dynastic squabbles.
-   - They intervene with terrifying force ONLY if an existential cosmic threat arises (The Ravana Clause, The Kansa Clause, or a Kurukshetra-scale dimensional rupture).
+A dark mytho-sci-fi light novel universe blending Vedic cosmology with grounded 21st-century engineering pragmatism.
 
 ---
 
-## 2. Directory Architecture
+## Repository Structure (`brahmand` Branch)
 
-```
-d:\Web Novel\Brahmand\
-├── 01_WORLD_BIBLE/              # The 4 Tiers, 5 Sovereign Realms, Cosmic History, Buffer Zone
-├── 02_POWER_SYSTEM/             # The 6 Pillars, Elements, Astra Codex, Coliseum Ladder
-├── 03_CHARACTERS/               # 129 Master Roster, Protagonist Slot [STATUS: RIKTA], Sovereign Monarchs
-├── 04_STORY_AND_CHAPTERS/       # Multi-Season Roadmap, Volume 1 Arc, Chapter Scene Drafts
-└── scripts/                     # Automated indexers, verification suites, and studio builders
+```text
+universe-b-novel/
+├── GEMINI.md                                      # Master governance, canon locks & writing rules
+├── README.md                                      # Repository overview & navigation map
+├── 01_WORLD_BIBLE/                                # Omniscient cosmology, 5 Realms, treaties & veil rules
+├── 02_POWER_SYSTEM/                               # 6 Pillars, Astras, Mantra science, Beasts & economy
+├── 03_CHARACTERS/                                 # Master roster (129+ characters) & Season 1 Protagonist Index
+├── 04_STORY_AND_CHAPTERS/                         # Cosmic Genesis lore compendium & craft bibles
+├── 05_LIGHT_NOVEL/
+│   └── Vol_01/
+│       ├── 00_Prologue.md                         # Official Volume 1 Prologue (आदि-पर्व: स्वप्न-सृष्टि)
+│       └── 01_Chapter_1_Draft.md                  # Official Volume 1 Chapter 1 (Worli → Dadar → Central City)
+├── ARCHIVE_PARKED_NEEL/                           # Active Season 1 protagonist dossiers (Neel & RITA) & arc blueprints
+├── scripts/                                       # Python canon verification & lore automation tools
+└── visualizers/                                   # Interactive 3D Cosmology Viewer (HTML5 / Three.js)
 ```
 
 ---
 
-## 3. Archive Notice
-All legacy drafts, historical working bibles, raw PDFs, and pre-streamlining iterations are preserved in:  
-`d:\Web Novel\ARCHIVE-DATA OF UNIVERSE B\`
+## Core Narrative Premise
+
+- **Prologue (*आदि-पर्व: स्वप्न-सृष्टि*):** Opens in the primordial stillness of the *Nasadiya Sukta* and the birth of the three-headed Brahma, collapses into a rural shadow-puppeteer's apocalyptic nightmare, and snaps awake in a 40th-floor R&D penthouse overlooking Worli Sea Face—where 19-year-old engineer **Neel Gadora** tastes burnt ash on his tongue.
+- **Volume 1 (*The Rogue Architect in Central City*):** Armed with zero divine boons, a dead prototype phone, a powerless black metal card, and a neural bio-chip (*RITA*) running on scraps of nerve electricity, Neel must reverse-engineer a brutal astral civilization using Newtonian mechanics and relentless street wit.
